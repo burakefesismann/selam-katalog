@@ -3,21 +3,21 @@
 > Her oturumun başında oku, sonunda güncelle. Kısa tut.
 
 ## Şu an
-- Aktif görev: — (F1.1 bitti)
+- Aktif görev: — (F1.2 bitti)
+- Site: https://burakefesismann.github.io/selam-katalog/
 - Faz: 1 — İskelet, görseller ve panel
 
 ## Yarım kalan
 - Yok
 
 ## Sıradaki
-- F1.2 — Otomatik yayın (GitHub Pages) — önce depo Public yapılmalı
+- F1.3 — İçerik şeması
 
 ## Kullanıcıdan beklenenler
 - [~] Logo: `kaynaklar/logo/selamfis.png` geldi (474×129 PNG, şeffaf zemin, turuncu+gri). Vektör (SVG/AI/PDF) ya da
   daha büyük PNG varsa istenir; beyaz/açık renkli sürümü (koyu zemin için) de lazım olacak.
 - [ ] docs/FIRMA.md'deki ⚠ işaretli bilgilerin teyidi
 - [ ] Marka ve ürün listesi (beyin takımı içerik paketine çevirecek)
-- [ ] Depoyu **herkese açık (Public)** yap — F1.2'den (GitHub Pages) önce şart. Şu an gizli (private).
 
 ## Netleşenler (2026-11-14)
 - Panel: sadece kullanıcı → token ile giriş (K8)
@@ -37,6 +37,9 @@
 - Site `base` = `/selam-katalog` (K9 güncellemesi). İç linklerde `src/lib/url.ts` → `url()` kullan.
 - F1.1 sürümleri: Astro 7.4.12, Tailwind 4.3.5 (@tailwindcss/vite), sharp 0.35.5, TypeScript 6.0.3 (TS 7 değil —
   @astrojs/check TS 5/6 istiyor), @astrojs/check 0.9.12. `npm run build` = astro check + astro build.
+- Yayın: `.github/workflows/deploy.yml` (withastro/action@v6 + deploy-pages@v5), her main push'unda; ~1–2 dk.
+  Settings › Pages › Source = GitHub Actions (2026-11-14 kullanıcı açtı). Elle: Actions › "Yayınla" › Run workflow.
+  withastro/action Astro görsel önbelleğini zaten tutuyor (F2.9'daki önbellek maddesi büyük ölçüde hazır).
 
 ## Öneriler
 - (Plana eklenmesi önerilen fikirler. Kullanıcı onaylarsa PLAN.md'ye taşınır.)
@@ -48,3 +51,4 @@
 | 2026-11-14 | F0.1 Ortam kontrolü | Node/npm/git var; gh yok | F0.2 ile birlikte |
 | 2026-11-14 | F0.2 Depo | Kişisel hesapta depo (K9 güncellendi), klasörler düzeltildi, ilk commit | F0.2 |
 | 2026-11-14 | F1.1 Astro + Tailwind | Kurulum, "Yakında" sayfası; dev + build çalışıyor | F1.1 |
+| 2026-11-14 | F1.2 GitHub Pages | Actions ile otomatik yayın; site açılıyor, kırık link yok | F1.2 |

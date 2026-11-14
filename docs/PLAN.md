@@ -32,7 +32,7 @@ Bitince: PLAN'da `[x]` → DURUM.md güncelle → commit + push → kullanıcıy
   `src/content`, `public/`. `<html lang="tr">`. Sade bir "Yakında" ana sayfası.
   *Bitti sayılır:* `npm run dev` ve `npm run build` çalışıyor; CLAUDE.md > Komutlar güncel.
 
-- [ ] **F1.2 Otomatik yayın (GitHub Pages)**
+- [x] **F1.2 Otomatik yayın (GitHub Pages)**
   GitHub Actions ile her push'ta derle ve GitHub Pages'e yayınla. Astro `site` (gerekiyorsa `base`) ayarını yap.
   Kullanıcıya Settings › Pages › Source: "GitHub Actions" ayarını adım adım anlat.
   *Bitti sayılır:* site github.io adresinde açılıyor; kırık link/görsel yok.
