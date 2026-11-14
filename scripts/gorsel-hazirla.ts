@@ -7,10 +7,15 @@
  *  - Dosya adı: ürün → <urun-slug>-<n>.webp · marka → <marka-slug>.webp · kategori → <kategori-slug>.webp
  *  - Hedef klasör (src/assets/...) dosya adından otomatik bulunur: "baumit-flexo-1.jpg" → urunler
  *  - SVG logolar olduğu gibi kopyalanır.
+ *  - --buyut: uzun kenarı < 800 px olan ÜRÜN görselleri önce yapay zekâ ile 4× büyütülür (Real-ESRGAN, K14).
+ *    Araç depoda değil: %LOCALAPPDATA%\selam-araclar\realesrgan\realesrgan-ncnn-vulkan.exe
+ *    (başka yer için SELAM_ESRGAN ortam değişkeni). Kurulum: CLAUDE.md > Komutlar.
  * Orijinaller .gorsel-orijinal/ içinde kalır (gitignore'da).
  */
-import { copyFileSync, existsSync, readdirSync, statSync, writeFileSync } from 'node:fs';
-import { basename, extname, join, relative } from 'node:path';
+import { execFileSync } from 'node:child_process';
+import { copyFileSync, existsSync, mkdtempSync, readdirSync, rmSync, statSync, writeFileSync } from 'node:fs';
+import { tmpdir } from 'node:os';
+import { basename, dirname, extname, join, relative, resolve } from 'node:path';
 import sharp from 'sharp';
 import { slugify } from '../src/lib/slug.ts';
 import { ASSETS, HEDEFLER, KOK, STANDART, sluglar, type Hedef } from './ortak.ts';
@@ -23,9 +28,11 @@ const yollar: string[] = [];
 let hedefSecim: Hedef | undefined;
 let adSecim: string | undefined;
 let uzerineYaz = false;
+let buyut = false;
 for (let i = 0; i < argv.length; i++) {
   const a = argv[i];
-  if (a === '--hedef') {
+  if (a === '--buyut') buyut = true;
+  else if (a === '--hedef') {
     const h = argv[++i];
     if (!HEDEFLER.includes(h as Hedef)) hata(`--hedef şunlardan biri olmalı: ${HEDEFLER.join(', ')}`);
     hedefSecim = h as Hedef;
@@ -34,7 +41,29 @@ for (let i = 0; i < argv.length; i++) {
   else yollar.push(a);
 }
 if (yollar.length === 0) {
-  hata('Kullanım: npm run gorsel:hazirla -- <dosya|klasör> [--hedef urunler|markalar|kategoriler] [--ad <slug>] [--uzerine-yaz]');
+  hata('Kullanım: npm run gorsel:hazirla -- <dosya|klasör> [--hedef urunler|markalar|kategoriler] [--ad <slug>] [--uzerine-yaz] [--buyut]');
+}
+
+const ESRGAN =
+  process.env.SELAM_ESRGAN ??
+  join(process.env.LOCALAPPDATA ?? '', 'selam-araclar', 'realesrgan', 'realesrgan-ncnn-vulkan.exe');
+if (buyut && !existsSync(ESRGAN)) {
+  hata(`--buyut için Real-ESRGAN bulunamadı: ${ESRGAN}\n  Kurulum adımları: CLAUDE.md > Komutlar > gorsel:hazirla --buyut`);
+}
+const geciciKlasor = buyut ? mkdtempSync(join(tmpdir(), 'selam-buyut-')) : undefined;
+process.on('exit', () => geciciKlasor && rmSync(geciciKlasor, { recursive: true, force: true }));
+
+/** Real-ESRGAN ile 4× büyütür, büyütülmüş geçici PNG'nin yolunu döndürür */
+function yapayZekaIleBuyut(dosya: string): string {
+  const cikti = join(geciciKlasor!, `${basename(dosya, extname(dosya))}-x4.png`);
+  // -t 128: Intel tümleşik ekran kartında büyük parçalar "vkQueueSubmit failed" hatası veriyor
+  // cwd araç klasörü olduğu için (modeller oradan okunur) yollar mutlak olmalı
+  execFileSync(ESRGAN, ['-i', resolve(dosya), '-o', resolve(cikti), '-n', 'realesrgan-x4plus', '-s', '4', '-t', '128'], {
+    cwd: dirname(ESRGAN),
+    stdio: 'ignore',
+  });
+  if (!existsSync(cikti) || statSync(cikti).size < 20_000) hata(`Büyütme başarısız: ${dosya}`);
+  return cikti;
 }
 
 function hata(mesaj: string): never {
@@ -113,11 +142,22 @@ for (const dosya of dosyalar) {
     const enO = (donuk ? meta.height : meta.width) ?? 0;
     const boyO = (donuk ? meta.width : meta.height) ?? 0;
 
+    // --buyut: küçük ürün görselini önce yapay zekâ ile büyüt (yön bilgisi varsa önce uygula)
+    let kaynak = dosya;
+    const buyutulecek = buyut && hedef === 'urunler' && Math.max(enO, boyO) < STANDART.uzunKenarMin;
+    if (buyutulecek) {
+      if (donuk || (meta.orientation ?? 1) > 1) {
+        kaynak = join(geciciKlasor!, `${basename(dosya, extname(dosya))}-yon.png`);
+        await sharp(dosya).rotate().png().toFile(kaynak);
+      }
+      kaynak = yapayZekaIleBuyut(kaynak);
+    }
+
     // 500 KB'a sığana kadar önce kaliteyi (80→60), yetmezse uzun kenarı (1600→1000) düşür
     const sinir = STANDART.boyutMaksKB * 1024;
     let kalite = STANDART.kalite;
     const kodla = (kenar: number, q: number) =>
-      sharp(dosya)
+      sharp(kaynak)
         .rotate() // EXIF yönünü uygula
         .resize({ width: kenar, height: kenar, fit: 'inside', withoutEnlargement: true })
         .webp({ quality: q, effort: 5 }) // metadata kopyalanmaz → EXIF/GPS silinir
@@ -140,6 +180,7 @@ for (const dosya of dosyalar) {
       uyarilar.push(`KÜÇÜK: uzun kenar ${Math.max(bilgi.width, bilgi.height)} px (< ${STANDART.uzunKenarMin}) — daha büyüğünü bul`);
     }
     if (kb > STANDART.boyutMaksKB) uyarilar.push(`BÜYÜK: ${kb} KB (> ${STANDART.boyutMaksKB}) — kontrol et`);
+    if (buyutulecek) uyarilar.push('yapay zekâ ile 4× büyütüldü (K14) — gerçek büyük görsel gelince değiştir');
     if (kalite < STANDART.kalite) uyarilar.push(`kalite ${kalite}'e düşürüldü`);
     if (Math.max(bilgi.width, bilgi.height) < Math.min(Math.max(enO, boyO), STANDART.uzunKenarMaks)) {
       uyarilar.push(`${STANDART.boyutMaksKB} KB sınırı için boyut küçültüldü`);

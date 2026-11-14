@@ -84,3 +84,11 @@ Tek bir kategori/ürün büyütülmez. Sıra: arama → 11 ana kategorinin eşit
 ## K13 — Çözüm sayfaları (2026-11-14, kullanıcı teyitli)
 Birden çok markanın ürünlerini bir iş akışında anlatan bilgilendirici sayfalar. İlk dördü: Mantolama, Islak hacim su yalıtımı,
 Yerden ısıtma, Çatı & yağmur oluğu. Her sayfa adım adım anlatır; her adım ilgili ürün kartlarına bağlanır. Plan: F4.5.
+
+## K14 — Küçük ürün görselleri yapay zekâ ile büyütülür; arka plan temizleme yok (2026-11-14, kullanıcı teyitli)
+Üreticilerin resmi sitelerindeki görseller çoğu zaman 800 px altında (Fırat 710, Baumit 400 px). F1.5c denemesinde
+Real-ESRGAN (realesrgan-x4plus) görselleri belirgin şekilde keskinleştirdi; ambalajdaki büyük yazılar doğru kaldı,
+çok küçük yazılarda hafif bozulma var. Kullanıcı kararı: uzun kenarı < 800 px olan ürün görselleri
+`gorsel:hazirla --buyut` ile büyütülür. Gerçek büyük görsel (mağaza fotoğrafı / üreticiden) gelince o kullanılır.
+Araç depoya girmez; kullanıcının bilgisayarında `%LOCALAPPDATA%\selam-araclar\realesrgan\` altında durur.
+Arka plan temizleme (rembg) denendi: PVC ek parçalarında ürünü sildi, fabrika görselinde artık bıraktı → kullanılmaz.

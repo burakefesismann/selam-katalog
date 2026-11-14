@@ -96,6 +96,10 @@ Kullanıcı `/devam` yazarsa bu adımlar + sıradaki görev yapılır. Diğer ko
 - `npm run gorsel:hazirla -- <dosya|klasör> [--hedef urunler|markalar|kategoriler] [--ad <slug>] [--uzerine-yaz]`
   — WebP, ≤1600 px, ≤500 KB, EXIF silinir, yön düzeltilir; `src/assets/<hedef>/` içine. Hedef dosya adından bulunur
   (`baumit-flexo-1.jpg` → ürün, `firat.png` → marka logosu). Sonunda içeriğe eklenecek YAML satırlarını yazar.
+  `--buyut`: uzun kenarı < 800 px olan ürün görselini önce yapay zekâ ile 4× büyütür (K14). Araç depoda yok; kurulum:
+  github.com/xinntao/Real-ESRGAN/releases → `realesrgan-ncnn-vulkan-20220424-windows.zip` → içinden
+  `realesrgan-ncnn-vulkan.exe`, `vcomp140*.dll` ve `models/realesrgan-x4plus.*` dosyalarını
+  `%LOCALAPPDATA%\selam-araclar\realesrgan\` (models alt klasörüyle) içine koy. Intel ekran kartında `-t 128` şart (komut veriyor).
 - `npm run gorsel:rapor` — görselsiz / küçük / kaynaksız / kayıp görselli ürünler, logosuz markalar, görselsiz ana kategoriler.
 
 ## Proje yapısı ve teknik notlar

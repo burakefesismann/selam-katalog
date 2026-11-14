@@ -39,6 +39,9 @@ Bir oturumda **en fazla ~10 ürün** işle; kalanları `DURUM.md > Yarım kalan`
 
 5. **Hazırla**
    `npm run gorsel:hazirla -- .gorsel-orijinal/<dosya>` → WebP, ≤ 1600 px, doğru klasöre.
+   Resmi kaynaktaki en büyük görsel bile < 800 px ise `--buyut` ekle (yapay zekâ ile büyütme, K14); sonucu açıp
+   bak — ambalaj yazıları bozulduysa `--buyut` olmadan hazırla ve "küçük" diye raporla.
+   Arka plan temizleme YAPILMAZ (K14); dağınık zeminli görsel yerine düz zeminli olanı seç.
 
 6. **Ürüne bağla**
    Ürünün `gorseller` listesine ekle:

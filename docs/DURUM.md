@@ -3,7 +3,7 @@
 > Her oturumun başında oku, sonunda güncelle. Kısa tut.
 
 ## Şu an
-- Aktif görev: — (F1.5b bitti)
+- Aktif görev: — (F1.5 tamamen bitti)
 - Site: https://burakefesismann.github.io/selam-katalog/
 - Faz: 1 — İskelet, görseller ve panel
 
@@ -11,13 +11,14 @@
 - Yok
 
 ## Sıradaki
-- F1.5c — Arka plan temizleme + küçük görselleri büyütme denemesi (önce/sonra → kullanıcı kararı)
+- F1.6 — Panel (Sveltia CMS)
 
 ## Kullanıcıdan beklenenler
 - [~] Logo: `kaynaklar/logo/selamfis.png` geldi (474×129 PNG, şeffaf zemin, turuncu+gri). Vektör (SVG/AI/PDF) ya da
   daha büyük PNG varsa istenir; beyaz/açık renkli sürümü (koyu zemin için) de lazım olacak.
-- [ ] Daha büyük ürün görselleri (resmi sitelerdeki en büyükleri 800 px altında; kullanıcı "şimdilik kullan" dedi):
-  Fırat PPRC, PVC atık su ek parçaları, Triplex (710 px) · Baumit Basic, Flexo, Flex Uni (400 px) · Fırat logosu (360 px).
+- [ ] Daha büyük ürün görselleri. Şu an yapay zekâ ile büyütülmüş (K14), gerçeği gelince değiştirilecek:
+  Fırat PPRC (2), PVC atık su ek parçaları, Triplex (2) — asıl 710 px · Baumit Basic, Flexo, Flex Uni — asıl 400 px.
+  Fırat logosu 360 px (logo, büyütülmedi).
   Mağazada çekilebilir ya da üreticiden yüksek çözünürlüklü görsel istenebilir. Güncel liste: `npm run gorsel:rapor`.
 - [ ] docs/FIRMA.md'deki ⚠ işaretli bilgilerin teyidi
 - [ ] Marka ve ürün listesi (beyin takımı içerik paketine çevirecek)
@@ -66,6 +67,11 @@
 - Ekran görüntüsü almak için: `npx astro preview --port 4400` + Edge headless
   (`msedge.exe --headless=new --user-data-dir=<geçici> --screenshot=<yol> <url>`; user-data-dir olmadan dosya yazmıyor).
 
+- F1.5c: Real-ESRGAN `%LOCALAPPDATA%\selam-araclar\realesrgan\` (kullanıcı çalıştırma izni verdi, 2026-11-14).
+  Intel Graphics'te varsayılan parça boyutunda `vkQueueSubmit failed -4` → `-t 128` ile çalışıyor. Araç kendi
+  klasöründe (cwd) çalıştırılıyor, bu yüzden giriş/çıkış yolları mutlak. rembg denendi, reddedildi (K14).
+  `gorsel:rapor` büyütülmüş görselleri artık "küçük" saymıyor → hangilerinin büyütüldüğü yukarıdaki listede.
+
 ## Öneriler
 - (Plana eklenmesi önerilen fikirler. Kullanıcı onaylarsa PLAN.md'ye taşınır.)
 - Ana sayfadaki 11 ana kategori kartı (F2.2) için kategori görselleri gerekecek; planda ayrı görev yok.
@@ -84,3 +90,4 @@
 | 2026-11-14 | F1.4 Örnek veri | 15 kategori, 2 marka, 6 TASLAK ürün; liste + detay sayfası; 0 kırık link | F1.4 |
 | 2026-11-14 | F1.5a Görsel araçları | gorsel:hazirla, gorsel:rapor, yer tutucu bileşen | F1.5a |
 | 2026-11-14 | F1.5b Görseller | 6 ürün (8 görsel) + 2 logo, resmi siteler; küçük ama kullanıcı onayladı | F1.5b |
+| 2026-11-14 | F1.5c Büyütme/arka plan | Real-ESRGAN kabul (8 görsel büyütüldü, `--buyut`), rembg red; K14 | F1.5c |

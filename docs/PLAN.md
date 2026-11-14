@@ -73,7 +73,7 @@ Bitince: PLAN'da `[x]` → DURUM.md güncelle → commit + push → kullanıcıy
   Basit (tasarımsız) ürün listesi ve ürün detay sayfası — verinin aktığını görmek için.
   *Bitti sayılır:* 6 ürün sitede listeleniyor, detay sayfaları açılıyor.
 
-- [ ] **F1.5 Görsel hattı** (K10 — çok önemli)
+- [x] **F1.5 Görsel hattı** (K10 — çok önemli)
   a) `npm run gorsel:hazirla -- <dosya|klasör>`: sharp ile uzun kenar ≤ 1600 px, WebP (kalite ~80), EXIF temizliği,
      dosya adı `<urun-slug>-<n>.webp`, doğru hedef klasöre kopyalama.
   b) `npm run gorsel:rapor`: görseli olmayan, tek görselli, küçük (< 800 px) ya da `kaynak_url`'si boş ürünleri listeler.
@@ -86,7 +86,7 @@ Bitince: PLAN'da `[x]` → DURUM.md güncelle → commit + push → kullanıcıy
   - [x] **F1.5a** Araçlar: a) `gorsel:hazirla`, b) `gorsel:rapor`, c) yer tutucu bileşen.
     *Bitti sayılır:* iki komut örnek dosyalarla çalışıyor; görselsiz ürün sayfasında yer tutucu görünüyor; build geçiyor.
   - [x] **F1.5b** d) `/gorsel` adımlarıyla 6 örnek ürün + 2 marka logosu; kullanıcıya gösterip onay al.
-  - [ ] **F1.5c** e) Arka plan temizleme denemesi (2–3 ürün, önce/sonra) → kullanıcı kararı.
+  - [x] **F1.5c** e) Arka plan temizleme denemesi (2–3 ürün, önce/sonra) → kullanıcı kararı.
     + Küçük görselleri bozmadan büyütme denemesi (kullanıcı isteği, 2026-11-14): yapay zekâ ile büyütme (ör. Real-ESRGAN)
     Fırat 710 px ve Baumit 400 px görsellerde; özellikle ambalaj yazıları bozuluyor mu bak. Önce/sonra göster → kullanıcı kararı.
 
