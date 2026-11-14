@@ -89,7 +89,16 @@ Kullanıcı `/devam` yazarsa bu adımlar + sıradaki görev yapılır. Diğer ko
 - Erişilebilirlik: turuncu zemin üstündeki yazıların kontrastını kontrol et.
 
 ## Komutlar
-(Proje kurulunca F1.1'de gerçek komutlarla güncelle.)
-- `npm run dev` — yerel önizleme
-- `npm run build` — derleme (her görev sonunda)
+- `npm install` — bağımlılıkları kur (ilk kez ya da package.json değişince)
+- `npm run dev` — yerel önizleme → http://localhost:4321/selam-katalog/
+- `npm run build` — tip kontrolü (`astro check`) + derleme → `dist/` (her görev sonunda, 0 hata şart)
 - `npm run preview` — derlenmiş siteyi önizleme
+
+## Proje yapısı ve teknik notlar
+- `src/pages` sayfalar · `src/layouts` sayfa iskeletleri (`BaseLayout.astro`: `<html lang="tr">`, global CSS)
+  · `src/components` bileşenler · `src/content` içerik · `src/lib` yardımcılar · `src/styles/global.css` Tailwind girişi
+  · `public/` olduğu gibi kopyalanan dosyalar.
+- Site `base` = `/selam-katalog` (astro.config.mjs). **İç linkleri elle `/...` diye yazma**; `src/lib/url.ts` →
+  `url('urunler/x')` kullan. Astro'nun `<Image>` / import edilen görselleri base'i kendisi ekler.
+- Tailwind v4: ayar dosyası yok, tema `global.css` içinde `@theme` ile tanımlanır (F2.1).
+- TypeScript 6 kullanılıyor (TS 7 ile `@astrojs/check` uyumlu değil; check TS 7'yi desteklemeden yükseltme).

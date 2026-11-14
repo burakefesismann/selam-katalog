@@ -26,7 +26,7 @@ Bitince: PLAN'da `[x]` → DURUM.md güncelle → commit + push → kullanıcıy
 
 ## Faz 1 — İskelet, görseller ve panel
 
-- [ ] **F1.1 Astro + Tailwind kurulumu**
+- [x] **F1.1 Astro + Tailwind kurulumu**
   Güncel kararlı Astro, Tailwind CSS, TypeScript (strict), sharp. Mevcut dosyalara (CLAUDE.md, docs/, .claude/,
   icerik-paketleri/, kaynaklar/) dokunmadan kur. Yapı: `src/pages`, `src/components`, `src/layouts`,
   `src/content`, `public/`. `<html lang="tr">`. Sade bir "Yakında" ana sayfası.
