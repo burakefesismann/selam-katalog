@@ -82,6 +82,11 @@ Bitince: PLAN'da `[x]` → DURUM.md güncelle → commit + push → kullanıcıy
   e) Üretici görsellerinin zeminleri çok dağınıksa: arka plan temizlemeyi (ör. rembg) 2–3 üründe DENE,
      önce/sonra halini kullanıcıya göster; kullanıcı onaylarsa hatta ekle, onaylamazsa ekleme.
   *Bitti sayılır:* 6 örnek ürün görselleriyle sitede; rapor komutu çalışıyor; kullanıcı görselleri gördü ve onayladı.
+  Alt görevler (tek oturuma sığmadığı için bölündü, 2026-11-14):
+  - [ ] **F1.5a** Araçlar: a) `gorsel:hazirla`, b) `gorsel:rapor`, c) yer tutucu bileşen.
+    *Bitti sayılır:* iki komut örnek dosyalarla çalışıyor; görselsiz ürün sayfasında yer tutucu görünüyor; build geçiyor.
+  - [ ] **F1.5b** d) `/gorsel` adımlarıyla 6 örnek ürün + 2 marka logosu; kullanıcıya gösterip onay al.
+  - [ ] **F1.5c** e) Arka plan temizleme denemesi (2–3 ürün, önce/sonra) → kullanıcı kararı.
 
 - [ ] **F1.6 Panel (Sveltia CMS)**
   `/admin` altında Sveltia CMS, GitHub backend, bu depo. Koleksiyonlar F1.3 şemasıyla birebir.
