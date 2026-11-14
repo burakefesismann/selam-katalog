@@ -61,7 +61,7 @@ Bitince: PLAN'da `[x]` → DURUM.md güncelle → commit + push → kullanıcıy
   (Beyin takımı içerik paketlerini buna göre hazırlayacak.)
   *Bitti sayılır:* build geçiyor; ICERIK-SEMASI.md var.
 
-- [ ] **F1.4 Örnek veri**
+- [x] **F1.4 Örnek veri**
   Kategoriler: `docs/KATALOG-YAPISI.md`'deki **11 ana kategori** (ust_kategori boş) + şu alt kategoriler:
   Tesisat Boruları › PPRC Temiz Su, PVC Atık Su, Altyapı; Yapı Kimyasalları › Seramik Yapıştırıcı.
   Markalar: Fırat, Baumit.

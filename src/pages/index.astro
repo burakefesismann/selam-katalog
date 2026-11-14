@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { url } from '../lib/url';
 ---
 
 <BaseLayout title="Selam İnşaat — Ürün Kataloğu">
@@ -9,6 +10,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     <p class="text-neutral-600">
       Yapı malzemelerinde 50 yıllık tecrübemizle ürünlerimizi tanıtacağımız katalog hazırlanıyor.
     </p>
+    <a class="font-semibold underline" href={url('urunler')}>Hazırlanan ürünlere göz atın →</a>
     <a
       href="tel:+904642176067"
       class="mt-2 rounded-md bg-neutral-900 px-5 py-3 font-semibold text-white hover:bg-neutral-700"

@@ -82,6 +82,19 @@ export async function getAltKategoriler(ustId: string): Promise<Kategori[]> {
   return (await getKategoriler()).filter((k) => k.data.ust_kategori?.id === ustId);
 }
 
+/** Ana kategoriden başlayarak kategori zinciri: [Tesisat Boruları, PPRC Temiz Su] */
+export async function getKategoriYolu(kategoriId: string): Promise<Kategori[]> {
+  const harita = haritala(await getKategoriler());
+  const yol: Kategori[] = [];
+  let simdiki = harita.get(kategoriId);
+  while (simdiki && !yol.includes(simdiki)) {
+    yol.unshift(simdiki);
+    const ust = simdiki.data.ust_kategori?.id;
+    simdiki = ust ? harita.get(ust) : undefined;
+  }
+  return yol;
+}
+
 export async function getUrunler(): Promise<Urun[]> {
   const kategoriler = haritala(await getKategoriler());
   return sirala(

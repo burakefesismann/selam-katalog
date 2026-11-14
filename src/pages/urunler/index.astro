@@ -1,0 +1,45 @@
+---
+// F1.4: basit (tasarımsız) ürün listesi — verinin aktığını görmek için. Tasarım F2.3'te.
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getAnaKategoriler, getKategoriUrunleri, getMarkalar } from '../../lib/katalog';
+import { url } from '../../lib/url';
+
+const markaAdi = new Map((await getMarkalar()).map((m) => [m.id, m.data.ad]));
+const gruplar = (
+  await Promise.all(
+    (await getAnaKategoriler()).map(async (kategori) => ({
+      kategori,
+      urunler: await getKategoriUrunleri(kategori.id),
+    })),
+  )
+).filter((g) => g.urunler.length > 0);
+const toplam = gruplar.reduce((t, g) => t + g.urunler.length, 0);
+---
+
+<BaseLayout title="Ürünler — Selam İnşaat">
+  <main class="mx-auto max-w-3xl px-4 py-8">
+    <p><a class="underline" href={url('/')}>← Ana sayfa</a></p>
+    <h1 class="mt-4 text-2xl font-bold">Ürünler ({toplam})</h1>
+    {
+      gruplar.map(({ kategori, urunler }) => (
+        <section class="mt-8">
+          <h2 class="text-xl font-semibold">{kategori.data.ad}</h2>
+          <ul class="mt-2 space-y-3">
+            {urunler.map((u) => (
+              <li>
+                <a class="font-medium underline" href={url(`urunler/${u.id}`)}>
+                  {u.data.ad}
+                </a>
+                <span class="text-sm text-neutral-600">
+                  {' — '}
+                  {u.data.markalar.map((m) => markaAdi.get(m.id)).filter(Boolean).join(', ') || 'Çeşitli markalar'}
+                </span>
+                <p class="text-sm text-neutral-700">{u.data.kisa_aciklama}</p>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))
+    }
+  </main>
+</BaseLayout>

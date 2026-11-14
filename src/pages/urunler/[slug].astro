@@ -1,0 +1,152 @@
+---
+// F1.4: basit (tasarımsız) ürün detay sayfası. Sadece dolu bölümler görünür. Tasarım F2.4'te.
+import type { GetStaticPaths } from 'astro';
+import { Image } from 'astro:assets';
+import { render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getAyarlar, getKategoriYolu, getUrunDetay, getUrunler, telLink, type Urun } from '../../lib/katalog';
+import { url } from '../../lib/url';
+
+export const getStaticPaths = (async () => {
+  return (await getUrunler()).map((urun) => ({ params: { slug: urun.id }, props: { urun } }));
+}) satisfies GetStaticPaths;
+
+interface Props {
+  urun: Urun;
+}
+
+const { urun } = Astro.props;
+const { data } = urun;
+const { markalar, kullanimAlanlari, teknikOzellikler, ilgiliUrunler } = await getUrunDetay(urun);
+const kategoriYolu = await getKategoriYolu(data.kategori.id);
+const { firma } = await getAyarlar();
+const { Content } = await render(urun);
+const anaGorsel = data.gorseller[0];
+const KART_TIPI = { grup: 'Ürün ailesi', marka_tur: 'Marka serisi', urun: 'Ürün' } as const;
+---
+
+<BaseLayout title={`${data.ad} — Selam İnşaat`} description={data.kisa_aciklama}>
+  <main class="mx-auto max-w-3xl space-y-6 px-4 py-8">
+    <nav class="text-sm text-neutral-600">
+      <a class="underline" href={url('urunler')}>Ürünler</a>
+      {kategoriYolu.map((k) => <span> › {k.data.ad}</span>)}
+    </nav>
+
+    <header>
+      <p class="text-sm text-neutral-600">
+        {markalar.map((m) => m.data.ad).join(', ') || 'Çeşitli markalar'} · {KART_TIPI[data.kart_tipi]}
+      </p>
+      <h1 class="text-2xl font-bold">{data.ad}</h1>
+      <p class="mt-2">{data.kisa_aciklama}</p>
+    </header>
+
+    {
+      anaGorsel ? (
+        <Image src={anaGorsel.gorsel} alt={anaGorsel.alt_metin} width={800} class="h-auto max-w-full" />
+      ) : (
+        <p class="rounded border border-dashed border-neutral-400 p-6 text-center text-neutral-600">
+          Görsel henüz eklenmedi
+        </p>
+      )
+    }
+
+    {
+      data.one_cikanlar.length > 0 && (
+        <section>
+          <h2 class="font-semibold">Öne çıkanlar</h2>
+          <ul class="list-disc pl-5">
+            {data.one_cikanlar.map((m) => (
+              <li>{m}</li>
+            ))}
+          </ul>
+        </section>
+      )
+    }
+
+    {
+      data.seriler.length > 0 && (
+        <section>
+          <h2 class="font-semibold">Seriler</h2>
+          <p>{data.seriler.join(', ')}</p>
+        </section>
+      )
+    }
+
+    {
+      kullanimAlanlari.length > 0 && (
+        <section>
+          <h2 class="font-semibold">Kullanım alanları</h2>
+          <p>{kullanimAlanlari.map((k) => k.data.ad).join(', ')}</p>
+        </section>
+      )
+    }
+
+    {
+      teknikOzellikler.length > 0 && (
+        <section>
+          <h2 class="font-semibold">Teknik özellikler</h2>
+          <table class="mt-2 w-full text-left text-sm">
+            <tbody>
+              {teknikOzellikler.map(({ ozellik, deger }) => (
+                <tr class="border-b border-neutral-200">
+                  <th class="py-1 pr-4 font-medium">{ozellik.data.ad}</th>
+                  <td class="py-1">
+                    {deger}
+                    {ozellik.data.birim && ` ${ozellik.data.birim}`}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </section>
+      )
+    }
+
+    {
+      data.olculer.length > 0 && (
+        <section>
+          <h2 class="font-semibold">Ölçüler</h2>
+          <p>{data.olculer.join(' · ')}</p>
+        </section>
+      )
+    }
+
+    {
+      data.teknik_foy && (
+        <p>
+          <a class="underline" href={url(data.teknik_foy)}>
+            Teknik föyü indir (PDF)
+          </a>
+        </p>
+      )
+    }
+
+    <section class="space-y-3">
+      <Content />
+    </section>
+
+    {
+      ilgiliUrunler.length > 0 && (
+        <section>
+          <h2 class="font-semibold">İlgili ürünler</h2>
+          <ul class="list-disc pl-5">
+            {ilgiliUrunler.map((u) => (
+              <li>
+                <a class="underline" href={url(`urunler/${u.id}`)}>
+                  {u.data.ad}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )
+    }
+
+    <a
+      href={telLink(firma.telefon)}
+      class="inline-block rounded-md bg-neutral-900 px-5 py-3 font-semibold text-white hover:bg-neutral-700"
+    >
+      Bilgi almak için arayın: {firma.telefon}
+    </a>
+  </main>
+</BaseLayout>
