@@ -52,7 +52,10 @@ export function sluglar(koleksiyon: string): Set<string> {
   return new Set(kayitlar(koleksiyon).map((k) => k.slug));
 }
 
-/** İçerik dosyasındaki görsel yolunu (../../assets/x.webp) mutlak yola çevirir */
+/**
+ * İçerik dosyasındaki görsel yolunu disk yoluna çevirir.
+ * "/src/assets/x.webp" (panelin yazdığı, proje köküne göre) ya da "../../assets/x.webp" (dosyaya göre).
+ */
 export function gorselYolu(icerikDosyasi: string, yol: string): string {
-  return join(icerikDosyasi, '..', yol);
+  return yol.startsWith('/') ? join(KOK, yol) : join(icerikDosyasi, '..', yol);
 }

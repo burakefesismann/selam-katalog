@@ -7,23 +7,28 @@ import { join } from 'node:path';
 import { defineCollection, reference } from 'astro:content';
 import { glob } from 'astro/loaders';
 import { z } from 'astro/zod';
+import { SLUG_DESENI } from './lib/slug';
 
 const SLUG_HATASI =
   'slug sadece küçük harf (a-z), rakam ve tire içerebilir; Türkçe karakter olmaz (ı→i, ş→s, ğ→g, ü→u, ö→o, ç→c). Ör: "baumit-flexo"';
 
-const slug = z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/, SLUG_HATASI);
+/**
+ * slug = DOSYA ADI. Alan opsiyoneldir (panel yazmaz); yazılırsa dosya adıyla aynı olmalı.
+ * Dosya adının kendisi de aynı kurala uymalı — icerigiDogrula() kontrol eder.
+ */
+const slug = z.string().regex(SLUG_DESENI, SLUG_HATASI).optional();
 const metin = z.string().trim().min(1, 'Bu alan boş olamaz');
 const sira = z.number().int().default(100);
 const yayinda = z.boolean().default(true);
 const adres = z.url({ message: 'Geçerli bir web adresi olmalı (https://...)' });
 
-/** public/ altında var olan bir dosya yolu, ör. "foyler/baumit-flexo.pdf" */
+/** public/ altında var olan bir dosya yolu: "/foyler/baumit-flexo.pdf" (panel böyle yazar) ya da "foyler/..." */
 const publicDosya = (klasor: string, uzanti: string) =>
   z
     .string()
     .regex(
-      new RegExp(`^${klasor}/[a-z0-9-]+\\.${uzanti}$`),
-      `"${klasor}/<dosya-adi>.${uzanti}" biçiminde olmalı (küçük harf, tire)`,
+      new RegExp(`^/?${klasor}/[^/]+\\.${uzanti}$`, 'i'),
+      `"/${klasor}/<dosya-adi>.${uzanti}" biçiminde olmalı`,
     )
     .refine((yol) => existsSync(join(process.cwd(), 'public', yol)), {
       message: 'Dosya bulunamadı (public/ klasöründe olmalı)',

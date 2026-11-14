@@ -2,6 +2,6 @@ ad: Fırat
 slug: firat
 kisa_aciklama: "TASLAK — marka tanıtımı içerik paketiyle gelecek."
 sira: 1
-logo: ../../assets/markalar/firat.webp
+logo: /src/assets/markalar/firat.webp
 logo_kaynak_url: https://www.firat.com/
 web_sitesi: https://www.firat.com

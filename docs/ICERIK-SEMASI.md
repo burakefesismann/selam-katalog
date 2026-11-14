@@ -134,7 +134,7 @@ kaynak_sayfalar:
 **Görsel alanı** (VS Code tarafı doldurur; paketlerde gerekmez):
 ```yaml
 gorseller:
-  - gorsel: ../../assets/urunler/baumit-flexo-1.webp
+  - gorsel: /src/assets/urunler/baumit-flexo-1.webp
     alt_metin: Baumit Flexo 25 kg seramik yapıştırıcı torbası
     kaynak_url: https://baumit.com.tr/...
 ```
@@ -149,7 +149,7 @@ gorseller:
 | `slug` | ✔ | `firat` |
 | `kisa_aciklama` | ✔ | Marka listesinde görünen 1 cümle. |
 | `aciklama` | – | Marka sayfasındaki uzun tanıtım (birkaç paragraf, Markdown olabilir). |
-| `logo` | – | `../../assets/markalar/<slug>.webp` (VS Code tarafı doldurur). Yoksa adı yazılır. |
+| `logo` | – | `/src/assets/markalar/<slug>.webp` (VS Code tarafı doldurur). Yoksa adı yazılır. |
 | `logo_kaynak_url` | – | Logonun alındığı resmi sayfa. |
 | `web_sitesi` | – | Resmi site. |
 | `sira` | – | Marka şeridinde sıra. **Fırat en başta** (K12) → `sira: 1`. |
@@ -174,7 +174,7 @@ sira: 1
 | `slug` | ✔ | `tesisat-borulari`, `pprc-temiz-su` |
 | `ust_kategori` | – | Alt kategoriyse üst kategorinin slug'ı. Ana kategoride yazılmaz. |
 | `kisa_aciklama` | – | Kategori sayfasının başında 1–2 cümle. |
-| `gorsel` | – | Kategori kartı görseli (`../../assets/kategoriler/<slug>.webp`). |
+| `gorsel` | – | Kategori kartı görseli (`/src/assets/kategoriler/<slug>.webp`). |
 | `sira` | – | Ana kategoriler K11 sırasıyla: 10, 20, 30… |
 | `yayinda` | – | Varsayılan `true`. |
 

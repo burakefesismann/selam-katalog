@@ -7,6 +7,9 @@ const TR_HARITA: Record<string, string> = {
   ü: 'u', Ü: 'u', ö: 'o', Ö: 'o', ç: 'c', Ç: 'c',
 };
 
+/** Geçerli slug / dosya adı: küçük harf, rakam, tek tire ile ayrılmış */
+export const SLUG_DESENI = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
+
 export function slugify(metin: string): string {
   return metin
     .replace(/[ıİIşŞğĞüÜöÖçÇ]/g, (h) => TR_HARITA[h] ?? h)

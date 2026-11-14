@@ -3,7 +3,7 @@
 > Her oturumun başında oku, sonunda güncelle. Kısa tut.
 
 ## Şu an
-- Aktif görev: — (F1.5 tamamen bitti)
+- Aktif görev: F1.6 — Panel (Sveltia CMS) — kurulum yayında, kullanıcıyla canlı test bekleniyor
 - Site: https://burakefesismann.github.io/selam-katalog/
 - Faz: 1 — İskelet, görseller ve panel
 

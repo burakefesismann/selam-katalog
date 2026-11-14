@@ -7,6 +7,7 @@
  *  - Sıralama: `sira` (küçük önce), eşitse ada göre Türkçe alfabe.
  */
 import { getCollection, getEntry, type CollectionEntry } from 'astro:content';
+import { SLUG_DESENI } from './slug';
 
 export type Marka = CollectionEntry<'markalar'>;
 export type Kategori = CollectionEntry<'kategoriler'>;
@@ -190,6 +191,10 @@ async function dogrula(): Promise<void> {
     const dosya = k.filePath?.split(/[\\/]/).pop()?.replace(/\.(ya?ml|md)$/, '');
     if (dosya && dosya !== k.id) {
       hatalar.push(`${k.filePath} → dosya adı "${dosya}" ama slug "${k.id}". İkisi aynı olmalı.`);
+    } else if (!SLUG_DESENI.test(k.id)) {
+      hatalar.push(
+        `${k.filePath} → dosya adı "${k.id}" geçersiz: sadece küçük harf (a-z), rakam ve tire; Türkçe karakter yok (ı→i, ü→u, ö→o…).`,
+      );
     }
   }
 

@@ -7,7 +7,7 @@ markalar: [baumit]
 kisa_aciklama: "TASLAK — ürün bilgisi içerik paketi 001 ile gelecek."
 sira: 50
 gorseller:
-  - gorsel: ../../assets/urunler/baumit-flexo-1.webp
+  - gorsel: /src/assets/urunler/baumit-flexo-1.webp
     alt_metin: Baumit Baumacol Flexo 25 kg seramik yapıştırıcı torbası
     kaynak_url: https://baumit.com.tr/products/karo-uygulama-urunleri/karo-yapistirma-harclari/baumit-baumacol-flexo
 kaynak_sayfalar:

@@ -193,7 +193,7 @@ for (const dosya of dosyalar) {
   }
   basarili++;
 
-  const icerikYolu = `../../assets/${hedef}/${basename(cikti)}`;
+  const icerikYolu = `/src/assets/${hedef}/${basename(cikti)}`;
   if (hedef === 'urunler') {
     ozet.push(
       `# urunler/${slug}.md → gorseller:\n  - gorsel: ${icerikYolu}\n    alt_metin: <Türkçe açıklama>\n    kaynak_url: <görselin alındığı sayfa>`,

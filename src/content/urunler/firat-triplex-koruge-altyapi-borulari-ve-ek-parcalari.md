@@ -7,10 +7,10 @@ markalar: [firat]
 kisa_aciklama: "TASLAK — ürün bilgisi içerik paketi 001 ile gelecek."
 sira: 30
 gorseller:
-  - gorsel: ../../assets/urunler/firat-triplex-koruge-altyapi-borulari-ve-ek-parcalari-1.webp
+  - gorsel: /src/assets/urunler/firat-triplex-koruge-altyapi-borulari-ve-ek-parcalari-1.webp
     alt_metin: Siyah dış, turuncu iç yüzeyli Fırat Triplex koruge altyapı boruları
     kaynak_url: https://www.firat.com/kanalizasyon-boru-sistemleri/triplex-boru-ve-ek-parcalari
-  - gorsel: ../../assets/urunler/firat-triplex-koruge-altyapi-borulari-ve-ek-parcalari-2.webp
+  - gorsel: /src/assets/urunler/firat-triplex-koruge-altyapi-borulari-ve-ek-parcalari-2.webp
     alt_metin: Fırat Triplex koruge boru üretim tesisinde büyük çaplı boru
     kaynak_url: https://www.firat.com/kanalizasyon-boru-sistemleri/triplex-boru-ve-ek-parcalari
 kaynak_sayfalar:

@@ -1,0 +1,306 @@
+# yaml-language-server: $schema=https://unpkg.com/@sveltia/cms/schema/sveltia-cms.json
+#
+# Selam İnşaat katalog paneli (Sveltia CMS) — F1.6
+# Alanlar src/content.config.ts ve docs/ICERIK-SEMASI.md ile BİREBİR aynı olmalı. Biri değişirse diğerleri de.
+# Giriş: GitHub fine-grained token, sadece bu depo (K8). Token tarayıcıda saklanır, hiçbir dosyaya yazılmaz.
+
+backend:
+  name: github
+  repo: burakefesismann/selam-katalog
+  branch: main
+  auth_methods: [token] # sadece token ile giriş (K8); OAuth sunucumuz yok
+  commit_messages:
+    create: 'panel: {{collection}} / {{slug}} eklendi'
+    update: 'panel: {{collection}} / {{slug}} güncellendi'
+    delete: 'panel: {{collection}} / {{slug}} silindi'
+    uploadMedia: 'panel: görsel yüklendi ({{path}})'
+    deleteMedia: 'panel: görsel silindi ({{path}})'
+
+site_url: https://burakefesismann.github.io/selam-katalog/
+display_url: https://burakefesismann.github.io/selam-katalog/
+
+# Varsayılan medya klasörü (alan/koleksiyon kendi klasörünü vermezse)
+media_folder: /src/assets/urunler
+public_folder: /src/assets/urunler
+
+# Yüklenen fotoğraflar tarayıcıda WebP'ye çevrilir, uzun kenar en fazla 1600 px, EXIF silinir (K10).
+# Astro derlemede ayrıca optimize eder. Depoya 500 KB üstü girmesin diye kalite 80.
+media_libraries:
+  all:
+    transformations:
+      raster_image:
+        format: webp
+        quality: 80
+        width: 1600
+        height: 1600
+      svg:
+        optimize: true
+
+# Dosya adları (= slug = sayfa adresi): ASCII, küçük harf, Türkçe karakterler sadeleşir.
+slug:
+  encoding: ascii
+  clean_accents: true
+  sanitize_replacement: '-'
+
+collections:
+  # ───────────────────────────── ÜRÜNLER ─────────────────────────────
+  - name: urunler
+    label: Ürünler
+    label_singular: Ürün
+    description: Katalogdaki ürün kartları. İlk görsel ana görseldir.
+    folder: /src/content/urunler
+    extension: md
+    format: frontmatter
+    identifier_field: ad
+    slug: &slug_ayari
+      template: '{{slug}}'
+      editable: [create]
+      hint: >-
+        Sayfa adresi; addan otomatik üretilir, kaydettikten sonra DEĞİŞTİRİLEMEZ. Sadece küçük harf (a-z), rakam ve tire.
+        Kontrol et: ü → u, ö → o olmalı ("ue", "oe" değil). Ör: "Gümüş Flex" → gumus-flex
+      pattern: ['^[a-z0-9]+(-[a-z0-9]+)*$', 'Sadece küçük harf (a-z), rakam ve tire. Türkçe karakter yok: ı→i, ş→s, ğ→g, ü→u, ö→o, ç→c']
+    media_folder: /src/assets/urunler
+    public_folder: /src/assets/urunler
+    summary: '{{ad}}'
+    sortable_fields: [ad, sira]
+    view_filters:
+      - { label: Yayında olmayanlar, field: yayinda, pattern: false }
+      - { label: Ana sayfada öne çıkanlar, field: one_cikan, pattern: true }
+    fields:
+      - { label: Ad, name: ad, widget: string, hint: 'Kartta ve sayfada görünen ad. Ör: Baumit Flexo' }
+      - label: Kart tipi
+        name: kart_tipi
+        widget: select
+        options:
+          - { label: 'Ürün ailesi (grup) — ör. Fırat PPRC Borular', value: grup }
+          - { label: 'Marka serisi (marka_tur) — ör. ECA Lavabo Bataryaları', value: marka_tur }
+          - { label: 'Tek ürün, teknik detaylı (urun) — ör. Baumit Flexo', value: urun }
+        hint: Sayfada neyin öne çıkacağını belirler (K11).
+      - label: Kategori
+        name: kategori
+        widget: relation
+        collection: kategoriler
+        value_field: '{{slug}}'
+        search_fields: [ad]
+        display_fields: [ad]
+        hint: Ürünün durduğu EN ALT kategori (ör. "PPRC Temiz Su", "Tesisat Boruları" değil).
+      - label: Markalar
+        name: markalar
+        widget: relation
+        collection: markalar
+        value_field: '{{slug}}'
+        search_fields: [ad]
+        display_fields: [ad]
+        multiple: true
+        required: false
+        hint: İlk seçilen ana markadır. "Çeşitli markalar" ise boş bırak.
+      - { label: Kısa açıklama, name: kisa_aciklama, widget: text, hint: 'Ürün kartında görünür. 1–2 cümle.' }
+      - label: Görseller
+        name: gorseller
+        widget: list
+        required: false
+        label_singular: Görsel
+        summary: '{{fields.alt_metin}}'
+        thumbnail: gorsel
+        hint: İLK GÖRSEL ANA GÖRSELDİR — sürükleyerek sırala. Düz zeminli, ürünün tamamı görünen görseli en üste koy.
+        fields:
+          - { label: Görsel, name: gorsel, widget: image, hint: 'Telefon fotoğrafı da olur; otomatik küçültülür.' }
+          - { label: Görsel açıklaması (alt metin), name: alt_metin, widget: string, hint: 'Görme engelliler ve Google için. Ör: Baumit Flexo 25 kg seramik yapıştırıcı torbası' }
+          - label: Kaynak adresi
+            name: kaynak_url
+            widget: string
+            required: false
+            hint: Görsel internetten alındıysa üreticinin sayfa adresi. Kendi fotoğrafınsa boş bırak. Sitede görünmez.
+            pattern: ['^https?://.+', 'https:// ile başlayan bir adres olmalı']
+      - { label: Seriler / modeller, name: seriler, widget: list, required: false, hint: 'Özellikle marka serisi kartlarında. Ör: Tiera, Nita' }
+      - { label: Öne çıkanlar, name: one_cikanlar, widget: list, required: false, hint: 'Kısa maddeler, 2–5 tane. Ör: Esnek, Dona dayanıklı' }
+      - label: Kullanım alanları
+        name: kullanim_alanlari
+        widget: relation
+        collection: kullanim_alanlari
+        value_field: '{{slug}}'
+        search_fields: [ad]
+        display_fields: [ad]
+        multiple: true
+        required: false
+      - label: Teknik özellikler
+        name: teknik_ozellikler
+        widget: list
+        required: false
+        label_singular: Özellik
+        summary: '{{fields.ozellik}}: {{fields.deger}}'
+        hint: Özellik adı listede yoksa önce "Teknik özellik adları"na ekle. Birimi değere yazma (tanımdan gelir).
+        fields:
+          - label: Özellik
+            name: ozellik
+            widget: relation
+            collection: ozellik_tanimlari
+            value_field: '{{slug}}'
+            search_fields: [ad]
+            display_fields: [ad]
+          - { label: Değer, name: deger, widget: string, hint: 'Ör: C2TE, 60x60' }
+      - { label: Ölçüler / ambalajlar, name: olculer, widget: list, required: false, hint: 'Ör: Ø20 mm, Ø25 mm, 25 kg torba' }
+      - label: Teknik föy (PDF)
+        name: teknik_foy
+        widget: file
+        required: false
+        media_folder: /public/foyler
+        public_folder: /foyler
+        accept: application/pdf
+        hint: Üreticinin teknik föyü. Sitede "Teknik föyü indir" linki olur.
+      - label: İlgili ürünler
+        name: ilgili_urunler
+        widget: relation
+        collection: urunler
+        value_field: '{{slug}}'
+        search_fields: [ad]
+        display_fields: [ad]
+        multiple: true
+        required: false
+      - label: Kaynak sayfalar
+        name: kaynak_sayfalar
+        widget: list
+        required: false
+        hint: Üreticinin resmi ürün sayfaları (bilgi ve görsel kaynağı). Sitede GÖRÜNMEZ.
+      - &sira
+        label: Sıra
+        name: sira
+        widget: number
+        value_type: int
+        default: 100
+        required: false
+        hint: Küçük sayı önce gelir (ör. 10, 20, 30). Boş bırakılırsa 100.
+      - { label: Ana sayfada öne çıkar, name: one_cikan, widget: boolean, default: false, required: false }
+      - &yayinda
+        label: Yayında
+        name: yayinda
+        widget: boolean
+        default: true
+        required: false
+        hint: Kapalıysa sitede hiçbir yerde görünmez (silmeden gizlemek için).
+      - { label: Detaylı açıklama, name: body, widget: markdown, required: false, hint: 'Bölüm başlıkları için ## kullan: "Nerede kullanılır", "Nasıl uygulanır"' }
+
+  # ───────────────────────────── MARKALAR ─────────────────────────────
+  - name: markalar
+    label: Markalar
+    label_singular: Marka
+    folder: /src/content/markalar
+    extension: yaml
+    format: yaml
+    identifier_field: ad
+    slug: *slug_ayari
+    media_folder: /src/assets/markalar
+    public_folder: /src/assets/markalar
+    summary: '{{ad}}'
+    sortable_fields: [ad, sira]
+    fields:
+      - { label: Ad, name: ad, widget: string, hint: 'Ör: Fırat' }
+      - { label: Kısa açıklama, name: kisa_aciklama, widget: text, hint: 'Marka listesinde görünen 1 cümle.' }
+      - { label: Uzun tanıtım, name: aciklama, widget: markdown, required: false, hint: 'Marka sayfasında görünür.' }
+      - { label: Logo, name: logo, widget: image, required: false, hint: 'Tercihen SVG ya da şeffaf zeminli PNG.' }
+      - { label: Logonun kaynak adresi, name: logo_kaynak_url, widget: string, required: false, pattern: ['^https?://.+', 'https:// ile başlamalı'] }
+      - { label: Web sitesi, name: web_sitesi, widget: string, required: false, pattern: ['^https?://.+', 'https:// ile başlamalı'] }
+      - *sira
+      - *yayinda
+
+  # ───────────────────────────── KATEGORİLER ─────────────────────────────
+  - name: kategoriler
+    label: Kategoriler
+    label_singular: Kategori
+    folder: /src/content/kategoriler
+    extension: yaml
+    format: yaml
+    identifier_field: ad
+    slug: *slug_ayari
+    media_folder: /src/assets/kategoriler
+    public_folder: /src/assets/kategoriler
+    summary: '{{ad}}'
+    sortable_fields: [ad, sira]
+    fields:
+      - { label: Ad, name: ad, widget: string }
+      - label: Üst kategori
+        name: ust_kategori
+        widget: relation
+        collection: kategoriler
+        value_field: '{{slug}}'
+        search_fields: [ad]
+        display_fields: [ad]
+        required: false
+        hint: Alt kategoriyse üst kategoriyi seç. Ana kategoride boş bırak.
+      - { label: Kısa açıklama, name: kisa_aciklama, widget: text, required: false, hint: 'Kategori sayfasının başında görünür.' }
+      - { label: Kategori görseli, name: gorsel, widget: image, required: false, hint: 'Ana sayfadaki kategori kartında görünür.' }
+      - *sira
+      - *yayinda
+
+  # ───────────────────────────── LİSTELER ─────────────────────────────
+  - name: kullanim_alanlari
+    label: Kullanım alanları
+    label_singular: Kullanım alanı
+    description: Ürünlerde seçilen kullanım alanları (iç mekân, ıslak hacim…).
+    folder: /src/content/kullanim_alanlari
+    extension: yaml
+    format: yaml
+    identifier_field: ad
+    slug: *slug_ayari
+    summary: '{{ad}}'
+    sortable_fields: [ad, sira]
+    fields:
+      - { label: Ad, name: ad, widget: string }
+      - { label: İkon adı, name: ikon, widget: string, required: false, hint: 'Tasarım aşamasında (F2.1) belirlenecek. Şimdilik boş bırak.' }
+      - *sira
+      - *yayinda
+
+  - name: ozellik_tanimlari
+    label: Teknik özellik adları
+    label_singular: Teknik özellik adı
+    description: Karşılaştırma tablosunun satırları (K5). Ürünlerde bu listeden seçilir.
+    folder: /src/content/ozellik_tanimlari
+    extension: yaml
+    format: yaml
+    identifier_field: ad
+    slug: *slug_ayari
+    summary: '{{ad}}'
+    sortable_fields: [ad, sira]
+    fields:
+      - { label: Ad, name: ad, widget: string, hint: 'Ör: Maks. karo ebadı' }
+      - { label: Birim, name: birim, widget: string, required: false, hint: 'Ör: cm, kg/m², bar' }
+      - { label: Açıklama, name: aciklama, widget: text, required: false }
+      - *sira
+
+  # ───────────────────────────── AYARLAR ─────────────────────────────
+  - name: ayarlar
+    label: Ayarlar
+    files:
+      - name: genel
+        label: Firma, şubeler ve ana sayfa
+        file: src/content/ayarlar/genel.yaml
+        fields:
+          - label: Firma
+            name: firma
+            widget: object
+            fields:
+              - { label: Ünvan, name: unvan, widget: string }
+              - { label: Kısa ad, name: kisa_ad, widget: string }
+              - { label: Şehir, name: sehir, widget: string }
+              - { label: Telefon, name: telefon, widget: string, hint: 'Ör: 0 (464) 217 60 67' }
+              - { label: E-posta, name: eposta, widget: string, required: false }
+              - { label: WhatsApp, name: whatsapp, widget: string, required: false }
+              - { label: Web sitesi, name: web, widget: string, required: false }
+          - label: Şubeler
+            name: subeler
+            widget: list
+            label_singular: Şube
+            summary: '{{fields.ad}}'
+            fields:
+              - { label: Ad, name: ad, widget: string }
+              - { label: Adres, name: adres, widget: string }
+              - { label: Telefon, name: telefon, widget: string, required: false }
+              - { label: Çalışma saatleri, name: calisma_saatleri, widget: string, required: false }
+              - { label: Google Haritalar linki, name: harita_url, widget: string, required: false }
+          - label: Ana sayfa
+            name: ana_sayfa
+            widget: object
+            fields:
+              - { label: Başlık, name: baslik, widget: string }
+              - { label: Alt başlık, name: alt_baslik, widget: string, required: false }
+              - { label: Güven mesajı, name: guven_mesaji, widget: string, required: false, hint: 'Ör: 50 yıldır hizmetinizdeyiz' }
