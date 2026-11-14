@@ -1,5 +1,9 @@
 ---
 import '../styles/global.css';
+import { icerigiDogrula } from '../lib/katalog';
+
+// Eksik referans, slug/dosya adı uyuşmazlığı vb. varsa derlemeyi anlaşılır bir hatayla durdurur.
+await icerigiDogrula();
 
 interface Props {
   title: string;

@@ -37,7 +37,7 @@ Bitince: PLAN'da `[x]` → DURUM.md güncelle → commit + push → kullanıcıy
   Kullanıcıya Settings › Pages › Source: "GitHub Actions" ayarını adım adım anlat.
   *Bitti sayılır:* site github.io adresinde açılıyor; kırık link/görsel yok.
 
-- [ ] **F1.3 İçerik şeması**
+- [x] **F1.3 İçerik şeması**
   Astro content collections + zod. Alan adları Türkçe-ASCII:
   - **markalar:** ad, slug, logo, logo_kaynak_url?, kisa_aciklama, aciklama (uzun), web_sitesi?, sira, yayinda
   - **kategoriler:** ad, slug, ust_kategori? (alt kategori desteği), gorsel?, kisa_aciklama, sira, yayinda

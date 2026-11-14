@@ -1,0 +1,27 @@
+# Firma ve ana sayfa ayarları. Kaynak: docs/FIRMA.md (⚠ işaretliler teyit bekliyor).
+# Sadece herkese açık iletişim bilgileri buraya yazılır.
+firma:
+  unvan: Selam İnşaat Malzemeleri Tic. Ltd. Şti.
+  kisa_ad: Selam İnşaat
+  sehir: Rize
+  telefon: 0 (464) 217 60 67
+  eposta: selaminsaat@hotmail.com
+  web: https://selaminsaat.com.tr
+
+subeler:
+  - ad: Merkez
+    adres: Ekrem Orhon Mah. Cumhuriyet Cad. No:175/A, Merkez / Rize
+    telefon: 0 (464) 217 60 67
+    calisma_saatleri: Pzt–Cmt 08:00–18:30, Pazar kapalı
+  - ad: Güneysu Depo
+    adres: Ulucamii Mah., Ahmet Yesevi Cad., Güneysu / Rize
+    calisma_saatleri: Pzt–Cmt 08:00–17:30, Pazar kapalı
+  - ad: Yurtbay Seramik Mağazası
+    adres: Gülbahar Mah., Yenişehir Cad. No:99, Merkez / Rize
+    telefon: 0 (464) 212 16 95
+    calisma_saatleri: Pzt–Cmt 09:00–17:00, Pazar kapalı
+
+ana_sayfa:
+  baslik: Yapı malzemelerinde aradığınız her şey
+  alt_baslik: Tesisattan boyaya, seramikten hırdavata ürünlerimizi inceleyin; bilgi için arayın.
+  guven_mesaji: 50 yıldır hizmetinizdeyiz

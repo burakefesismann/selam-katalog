@@ -100,5 +100,10 @@ Kullanıcı `/devam` yazarsa bu adımlar + sıradaki görev yapılır. Diğer ko
   · `public/` olduğu gibi kopyalanan dosyalar.
 - Site `base` = `/selam-katalog` (astro.config.mjs). **İç linkleri elle `/...` diye yazma**; `src/lib/url.ts` →
   `url('urunler/x')` kullan. Astro'nun `<Image>` / import edilen görselleri base'i kendisi ekler.
+- İçerik şeması: `src/content.config.ts` ↔ `docs/ICERIK-SEMASI.md` (biri değişirse diğeri de, panel ayarı da).
+  Sayfalar içeriği **sadece `src/lib/katalog.ts`** üzerinden okur (`getUrunler()`, `getUrunDetay()`…);
+  `yayinda: false` gizleme ve sıralama orada. Doğrudan `getCollection()` kullanma.
+  Astro eksik referansta derlemeyi durdurmuyor; `icerigiDogrula()` (BaseLayout'ta) durduruyor — kaldırma.
+- Slug üretimi: `src/lib/slug.ts` → `slugify()` (Türkçe karakter dönüşümü).
 - Tailwind v4: ayar dosyası yok, tema `global.css` içinde `@theme` ile tanımlanır (F2.1).
 - TypeScript 6 kullanılıyor (TS 7 ile `@astrojs/check` uyumlu değil; check TS 7'yi desteklemeden yükseltme).
