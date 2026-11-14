@@ -1,0 +1,95 @@
+# Selam İnşaat Ürün Kataloğu — Proje Kuralları
+
+Bu dosya her oturumda otomatik okunur. Burada yazanlar kesin kuraldır.
+
+## Proje nedir
+Selam İnşaat Malzemeleri Tic. Ltd. Şti. (Rize, 50 yıllık yapı malzemeleri firması) için
+dinamik ürün tanıtım kataloğu (sadece katalog sitesi). **Fiyat YOK, sepet YOK, satış YOK** — sadece tanıtım ve bilgilendirme.
+**Ürün görselleri sitenin en önemli parçası** (bkz. Görseller bölümü).
+Firma bilgileri: `docs/FIRMA.md` · Kararlar: `docs/KARARLAR.md` · Görevler: `docs/PLAN.md` · Neredeyiz: `docs/DURUM.md`
+Kategori ağacı ve kart listesi (onaylı): `docs/KATALOG-YAPISI.md`
+
+## Ekip ve çalışma şekli
+- Kullanıcı yazılımcı değil. Açıklamaları **Türkçe, sade ve kısa** yap. Kullanıcının kendisinin yapması
+  gereken bir şey varsa (GitHub'da tıklama, program kurma) adım adım yaz.
+- Planlama ve içerik ayrı bir Claude sohbetinde ("beyin takımı") yapılıyor. Oradan gelen kararlar
+  `docs/KARARLAR.md`'ye, ürün içerikleri `icerik-paketleri/` klasörüne gelir.
+- Oturum limitleri sık doluyor. **Hafıza sohbette değil, dosyalarda tutulur.**
+
+## Her oturumun başında (zorunlu)
+1. `docs/DURUM.md`'yi oku (neredeyiz, yarım kalan iş var mı).
+2. `docs/PLAN.md`'de sıradaki görevi bul.
+3. `git status` ve `git log --oneline -5` ile son durumu kontrol et.
+
+Kullanıcı `/devam` yazarsa bu adımlar + sıradaki görev yapılır. Diğer komutlar (`.claude/skills/`):
+`/kaydet` (acil durum kaydı), `/rapor` (beyin takımına özet), `/gorsel` (ürün görseli bul-indir-doğrula).
+
+## Görev kuralları
+- Bir oturumda **BİR görev** (PLAN.md'deki kimliğiyle, ör. F1.3). Görev bir oturuma sığmayacak kadar büyükse
+  önce PLAN.md'de alt görevlere böl (F1.3a, F1.3b), bunu commit'le, sonra başla.
+- Başlarken `DURUM.md > Şu an` bölümüne görev kimliğini yaz.
+- Bitirince sırayla:
+  1. `npm run build` hatasız geçmeli (proje kurulduktan sonra).
+  2. PLAN.md'de kutuyu `[x]` yap.
+  3. DURUM.md'yi güncelle (Şu an, Sıradaki, Notlar) ve Oturum günlüğüne 1 satır ekle.
+  4. `git add -A && git commit -m "F1.3: kısa açıklama"` ve `git push`.
+  5. Kullanıcıya 3–5 satır Türkçe özet: ne yapıldı, kendisi nasıl kontrol eder, sıradaki görev ne.
+- Bağlam/limit dolmak üzereyse ya da görev yarıda kalacaksa: `DURUM.md > Yarım kalan` bölümüne ne yapıldığını,
+  ne kaldığını, hangi dosyalara dokunulduğunu yaz ve `git commit -m "WIP F1.3: ..."` at.
+  **Asla commit'siz yarım iş bırakma.**
+- `KARARLAR.md`'deki kararları kullanıcıya sormadan değiştirme. Yeni bir teknik karar gerekirse kullanıcıya sor,
+  onaylanınca KARARLAR.md'ye tarihle ekle.
+- PLAN.md'ye kendi kafana göre özellik ekleme; fikrin varsa `DURUM.md > Öneriler`e yaz.
+
+## Güvenlik — depo HERKESE AÇIK
+- Token, şifre, API anahtarı, `.env` içeriği **asla** depoya girmez. `.gitignore`'u kontrol et.
+- Fiyat, maliyet, tedarikçi bilgisi, müşteri bilgisi, çalışanların kişisel telefon/e-postası depoya girmez.
+  Sadece firmanın herkese açık iletişim bilgileri (`docs/FIRMA.md`).
+- Panel girişi GitHub token ile yapılır; token kullanıcının tarayıcısında saklanır, koda/dosyaya yazılmaz.
+
+## İçerik kuralları
+- **Ürün bilgisi UYDURMA.** Teknik değerler (sınıf, sarfiyat, ebat, basınç, çap vb.) sadece kullanıcının verdiği
+  içerikten veya `icerik-paketleri/`'nden gelir. Bilinmiyorsa alan boş kalır.
+- Yer tutucu içerik gerekirse başlığa/açıklamaya `TASLAK` yaz ki gözden kaçmasın.
+- Site dili Türkçe. Kod, değişken, bileşen, dosya adları İngilizce; içerik alan adları Türkçe-ASCII
+  (`kisa_aciklama`), panel etiketleri tam Türkçe ("Kısa açıklama").
+- Türkçe karakterler:
+  - Slug: ı→i, İ→i, ş→s, ğ→g, ü→u, ö→o, ç→c (özellikle **ı** ve **İ**'yi test et).
+  - Büyük/küçük harf: `toLocaleUpperCase('tr-TR')` / `toLocaleLowerCase('tr-TR')`. CSS `text-transform` kullanılan
+    yerlerde `<html lang="tr">` şart.
+  - Sıralama: `localeCompare(x, 'tr')`.
+
+## Görseller — ÇOK ÖNEMLİ
+- Her ürünün en az 1 görseli olmalı. Görseli olmayan ürün "eksik" sayılır ve raporlanır; sitede kırık görsel
+  değil, şık bir yer tutucu (marka logosu + kategori) görünür.
+- Kaynak önceliği: 1) kullanıcının verdiği/çektiği fotoğraf, 2) üreticinin resmi sitesi, kataloğu, bayi materyali.
+- **ALINMAZ:** pazaryerleri ve başka satıcılar (Koçtaş, Hepsiburada, Trendyol, Amazon, n11, rakip bayiler…),
+  stok fotoğraf siteleri, filigranlı ya da üstüne yazı/fiyat bindirilmiş görseller.
+- Her görselin alındığı sayfa `kaynak_url` alanına yazılır.
+- İndirilen her görseli **aç ve bak**: doğru ürün mü (marka/model/ambalaj), filigran var mı, kalite yeterli mi
+  (uzun kenar ≥ 800 px). Emin değilsen kullanma, raporla.
+- Standart: uzun kenar ≤ 1600 px, WebP, Türkçe `alt_metin`. Sitede tutarlı görünüm CSS ile sağlanır
+  (sabit en-boy oranlı kutu, `object-contain`, açık zemin).
+- Orijinal indirmeler `.gorsel-orijinal/` klasöründe yerelde kalır (gitignore'da), depoya sadece hazırlanmış hali girer.
+- Görsel bulma işi `/gorsel` komutunun adımlarıyla yapılır.
+
+## Teknik yığın (gerekçeler: docs/KARARLAR.md)
+- Astro (statik site, güncel kararlı sürüm) + Tailwind CSS + TypeScript (strict)
+- İçerik: Astro content collections, `src/content/` altında Markdown/JSON dosyaları
+- Panel: Sveltia CMS, `/admin` adresinde, GitHub backend
+- Yayın: GitHub Actions → GitHub Pages (ileride selaminsaat.com.tr alan adı)
+- Arama: Pagefind
+- Paket yöneticisi: npm
+
+## Kalite çizgisi
+- Önce mobil. Her sayfa 360px genişlikte düzgün görünmeli.
+- Görseller optimize (WebP/AVIF, doğru boyut, lazy-load). Depoya 500 KB'tan büyük görsel girmez; büyükse küçült.
+- Lighthouse hedefi: performans, erişilebilirlik, SEO 90+.
+- Font Türkçe karakterleri (ğ ş ı İ ç ö ü) desteklemeli ve kendi sitemizden yüklenmeli (Fontsource).
+- Erişilebilirlik: turuncu zemin üstündeki yazıların kontrastını kontrol et.
+
+## Komutlar
+(Proje kurulunca F1.1'de gerçek komutlarla güncelle.)
+- `npm run dev` — yerel önizleme
+- `npm run build` — derleme (her görev sonunda)
+- `npm run preview` — derlenmiş siteyi önizleme

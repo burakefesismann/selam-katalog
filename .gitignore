@@ -1,0 +1,22 @@
+# bağımlılıklar ve derleme çıktıları
+node_modules/
+dist/
+.astro/
+
+# gizli bilgiler — ASLA depoya girmez
+.env
+.env.*
+!.env.example
+*.pem
+*token*.txt
+
+# indirilen orijinal görseller (sadece yerelde; depoya hazırlanmış hali girer)
+.gorsel-orijinal/
+
+# sistem dosyaları
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Claude Code yerel ayarları (kişisel)
+.claude/settings.local.json
