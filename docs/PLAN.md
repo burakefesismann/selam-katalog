@@ -85,8 +85,10 @@ Bitince: PLAN'da `[x]` → DURUM.md güncelle → commit + push → kullanıcıy
   Alt görevler (tek oturuma sığmadığı için bölündü, 2026-11-14):
   - [x] **F1.5a** Araçlar: a) `gorsel:hazirla`, b) `gorsel:rapor`, c) yer tutucu bileşen.
     *Bitti sayılır:* iki komut örnek dosyalarla çalışıyor; görselsiz ürün sayfasında yer tutucu görünüyor; build geçiyor.
-  - [ ] **F1.5b** d) `/gorsel` adımlarıyla 6 örnek ürün + 2 marka logosu; kullanıcıya gösterip onay al.
+  - [x] **F1.5b** d) `/gorsel` adımlarıyla 6 örnek ürün + 2 marka logosu; kullanıcıya gösterip onay al.
   - [ ] **F1.5c** e) Arka plan temizleme denemesi (2–3 ürün, önce/sonra) → kullanıcı kararı.
+    + Küçük görselleri bozmadan büyütme denemesi (kullanıcı isteği, 2026-11-14): yapay zekâ ile büyütme (ör. Real-ESRGAN)
+    Fırat 710 px ve Baumit 400 px görsellerde; özellikle ambalaj yazıları bozuluyor mu bak. Önce/sonra göster → kullanıcı kararı.
 
 - [ ] **F1.6 Panel (Sveltia CMS)**
   `/admin` altında Sveltia CMS, GitHub backend, bu depo. Koleksiyonlar F1.3 şemasıyla birebir.

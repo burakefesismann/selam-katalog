@@ -22,7 +22,8 @@ const { urun, marka, kategoriAdi, oncelikli = false, genislik = 800, class: sini
 const ana = urun.data.gorseller[0];
 ---
 
-<div class:list={['aspect-[4/3] w-full overflow-hidden rounded-md bg-neutral-100', sinif]}>
+<!-- Üretici görselleri çoğunlukla beyaz zeminli → görsel varken kutu beyaz; yer tutucu kendi gri zeminini getirir -->
+<div class:list={['aspect-[4/3] w-full overflow-hidden rounded-md border border-neutral-200 bg-white', sinif]}>
   {
     ana ? (
       <Image
