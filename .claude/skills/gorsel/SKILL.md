@@ -27,6 +27,8 @@ Bir oturumda **en fazla ~10 ürün** işle; kalanları `DURUM.md > Yarım kalan`
 
 3. **İndir**
    `curl -sL -o .gorsel-orijinal/<urun-slug>-<n>.<uzantı> "<görsel-url>"`
+   Marka logosu: `.gorsel-orijinal/<marka-slug>.<uzantı>` (SVG varsa SVG'yi tercih et).
+   Dosya adı böyle olursa `gorsel:hazirla` hedef klasörü ve adı kendisi bulur.
 
 4. **Doğrula — görseli aç ve kendi gözünle bak** (gerekirse geçici PNG'ye çevirip aç)
    - Doğru ürün mü? Marka, model, ambalaj ve renk ürün adıyla uyuşuyor mu?

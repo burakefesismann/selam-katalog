@@ -1,0 +1,35 @@
+---
+/**
+ * Görseli olmayan ürün için yer tutucu: açık zemin + marka logosu (yoksa marka adı) + kategori adı.
+ * Kırık görsel asla gösterilmez (K10). Kutunun oranını/boyutunu kapsayan eleman belirler.
+ */
+import { Image } from 'astro:assets';
+import type { Marka } from '../lib/katalog';
+
+interface Props {
+  marka?: Marka;
+  kategoriAdi: string;
+  class?: string;
+}
+
+const { marka, kategoriAdi, class: sinif = '' } = Astro.props;
+const logo = marka?.data.logo;
+---
+
+<div
+  class:list={[
+    'flex h-full w-full flex-col items-center justify-center gap-3 bg-neutral-100 p-4 text-center',
+    sinif,
+  ]}
+  role="img"
+  aria-label={`${marka ? `${marka.data.ad} — ` : ''}${kategoriAdi} (görsel hazırlanıyor)`}
+>
+  {
+    logo ? (
+      <Image src={logo} alt="" width={160} class="h-auto max-h-16 w-auto max-w-[60%] object-contain opacity-80" />
+    ) : (
+      marka && <span class="text-lg font-bold text-neutral-600">{marka.data.ad}</span>
+    )
+  }
+  <span class="text-sm text-neutral-600">{kategoriAdi}</span>
+</div>

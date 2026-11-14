@@ -93,6 +93,10 @@ Kullanıcı `/devam` yazarsa bu adımlar + sıradaki görev yapılır. Diğer ko
 - `npm run dev` — yerel önizleme → http://localhost:4321/selam-katalog/
 - `npm run build` — tip kontrolü (`astro check`) + derleme → `dist/` (her görev sonunda, 0 hata şart)
 - `npm run preview` — derlenmiş siteyi önizleme
+- `npm run gorsel:hazirla -- <dosya|klasör> [--hedef urunler|markalar|kategoriler] [--ad <slug>] [--uzerine-yaz]`
+  — WebP, ≤1600 px, ≤500 KB, EXIF silinir, yön düzeltilir; `src/assets/<hedef>/` içine. Hedef dosya adından bulunur
+  (`baumit-flexo-1.jpg` → ürün, `firat.png` → marka logosu). Sonunda içeriğe eklenecek YAML satırlarını yazar.
+- `npm run gorsel:rapor` — görselsiz / küçük / kaynaksız / kayıp görselli ürünler, logosuz markalar, görselsiz ana kategoriler.
 
 ## Proje yapısı ve teknik notlar
 - `src/pages` sayfalar · `src/layouts` sayfa iskeletleri (`BaseLayout.astro`: `<html lang="tr">`, global CSS)
@@ -104,6 +108,9 @@ Kullanıcı `/devam` yazarsa bu adımlar + sıradaki görev yapılır. Diğer ko
   Sayfalar içeriği **sadece `src/lib/katalog.ts`** üzerinden okur (`getUrunler()`, `getUrunDetay()`…);
   `yayinda: false` gizleme ve sıralama orada. Doğrudan `getCollection()` kullanma.
   Astro eksik referansta derlemeyi durdurmuyor; `icerigiDogrula()` (BaseLayout'ta) durduruyor — kaldırma.
+- Görsel gösterimi: `src/components/UrunGorseli.astro` (sabit 4:3 kutu, object-contain, açık zemin; görsel yoksa
+  `GorselYerTutucu.astro`). İçerikteki görsel dosyası yoksa derleme durur (Astro `ImageNotFound`) → kırık görsel çıkmaz.
+- `scripts/*.ts` Node'un yerleşik TS desteğiyle çalışır: enum/namespace kullanma, import'larda `.ts` uzantısı yaz.
 - Slug üretimi: `src/lib/slug.ts` → `slugify()` (Türkçe karakter dönüşümü).
 - Tailwind v4: ayar dosyası yok, tema `global.css` içinde `@theme` ile tanımlanır (F2.1).
 - TypeScript 6 kullanılıyor (TS 7 ile `@astrojs/check` uyumlu değil; check TS 7'yi desteklemeden yükseltme).

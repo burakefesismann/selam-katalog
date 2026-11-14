@@ -1,8 +1,8 @@
 ---
 // F1.4: basit (tasarımsız) ürün detay sayfası. Sadece dolu bölümler görünür. Tasarım F2.4'te.
 import type { GetStaticPaths } from 'astro';
-import { Image } from 'astro:assets';
 import { render } from 'astro:content';
+import UrunGorseli from '../../components/UrunGorseli.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getAyarlar, getKategoriYolu, getUrunDetay, getUrunler, telLink, type Urun } from '../../lib/katalog';
 import { url } from '../../lib/url';
@@ -17,11 +17,10 @@ interface Props {
 
 const { urun } = Astro.props;
 const { data } = urun;
-const { markalar, kullanimAlanlari, teknikOzellikler, ilgiliUrunler } = await getUrunDetay(urun);
+const { kategori, markalar, kullanimAlanlari, teknikOzellikler, ilgiliUrunler } = await getUrunDetay(urun);
 const kategoriYolu = await getKategoriYolu(data.kategori.id);
 const { firma } = await getAyarlar();
 const { Content } = await render(urun);
-const anaGorsel = data.gorseller[0];
 const KART_TIPI = { grup: 'Ürün ailesi', marka_tur: 'Marka serisi', urun: 'Ürün' } as const;
 ---
 
@@ -40,15 +39,7 @@ const KART_TIPI = { grup: 'Ürün ailesi', marka_tur: 'Marka serisi', urun: 'Ür
       <p class="mt-2">{data.kisa_aciklama}</p>
     </header>
 
-    {
-      anaGorsel ? (
-        <Image src={anaGorsel.gorsel} alt={anaGorsel.alt_metin} width={800} class="h-auto max-w-full" />
-      ) : (
-        <p class="rounded border border-dashed border-neutral-400 p-6 text-center text-neutral-600">
-          Görsel henüz eklenmedi
-        </p>
-      )
-    }
+    <UrunGorseli urun={urun} marka={markalar[0]} kategoriAdi={kategori.data.ad} oncelikli />
 
     {
       data.one_cikanlar.length > 0 && (

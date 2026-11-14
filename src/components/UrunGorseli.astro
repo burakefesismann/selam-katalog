@@ -1,0 +1,42 @@
+---
+/**
+ * Ürünün ana görseli — sabit oranlı kutu, açık zemin, object-contain (CLAUDE.md > Görseller).
+ * Görsel yoksa GorselYerTutucu. Ürün kartı (F2.1) ve detay sayfası bunu kullanır.
+ */
+import { Image } from 'astro:assets';
+import type { Marka, Urun } from '../lib/katalog';
+import GorselYerTutucu from './GorselYerTutucu.astro';
+
+interface Props {
+  urun: Urun;
+  marka?: Marka;
+  kategoriAdi: string;
+  /** İlk ekrandaki görsel için true (LCP); diğerleri lazy */
+  oncelikli?: boolean;
+  /** Görüntülenecek yaklaşık genişlik (px) — srcset buna göre üretilir */
+  genislik?: number;
+  class?: string;
+}
+
+const { urun, marka, kategoriAdi, oncelikli = false, genislik = 800, class: sinif = '' } = Astro.props;
+const ana = urun.data.gorseller[0];
+---
+
+<div class:list={['aspect-[4/3] w-full overflow-hidden rounded-md bg-neutral-100', sinif]}>
+  {
+    ana ? (
+      <Image
+        src={ana.gorsel}
+        alt={ana.alt_metin}
+        width={genislik}
+        widths={[Math.round(genislik / 2), genislik, Math.min(genislik * 2, 1600)]}
+        sizes={`(max-width: ${genislik}px) 100vw, ${genislik}px`}
+        loading={oncelikli ? 'eager' : 'lazy'}
+        fetchpriority={oncelikli ? 'high' : 'auto'}
+        class="h-full w-full object-contain"
+      />
+    ) : (
+      <GorselYerTutucu marka={marka} kategoriAdi={kategoriAdi} />
+    )
+  }
+</div>
