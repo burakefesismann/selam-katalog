@@ -13,7 +13,7 @@ const { firma } = await getAyarlar();
 const MENU = [
   { ad: 'Ürünler', adres: url('urunler') },
   { ad: 'Markalar', adres: url('markalar') },
-  { ad: 'İletişim', adres: '#iletisim' },
+  { ad: 'İletişim', adres: url('iletisim') },
 ];
 
 const aramaAdresi = url('ara');
@@ -35,7 +35,7 @@ const simdiki = Astro.url.pathname;
                 href={m.adres}
                 class:list={[
                   'rounded-md px-3 py-2 font-semibold no-underline hover:bg-zemin',
-                  simdiki.startsWith(m.adres) && m.adres !== '#iletisim' ? 'text-turuncu-koyu' : 'text-antrasit',
+                  simdiki.startsWith(m.adres) ? 'text-turuncu-koyu' : 'text-antrasit',
                 ]}
               >
                 {m.ad}

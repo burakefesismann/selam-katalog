@@ -28,6 +28,7 @@ const { title, description = 'Selam İnşaat ürün kataloğu — Rize', noindex
     <meta name="theme-color" content="#2b2a29" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    <slot name="head" />
   </head>
   <body class="flex min-h-screen flex-col pb-20 md:pb-0">
     <a

@@ -1,7 +1,7 @@
 ---
 /** Alt bilgi: firma, şubeler (adres, telefon, saatler), iletişim. Veriler: src/content/ayarlar/genel.yaml */
 import { Clock, Mail, MapPin, Phone } from '@lucide/astro';
-import { getAyarlar, telLink } from '../lib/katalog';
+import { getAyarlar, haritaLinki, telLink } from '../lib/katalog';
 
 const { firma, subeler, ana_sayfa } = await getAyarlar();
 const yil = new Date().getFullYear();
@@ -42,13 +42,9 @@ const yil = new Date().getFullYear();
               <p class="font-semibold text-white">{s.ad}</p>
               <p class="flex gap-2">
                 <MapPin size={16} class="mt-0.5 shrink-0 text-turuncu" aria-hidden="true" />
-                {s.harita_url ? (
-                  <a href={s.harita_url} class="hover:text-turuncu" rel="noopener" target="_blank">
-                    {s.adres}
-                  </a>
-                ) : (
-                  <span>{s.adres}</span>
-                )}
+                <a href={haritaLinki(s, firma.kisa_ad)} class="hover:text-turuncu" rel="noopener" target="_blank">
+                  {s.adres}
+                </a>
               </p>
               {s.telefon && (
                 <p class="flex gap-2">

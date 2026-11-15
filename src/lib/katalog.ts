@@ -349,6 +349,16 @@ export async function getAyarlar() {
   return kayit.data;
 }
 
+/**
+ * Şube için Google Haritalar linki: panelde `harita_url` varsa o; yoksa Google'ın resmi arama linki
+ * (https://developers.google.com/maps/documentation/urls) firma adı + adresle — konum uydurulmaz.
+ */
+export function haritaLinki(sube: { ad: string; adres: string; harita_url?: string }, firmaAdi: string): string {
+  if (sube.harita_url) return sube.harita_url;
+  const sorgu = `${firmaAdi} ${sube.ad}, ${sube.adres}`;
+  return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(sorgu)}`;
+}
+
 /** "0 (464) 217 60 67" → "tel:+904642176067" */
 export function telLink(telefon: string): string {
   const rakam = telefon.replace(/\D/g, '').replace(/^0/, '');

@@ -3,7 +3,7 @@
 > Her oturumun başında oku, sonunda güncelle. Kısa tut.
 
 ## Şu an
-- Aktif görev: — (F2.7 bitti)
+- Aktif görev: — (F2.8 bitti)
 - Site: https://burakefesismann.github.io/selam-katalog/
 - Faz: 2 — Vitrin tasarımı
 
@@ -11,7 +11,7 @@
 - Yok
 
 ## Sıradaki
-- F2.8 — İletişim sayfası (şubeler, Google Haritalar linki, tıklayınca arayan telefonlar)
+- F2.9 — Kalite turu (360/768/masaüstü, Lighthouse 90+, sitemap, robots, OG görseli, 404, favicon)
 
 ## Kullanıcıdan beklenenler
 - [~] Logo: `kaynaklar/logo/selamfis.png` geldi (2026-11-15 tekrar aynı dosya geldi; daha büyüğü yok) (474×129 PNG, şeffaf zemin, turuncu+gri). Vektör (SVG/AI/PDF) ya da
@@ -20,7 +20,9 @@
   Fırat PPRC (2), PVC atık su ek parçaları, Triplex (2) — asıl 710 px · Baumit Basic, Flexo, Flex Uni — asıl 400 px.
   Fırat logosu 360 px (logo, büyütülmedi).
   Mağazada çekilebilir ya da üreticiden yüksek çözünürlüklü görsel istenebilir. Güncel liste: `npm run gorsel:rapor`.
-- [ ] docs/FIRMA.md'deki ⚠ işaretli bilgilerin teyidi
+- [ ] docs/FIRMA.md'deki ⚠ işaretli bilgilerin teyidi (özellikle Güneysu Depo telefonu, e-posta)
+- [ ] (İsteğe bağlı) Şubelerin kesin Google Haritalar linkleri → panel: Ayarlar › Şubeler › Google Haritalar linki.
+  Boşken Google adres araması kullanılıyor.
 - [ ] Marka ve ürün listesi (beyin takımı içerik paketine çevirecek)
 
 ## Netleşenler (2026-11-14)
@@ -119,6 +121,11 @@
   de çıkıyor (kategori görselinin dosya adı aranabilir oluyor; sonuç yine ilgili, bırakıldı). Pagefind Default UI
   denendi, gizli tarayıcıda sonuç vermedi → kendi arayüzümüz. Header, mobil alt çubuk, ana sayfa formu → /ara.
 
+- F2.8: `/iletisim` — şube kartları (adres, saat, tel linki, "Ara", "Yol tarifi"), büyük arama kutusu,
+  HardwareStore JSON-LD (sadece bilinen alanlar; `<slot name="head">` BaseLayout'a eklendi). `haritaLinki()`:
+  `harita_url` yoksa Google Maps resmi arama linki (firma adı + adres). Menü "İletişim" → /iletisim; footer adresleri
+  de harita linki.
+
 ## Öneriler
 - (Plana eklenmesi önerilen fikirler. Kullanıcı onaylarsa PLAN.md'ye taşınır.)
 - Ana sayfadaki 11 ana kategori kartı (F2.2) için kategori görselleri gerekecek; planda ayrı görev yok.
@@ -147,3 +154,4 @@
 | 2026-11-15 | F2.5 Marka sayfaları | Liste + detay, Markdown tanıtım, kategoriye göre gruplu; menü/şerit/rozet linkleri; 397 link kırıksız | F2.5 |
 | 2026-11-15 | F2.6 Karşılaştırma | Otomatik tablo (2+ teknikli ürün), sabit özellik sütunu, kategori/ürün linkleri; test edildi | F2.6 |
 | 2026-11-15 | F2.7 Arama | Pagefind + kendi arayüz, görselli sonuçlar, Türkçe karakter testi ✓, tüm arama linkleri /ara | F2.7 |
+| 2026-11-15 | F2.8 İletişim | /iletisim, şube kartları, yol tarifi, tel linkleri, JSON-LD; 360 px taşma yok | F2.8 |

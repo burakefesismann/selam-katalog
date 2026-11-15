@@ -135,7 +135,7 @@ Bitince: PLAN'da `[x]` → DURUM.md güncelle → commit + push → kullanıcıy
   (satırlar: ozellik_tanimlari, sütunlar: ürünler, sütun başında ürün görseli). Mobilde okunur olmalı.
 - [x] **F2.7 Arama** — Pagefind ile site içi arama, sonuçlarda küçük görsel; header'da arama kutusu.
   Türkçe karakterle test et.
-- [ ] **F2.8 İletişim** — şubeler (adres, telefon, saatler, Google Haritalar linki), tıklayınca arayan telefon linkleri.
+- [x] **F2.8 İletişim** — şubeler (adres, telefon, saatler, Google Haritalar linki), tıklayınca arayan telefon linkleri.
   Kurumsal sayfa yok (K3).
 - [ ] **F2.9 Kalite turu** — 360px / 768px / masaüstü, Lighthouse 90+ (özellikle görsel yükleme hızı / LCP:
   ilk ekrandaki görsel öncelikli, diğerleri lazy), sitemap, robots.txt, title/description, Open Graph görseli
