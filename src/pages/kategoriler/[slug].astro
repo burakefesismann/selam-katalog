@@ -5,9 +5,10 @@
  * - Liste her zaman HTML'de (JavaScript kapalıyken de görünür). Filtre sadece JS açıkken görünür ve çalışır.
  */
 import type { GetStaticPaths } from 'astro';
-import { ChevronRight, Phone, SlidersHorizontal } from '@lucide/astro';
+import { Phone, SlidersHorizontal } from '@lucide/astro';
 import BolumBasligi from '../../components/BolumBasligi.astro';
 import Buton from '../../components/Buton.astro';
+import KonumYolu from '../../components/KonumYolu.astro';
 import UrunKarti from '../../components/UrunKarti.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import {
@@ -23,7 +24,7 @@ import {
   type Kategori,
   type Urun,
 } from '../../lib/katalog';
-import { kategoriUrl, url } from '../../lib/url';
+import { kategoriUrl } from '../../lib/url';
 
 export const getStaticPaths = (async () => {
   return (await getKategoriler()).map((kategori) => ({ params: { slug: kategori.id }, props: { kategori } }));
@@ -92,27 +93,7 @@ let kartSirasi = 0;
   description={kategori.data.kisa_aciklama ?? `${kategori.data.ad} ürünleri — ${firma.kisa_ad}, ${firma.sehir}`}
 >
   <main class="mx-auto max-w-6xl px-4 py-8">
-    <nav aria-label="Konum" class="mb-6 text-sm text-stone-600">
-      <ol class="flex flex-wrap items-center gap-1">
-        <li><a href={url('/')} class="hover:text-turuncu-koyu hover:underline">Ana sayfa</a></li>
-        {
-          yol.map((k, i) => (
-            <li class="flex items-center gap-1">
-              <ChevronRight size={14} aria-hidden="true" />
-              {i === yol.length - 1 ? (
-                <span aria-current="page" class="font-semibold text-antrasit">
-                  {k.data.ad}
-                </span>
-              ) : (
-                <a href={kategoriUrl(k.id)} class="hover:text-turuncu-koyu hover:underline">
-                  {k.data.ad}
-                </a>
-              )}
-            </li>
-          ))
-        }
-      </ol>
-    </nav>
+    <KonumYolu ogeler={yol.map((k) => ({ ad: k.data.ad, adres: kategoriUrl(k.id) }))} />
 
     <BolumBasligi
       seviye="h1"

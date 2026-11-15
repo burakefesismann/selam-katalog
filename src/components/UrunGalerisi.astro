@@ -1,0 +1,188 @@
+---
+/**
+ * Ürün görsel galerisi (F2.4).
+ * - Ana alan: yatay kaydırmalı şerit (scroll-snap) → mobilde parmakla kaydırma, JS'siz de çalışır.
+ * - Küçük resimler: tıklayınca o görsele geçer. Masaüstünde ok tuşları.
+ * - Görsele tıklayınca TAM EKRAN (PhotoSwipe): kaydırma, parmakla/çift dokunuşla yakınlaştırma, klavye.
+ *   JS kapalıysa link büyük görseli açar.
+ * Görsel yoksa GorselYerTutucu (UrunGorseli üzerinden).
+ */
+import { getImage, Image } from 'astro:assets';
+import { ChevronLeft, ChevronRight, Expand } from '@lucide/astro';
+import type { Marka, Urun } from '../lib/katalog';
+import UrunGorseli from './UrunGorseli.astro';
+
+interface Props {
+  urun: Urun;
+  marka?: Marka;
+  kategoriAdi: string;
+}
+const { urun, marka, kategoriAdi } = Astro.props;
+
+const gorseller = await Promise.all(
+  urun.data.gorseller.map(async (g, i) => {
+    const kaynak = g.gorsel;
+    const genislik = Math.min(kaynak.width, 1600);
+    const yukseklik = Math.round((kaynak.height * genislik) / kaynak.width);
+    const buyuk = await getImage({ src: kaynak, width: genislik, format: 'webp' });
+    return { ...g, no: i + 1, buyuk: { src: buyuk.src, genislik, yukseklik } };
+  }),
+);
+const coklu = gorseller.length > 1;
+---
+
+{
+  gorseller.length === 0 ? (
+    <UrunGorseli urun={urun} marka={marka} kategoriAdi={kategoriAdi} oncelikli />
+  ) : (
+    <div class="urun-galerisi" data-galeri>
+      <div class="relative">
+        <ul
+          class="flex snap-x snap-mandatory overflow-x-auto rounded-lg border border-stone-200 bg-white [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+          data-serit
+          aria-label={`${urun.data.ad} görselleri`}
+        >
+          {gorseller.map((g) => (
+            <li id={`gorsel-${g.no}`} class="w-full shrink-0 snap-center" data-slayt>
+              <a
+                href={g.buyuk.src}
+                data-pswp-width={g.buyuk.genislik}
+                data-pswp-height={g.buyuk.yukseklik}
+                target="_blank"
+                class="group relative block aspect-[4/3] cursor-zoom-in"
+                aria-label={`${g.alt_metin} — büyütmek için tıklayın${coklu ? ` (${g.no}/${gorseller.length})` : ''}`}
+              >
+                <Image
+                  src={g.gorsel}
+                  alt={g.alt_metin}
+                  width={800}
+                  widths={[400, 800, 1200]}
+                  sizes="(max-width: 768px) 100vw, 600px"
+                  loading={g.no === 1 ? 'eager' : 'lazy'}
+                  fetchpriority={g.no === 1 ? 'high' : 'auto'}
+                  class="h-full w-full object-contain p-2"
+                />
+                <span class="absolute right-3 bottom-3 inline-flex size-10 items-center justify-center rounded-full bg-white/90 text-antrasit shadow ring-1 ring-stone-200 transition-transform group-hover:scale-110">
+                  <Expand size={18} aria-hidden="true" />
+                </span>
+              </a>
+            </li>
+          ))}
+        </ul>
+
+        {coklu && (
+          <>
+            <button
+              type="button"
+              data-onceki
+              hidden
+              class="absolute top-1/2 left-2 hidden size-11 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 shadow ring-1 ring-stone-200 hover:bg-white md:inline-flex"
+              aria-label="Önceki görsel"
+            >
+              <ChevronLeft size={22} aria-hidden="true" />
+            </button>
+            <button
+              type="button"
+              data-sonraki
+              hidden
+              class="absolute top-1/2 right-2 hidden size-11 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 shadow ring-1 ring-stone-200 hover:bg-white md:inline-flex"
+              aria-label="Sonraki görsel"
+            >
+              <ChevronRight size={22} aria-hidden="true" />
+            </button>
+            <p
+              class="pointer-events-none absolute top-3 left-3 rounded-full bg-antrasit/80 px-2.5 py-0.5 text-xs font-semibold text-white"
+              aria-hidden="true"
+            >
+              <span data-sayac>1</span> / {gorseller.length}
+            </p>
+          </>
+        )}
+      </div>
+
+      {coklu && (
+        <ul class="mt-3 flex gap-2 overflow-x-auto pb-1" aria-label="Görseller">
+          {gorseller.map((g) => (
+            <li class="shrink-0">
+              <a
+                href={`#gorsel-${g.no}`}
+                data-kucuk={g.no - 1}
+                class="block aspect-[4/3] w-20 overflow-hidden rounded-md border-2 border-stone-200 bg-white aria-[current=true]:border-turuncu sm:w-24"
+                aria-label={`${g.no}. görseli göster`}
+                aria-current={g.no === 1 ? 'true' : 'false'}
+              >
+                <Image src={g.gorsel} alt="" width={96} widths={[96, 192]} sizes="96px" class="h-full w-full object-contain p-1" />
+              </a>
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  )
+}
+
+<script>
+  import PhotoSwipeLightbox from 'photoswipe/lightbox';
+  import 'photoswipe/style.css';
+
+  for (const galeri of document.querySelectorAll<HTMLElement>('[data-galeri]')) {
+    const serit = galeri.querySelector<HTMLElement>('[data-serit]')!;
+    const slaytlar = [...galeri.querySelectorAll<HTMLElement>('[data-slayt]')];
+    const kucukler = [...galeri.querySelectorAll<HTMLAnchorElement>('[data-kucuk]')];
+    const sayac = galeri.querySelector('[data-sayac]');
+    const onceki = galeri.querySelector<HTMLButtonElement>('[data-onceki]');
+    const sonraki = galeri.querySelector<HTMLButtonElement>('[data-sonraki]');
+
+    let aktif = 0;
+    const isaretle = (i: number) => {
+      aktif = i;
+      kucukler.forEach((k, j) => k.setAttribute('aria-current', String(i === j)));
+      if (sayac) sayac.textContent = String(i + 1);
+    };
+    const git = (i: number) => {
+      const hedef = Math.max(0, Math.min(slaytlar.length - 1, i));
+      serit.scrollTo({ left: hedef * serit.clientWidth, behavior: 'smooth' });
+      isaretle(hedef); // göstergeler hemen güncellensin (kaydırma animasyonunu beklemeden)
+    };
+
+    // Parmakla kaydırınca küçük resim ve sayaç güncellensin
+    let bekle: number | undefined;
+    serit.addEventListener('scroll', () => {
+      clearTimeout(bekle);
+      bekle = window.setTimeout(() => isaretle(Math.round(serit.scrollLeft / serit.clientWidth)), 80);
+    });
+    // Küçük resim: sayfa zıplamadan şeridi kaydır
+    kucukler.forEach((k) =>
+      k.addEventListener('click', (e) => {
+        e.preventDefault();
+        git(Number(k.dataset.kucuk));
+      }),
+    );
+    if (onceki && sonraki) {
+      onceki.hidden = sonraki.hidden = false;
+      onceki.addEventListener('click', () => git(aktif - 1));
+      sonraki.addEventListener('click', () => git(aktif + 1));
+    }
+
+    // Tam ekran
+    const lightbox = new PhotoSwipeLightbox({
+      gallery: serit,
+      children: 'a[data-pswp-width]',
+      pswpModule: () => import('photoswipe'),
+      bgOpacity: 0.95,
+      wheelToZoom: true,
+      closeTitle: 'Kapat',
+      zoomTitle: 'Yakınlaştır',
+      arrowPrevTitle: 'Önceki',
+      arrowNextTitle: 'Sonraki',
+      errorMsg: 'Görsel yüklenemedi',
+      indexIndicatorSep: ' / ',
+    });
+    // Tam ekrandan çıkınca şerit de o görselde olsun
+    lightbox.on('close', () => {
+      const i = lightbox.pswp?.currIndex;
+      if (typeof i === 'number') serit.scrollTo({ left: i * serit.clientWidth });
+    });
+    lightbox.init();
+  }
+</script>

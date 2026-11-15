@@ -1,10 +1,30 @@
 ---
-// F1.4: basit (tasarımsız) ürün detay sayfası. Sadece dolu bölümler görünür. Tasarım F2.4'te.
+/**
+ * Ürün detay sayfası (F2.4). SADECE DOLU bölümler görünür.
+ * kart_tipi'ne göre vurgu (sağ sütunda öne çıkan blok):
+ *   grup → ölçüler/ambalajlar · marka_tur → seriler/modeller · urun → teknik özellik tablosu
+ * Diğer dolu bölümler altta. Karşılaştırma tablosu F2.6'da kategori sayfasına gelecek.
+ */
 import type { GetStaticPaths } from 'astro';
 import { render } from 'astro:content';
-import UrunGorseli from '../../components/UrunGorseli.astro';
+import { Check, FileText, Phone } from '@lucide/astro';
+import BolumBasligi from '../../components/BolumBasligi.astro';
+import Buton from '../../components/Buton.astro';
+import KonumYolu from '../../components/KonumYolu.astro';
+import KullanimAlaniIkon from '../../components/KullanimAlaniIkon.astro';
+import Rozet from '../../components/Rozet.astro';
+import UrunGalerisi from '../../components/UrunGalerisi.astro';
+import UrunKarti from '../../components/UrunKarti.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { getAyarlar, getKategoriYolu, getUrunDetay, getUrunler, telLink, type Urun } from '../../lib/katalog';
+import {
+  getAyarlar,
+  getKategoriUrunleri,
+  getKategoriYolu,
+  getUrunDetay,
+  getUrunler,
+  telLink,
+  type Urun,
+} from '../../lib/katalog';
 import { kategoriUrl, url } from '../../lib/url';
 
 export const getStaticPaths = (async () => {
@@ -18,126 +38,244 @@ interface Props {
 const { urun } = Astro.props;
 const { data } = urun;
 const { kategori, markalar, kullanimAlanlari, teknikOzellikler, ilgiliUrunler } = await getUrunDetay(urun);
-const kategoriYolu = await getKategoriYolu(data.kategori.id);
+const kategoriYolu = await getKategoriYolu(kategori.id);
 const { firma } = await getAyarlar();
 const { Content } = await render(urun);
+const aciklamaVar = Boolean(urun.body?.trim());
+const anaMarka = markalar[0];
+
 const KART_TIPI = { grup: 'Ürün ailesi', marka_tur: 'Marka serisi', urun: 'Ürün' } as const;
+const tip = data.kart_tipi;
+
+// Sağ sütunda vurgulanan blok (kart tipine göre); dolu değilse gösterilmez ve alta da düşmez
+const vurgu = tip === 'grup' ? 'olculer' : tip === 'marka_tur' ? 'seriler' : 'teknik';
+const dolu = {
+  olculer: data.olculer.length > 0,
+  seriler: data.seriler.length > 0,
+  teknik: teknikOzellikler.length > 0,
+};
+
+// İlgili ürünler; yoksa aynı kategoriden en fazla 4 ürün
+let ilgiliBaslik = 'İlgili ürünler';
+let ilgili = ilgiliUrunler;
+if (ilgili.length === 0) {
+  ilgili = (await getKategoriUrunleri(kategori.id)).filter((u) => u.id !== urun.id).slice(0, 4);
+  ilgiliBaslik = `${kategori.data.ad}: diğer ürünler`;
+}
+const ilgiliKartlar = await Promise.all(
+  ilgili.map(async (u) => {
+    const d = await getUrunDetay(u);
+    return { urun: u, marka: d.markalar[0], kategoriAdi: d.kategori.data.ad };
+  }),
+);
+
 ---
 
-<BaseLayout title={`${data.ad} — Selam İnşaat`} description={data.kisa_aciklama}>
-  <main class="mx-auto max-w-3xl space-y-6 px-4 py-8">
-    <nav class="text-sm text-neutral-600">
-      <a class="underline" href={url('urunler')}>Ürünler</a>
-      {kategoriYolu.map((k) => <span> › <a class="underline" href={kategoriUrl(k.id)}>{k.data.ad}</a></span>)}
-    </nav>
+<BaseLayout title={`${data.ad} — ${firma.kisa_ad}`} description={data.kisa_aciklama}>
+  <main class="mx-auto max-w-6xl px-4 py-8">
+    <KonumYolu
+      ogeler={[
+        ...kategoriYolu.map((k) => ({ ad: k.data.ad, adres: kategoriUrl(k.id) })),
+        { ad: data.ad },
+      ]}
+    />
 
-    <header>
-      <p class="text-sm text-neutral-600">
-        {markalar.map((m) => m.data.ad).join(', ') || 'Çeşitli markalar'} · {KART_TIPI[data.kart_tipi]}
-      </p>
-      <h1 class="text-2xl font-bold">{data.ad}</h1>
-      <p class="mt-2">{data.kisa_aciklama}</p>
-    </header>
+    <div class="grid gap-8 md:grid-cols-2 lg:gap-12">
+      <UrunGalerisi urun={urun} marka={anaMarka} kategoriAdi={kategori.data.ad} />
 
-    <UrunGorseli urun={urun} marka={markalar[0]} kategoriAdi={kategori.data.ad} oncelikli />
+      <div class="flex flex-col gap-5">
+        <div class="flex flex-wrap gap-2">
+          {
+            markalar.map((m) => (
+              <Rozet tur="turuncu">{m.data.ad}</Rozet>
+            ))
+          }
+          {markalar.length === 0 && <Rozet tur="turuncu">Çeşitli markalar</Rozet>}
+          <Rozet>{KART_TIPI[tip]}</Rozet>
+        </div>
 
-    {
-      data.one_cikanlar.length > 0 && (
-        <section>
-          <h2 class="font-semibold">Öne çıkanlar</h2>
-          <ul class="list-disc pl-5">
-            {data.one_cikanlar.map((m) => (
-              <li>{m}</li>
-            ))}
-          </ul>
-        </section>
-      )
-    }
+        <div>
+          <h1 class="text-3xl sm:text-4xl">{data.ad}</h1>
+          <p class="mt-3 text-lg text-stone-700">{data.kisa_aciklama}</p>
+        </div>
 
-    {
-      data.seriler.length > 0 && (
-        <section>
-          <h2 class="font-semibold">Seriler</h2>
-          <p>{data.seriler.join(', ')}</p>
-        </section>
-      )
-    }
-
-    {
-      kullanimAlanlari.length > 0 && (
-        <section>
-          <h2 class="font-semibold">Kullanım alanları</h2>
-          <p>{kullanimAlanlari.map((k) => k.data.ad).join(', ')}</p>
-        </section>
-      )
-    }
-
-    {
-      teknikOzellikler.length > 0 && (
-        <section>
-          <h2 class="font-semibold">Teknik özellikler</h2>
-          <table class="mt-2 w-full text-left text-sm">
-            <tbody>
-              {teknikOzellikler.map(({ ozellik, deger }) => (
-                <tr class="border-b border-neutral-200">
-                  <th class="py-1 pr-4 font-medium">{ozellik.data.ad}</th>
-                  <td class="py-1">
-                    {deger}
-                    {ozellik.data.birim && ` ${ozellik.data.birim}`}
-                  </td>
-                </tr>
+        {
+          data.one_cikanlar.length > 0 && (
+            <ul class="grid gap-2 sm:grid-cols-2">
+              {data.one_cikanlar.map((m) => (
+                <li class="flex items-start gap-2">
+                  <Check size={20} class="mt-0.5 shrink-0 text-turuncu-koyu" aria-hidden="true" />
+                  <span class="font-medium">{m}</span>
+                </li>
               ))}
-            </tbody>
-          </table>
-        </section>
-      )
-    }
+            </ul>
+          )
+        }
 
-    {
-      data.olculer.length > 0 && (
-        <section>
-          <h2 class="font-semibold">Ölçüler</h2>
-          <p>{data.olculer.join(' · ')}</p>
-        </section>
-      )
-    }
+        {
+          kullanimAlanlari.length > 0 && (
+            <div>
+              <h2 class="mb-2 text-base font-semibold text-stone-600">Kullanım alanları</h2>
+              <div class="flex flex-wrap gap-2">
+                {kullanimAlanlari.map((a) => (
+                  <KullanimAlaniIkon alan={a} />
+                ))}
+              </div>
+            </div>
+          )
+        }
 
-    {
-      data.teknik_foy && (
-        <p>
-          <a class="underline" href={url(data.teknik_foy)}>
-            Teknik föyü indir (PDF)
-          </a>
+        <!-- Kart tipine göre vurgulanan blok -->
+        {
+          vurgu === 'olculer' && dolu.olculer && (
+            <div class="rounded-lg bg-zemin p-4">
+              <h2 class="mb-2 text-xl">Mevcut ölçüler</h2>
+              <ul class="flex flex-wrap gap-2">
+                {data.olculer.map((o) => (
+                  <li class="rounded-md border border-stone-300 bg-white px-3 py-1.5 font-semibold">{o}</li>
+                ))}
+              </ul>
+            </div>
+          )
+        }
+        {
+          vurgu === 'seriler' && dolu.seriler && (
+            <div class="rounded-lg bg-zemin p-4">
+              <h2 class="mb-2 text-xl">Seriler / modeller</h2>
+              <ul class="flex flex-wrap gap-2">
+                {data.seriler.map((s) => (
+                  <li class="rounded-md border border-stone-300 bg-white px-3 py-1.5 font-semibold">{s}</li>
+                ))}
+              </ul>
+              {data.gorseller.length > 1 && (
+                <p class="mt-2 text-sm text-stone-600">Görseller seriden örneklerdir; tüm modeller için bizi arayın.</p>
+              )}
+            </div>
+          )
+        }
+        {
+          vurgu === 'teknik' && dolu.teknik && (
+            <div class="rounded-lg border border-stone-200">
+              <h2 class="border-b border-stone-200 bg-zemin px-4 py-2 text-xl">Teknik özellikler</h2>
+              <table class="w-full text-left text-sm">
+                <tbody>
+                  {teknikOzellikler.map(({ ozellik, deger }) => (
+                    <tr class="border-b border-stone-100 last:border-0">
+                      <th scope="row" class="w-1/2 px-4 py-2 font-medium text-stone-600">
+                        {ozellik.data.ad}
+                      </th>
+                      <td class="px-4 py-2 font-semibold">
+                        {deger}
+                        {ozellik.data.birim && ` ${ozellik.data.birim}`}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          )
+        }
+
+        <div class="flex flex-wrap gap-3 pt-1">
+          <Buton href={telLink(firma.telefon)} boyut="buyuk">
+            <Phone size={20} aria-hidden="true" />
+            Bilgi almak için arayın
+          </Buton>
+          {
+            data.teknik_foy && (
+              <Buton href={url(data.teknik_foy)} tur="cerceve" boyut="buyuk" target="_blank">
+                <FileText size={20} aria-hidden="true" />
+                Teknik föy (PDF)
+              </Buton>
+            )
+          }
+        </div>
+        <p class="text-sm text-stone-600">
+          {firma.telefon} · Fiyat ve stok bilgisi için mağazalarımızı arayın.
         </p>
-      )
-    }
+      </div>
+    </div>
 
-    <section class="space-y-3">
-      <Content />
-    </section>
+    <!-- Alt bölümler: vurgulanmayan dolu bilgiler -->
+    <div class="mt-12 space-y-12">
+      {
+        aciklamaVar && (
+          <section>
+            <BolumBasligi baslik="Ürün hakkında" />
+            <div class="icerik">
+              <Content />
+            </div>
+          </section>
+        )
+      }
 
-    {
-      ilgiliUrunler.length > 0 && (
-        <section>
-          <h2 class="font-semibold">İlgili ürünler</h2>
-          <ul class="list-disc pl-5">
-            {ilgiliUrunler.map((u) => (
-              <li>
-                <a class="underline" href={url(`urunler/${u.id}`)}>
-                  {u.data.ad}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </section>
-      )
-    }
+      {
+        vurgu !== 'teknik' && dolu.teknik && (
+          <section>
+            <BolumBasligi baslik="Teknik özellikler" />
+            <table class="w-full max-w-3xl text-left text-sm">
+              <tbody>
+                {teknikOzellikler.map(({ ozellik, deger }) => (
+                  <tr class="border-b border-stone-200">
+                    <th scope="row" class="w-1/2 py-2 pr-4 font-medium text-stone-600">
+                      {ozellik.data.ad}
+                    </th>
+                    <td class="py-2 font-semibold">
+                      {deger}
+                      {ozellik.data.birim && ` ${ozellik.data.birim}`}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </section>
+        )
+      }
 
-    <a
-      href={telLink(firma.telefon)}
-      class="inline-block rounded-md bg-neutral-900 px-5 py-3 font-semibold text-white hover:bg-neutral-700"
-    >
-      Bilgi almak için arayın: {firma.telefon}
-    </a>
+      {
+        vurgu !== 'olculer' && dolu.olculer && (
+          <section>
+            <BolumBasligi baslik="Ölçüler / ambalajlar" />
+            <ul class="flex flex-wrap gap-2">
+              {data.olculer.map((o) => (
+                <li class="rounded-md border border-stone-300 px-3 py-1.5 font-semibold">{o}</li>
+              ))}
+            </ul>
+          </section>
+        )
+      }
+
+      {
+        vurgu !== 'seriler' && dolu.seriler && (
+          <section>
+            <BolumBasligi baslik="Seriler / modeller" />
+            <ul class="flex flex-wrap gap-2">
+              {data.seriler.map((s) => (
+                <li class="rounded-md border border-stone-300 px-3 py-1.5 font-semibold">{s}</li>
+              ))}
+            </ul>
+          </section>
+        )
+      }
+
+      {
+        ilgiliKartlar.length > 0 && (
+          <section>
+            <BolumBasligi
+              baslik={ilgiliBaslik}
+              linkMetni={`${kategori.data.ad} kategorisi`}
+              linkAdresi={kategoriUrl(kategori.id)}
+            />
+            <ul class="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-5 lg:grid-cols-4">
+              {ilgiliKartlar.map((k) => (
+                <li class="flex">
+                  <UrunKarti {...k} />
+                </li>
+              ))}
+            </ul>
+          </section>
+        )
+      }
+    </div>
   </main>
 </BaseLayout>

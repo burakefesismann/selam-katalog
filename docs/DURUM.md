@@ -3,7 +3,7 @@
 > Her oturumun başında oku, sonunda güncelle. Kısa tut.
 
 ## Şu an
-- Aktif görev: — (F2.3 bitti)
+- Aktif görev: — (F2.4 bitti)
 - Site: https://burakefesismann.github.io/selam-katalog/
 - Faz: 2 — Vitrin tasarımı
 
@@ -11,7 +11,7 @@
 - Yok
 
 ## Sıradaki
-- F2.4 — Ürün detay sayfası (galeri, tam ekran, kaydırma/yakınlaştırma; kart_tipi'ne göre vurgu)
+- F2.5 — Marka sayfaları (marka listesi + marka detay, ürünler kategoriye göre gruplu)
 
 ## Kullanıcıdan beklenenler
 - [~] Logo: `kaynaklar/logo/selamfis.png` geldi (2026-11-15 tekrar aynı dosya geldi; daha büyüğü yok) (474×129 PNG, şeffaf zemin, turuncu+gri). Vektör (SVG/AI/PDF) ya da
@@ -99,6 +99,12 @@
   ve ürün sayfası kategori yolu artık kategori sayfasına gidiyor. /urunler yeni kartlarla yenilendi.
 - UrunKarti `w-full` olmalı (yoksa içerik kısa olan kart dar kalıyor — düzeltildi).
 
+- F2.4: `UrunGalerisi` (scroll-snap şerit + küçük resimler + oklar; tam ekran PhotoSwipe 5.4.4, Türkçe başlıklar).
+  Vurgu: grup→ölçüler, marka_tur→seriler, urun→teknik tablo (sağ sütun); diğer dolu bölümler altta. İlgili ürün
+  yoksa aynı kategoriden 4 ürün. 3 kart tipi geçici test ürünleriyle denendi (silindi). Galeri gezintisi + tam ekran
+  tarayıcıda test edildi. Parmakla yakınlaştırma PhotoSwipe'ın kendi özelliği; dokunmatik testi gerçek telefonda yapılmalı.
+  Kaydırma olayı gizli tarayıcıda gelmiyor → göstergeler tıklamada doğrudan güncelleniyor. `KonumYolu` bileşeni eklendi.
+
 ## Öneriler
 - (Plana eklenmesi önerilen fikirler. Kullanıcı onaylarsa PLAN.md'ye taşınır.)
 - Ana sayfadaki 11 ana kategori kartı (F2.2) için kategori görselleri gerekecek; planda ayrı görev yok.
@@ -123,3 +129,4 @@
 | 2026-11-15 | F2.1 Tasarım sistemi | Renkler logodan, Barlow, Lucide ikonlar, 10 bileşen, /stil-rehberi; kullanıcı onayladı | F2.1 |
 | 2026-11-15 | F2.2 Ana sayfa | K12 sırası; kategori kartları (görsel/ikon), marka şeridi, öne çıkanlar, mağazalar; 360 px taşma yok, 104 link kırıksız | F2.2 |
 | 2026-11-15 | F2.3 Kategori sayfası | 15 sayfa, alt kategoriler, marka grupları, JS filtre (6 senaryo test), 259 link kırıksız | F2.3 |
+| 2026-11-15 | F2.4 Ürün detay | Galeri + tam ekran (PhotoSwipe), kart tipine göre vurgu, 3 tip test edildi, 360 px taşma yok | F2.4 |

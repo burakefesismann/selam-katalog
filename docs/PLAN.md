@@ -125,7 +125,7 @@ Bitince: PLAN'da `[x]` → DURUM.md güncelle → commit + push → kullanıcıy
 - [x] **F2.3 Kategori sayfası** — alt kategoriler, görselli ürün kartları, filtre (marka, kullanım alanı).
   Kategoride birden çok marka varsa ürünler **marka başlıkları altında gruplanır** (ör. Bataryalar: ECA / KAS).
   JavaScript kapalıyken de liste görünür.
-- [ ] **F2.4 Ürün detay sayfası** — **büyük görsel galerisi: küçük resimlerle geçiş, tıklayınca tam ekran büyütme,
+- [x] **F2.4 Ürün detay sayfası** — **büyük görsel galerisi: küçük resimlerle geçiş, tıklayınca tam ekran büyütme,
   mobilde kaydırarak geçiş ve parmakla yakınlaştırma**; öne çıkanlar, kullanım alanı ikonları, teknik özellik tablosu,
   ölçüler, teknik föy indir, detaylı açıklama, ilgili ürünler (görselli), "Bilgi almak için arayın".
   Sadece dolu bölümler görünür. `kart_tipi`'ne göre vurgu: `grup` → ölçüler öne; `marka_tur` → seriler ve örnek

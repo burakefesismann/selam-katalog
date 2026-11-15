@@ -13,6 +13,7 @@ interface Props {
   class?: string;
   type?: HTMLAttributes<'button'>['type'];
   'aria-label'?: string;
+  target?: string;
 }
 
 const { href, tur = 'birincil', boyut = 'normal', tamGenislik = false, class: sinif = '', ...diger } = Astro.props;

@@ -1,0 +1,32 @@
+---
+/** Konum yolu (breadcrumb): Ana sayfa › … › bu sayfa. Son öğe link değildir. */
+import { ChevronRight } from '@lucide/astro';
+import { url } from '../lib/url';
+
+interface Props {
+  ogeler: { ad: string; adres?: string }[];
+}
+const { ogeler } = Astro.props;
+const tum = [{ ad: 'Ana sayfa', adres: url('/') }, ...ogeler];
+---
+
+<nav aria-label="Konum" class="mb-6 text-sm text-stone-600">
+  <ol class="flex flex-wrap items-center gap-1">
+    {
+      tum.map((o, i) => (
+        <li class="flex items-center gap-1">
+          {i > 0 && <ChevronRight size={14} aria-hidden="true" />}
+          {i === tum.length - 1 || !o.adres ? (
+            <span aria-current={i === tum.length - 1 ? 'page' : undefined} class="font-semibold text-antrasit">
+              {o.ad}
+            </span>
+          ) : (
+            <a href={o.adres} class="hover:text-turuncu-koyu hover:underline">
+              {o.ad}
+            </a>
+          )}
+        </li>
+      ))
+    }
+  </ol>
+</nav>
