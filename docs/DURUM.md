@@ -8,7 +8,16 @@
 - Faz: 1 — İskelet, görseller ve panel
 
 ## Yarım kalan
-- Yok
+- **F1.6 Panel** — kurulum bitti ve yayında (commit 4e9f966). Kalan TEK adım: kullanıcıyla canlı kayıt testi.
+  - Yapılanlar: `public/admin/index.html` + `config.yml` (Sveltia, sadece token girişi, Sveltia JSON şemasına göre GEÇERLİ),
+    yüklenen görseller tarayıcıda WebP/1600 px. Şema: `slug` artık opsiyonel (dosya adı = slug, doğrulama dosya adını
+    kontrol ediyor); görsel yolları `/src/assets/...` (Astro kabul ediyor); teknik föy `/foyler/x.pdf`.
+  - Kullanıcı token oluşturdu (2026-11-15), henüz panelden kayıt yapmadı.
+  - Kalan: kullanıcı Ürünler › Baumit Flexo › kısa açıklamaya " (panel testi)" ekler + telefon fotoğrafı yükler › Kaydet.
+    Sonra kontrol et: `git pull` → yeni "panel: ..." commit'i, görsel `src/assets/urunler/` altında WebP ve ≤ 1600 px / ≤ 500 KB,
+    Actions yayını başarılı, canlı sayfada görünüyor. Ardından test değişikliğini geri al (açıklama + test görseli),
+    build → PLAN [x] → DURUM → commit "F1.6: ..." → push.
+  - Test sonrası kontrol: panelin kaydettiği dosyada eski `slug:` alanı silindi mi, alan sırası/biçimi build'i bozuyor mu.
 
 ## Sıradaki
 - F1.6 — Panel (Sveltia CMS)
