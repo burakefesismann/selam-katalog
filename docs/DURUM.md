@@ -3,7 +3,7 @@
 > Her oturumun başında oku, sonunda güncelle. Kısa tut.
 
 ## Şu an
-- Aktif görev: — (F1.6 bitti)
+- Aktif görev: F1.7 — Panel kılavuzu
 - Site: https://burakefesismann.github.io/selam-katalog/
 - Faz: 1 — İskelet, görseller ve panel
 
