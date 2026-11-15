@@ -215,6 +215,16 @@ async function dogrula(): Promise<void> {
     }
   }
 
+  // Görseller depoda olmalı (Astro işler, kaynağı belli). İnternet adresi = uzak/stok görsel → yasak (K10).
+  const uzakMi = (g: unknown) => typeof g === 'string' && /^https?:\/\//.test(g);
+  const uzakHatasi = (yer: string, g: unknown) =>
+    hatalar.push(`${yer} → görsel internet adresi olamaz (${String(g)}). Görseli panelden yükle ya da gorsel:hazirla ile depoya koy.`);
+  for (const m of markalar) if (uzakMi(m.data.logo)) uzakHatasi(`markalar/${m.id} → logo`, m.data.logo);
+  for (const k of kategoriler) if (uzakMi(k.data.gorsel)) uzakHatasi(`kategoriler/${k.id} → gorsel`, k.data.gorsel);
+  for (const u of urunler) {
+    u.data.gorseller.forEach((g, i) => uzakMi(g.gorsel) && uzakHatasi(`urunler/${u.id} → ${i + 1}. görsel`, g.gorsel));
+  }
+
   for (const u of urunler) {
     const kaynak = `urunler/${u.id}`;
     kontrol(kaynak, 'kategori', 'kategoriler', u.data.kategori.id);

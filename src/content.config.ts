@@ -18,8 +18,12 @@ const SLUG_HATASI =
  */
 const slug = z.string().regex(SLUG_DESENI, SLUG_HATASI).optional();
 const metin = z.string().trim().min(1, 'Bu alan boş olamaz');
-const sira = z.number().int().default(100);
-const yayinda = z.boolean().default(true);
+/** Panel/paketlerden gelen boş değerler ("" ya da null) "alan yok" sayılır */
+const bos = (v: unknown) => (v === '' || v === null ? undefined : v);
+const ops = <T extends z.ZodType>(s: T) => z.preprocess(bos, s.optional());
+
+const sira = z.preprocess(bos, z.number().int().default(100));
+const yayinda = z.preprocess(bos, z.boolean().default(true));
 const adres = z.url({ message: 'Geçerli bir web adresi olmalı (https://...)' });
 
 /** public/ altında var olan bir dosya yolu: "/foyler/baumit-flexo.pdf" (panel böyle yazar) ya da "foyler/..." */
@@ -40,11 +44,11 @@ const markalar = defineCollection({
     z.object({
       ad: metin,
       slug,
-      logo: image().optional(),
-      logo_kaynak_url: adres.optional(),
+      logo: ops(image()),
+      logo_kaynak_url: ops(adres),
       kisa_aciklama: metin,
-      aciklama: z.string().optional(),
-      web_sitesi: adres.optional(),
+      aciklama: ops(z.string()),
+      web_sitesi: ops(adres),
       sira,
       yayinda,
     }),
@@ -56,9 +60,9 @@ const kategoriler = defineCollection({
     z.object({
       ad: metin,
       slug,
-      ust_kategori: reference('kategoriler').optional(),
-      gorsel: image().optional(),
-      kisa_aciklama: z.string().optional(),
+      ust_kategori: ops(reference('kategoriler')),
+      gorsel: ops(image()),
+      kisa_aciklama: ops(z.string()),
       sira,
       yayinda,
     }),
@@ -69,7 +73,7 @@ const kullanim_alanlari = defineCollection({
   schema: z.object({
     ad: metin,
     slug,
-    ikon: z.string().optional(),
+    ikon: ops(z.string()),
     sira,
     yayinda,
   }),
@@ -80,8 +84,8 @@ const ozellik_tanimlari = defineCollection({
   schema: z.object({
     ad: metin,
     slug,
-    birim: z.string().optional(),
-    aciklama: z.string().optional(),
+    birim: ops(z.string()),
+    aciklama: ops(z.string()),
     sira,
   }),
 });
@@ -106,7 +110,7 @@ const urunler = defineCollection({
           z.object({
             gorsel: image(),
             alt_metin: metin,
-            kaynak_url: adres.optional(),
+            kaynak_url: ops(adres),
           }),
         )
         .default([]),
@@ -121,12 +125,12 @@ const urunler = defineCollection({
         )
         .default([]),
       olculer: z.array(metin).default([]),
-      teknik_foy: publicDosya('foyler', 'pdf').optional(),
+      teknik_foy: ops(publicDosya('foyler', 'pdf')),
       ilgili_urunler: z.array(reference('urunler')).default([]),
       /** Üreticinin resmi ürün sayfaları — bilgi/görsel kaynağı, sitede gösterilmez */
       kaynak_sayfalar: z.array(adres).default([]),
       sira,
-      one_cikan: z.boolean().default(false),
+      one_cikan: z.preprocess(bos, z.boolean().default(false)),
       yayinda,
     }),
 });
@@ -139,25 +143,25 @@ const ayarlar = defineCollection({
       kisa_ad: metin,
       sehir: metin,
       telefon: metin,
-      eposta: z.email({ message: 'Geçerli bir e-posta olmalı' }).optional(),
-      whatsapp: z.string().optional(),
-      web: adres.optional(),
+      eposta: ops(z.email({ message: 'Geçerli bir e-posta olmalı' })),
+      whatsapp: ops(z.string()),
+      web: ops(adres),
     }),
     subeler: z
       .array(
         z.object({
           ad: metin,
           adres: metin,
-          telefon: z.string().optional(),
-          calisma_saatleri: z.string().optional(),
-          harita_url: adres.optional(),
+          telefon: ops(z.string()),
+          calisma_saatleri: ops(z.string()),
+          harita_url: ops(adres),
         }),
       )
       .default([]),
     ana_sayfa: z.object({
       baslik: metin,
-      alt_baslik: z.string().optional(),
-      guven_mesaji: z.string().optional(),
+      alt_baslik: ops(z.string()),
+      guven_mesaji: ops(z.string()),
     }),
   }),
 });

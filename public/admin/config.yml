@@ -25,7 +25,10 @@ public_folder: /src/assets/urunler
 
 # Yüklenen fotoğraflar tarayıcıda WebP'ye çevrilir, uzun kenar en fazla 1600 px, EXIF silinir (K10).
 # Astro derlemede ayrıca optimize eder. Depoya 500 KB üstü girmesin diye kalite 80.
+# Stok fotoğraf kütüphaneleri (Pexels, Unsplash, Picsum…) KAPALI — stok görsel yasak (CLAUDE.md > Görseller, K10).
 media_libraries:
+  stock_assets:
+    providers: []
   all:
     transformations:
       raster_image:
@@ -35,6 +38,10 @@ media_libraries:
         height: 1600
       svg:
         optimize: true
+
+# Boş bırakılan opsiyonel alanlar dosyaya hiç yazılmaz (teknik_foy: '' gibi boş değerler derlemeyi bozuyordu).
+output:
+  omit_empty_optional_fields: true
 
 # Dosya adları (= slug = sayfa adresi): ASCII, küçük harf, Türkçe karakterler sadeleşir.
 slug:
@@ -104,7 +111,7 @@ collections:
         thumbnail: gorsel
         hint: İLK GÖRSEL ANA GÖRSELDİR — sürükleyerek sırala. Düz zeminli, ürünün tamamı görünen görseli en üste koy.
         fields:
-          - { label: Görsel, name: gorsel, widget: image, hint: 'Telefon fotoğrafı da olur; otomatik küçültülür.' }
+          - { label: Görsel, name: gorsel, widget: image, choose_url: false, hint: 'Telefon fotoğrafı da olur; otomatik küçültülür.' }
           - { label: Görsel açıklaması (alt metin), name: alt_metin, widget: string, hint: 'Görme engelliler ve Google için. Ör: Baumit Flexo 25 kg seramik yapıştırıcı torbası' }
           - label: Kaynak adresi
             name: kaynak_url
@@ -143,6 +150,7 @@ collections:
       - label: Teknik föy (PDF)
         name: teknik_foy
         widget: file
+        choose_url: false
         required: false
         media_folder: /public/foyler
         public_folder: /foyler
@@ -197,7 +205,7 @@ collections:
       - { label: Ad, name: ad, widget: string, hint: 'Ör: Fırat' }
       - { label: Kısa açıklama, name: kisa_aciklama, widget: text, hint: 'Marka listesinde görünen 1 cümle.' }
       - { label: Uzun tanıtım, name: aciklama, widget: markdown, required: false, hint: 'Marka sayfasında görünür.' }
-      - { label: Logo, name: logo, widget: image, required: false, hint: 'Tercihen SVG ya da şeffaf zeminli PNG.' }
+      - { label: Logo, name: logo, widget: image, choose_url: false, required: false, hint: 'Tercihen SVG ya da şeffaf zeminli PNG.' }
       - { label: Logonun kaynak adresi, name: logo_kaynak_url, widget: string, required: false, pattern: ['^https?://.+', 'https:// ile başlamalı'] }
       - { label: Web sitesi, name: web_sitesi, widget: string, required: false, pattern: ['^https?://.+', 'https:// ile başlamalı'] }
       - *sira
@@ -228,7 +236,7 @@ collections:
         required: false
         hint: Alt kategoriyse üst kategoriyi seç. Ana kategoride boş bırak.
       - { label: Kısa açıklama, name: kisa_aciklama, widget: text, required: false, hint: 'Kategori sayfasının başında görünür.' }
-      - { label: Kategori görseli, name: gorsel, widget: image, required: false, hint: 'Ana sayfadaki kategori kartında görünür.' }
+      - { label: Kategori görseli, name: gorsel, widget: image, choose_url: false, required: false, hint: 'Ana sayfadaki kategori kartında görünür.' }
       - *sira
       - *yayinda
 
