@@ -3,16 +3,15 @@
 > Her oturumun başında oku, sonunda güncelle. Kısa tut.
 
 ## Şu an
-- Aktif görev: F2.1 — Tasarım sistemi — /stil-rehberi yayında, kullanıcı onayı bekleniyor
+- Aktif görev: — (F2.1 bitti)
 - Site: https://burakefesismann.github.io/selam-katalog/
 - Faz: 2 — Vitrin tasarımı
 
 ## Yarım kalan
-- **F2.1** — bileşenler ve /stil-rehberi bitti, build geçiyor, 360 px'de yatay taşma yok. Kalan: kullanıcı onayı
-  (ya da istediği değişiklikler). Onaylanınca PLAN [x], DURUM, commit "F2.1: ...".
+- Yok
 
 ## Sıradaki
-- F2.1 — Tasarım sistemi (/stil-rehberi, kullanıcı onayı gerekir)
+- F2.2 — Ana sayfa (K12). Not: 11 ana kategori kartı için kategori görselleri yok (Öneriler'e bak)
 
 ## Kullanıcıdan beklenenler
 - [~] Logo: `kaynaklar/logo/selamfis.png` geldi (2026-11-15 tekrar aynı dosya geldi; daha büyüğü yok) (474×129 PNG, şeffaf zemin, turuncu+gri). Vektör (SVG/AI/PDF) ya da
@@ -83,6 +82,9 @@
 - F1.7: `docs/PANEL-KULLANIMI.md` kullanıcı onayladı (2026-11-15). Panel buton adları (Yeni/Kaydet/Ekle) görülmeden
   yazıldı; kullanıcı farklı görürse düzelt. Panel alanları değişirse kılavuzu da güncelle.
 
+- F2.1: kullanıcı /stil-rehberi'ni onayladı (2026-11-15). "Ürün Ara" butonları F2.7'ye kadar /urunler'e gidiyor
+  (SiteHeader + MobilAltCubuk → `aramaAdresi`). Ana sayfa ve /urunler henüz eski basit tasarımda (F2.2, F2.3).
+
 ## Öneriler
 - (Plana eklenmesi önerilen fikirler. Kullanıcı onaylarsa PLAN.md'ye taşınır.)
 - Ana sayfadaki 11 ana kategori kartı (F2.2) için kategori görselleri gerekecek; planda ayrı görev yok.
@@ -104,3 +106,4 @@
 | 2026-11-14 | F1.5c Büyütme/arka plan | Real-ESRGAN kabul (8 görsel büyütüldü, `--buyut`), rembg red; K14 | F1.5c |
 | 2026-11-15 | F1.6 Panel | Sveltia /admin, token girişi, 2 canlı test; stok/URL kapatıldı | F1.6 |
 | 2026-11-15 | F1.7 Panel kılavuzu | docs/PANEL-KULLANIMI.md yazıldı, kullanıcı onayladı | F1.7 |
+| 2026-11-15 | F2.1 Tasarım sistemi | Renkler logodan, Barlow, Lucide ikonlar, 10 bileşen, /stil-rehberi; kullanıcı onayladı | F2.1 |

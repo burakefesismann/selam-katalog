@@ -112,7 +112,7 @@ Bitince: PLAN'da `[x]` → DURUM.md güncelle → commit + push → kullanıcıy
 
 ## Faz 2 — Vitrin tasarımı (görsel öncelikli)
 
-- [ ] **F2.1 Tasarım sistemi**
+- [x] **F2.1 Tasarım sistemi**
   docs/FIRMA.md'deki kimlik. Renkler logodan (siyah + turuncu). Font: Türkçe destekli, Fontsource ile.
   Bileşenler: buton, **ürün kartı (görsel baskın: büyük, sabit oranlı görsel alanı, açık zemin, object-contain)**,
   rozet, kullanım alanı ikonu, bölüm başlığı, header (logo, menü, ara butonu), footer (şubeler, iletişim).
