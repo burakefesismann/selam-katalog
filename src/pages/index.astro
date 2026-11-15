@@ -1,21 +1,205 @@
 ---
+/**
+ * Ana sayfa (F2.2, K12): dengeli genel görünüm, tek bir kategori büyütülmez.
+ * Sıra: arama + güven mesajı → 11 ana kategori (eşit kartlar) → marka şeridi (Fırat ilk ve vurgulu)
+ * → farklı kategorilerden öne çıkan ürünler → [çözüm sayfaları: F4.5'e kadar gizli] → şubeler/iletişim.
+ */
+import { Image } from 'astro:assets';
+import { Clock, MapPin, Phone, Search, ShieldCheck } from '@lucide/astro';
+import BolumBasligi from '../components/BolumBasligi.astro';
+import Buton from '../components/Buton.astro';
+import KategoriKarti from '../components/KategoriKarti.astro';
+import UrunKarti from '../components/UrunKarti.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import {
+  getAnaKategoriler,
+  getAyarlar,
+  getKategoriGorseli,
+  getKategoriUrunleri,
+  getMarkalar,
+  getOneCikanUrunler,
+  getUrunDetay,
+  telLink,
+} from '../lib/katalog';
 import { url } from '../lib/url';
+
+const { firma, subeler, ana_sayfa } = await getAyarlar();
+
+const kategoriler = await Promise.all(
+  (await getAnaKategoriler()).map(async (kategori) => {
+    const urunSayisi = (await getKategoriUrunleri(kategori.id)).length;
+    return {
+      kategori,
+      urunSayisi,
+      gorsel: await getKategoriGorseli(kategori),
+      // F2.3'te kategori sayfası gelince url(`kategoriler/${kategori.id}`) olacak
+      adres: urunSayisi > 0 ? `${url('urunler')}#${kategori.id}` : undefined,
+    };
+  }),
+);
+
+const markalar = await getMarkalar(); // sira'ya göre: Fırat sira 1 → ilk (K12)
+const VURGULU_MARKA = 'firat';
+
+const oneCikanlar = await Promise.all(
+  (await getOneCikanUrunler(8)).map(async (urun) => {
+    const d = await getUrunDetay(urun);
+    return { urun, marka: d.markalar[0], kategoriAdi: d.kategori.data.ad };
+  }),
+);
+
+// F2.7'de arama sayfası gelince url('ara')
+const aramaAdresi = url('urunler');
 ---
 
-<BaseLayout title="Selam İnşaat — Ürün Kataloğu">
-  <main class="mx-auto flex max-w-xl py-20 flex-col items-center justify-center gap-4 px-4 text-center">
-    <p class="text-sm font-semibold tracking-wide text-turuncu-koyu uppercase">Selam İnşaat · Rize</p>
-    <h1 class="text-3xl font-bold sm:text-4xl">Ürün kataloğumuz yakında burada</h1>
-    <p class="text-stone-600">
-      Yapı malzemelerinde 50 yıllık tecrübemizle ürünlerimizi tanıtacağımız katalog hazırlanıyor.
-    </p>
-    <a class="font-semibold underline" href={url('urunler')}>Hazırlanan ürünlere göz atın →</a>
-    <a
-      href="tel:+904642176067"
-      class="mt-2 rounded-md bg-neutral-900 px-5 py-3 font-semibold text-white hover:bg-neutral-700"
-    >
-      Bilgi için arayın: 0 (464) 217 60 67
-    </a>
+<BaseLayout
+  title={`${firma.kisa_ad} — Ürün Kataloğu · ${firma.sehir}`}
+  description={ana_sayfa.alt_baslik ?? `${firma.kisa_ad} yapı malzemeleri ürün kataloğu`}
+>
+  <main>
+    <!-- 1. Arama + güven mesajı -->
+    <section class="bg-antrasit text-white">
+      <div class="mx-auto max-w-6xl px-4 py-12 sm:py-16">
+        {
+          ana_sayfa.guven_mesaji && (
+            <p class="mb-4 inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-sm font-semibold text-turuncu">
+              <ShieldCheck size={16} aria-hidden="true" />
+              {ana_sayfa.guven_mesaji}
+            </p>
+          )
+        }
+        <h1 class="max-w-3xl text-4xl text-white sm:text-5xl">{ana_sayfa.baslik}</h1>
+        {ana_sayfa.alt_baslik && <p class="mt-3 max-w-2xl text-lg text-stone-300">{ana_sayfa.alt_baslik}</p>}
+
+        <form action={aramaAdresi} method="get" role="search" class="mt-8 flex max-w-xl gap-2">
+          <label for="ana-arama" class="sr-only">Ürün, marka ya da kategori ara</label>
+          <div class="relative flex-1">
+            <Search
+              size={20}
+              class="pointer-events-none absolute top-1/2 left-3 -translate-y-1/2 text-stone-500"
+              aria-hidden="true"
+            />
+            <input
+              id="ana-arama"
+              name="q"
+              type="search"
+              placeholder="Ürün ya da marka ara"
+              class="min-h-12 w-full rounded-md border-0 bg-white pr-3 pl-10 text-antrasit placeholder:text-stone-500"
+            />
+          </div>
+          <Buton type="submit" boyut="buyuk" class="min-h-12">Ara</Buton>
+        </form>
+
+        <p class="mt-6 text-stone-300">
+          Bilgi almak için:
+          <a href={telLink(firma.telefon)} class="font-semibold text-turuncu hover:underline">{firma.telefon}</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- 2. Ana kategoriler (eşit kartlar) -->
+    <section class="mx-auto max-w-6xl px-4 pt-12">
+      <BolumBasligi baslik="Kategoriler" aciklama="Tesisattan boyaya, ihtiyacınız olan ürün grubunu seçin." />
+      <ul class="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-5 lg:grid-cols-4">
+        {
+          kategoriler.map((k, i) => (
+            <li class="flex">
+              <KategoriKarti {...k} oncelikli={i < 4} />
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <!-- 3. Marka şeridi (Fırat ilk ve vurgulu) -->
+    {
+      markalar.length > 0 && (
+        <section class="mx-auto max-w-6xl px-4 pt-14">
+          <BolumBasligi baslik="Markalarımız" />
+          <ul class="flex flex-wrap items-stretch gap-3">
+            {markalar.map((m) => {
+              const vurgulu = m.id === VURGULU_MARKA;
+              return (
+                <li
+                  class:list={[
+                    'flex items-center justify-center rounded-lg border bg-white px-5',
+                    vurgulu
+                      ? 'h-24 min-w-48 border-turuncu ring-2 ring-turuncu/40 sm:h-28 sm:min-w-60'
+                      : 'h-20 min-w-36 border-stone-200 sm:h-24 sm:min-w-44',
+                  ]}
+                  title={m.data.ad}
+                >
+                  {m.data.logo && typeof m.data.logo !== 'string' ? (
+                    <Image
+                      src={m.data.logo}
+                      alt={m.data.ad}
+                      height={vurgulu ? 64 : 48}
+                      class:list={['w-auto object-contain', vurgulu ? 'max-h-14 sm:max-h-16' : 'max-h-10 sm:max-h-12']}
+                    />
+                  ) : (
+                    <span class="font-baslik text-xl font-bold text-antrasit">{m.data.ad}</span>
+                  )}
+                </li>
+              );
+            })}
+          </ul>
+        </section>
+      )
+    }
+
+    <!-- 4. Öne çıkan ürünler (farklı kategorilerden) -->
+    {
+      oneCikanlar.length > 0 && (
+        <section class="mx-auto max-w-6xl px-4 pt-14">
+          <BolumBasligi baslik="Öne çıkan ürünler" linkMetni="Tüm ürünler" linkAdresi={url('urunler')} />
+          <ul class="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-5 lg:grid-cols-4">
+            {oneCikanlar.map((k) => (
+              <li class="flex">
+                <UrunKarti {...k} />
+              </li>
+            ))}
+          </ul>
+        </section>
+      )
+    }
+
+    <!-- 5. Çözüm sayfaları: F4.5'te açılacak (K13) -->
+
+    <!-- 6. Şubeler / iletişim özeti -->
+    <section class="mt-14 bg-zemin">
+      <div class="mx-auto max-w-6xl px-4 py-12">
+        <BolumBasligi
+          baslik="Mağazalarımız"
+          aciklama="Ürünler hakkında bilgi almak için arayın ya da mağazalarımıza uğrayın."
+        />
+        <ul class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {
+            subeler.map((s) => (
+              <li class="flex flex-col gap-2 rounded-lg border border-stone-200 bg-white p-5">
+                <h3 class="text-xl">{s.ad}</h3>
+                <p class="flex gap-2 text-sm text-stone-700">
+                  <MapPin size={18} class="mt-0.5 shrink-0 text-turuncu-koyu" aria-hidden="true" />
+                  {s.adres}
+                </p>
+                {s.calisma_saatleri && (
+                  <p class="flex gap-2 text-sm text-stone-700">
+                    <Clock size={18} class="mt-0.5 shrink-0 text-turuncu-koyu" aria-hidden="true" />
+                    {s.calisma_saatleri}
+                  </p>
+                )}
+                {s.telefon && (
+                  <div class="mt-auto pt-2">
+                    <Buton href={telLink(s.telefon)} tur="ikincil" boyut="kucuk">
+                      <Phone size={16} aria-hidden="true" />
+                      {s.telefon}
+                    </Buton>
+                  </div>
+                )}
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    </section>
   </main>
 </BaseLayout>

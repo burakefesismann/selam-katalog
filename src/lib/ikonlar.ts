@@ -3,6 +3,14 @@
  * (panelde açılır liste — public/admin/config.yml ile aynı tutulmalı). Boşsa slug'a göre, o da yoksa varsayılan.
  */
 import {
+  Bath,
+  Cylinder,
+  Drill,
+  Droplets,
+  Hammer,
+  PaintBucket,
+  PaintRoller,
+  Wrench,
   BrickWall,
   Building,
   Construction,
@@ -57,6 +65,25 @@ const SLUG_IKON: Record<string, IkonAdi> = {
   altyapi: 'santiye',
   cati: 'ev',
 };
+
+/** Ana kategori ikonları (kategori görseli de ürün görseli de yoksa kartta gösterilir) */
+const KATEGORI_IKON: Record<string, typeof Layers> = {
+  'tesisat-borulari': Cylinder,
+  'vana-ve-tesisat-armaturleri': Wrench,
+  isitma: Heater,
+  'pompa-ve-su-deposu': Droplets,
+  'banyo-ve-mutfak': Bath,
+  'seramik-ve-yer-kaplama': LayoutGrid,
+  'yapi-kimyasallari': PaintBucket,
+  'yalitim-ve-cati': House,
+  boya: PaintRoller,
+  'el-aletleri-ve-makineler': Drill,
+  'hirdavat-ve-nalburiye': Hammer,
+};
+
+export function kategoriIkonu(slug: string) {
+  return KATEGORI_IKON[slug] ?? Layers;
+}
 
 export function ikonBul(ikon: string | undefined, slug: string) {
   const ad = (ikon && ikon in IKONLAR ? ikon : SLUG_IKON[slug]) as IkonAdi | undefined;

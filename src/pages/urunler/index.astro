@@ -22,7 +22,7 @@ const toplam = gruplar.reduce((t, g) => t + g.urunler.length, 0);
     <h1 class="mt-4 text-2xl font-bold">Ürünler ({toplam})</h1>
     {
       gruplar.map(({ kategori, urunler }) => (
-        <section class="mt-8">
+        <section id={kategori.id} class="mt-8 scroll-mt-24">
           <h2 class="text-xl font-semibold">{kategori.data.ad}</h2>
           <ul class="mt-2 space-y-3">
             {urunler.map((u) => (

@@ -57,6 +57,7 @@ Kullanıcı `/devam` yazarsa bu adımlar + sıradaki görev yapılır. Diğer ko
   - Slug: ı→i, İ→i, ş→s, ğ→g, ü→u, ö→o, ç→c (özellikle **ı** ve **İ**'yi test et).
   - Büyük/küçük harf: `toLocaleUpperCase('tr-TR')` / `toLocaleLowerCase('tr-TR')`. CSS `text-transform` kullanılan
     yerlerde `<html lang="tr">` şart.
+  - **Marka adlarını ve yabancı kelimeleri büyük harfe ÇEVİRME** (`uppercase` yok): lang="tr" "Baumit"i "BAUMİT" yapar.
   - Sıralama: `localeCompare(x, 'tr')`.
 
 ## Görseller — ÇOK ÖNEMLİ

@@ -3,7 +3,7 @@
 > Her oturumun başında oku, sonunda güncelle. Kısa tut.
 
 ## Şu an
-- Aktif görev: — (F2.1 bitti)
+- Aktif görev: — (F2.2 bitti)
 - Site: https://burakefesismann.github.io/selam-katalog/
 - Faz: 2 — Vitrin tasarımı
 
@@ -11,7 +11,7 @@
 - Yok
 
 ## Sıradaki
-- F2.2 — Ana sayfa (K12). Not: 11 ana kategori kartı için kategori görselleri yok (Öneriler'e bak)
+- F2.3 — Kategori sayfası (filtre, marka başlıkları altında gruplama, JS kapalıyken de liste)
 
 ## Kullanıcıdan beklenenler
 - [~] Logo: `kaynaklar/logo/selamfis.png` geldi (2026-11-15 tekrar aynı dosya geldi; daha büyüğü yok) (474×129 PNG, şeffaf zemin, turuncu+gri). Vektör (SVG/AI/PDF) ya da
@@ -85,6 +85,13 @@
 - F2.1: kullanıcı /stil-rehberi'ni onayladı (2026-11-15). "Ürün Ara" butonları F2.7'ye kadar /urunler'e gidiyor
   (SiteHeader + MobilAltCubuk → `aramaAdresi`). Ana sayfa ve /urunler henüz eski basit tasarımda (F2.2, F2.3).
 
+- F2.2 ana sayfa: kategori kartı görseli = kategori `gorsel` → yoksa kategorideki ilk ürün görseli → yoksa büyük ikon
+  (`ikonlar.ts > kategoriIkonu`). Kategori kartları ŞİMDİLİK `/urunler#<kategori>`ye gidiyor; F2.3'te
+  `index.astro > adres` kategori sayfasına çevrilecek. Ürünü olmayan kategoride link yok, "Hazırlanıyor" yazar.
+  Öne çıkanlar: `one_cikan: true` → yoksa ana kategorilerden sırayla (`getOneCikanUrunler`). Hero arama formu
+  F2.7'ye kadar /urunler'e gidiyor (q parametresi işlenmiyor). Marka şeridinde link yok (marka sayfaları F2.5).
+- Büyük harf tuzağı: lang="tr" + `uppercase` → "Baumit" = "BAUMİT". Marka adlarında uppercase kullanılmıyor (CLAUDE.md).
+
 ## Öneriler
 - (Plana eklenmesi önerilen fikirler. Kullanıcı onaylarsa PLAN.md'ye taşınır.)
 - Ana sayfadaki 11 ana kategori kartı (F2.2) için kategori görselleri gerekecek; planda ayrı görev yok.
@@ -107,3 +114,4 @@
 | 2026-11-15 | F1.6 Panel | Sveltia /admin, token girişi, 2 canlı test; stok/URL kapatıldı | F1.6 |
 | 2026-11-15 | F1.7 Panel kılavuzu | docs/PANEL-KULLANIMI.md yazıldı, kullanıcı onayladı | F1.7 |
 | 2026-11-15 | F2.1 Tasarım sistemi | Renkler logodan, Barlow, Lucide ikonlar, 10 bileşen, /stil-rehberi; kullanıcı onayladı | F2.1 |
+| 2026-11-15 | F2.2 Ana sayfa | K12 sırası; kategori kartları (görsel/ikon), marka şeridi, öne çıkanlar, mağazalar; 360 px taşma yok, 104 link kırıksız | F2.2 |

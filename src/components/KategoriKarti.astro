@@ -1,0 +1,65 @@
+---
+/**
+ * Ana kategori kartı (ana sayfa, K12: hepsi EŞİT boyutlu). Görsel: kategori görseli → ilk ürün görseli → büyük ikon.
+ * `adres` yoksa (kategoride henüz ürün yok) link olmaz, "Hazırlanıyor" yazar.
+ */
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+import { ArrowRight } from '@lucide/astro';
+import { kategoriIkonu } from '../lib/ikonlar';
+import type { Kategori } from '../lib/katalog';
+
+interface Props {
+  kategori: Kategori;
+  gorsel?: { gorsel: ImageMetadata | string; alt: string };
+  urunSayisi: number;
+  adres?: string;
+  oncelikli?: boolean;
+}
+const { kategori, gorsel, urunSayisi, adres, oncelikli = false } = Astro.props;
+const Ikon = kategoriIkonu(kategori.id);
+const Etiket = adres ? 'a' : 'div';
+---
+
+<Etiket
+  href={adres}
+  class:list={[
+    'group flex h-full w-full flex-col overflow-hidden rounded-lg border border-stone-200 bg-white no-underline',
+    adres && 'transition-shadow hover:shadow-lg',
+  ]}
+>
+  <div class="relative aspect-[4/3] w-full overflow-hidden border-b border-stone-200 bg-white">
+    {
+      gorsel && typeof gorsel.gorsel !== 'string' ? (
+        <Image
+          src={gorsel.gorsel}
+          alt=""
+          width={400}
+          widths={[240, 400, 640]}
+          sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 280px"
+          loading={oncelikli ? 'eager' : 'lazy'}
+          class="h-full w-full object-contain p-2 transition-transform group-hover:scale-[1.03]"
+        />
+      ) : (
+        <div class="flex h-full w-full items-center justify-center bg-zemin text-turuncu-koyu">
+          <Ikon size={56} stroke-width={1.5} aria-hidden="true" />
+        </div>
+      )
+    }
+  </div>
+  <div class="flex flex-1 items-center justify-between gap-2 p-3 sm:p-4">
+    <div class="min-w-0">
+      <h3 class="text-base leading-tight sm:text-lg">{kategori.data.ad}</h3>
+      <p class="text-xs text-stone-600 sm:text-sm">{urunSayisi > 0 ? `${urunSayisi} ürün` : 'Hazırlanıyor'}</p>
+    </div>
+    {
+      adres && (
+        <ArrowRight
+          size={20}
+          class="shrink-0 text-turuncu-koyu transition-transform group-hover:translate-x-0.5"
+          aria-hidden="true"
+        />
+      )
+    }
+  </div>
+</Etiket>

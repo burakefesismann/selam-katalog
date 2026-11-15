@@ -123,6 +123,40 @@ export async function getKategoriUrunleri(kategoriId: string, altlarDahil = true
   return (await getUrunler()).filter((u) => idler.has(u.data.kategori.id));
 }
 
+/** Kategori kartı görseli: kategorinin kendi görseli → yoksa kategorideki (alt kategoriler dahil) ilk ürün görseli */
+export async function getKategoriGorseli(kategori: Kategori) {
+  if (kategori.data.gorsel) return { gorsel: kategori.data.gorsel, alt: kategori.data.ad };
+  for (const u of await getKategoriUrunleri(kategori.id)) {
+    const g = u.data.gorseller[0];
+    if (g) return { gorsel: g.gorsel, alt: g.alt_metin };
+  }
+  return undefined;
+}
+
+/**
+ * Ana sayfa öne çıkanlar: önce `one_cikan: true` olanlar; yoksa/azsa farklı ana kategorilerden sırayla
+ * (tek bir kategori baskın olmasın — K12). Görseli olanlar önce.
+ */
+export async function getOneCikanUrunler(adet = 8): Promise<Urun[]> {
+  const urunler = await getUrunler();
+  const secilen = urunler.filter((u) => u.data.one_cikan).slice(0, adet);
+  if (secilen.length >= adet) return secilen;
+  const gruplar = await Promise.all(
+    (await getAnaKategoriler()).map(async (k) =>
+      (await getKategoriUrunleri(k.id))
+        .filter((u) => !secilen.includes(u))
+        .sort((a, b) => Number(b.data.gorseller.length > 0) - Number(a.data.gorseller.length > 0)),
+    ),
+  );
+  for (let tur = 0; secilen.length < adet && gruplar.some((g) => g.length > tur); tur++) {
+    for (const g of gruplar) {
+      if (secilen.length >= adet) break;
+      if (g[tur]) secilen.push(g[tur]);
+    }
+  }
+  return secilen;
+}
+
 export async function getMarkaUrunleri(markaId: string): Promise<Urun[]> {
   return (await getUrunler()).filter((u) => u.data.markalar.some((m) => m.id === markaId));
 }

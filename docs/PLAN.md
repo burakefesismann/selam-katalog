@@ -119,7 +119,7 @@ Bitince: PLAN'da `[x]` → DURUM.md güncelle → commit + push → kullanıcıy
   Mobilde altta sabit "Ara" butonu.
   *Bitti sayılır:* `/stil-rehberi` sayfasında tüm bileşenler gerçek ürün görselleriyle görülüyor (noindex). Kullanıcı onayı alındı.
 
-- [ ] **F2.2 Ana sayfa** (K12) — dengeli genel görünüm, tek bir kategori büyütülmez: arama + kısa güven mesajı →
+- [x] **F2.2 Ana sayfa** (K12) — dengeli genel görünüm, tek bir kategori büyütülmez: arama + kısa güven mesajı →
   11 ana kategorinin **eşit boyutlu görselli kartları** → marka logoları şeridi (**Fırat Boru ilk ve vurgulu**) →
   farklı kategorilerden karışık öne çıkan ürünler → çözüm sayfaları alanı (F4.5'e kadar gizli) → şubeler/iletişim özeti.
 - [ ] **F2.3 Kategori sayfası** — alt kategoriler, görselli ürün kartları, filtre (marka, kullanım alanı).
