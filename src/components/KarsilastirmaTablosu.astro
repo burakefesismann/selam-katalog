@@ -1,0 +1,78 @@
+---
+/**
+ * Karşılaştırma tablosu (F2.6). Satırlar: teknik özellik adları · sütunlar: ürünler (başta görsel).
+ * Mobilde: özellik adı sütunu SABİT, ürün sütunları yana kayar (tablo sayfayı taşırmaz).
+ * Aynı satırda değerler farklıysa satır hafif vurgulanır (farkı görmek kolay olsun).
+ */
+import { Image } from 'astro:assets';
+import type { Karsilastirma } from '../lib/katalog';
+import { urunUrl } from '../lib/url';
+
+interface Props {
+  veri: Karsilastirma;
+  baslik?: string;
+  id?: string;
+}
+const { veri, baslik = 'Karşılaştırma', id = 'karsilastirma' } = Astro.props;
+const farkli = (d: (string | undefined)[]) => new Set(d.map((x) => x ?? '')).size > 1;
+---
+
+<section id={id} class="scroll-mt-24">
+  <div class="mb-3 flex flex-wrap items-end justify-between gap-2">
+    <h2 class="text-2xl">{baslik}</h2>
+    <p class="text-sm text-stone-600 md:hidden">Tabloyu yana kaydırın →</p>
+  </div>
+  <div class="overflow-x-auto rounded-lg border border-stone-200" tabindex="0" role="region" aria-label={baslik}>
+    <table class="w-full border-collapse text-left text-sm">
+      <caption class="sr-only">{baslik}: teknik özellikler ürün ürün</caption>
+      <thead>
+        <tr class="bg-zemin align-bottom">
+          <th
+            scope="col"
+            class="sticky left-0 z-10 w-36 min-w-36 border-r border-b border-stone-200 bg-zemin p-3 text-xs font-semibold text-stone-600 sm:w-48 sm:min-w-48"
+          >
+            Özellik
+          </th>
+          {
+            veri.urunler.map((u) => {
+              const g = u.data.gorseller[0];
+              return (
+                <th scope="col" class="min-w-36 border-b border-stone-200 p-3 font-normal sm:min-w-44">
+                  <a href={urunUrl(u.id)} class="group block no-underline">
+                    <span class="mb-2 block aspect-[4/3] overflow-hidden rounded border border-stone-200 bg-white">
+                      {g && typeof g.gorsel !== 'string' ? (
+                        <Image src={g.gorsel} alt="" width={176} widths={[176, 352]} sizes="176px" class="h-full w-full object-contain p-1" />
+                      ) : null}
+                    </span>
+                    <span class="block font-baslik text-base leading-tight font-bold text-antrasit group-hover:underline">
+                      {u.data.ad}
+                    </span>
+                  </a>
+                </th>
+              );
+            })
+          }
+        </tr>
+      </thead>
+      <tbody>
+        {
+          veri.satirlar.map(({ ozellik, degerler }) => (
+            <tr class:list={['border-b border-stone-100 last:border-0', farkli(degerler) && 'bg-turuncu-acik/40']}>
+              <th
+                scope="row"
+                class="sticky left-0 z-10 border-r border-stone-200 bg-white p-3 font-medium text-stone-700"
+                title={ozellik.data.aciklama}
+              >
+                {ozellik.data.ad}
+                {ozellik.data.birim && <span class="text-stone-500"> ({ozellik.data.birim})</span>}
+              </th>
+              {degerler.map((d) => (
+                <td class="p-3 font-semibold">{d ?? <span class="font-normal text-stone-400">—</span>}</td>
+              ))}
+            </tr>
+          ))
+        }
+      </tbody>
+    </table>
+  </div>
+</section>

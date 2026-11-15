@@ -7,7 +7,7 @@
  */
 import type { GetStaticPaths } from 'astro';
 import { render } from 'astro:content';
-import { Check, FileText, Phone } from '@lucide/astro';
+import { Check, FileText, Phone, Table2 } from '@lucide/astro';
 import BolumBasligi from '../../components/BolumBasligi.astro';
 import Buton from '../../components/Buton.astro';
 import KonumYolu from '../../components/KonumYolu.astro';
@@ -22,6 +22,7 @@ import {
   getKategoriYolu,
   getUrunDetay,
   getUrunler,
+  kategoriKarsilastirmasi,
   telLink,
   type Urun,
 } from '../../lib/katalog';
@@ -54,6 +55,12 @@ const dolu = {
   seriler: data.seriler.length > 0,
   teknik: teknikOzellikler.length > 0,
 };
+
+// Bu ürün kendi kategorisinin karşılaştırma tablosunda mı (F2.6)
+const karsilastirma = await kategoriKarsilastirmasi(kategori.id);
+const karsilastirAdresi = karsilastirma?.urunler.some((u) => u.id === urun.id)
+  ? `${kategoriUrl(kategori.id)}#karsilastirma`
+  : undefined;
 
 // İlgili ürünler; yoksa aynı kategoriden en fazla 4 ürün
 let ilgiliBaslik = 'İlgili ürünler';
@@ -195,6 +202,14 @@ const ilgiliKartlar = await Promise.all(
         <p class="text-sm text-stone-600">
           {firma.telefon} · Fiyat ve stok bilgisi için mağazalarımızı arayın.
         </p>
+        {
+          karsilastirAdresi && (
+            <a href={karsilastirAdresi} class="inline-flex items-center gap-2 font-semibold text-turuncu-koyu hover:underline">
+              <Table2 size={18} aria-hidden="true" />
+              Benzer ürünlerle karşılaştır
+            </a>
+          )
+        }
       </div>
     </div>
 

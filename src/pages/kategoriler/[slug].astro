@@ -5,9 +5,10 @@
  * - Liste her zaman HTML'de (JavaScript kapalıyken de görünür). Filtre sadece JS açıkken görünür ve çalışır.
  */
 import type { GetStaticPaths } from 'astro';
-import { Phone, SlidersHorizontal } from '@lucide/astro';
+import { ArrowRight, Phone, SlidersHorizontal, Table2 } from '@lucide/astro';
 import BolumBasligi from '../../components/BolumBasligi.astro';
 import Buton from '../../components/Buton.astro';
+import KarsilastirmaTablosu from '../../components/KarsilastirmaTablosu.astro';
 import KonumYolu from '../../components/KonumYolu.astro';
 import UrunKarti from '../../components/UrunKarti.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
@@ -19,6 +20,7 @@ import {
   getKategoriYolu,
   getKullanimAlanlari,
   getUrunDetay,
+  kategoriKarsilastirmasi,
   markayaGoreGrupla,
   telLink,
   type Kategori,
@@ -50,7 +52,7 @@ const kartVerisi = new Map(
 );
 
 // Bölümler: önce doğrudan bu kategorideki ürünler, sonra her alt kategori
-type Bolum = { baslik?: string; adres?: string; gruplar: Awaited<ReturnType<typeof markayaGoreGrupla>> };
+type Bolum = { baslik?: string; adres?: string; karsilastir?: boolean; gruplar: Awaited<ReturnType<typeof markayaGoreGrupla>> };
 const bolumler: Bolum[] = [];
 const dogrudan = tumUrunler.filter((u) => u.data.kategori.id === kategori.id);
 if (altKategoriler.length === 0) {
@@ -60,7 +62,12 @@ if (altKategoriler.length === 0) {
   for (const alt of altKategoriler) {
     const urunler = await getKategoriUrunleri(alt.id);
     if (urunler.length) {
-      bolumler.push({ baslik: alt.data.ad, adres: kategoriUrl(alt.id), gruplar: await markayaGoreGrupla(urunler) });
+      bolumler.push({
+        baslik: alt.data.ad,
+        adres: kategoriUrl(alt.id),
+        karsilastir: Boolean(await kategoriKarsilastirmasi(alt.id)),
+        gruplar: await markayaGoreGrupla(urunler),
+      });
     }
   }
 }
@@ -79,6 +86,9 @@ const markaSecenekleri = [
 ];
 const alanIdleri = new Set(tumUrunler.flatMap((u) => kartVerisi.get(u.id)!.alanlar.map((a) => a.id)));
 const alanSecenekleri = (await getKullanimAlanlari()).filter((a) => alanIdleri.has(a.id));
+// Bu kategorinin DOĞRUDAN ürünleri arasında karşılaştırma (F2.6)
+const karsilastirma = await kategoriKarsilastirmasi(kategori.id);
+
 const filtreVar = markaSecenekleri.length > 1 || alanSecenekleri.length > 1;
 
 const filtreAnahtarlari = (u: Urun) => ({
@@ -185,11 +195,23 @@ let kartSirasi = 0;
           {bolumler.map((b) => (
             <section data-bolum>
               {b.baslik && (
-                <h2 class="mb-4 flex items-center gap-2 text-2xl">
-                  <a href={b.adres} class="hover:text-turuncu-koyu hover:underline">
-                    {b.baslik}
-                  </a>
-                </h2>
+                <div class="mb-4 flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
+                  <h2 class="text-2xl">
+                    <a href={b.adres} class="hover:text-turuncu-koyu hover:underline">
+                      {b.baslik}
+                    </a>
+                  </h2>
+                  {b.karsilastir && (
+                    <a
+                      href={`${b.adres}#karsilastirma`}
+                      class="inline-flex items-center gap-1 text-sm font-semibold text-turuncu-koyu hover:underline"
+                    >
+                      <Table2 size={16} aria-hidden="true" />
+                      Karşılaştır
+                      <ArrowRight size={14} aria-hidden="true" />
+                    </a>
+                  )}
+                </div>
               )}
               <div class="space-y-8">
                 {b.gruplar.map((g) => (
@@ -222,6 +244,12 @@ let kartSirasi = 0;
         </div>
       )
     }
+
+    {karsilastirma && (
+      <div class="mt-14">
+        <KarsilastirmaTablosu veri={karsilastirma} baslik={`${kategori.data.ad}: karşılaştırma`} />
+      </div>
+    )}
   </main>
 </BaseLayout>
 

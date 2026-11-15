@@ -3,7 +3,7 @@
 > Her oturumun başında oku, sonunda güncelle. Kısa tut.
 
 ## Şu an
-- Aktif görev: — (F2.5 bitti)
+- Aktif görev: — (F2.6 bitti)
 - Site: https://burakefesismann.github.io/selam-katalog/
 - Faz: 2 — Vitrin tasarımı
 
@@ -11,7 +11,7 @@
 - Yok
 
 ## Sıradaki
-- F2.6 — Karşılaştırma tablosu (kategoride teknik özelliği dolu 2+ ürün varsa)
+- F2.7 — Arama (Pagefind; header + ana sayfa formu + "Ürün Ara" butonları şu an /urunler'e gidiyor → /ara)
 
 ## Kullanıcıdan beklenenler
 - [~] Logo: `kaynaklar/logo/selamfis.png` geldi (2026-11-15 tekrar aynı dosya geldi; daha büyüğü yok) (474×129 PNG, şeffaf zemin, turuncu+gri). Vektör (SVG/AI/PDF) ya da
@@ -109,6 +109,11 @@
   Ürünler ana kategoriye göre (`anaKategoriyeGoreGrupla`); çok markalı ürün her markasının sayfasında görünür, kartta o
   marka yazar. Menüye "Markalar" eklendi; ana sayfa marka şeridi ve ürün sayfası marka rozetleri marka sayfasına gidiyor.
 
+- F2.6: `KarsilastirmaTablosu` + `getKarsilastirma`/`kategoriKarsilastirmasi`. Sadece AYNI kategorinin doğrudan
+  ürünleri karşılaştırılır (alt kategoriler ayrı). Üst kategori sayfasında alt bölüm başlığında "Karşılaştır" linki;
+  ürün sayfasında "Benzer ürünlerle karşılaştır" (ürün tabloda ise). Mobilde özellik sütunu sabit, tablo kendi
+  kutusunda kayar (sayfa taşmaz, ölçüldü). Farklı değerli satırlar hafif turuncu. Geçici test ürünleri silindi.
+
 ## Öneriler
 - (Plana eklenmesi önerilen fikirler. Kullanıcı onaylarsa PLAN.md'ye taşınır.)
 - Ana sayfadaki 11 ana kategori kartı (F2.2) için kategori görselleri gerekecek; planda ayrı görev yok.
@@ -135,3 +140,4 @@
 | 2026-11-15 | F2.3 Kategori sayfası | 15 sayfa, alt kategoriler, marka grupları, JS filtre (6 senaryo test), 259 link kırıksız | F2.3 |
 | 2026-11-15 | F2.4 Ürün detay | Galeri + tam ekran (PhotoSwipe), kart tipine göre vurgu, 3 tip test edildi, 360 px taşma yok | F2.4 |
 | 2026-11-15 | F2.5 Marka sayfaları | Liste + detay, Markdown tanıtım, kategoriye göre gruplu; menü/şerit/rozet linkleri; 397 link kırıksız | F2.5 |
+| 2026-11-15 | F2.6 Karşılaştırma | Otomatik tablo (2+ teknikli ürün), sabit özellik sütunu, kategori/ürün linkleri; test edildi | F2.6 |

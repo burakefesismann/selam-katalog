@@ -181,6 +181,34 @@ export async function markayaGoreGrupla(urunler: Urun[]): Promise<MarkaGrubu[]> 
   return [...gruplar.values()].sort((a, b) => sira(a) - sira(b));
 }
 
+export interface Karsilastirma {
+  urunler: Urun[];
+  satirlar: { ozellik: OzellikTanimi; degerler: (string | undefined)[] }[];
+}
+
+/**
+ * Karşılaştırma tablosu (F2.6): teknik özelliği dolu ürünler 2+ ise satırlar = kullanılan özellik tanımları
+ * (sıralı), sütunlar = ürünler. Yoksa undefined. Sadece AYNI kategorideki ürünler verilmeli.
+ */
+export async function getKarsilastirma(urunler: Urun[]): Promise<Karsilastirma | undefined> {
+  const teknikli = urunler.filter((u) => u.data.teknik_ozellikler.length > 0);
+  if (teknikli.length < 2) return undefined;
+  const tanimlar = await getOzellikTanimlari(); // sıralı
+  const kullanilan = new Set(teknikli.flatMap((u) => u.data.teknik_ozellikler.map((t) => t.ozellik.id)));
+  const satirlar = tanimlar
+    .filter((o) => kullanilan.has(o.id))
+    .map((ozellik) => ({
+      ozellik,
+      degerler: teknikli.map((u) => u.data.teknik_ozellikler.find((t) => t.ozellik.id === ozellik.id)?.deger),
+    }));
+  return { urunler: teknikli, satirlar };
+}
+
+/** Kategorinin DOĞRUDAN ürünleri (alt kategoriler hariç) karşılaştırılabilir mi */
+export async function kategoriKarsilastirmasi(kategoriId: string) {
+  return getKarsilastirma(await getKategoriUrunleri(kategoriId, false));
+}
+
 /** Ürünleri ANA kategorilerine göre gruplar (marka sayfası). Ana kategori sırasıyla. */
 export async function anaKategoriyeGoreGrupla(urunler: Urun[]): Promise<{ kategori: Kategori; urunler: Urun[] }[]> {
   const anaKategoriler = await getAnaKategoriler();
