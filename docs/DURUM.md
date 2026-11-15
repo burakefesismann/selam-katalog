@@ -12,7 +12,11 @@
   - Yapılanlar: `public/admin/index.html` + `config.yml` (Sveltia, sadece token girişi, Sveltia JSON şemasına göre GEÇERLİ),
     yüklenen görseller tarayıcıda WebP/1600 px. Şema: `slug` artık opsiyonel (dosya adı = slug, doğrulama dosya adını
     kontrol ediyor); görsel yolları `/src/assets/...` (Astro kabul ediyor); teknik föy `/foyler/x.pdf`.
-  - Kullanıcı token oluşturdu (2026-11-15), henüz panelden kayıt yapmadı.
+  - Kullanıcı token oluşturdu (2026-11-15). 1. test (commit 9e3fa42): kayıt GitHub'a düştü, açıklama doğru, AMA
+    görsel Sveltia'nın stok kütüphanesinden (picsum) seçildi ve ana görselin yerine geçti; boş alanlar `''` yazıldı
+    → yayın başarısız (canlı site etkilenmedi). Düzeltildi (080b3d9): stok kapalı, URL girişi kapalı, boş alanlar
+    yazılmıyor, şema `''`/null toleranslı, uzak görsel Türkçe hata. Test geri alındı.
+  - Panelin yazdığı biçim (markalar liste, slug alt satırda, gövde öncesi boş satır) build'de sorunsuz.
   - Kalan: kullanıcı Ürünler › Baumit Flexo › kısa açıklamaya " (panel testi)" ekler + telefon fotoğrafı yükler › Kaydet.
     Sonra kontrol et: `git pull` → yeni "panel: ..." commit'i, görsel `src/assets/urunler/` altında WebP ve ≤ 1600 px / ≤ 500 KB,
     Actions yayını başarılı, canlı sayfada görünüyor. Ardından test değişikliğini geri al (açıklama + test görseli),
