@@ -8,7 +8,8 @@ Son güncelleme: 2026-11-14 (F1.3)
 
 ## 1. Genel kurallar
 
-- **Bir kayıt = bir dosya.** Dosya adı = `slug` (ör. `baumit-flexo.md`). Uyuşmazsa site derlenmez.
+- **Bir kayıt = bir dosya.** Dosya adı = `slug` (ör. `baumit-flexo.md`). Dosyanın içine `slug:` yazmak **opsiyonel**
+  (panel yazmaz); yazılırsa dosya adıyla aynı olmalı, yoksa site derlenmez. Dosya adı da slug kuralına uymalı.
 - **slug:** küçük harf, rakam, tire. Türkçe karakter yok: ı→i, İ→i, ş→s, ğ→g, ü→u, ö→o, ç→c, `&` → `ve`.
   Ör. "Drenaj Kanalları & Izgaralar" → `drenaj-kanallari-ve-izgaralar`. Slug sonradan değiştirilmez (adres değişir).
 - **Bağlantılar slug ile yazılır:** ürünün markası `firat`, kategorisi `pprc-temiz-su` gibi. Bağlanan kayıt yoksa
@@ -53,7 +54,7 @@ Paketlerde `gorseller` alanı genelde **boş** bırakılır; görselleri VS Code
 | Alan | Zorunlu | Tür | Anlamı |
 |---|---|---|---|
 | `ad` | ✔ | metin | Kartta ve sayfada görünen ad. `KATALOG-YAPISI.md`'deki adla aynı. |
-| `slug` | ✔ | slug | Adres: `/urunler/<slug>`. Dosya adıyla aynı. |
+| `slug` | – | slug | Adres: `/urunler/<slug>`. Dosya adıyla aynı (opsiyonel; dosya adı yeterli). |
 | `kart_tipi` | ✔ | `grup` / `marka_tur` / `urun` | K11. Sayfada neyin öne çıkacağını belirler. |
 | `kategori` | ✔ | kategori slug'ı | Ürünün durduğu **en alt** kategori (ör. `pprc-temiz-su`, `tesisat-borulari` değil). |
 | `markalar` | – | marka slug listesi | İlk sıradaki = ana marka. "çeşitli" kartlarda boş bırak. Çok markalıda hepsini yaz: `[eca, kas]`. |
@@ -64,7 +65,7 @@ Paketlerde `gorseller` alanı genelde **boş** bırakılır; görselleri VS Code
 | `kullanim_alanlari` | – | kullanım alanı slug listesi | Bkz. bölüm 4: `[ic-mekan, islak-hacim]`. |
 | `teknik_ozellikler` | – | liste | `{ozellik: <özellik slug'ı>, deger: "metin"}`. Birim `deger`'e yazılmaz, tanımdan gelir. |
 | `olculer` | – | metin listesi | Mevcut ebat/ambalajlar: `["Ø20 mm", "Ø25 mm"]`, `["25 kg torba"]`. |
-| `teknik_foy` | – | yol | `foyler/<slug>.pdf` (dosya `public/foyler/`'de olmalı). |
+| `teknik_foy` | – | yol | `/foyler/<slug>.pdf` (dosya `public/foyler/`'de olmalı; panel böyle yazar). |
 | `ilgili_urunler` | – | ürün slug listesi | Sayfanın altında "İlgili ürünler". |
 | `kaynak_sayfalar` | (beklenir) | adres listesi | Üreticinin resmi ürün sayfaları. **Sitede görünmez**; bilgi ve görsel kaynağı. |
 | `sira` | – | tam sayı | Varsayılan 100. |
@@ -146,7 +147,7 @@ gorseller:
 | Alan | Zorunlu | Anlamı |
 |---|---|---|
 | `ad` | ✔ | "Fırat", "Baumit" |
-| `slug` | ✔ | `firat` |
+| `slug` | – | `firat` (opsiyonel; dosya adı = slug) |
 | `kisa_aciklama` | ✔ | Marka listesinde görünen 1 cümle. |
 | `aciklama` | – | Marka sayfasındaki uzun tanıtım (birkaç paragraf, Markdown olabilir). |
 | `logo` | – | `/src/assets/markalar/<slug>.webp` (VS Code tarafı doldurur). Yoksa adı yazılır. |
@@ -236,6 +237,9 @@ Kaynak: `docs/FIRMA.md`. Sadece herkese açık bilgiler.
 ---
 
 ## 8. Plandan farklar (bilinçli)
+
+- **`slug` alanı opsiyonel (F1.6).** Panel (Sveltia) slug'ı dosya adı olarak üretir, dosyanın içine yazmaz.
+  Boş bırakılan opsiyonel alanlar (`''`) "yok" sayılır. Görsel yolları `/src/assets/...` (panel böyle yazar).
 
 - **`marka` → `markalar` (liste).** KATALOG-YAPISI.md'de 44 kart çok markalı (ör. "Rakor & Uzatmalar — ECA · KAS"),
   43 kart "çeşitli" (markasız). Tek marka alanı buna uymadığı için liste yapıldı; ilk sıradaki ana markadır.

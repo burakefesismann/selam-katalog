@@ -115,6 +115,9 @@ Kullanıcı `/devam` yazarsa bu adımlar + sıradaki görev yapılır. Diğer ko
 - Görsel gösterimi: `src/components/UrunGorseli.astro` (sabit 4:3 kutu, object-contain, açık zemin; görsel yoksa
   `GorselYerTutucu.astro`). İçerikteki görsel dosyası yoksa derleme durur (Astro `ImageNotFound`) → kırık görsel çıkmaz.
 - `scripts/*.ts` Node'un yerleşik TS desteğiyle çalışır: enum/namespace kullanma, import'larda `.ts` uzantısı yaz.
+- Panel: `public/admin/config.yml` (Sveltia CMS, `/admin`). Alanlar `content.config.ts` ile birebir; değişince
+  ikisini de güncelle ve Sveltia şemasına göre doğrula (`https://unpkg.com/@sveltia/cms/schema/sveltia-cms.json`).
+  Stok fotoğraf ve URL ile görsel KAPALI (K10). Boş alanlar yazılmaz. Panel commit'leri "panel: ..." ile başlar.
 - Slug üretimi: `src/lib/slug.ts` → `slugify()` (Türkçe karakter dönüşümü).
 - Tailwind v4: ayar dosyası yok, tema `global.css` içinde `@theme` ile tanımlanır (F2.1).
 - TypeScript 6 kullanılıyor (TS 7 ile `@astrojs/check` uyumlu değil; check TS 7'yi desteklemeden yükseltme).

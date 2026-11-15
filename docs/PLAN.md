@@ -90,7 +90,7 @@ Bitince: PLAN'da `[x]` → DURUM.md güncelle → commit + push → kullanıcıy
     + Küçük görselleri bozmadan büyütme denemesi (kullanıcı isteği, 2026-11-14): yapay zekâ ile büyütme (ör. Real-ESRGAN)
     Fırat 710 px ve Baumit 400 px görsellerde; özellikle ambalaj yazıları bozuluyor mu bak. Önce/sonra göster → kullanıcı kararı.
 
-- [ ] **F1.6 Panel (Sveltia CMS)**
+- [x] **F1.6 Panel (Sveltia CMS)**
   `/admin` altında Sveltia CMS, GitHub backend, bu depo. Koleksiyonlar F1.3 şemasıyla birebir.
   Panel etiketleri Türkçe ve açıklayıcı (ör. "Kısa açıklama — ürün kartında görünür").
   Referans alanlar açılır listeden seçilsin. Slug'lar Türkçe karakter dönüşümüyle otomatik.

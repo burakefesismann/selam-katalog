@@ -30,6 +30,8 @@ media_libraries:
   stock_assets:
     providers: []
   all:
+    # Yüklenen dosyanın adı slug kuralıyla düzeltilir (ör. "Foto Ürün_1.JPG" → foto-urun-1.webp)
+    slugify_filename: true
     transformations:
       raster_image:
         format: webp

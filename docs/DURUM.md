@@ -3,28 +3,15 @@
 > Her oturumun başında oku, sonunda güncelle. Kısa tut.
 
 ## Şu an
-- Aktif görev: F1.6 — Panel (Sveltia CMS) — kurulum yayında, kullanıcıyla canlı test bekleniyor
+- Aktif görev: — (F1.6 bitti)
 - Site: https://burakefesismann.github.io/selam-katalog/
 - Faz: 1 — İskelet, görseller ve panel
 
 ## Yarım kalan
-- **F1.6 Panel** — kurulum bitti ve yayında (commit 4e9f966). Kalan TEK adım: kullanıcıyla canlı kayıt testi.
-  - Yapılanlar: `public/admin/index.html` + `config.yml` (Sveltia, sadece token girişi, Sveltia JSON şemasına göre GEÇERLİ),
-    yüklenen görseller tarayıcıda WebP/1600 px. Şema: `slug` artık opsiyonel (dosya adı = slug, doğrulama dosya adını
-    kontrol ediyor); görsel yolları `/src/assets/...` (Astro kabul ediyor); teknik föy `/foyler/x.pdf`.
-  - Kullanıcı token oluşturdu (2026-11-15). 1. test (commit 9e3fa42): kayıt GitHub'a düştü, açıklama doğru, AMA
-    görsel Sveltia'nın stok kütüphanesinden (picsum) seçildi ve ana görselin yerine geçti; boş alanlar `''` yazıldı
-    → yayın başarısız (canlı site etkilenmedi). Düzeltildi (080b3d9): stok kapalı, URL girişi kapalı, boş alanlar
-    yazılmıyor, şema `''`/null toleranslı, uzak görsel Türkçe hata. Test geri alındı.
-  - Panelin yazdığı biçim (markalar liste, slug alt satırda, gövde öncesi boş satır) build'de sorunsuz.
-  - Kalan: kullanıcı Ürünler › Baumit Flexo › kısa açıklamaya " (panel testi)" ekler + telefon fotoğrafı yükler › Kaydet.
-    Sonra kontrol et: `git pull` → yeni "panel: ..." commit'i, görsel `src/assets/urunler/` altında WebP ve ≤ 1600 px / ≤ 500 KB,
-    Actions yayını başarılı, canlı sayfada görünüyor. Ardından test değişikliğini geri al (açıklama + test görseli),
-    build → PLAN [x] → DURUM → commit "F1.6: ..." → push.
-  - Test sonrası kontrol: panelin kaydettiği dosyada eski `slug:` alanı silindi mi, alan sırası/biçimi build'i bozuyor mu.
+- Yok
 
 ## Sıradaki
-- F1.6 — Panel (Sveltia CMS)
+- F1.7 — Panel kılavuzu (docs/PANEL-KULLANIMI.md)
 
 ## Kullanıcıdan beklenenler
 - [~] Logo: `kaynaklar/logo/selamfis.png` geldi (474×129 PNG, şeffaf zemin, turuncu+gri). Vektör (SVG/AI/PDF) ya da
@@ -85,6 +72,14 @@
   klasöründe (cwd) çalıştırılıyor, bu yüzden giriş/çıkış yolları mutlak. rembg denendi, reddedildi (K14).
   `gorsel:rapor` büyütülmüş görselleri artık "küçük" saymıyor → hangilerinin büyütüldüğü yukarıdaki listede.
 
+- F1.6 panel: https://burakefesismann.github.io/selam-katalog/admin/ — sadece token girişi (kullanıcı 2026-11-15 oluşturdu,
+  süresi ~1 yıl → yenilemek gerekecek). Canlı test: 1. denemede stok fotoğraf (picsum) seçildi + boş alanlar `''`
+  → yayın başarısız (site etkilenmedi) → düzeltildi: `stock_assets.providers: []`, `choose_url: false`,
+  `output.omit_empty_optional_fields`, `slugify_filename`, şemada `ops()`. 2. deneme: cihazdan yükleme → WebP 1600 px,
+  EXIF yok, yayın başarılı. Test değişiklikleri geri alındı. Kılavuzda (F1.7) anlatılacak tuzaklar: "Ekle" ile yeni
+  satır aç (mevcut görselin üstüne seçme = değiştirir), slug'ı oluştururken kontrol et (ü→u), stok yok.
+- Ürün sayfası şimdilik sadece ilk görseli gösteriyor; diğerleri F2.4 galerisinde.
+
 ## Öneriler
 - (Plana eklenmesi önerilen fikirler. Kullanıcı onaylarsa PLAN.md'ye taşınır.)
 - Ana sayfadaki 11 ana kategori kartı (F2.2) için kategori görselleri gerekecek; planda ayrı görev yok.
@@ -104,3 +99,4 @@
 | 2026-11-14 | F1.5a Görsel araçları | gorsel:hazirla, gorsel:rapor, yer tutucu bileşen | F1.5a |
 | 2026-11-14 | F1.5b Görseller | 6 ürün (8 görsel) + 2 logo, resmi siteler; küçük ama kullanıcı onayladı | F1.5b |
 | 2026-11-14 | F1.5c Büyütme/arka plan | Real-ESRGAN kabul (8 görsel büyütüldü, `--buyut`), rembg red; K14 | F1.5c |
+| 2026-11-15 | F1.6 Panel | Sveltia /admin, token girişi, 2 canlı test; stok/URL kapatıldı | F1.6 |
