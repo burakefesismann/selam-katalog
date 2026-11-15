@@ -1,0 +1,160 @@
+---
+/**
+ * Site içi arama (F2.7) — Pagefind arama motoru (JS API) + kendi arayüzümüz (tasarım sistemiyle uyumlu).
+ * Dizin `npm run build` sonunda `pagefind --site dist` ile oluşur (dist/pagefind/). `npm run dev`'de dizin YOK.
+ * Dizine giren: ürün, kategori, marka sayfaları (data-pagefind-body). ?q=... ile gelen kelime otomatik aranır.
+ * JS kapalıyken: form yine /ara?q=... gönderir ama sonuç gösterilemez → ürün listesine yönlendiren not.
+ */
+import { Search } from '@lucide/astro';
+import BolumBasligi from '../components/BolumBasligi.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getAyarlar, telLink } from '../lib/katalog';
+import { url } from '../lib/url';
+
+const { firma } = await getAyarlar();
+---
+
+<BaseLayout title={`Ürün ara — ${firma.kisa_ad}`} description={`${firma.kisa_ad} ürün, marka ve kategori arama.`}>
+  <main class="mx-auto max-w-4xl px-4 py-8">
+    <BolumBasligi seviye="h1" baslik="Ürün ara" aciklama="Ürün, marka ya da kategori adı yazın. Ör: Fırat, yapıştırıcı, PPRC" />
+
+    <form role="search" action={url('ara')} method="get" class="relative" data-arama-formu>
+      <label for="arama-kutusu" class="sr-only">Ürün, marka ya da kategori ara</label>
+      <Search size={22} class="pointer-events-none absolute top-1/2 left-4 -translate-y-1/2 text-stone-500" aria-hidden="true" />
+      <input
+        id="arama-kutusu"
+        name="q"
+        type="search"
+        autocomplete="off"
+        enterkeyhint="search"
+        placeholder="Ürün, marka ya da kategori ara"
+        class="min-h-14 w-full rounded-lg border-2 border-stone-300 bg-white pr-4 pl-12 text-lg focus:border-turuncu focus:outline-none"
+      />
+    </form>
+
+    <p id="arama-durum" class="mt-4 min-h-6 text-stone-600" aria-live="polite"></p>
+    <ul id="arama-sonuclar" class="mt-2 divide-y divide-stone-200"></ul>
+    <div id="arama-bos" hidden class="mt-4 rounded-lg bg-zemin p-5">
+      <p class="font-semibold">Aradığınızı bulamadınız mı?</p>
+      <p class="mt-1 text-stone-700">
+        Farklı bir kelime deneyin, <a class="font-semibold text-turuncu-koyu underline" href={url('urunler')}>tüm ürünlere</a> göz atın ya da
+        <a class="font-semibold text-turuncu-koyu underline" href={telLink(firma.telefon)}>{firma.telefon}</a> numarasından bize sorun.
+      </p>
+    </div>
+
+    <noscript>
+      <p class="mt-4 rounded-lg bg-zemin p-4">
+        Arama için JavaScript gerekli. Ürünlere <a class="font-semibold text-turuncu-koyu underline" href={url('urunler')}>ürün listesinden</a> göz atabilirsiniz.
+      </p>
+    </noscript>
+
+    <template id="arama-sonuc-sablonu">
+      <li>
+        <a class="group flex gap-4 py-4 no-underline" data-link>
+          <span class="flex aspect-[4/3] w-24 shrink-0 items-center justify-center overflow-hidden rounded-md border border-stone-200 bg-white sm:w-32">
+            <img data-gorsel alt="" loading="lazy" class="h-full w-full object-contain p-1" />
+          </span>
+          <span class="min-w-0 flex-1">
+            <span data-tur class="mb-1 inline-block rounded bg-zemin px-2 py-0.5 text-xs font-semibold text-stone-700"></span>
+            <span data-baslik class="block font-baslik text-lg leading-tight font-bold text-antrasit group-hover:text-turuncu-koyu group-hover:underline"></span>
+            <span data-ozet class="mt-1 line-clamp-2 block text-sm text-stone-600 [&_mark]:bg-turuncu-acik [&_mark]:font-semibold [&_mark]:text-antrasit"></span>
+          </span>
+        </a>
+      </li>
+    </template>
+  </main>
+</BaseLayout>
+
+<script>
+  type PagefindSonuc = {
+    url: string;
+    excerpt: string;
+    meta: { title?: string; image?: string; image_alt?: string };
+    filters: Record<string, string[]>;
+  };
+  type Pagefind = {
+    options: (o: Record<string, unknown>) => Promise<void>;
+    init: () => Promise<void>;
+    search: (q: string) => Promise<{ results: { data: () => Promise<PagefindSonuc> }[] }>;
+  };
+
+  const kok = import.meta.env.BASE_URL.replace(/\/?$/, '/');
+  const kutu = document.querySelector<HTMLInputElement>('#arama-kutusu')!;
+  const durum = document.querySelector<HTMLElement>('#arama-durum')!;
+  const liste = document.querySelector<HTMLUListElement>('#arama-sonuclar')!;
+  const bos = document.querySelector<HTMLElement>('#arama-bos')!;
+  const sablon = document.querySelector<HTMLTemplateElement>('#arama-sonuc-sablonu')!;
+  const form = document.querySelector<HTMLFormElement>('[data-arama-formu]')!;
+
+  let pagefind: Pagefind | undefined;
+  async function yukle(): Promise<Pagefind | undefined> {
+    if (pagefind) return pagefind;
+    try {
+      // Dizin build'de oluşur; Vite'ın bu adresi paketlemeye çalışmaması için yol çalışma anında kurulur
+      const adres = `${kok}pagefind/pagefind.js`;
+      const modul = (await import(/* @vite-ignore */ adres)) as Pagefind;
+      // noWorker: Pagefind web worker bazı tarayıcı ortamlarında takılıyordu (test edildi); katalog küçük, ana iş
+      // parçacığında arama yeterince hızlı.
+      await modul.options({ baseUrl: kok, excerptLength: 20, noWorker: true });
+      await modul.init();
+      pagefind = modul;
+    } catch {
+      durum.textContent = 'Arama şu an kullanılamıyor (arama dizini bulunamadı).';
+    }
+    return pagefind;
+  }
+
+  let sonAranan = '';
+  async function ara(q: string) {
+    const terim = q.trim();
+    sonAranan = terim;
+    bos.hidden = true;
+    if (!terim) {
+      liste.replaceChildren();
+      durum.textContent = '';
+      return;
+    }
+    const pf = await yukle();
+    if (!pf) return;
+    durum.textContent = `“${terim}” aranıyor…`;
+    // Not: Pagefind'ın debouncedSearch'ü bazı ortamlarda hiç dönmüyor (test edildi) → gecikmeyi kendimiz yapıyoruz
+    const sonuc = await pf.search(terim);
+    if (terim !== sonAranan) return; // bu arada daha yeni bir arama başladı
+    const veriler = await Promise.all(sonuc.results.slice(0, 30).map((r) => r.data()));
+    if (terim !== sonAranan) return;
+
+    liste.replaceChildren(
+      ...veriler.map((v) => {
+        const li = sablon.content.firstElementChild!.cloneNode(true) as HTMLLIElement;
+        li.querySelector<HTMLAnchorElement>('[data-link]')!.href = v.url;
+        const img = li.querySelector<HTMLImageElement>('[data-gorsel]')!;
+        if (v.meta.image) img.src = v.meta.image;
+        else img.remove();
+        li.querySelector('[data-tur]')!.textContent = v.filters['tür']?.[0] ?? '';
+        li.querySelector('[data-baslik]')!.textContent = v.meta.title ?? v.url;
+        li.querySelector('[data-ozet]')!.innerHTML = v.excerpt; // Pagefind'ın kendi ürettiği, <mark> içeren özet
+        return li;
+      }),
+    );
+    durum.textContent = veriler.length
+      ? `“${terim}” için ${sonuc.results.length} sonuç`
+      : `“${terim}” için sonuç bulunamadı.`;
+    bos.hidden = veriler.length > 0;
+    // Adres çubuğu aramayı göstersin (paylaşılabilir, geri tuşu çalışır)
+    history.replaceState(null, '', `?q=${encodeURIComponent(terim)}`);
+  }
+
+  let zamanlayici: number | undefined;
+  kutu.addEventListener('input', () => {
+    clearTimeout(zamanlayici);
+    zamanlayici = window.setTimeout(() => ara(kutu.value), 200);
+  });
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    ara(kutu.value);
+  });
+  const q = new URLSearchParams(location.search).get('q');
+  if (q) kutu.value = q;
+  kutu.focus();
+  ara(kutu.value);
+</script>

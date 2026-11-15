@@ -92,7 +92,8 @@ Kullanıcı `/devam` yazarsa bu adımlar + sıradaki görev yapılır. Diğer ko
 ## Komutlar
 - `npm install` — bağımlılıkları kur (ilk kez ya da package.json değişince)
 - `npm run dev` — yerel önizleme → http://localhost:4321/selam-katalog/
-- `npm run build` — tip kontrolü (`astro check`) + derleme → `dist/` (her görev sonunda, 0 hata şart)
+- `npm run build` — tip kontrolü (`astro check`) + derleme → `dist/` + arama dizini (`pagefind --site dist`)
+  (her görev sonunda, 0 hata şart). Arama `npm run dev`'de ÇALIŞMAZ; `npm run build` + `npm run preview` ile dene.
 - `npm run preview` — derlenmiş siteyi önizleme
 - `npm run gorsel:hazirla -- <dosya|klasör> [--hedef urunler|markalar|kategoriler] [--ad <slug>] [--uzerine-yaz]`
   — WebP, ≤1600 px, ≤500 KB, EXIF silinir, yön düzeltilir; `src/assets/<hedef>/` içine. Hedef dosya adından bulunur
@@ -119,6 +120,12 @@ Kullanıcı `/devam` yazarsa bu adımlar + sıradaki görev yapılır. Diğer ko
 - Panel: `public/admin/config.yml` (Sveltia CMS, `/admin`). Alanlar `content.config.ts` ile birebir; değişince
   ikisini de güncelle ve Sveltia şemasına göre doğrula (`https://unpkg.com/@sveltia/cms/schema/sveltia-cms.json`).
   Stok fotoğraf ve URL ile görsel KAPALI (K10). Boş alanlar yazılmaz. Panel commit'leri "panel: ..." ile başlar.
+- Arama (F2.7): Pagefind 1.6 JS API + kendi arayüzümüz (`src/pages/ara.astro`), `noWorker: true` (worker bazı
+  ortamlarda takılıyordu). Dizine sadece `data-pagefind-body` olan sayfalar girer (ürün, kategori, marka); kart
+  listeleri, konum yolu, galeri, butonlar `data-pagefind-ignore`. Sonuç görseli `data-pagefind-meta="image:..."`
+  ile AÇIKÇA verilir (yoksa Pagefind sayfadaki ilk görseli ve alt metnini alır → yanlış eşleşmeler).
+- Test tuzağı: headless Edge + `--virtual-time-budget` Pagefind worker'ını ve `debouncedSearch`'ü bitirmiyor;
+  önizleme sunucusu uzun açık kalınca da garipleşebiliyor → şüphede sunucuyu yeniden başlat, yeni profil kullan.
 - Slug üretimi: `src/lib/slug.ts` → `slugify()` (Türkçe karakter dönüşümü).
 - Tailwind v4: ayar dosyası yok, tema `src/styles/global.css` içinde `@theme` ile tanımlı (F2.1).
 - Tasarım sistemi (F2.1): renkler `turuncu` #ef7f1a · `turuncu-koyu` #b85a0e · `turuncu-acik` · `antrasit` #2b2a29 ·

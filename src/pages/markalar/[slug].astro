@@ -1,6 +1,7 @@
 ---
 /** Marka detay (F2.5): logo, tanıtım, web sitesi; ürünler ANA kategoriye göre gruplu. */
 import type { GetStaticPaths } from 'astro';
+import { getImage } from 'astro:assets';
 import { ExternalLink, Phone } from '@lucide/astro';
 import BolumBasligi from '../../components/BolumBasligi.astro';
 import Buton from '../../components/Buton.astro';
@@ -46,17 +47,25 @@ const gruplar = await Promise.all(
 const tanitim = markdownHtml(data.aciklama);
 const webAdi = data.web_sitesi?.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '');
 let sira = 0;
+// Arama sonucunda logo (SVG olduğu gibi; diğerleri küçük WebP)
+const logoKucuk = !data.logo || typeof data.logo === 'string'
+  ? undefined
+  : data.logo.format === 'svg'
+    ? data.logo.src
+    : (await getImage({ src: data.logo, width: 160, format: 'webp' })).src;
 ---
 
 <BaseLayout title={`${data.ad} — ${firma.kisa_ad}`} description={data.kisa_aciklama}>
   <main class="mx-auto max-w-6xl px-4 py-8">
     <KonumYolu ogeler={[{ ad: 'Markalar', adres: url('markalar') }, { ad: data.ad }]} />
 
-    <header class="mb-10 grid items-center gap-6 rounded-lg border border-stone-200 p-5 sm:grid-cols-[auto_1fr] sm:p-8">
+    <header data-pagefind-body class="mb-10 grid items-center gap-6 rounded-lg border border-stone-200 p-5 sm:grid-cols-[auto_1fr] sm:p-8">
       <div class="flex h-24 items-center justify-center sm:h-28 sm:w-56">
         <MarkaLogosu marka={marka} yukseklik={96} class="max-h-20 max-w-full sm:max-h-24" />
       </div>
       <div>
+        <span hidden data-pagefind-filter="tür:Marka"></span>
+        {logoKucuk && <span hidden data-pagefind-meta={`image:${logoKucuk}`}></span>}
         <h1 class="text-3xl sm:text-4xl">{data.ad}</h1>
         <p class="mt-2 text-lg text-stone-700">{data.kisa_aciklama}</p>
         {
@@ -77,7 +86,7 @@ let sira = 0;
 
     {
       tanitim && (
-        <section class="mb-12">
+        <section class="mb-12" data-pagefind-body>
           <BolumBasligi baslik={`${data.ad} hakkında`} />
           <div class="icerik" set:html={tanitim} />
         </section>

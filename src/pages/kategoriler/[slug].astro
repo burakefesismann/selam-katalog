@@ -5,6 +5,7 @@
  * - Liste her zaman HTML'de (JavaScript kapalıyken de görünür). Filtre sadece JS açıkken görünür ve çalışır.
  */
 import type { GetStaticPaths } from 'astro';
+import { getImage } from 'astro:assets';
 import { ArrowRight, Phone, SlidersHorizontal, Table2 } from '@lucide/astro';
 import BolumBasligi from '../../components/BolumBasligi.astro';
 import Buton from '../../components/Buton.astro';
@@ -15,6 +16,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import {
   getAltKategoriler,
   getAyarlar,
+  getKategoriGorseli,
   getKategoriler,
   getKategoriUrunleri,
   getKategoriYolu,
@@ -96,6 +98,11 @@ const filtreAnahtarlari = (u: Urun) => ({
   'data-alanlar': kartVerisi.get(u.id)!.alanlar.map((a) => a.id).join(' '),
 });
 let kartSirasi = 0;
+
+// Arama sonucu görseli AÇIKÇA verilir (yoksa Pagefind ilk ürün görselini ve onun alt metnini alıyor → kategori,
+// "fırat" gibi aramalarda yanlışlıkla çıkıyordu).
+const kg = await getKategoriGorseli(kategori);
+const aramaGorseli = kg && typeof kg.gorsel !== 'string' ? (await getImage({ src: kg.gorsel, width: 160, format: 'webp' })).src : undefined;
 ---
 
 <BaseLayout
@@ -105,11 +112,18 @@ let kartSirasi = 0;
   <main class="mx-auto max-w-6xl px-4 py-8">
     <KonumYolu ogeler={yol.map((k) => ({ ad: k.data.ad, adres: kategoriUrl(k.id) }))} />
 
-    <BolumBasligi
-      seviye="h1"
-      baslik={kategori.data.ad}
-      aciklama={kategori.data.kisa_aciklama ?? (tumUrunler.length ? `${tumUrunler.length} ürün` : undefined)}
-    />
+    <div data-pagefind-body>
+      <span hidden data-pagefind-filter="tür:Kategori"></span>
+      <span hidden data-pagefind-meta={`image:${aramaGorseli ?? ""}`}></span>
+      <span hidden data-pagefind-meta={`image_alt:${kategori.data.ad}`}></span>
+      <BolumBasligi
+        seviye="h1"
+        baslik={kategori.data.ad}
+        aciklama={kategori.data.kisa_aciklama ?? (tumUrunler.length ? `${tumUrunler.length} ürün` : undefined)}
+      />
+      {altKategoriler.length > 0 && <span class="sr-only">Alt kategoriler: {altKategoriler.map((a) => a.data.ad).join(', ')}</span>}
+      {yol.length > 1 && <span class="sr-only">Üst kategori: {yol.slice(0, -1).map((k) => k.data.ad).join(', ')}</span>}
+    </div>
 
     {
       altKategoriler.length > 0 && (

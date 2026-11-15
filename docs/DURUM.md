@@ -3,7 +3,7 @@
 > Her oturumun başında oku, sonunda güncelle. Kısa tut.
 
 ## Şu an
-- Aktif görev: — (F2.6 bitti)
+- Aktif görev: — (F2.7 bitti)
 - Site: https://burakefesismann.github.io/selam-katalog/
 - Faz: 2 — Vitrin tasarımı
 
@@ -11,7 +11,7 @@
 - Yok
 
 ## Sıradaki
-- F2.7 — Arama (Pagefind; header + ana sayfa formu + "Ürün Ara" butonları şu an /urunler'e gidiyor → /ara)
+- F2.8 — İletişim sayfası (şubeler, Google Haritalar linki, tıklayınca arayan telefonlar)
 
 ## Kullanıcıdan beklenenler
 - [~] Logo: `kaynaklar/logo/selamfis.png` geldi (2026-11-15 tekrar aynı dosya geldi; daha büyüğü yok) (474×129 PNG, şeffaf zemin, turuncu+gri). Vektör (SVG/AI/PDF) ya da
@@ -114,6 +114,11 @@
   ürün sayfasında "Benzer ürünlerle karşılaştır" (ürün tabloda ise). Mobilde özellik sütunu sabit, tablo kendi
   kutusunda kayar (sayfa taşmaz, ölçüldü). Farklı değerli satırlar hafif turuncu. Geçici test ürünleri silindi.
 
+- F2.7: `/ara` (?q= destekli, adres çubuğu güncellenir). Dizin 23 sayfa (6 ürün, 15 kategori, 2 marka), dil tr.
+  Türkçe test: fırat/firat/FIRAT, yapıştırıcı/yapistirici, boru/borular ✓. "firat"/"baumit" aramasında ilgili kategoriler
+  de çıkıyor (kategori görselinin dosya adı aranabilir oluyor; sonuç yine ilgili, bırakıldı). Pagefind Default UI
+  denendi, gizli tarayıcıda sonuç vermedi → kendi arayüzümüz. Header, mobil alt çubuk, ana sayfa formu → /ara.
+
 ## Öneriler
 - (Plana eklenmesi önerilen fikirler. Kullanıcı onaylarsa PLAN.md'ye taşınır.)
 - Ana sayfadaki 11 ana kategori kartı (F2.2) için kategori görselleri gerekecek; planda ayrı görev yok.
@@ -141,3 +146,4 @@
 | 2026-11-15 | F2.4 Ürün detay | Galeri + tam ekran (PhotoSwipe), kart tipine göre vurgu, 3 tip test edildi, 360 px taşma yok | F2.4 |
 | 2026-11-15 | F2.5 Marka sayfaları | Liste + detay, Markdown tanıtım, kategoriye göre gruplu; menü/şerit/rozet linkleri; 397 link kırıksız | F2.5 |
 | 2026-11-15 | F2.6 Karşılaştırma | Otomatik tablo (2+ teknikli ürün), sabit özellik sütunu, kategori/ürün linkleri; test edildi | F2.6 |
+| 2026-11-15 | F2.7 Arama | Pagefind + kendi arayüz, görselli sonuçlar, Türkçe karakter testi ✓, tüm arama linkleri /ara | F2.7 |

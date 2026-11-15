@@ -133,7 +133,7 @@ Bitince: PLAN'da `[x]` → DURUM.md güncelle → commit + push → kullanıcıy
 - [x] **F2.5 Marka sayfaları** — marka listesi (logolar) + marka detay (logo, tanıtım, ürünleri kategoriye göre gruplu).
 - [x] **F2.6 Karşılaştırma tablosu** — kategoride teknik özelliği dolu 2+ ürün varsa otomatik tablo
   (satırlar: ozellik_tanimlari, sütunlar: ürünler, sütun başında ürün görseli). Mobilde okunur olmalı.
-- [ ] **F2.7 Arama** — Pagefind ile site içi arama, sonuçlarda küçük görsel; header'da arama kutusu.
+- [x] **F2.7 Arama** — Pagefind ile site içi arama, sonuçlarda küçük görsel; header'da arama kutusu.
   Türkçe karakterle test et.
 - [ ] **F2.8 İletişim** — şubeler (adres, telefon, saatler, Google Haritalar linki), tıklayınca arayan telefon linkleri.
   Kurumsal sayfa yok (K3).

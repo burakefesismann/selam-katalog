@@ -6,6 +6,7 @@
  * Diğer dolu bölümler altta. Karşılaştırma tablosu F2.6'da kategori sayfasına gelecek.
  */
 import type { GetStaticPaths } from 'astro';
+import { getImage } from 'astro:assets';
 import { render } from 'astro:content';
 import { Check, FileText, Phone, Table2 } from '@lucide/astro';
 import BolumBasligi from '../../components/BolumBasligi.astro';
@@ -45,6 +46,10 @@ const { Content } = await render(urun);
 const aciklamaVar = Boolean(urun.body?.trim());
 const anaMarka = markalar[0];
 
+// Arama (F2.7): sonuçta küçük görsel + kategori yolu aranabilir olsun
+const ilk = data.gorseller[0];
+const aramaGorseli = ilk && typeof ilk.gorsel !== 'string' ? (await getImage({ src: ilk.gorsel, width: 160, format: 'webp' })).src : undefined;
+
 const KART_TIPI = { grup: 'Ürün ailesi', marka_tur: 'Marka serisi', urun: 'Ürün' } as const;
 const tip = data.kart_tipi;
 
@@ -79,19 +84,26 @@ const ilgiliKartlar = await Promise.all(
 ---
 
 <BaseLayout title={`${data.ad} — ${firma.kisa_ad}`} description={data.kisa_aciklama}>
-  <main class="mx-auto max-w-6xl px-4 py-8">
+  <main class="mx-auto max-w-6xl px-4 py-8" data-pagefind-body>
+    <span hidden data-pagefind-filter="tür:Ürün"></span>
+    {aramaGorseli && <span hidden data-pagefind-meta={`image:${aramaGorseli}`}></span>}
+    {ilk && <span hidden data-pagefind-meta={`image_alt:${ilk.alt_metin}`}></span>}
+    <span class="sr-only">Kategori: {kategoriYolu.map((k) => k.data.ad).join(', ')}.</span>
+    <div data-pagefind-ignore>
     <KonumYolu
       ogeler={[
         ...kategoriYolu.map((k) => ({ ad: k.data.ad, adres: kategoriUrl(k.id) })),
         { ad: data.ad },
       ]}
     />
+    </div>
 
     <div class="grid gap-8 md:grid-cols-2 lg:gap-12">
       <UrunGalerisi urun={urun} marka={anaMarka} kategoriAdi={kategori.data.ad} />
 
       <div class="flex flex-col gap-5">
-        <div class="flex flex-wrap gap-2">
+        <span class="sr-only">Marka: {markalar.map((m) => m.data.ad).join(', ') || 'Çeşitli markalar'}.</span>
+        <div class="flex flex-wrap gap-2" data-pagefind-ignore>
           {
             markalar.map((m) => (
               <a href={markaUrl(m.id)} class="no-underline hover:opacity-80">
@@ -185,7 +197,7 @@ const ilgiliKartlar = await Promise.all(
           )
         }
 
-        <div class="flex flex-wrap gap-3 pt-1">
+        <div class="flex flex-wrap gap-3 pt-1" data-pagefind-ignore>
           <Buton href={telLink(firma.telefon)} boyut="buyuk">
             <Phone size={20} aria-hidden="true" />
             Bilgi almak için arayın
@@ -199,7 +211,7 @@ const ilgiliKartlar = await Promise.all(
             )
           }
         </div>
-        <p class="text-sm text-stone-600">
+        <p class="text-sm text-stone-600" data-pagefind-ignore>
           {firma.telefon} · Fiyat ve stok bilgisi için mağazalarımızı arayın.
         </p>
         {
@@ -277,7 +289,7 @@ const ilgiliKartlar = await Promise.all(
 
       {
         ilgiliKartlar.length > 0 && (
-          <section>
+          <section data-pagefind-ignore>
             <BolumBasligi
               baslik={ilgiliBaslik}
               linkMetni={`${kategori.data.ad} kategorisi`}

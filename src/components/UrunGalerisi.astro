@@ -35,7 +35,7 @@ const coklu = gorseller.length > 1;
   gorseller.length === 0 ? (
     <UrunGorseli urun={urun} marka={marka} kategoriAdi={kategoriAdi} oncelikli />
   ) : (
-    <div class="urun-galerisi" data-galeri>
+    <div class="urun-galerisi" data-galeri data-pagefind-ignore>
       <div class="relative">
         <ul
           class="flex snap-x snap-mandatory overflow-x-auto rounded-lg border border-stone-200 bg-white [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
