@@ -122,7 +122,7 @@ Bitince: PLAN'da `[x]` → DURUM.md güncelle → commit + push → kullanıcıy
 - [x] **F2.2 Ana sayfa** (K12) — dengeli genel görünüm, tek bir kategori büyütülmez: arama + kısa güven mesajı →
   11 ana kategorinin **eşit boyutlu görselli kartları** → marka logoları şeridi (**Fırat Boru ilk ve vurgulu**) →
   farklı kategorilerden karışık öne çıkan ürünler → çözüm sayfaları alanı (F4.5'e kadar gizli) → şubeler/iletişim özeti.
-- [ ] **F2.3 Kategori sayfası** — alt kategoriler, görselli ürün kartları, filtre (marka, kullanım alanı).
+- [x] **F2.3 Kategori sayfası** — alt kategoriler, görselli ürün kartları, filtre (marka, kullanım alanı).
   Kategoride birden çok marka varsa ürünler **marka başlıkları altında gruplanır** (ör. Bataryalar: ECA / KAS).
   JavaScript kapalıyken de liste görünür.
 - [ ] **F2.4 Ürün detay sayfası** — **büyük görsel galerisi: küçük resimlerle geçiş, tıklayınca tam ekran büyütme,

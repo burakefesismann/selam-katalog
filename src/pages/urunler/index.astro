@@ -1,40 +1,44 @@
 ---
-// F1.4: basit (tasarımsız) ürün listesi — verinin aktığını görmek için. Tasarım F2.3'te.
+/** Tüm ürünler: ana kategorilere göre bölümler, her bölüm kategori sayfasına bağlanır. */
+import BolumBasligi from '../../components/BolumBasligi.astro';
+import UrunKarti from '../../components/UrunKarti.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { getAnaKategoriler, getKategoriUrunleri, getMarkalar } from '../../lib/katalog';
-import { url } from '../../lib/url';
+import { getAnaKategoriler, getAyarlar, getKategoriUrunleri, getUrunDetay } from '../../lib/katalog';
+import { kategoriUrl } from '../../lib/url';
 
-const markaAdi = new Map((await getMarkalar()).map((m) => [m.id, m.data.ad]));
-const gruplar = (
+const { firma } = await getAyarlar();
+const bolumler = (
   await Promise.all(
     (await getAnaKategoriler()).map(async (kategori) => ({
       kategori,
-      urunler: await getKategoriUrunleri(kategori.id),
+      kartlar: await Promise.all(
+        (await getKategoriUrunleri(kategori.id)).map(async (urun) => {
+          const d = await getUrunDetay(urun);
+          return { urun, marka: d.markalar[0], kategoriAdi: d.kategori.data.ad };
+        }),
+      ),
     })),
   )
-).filter((g) => g.urunler.length > 0);
-const toplam = gruplar.reduce((t, g) => t + g.urunler.length, 0);
+).filter((b) => b.kartlar.length > 0);
+const toplam = bolumler.reduce((t, b) => t + b.kartlar.length, 0);
+let sira = 0;
 ---
 
-<BaseLayout title="Ürünler — Selam İnşaat">
-  <main class="mx-auto max-w-3xl px-4 py-8">
-    <p><a class="underline" href={url('/')}>← Ana sayfa</a></p>
-    <h1 class="mt-4 text-2xl font-bold">Ürünler ({toplam})</h1>
+<BaseLayout title={`Ürünler — ${firma.kisa_ad}`} description={`${firma.kisa_ad} ürün kataloğu: ${toplam} ürün.`}>
+  <main class="mx-auto max-w-6xl space-y-12 px-4 py-8">
+    <BolumBasligi seviye="h1" baslik="Ürünler" aciklama={`${toplam} ürün`} />
     {
-      gruplar.map(({ kategori, urunler }) => (
-        <section id={kategori.id} class="mt-8 scroll-mt-24">
-          <h2 class="text-xl font-semibold">{kategori.data.ad}</h2>
-          <ul class="mt-2 space-y-3">
-            {urunler.map((u) => (
-              <li>
-                <a class="font-medium underline" href={url(`urunler/${u.id}`)}>
-                  {u.data.ad}
-                </a>
-                <span class="text-sm text-neutral-600">
-                  {' — '}
-                  {u.data.markalar.map((m) => markaAdi.get(m.id)).filter(Boolean).join(', ') || 'Çeşitli markalar'}
-                </span>
-                <p class="text-sm text-neutral-700">{u.data.kisa_aciklama}</p>
+      bolumler.map(({ kategori, kartlar }) => (
+        <section id={kategori.id} class="scroll-mt-24">
+          <BolumBasligi
+            baslik={kategori.data.ad}
+            linkMetni={`${kategori.data.ad} sayfası`}
+            linkAdresi={kategoriUrl(kategori.id)}
+          />
+          <ul class="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-5 lg:grid-cols-4">
+            {kartlar.map((k) => (
+              <li class="flex">
+                <UrunKarti {...k} oncelikli={sira++ < 4} />
               </li>
             ))}
           </ul>

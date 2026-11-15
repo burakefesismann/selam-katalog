@@ -21,7 +21,7 @@ import {
   getUrunDetay,
   telLink,
 } from '../lib/katalog';
-import { url } from '../lib/url';
+import { kategoriUrl, url } from '../lib/url';
 
 const { firma, subeler, ana_sayfa } = await getAyarlar();
 
@@ -32,8 +32,7 @@ const kategoriler = await Promise.all(
       kategori,
       urunSayisi,
       gorsel: await getKategoriGorseli(kategori),
-      // F2.3'te kategori sayfası gelince url(`kategoriler/${kategori.id}`) olacak
-      adres: urunSayisi > 0 ? `${url('urunler')}#${kategori.id}` : undefined,
+      adres: kategoriUrl(kategori.id),
     };
   }),
 );

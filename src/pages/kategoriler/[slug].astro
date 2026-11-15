@@ -1,0 +1,280 @@
+---
+/**
+ * Kategori sayfası (F2.3): alt kategoriler, görselli ürün kartları, marka + kullanım alanı filtresi.
+ * - Ana kategoride ürünler alt kategori bölümleri halinde; bir bölümde 2+ marka varsa MARKA BAŞLIKLARI (K11).
+ * - Liste her zaman HTML'de (JavaScript kapalıyken de görünür). Filtre sadece JS açıkken görünür ve çalışır.
+ */
+import type { GetStaticPaths } from 'astro';
+import { ChevronRight, Phone, SlidersHorizontal } from '@lucide/astro';
+import BolumBasligi from '../../components/BolumBasligi.astro';
+import Buton from '../../components/Buton.astro';
+import UrunKarti from '../../components/UrunKarti.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import {
+  getAltKategoriler,
+  getAyarlar,
+  getKategoriler,
+  getKategoriUrunleri,
+  getKategoriYolu,
+  getKullanimAlanlari,
+  getUrunDetay,
+  markayaGoreGrupla,
+  telLink,
+  type Kategori,
+  type Urun,
+} from '../../lib/katalog';
+import { kategoriUrl, url } from '../../lib/url';
+
+export const getStaticPaths = (async () => {
+  return (await getKategoriler()).map((kategori) => ({ params: { slug: kategori.id }, props: { kategori } }));
+}) satisfies GetStaticPaths;
+
+interface Props {
+  kategori: Kategori;
+}
+const { kategori } = Astro.props;
+const { firma } = await getAyarlar();
+const yol = await getKategoriYolu(kategori.id);
+const altKategoriler = await getAltKategoriler(kategori.id);
+const tumUrunler = await getKategoriUrunleri(kategori.id);
+
+// Kart verisi (ana marka, kategori adı, filtre anahtarları)
+const kartVerisi = new Map(
+  await Promise.all(
+    tumUrunler.map(async (u) => {
+      const d = await getUrunDetay(u);
+      return [u.id, { marka: d.markalar[0], kategoriAdi: d.kategori.data.ad, alanlar: d.kullanimAlanlari }] as const;
+    }),
+  ),
+);
+
+// Bölümler: önce doğrudan bu kategorideki ürünler, sonra her alt kategori
+type Bolum = { baslik?: string; adres?: string; gruplar: Awaited<ReturnType<typeof markayaGoreGrupla>> };
+const bolumler: Bolum[] = [];
+const dogrudan = tumUrunler.filter((u) => u.data.kategori.id === kategori.id);
+if (altKategoriler.length === 0) {
+  bolumler.push({ gruplar: await markayaGoreGrupla(tumUrunler) });
+} else {
+  if (dogrudan.length) bolumler.push({ gruplar: await markayaGoreGrupla(dogrudan) });
+  for (const alt of altKategoriler) {
+    const urunler = await getKategoriUrunleri(alt.id);
+    if (urunler.length) {
+      bolumler.push({ baslik: alt.data.ad, adres: kategoriUrl(alt.id), gruplar: await markayaGoreGrupla(urunler) });
+    }
+  }
+}
+const altSayilari = new Map(
+  await Promise.all(altKategoriler.map(async (a) => [a.id, (await getKategoriUrunleri(a.id)).length] as const)),
+);
+
+// Filtre seçenekleri (sadece 2+ seçenek varsa gösterilir)
+const markaSecenekleri = [
+  ...new Map(
+    tumUrunler.map((u) => {
+      const m = kartVerisi.get(u.id)!.marka;
+      return [m?.id ?? 'cesitli', m?.data.ad ?? 'Çeşitli markalar'] as const;
+    }),
+  ),
+];
+const alanIdleri = new Set(tumUrunler.flatMap((u) => kartVerisi.get(u.id)!.alanlar.map((a) => a.id)));
+const alanSecenekleri = (await getKullanimAlanlari()).filter((a) => alanIdleri.has(a.id));
+const filtreVar = markaSecenekleri.length > 1 || alanSecenekleri.length > 1;
+
+const filtreAnahtarlari = (u: Urun) => ({
+  'data-marka': kartVerisi.get(u.id)!.marka?.id ?? 'cesitli',
+  'data-alanlar': kartVerisi.get(u.id)!.alanlar.map((a) => a.id).join(' '),
+});
+let kartSirasi = 0;
+---
+
+<BaseLayout
+  title={`${kategori.data.ad} — ${firma.kisa_ad}`}
+  description={kategori.data.kisa_aciklama ?? `${kategori.data.ad} ürünleri — ${firma.kisa_ad}, ${firma.sehir}`}
+>
+  <main class="mx-auto max-w-6xl px-4 py-8">
+    <nav aria-label="Konum" class="mb-6 text-sm text-stone-600">
+      <ol class="flex flex-wrap items-center gap-1">
+        <li><a href={url('/')} class="hover:text-turuncu-koyu hover:underline">Ana sayfa</a></li>
+        {
+          yol.map((k, i) => (
+            <li class="flex items-center gap-1">
+              <ChevronRight size={14} aria-hidden="true" />
+              {i === yol.length - 1 ? (
+                <span aria-current="page" class="font-semibold text-antrasit">
+                  {k.data.ad}
+                </span>
+              ) : (
+                <a href={kategoriUrl(k.id)} class="hover:text-turuncu-koyu hover:underline">
+                  {k.data.ad}
+                </a>
+              )}
+            </li>
+          ))
+        }
+      </ol>
+    </nav>
+
+    <BolumBasligi
+      seviye="h1"
+      baslik={kategori.data.ad}
+      aciklama={kategori.data.kisa_aciklama ?? (tumUrunler.length ? `${tumUrunler.length} ürün` : undefined)}
+    />
+
+    {
+      altKategoriler.length > 0 && (
+        <nav aria-label="Alt kategoriler" class="mb-8">
+          <ul class="flex flex-wrap gap-2">
+            {altKategoriler.map((a) => (
+              <li>
+                <a
+                  href={kategoriUrl(a.id)}
+                  class="inline-flex min-h-10 items-center gap-2 rounded-full border border-stone-300 bg-white px-4 text-sm font-semibold no-underline hover:border-turuncu hover:bg-turuncu-acik"
+                >
+                  {a.data.ad}
+                  <span class="text-stone-500">{altSayilari.get(a.id) || '–'}</span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      )
+    }
+
+    {
+      filtreVar && (
+        <form id="filtre" hidden class="mb-8 rounded-lg border border-stone-200 bg-zemin p-4" aria-label="Ürünleri filtrele">
+          <p class="mb-3 flex items-center gap-2 font-semibold">
+            <SlidersHorizontal size={18} aria-hidden="true" />
+            Filtrele
+          </p>
+          {markaSecenekleri.length > 1 && (
+            <fieldset class="mb-3">
+              <legend class="mb-2 text-sm text-stone-600">Marka</legend>
+              <div class="flex flex-wrap gap-2">
+                {markaSecenekleri.map(([id, ad]) => (
+                  <label class="cursor-pointer">
+                    <input type="checkbox" name="marka" value={id} class="peer sr-only" />
+                    <span class="inline-flex min-h-10 items-center rounded-full border border-stone-300 bg-white px-4 text-sm font-semibold peer-checked:border-antrasit peer-checked:bg-antrasit peer-checked:text-white peer-focus-visible:outline-2 peer-focus-visible:outline-turuncu-koyu">
+                      {ad}
+                    </span>
+                  </label>
+                ))}
+              </div>
+            </fieldset>
+          )}
+          {alanSecenekleri.length > 1 && (
+            <fieldset>
+              <legend class="mb-2 text-sm text-stone-600">Kullanım alanı</legend>
+              <div class="flex flex-wrap gap-2">
+                {alanSecenekleri.map((a) => (
+                  <label class="cursor-pointer">
+                    <input type="checkbox" name="alan" value={a.id} class="peer sr-only" />
+                    <span class="inline-flex min-h-10 items-center rounded-full border border-stone-300 bg-white px-4 text-sm font-semibold peer-checked:border-antrasit peer-checked:bg-antrasit peer-checked:text-white peer-focus-visible:outline-2 peer-focus-visible:outline-turuncu-koyu">
+                      {a.data.ad}
+                    </span>
+                  </label>
+                ))}
+              </div>
+            </fieldset>
+          )}
+          <p class="mt-3 flex flex-wrap items-center gap-3 text-sm">
+            <span id="filtre-sonuc" aria-live="polite" />
+            <button type="reset" class="font-semibold text-turuncu-koyu underline">
+              Temizle
+            </button>
+          </p>
+        </form>
+      )
+    }
+
+    {
+      tumUrunler.length === 0 ? (
+        <div class="rounded-lg border border-dashed border-stone-300 bg-zemin p-8 text-center">
+          <p class="font-baslik text-xl font-bold">Bu kategorideki ürünler hazırlanıyor</p>
+          <p class="mt-2 text-stone-600">Aradığınız ürün için bizi arayın, stok ve bilgi verelim.</p>
+          <div class="mt-4">
+            <Buton href={telLink(firma.telefon)}>
+              <Phone size={18} aria-hidden="true" />
+              {firma.telefon}
+            </Buton>
+          </div>
+        </div>
+      ) : (
+        <div class="space-y-12">
+          {bolumler.map((b) => (
+            <section data-bolum>
+              {b.baslik && (
+                <h2 class="mb-4 flex items-center gap-2 text-2xl">
+                  <a href={b.adres} class="hover:text-turuncu-koyu hover:underline">
+                    {b.baslik}
+                  </a>
+                </h2>
+              )}
+              <div class="space-y-8">
+                {b.gruplar.map((g) => (
+                  <div data-grup>
+                    {b.gruplar.length > 1 && (
+                      <h3 class="mb-3 border-b border-stone-200 pb-2 text-lg text-turuncu-koyu">
+                        {g.marka?.data.ad ?? 'Çeşitli markalar'}
+                      </h3>
+                    )}
+                    <ul class="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-5 lg:grid-cols-4">
+                      {g.urunler.map((u) => (
+                        <li class="flex" data-urun {...filtreAnahtarlari(u)}>
+                          <UrunKarti
+                            urun={u}
+                            marka={kartVerisi.get(u.id)!.marka}
+                            kategoriAdi={kartVerisi.get(u.id)!.kategoriAdi}
+                            oncelikli={kartSirasi++ < 4}
+                          />
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            </section>
+          ))}
+          <p id="filtre-bos" hidden class="rounded-lg bg-zemin p-6 text-center text-stone-700">
+            Seçime uygun ürün yok. Filtreyi değiştirin ya da bilgi için arayın.
+          </p>
+        </div>
+      )
+    }
+  </main>
+</BaseLayout>
+
+<script>
+  // Filtre: aynı grupta VEYA (Fırat veya KAS), gruplar arası VE (marka VE kullanım alanı).
+  const form = document.querySelector<HTMLFormElement>('#filtre');
+  if (form) {
+    form.hidden = false;
+    const kartlar = [...document.querySelectorAll<HTMLElement>('[data-urun]')];
+    const sonuc = document.querySelector('#filtre-sonuc');
+    const bos = document.querySelector<HTMLElement>('#filtre-bos');
+    const secili = (ad: string) =>
+      [...form.querySelectorAll<HTMLInputElement>(`input[name="${ad}"]:checked`)].map((i) => i.value);
+
+    const uygula = () => {
+      const markalar = secili('marka');
+      const alanlar = secili('alan');
+      let gorunen = 0;
+      for (const k of kartlar) {
+        const markaUyar = !markalar.length || markalar.includes(k.dataset.marka ?? '');
+        const kartAlanlari = (k.dataset.alanlar ?? '').split(' ');
+        const alanUyar = !alanlar.length || alanlar.some((a) => kartAlanlari.includes(a));
+        k.hidden = !(markaUyar && alanUyar);
+        if (!k.hidden) gorunen++;
+      }
+      // Boş kalan marka grubu / bölümü gizle
+      for (const kutu of document.querySelectorAll<HTMLElement>('[data-grup], [data-bolum]')) {
+        kutu.hidden = !kutu.querySelector('[data-urun]:not([hidden])');
+      }
+      const filtreli = markalar.length + alanlar.length > 0;
+      if (sonuc) sonuc.textContent = filtreli ? `${gorunen} / ${kartlar.length} ürün gösteriliyor` : '';
+      if (bos) bos.hidden = gorunen > 0;
+    };
+    form.addEventListener('change', uygula);
+    form.addEventListener('reset', () => setTimeout(uygula));
+  }
+</script>

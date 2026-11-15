@@ -157,6 +157,30 @@ export async function getOneCikanUrunler(adet = 8): Promise<Urun[]> {
   return secilen;
 }
 
+export interface MarkaGrubu {
+  /** undefined = "Çeşitli markalar" (markasız ürünler) */
+  marka?: Marka;
+  urunler: Urun[];
+}
+
+/**
+ * Ürünleri ANA markalarına (ilk görünür marka) göre gruplar (K11: kategoride birden çok marka varsa marka başlıkları).
+ * Sıra: markaların `sira`sı, "Çeşitli markalar" en sonda. Grup içinde ürün sırası korunur.
+ */
+export async function markayaGoreGrupla(urunler: Urun[]): Promise<MarkaGrubu[]> {
+  const markalar = await getMarkalar();
+  const harita = haritala(markalar);
+  const gruplar = new Map<string, MarkaGrubu>();
+  for (const u of urunler) {
+    const ana = u.data.markalar.map((r) => harita.get(r.id)).find(Boolean);
+    const anahtar = ana?.id ?? '';
+    if (!gruplar.has(anahtar)) gruplar.set(anahtar, { marka: ana, urunler: [] });
+    gruplar.get(anahtar)!.urunler.push(u);
+  }
+  const sira = (g: MarkaGrubu) => (g.marka ? markalar.indexOf(g.marka) : Number.MAX_SAFE_INTEGER);
+  return [...gruplar.values()].sort((a, b) => sira(a) - sira(b));
+}
+
 export async function getMarkaUrunleri(markaId: string): Promise<Urun[]> {
   return (await getUrunler()).filter((u) => u.data.markalar.some((m) => m.id === markaId));
 }

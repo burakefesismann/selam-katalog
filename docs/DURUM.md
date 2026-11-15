@@ -3,7 +3,7 @@
 > Her oturumun başında oku, sonunda güncelle. Kısa tut.
 
 ## Şu an
-- Aktif görev: — (F2.2 bitti)
+- Aktif görev: — (F2.3 bitti)
 - Site: https://burakefesismann.github.io/selam-katalog/
 - Faz: 2 — Vitrin tasarımı
 
@@ -11,7 +11,7 @@
 - Yok
 
 ## Sıradaki
-- F2.3 — Kategori sayfası (filtre, marka başlıkları altında gruplama, JS kapalıyken de liste)
+- F2.4 — Ürün detay sayfası (galeri, tam ekran, kaydırma/yakınlaştırma; kart_tipi'ne göre vurgu)
 
 ## Kullanıcıdan beklenenler
 - [~] Logo: `kaynaklar/logo/selamfis.png` geldi (2026-11-15 tekrar aynı dosya geldi; daha büyüğü yok) (474×129 PNG, şeffaf zemin, turuncu+gri). Vektör (SVG/AI/PDF) ya da
@@ -92,6 +92,13 @@
   F2.7'ye kadar /urunler'e gidiyor (q parametresi işlenmiyor). Marka şeridinde link yok (marka sayfaları F2.5).
 - Büyük harf tuzağı: lang="tr" + `uppercase` → "Baumit" = "BAUMİT". Marka adlarında uppercase kullanılmıyor (CLAUDE.md).
 
+- F2.3: `/kategoriler/<slug>/` (15 sayfa). Ana kategoride alt kategori bölümleri; bölümde 2+ ana marka varsa marka
+  başlıkları (`markayaGoreGrupla`, çeşitli en sonda). Filtre: marka (ana marka) + kullanım alanı, aynı türde VEYA,
+  türler arası VE; form `hidden` → JS açınca görünür, liste her zaman HTML'de. Geçici test ürünleriyle tarayıcıda
+  denendi (6 senaryo ✓), test ürünleri silindi. Adresler `src/lib/url.ts > kategoriUrl/urunUrl`. Ana sayfa kartları
+  ve ürün sayfası kategori yolu artık kategori sayfasına gidiyor. /urunler yeni kartlarla yenilendi.
+- UrunKarti `w-full` olmalı (yoksa içerik kısa olan kart dar kalıyor — düzeltildi).
+
 ## Öneriler
 - (Plana eklenmesi önerilen fikirler. Kullanıcı onaylarsa PLAN.md'ye taşınır.)
 - Ana sayfadaki 11 ana kategori kartı (F2.2) için kategori görselleri gerekecek; planda ayrı görev yok.
@@ -115,3 +122,4 @@
 | 2026-11-15 | F1.7 Panel kılavuzu | docs/PANEL-KULLANIMI.md yazıldı, kullanıcı onayladı | F1.7 |
 | 2026-11-15 | F2.1 Tasarım sistemi | Renkler logodan, Barlow, Lucide ikonlar, 10 bileşen, /stil-rehberi; kullanıcı onayladı | F2.1 |
 | 2026-11-15 | F2.2 Ana sayfa | K12 sırası; kategori kartları (görsel/ikon), marka şeridi, öne çıkanlar, mağazalar; 360 px taşma yok, 104 link kırıksız | F2.2 |
+| 2026-11-15 | F2.3 Kategori sayfası | 15 sayfa, alt kategoriler, marka grupları, JS filtre (6 senaryo test), 259 link kırıksız | F2.3 |
