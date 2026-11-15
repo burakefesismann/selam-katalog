@@ -4,6 +4,7 @@ import MobilAltCubuk from '../components/MobilAltCubuk.astro';
 import SiteFooter from '../components/SiteFooter.astro';
 import SiteHeader from '../components/SiteHeader.astro';
 import { icerigiDogrula } from '../lib/katalog';
+import { url } from '../lib/url';
 
 // Eksik referans, slug/dosya adı uyuşmazlığı vb. varsa derlemeyi anlaşılır bir hatayla durdurur.
 await icerigiDogrula();
@@ -13,9 +14,22 @@ interface Props {
   description?: string;
   /** arama motorlarında gösterme (ör. /stil-rehberi) */
   noindex?: boolean;
+  /** paylaşım görseli (mutlak ya da kök-göreli adres); yoksa varsayılan logo görseli */
+  ogImage?: string;
+  ogType?: 'website' | 'product';
 }
 
-const { title, description = 'Selam İnşaat ürün kataloğu — Rize', noindex = false } = Astro.props;
+const {
+  title,
+  description = 'Selam İnşaat ürün kataloğu — Rize',
+  noindex = false,
+  ogImage,
+  ogType = 'website',
+} = Astro.props;
+
+// Kanonik adres ve paylaşım (Open Graph) bilgileri — mutlak adres olmalı
+const kanonik = new URL(Astro.url.pathname, Astro.site).href;
+const paylasimGorseli = new URL(ogImage ?? url('og-varsayilan.png'), Astro.site).href;
 ---
 
 <!doctype html>
@@ -28,6 +42,19 @@ const { title, description = 'Selam İnşaat ürün kataloğu — Rize', noindex
     <meta name="theme-color" content="#2b2a29" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    <link rel="canonical" href={kanonik} />
+    <link rel="icon" href={url('favicon.svg')} type="image/svg+xml" />
+    <link rel="icon" href={url('favicon-32.png')} sizes="32x32" type="image/png" />
+    <link rel="apple-touch-icon" href={url('apple-touch-icon.png')} />
+    <link rel="sitemap" href={url('sitemap-index.xml')} />
+    <meta property="og:type" content={ogType} />
+    <meta property="og:locale" content="tr_TR" />
+    <meta property="og:site_name" content="Selam İnşaat" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={kanonik} />
+    <meta property="og:image" content={paylasimGorseli} />
+    <meta name="twitter:card" content="summary_large_image" />
     <slot name="head" />
   </head>
   <body class="flex min-h-screen flex-col pb-20 md:pb-0">

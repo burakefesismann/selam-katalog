@@ -1,0 +1,36 @@
+---
+/** 404 — sayfa bulunamadı. GitHub Pages bu dosyayı (dist/404.html) bulunamayan her adreste gösterir. */
+import { House, Phone, Search } from '@lucide/astro';
+import Buton from '../components/Buton.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getAyarlar, telLink } from '../lib/katalog';
+import { url } from '../lib/url';
+
+const { firma } = await getAyarlar();
+---
+
+<BaseLayout title={`Sayfa bulunamadı — ${firma.kisa_ad}`} noindex>
+  <main class="mx-auto flex max-w-xl flex-col items-center gap-5 px-4 py-16 text-center">
+    <p class="font-baslik text-7xl font-bold text-turuncu">404</p>
+    <h1 class="text-3xl">Aradığınız sayfa bulunamadı</h1>
+    <p class="text-stone-600">Sayfa taşınmış ya da adı değişmiş olabilir. Ürünü aşağıdan arayabilirsiniz.</p>
+
+    <form action={url('ara')} method="get" role="search" class="flex w-full gap-2">
+      <label for="bulunamadi-arama" class="sr-only">Ürün ara</label>
+      <input
+        id="bulunamadi-arama"
+        name="q"
+        type="search"
+        placeholder="Ürün ya da marka ara"
+        class="min-h-12 flex-1 rounded-md border-2 border-stone-300 px-3 focus:border-turuncu focus:outline-none"
+      />
+      <Buton type="submit" class="min-h-12"><Search size={18} aria-hidden="true" /> Ara</Buton>
+    </form>
+
+    <div class="flex flex-wrap justify-center gap-3">
+      <Buton href={url('/')} tur="cerceve"><House size={18} aria-hidden="true" /> Ana sayfa</Buton>
+      <Buton href={url('urunler')} tur="cerceve">Tüm ürünler</Buton>
+      <Buton href={telLink(firma.telefon)} tur="ikincil"><Phone size={18} aria-hidden="true" /> {firma.telefon}</Buton>
+    </div>
+  </main>
+</BaseLayout>

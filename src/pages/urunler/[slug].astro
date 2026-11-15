@@ -49,6 +49,11 @@ const anaMarka = markalar[0];
 // Arama (F2.7): sonuçta küçük görsel + kategori yolu aranabilir olsun
 const ilk = data.gorseller[0];
 const aramaGorseli = ilk && typeof ilk.gorsel !== 'string' ? (await getImage({ src: ilk.gorsel, width: 160, format: 'webp' })).src : undefined;
+// Paylaşım görseli (WhatsApp/Facebook): JPG en uyumlusu
+const paylasimGorseli =
+  ilk && typeof ilk.gorsel !== 'string'
+    ? (await getImage({ src: ilk.gorsel, width: Math.min(ilk.gorsel.width, 1200), format: 'jpg', background: '#ffffff' })).src
+    : undefined;
 
 const KART_TIPI = { grup: 'Ürün ailesi', marka_tur: 'Marka serisi', urun: 'Ürün' } as const;
 const tip = data.kart_tipi;
@@ -83,7 +88,7 @@ const ilgiliKartlar = await Promise.all(
 
 ---
 
-<BaseLayout title={`${data.ad} — ${firma.kisa_ad}`} description={data.kisa_aciklama}>
+<BaseLayout title={`${data.ad} — ${firma.kisa_ad}`} description={data.kisa_aciklama} ogImage={paylasimGorseli} ogType="product">
   <main class="mx-auto max-w-6xl px-4 py-8" data-pagefind-body>
     <span hidden data-pagefind-filter="tür:Ürün"></span>
     {aramaGorseli && <span hidden data-pagefind-meta={`image:${aramaGorseli}`}></span>}

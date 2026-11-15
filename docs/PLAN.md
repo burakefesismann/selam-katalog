@@ -137,7 +137,7 @@ Bitince: PLAN'da `[x]` → DURUM.md güncelle → commit + push → kullanıcıy
   Türkçe karakterle test et.
 - [x] **F2.8 İletişim** — şubeler (adres, telefon, saatler, Google Haritalar linki), tıklayınca arayan telefon linkleri.
   Kurumsal sayfa yok (K3).
-- [ ] **F2.9 Kalite turu** — 360px / 768px / masaüstü, Lighthouse 90+ (özellikle görsel yükleme hızı / LCP:
+- [x] **F2.9 Kalite turu** — 360px / 768px / masaüstü, Lighthouse 90+ (özellikle görsel yükleme hızı / LCP:
   ilk ekrandaki görsel öncelikli, diğerleri lazy), sitemap, robots.txt, title/description, Open Graph görseli
   (ürün sayfalarında ürün görseli), 404 sayfası, favicon. Görsel sayısı arttıkça build uzarsa Actions'a önbellek ekle.
 

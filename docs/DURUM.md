@@ -3,15 +3,15 @@
 > Her oturumun başında oku, sonunda güncelle. Kısa tut.
 
 ## Şu an
-- Aktif görev: — (F2.8 bitti)
+- Aktif görev: — (F2.9 bitti, Faz 2 tamam)
 - Site: https://burakefesismann.github.io/selam-katalog/
-- Faz: 2 — Vitrin tasarımı
+- Faz: 3 — Gerçek içerik ve görseller
 
 ## Yarım kalan
 - Yok
 
 ## Sıradaki
-- F2.9 — Kalite turu (360/768/masaüstü, Lighthouse 90+, sitemap, robots, OG görseli, 404, favicon)
+- F3.1 — İçerik paketi içe aktarıcı (`npm run icerik:aktar -- <paket>`). Beyin takımından paket 001 bekleniyor.
 
 ## Kullanıcıdan beklenenler
 - [~] Logo: `kaynaklar/logo/selamfis.png` geldi (2026-11-15 tekrar aynı dosya geldi; daha büyüğü yok) (474×129 PNG, şeffaf zemin, turuncu+gri). Vektör (SVG/AI/PDF) ya da
@@ -125,6 +125,14 @@
   `harita_url` yoksa Google Maps resmi arama linki (firma adı + adres). Menü "İletişim" → /iletisim; footer adresleri
   de harita linki.
 
+- F2.9: Lighthouse (mobil, yerel önizleme) 6 sayfa: Hız 98–100, Erişilebilirlik/En iyi uygulamalar/SEO 100.
+  Düzeltmeler: `turuncu-koyu` #b85a0e → #a8520c (açık turuncu zeminde 4.2 → 4.9), hero rozeti zemini kaldırıldı,
+  header logosu densities [1,2,3]. Favicon (turuncu kare + S, SVG/32px/apple 180), OG varsayılan 1200×630
+  (`public/og-varsayilan.png`), ürün sayfasında ürün görseli JPG. Kanonik adres, og/twitter etiketleri BaseLayout'ta.
+  @astrojs/sitemap (27 adres; ara/stil-rehberi/admin hariç). robots.txt alan adı köküne konmadıkça etkisiz
+  (site /selam-katalog/ altında) → F5.1'de kök alan adıyla etkin olur; sitemap Search Console'a elle verilebilir.
+  404.astro. 13 sayfa × 360/768 px yatay taşma yok. Actions görsel önbelleği withastro/action ile zaten açık.
+
 ## Öneriler
 - (Plana eklenmesi önerilen fikirler. Kullanıcı onaylarsa PLAN.md'ye taşınır.)
 - Ana sayfadaki 11 ana kategori kartı (F2.2) için kategori görselleri gerekecek; planda ayrı görev yok.
@@ -154,3 +162,4 @@
 | 2026-11-15 | F2.6 Karşılaştırma | Otomatik tablo (2+ teknikli ürün), sabit özellik sütunu, kategori/ürün linkleri; test edildi | F2.6 |
 | 2026-11-15 | F2.7 Arama | Pagefind + kendi arayüz, görselli sonuçlar, Türkçe karakter testi ✓, tüm arama linkleri /ara | F2.7 |
 | 2026-11-15 | F2.8 İletişim | /iletisim, şube kartları, yol tarifi, tel linkleri, JSON-LD; 360 px taşma yok | F2.8 |
+| 2026-11-15 | F2.9 Kalite turu | Lighthouse 98–100/100/100/100, favicon, OG, sitemap, 404, kontrast; taşma yok | F2.9 |

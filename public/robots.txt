@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /selam-katalog/admin/
+Disallow: /selam-katalog/stil-rehberi/
+
+Sitemap: https://burakefesismann.github.io/selam-katalog/sitemap-index.xml

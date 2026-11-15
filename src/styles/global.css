@@ -14,7 +14,7 @@
 
 /*
  * Tasarım sistemi (F2.1) — kimlik: siyah + turuncu (K6), renkler logodan (kaynaklar/logo/selamfis.png).
- * Kontrast (WCAG AA ≥ 4.5): turuncu zeminde KOYU yazı (6.6) · beyaz zeminde turuncu metin = turuncu-koyu (4.7)
+ * Kontrast (WCAG AA ≥ 4.5): turuncu zeminde KOYU yazı (6.6) · beyaz zeminde turuncu metin = turuncu-koyu (5.4; açık turuncu zeminde 4.9)
  * · koyu zeminde logo turuncusu (5.3) · logo turuncusu üstünde BEYAZ yazı KULLANMA (2.7).
  */
 @theme {
@@ -22,7 +22,7 @@
   --font-baslik: "Barlow Semi Condensed", "Barlow", ui-sans-serif, system-ui, sans-serif;
 
   --color-turuncu: #ef7f1a; /* logo turuncusu: buton zemini, vurgu çizgileri, koyu zeminde metin */
-  --color-turuncu-koyu: #b85a0e; /* beyaz zeminde turuncu metin/link, buton hover */
+  --color-turuncu-koyu: #a8520c; /* beyaz (5.4) ve açık turuncu (4.9) zeminde turuncu metin/link */
   --color-turuncu-acik: #fdf1e6; /* açık vurgu zemini, rozet */
   --color-antrasit: #2b2a29; /* logo koyusu: başlıklar, footer zemini */
   --color-antrasit-koyu: #1c1b1a; /* turuncu buton üstündeki yazı */

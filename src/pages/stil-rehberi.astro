@@ -24,7 +24,7 @@ const firat = (await getMarkalar()).find((m) => m.id === 'firat');
 
 const RENKLER = [
   { ad: 'turuncu', hex: '#ef7f1a', sinif: 'bg-turuncu', not: 'Logo turuncusu. Buton zemini (KOYU yazıyla), vurgu çizgileri, koyu zeminde metin.' },
-  { ad: 'turuncu-koyu', hex: '#b85a0e', sinif: 'bg-turuncu-koyu', not: 'Beyaz zeminde turuncu metin ve linkler (kontrast 4.7).' },
+  { ad: 'turuncu-koyu', hex: '#a8520c', sinif: 'bg-turuncu-koyu', not: 'Beyaz ve açık turuncu zeminde turuncu metin ve linkler (kontrast 5.4 / 4.9).' },
   { ad: 'turuncu-acik', hex: '#fdf1e6', sinif: 'bg-turuncu-acik', not: 'Açık vurgu zemini, rozetler, ikon daireleri.' },
   { ad: 'antrasit', hex: '#2b2a29', sinif: 'bg-antrasit', not: 'Logo koyusu. Başlıklar, alt bilgi zemini, ikincil buton.' },
   { ad: 'antrasit-koyu', hex: '#1c1b1a', sinif: 'bg-antrasit-koyu', not: 'Turuncu buton üstündeki yazı.' },
@@ -60,7 +60,7 @@ const RENKLER = [
       <div class="mt-4 grid gap-3 text-sm sm:grid-cols-3">
         <p class="rounded-md bg-turuncu p-3 font-semibold text-antrasit-koyu">Turuncu üstünde koyu yazı ✓ (6.6)</p>
         <p class="rounded-md bg-antrasit p-3 font-semibold text-turuncu">Koyu üstünde turuncu yazı ✓ (5.3)</p>
-        <p class="rounded-md border border-stone-200 p-3 font-semibold text-turuncu-koyu">Beyazda koyu turuncu ✓ (4.7)</p>
+        <p class="rounded-md border border-stone-200 p-3 font-semibold text-turuncu-koyu">Beyazda koyu turuncu ✓ (5.4)</p>
       </div>
     </section>
 

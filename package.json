@@ -12,6 +12,7 @@
     "gorsel:rapor": "node scripts/gorsel-rapor.ts"
   },
   "dependencies": {
+    "@astrojs/sitemap": "^3.7.5",
     "@fontsource/barlow": "^5.3.0",
     "@fontsource/barlow-semi-condensed": "^5.3.0",
     "@lucide/astro": "^1.73.0",

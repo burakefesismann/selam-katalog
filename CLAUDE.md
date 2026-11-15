@@ -128,7 +128,7 @@ Kullanıcı `/devam` yazarsa bu adımlar + sıradaki görev yapılır. Diğer ko
   önizleme sunucusu uzun açık kalınca da garipleşebiliyor → şüphede sunucuyu yeniden başlat, yeni profil kullan.
 - Slug üretimi: `src/lib/slug.ts` → `slugify()` (Türkçe karakter dönüşümü).
 - Tailwind v4: ayar dosyası yok, tema `src/styles/global.css` içinde `@theme` ile tanımlı (F2.1).
-- Tasarım sistemi (F2.1): renkler `turuncu` #ef7f1a · `turuncu-koyu` #b85a0e · `turuncu-acik` · `antrasit` #2b2a29 ·
+- Tasarım sistemi (F2.1): renkler `turuncu` #ef7f1a · `turuncu-koyu` #a8520c · `turuncu-acik` · `antrasit` #2b2a29 ·
   `antrasit-koyu` · `zemin`. **Turuncu zeminde beyaz yazı YOK** (2.7) → koyu yazı; beyazda turuncu metin = turuncu-koyu.
   Font: Barlow (metin) + Barlow Semi Condensed (`font-baslik`), Fontsource latin + latin-ext. İkonlar: `@lucide/astro`;
   kullanım alanı ikonları `src/lib/ikonlar.ts` (panel `ikon` seçenekleriyle aynı). Bileşenler: Buton, Rozet, UrunKarti,

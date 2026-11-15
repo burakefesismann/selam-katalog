@@ -23,7 +23,7 @@ const simdiki = Astro.url.pathname;
 <header class="sticky top-0 z-40 border-b border-stone-200 bg-white/95 backdrop-blur">
   <div class="mx-auto flex h-16 max-w-6xl items-center gap-3 px-4">
     <a href={url('/')} class="mr-auto shrink-0" aria-label={`${firma.kisa_ad} — ana sayfa`}>
-      <Image src={logo} alt={firma.kisa_ad} height={40} class="h-9 w-auto sm:h-10" loading="eager" />
+      <Image src={logo} alt={firma.kisa_ad} height={40} densities={[1, 2, 3]} class="h-9 w-auto sm:h-10" loading="eager" />
     </a>
 
     <nav aria-label="Ana menü" class="hidden md:block">
