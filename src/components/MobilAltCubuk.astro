@@ -1,0 +1,29 @@
+---
+/** Mobilde ekranın altında sabit: "Hemen Ara" (telefon) + "Ürün Ara". md ve üstünde gizli. */
+import { Phone, Search } from '@lucide/astro';
+import { getAyarlar, telLink } from '../lib/katalog';
+import { url } from '../lib/url';
+
+const { firma } = await getAyarlar();
+// F2.7'de arama sayfası gelince url('ara')
+const aramaAdresi = url('urunler');
+---
+
+<div
+  class="fixed inset-x-0 bottom-0 z-40 grid grid-cols-2 gap-2 border-t border-stone-200 bg-white/95 p-2 pb-[max(0.5rem,env(safe-area-inset-bottom))] backdrop-blur md:hidden"
+>
+  <a
+    href={telLink(firma.telefon)}
+    class="inline-flex min-h-12 items-center justify-center gap-2 rounded-md bg-turuncu font-semibold text-antrasit-koyu no-underline"
+  >
+    <Phone size={20} aria-hidden="true" />
+    Hemen Ara
+  </a>
+  <a
+    href={aramaAdresi}
+    class="inline-flex min-h-12 items-center justify-center gap-2 rounded-md bg-antrasit font-semibold text-white no-underline"
+  >
+    <Search size={20} aria-hidden="true" />
+    Ürün Ara
+  </a>
+</div>

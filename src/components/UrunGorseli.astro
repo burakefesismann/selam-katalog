@@ -15,15 +15,17 @@ interface Props {
   oncelikli?: boolean;
   /** Görüntülenecek yaklaşık genişlik (px) — srcset buna göre üretilir */
   genislik?: number;
+  /** kendi kenarlığı ve yuvarlak köşesi (kart içinde false) */
+  cerceve?: boolean;
   class?: string;
 }
 
-const { urun, marka, kategoriAdi, oncelikli = false, genislik = 800, class: sinif = '' } = Astro.props;
+const { urun, marka, kategoriAdi, oncelikli = false, genislik = 800, cerceve = true, class: sinif = '' } = Astro.props;
 const ana = urun.data.gorseller[0];
 ---
 
 <!-- Üretici görselleri çoğunlukla beyaz zeminli → görsel varken kutu beyaz; yer tutucu kendi gri zeminini getirir -->
-<div class:list={['aspect-[4/3] w-full overflow-hidden rounded-md border border-neutral-200 bg-white', sinif]}>
+<div class:list={['aspect-[4/3] w-full overflow-hidden bg-white', cerceve && 'rounded-md border border-stone-200', sinif]}>
   {
     ana ? (
       <Image

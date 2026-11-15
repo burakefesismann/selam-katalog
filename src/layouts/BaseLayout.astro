@@ -1,5 +1,8 @@
 ---
 import '../styles/global.css';
+import MobilAltCubuk from '../components/MobilAltCubuk.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+import SiteHeader from '../components/SiteHeader.astro';
 import { icerigiDogrula } from '../lib/katalog';
 
 // Eksik referans, slug/dosya adı uyuşmazlığı vb. varsa derlemeyi anlaşılır bir hatayla durdurur.
@@ -8,12 +11,11 @@ await icerigiDogrula();
 interface Props {
   title: string;
   description?: string;
+  /** arama motorlarında gösterme (ör. /stil-rehberi) */
+  noindex?: boolean;
 }
 
-const {
-  title,
-  description = 'Selam İnşaat ürün kataloğu — Rize',
-} = Astro.props;
+const { title, description = 'Selam İnşaat ürün kataloğu — Rize', noindex = false } = Astro.props;
 ---
 
 <!doctype html>
@@ -22,10 +24,22 @@ const {
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
+    {noindex && <meta name="robots" content="noindex, nofollow" />}
+    <meta name="theme-color" content="#2b2a29" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body class="min-h-screen bg-white text-neutral-900 antialiased">
-    <slot />
+  <body class="flex min-h-screen flex-col pb-20 md:pb-0">
+    <a
+      href="#icerik"
+      class="sr-only z-50 rounded bg-turuncu px-4 py-2 font-semibold text-antrasit-koyu focus:not-sr-only focus:fixed focus:top-2 focus:left-2"
+      >İçeriğe geç</a
+    >
+    <SiteHeader />
+    <div id="icerik" class="flex-1">
+      <slot />
+    </div>
+    <SiteFooter />
+    <MobilAltCubuk />
   </body>
 </html>

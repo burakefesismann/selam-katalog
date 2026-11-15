@@ -1,0 +1,148 @@
+---
+/**
+ * Stil rehberi (F2.1) — tüm tasarım bileşenleri gerçek ürün görselleriyle. Arama motorlarına kapalı (noindex).
+ * Yeni bileşen eklenince buraya da örneğini koy.
+ */
+import { ArrowRight, Phone } from '@lucide/astro';
+import BolumBasligi from '../components/BolumBasligi.astro';
+import Buton from '../components/Buton.astro';
+import GorselYerTutucu from '../components/GorselYerTutucu.astro';
+import KullanimAlaniIkon from '../components/KullanimAlaniIkon.astro';
+import Rozet from '../components/Rozet.astro';
+import UrunKarti from '../components/UrunKarti.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getKullanimAlanlari, getMarkalar, getUrunDetay, getUrunler } from '../lib/katalog';
+
+const kartlar = await Promise.all(
+  (await getUrunler()).map(async (urun) => {
+    const d = await getUrunDetay(urun);
+    return { urun, marka: d.markalar[0], kategoriAdi: d.kategori.data.ad };
+  }),
+);
+const alanlar = await getKullanimAlanlari();
+const firat = (await getMarkalar()).find((m) => m.id === 'firat');
+
+const RENKLER = [
+  { ad: 'turuncu', hex: '#ef7f1a', sinif: 'bg-turuncu', not: 'Logo turuncusu. Buton zemini (KOYU yazıyla), vurgu çizgileri, koyu zeminde metin.' },
+  { ad: 'turuncu-koyu', hex: '#b85a0e', sinif: 'bg-turuncu-koyu', not: 'Beyaz zeminde turuncu metin ve linkler (kontrast 4.7).' },
+  { ad: 'turuncu-acik', hex: '#fdf1e6', sinif: 'bg-turuncu-acik', not: 'Açık vurgu zemini, rozetler, ikon daireleri.' },
+  { ad: 'antrasit', hex: '#2b2a29', sinif: 'bg-antrasit', not: 'Logo koyusu. Başlıklar, alt bilgi zemini, ikincil buton.' },
+  { ad: 'antrasit-koyu', hex: '#1c1b1a', sinif: 'bg-antrasit-koyu', not: 'Turuncu buton üstündeki yazı.' },
+  { ad: 'zemin', hex: '#f6f5f3', sinif: 'bg-zemin', not: 'Bölüm zemini, görseli olmayan ürün yer tutucusu.' },
+];
+---
+
+<BaseLayout title="Stil rehberi — Selam İnşaat" noindex>
+  <main class="mx-auto max-w-6xl space-y-16 px-4 py-10">
+    <BolumBasligi
+      seviye="h1"
+      baslik="Stil rehberi"
+      aciklama="Sitenin renkleri, yazıları ve bileşenleri. Bu sayfa arama motorlarına kapalıdır."
+    />
+
+    <section>
+      <BolumBasligi baslik="Renkler" aciklama="Logodan alındı (siyah + turuncu, K6)." />
+      <ul class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        {
+          RENKLER.map((r) => (
+            <li class="overflow-hidden rounded-lg border border-stone-200">
+              <div class:list={['h-20', r.sinif]} />
+              <div class="p-3 text-sm">
+                <p class="font-semibold">
+                  {r.ad} <span class="font-normal text-stone-500">{r.hex}</span>
+                </p>
+                <p class="text-stone-600">{r.not}</p>
+              </div>
+            </li>
+          ))
+        }
+      </ul>
+      <div class="mt-4 grid gap-3 text-sm sm:grid-cols-3">
+        <p class="rounded-md bg-turuncu p-3 font-semibold text-antrasit-koyu">Turuncu üstünde koyu yazı ✓ (6.6)</p>
+        <p class="rounded-md bg-antrasit p-3 font-semibold text-turuncu">Koyu üstünde turuncu yazı ✓ (5.3)</p>
+        <p class="rounded-md border border-stone-200 p-3 font-semibold text-turuncu-koyu">Beyazda koyu turuncu ✓ (4.7)</p>
+      </div>
+    </section>
+
+    <section>
+      <BolumBasligi baslik="Yazı tipleri" aciklama="Başlıklar: Barlow Semi Condensed · Metin: Barlow (Fontsource, kendi sitemizden)." />
+      <div class="space-y-3">
+        <p class="font-baslik text-4xl font-bold">Başlık 1 — Yapı malzemelerinde 50 yıl</p>
+        <p class="font-baslik text-3xl font-bold">Başlık 2 — Seramik yapıştırıcılar</p>
+        <p class="font-baslik text-2xl font-bold">Başlık 3 — Fırat PPRC Borular</p>
+        <p class="max-w-2xl">
+          Gövde metni: Islak hacimlerde, yerden ısıtmalı zeminlerde ve dış cephede güvenle kullanılır. Ürün
+          bilgileri tanıtım amaçlıdır; güncel bilgi için lütfen arayın.
+        </p>
+        <p class="rounded-md bg-zemin p-3 text-lg">
+          Türkçe karakter testi: <strong>ĞÜŞİÖÇ ğüşıöç</strong> · IŞIK · ılık · İZOCAM · Çatı & Yağmur Oluğu
+        </p>
+        <p class="text-sm tracking-wide uppercase">büyük harf (lang="tr"): istanbul · ılıca → İSTANBUL · ILICA</p>
+      </div>
+    </section>
+
+    <section>
+      <BolumBasligi baslik="Butonlar" />
+      <div class="flex flex-wrap items-center gap-3">
+        <Buton href="#"><Phone size={18} aria-hidden="true" /> Bilgi için arayın</Buton>
+        <Buton tur="ikincil" href="#">Ürünleri incele <ArrowRight size={18} aria-hidden="true" /></Buton>
+        <Buton tur="cerceve" href="#">Teknik föyü indir</Buton>
+        <Buton boyut="kucuk">Küçük</Buton>
+        <Buton boyut="buyuk">Büyük</Buton>
+      </div>
+    </section>
+
+    <section>
+      <BolumBasligi baslik="Rozetler" />
+      <div class="flex flex-wrap gap-2">
+        <Rozet>Ürün ailesi</Rozet>
+        <Rozet tur="turuncu">Fırat</Rozet>
+        <Rozet tur="koyu">C2TE</Rozet>
+      </div>
+    </section>
+
+    <section>
+      <BolumBasligi baslik="Kullanım alanı ikonları" aciklama="Ürün sayfasında etiket olarak, kartlarda sadece ikon olarak." />
+      <div class="flex flex-wrap gap-2">
+        {alanlar.map((a) => <KullanimAlaniIkon alan={a} />)}
+      </div>
+      <div class="mt-4 flex flex-wrap gap-1.5">
+        {alanlar.map((a) => <KullanimAlaniIkon alan={a} sadeceIkon />)}
+      </div>
+    </section>
+
+    <section>
+      <BolumBasligi
+        baslik="Ürün kartları"
+        aciklama="Görsel baskın: sabit 4:3 alan, beyaz zemin, görselin tamamı görünür. Mobilde 2 sütun."
+        linkMetni="Tüm ürünler"
+        linkAdresi="#"
+      />
+      <ul class="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-5 lg:grid-cols-4">
+        {
+          kartlar.map((k, i) => (
+            <li class="flex">
+              <UrunKarti {...k} oncelikli={i < 2} />
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section>
+      <BolumBasligi baslik="Görseli olmayan ürün" aciklama="Kırık görsel yerine: marka logosu (yoksa marka adı) + kategori." />
+      <div class="grid grid-cols-2 gap-3 sm:max-w-xl">
+        <div class="aspect-[4/3] overflow-hidden rounded-md border border-stone-200">
+          <GorselYerTutucu marka={firat} kategoriAdi="PPRC Temiz Su" />
+        </div>
+        <div class="aspect-[4/3] overflow-hidden rounded-md border border-stone-200">
+          <GorselYerTutucu kategoriAdi="Hırdavat & Nalburiye" />
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <BolumBasligi baslik="Üst menü, alt bilgi, mobil alt çubuk" aciklama="Sayfanın en üstünde ve en altında. Mobilde altta sabit Ara / Ürün Ara." />
+    </section>
+  </main>
+</BaseLayout>

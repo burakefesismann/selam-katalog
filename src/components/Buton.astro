@@ -1,0 +1,49 @@
+---
+/**
+ * Buton / buton görünümlü link. `href` verilirse <a>, yoksa <button>.
+ * birincil: turuncu zemin + KOYU yazı (beyaz yazı kontrastı yetersiz) · ikincil: antrasit + beyaz · cerceve: kenarlıklı
+ */
+import type { HTMLAttributes } from 'astro/types';
+
+interface Props {
+  href?: string;
+  tur?: 'birincil' | 'ikincil' | 'cerceve';
+  boyut?: 'kucuk' | 'normal' | 'buyuk';
+  tamGenislik?: boolean;
+  class?: string;
+  type?: HTMLAttributes<'button'>['type'];
+  'aria-label'?: string;
+}
+
+const { href, tur = 'birincil', boyut = 'normal', tamGenislik = false, class: sinif = '', ...diger } = Astro.props;
+
+const turSinif = {
+  birincil: 'bg-turuncu text-antrasit-koyu hover:bg-[#f39236] active:bg-[#e0700f]',
+  ikincil: 'bg-antrasit text-white hover:bg-antrasit-koyu',
+  cerceve: 'border-2 border-antrasit text-antrasit hover:bg-antrasit hover:text-white',
+}[tur];
+const boyutSinif = {
+  kucuk: 'min-h-9 px-3 text-sm',
+  normal: 'min-h-11 px-5 text-base',
+  buyuk: 'min-h-13 px-6 text-lg',
+}[boyut];
+const siniflar = [
+  'inline-flex items-center justify-center gap-2 rounded-md font-semibold no-underline transition-colors',
+  turSinif,
+  boyutSinif,
+  tamGenislik && 'w-full',
+  sinif,
+];
+---
+
+{
+  href ? (
+    <a href={href} class:list={siniflar} {...diger}>
+      <slot />
+    </a>
+  ) : (
+    <button type={diger.type ?? 'button'} class:list={siniflar} {...diger}>
+      <slot />
+    </button>
+  )
+}

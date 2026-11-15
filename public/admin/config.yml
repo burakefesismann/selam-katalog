@@ -256,7 +256,27 @@ collections:
     sortable_fields: [ad, sira]
     fields:
       - { label: Ad, name: ad, widget: string }
-      - { label: İkon adı, name: ikon, widget: string, required: false, hint: 'Tasarım aşamasında (F2.1) belirlenecek. Şimdilik boş bırak.' }
+      - label: İkon
+        name: ikon
+        widget: select
+        required: false
+        hint: Boş bırakılırsa bilinen alanlarda otomatik seçilir. Liste src/lib/ikonlar.ts ile aynı olmalı.
+        options:
+          - { label: 'Koltuk (iç mekân)', value: koltuk }
+          - { label: 'Ağaç (dış mekân)', value: agac }
+          - { label: 'Duş (ıslak hacim)', value: dus }
+          - { label: 'Isıtıcı (yerden ısıtma)', value: isitici }
+          - { label: 'Karo (zemin)', value: karo }
+          - { label: 'Tuğla (duvar)', value: tugla }
+          - { label: 'Bina (cephe)', value: bina }
+          - { label: 'Havuz', value: havuz }
+          - { label: 'Alev (sıcak su)', value: alev }
+          - { label: 'Kar tanesi (soğuk su)', value: kar }
+          - { label: 'Klozet (atık su)', value: klozet }
+          - { label: 'Bardak (içme suyu)', value: bardak }
+          - { label: 'Şantiye (altyapı)', value: santiye }
+          - { label: 'Ev (çatı)', value: ev }
+          - { label: 'Katman (genel)', value: katman }
       - *sira
       - *yayinda
 

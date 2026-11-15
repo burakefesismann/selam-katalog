@@ -3,18 +3,19 @@
 > Her oturumun başında oku, sonunda güncelle. Kısa tut.
 
 ## Şu an
-- Aktif görev: — (F1.7 bitti, Faz 1 tamam)
+- Aktif görev: F2.1 — Tasarım sistemi — /stil-rehberi yayında, kullanıcı onayı bekleniyor
 - Site: https://burakefesismann.github.io/selam-katalog/
 - Faz: 2 — Vitrin tasarımı
 
 ## Yarım kalan
-- Yok
+- **F2.1** — bileşenler ve /stil-rehberi bitti, build geçiyor, 360 px'de yatay taşma yok. Kalan: kullanıcı onayı
+  (ya da istediği değişiklikler). Onaylanınca PLAN [x], DURUM, commit "F2.1: ...".
 
 ## Sıradaki
 - F2.1 — Tasarım sistemi (/stil-rehberi, kullanıcı onayı gerekir)
 
 ## Kullanıcıdan beklenenler
-- [~] Logo: `kaynaklar/logo/selamfis.png` geldi (474×129 PNG, şeffaf zemin, turuncu+gri). Vektör (SVG/AI/PDF) ya da
+- [~] Logo: `kaynaklar/logo/selamfis.png` geldi (2026-11-15 tekrar aynı dosya geldi; daha büyüğü yok) (474×129 PNG, şeffaf zemin, turuncu+gri). Vektör (SVG/AI/PDF) ya da
   daha büyük PNG varsa istenir; beyaz/açık renkli sürümü (koyu zemin için) de lazım olacak.
 - [ ] Daha büyük ürün görselleri. Şu an yapay zekâ ile büyütülmüş (K14), gerçeği gelince değiştirilecek:
   Fırat PPRC (2), PVC atık su ek parçaları, Triplex (2) — asıl 710 px · Baumit Basic, Flexo, Flex Uni — asıl 400 px.

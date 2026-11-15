@@ -1,1 +1,50 @@
 @import "tailwindcss";
+
+/* ── Yazı tipleri (Fontsource, kendi sitemizden; latin-ext = ğ ş ı İ) ── */
+@import "@fontsource/barlow/latin-400.css";
+@import "@fontsource/barlow/latin-ext-400.css";
+@import "@fontsource/barlow/latin-500.css";
+@import "@fontsource/barlow/latin-ext-500.css";
+@import "@fontsource/barlow/latin-600.css";
+@import "@fontsource/barlow/latin-ext-600.css";
+@import "@fontsource/barlow-semi-condensed/latin-600.css";
+@import "@fontsource/barlow-semi-condensed/latin-ext-600.css";
+@import "@fontsource/barlow-semi-condensed/latin-700.css";
+@import "@fontsource/barlow-semi-condensed/latin-ext-700.css";
+
+/*
+ * Tasarım sistemi (F2.1) — kimlik: siyah + turuncu (K6), renkler logodan (kaynaklar/logo/selamfis.png).
+ * Kontrast (WCAG AA ≥ 4.5): turuncu zeminde KOYU yazı (6.6) · beyaz zeminde turuncu metin = turuncu-koyu (4.7)
+ * · koyu zeminde logo turuncusu (5.3) · logo turuncusu üstünde BEYAZ yazı KULLANMA (2.7).
+ */
+@theme {
+  --font-sans: "Barlow", ui-sans-serif, system-ui, sans-serif;
+  --font-baslik: "Barlow Semi Condensed", "Barlow", ui-sans-serif, system-ui, sans-serif;
+
+  --color-turuncu: #ef7f1a; /* logo turuncusu: buton zemini, vurgu çizgileri, koyu zeminde metin */
+  --color-turuncu-koyu: #b85a0e; /* beyaz zeminde turuncu metin/link, buton hover */
+  --color-turuncu-acik: #fdf1e6; /* açık vurgu zemini, rozet */
+  --color-antrasit: #2b2a29; /* logo koyusu: başlıklar, footer zemini */
+  --color-antrasit-koyu: #1c1b1a; /* turuncu buton üstündeki yazı */
+  --color-zemin: #f6f5f3; /* sayfa bölüm zemini, yer tutucu */
+}
+
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+  body {
+    @apply bg-white font-sans text-antrasit antialiased;
+  }
+  h1,
+  h2,
+  h3 {
+    @apply font-baslik font-bold tracking-tight text-antrasit;
+  }
+  a {
+    @apply underline-offset-2;
+  }
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-turuncu-koyu;
+  }
+}

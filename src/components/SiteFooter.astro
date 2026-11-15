@@ -1,0 +1,79 @@
+---
+/** Alt bilgi: firma, şubeler (adres, telefon, saatler), iletişim. Veriler: src/content/ayarlar/genel.yaml */
+import { Clock, Mail, MapPin, Phone } from '@lucide/astro';
+import { getAyarlar, telLink } from '../lib/katalog';
+
+const { firma, subeler, ana_sayfa } = await getAyarlar();
+const yil = new Date().getFullYear();
+---
+
+<footer id="iletisim" class="mt-16 bg-antrasit text-stone-300">
+  <div class="mx-auto grid max-w-6xl gap-10 px-4 py-12 md:grid-cols-[1fr_2fr]">
+    <div>
+      <p class="font-baslik text-3xl font-bold tracking-wide text-turuncu">SELAM</p>
+      <p class="font-baslik text-lg font-semibold text-white">İnşaat Malzemeleri · {firma.sehir}</p>
+      {ana_sayfa.guven_mesaji && <p class="mt-3">{ana_sayfa.guven_mesaji}</p>}
+      <ul class="mt-5 space-y-2">
+        <li>
+          <a href={telLink(firma.telefon)} class="inline-flex items-center gap-2 font-semibold text-white hover:text-turuncu">
+            <Phone size={18} aria-hidden="true" />
+            {firma.telefon}
+          </a>
+        </li>
+        {
+          firma.eposta && (
+            <li>
+              <a href={`mailto:${firma.eposta}`} class="inline-flex items-center gap-2 hover:text-turuncu">
+                <Mail size={18} aria-hidden="true" />
+                {firma.eposta}
+              </a>
+            </li>
+          )
+        }
+      </ul>
+    </div>
+
+    <div>
+      <h2 class="mb-4 text-xl text-white">Şubelerimiz</h2>
+      <ul class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {
+          subeler.map((s) => (
+            <li class="space-y-1.5 text-sm">
+              <p class="font-semibold text-white">{s.ad}</p>
+              <p class="flex gap-2">
+                <MapPin size={16} class="mt-0.5 shrink-0 text-turuncu" aria-hidden="true" />
+                {s.harita_url ? (
+                  <a href={s.harita_url} class="hover:text-turuncu" rel="noopener" target="_blank">
+                    {s.adres}
+                  </a>
+                ) : (
+                  <span>{s.adres}</span>
+                )}
+              </p>
+              {s.telefon && (
+                <p class="flex gap-2">
+                  <Phone size={16} class="mt-0.5 shrink-0 text-turuncu" aria-hidden="true" />
+                  <a href={telLink(s.telefon)} class="hover:text-turuncu">
+                    {s.telefon}
+                  </a>
+                </p>
+              )}
+              {s.calisma_saatleri && (
+                <p class="flex gap-2">
+                  <Clock size={16} class="mt-0.5 shrink-0 text-turuncu" aria-hidden="true" />
+                  {s.calisma_saatleri}
+                </p>
+              )}
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-white/10">
+    <div class="mx-auto flex max-w-6xl flex-wrap justify-between gap-2 px-4 py-4 text-xs text-stone-400">
+      <p>© {yil} {firma.unvan}</p>
+      <p>Ürün bilgileri tanıtım amaçlıdır; güncel bilgi için lütfen arayın.</p>
+    </div>
+  </div>
+</footer>

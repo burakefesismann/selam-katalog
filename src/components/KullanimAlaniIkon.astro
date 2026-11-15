@@ -1,0 +1,33 @@
+---
+/** Kullanım alanı: ikon + ad (K5). Ürün sayfasında ve kartlarda. */
+import type { KullanimAlani } from '../lib/katalog';
+import { ikonBul } from '../lib/ikonlar';
+
+interface Props {
+  alan: KullanimAlani;
+  /** sadece ikon (kart içinde); ad title/aria ile verilir */
+  sadeceIkon?: boolean;
+}
+const { alan, sadeceIkon = false } = Astro.props;
+const Ikon = ikonBul(alan.data.ikon, alan.id);
+---
+
+{
+  sadeceIkon ? (
+    <span
+      class="inline-flex size-8 items-center justify-center rounded-full bg-turuncu-acik text-turuncu-koyu"
+      title={alan.data.ad}
+      aria-label={alan.data.ad}
+      role="img"
+    >
+      <Ikon size={18} aria-hidden="true" />
+    </span>
+  ) : (
+    <span class="inline-flex items-center gap-2 rounded-full bg-turuncu-acik py-1 pr-3 pl-1 text-sm font-medium text-antrasit">
+      <span class="inline-flex size-7 items-center justify-center rounded-full bg-white text-turuncu-koyu">
+        <Ikon size={16} aria-hidden="true" />
+      </span>
+      {alan.data.ad}
+    </span>
+  )
+}

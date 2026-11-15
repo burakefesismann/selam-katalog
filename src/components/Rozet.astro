@@ -1,0 +1,17 @@
+---
+/** Küçük etiket: marka, kart tipi, "Yeni" gibi. */
+interface Props {
+  tur?: 'notr' | 'turuncu' | 'koyu';
+  class?: string;
+}
+const { tur = 'notr', class: sinif = '' } = Astro.props;
+const turSinif = {
+  notr: 'bg-zemin text-stone-700 ring-1 ring-stone-200',
+  turuncu: 'bg-turuncu-acik text-turuncu-koyu ring-1 ring-turuncu/30',
+  koyu: 'bg-antrasit text-white',
+}[tur];
+---
+
+<span class:list={['inline-flex items-center gap-1 rounded px-2 py-0.5 text-xs font-semibold', turSinif, sinif]}>
+  <slot />
+</span>

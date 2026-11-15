@@ -119,5 +119,12 @@ Kullanıcı `/devam` yazarsa bu adımlar + sıradaki görev yapılır. Diğer ko
   ikisini de güncelle ve Sveltia şemasına göre doğrula (`https://unpkg.com/@sveltia/cms/schema/sveltia-cms.json`).
   Stok fotoğraf ve URL ile görsel KAPALI (K10). Boş alanlar yazılmaz. Panel commit'leri "panel: ..." ile başlar.
 - Slug üretimi: `src/lib/slug.ts` → `slugify()` (Türkçe karakter dönüşümü).
-- Tailwind v4: ayar dosyası yok, tema `global.css` içinde `@theme` ile tanımlanır (F2.1).
+- Tailwind v4: ayar dosyası yok, tema `src/styles/global.css` içinde `@theme` ile tanımlı (F2.1).
+- Tasarım sistemi (F2.1): renkler `turuncu` #ef7f1a · `turuncu-koyu` #b85a0e · `turuncu-acik` · `antrasit` #2b2a29 ·
+  `antrasit-koyu` · `zemin`. **Turuncu zeminde beyaz yazı YOK** (2.7) → koyu yazı; beyazda turuncu metin = turuncu-koyu.
+  Font: Barlow (metin) + Barlow Semi Condensed (`font-baslik`), Fontsource latin + latin-ext. İkonlar: `@lucide/astro`;
+  kullanım alanı ikonları `src/lib/ikonlar.ts` (panel `ikon` seçenekleriyle aynı). Bileşenler: Buton, Rozet, UrunKarti,
+  UrunGorseli, GorselYerTutucu, KullanimAlaniIkon, BolumBasligi, SiteHeader, SiteFooter, MobilAltCubuk → hepsi
+  `/stil-rehberi`de (noindex). Menüye sadece var olan sayfaları ekle (SiteHeader > MENU).
+- 360 px testi: Edge headless pencereyi en az ~496 px açar → 360 px için sayfayı 360 px genişlikte iframe içinde aç.
 - TypeScript 6 kullanılıyor (TS 7 ile `@astrojs/check` uyumlu değil; check TS 7'yi desteklemeden yükseltme).

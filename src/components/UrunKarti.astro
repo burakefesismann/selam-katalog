@@ -1,0 +1,45 @@
+---
+/**
+ * Ürün kartı — GÖRSEL BASKIN: büyük, sabit 4:3 görsel alanı, beyaz zemin, object-contain (CLAUDE.md > Görseller).
+ * Kartın tamamı tıklanır (tek link; ekran okuyucu için ad link metni).
+ */
+import type { Marka, Urun } from '../lib/katalog';
+import { url } from '../lib/url';
+import UrunGorseli from './UrunGorseli.astro';
+
+interface Props {
+  urun: Urun;
+  /** ilk sıradaki görünür marka (ana marka) */
+  marka?: Marka;
+  kategoriAdi: string;
+  /** ilk ekrandaki kartlar için true */
+  oncelikli?: boolean;
+}
+const { urun, marka, kategoriAdi, oncelikli = false } = Astro.props;
+const { data } = urun;
+---
+
+<article
+  class="group relative flex flex-col overflow-hidden rounded-lg border border-stone-200 bg-white transition-shadow hover:shadow-lg focus-within:shadow-lg"
+>
+  <UrunGorseli
+    urun={urun}
+    marka={marka}
+    kategoriAdi={kategoriAdi}
+    oncelikli={oncelikli}
+    genislik={480}
+    cerceve={false}
+    class="border-b border-stone-200"
+  />
+  <div class="flex flex-1 flex-col gap-1 p-3 sm:p-4">
+    <p class="truncate text-xs font-semibold tracking-wide text-turuncu-koyu uppercase">
+      {marka?.data.ad ?? 'Çeşitli markalar'}
+    </p>
+    <h3 class="text-base leading-snug sm:text-lg">
+      <a href={url(`urunler/${urun.id}`)} class="after:absolute after:inset-0 group-hover:underline">
+        {data.ad}
+      </a>
+    </h3>
+    <p class="line-clamp-2 text-sm text-stone-600 max-sm:hidden">{data.kisa_aciklama}</p>
+  </div>
+</article>
