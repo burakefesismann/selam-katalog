@@ -13,13 +13,16 @@ subeler:
     adres: Ekrem Orhon Mah. Cumhuriyet Cad. No:175/A, Merkez / Rize
     telefon: 0 (464) 217 60 67
     calisma_saatleri: Pzt–Cmt 08:00–18:30, Pazar kapalı
+    harita_url: https://maps.app.goo.gl/qpEFTKdpEvCgwQ5v6
   - ad: Güneysu Depo
     adres: Ulucamii Mah., Ahmet Yesevi Cad., Güneysu / Rize
     calisma_saatleri: Pzt–Cmt 08:00–17:30, Pazar kapalı
+    harita_url: https://maps.app.goo.gl/vCvjMqYtj9eCjC2N9
   - ad: Yurtbay Seramik Mağazası
     adres: Gülbahar Mah., Yenişehir Cad. No:99, Merkez / Rize
     telefon: 0 (464) 212 16 95
     calisma_saatleri: Pzt–Cmt 09:00–17:00, Pazar kapalı
+    harita_url: https://maps.app.goo.gl/1taz1xXLBR4gUYVT9
 
 ana_sayfa:
   baslik: Yapı malzemelerinde aradığınız her şey

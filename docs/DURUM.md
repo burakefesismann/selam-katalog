@@ -21,8 +21,7 @@
   Fırat logosu 360 px (logo, büyütülmedi).
   Mağazada çekilebilir ya da üreticiden yüksek çözünürlüklü görsel istenebilir. Güncel liste: `npm run gorsel:rapor`.
 - [ ] docs/FIRMA.md'deki ⚠ işaretli bilgilerin teyidi (özellikle Güneysu Depo telefonu, e-posta)
-- [ ] (İsteğe bağlı) Şubelerin kesin Google Haritalar linkleri → panel: Ayarlar › Şubeler › Google Haritalar linki.
-  Boşken Google adres araması kullanılıyor.
+- [x] Şubelerin kesin Google Haritalar linkleri (2026-11-15 kullanıcı verdi, ayarlar/genel.yaml)
 - [ ] Marka ve ürün listesi (beyin takımı içerik paketine çevirecek)
 
 ## Netleşenler (2026-11-14)
