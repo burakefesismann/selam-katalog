@@ -25,7 +25,7 @@ import {
   telLink,
   type Urun,
 } from '../../lib/katalog';
-import { kategoriUrl, url } from '../../lib/url';
+import { kategoriUrl, markaUrl, url } from '../../lib/url';
 
 export const getStaticPaths = (async () => {
   return (await getUrunler()).map((urun) => ({ params: { slug: urun.id }, props: { urun } }));
@@ -87,7 +87,9 @@ const ilgiliKartlar = await Promise.all(
         <div class="flex flex-wrap gap-2">
           {
             markalar.map((m) => (
-              <Rozet tur="turuncu">{m.data.ad}</Rozet>
+              <a href={markaUrl(m.id)} class="no-underline hover:opacity-80">
+                <Rozet tur="turuncu">{m.data.ad}</Rozet>
+              </a>
             ))
           }
           {markalar.length === 0 && <Rozet tur="turuncu">Çeşitli markalar</Rozet>}

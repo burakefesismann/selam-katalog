@@ -181,6 +181,19 @@ export async function markayaGoreGrupla(urunler: Urun[]): Promise<MarkaGrubu[]> 
   return [...gruplar.values()].sort((a, b) => sira(a) - sira(b));
 }
 
+/** Ürünleri ANA kategorilerine göre gruplar (marka sayfası). Ana kategori sırasıyla. */
+export async function anaKategoriyeGoreGrupla(urunler: Urun[]): Promise<{ kategori: Kategori; urunler: Urun[] }[]> {
+  const anaKategoriler = await getAnaKategoriler();
+  const anaId = new Map<string, string>();
+  for (const u of urunler) {
+    const yol = await getKategoriYolu(u.data.kategori.id);
+    if (yol[0]) anaId.set(u.id, yol[0].id);
+  }
+  return anaKategoriler
+    .map((kategori) => ({ kategori, urunler: urunler.filter((u) => anaId.get(u.id) === kategori.id) }))
+    .filter((g) => g.urunler.length > 0);
+}
+
 export async function getMarkaUrunleri(markaId: string): Promise<Urun[]> {
   return (await getUrunler()).filter((u) => u.data.markalar.some((m) => m.id === markaId));
 }

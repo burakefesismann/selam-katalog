@@ -21,7 +21,7 @@ import {
   getUrunDetay,
   telLink,
 } from '../lib/katalog';
-import { kategoriUrl, url } from '../lib/url';
+import { kategoriUrl, markaUrl, url } from '../lib/url';
 
 const { firma, subeler, ana_sayfa } = await getAyarlar();
 
@@ -114,19 +114,21 @@ const aramaAdresi = url('urunler');
     {
       markalar.length > 0 && (
         <section class="mx-auto max-w-6xl px-4 pt-14">
-          <BolumBasligi baslik="Markalarımız" />
+          <BolumBasligi baslik="Markalarımız" linkMetni="Tüm markalar" linkAdresi={url('markalar')} />
           <ul class="flex flex-wrap items-stretch gap-3">
             {markalar.map((m) => {
               const vurgulu = m.id === VURGULU_MARKA;
               return (
-                <li
+                <li class="flex">
+                <a
+                  href={markaUrl(m.id)}
                   class:list={[
-                    'flex items-center justify-center rounded-lg border bg-white px-5',
+                    'flex items-center justify-center rounded-lg border bg-white px-5 transition-shadow hover:shadow-md',
                     vurgulu
                       ? 'h-24 min-w-48 border-turuncu ring-2 ring-turuncu/40 sm:h-28 sm:min-w-60'
                       : 'h-20 min-w-36 border-stone-200 sm:h-24 sm:min-w-44',
                   ]}
-                  title={m.data.ad}
+                  title={`${m.data.ad} ürünleri`}
                 >
                   {m.data.logo && typeof m.data.logo !== 'string' ? (
                     <Image
@@ -138,6 +140,7 @@ const aramaAdresi = url('urunler');
                   ) : (
                     <span class="font-baslik text-xl font-bold text-antrasit">{m.data.ad}</span>
                   )}
+                </a>
                 </li>
               );
             })}

@@ -130,7 +130,7 @@ Bitince: PLAN'da `[x]` → DURUM.md güncelle → commit + push → kullanıcıy
   ölçüler, teknik föy indir, detaylı açıklama, ilgili ürünler (görselli), "Bilgi almak için arayın".
   Sadece dolu bölümler görünür. `kart_tipi`'ne göre vurgu: `grup` → ölçüler öne; `marka_tur` → seriler ve örnek
   görseller; `urun` → teknik tablo ve karşılaştırma. Her üç tiple de test et.
-- [ ] **F2.5 Marka sayfaları** — marka listesi (logolar) + marka detay (logo, tanıtım, ürünleri kategoriye göre gruplu).
+- [x] **F2.5 Marka sayfaları** — marka listesi (logolar) + marka detay (logo, tanıtım, ürünleri kategoriye göre gruplu).
 - [ ] **F2.6 Karşılaştırma tablosu** — kategoride teknik özelliği dolu 2+ ürün varsa otomatik tablo
   (satırlar: ozellik_tanimlari, sütunlar: ürünler, sütun başında ürün görseli). Mobilde okunur olmalı.
 - [ ] **F2.7 Arama** — Pagefind ile site içi arama, sonuçlarda küçük görsel; header'da arama kutusu.

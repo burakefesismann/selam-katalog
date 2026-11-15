@@ -1,0 +1,22 @@
+---
+/** Marka logosu; logo yoksa marka adı (yazı). Yükseklik sınıfla verilir. */
+import { Image } from 'astro:assets';
+import type { Marka } from '../lib/katalog';
+
+interface Props {
+  marka: Marka;
+  /** piksel yükseklik (görsel üretimi için) */
+  yukseklik?: number;
+  class?: string;
+}
+const { marka, yukseklik = 48, class: sinif = 'max-h-12' } = Astro.props;
+const logo = marka.data.logo;
+---
+
+{
+  logo && typeof logo !== 'string' ? (
+    <Image src={logo} alt={marka.data.ad} height={yukseklik} class:list={['w-auto object-contain', sinif]} />
+  ) : (
+    <span class="font-baslik text-2xl font-bold text-antrasit">{marka.data.ad}</span>
+  )
+}

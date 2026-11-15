@@ -1,0 +1,50 @@
+---
+/** Marka listesi (F2.5): logolar, kısa açıklama, ürün sayısı. Sıra: `sira` (Fırat ilk — K12). */
+import { ArrowRight } from '@lucide/astro';
+import BolumBasligi from '../../components/BolumBasligi.astro';
+import KonumYolu from '../../components/KonumYolu.astro';
+import MarkaLogosu from '../../components/MarkaLogosu.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getAyarlar, getMarkalar, getMarkaUrunleri } from '../../lib/katalog';
+import { markaUrl } from '../../lib/url';
+
+const { firma } = await getAyarlar();
+const markalar = await Promise.all(
+  (await getMarkalar()).map(async (marka) => ({ marka, sayi: (await getMarkaUrunleri(marka.id)).length })),
+);
+---
+
+<BaseLayout title={`Markalar — ${firma.kisa_ad}`} description={`${firma.kisa_ad} kataloğundaki markalar.`}>
+  <main class="mx-auto max-w-6xl px-4 py-8">
+    <KonumYolu ogeler={[{ ad: 'Markalar' }]} />
+    <BolumBasligi seviye="h1" baslik="Markalar" aciklama={`Kataloğumuzdaki ${markalar.length} marka.`} />
+    <ul class="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-5 lg:grid-cols-4">
+      {
+        markalar.map(({ marka, sayi }) => (
+          <li class="flex">
+            <a
+              href={markaUrl(marka.id)}
+              class="group flex w-full flex-col overflow-hidden rounded-lg border border-stone-200 bg-white no-underline transition-shadow hover:shadow-lg"
+            >
+              <div class="flex h-28 items-center justify-center border-b border-stone-200 p-4 sm:h-32">
+                <MarkaLogosu marka={marka} yukseklik={64} class="max-h-14 max-w-full sm:max-h-16" />
+              </div>
+              <div class="flex flex-1 flex-col gap-1 p-3 sm:p-4">
+                <h2 class="flex items-center justify-between gap-2 text-lg">
+                  {marka.data.ad}
+                  <ArrowRight
+                    size={18}
+                    class="shrink-0 text-turuncu-koyu transition-transform group-hover:translate-x-0.5"
+                    aria-hidden="true"
+                  />
+                </h2>
+                <p class="text-xs text-stone-600 sm:text-sm">{sayi > 0 ? `${sayi} ürün` : 'Ürünler hazırlanıyor'}</p>
+                <p class="line-clamp-2 text-sm text-stone-600 max-sm:hidden">{marka.data.kisa_aciklama}</p>
+              </div>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </main>
+</BaseLayout>

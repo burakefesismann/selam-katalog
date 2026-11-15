@@ -7,6 +7,7 @@
 /** Sayfa adresleri tek yerden (sayfa yapısı değişirse burayı değiştir) */
 export const kategoriUrl = (id: string) => url(`kategoriler/${id}`);
 export const urunUrl = (id: string) => url(`urunler/${id}`);
+export const markaUrl = (id: string) => url(`markalar/${id}`);
 
 export function url(path = '/'): string {
   const base = import.meta.env.BASE_URL.replace(/\/+$/, '');

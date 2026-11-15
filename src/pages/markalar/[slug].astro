@@ -1,0 +1,121 @@
+---
+/** Marka detay (F2.5): logo, tanıtım, web sitesi; ürünler ANA kategoriye göre gruplu. */
+import type { GetStaticPaths } from 'astro';
+import { ExternalLink, Phone } from '@lucide/astro';
+import BolumBasligi from '../../components/BolumBasligi.astro';
+import Buton from '../../components/Buton.astro';
+import KonumYolu from '../../components/KonumYolu.astro';
+import MarkaLogosu from '../../components/MarkaLogosu.astro';
+import UrunKarti from '../../components/UrunKarti.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import {
+  anaKategoriyeGoreGrupla,
+  getAyarlar,
+  getMarkalar,
+  getMarkaUrunleri,
+  getUrunDetay,
+  telLink,
+  type Marka,
+} from '../../lib/katalog';
+import { markdownHtml } from '../../lib/markdown';
+import { kategoriUrl, url } from '../../lib/url';
+
+export const getStaticPaths = (async () => {
+  return (await getMarkalar()).map((marka) => ({ params: { slug: marka.id }, props: { marka } }));
+}) satisfies GetStaticPaths;
+
+interface Props {
+  marka: Marka;
+}
+const { marka } = Astro.props;
+const { data } = marka;
+const { firma } = await getAyarlar();
+const urunler = await getMarkaUrunleri(marka.id);
+const gruplar = await Promise.all(
+  (await anaKategoriyeGoreGrupla(urunler)).map(async (g) => ({
+    kategori: g.kategori,
+    kartlar: await Promise.all(
+      g.urunler.map(async (urun) => {
+        const d = await getUrunDetay(urun);
+        // Kartta bu markayı göster (çok markalı üründe ana marka başka olabilir)
+        return { urun, marka, kategoriAdi: d.kategori.data.ad };
+      }),
+    ),
+  })),
+);
+const tanitim = markdownHtml(data.aciklama);
+const webAdi = data.web_sitesi?.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '');
+let sira = 0;
+---
+
+<BaseLayout title={`${data.ad} — ${firma.kisa_ad}`} description={data.kisa_aciklama}>
+  <main class="mx-auto max-w-6xl px-4 py-8">
+    <KonumYolu ogeler={[{ ad: 'Markalar', adres: url('markalar') }, { ad: data.ad }]} />
+
+    <header class="mb-10 grid items-center gap-6 rounded-lg border border-stone-200 p-5 sm:grid-cols-[auto_1fr] sm:p-8">
+      <div class="flex h-24 items-center justify-center sm:h-28 sm:w-56">
+        <MarkaLogosu marka={marka} yukseklik={96} class="max-h-20 max-w-full sm:max-h-24" />
+      </div>
+      <div>
+        <h1 class="text-3xl sm:text-4xl">{data.ad}</h1>
+        <p class="mt-2 text-lg text-stone-700">{data.kisa_aciklama}</p>
+        {
+          data.web_sitesi && (
+            <a
+              href={data.web_sitesi}
+              target="_blank"
+              rel="noopener"
+              class="mt-3 inline-flex items-center gap-1 font-semibold text-turuncu-koyu hover:underline"
+            >
+              {webAdi}
+              <ExternalLink size={16} aria-hidden="true" />
+            </a>
+          )
+        }
+      </div>
+    </header>
+
+    {
+      tanitim && (
+        <section class="mb-12">
+          <BolumBasligi baslik={`${data.ad} hakkında`} />
+          <div class="icerik" set:html={tanitim} />
+        </section>
+      )
+    }
+
+    {
+      gruplar.length === 0 ? (
+        <div class="rounded-lg border border-dashed border-stone-300 bg-zemin p-8 text-center">
+          <p class="font-baslik text-xl font-bold">{data.ad} ürünleri hazırlanıyor</p>
+          <p class="mt-2 text-stone-600">Bilgi almak için bizi arayın.</p>
+          <div class="mt-4">
+            <Buton href={telLink(firma.telefon)}>
+              <Phone size={18} aria-hidden="true" />
+              {firma.telefon}
+            </Buton>
+          </div>
+        </div>
+      ) : (
+        <div class="space-y-12">
+          {gruplar.map(({ kategori, kartlar }) => (
+            <section>
+              <BolumBasligi
+                baslik={kategori.data.ad}
+                linkMetni="Kategoriye git"
+                linkAdresi={kategoriUrl(kategori.id)}
+              />
+              <ul class="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-5 lg:grid-cols-4">
+                {kartlar.map((k) => (
+                  <li class="flex">
+                    <UrunKarti {...k} oncelikli={sira++ < 4} />
+                  </li>
+                ))}
+              </ul>
+            </section>
+          ))}
+        </div>
+      )
+    }
+  </main>
+</BaseLayout>
