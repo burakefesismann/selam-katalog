@@ -102,7 +102,7 @@ Bitince: PLAN'da `[x]` → DURUM.md güncelle → commit + push → kullanıcıy
   Kullanıcıyla canlı test: panelden bir ürünün açıklamasını değiştir ve bir görsel ekle → kaydet → birkaç dakika içinde sitede görünsün.
   *Bitti sayılır:* canlı test başarılı; şema ile panel alanları birebir.
 
-- [ ] **F1.7 Panel kılavuzu**
+- [x] **F1.7 Panel kılavuzu**
   `docs/PANEL-KULLANIMI.md`: kod bilmeyen biri için Türkçe, kısa, ekran adımlarıyla. Token alma, panele giriş,
   ürün ekleme, **görsel ekleme ve sıralama (ilk görsel = ana görsel)**, yayından kaldırma, değişikliğin siteye
   düşme süresi, "bir şey bozulursa ne yapılır".

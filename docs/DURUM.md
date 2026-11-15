@@ -3,15 +3,15 @@
 > Her oturumun başında oku, sonunda güncelle. Kısa tut.
 
 ## Şu an
-- Aktif görev: F1.7 — Panel kılavuzu
+- Aktif görev: — (F1.7 bitti, Faz 1 tamam)
 - Site: https://burakefesismann.github.io/selam-katalog/
-- Faz: 1 — İskelet, görseller ve panel
+- Faz: 2 — Vitrin tasarımı
 
 ## Yarım kalan
 - Yok
 
 ## Sıradaki
-- F1.7 — Panel kılavuzu (docs/PANEL-KULLANIMI.md)
+- F2.1 — Tasarım sistemi (/stil-rehberi, kullanıcı onayı gerekir)
 
 ## Kullanıcıdan beklenenler
 - [~] Logo: `kaynaklar/logo/selamfis.png` geldi (474×129 PNG, şeffaf zemin, turuncu+gri). Vektör (SVG/AI/PDF) ya da
@@ -79,6 +79,8 @@
   EXIF yok, yayın başarılı. Test değişiklikleri geri alındı. Kılavuzda (F1.7) anlatılacak tuzaklar: "Ekle" ile yeni
   satır aç (mevcut görselin üstüne seçme = değiştirir), slug'ı oluştururken kontrol et (ü→u), stok yok.
 - Ürün sayfası şimdilik sadece ilk görseli gösteriyor; diğerleri F2.4 galerisinde.
+- F1.7: `docs/PANEL-KULLANIMI.md` kullanıcı onayladı (2026-11-15). Panel buton adları (Yeni/Kaydet/Ekle) görülmeden
+  yazıldı; kullanıcı farklı görürse düzelt. Panel alanları değişirse kılavuzu da güncelle.
 
 ## Öneriler
 - (Plana eklenmesi önerilen fikirler. Kullanıcı onaylarsa PLAN.md'ye taşınır.)
@@ -100,3 +102,4 @@
 | 2026-11-14 | F1.5b Görseller | 6 ürün (8 görsel) + 2 logo, resmi siteler; küçük ama kullanıcı onayladı | F1.5b |
 | 2026-11-14 | F1.5c Büyütme/arka plan | Real-ESRGAN kabul (8 görsel büyütüldü, `--buyut`), rembg red; K14 | F1.5c |
 | 2026-11-15 | F1.6 Panel | Sveltia /admin, token girişi, 2 canlı test; stok/URL kapatıldı | F1.6 |
+| 2026-11-15 | F1.7 Panel kılavuzu | docs/PANEL-KULLANIMI.md yazıldı, kullanıcı onayladı | F1.7 |
