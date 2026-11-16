@@ -150,7 +150,7 @@ Bitince: PLAN'da `[x]` → DURUM.md güncelle → commit + push → kullanıcıy
   (Markdown/JSON; her ürün için `kaynak_sayfalar`). `npm run icerik:aktar -- 001-firat-baumit` komutu paketi
   doğrular (şema, referanslar), varsa paketteki görselleri hazırlar, `src/content`'e kopyalar, özet rapor verir.
   Aynı slug varsa üzerine yazmadan önce raporlar.
-- [ ] **F3.2 Paket 001: Fırat + Baumit** — içe aktar, TASLAK örnekleri gerçek içerikle değiştir,
+- [x] **F3.2 Paket 001: Fırat + Baumit** — içe aktar, TASLAK örnekleri gerçek içerikle değiştir,
   ardından `/gorsel eksikler` ile görselleri tamamla.
 - [ ] **F3.x Diğer paketler** — geldikçe buraya eklenir (her paket: içe aktar → `/gorsel eksikler` → rapor).
 

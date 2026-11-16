@@ -3,29 +3,23 @@
 > Her oturumun başında oku, sonunda güncelle. Kısa tut.
 
 ## Şu an
-- Aktif görev: F3.2 — Paket 001 görselleri (yarım, bkz. Yarım kalan)
+- Aktif görev: — (F3.2 bitti; eksik görseller kullanıcıda)
 - Site: https://burakefesismann.github.io/selam-katalog/
 - Faz: 3 — Gerçek içerik ve görseller
 
 ## Yarım kalan
-- **F3.2 Paket 001 — görseller** (içe aktarma BİTTİ). Görselli: 24/35 ürün. 2026-11-16 oturum 2: 10 Baumit ürünü eklendi.
-  - Görseli EKSİK 11 ürün (`npm run gorsel:rapor`):
-    · Henüz denenmedi (Fırat, 3): pe100-kaynakli-ve-elektrofuzyon-ek-parcalar (kaynak: en-us infrastructure-pipe/
-      potable-water-pipe-systems/pe-pipe-and-fittings, pe-100-teknik-katalogu.pdf), pex-baglantilar-ve-vanalar
-      (en-us pex-product-range-1/mobile-systems, pex-metal-brosuru.pdf), yerden-isitma-kollektorleri
-      (en-us sanitary-piping-systems/metal-systems/collectors). Fırat sayfalarında `/cmsfiles/products/**/large/*.jpg`.
-    · **Kontrol gerekli → mağaza fotoğrafı** (8): Fırat PE100 kangal (sitede kangal yok), Fırat PPRC vanalar (vana görseli
-      yok/kesik), Fırat Gediz (resmi görsel yok); Baumit All in Beton (resmi torba 30 kg, mağazadaki 20 kg → kullanılmadı),
-      Baumit Ionit Finish (sayfada sadece bilgi grafiği), Baumit Protect 2K ve PremiumFuge (ürün sayfaları artık 404),
-      Baumit mantolama aksesuarları (resmi sayfa yok). Baumit Flexo görseli var (F1.5b) ama kart TASLAK (bilgi torbadan).
-  - Kalan adımlar: 3 Fırat ürünü → hazırla (--buyut) → bağla → build → F3.2 [x] (mağaza fotoğrafı bekleyenler
-    "Kullanıcıdan beklenenler"de kalır, F3.2'yi bekletmez) → DURUM → commit/push.
+- Yok
+
 ## Sıradaki
-- F3.2 devam (`/gorsel eksikler`) → sonra F3.x diğer paketler
+- F4.1 — "Hangisini seçmeliyim?" sihirbazı (seramik yapıştırıcı) — kurallar içeriği gerekli, kullanıcıya sorulacak.
+  F3.x diğer paketler geldikçe araya girer.
 
 ## Kullanıcıdan beklenenler
 - [~] Logo: `kaynaklar/logo/selamfis.png` geldi (2026-11-15 tekrar aynı dosya geldi; daha büyüğü yok) (474×129 PNG, şeffaf zemin, turuncu+gri). Vektör (SVG/AI/PDF) ya da
   daha büyük PNG varsa istenir; beyaz/açık renkli sürümü (koyu zemin için) de lazım olacak.
+- [ ] **Eksik ürün görselleri — kullanıcı EN SON kendisi halledecek (2026-11-16 kararı; Claude dokunmasın).** 11 kart:
+  Fırat PE100 Kaynaklı & Elektrofüzyon Ek Parçalar, Fırat PEX Bağlantılar & Vanalar, Yerden Isıtma Kollektörleri (bu üçünün
+  resmi Fırat sayfalarında görsel olabilir: kaynak_sayfalar) ve aşağıdaki mağaza fotoğrafı gerekenler. Liste: `npm run gorsel:rapor`.
 - [ ] Mağaza fotoğrafı gereken kartlar (resmi görsel yok/uygun değil): Fırat PE100 İçme Suyu Boruları (Kangal),
   Fırat PPRC Vanalar, Fırat Gediz, Baumit All in Beton (resmi görsel 30 kg torba, mağazadaki 20 kg), Baumit Ionit Finish,
   Baumit Protect 2K, Baumit PremiumFuge, Baumit mantolama aksesuarları (file/dübel/profil), Baumit Flexo (bilgiler de torbadan).
@@ -191,3 +185,4 @@
 | 2026-11-15 | F2.9 Kalite turu | Lighthouse 98–100/100/100/100, favicon, OG, sitemap, 404, kontrast; taşma yok | F2.9 |
 | 2026-11-16 | F3.1 + F3.2 (yarım) | İçe aktarıcı; Paket 001 içeride (35 kart); 8 ürün + 4 kategori görseli; 21 ürün görselsiz | WIP F3.2 |
 | 2026-11-16 | F3.2 (yarım) | 10 Baumit görseli; 8 kart mağaza fotoğrafı bekliyor; --buyut alfa hatası düzeltildi | WIP F3.2 |
+| 2026-11-16 | F3.2 kapandı | 24/35 ürün görselli; kalan 11 görsel kullanıcıya bırakıldı | F3.2 |
