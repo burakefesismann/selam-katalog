@@ -11,7 +11,7 @@ export default defineConfig({
   integrations: [
     sitemap({
       // Arama motorlarına gösterilmeyecek sayfalar (stil rehberi noindex, arama sonuç sayfası, panel)
-      filter: (sayfa) => !/\/(stil-rehberi|ara|admin)\/?$/.test(sayfa),
+      filter: (sayfa) => !/\/(stil-rehberi|ara|admin)\/?$/.test(sayfa) && !/\/qr\//.test(sayfa),
     }),
   ],
   vite: {

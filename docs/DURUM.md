@@ -3,7 +3,7 @@
 > Her oturumun başında oku, sonunda güncelle. Kısa tut.
 
 ## Şu an
-- Aktif görev: — (F3.2 bitti; eksik görseller kullanıcıda)
+- Aktif görev: — (F4.2 bitti)
 - Site: https://burakefesismann.github.io/selam-katalog/
 - Faz: 3 — Gerçek içerik ve görseller
 
@@ -11,7 +11,7 @@
 - Yok
 
 ## Sıradaki
-- F4.2 — QR etiketleri (F4.1 kurallar gelene kadar bekliyor — ICERIK-SEMASI §9). F3.x paketler geldikçe araya girer.
+- F4.3 — PDF katalog (F4.1 kurallar gelene kadar bekliyor). F3.x paketler geldikçe araya girer.
 
 ## Kullanıcıdan beklenenler
 - [~] Logo: `kaynaklar/logo/selamfis.png` geldi (2026-11-15 tekrar aynı dosya geldi; daha büyüğü yok) (474×129 PNG, şeffaf zemin, turuncu+gri). Vektör (SVG/AI/PDF) ya da
@@ -153,6 +153,11 @@
 - `gorsel:hazirla --buyut` artık büyütmeden önce saydamlığı beyaza düzleştiriyor (Real-ESRGAN -t 128 alfa kanalını
   parça parça bozdu: ProContact torbasının alt yarısı görünmezdi — düzeltildi, diğer görseller tarandı, sağlam).
 
+- F4.2: `/qr/` (kategori seçimi) + `/qr/<kategori>/` ve `/qr/tumu/` (A4, 2×5 etiket 90×50 mm, @page + print CSS).
+  QR derlemede SVG (`qrcode`, hata düzeltme M), mutlak adres + sonda "/". jsQR ile çözüldü ✓, Edge PDF baskısı 2 sayfa A4 ✓.
+  noindex + sitemap dışı. ⚠ Alan adı değişince (F5.1) basılı etiketler eski adrese gider → toplu basım F5.1 sonrası
+  (kullanıcıya PANEL-KULLANIMI §9'da yazıldı). GitHub Pages alan adı yönlendirmesi base yolu (/selam-katalog) taşımayabilir.
+
 ## Öneriler
 - (Plana eklenmesi önerilen fikirler. Kullanıcı onaylarsa PLAN.md'ye taşınır.)
 - Ana sayfadaki 11 ana kategori kartı (F2.2) için kategori görselleri gerekecek; planda ayrı görev yok.
@@ -186,3 +191,4 @@
 | 2026-11-16 | F3.1 + F3.2 (yarım) | İçe aktarıcı; Paket 001 içeride (35 kart); 8 ürün + 4 kategori görseli; 21 ürün görselsiz | WIP F3.2 |
 | 2026-11-16 | F3.2 (yarım) | 10 Baumit görseli; 8 kart mağaza fotoğrafı bekliyor; --buyut alfa hatası düzeltildi | WIP F3.2 |
 | 2026-11-16 | F3.2 kapandı | 24/35 ürün görselli; kalan 11 görsel kullanıcıya bırakıldı | F3.2 |
+| 2026-11-16 | F4.2 QR etiketleri | /qr, kategori bazlı A4 etiket sayfaları; QR okuma + PDF baskı testi ✓ | F4.2 |

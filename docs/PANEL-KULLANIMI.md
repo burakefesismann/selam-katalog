@@ -136,7 +136,18 @@ yaz, geri getirir.
 
 ---
 
-## 9. Kısa hatırlatma listesi
+## 9. Raf için QR etiketleri
+
+Adres: https://burakefesismann.github.io/selam-katalog/qr/ (menüde yok, mağaza için).
+
+1. Kategori seçin (ya da "Tüm ürünler").
+2. **Yazdır** → yazıcı ayarında **"Gerçek boyut / %100"** seçin. A4'e 10 etiket (90 × 50 mm) çıkar.
+3. Kesikli çizgilerden kesip rafa yapıştırın. Müşteri telefonuyla okutunca ürünün sayfası açılır.
+
+Panelden yeni ürün eklediğinizde etiketi de birkaç dakika içinde bu sayfada çıkar.
+⚠ Kendi alan adınız bağlanınca (ileride) etiketlerdeki adres değişir — toplu basımı o karardan sonra yapın.
+
+## 10. Kısa hatırlatma listesi
 
 - [ ] Kategori → en alttaki kategori
 - [ ] İlk marka = ana marka

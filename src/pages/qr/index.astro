@@ -1,0 +1,70 @@
+---
+/** QR etiketleri giriş sayfası (F4.2): hangi kategorinin etiketleri basılacak. Arama motorlarına kapalı. */
+import { Printer, QrCode } from '@lucide/astro';
+import BolumBasligi from '../../components/BolumBasligi.astro';
+import KonumYolu from '../../components/KonumYolu.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getAltKategoriler, getAnaKategoriler, getKategoriUrunleri, getUrunler } from '../../lib/katalog';
+import { url } from '../../lib/url';
+
+const toplam = (await getUrunler()).length;
+const anaKategoriler = await Promise.all(
+  (await getAnaKategoriler()).map(async (k) => ({
+    k,
+    sayi: (await getKategoriUrunleri(k.id)).length,
+    altlar: await Promise.all(
+      (await getAltKategoriler(k.id)).map(async (a) => ({ a, sayi: (await getKategoriUrunleri(a.id)).length })),
+    ),
+  })),
+);
+---
+
+<BaseLayout title="QR etiketleri — Selam İnşaat" noindex>
+  <main class="mx-auto max-w-4xl px-4 py-8">
+    <KonumYolu ogeler={[{ ad: 'QR etiketleri' }]} />
+    <BolumBasligi
+      seviye="h1"
+      baslik="Raf için QR etiketleri"
+      aciklama="Müşteri rafta etiketi telefonuyla okutunca ürünün sayfası açılır. Bir kategori seçin, açılan sayfadan yazdırın."
+    />
+
+    <a
+      href={url('qr/tumu')}
+      class="mb-8 inline-flex min-h-11 items-center gap-2 rounded-md bg-antrasit px-5 font-semibold text-white no-underline hover:bg-antrasit-koyu"
+    >
+      <Printer size={20} aria-hidden="true" /> Tüm ürünler ({toplam} ürün)
+    </a>
+
+    <ul class="grid gap-4 sm:grid-cols-2">
+      {
+        anaKategoriler.map(({ k, sayi, altlar }) => (
+          <li class="rounded-lg border border-stone-200 p-4">
+            <a href={url(`qr/${k.id}`)} class="flex items-center justify-between gap-2 font-semibold hover:text-turuncu-koyu">
+              <span class="inline-flex items-center gap-2">
+                <QrCode size={18} aria-hidden="true" /> {k.data.ad}
+              </span>
+              <span class="text-sm font-normal text-stone-500">{sayi} ürün</span>
+            </a>
+            {altlar.length > 0 && (
+              <ul class="mt-2 space-y-1 border-t border-stone-100 pt-2 text-sm">
+                {altlar.map(({ a, sayi: s }) => (
+                  <li>
+                    <a href={url(`qr/${a.id}`)} class="flex justify-between hover:text-turuncu-koyu hover:underline">
+                      <span>{a.data.ad}</span>
+                      <span class="text-stone-500">{s}</span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </li>
+        ))
+      }
+    </ul>
+
+    <p class="mt-8 rounded-lg bg-zemin p-4 text-sm text-stone-700">
+      Not: Etiketler sitenin şu anki adresini içerir. Kendi alan adınız bağlandığında (F5.1) etiketleri yeniden basmanız
+      gerekebilir — toplu basımı alan adı kararından sonra yapmak en güvenlisi.
+    </p>
+  </main>
+</BaseLayout>

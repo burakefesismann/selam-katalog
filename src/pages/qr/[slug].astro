@@ -1,0 +1,130 @@
+---
+/**
+ * QR etiket yazdırma sayfası (F4.2): /qr/<kategori>/ → kategori etiketi + içindeki (alt kategoriler dahil) ürünler;
+ * /qr/tumu/ → tüm ana kategoriler + tüm ürünler. A4, 2 × 5 etiket (90 × 50 mm). Arama motorlarına kapalı.
+ */
+import type { GetStaticPaths } from 'astro';
+import { Printer } from '@lucide/astro';
+import KonumYolu from '../../components/KonumYolu.astro';
+import QrEtiket from '../../components/QrEtiket.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import {
+  getAnaKategoriler,
+  getKategoriler,
+  getKategoriUrunleri,
+  getUrunDetay,
+  getUrunler,
+  type Kategori,
+} from '../../lib/katalog';
+import { kategoriUrl, url, urunUrl } from '../../lib/url';
+
+export const getStaticPaths = (async () => {
+  const kategoriler = await getKategoriler();
+  return [
+    { params: { slug: 'tumu' }, props: { kategori: undefined } },
+    ...kategoriler.map((kategori) => ({ params: { slug: kategori.id }, props: { kategori } })),
+  ];
+}) satisfies GetStaticPaths;
+
+interface Props {
+  kategori?: Kategori;
+}
+const { kategori } = Astro.props;
+// Sonda "/" olsun: GitHub Pages "/"suz adresi yönlendirir (telefonda gereksiz bekleme)
+const mutlak = (yol: string) => new URL(yol.endsWith("/") ? yol : `${yol}/`, Astro.site).href;
+
+const kategoriEtiketleri = kategori ? [kategori] : await getAnaKategoriler();
+const urunler = kategori ? await getKategoriUrunleri(kategori.id) : await getUrunler();
+const urunEtiketleri = await Promise.all(
+  urunler.map(async (u) => {
+    const d = await getUrunDetay(u);
+    const marka = d.markalar.map((m) => m.data.ad).join(' · ') || 'Çeşitli markalar';
+    return { baslik: u.data.ad, altBaslik: `${marka} · ${d.kategori.data.ad}`, adres: mutlak(urunUrl(u.id)) };
+  }),
+);
+const etiketler = [
+  ...kategoriEtiketleri.map((k) => ({
+    baslik: k.data.ad,
+    altBaslik: 'Kategorideki tüm ürünler',
+    adres: mutlak(kategoriUrl(k.id)),
+    tur: 'Kategori' as const,
+  })),
+  ...urunEtiketleri.map((e) => ({ ...e, tur: 'Ürün' as const })),
+];
+const baslik = kategori ? `${kategori.data.ad} — QR etiketleri` : 'Tüm ürünler — QR etiketleri';
+const sayfaSayisi = Math.ceil(etiketler.length / 10);
+---
+
+<BaseLayout title={`${baslik} — Selam İnşaat`} noindex>
+  <main class="mx-auto max-w-5xl px-4 py-8">
+    <div class="ekran-bilgi">
+      <KonumYolu ogeler={[{ ad: 'QR etiketleri', adres: url('qr') }, { ad: kategori?.data.ad ?? 'Tüm ürünler' }]} />
+      <h1 class="text-3xl">{baslik}</h1>
+      <p class="mt-2 text-stone-700">
+        {etiketler.length} etiket · {sayfaSayisi} A4 sayfa (sayfa başına 10 etiket, 90 × 50 mm).
+        Yazdırırken <strong>“Gerçek boyut / %100”</strong> seçin, kenar boşluğunu varsayılan bırakın.
+        Kesikli çizgilerden kesin.
+      </p>
+      <button
+        type="button"
+        data-yazdir
+        class="mt-4 mb-8 inline-flex min-h-11 items-center gap-2 rounded-md bg-turuncu px-5 font-semibold text-antrasit-koyu hover:bg-[#f39236]"
+      >
+        <Printer size={20} aria-hidden="true" /> Yazdır
+      </button>
+    </div>
+
+    <div class="qr-sayfa">
+      {etiketler.map((e) => <QrEtiket {...e} />)}
+    </div>
+  </main>
+</BaseLayout>
+
+<script>
+  document.querySelector('[data-yazdir]')?.addEventListener('click', () => window.print());
+</script>
+
+<style is:global>
+  .qr-sayfa {
+    display: grid;
+    grid-template-columns: repeat(2, 90mm);
+    justify-content: center;
+  }
+  @media screen and (max-width: 420px) {
+    /* telefonda önizleme: tek sütun, sığdır */
+    .qr-sayfa {
+      grid-template-columns: 1fr;
+      zoom: 0.95;
+    }
+    .qr-etiket {
+      width: 100% !important;
+    }
+  }
+  @page {
+    size: A4;
+    margin: 10mm 15mm;
+  }
+  @media print {
+    /* Sadece etiketler basılsın */
+    body > header,
+    body > footer,
+    body > a[href='#icerik'],
+    body > div.fixed,
+    #iletisim,
+    .ekran-bilgi {
+      display: none !important;
+    }
+    body {
+      padding: 0 !important;
+      background: #fff !important;
+    }
+    main {
+      padding: 0 !important;
+      max-width: none !important;
+    }
+    .qr-sayfa {
+      grid-template-columns: repeat(2, 90mm);
+      justify-content: start;
+    }
+  }
+</style>

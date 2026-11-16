@@ -1,0 +1,93 @@
+---
+/**
+ * Raf etiketi (F4.2): 90 × 50 mm, A4'e 2 sütun × 5 satır = 10 etiket. Siyah-beyaz yazıcıda da okunur.
+ * QR → ürün/kategori sayfası (mutlak adres). Kesme kılavuzu için ince kesikli çerçeve.
+ */
+import { kisaAdres, qrSvg } from '../lib/qr';
+
+interface Props {
+  baslik: string;
+  /** ör. "Fırat · PPRC Temiz Su" */
+  altBaslik?: string;
+  /** mutlak adres (https://...) */
+  adres: string;
+  tur: 'Ürün' | 'Kategori';
+}
+const { baslik, altBaslik, adres, tur } = Astro.props;
+const svg = await qrSvg(adres);
+---
+
+<article class="qr-etiket">
+  <div class="qr-kod" set:html={svg} role="img" aria-label={`${baslik} sayfasının QR kodu`} />
+  <div class="qr-metin">
+    <p class="qr-ust">SELAM İNŞAAT · {tur === 'Kategori' ? 'Kategori' : 'Ürün bilgisi'}</p>
+    <p class="qr-baslik">{baslik}</p>
+    {altBaslik && <p class="qr-alt">{altBaslik}</p>}
+    <p class="qr-cagri">Telefonunuzun kamerasıyla okutun: teknik bilgi, görseller ve benzer ürünler.</p>
+    <p class="qr-adres">{kisaAdres(adres)}</p>
+  </div>
+</article>
+
+<style>
+  .qr-etiket {
+    display: flex;
+    gap: 4mm;
+    align-items: center;
+    width: 90mm;
+    height: 50mm;
+    padding: 4mm;
+    border: 0.3mm dashed #a8a29e;
+    background: #fff;
+    color: #000;
+    overflow: hidden;
+    break-inside: avoid;
+    page-break-inside: avoid;
+    box-sizing: border-box;
+  }
+  .qr-kod {
+    flex: none;
+    width: 34mm;
+    height: 34mm;
+  }
+  .qr-kod :global(svg) {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  .qr-metin {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2mm;
+  }
+  .qr-ust {
+    font-size: 6.5pt;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    color: #a8520c;
+  }
+  .qr-baslik {
+    font-family: 'Barlow Semi Condensed', 'Barlow', sans-serif;
+    font-size: 11.5pt;
+    font-weight: 700;
+    line-height: 1.1;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .qr-alt {
+    font-size: 8pt;
+    color: #44403c;
+  }
+  .qr-cagri {
+    font-size: 7pt;
+    color: #44403c;
+    line-height: 1.2;
+  }
+  .qr-adres {
+    font-size: 5.5pt;
+    color: #57534e;
+    word-break: break-all;
+  }
+</style>
