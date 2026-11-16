@@ -247,3 +247,48 @@ Kaynak: `docs/FIRMA.md`. Sadece herkese açık bilgiler.
   43 kart "çeşitli" (markasız). Tek marka alanı buna uymadığı için liste yapıldı; ilk sıradaki ana markadır.
 - **Marka `logo` opsiyonel.** Logolar görsel hattıyla (F1.5) sonradan eklenir; logosuz marka adıyla gösterilir.
 - **`ozellik_tanimlari`'na `slug` eklendi** (diğer koleksiyonlarla tutarlılık; ürünlerde bununla bağlanır).
+
+---
+
+## 9. Sihirbaz kuralları (F4.1 — "Hangisini seçmeliyim?") — beyin takımı hazırlayacak
+
+Sihirbaz sorular sorar, cevaplara uyan **ilk kuralın** ürünlerini görselli kartlarla önerir. Kurallar ürün tavsiyesi
+olduğu için beyin takımı/kullanıcı onayıyla yazılır, geliştirici uydurmaz. Dosya: `sihirbaz/seramik-yapistirici.yaml`
+(pakette `sihirbaz/` klasörü). Panelden de düzenlenebilecek.
+
+```yaml
+ad: Seramik yapıştırıcı seçimi
+kategori: seramik-yapistirici          # sihirbaz bu kategori sayfasında ve ana sayfada görünür
+sorular:
+  - id: malzeme
+    soru: Ne yapıştıracaksınız?
+    secenekler:
+      - { deger: seramik, etiket: Seramik / fayans }
+      - { deger: granit,  etiket: Granit / porselen karo }
+  - id: yer
+    soru: Nereye?
+    secenekler:
+      - { deger: ic-duvar,      etiket: İç mekân duvar }
+      - { deger: ic-zemin,      etiket: İç mekân zemin }
+      - { deger: islak-hacim,   etiket: Banyo / mutfak (ıslak hacim) }
+      - { deger: dis-mekan,     etiket: Dış mekân, balkon, teras }
+      - { deger: yerden-isitma, etiket: Yerden ısıtmalı zemin }
+      - { deger: karo-ustu,     etiket: Eski karonun üzerine }
+  - id: ebat
+    soru: Karo ebadı?
+    secenekler:
+      - { deger: kucuk, etiket: "30x30 cm'ye kadar" }
+      - { deger: orta,  etiket: "60x60 cm'ye kadar" }
+      - { deger: buyuk, etiket: "60x60 cm'den büyük" }
+kurallar:                               # yukarıdan aşağı; İLK uyan kural kullanılır
+  - kosul: { malzeme: [seramik], yer: [ic-duvar, ic-zemin], ebat: [kucuk] }   # liste = "bunlardan biri"
+    oneriler: [<urun-slug>]             # 1–3 ürün; ilk = en uygun
+    aciklama: "Kısa gerekçe (müşteriye görünür)."
+  - kosul: { yer: [dis-mekan] }         # yazılmayan soru = "fark etmez"
+    oneriler: [<urun-slug>, <urun-slug>]
+    aciklama: "..."
+varsayilan_mesaj: Bu durum için mağazamıza danışın.   # hiçbir kural uymazsa (+ telefon butonu)
+```
+
+Kurallar: `oneriler` sitede var olan ürün slug'ları olmalı (yoksa site derlenmez). Soru/seçenek eklemek serbest.
+Bir kuralın hangi ürünü önerdiği, ürün kartındaki teknik bilgilerle (sınıf, uygun karo, kullanım yeri) çelişmemeli.

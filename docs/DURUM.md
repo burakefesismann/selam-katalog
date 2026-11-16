@@ -11,8 +11,7 @@
 - Yok
 
 ## Sıradaki
-- F4.1 — "Hangisini seçmeliyim?" sihirbazı (seramik yapıştırıcı) — kurallar içeriği gerekli, kullanıcıya sorulacak.
-  F3.x diğer paketler geldikçe araya girer.
+- F4.2 — QR etiketleri (F4.1 kurallar gelene kadar bekliyor — ICERIK-SEMASI §9). F3.x paketler geldikçe araya girer.
 
 ## Kullanıcıdan beklenenler
 - [~] Logo: `kaynaklar/logo/selamfis.png` geldi (2026-11-15 tekrar aynı dosya geldi; daha büyüğü yok) (474×129 PNG, şeffaf zemin, turuncu+gri). Vektör (SVG/AI/PDF) ya da
@@ -30,6 +29,7 @@
 - [ ] docs/FIRMA.md'deki ⚠ işaretli bilgilerin teyidi (özellikle Güneysu Depo telefonu, e-posta)
 - [x] Şubelerin kesin Google Haritalar linkleri (2026-11-15 kullanıcı verdi, ayarlar/genel.yaml)
 - [ ] Marka ve ürün listesi (beyin takımı içerik paketine çevirecek)
+- [ ] Beyin takımından: seramik yapıştırıcı sihirbazı kuralları (format: docs/ICERIK-SEMASI.md §9) → F4.1
 
 ## Netleşenler (2026-11-14)
 - Panel: sadece kullanıcı → token ile giriş (K8)
