@@ -1,7 +1,17 @@
 ad: Baumit
-slug: baumit
-kisa_aciklama: "TASLAK — marka tanıtımı içerik paketiyle gelecek."
-sira: 20
+kisa_aciklama: Isı yalıtım (mantolama) sistemleri, seramik yapıştırıcıları, sıva ve dekoratif kaplamalarıyla bilinen Avusturya kökenli yapı kimyasalları üreticisi.
+aciklama: |-
+  Baumit; dış cephe ısı yalıtım sistemleri, seramik yapıştırıcı ve derz dolguları, su yalıtımı, sıva ve şaplar ile iç ve dış cephe dekoratif kaplamaları üreten Avusturya kökenli bir yapı malzemeleri markası. Türkiye'de de geniş bir ürün gamıyla yer alıyor.
+
+  ## Mağazamızda
+  - Seramik yapıştırıcılar: Basic, Bianco, Flex Uni, Flexo
+  - Derz dolgusu: Premium Fuga
+  - Su yalıtımı: Protect 2K ve Protect 2K Elastic
+  - Mantolama: StarTherm karbonlu EPS, DuoFix, DuoContact, ProContact, file, dübel ve köşe profili
+  - Dekoratif kaplama: Classico, CreativTop ve Uni Primer astar
+  - Sıva ve şap: brüt beton astarı, Ionit Finish saten macun, Nivello Uno yayılan şap, All in Beton
+web_sitesi: https://baumit.com.tr
+sira: 2
 logo: /src/assets/markalar/baumit.svg
 logo_kaynak_url: https://baumit.com.tr/
-web_sitesi: https://baumit.com.tr
+slug: baumit

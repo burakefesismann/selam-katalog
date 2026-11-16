@@ -1,7 +1,18 @@
 ad: Fırat
-slug: firat
-kisa_aciklama: "TASLAK — marka tanıtımı içerik paketiyle gelecek."
+kisa_aciklama: 1972'den beri plastik boru ve ek parça üreten, bina içi tesisattan altyapıya geniş ürün yelpazesine sahip Türk üretici (Fıratboru).
+aciklama: |-
+  Fırat Plastik, 1972'de plastik inşaat malzemeleri üretmek için kuruldu ve bugün **Fıratboru** markasıyla tanınıyor. İstanbul-Büyükçekmece ve Ankara-Sincan'daki fabrikalarında 10.000'i aşkın ürün çeşidi üretiyor ve 70'ten fazla ülkeye ihracat yapıyor.
+
+  Ürün yelpazesi bina içi sıcak-soğuk su (PPRC, kompozit), atık su (Dublex, Residence sessiz boru), yerden ısıtma (PE-RT, kollektör) sistemlerinden PE100 içme suyu, Triplex koruge ve drenaj gibi altyapı borularına, yağmur oluğu ve perde raylarına kadar uzanıyor.
+
+  ## Mağazamızda
+  - PPRC ve kompozit borular, ek parçalar ve vanalar
+  - Dublex, Gediz ve Residence PVC atık su boruları ve ek parçaları
+  - PE100 içme suyu boruları, Triplex koruge ve drenaj boruları
+  - PE-RT yerden ısıtma boruları ve kollektörler
+  - PVC yağmur oluğu sistemi ve perde rayları
+web_sitesi: https://www.firat.com
 sira: 1
 logo: /src/assets/markalar/firat.webp
 logo_kaynak_url: https://www.firat.com/
-web_sitesi: https://www.firat.com
+slug: firat

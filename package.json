@@ -9,7 +9,8 @@
     "preview": "astro preview",
     "astro": "astro",
     "gorsel:hazirla": "node scripts/gorsel-hazirla.ts",
-    "gorsel:rapor": "node scripts/gorsel-rapor.ts"
+    "gorsel:rapor": "node scripts/gorsel-rapor.ts",
+    "icerik:aktar": "node scripts/icerik-aktar.ts"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.5",

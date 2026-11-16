@@ -3,7 +3,7 @@
 > Her oturumun başında oku, sonunda güncelle. Kısa tut.
 
 ## Şu an
-- Aktif görev: — (F2.9 bitti, Faz 2 tamam)
+- Aktif görev: F3.1 + F3.2 — İçe aktarıcı + Paket 001 (Fırat + Baumit, 35 kart)
 - Site: https://burakefesismann.github.io/selam-katalog/
 - Faz: 3 — Gerçek içerik ve görseller
 
