@@ -1,5 +1,6 @@
-# Her main push'unda siteyi derler ve GitHub Pages'e yayınlar.
+# Her main push'unda: derle → PDF kataloğu üret → GitHub Pages'e yayınla.
 # Panelden (Sveltia CMS) yapılan kayıtlar da main'e commit olduğu için aynı yoldan yayına çıkar.
+# (F4.3'te withastro/action yerine açık adımlara geçildi: derleme ile yayın paketi arasına PDF adımı girsin diye.)
 name: Yayınla (GitHub Pages)
 
 on:
@@ -24,12 +25,34 @@ jobs:
       - name: Kodu al
         uses: actions/checkout@v7
 
-      - name: Derle ve yayın paketini hazırla
-        uses: withastro/action@v6
+      - name: Node.js
+        uses: actions/setup-node@v7
         with:
           node-version: 24
-          package-manager: npm
-          # cache: true (varsayılan) → optimize edilmiş görseller önbellekte tutulur, derleme hızlanır
+          cache: npm
+
+      - name: Bağımlılıkları kur
+        run: npm ci
+
+      - name: Görsel önbelleği (optimize edilmiş görseller; derlemeyi hızlandırır)
+        uses: actions/cache@v6
+        with:
+          path: node_modules/.astro
+          key: astro-gorsel-${{ hashFiles('src/assets/**', 'package-lock.json') }}
+          restore-keys: astro-gorsel-
+
+      - name: Derle (tip kontrolü + site + arama dizini)
+        run: npm run build
+
+      - name: PDF kataloğu üret (dist/selam-insaat-urun-katalogu.pdf)
+        run: npm run katalog:pdf
+        env:
+          CHROME_PATH: /usr/bin/google-chrome
+
+      - name: Yayın paketini hazırla
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: dist
 
   deploy:
     needs: build

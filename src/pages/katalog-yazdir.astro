@@ -1,0 +1,424 @@
+---
+/**
+ * Yazdırılabilir ürün kataloğu (F4.3). `npm run katalog:pdf` bu sayfayı A4 PDF'e basar → dist/selam-insaat-urun-katalogu.pdf
+ * (GitHub Actions her yayında yeniden üretir). Ekranda da açılır (Yazdır butonu). Arama motorlarına kapalı.
+ * Kapak → içindekiler → ana kategori bölümleri (ürün kartları) → arka kapak (şubeler). Görseller "eager" (PDF'te boş kalmasın).
+ */
+import { Image } from 'astro:assets';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import logo from '../assets/marka/selam-logo.png';
+import {
+  getAnaKategoriler,
+  getAyarlar,
+  getKategoriUrunleri,
+  getUrunDetay,
+  telLink,
+} from '../lib/katalog';
+import { kisaAdres, qrSvg } from '../lib/qr';
+
+const { firma, subeler, ana_sayfa } = await getAyarlar();
+const siteAdresi = new URL(import.meta.env.BASE_URL, Astro.site).href.replace(/\/?$/, '/');
+const siteQr = await qrSvg(siteAdresi);
+const tarih = new Date().toLocaleDateString('tr-TR', { month: 'long', year: 'numeric' });
+
+const bolumler = (
+  await Promise.all(
+    (await getAnaKategoriler()).map(async (kategori) => ({
+      kategori,
+      urunler: await Promise.all(
+        (await getKategoriUrunleri(kategori.id)).map((urun) => getUrunDetay(urun)),
+      ),
+    })),
+  )
+).filter((b) => b.urunler.length > 0);
+const toplam = bolumler.reduce((t, b) => t + b.urunler.length, 0);
+---
+
+<BaseLayout title={`Ürün kataloğu (${tarih}) — ${firma.kisa_ad}`} noindex>
+  <main class="katalog">
+    <div class="ekran-bilgi mx-auto max-w-3xl px-4 py-6">
+      <p class="text-stone-700">
+        Yazdırılabilir katalog — {toplam} ürün. PDF hali her güncellemede kendiliğinden yenilenir.
+      </p>
+      <button type="button" data-yazdir class="mt-3 rounded-md bg-turuncu px-5 py-2.5 font-semibold text-antrasit-koyu">
+        Yazdır / PDF olarak kaydet
+      </button>
+    </div>
+
+    <!-- KAPAK -->
+    <section class="sayfa kapak">
+      <Image src={logo} alt={firma.kisa_ad} height={180} densities={[2]} loading="eager" class="kapak-logo" />
+      <h1 class="kapak-baslik">Ürün Kataloğu</h1>
+      <p class="kapak-alt">{ana_sayfa.alt_baslik}</p>
+      <p class="kapak-tarih">{tarih} · {toplam} ürün</p>
+      <div class="kapak-alt-bant">
+        <p><strong>{firma.unvan}</strong></p>
+        {ana_sayfa.guven_mesaji && <p>{ana_sayfa.guven_mesaji} · {firma.sehir}</p>}
+        <p>{firma.telefon}{firma.eposta && ` · ${firma.eposta}`}</p>
+      </div>
+    </section>
+
+    <!-- İÇİNDEKİLER -->
+    <section class="sayfa icindekiler">
+      <h2 class="bolum-baslik">İçindekiler</h2>
+      <ol>
+        {
+          bolumler.map((b) => (
+            <li>
+              <a href={`#kat-${b.kategori.id}`}>{b.kategori.data.ad}</a>
+              <span class="nokta" />
+              <span>{b.urunler.length} ürün</span>
+            </li>
+          ))
+        }
+      </ol>
+      <p class="not">
+        Ürün bilgileri tanıtım amaçlıdır; fiyat, stok ve güncel teknik bilgi için mağazalarımızı arayın.
+        Tüm ürünler, görseller ve karşılaştırmalar: <strong>{kisaAdres(siteAdresi)}</strong>
+      </p>
+    </section>
+
+    <!-- KATEGORİLER -->
+    {
+      bolumler.map((b) => (
+        <section class="kategori" id={`kat-${b.kategori.id}`}>
+          <h2 class="bolum-baslik">{b.kategori.data.ad}</h2>
+          {b.kategori.data.kisa_aciklama && <p class="kat-aciklama">{b.kategori.data.kisa_aciklama}</p>}
+          <div class="urunler">
+            {b.urunler.map(({ urun, markalar, kategori, kullanimAlanlari, teknikOzellikler }) => {
+              const g = urun.data.gorseller[0];
+              return (
+                <article class="urun">
+                  <div class="urun-gorsel">
+                    {g && typeof g.gorsel !== 'string' ? (
+                      <Image src={g.gorsel} alt={g.alt_metin} width={420} loading="eager" />
+                    ) : (
+                      <span class="gorsel-yok">{markalar[0]?.data.ad ?? kategori.data.ad}</span>
+                    )}
+                  </div>
+                  <div class="urun-metin">
+                    <p class="urun-ust">
+                      {markalar.map((m) => m.data.ad).join(' · ') || 'Çeşitli markalar'} · {kategori.data.ad}
+                    </p>
+                    <h3>{urun.data.ad}</h3>
+                    <p class="urun-kisa">{urun.data.kisa_aciklama}</p>
+                    {urun.data.one_cikanlar.length > 0 && (
+                      <ul class="one-cikan">
+                        {urun.data.one_cikanlar.slice(0, 4).map((m) => (
+                          <li>{m}</li>
+                        ))}
+                      </ul>
+                    )}
+                    {kullanimAlanlari.length > 0 && (
+                      <p class="satir">
+                        <b>Kullanım:</b> {kullanimAlanlari.map((a) => a.data.ad).join(', ')}
+                      </p>
+                    )}
+                    {urun.data.olculer.length > 0 && (
+                      <p class="satir">
+                        <b>Ölçüler:</b> {urun.data.olculer.join(' · ')}
+                      </p>
+                    )}
+                    {teknikOzellikler.length > 0 && (
+                      <table>
+                        <tbody>
+                          {teknikOzellikler.slice(0, 6).map(({ ozellik, deger }) => (
+                            <tr>
+                              <th>{ozellik.data.ad}</th>
+                              <td>
+                                {deger}
+                                {ozellik.data.birim && ` ${ozellik.data.birim}`}
+                              </td>
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                    )}
+                  </div>
+                </article>
+              );
+            })}
+          </div>
+        </section>
+      ))
+    }
+
+    <!-- ARKA KAPAK -->
+    <section class="sayfa arka-kapak">
+      <h2 class="bolum-baslik">Mağazalarımız</h2>
+      <ul class="subeler">
+        {
+          subeler.map((s) => (
+            <li>
+              <p class="sube-ad">{s.ad}</p>
+              <p>{s.adres}</p>
+              {s.telefon && <p><a href={telLink(s.telefon)}>{s.telefon}</a></p>}
+              {s.calisma_saatleri && <p>{s.calisma_saatleri}</p>}
+            </li>
+          ))
+        }
+      </ul>
+      <div class="site-qr">
+        <div class="qr" set:html={siteQr} />
+        <p>
+          Güncel katalog, ürün görselleri ve karşılaştırmalar için okutun:<br /><strong>{kisaAdres(siteAdresi)}</strong>
+        </p>
+      </div>
+    </section>
+  </main>
+</BaseLayout>
+
+<script>
+  document.querySelector('[data-yazdir]')?.addEventListener('click', () => window.print());
+</script>
+
+<style is:global>
+  @page {
+    size: A4;
+    margin: 12mm 12mm 14mm;
+  }
+  .katalog {
+    --kenar: 12mm;
+    color: #1c1b1a;
+  }
+  .katalog .sayfa,
+  .katalog .kategori {
+    max-width: 186mm;
+    margin: 0 auto;
+    padding: 0 4mm 10mm;
+  }
+  .katalog .bolum-baslik {
+    font-family: 'Barlow Semi Condensed', 'Barlow', sans-serif;
+    font-size: 22pt;
+    font-weight: 700;
+    border-bottom: 1.2mm solid #ef7f1a;
+    padding-bottom: 2mm;
+    margin: 6mm 0 4mm;
+  }
+  /* Kapak */
+  .katalog .kapak {
+    min-height: 260mm;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 5mm;
+  }
+  .katalog .kapak-logo {
+    width: 140mm;
+    height: auto;
+  }
+  .katalog .kapak-baslik {
+    font-family: 'Barlow Semi Condensed', 'Barlow', sans-serif;
+    font-size: 40pt;
+    font-weight: 700;
+    color: #2b2a29;
+  }
+  .katalog .kapak-alt {
+    font-size: 13pt;
+    max-width: 140mm;
+    color: #44403c;
+  }
+  .katalog .kapak-tarih {
+    font-size: 11pt;
+    font-weight: 600;
+    color: #a8520c;
+  }
+  .katalog .kapak-alt-bant {
+    margin-top: 20mm;
+    padding: 6mm 10mm;
+    width: 100%;
+    background: #2b2a29;
+    color: #fff;
+    border-top: 2mm solid #ef7f1a;
+    font-size: 10.5pt;
+    line-height: 1.6;
+  }
+  /* İçindekiler */
+  .katalog .icindekiler ol {
+    list-style: none;
+    padding: 0;
+    font-size: 13pt;
+  }
+  .katalog .icindekiler li {
+    display: flex;
+    align-items: baseline;
+    gap: 2mm;
+    padding: 2.5mm 0;
+  }
+  .katalog .icindekiler a {
+    color: #1c1b1a;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .katalog .icindekiler .nokta {
+    flex: 1;
+    border-bottom: 0.4mm dotted #a8a29e;
+  }
+  .katalog .not {
+    margin-top: 10mm;
+    font-size: 9.5pt;
+    color: #57534e;
+  }
+  .katalog .kat-aciklama {
+    font-size: 10pt;
+    color: #44403c;
+    margin-bottom: 4mm;
+  }
+  /* Ürünler: 2 sütun */
+  .katalog .urunler {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4mm;
+  }
+  .katalog .urun {
+    border: 0.3mm solid #d6d3d1;
+    border-radius: 2mm;
+    overflow: hidden;
+    break-inside: avoid;
+    page-break-inside: avoid;
+    font-size: 8.5pt;
+    line-height: 1.35;
+  }
+  .katalog .urun-gorsel {
+    aspect-ratio: 16 / 9;
+    background: #fff;
+    border-bottom: 0.3mm solid #e7e5e4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .katalog .urun-gorsel img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 2mm;
+  }
+  .katalog .gorsel-yok {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 14pt;
+    color: #a8a29e;
+  }
+  .katalog .urun-metin {
+    padding: 3mm;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2mm;
+  }
+  .katalog .urun-ust {
+    font-size: 7.5pt;
+    font-weight: 600;
+    color: #a8520c;
+  }
+  .katalog .urun h3 {
+    font-family: 'Barlow Semi Condensed', 'Barlow', sans-serif;
+    font-size: 12pt;
+    font-weight: 700;
+    line-height: 1.15;
+  }
+  .katalog .one-cikan {
+    margin: 0;
+    padding-left: 4mm;
+    list-style: disc;
+  }
+  .katalog .one-cikan li::marker {
+    color: #ef7f1a;
+  }
+  .katalog .satir b {
+    font-weight: 600;
+  }
+  .katalog table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 7.5pt;
+    margin-top: 1mm;
+  }
+  .katalog th,
+  .katalog td {
+    text-align: left;
+    padding: 0.8mm 1mm;
+    border-bottom: 0.2mm solid #e7e5e4;
+    vertical-align: top;
+  }
+  .katalog th {
+    font-weight: 500;
+    color: #57534e;
+    width: 45%;
+  }
+  /* Arka kapak */
+  .katalog .subeler {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5mm;
+    font-size: 9.5pt;
+  }
+  .katalog .sube-ad {
+    font-weight: 700;
+    font-size: 11pt;
+  }
+  .katalog .site-qr {
+    margin-top: 12mm;
+    display: flex;
+    gap: 6mm;
+    align-items: center;
+    font-size: 10pt;
+  }
+  .katalog .site-qr .qr {
+    width: 32mm;
+    height: 32mm;
+    flex: none;
+  }
+  .katalog .site-qr .qr svg {
+    width: 100%;
+    height: 100%;
+  }
+  @media screen {
+    .katalog .kategori,
+    .katalog .sayfa {
+      border-bottom: 1px dashed #d6d3d1;
+      margin-bottom: 8mm;
+    }
+  }
+  @media screen and (max-width: 640px) {
+    .katalog .urunler {
+      grid-template-columns: 1fr;
+    }
+    .katalog .subeler {
+      grid-template-columns: 1fr;
+    }
+  }
+  @media print {
+    body > header,
+    body > footer,
+    body > a[href='#icerik'],
+    body > div.fixed,
+    .ekran-bilgi {
+      display: none !important;
+    }
+    body {
+      padding: 0 !important;
+    }
+    .katalog .sayfa,
+    .katalog .kategori {
+      max-width: none;
+      padding: 0;
+    }
+    .katalog .sayfa,
+    .katalog .kategori {
+      break-after: page;
+      page-break-after: always;
+    }
+    .katalog .arka-kapak {
+      break-after: auto;
+      page-break-after: auto;
+    }
+    .katalog a {
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+</style>

@@ -4,7 +4,9 @@ import BolumBasligi from '../../components/BolumBasligi.astro';
 import UrunKarti from '../../components/UrunKarti.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getAnaKategoriler, getAyarlar, getKategoriUrunleri, getUrunDetay } from '../../lib/katalog';
-import { kategoriUrl } from '../../lib/url';
+import { FileDown } from '@lucide/astro';
+import Buton from '../../components/Buton.astro';
+import { kategoriUrl, katalogPdfUrl } from '../../lib/url';
 
 const { firma } = await getAyarlar();
 const bolumler = (
@@ -26,7 +28,12 @@ let sira = 0;
 
 <BaseLayout title={`Ürünler — ${firma.kisa_ad}`} description={`${firma.kisa_ad} ürün kataloğu: ${toplam} ürün.`}>
   <main class="mx-auto max-w-6xl space-y-12 px-4 py-8">
-    <BolumBasligi seviye="h1" baslik="Ürünler" aciklama={`${toplam} ürün`} />
+    <div class="flex flex-wrap items-end justify-between gap-3">
+      <BolumBasligi seviye="h1" baslik="Ürünler" aciklama={`${toplam} ürün`} />
+      <Buton href={katalogPdfUrl()} tur="cerceve" boyut="kucuk" class="mb-5">
+        <FileDown size={16} aria-hidden="true" /> Kataloğu indir (PDF)
+      </Buton>
+    </div>
     {
       bolumler.map(({ kategori, kartlar }) => (
         <section id={kategori.id} class="scroll-mt-24">

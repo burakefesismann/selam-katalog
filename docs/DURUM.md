@@ -3,7 +3,7 @@
 > Her oturumun başında oku, sonunda güncelle. Kısa tut.
 
 ## Şu an
-- Aktif görev: — (F4.2 bitti)
+- Aktif görev: — (F4.3 bitti)
 - Site: https://burakefesismann.github.io/selam-katalog/
 - Faz: 3 — Gerçek içerik ve görseller
 
@@ -11,7 +11,7 @@
 - Yok
 
 ## Sıradaki
-- F4.3 — PDF katalog (F4.1 kurallar gelene kadar bekliyor). F3.x paketler geldikçe araya girer.
+- F4.4 — WhatsApp butonu (numara gerekli → kullanıcıya sorulacak). F4.1 kurallar bekleniyor; F3.x paketler araya girer.
 
 ## Kullanıcıdan beklenenler
 - [~] Logo: `kaynaklar/logo/selamfis.png` geldi (2026-11-15 tekrar aynı dosya geldi; daha büyüğü yok) (474×129 PNG, şeffaf zemin, turuncu+gri). Vektör (SVG/AI/PDF) ya da
@@ -158,6 +158,12 @@
   noindex + sitemap dışı. ⚠ Alan adı değişince (F5.1) basılı etiketler eski adrese gider → toplu basım F5.1 sonrası
   (kullanıcıya PANEL-KULLANIMI §9'da yazıldı). GitHub Pages alan adı yönlendirmesi base yolu (/selam-katalog) taşımayabilir.
 
+- F4.3: `/katalog-yazdir/` (kapak, içindekiler [tıklanabilir], ana kategori bölümleri 2 sütun kart, arka kapak şubeler +
+  site QR) + `scripts/katalog-pdf.ts`. Yerelde 16 sayfa / 3,1 MB (35 ürün). Deploy workflow artık açık adımlar:
+  checkout → setup-node (npm cache) → npm ci → actions/cache (node_modules/.astro) → build → katalog:pdf
+  (CHROME_PATH=/usr/bin/google-chrome) → upload-pages-artifact → deploy. "Kataloğu indir" linki: footer + /urunler.
+  Kart sayısı arttıkça PDF büyür (görseller 420 px); 213 kartta ~15–20 MB olabilir → gerekirse görsel boyutu düşür.
+
 ## Öneriler
 - (Plana eklenmesi önerilen fikirler. Kullanıcı onaylarsa PLAN.md'ye taşınır.)
 - Ana sayfadaki 11 ana kategori kartı (F2.2) için kategori görselleri gerekecek; planda ayrı görev yok.
@@ -192,3 +198,4 @@
 | 2026-11-16 | F3.2 (yarım) | 10 Baumit görseli; 8 kart mağaza fotoğrafı bekliyor; --buyut alfa hatası düzeltildi | WIP F3.2 |
 | 2026-11-16 | F3.2 kapandı | 24/35 ürün görselli; kalan 11 görsel kullanıcıya bırakıldı | F3.2 |
 | 2026-11-16 | F4.2 QR etiketleri | /qr, kategori bazlı A4 etiket sayfaları; QR okuma + PDF baskı testi ✓ | F4.2 |
+| 2026-11-16 | F4.3 PDF katalog | /katalog-yazdir + katalog:pdf + Actions'ta otomatik PDF; indir linkleri | F4.3 |

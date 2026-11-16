@@ -1,7 +1,8 @@
 ---
 /** Alt bilgi: firma, şubeler (adres, telefon, saatler), iletişim. Veriler: src/content/ayarlar/genel.yaml */
-import { Clock, Mail, MapPin, Phone } from '@lucide/astro';
+import { Clock, FileDown, Mail, MapPin, Phone } from '@lucide/astro';
 import { getAyarlar, haritaLinki, telLink } from '../lib/katalog';
+import { katalogPdfUrl } from '../lib/url';
 
 const { firma, subeler, ana_sayfa } = await getAyarlar();
 const yil = new Date().getFullYear();
@@ -30,6 +31,12 @@ const yil = new Date().getFullYear();
             </li>
           )
         }
+        <li>
+          <a href={katalogPdfUrl()} download class="inline-flex items-center gap-2 font-semibold text-white hover:text-turuncu">
+            <FileDown size={18} aria-hidden="true" />
+            Ürün kataloğu (PDF)
+          </a>
+        </li>
       </ul>
     </div>
 

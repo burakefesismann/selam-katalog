@@ -162,7 +162,7 @@ Bitince: PLAN'da `[x]` → DURUM.md güncelle → commit + push → kullanıcıy
   karo ebadı → görselli öneri kartı). Kurallar veri dosyasında, panelden düzenlenebilir.
   ⏸ BEKLİYOR (2026-11-16, kullanıcı kararı): kurallar beyin takımından gelecek (format: ICERIK-SEMASI.md §9). Önce F4.2.
 - [x] **F4.2 QR etiketleri** — her ürün ve kategori için yazdırılabilir QR sayfası (mağaza rafları için).
-- [ ] **F4.3 PDF katalog** — yazdırmaya uygun, görselli katalog sayfası (kapak, içindekiler, kategoriler, ürünler) +
+- [x] **F4.3 PDF katalog** — yazdırmaya uygun, görselli katalog sayfası (kapak, içindekiler, kategoriler, ürünler) +
   GitHub Actions'ta otomatik PDF üretimi; sitede "Kataloğu indir" linki.
 - [ ] **F4.4 WhatsApp butonu** — numara gelince.
 - [ ] **F4.5 Çözüm sayfaları** (K13) — `cozumler` koleksiyonu (başlık, kapak görseli, kısa açıklama,
