@@ -187,7 +187,9 @@ ust_kategori: tesisat-borulari
 ```
 Alt kategori slug'ları farklı ana kategorilerde çakışabilir (ör. "Su Yalıtımı" hem Yapı Kimyasalları'nda hem
 Yalıtım & Çatı'da, "Mantolama" hem Yapı Kimyasalları'nda hem Boya'da). Bu durumda ayırt edici slug ver:
-`su-yalitimi-kimyasal` / `su-yalitimi-ortu`, `mantolama-sistem` / `mantolama-boya` gibi — ad aynı kalabilir.
+`su-yalitimi-kimyasal` / `su-yalitimi-membran`, `mantolama-sistem` / `mantolama-boya` — ad aynı kalabilir.
+**Onaylı (2026-11-16, beyin takımı):** Yapı Kimyasalları › `su-yalitimi-kimyasal`, Yalıtım & Çatı › `su-yalitimi-membran`,
+Yapı Kimyasalları › `mantolama-sistem`, Boya › `mantolama-boya`.
 
 ---
 

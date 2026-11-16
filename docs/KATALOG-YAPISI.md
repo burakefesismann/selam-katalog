@@ -6,6 +6,10 @@ Bu dosya kategori ağacının ve kart adlarının kaynağıdır. Değişiklik ya
 Kart tipleri (K11): `grup` = ürün ailesi tek kart · `marka_tur` = marka + tür, örneklemli · `urun` = tek ürün, teknik detaylı.
 Toplam: 213 kart.
 
+**Güncelleme 2026-11-16 (Paket 001 ile, beyin takımı kararı):** PE100 ek parçaları → Fırat; PEX kartı adı ve markaları;
+ProContact Sıva & Şap → Mantolama; resmi yazımlar DuoContact, DuoFix, StarTherm, CreativTop. Toplam kart sayısı değişmedi (213).
+Alt kategori slug'ları: `su-yalitimi-kimyasal`, `su-yalitimi-membran`, `mantolama-sistem`, `mantolama-boya`.
+
 ## 1. Tesisat Boruları (21 kart)
 
 ### Altyapı
@@ -22,11 +26,11 @@ Toplam: 213 kart.
 
 ### PE100 İçme Suyu
 - Fırat PE100 İçme Suyu Boruları (Kangal) — `grup` — Fırat
-- PE100 Kaynaklı & Elektrofüzyon Ek Parçalar — `grup` — çeşitli
+- PE100 Kaynaklı & Elektrofüzyon Ek Parçalar — `grup` — Fırat
 - Poelsan Kaplin (Sıkıştırmalı) Ek Parçalar — `grup` — Poelsan
 
 ### PEX
-- PEX Boru & Bağlantılar — `grup` — Fırat · KAS
+- PEX Bağlantılar & Vanalar — `grup` — Fırat · KAS · ECA
 
 ### PPRC Temiz Su
 - Fırat PPRC Borular (PN20 / PN25) — `grup` — Fırat
@@ -166,7 +170,7 @@ Toplam: 213 kart.
 
 ### Dekoratif Kaplama
 - Baumit Classico Dekoratif Kaplamalar — `urun` — Baumit
-- Baumit Creative Top — `urun` — Baumit
+- Baumit CreativTop — `urun` — Baumit
 - Baumit Uni Primer Dış Cephe Astarı — `urun` — Baumit
 
 ### Derz Dolgu
@@ -179,10 +183,11 @@ Toplam: 213 kart.
 - Yapıştırıcılar (mermer, epoksi, süpürgelik) — `grup` — Selsil · çeşitli
 
 ### Mantolama
-- Baumit Duacontact Yapıştırma & Sıva Harcı — `urun` — Baumit
-- Baumit Duofix Yalıtım Yapıştırma Harcı — `urun` — Baumit
+- Baumit DuoContact Yapıştırma & Sıva Harcı — `urun` — Baumit
+- Baumit DuoFix Yalıtım Yapıştırma Harcı — `urun` — Baumit
 - Baumit Mantolama Aksesuarları (file, dübel, köşe profili) — `urun` — Baumit
-- Baumit Starttherm Karbonlu EPS — `urun` — Baumit
+- Baumit ProContact Sıva Harcı — `urun` — Baumit
+- Baumit StarTherm Karbonlu EPS — `urun` — Baumit
 
 ### Mastik & Silikon
 - Sika Mastik & Silikonlar (Sikaflex, Sikacryl, Sikasil) — `urun` — Sika
@@ -203,7 +208,6 @@ Toplam: 213 kart.
 - Baumit Brüt Beton Astarı — `urun` — Baumit
 - Baumit Ionit Finish Saten Alçı — `urun` — Baumit
 - Baumit Nivello Uno Yayılan Şap — `urun` — Baumit
-- Baumit Procontact Sıva Harcı — `urun` — Baumit
 - Weber Dress İnce Sıva — `urun` — Weber
 
 ### Zemin & Astar
