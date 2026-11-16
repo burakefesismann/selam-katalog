@@ -11,7 +11,8 @@
 - Yok
 
 ## Sıradaki
-- F4.4 — WhatsApp butonu (numara gerekli → kullanıcıya sorulacak). F4.1 kurallar bekleniyor; F3.x paketler araya girer.
+- F4.5 — Çözüm sayfaları (K13): `cozumler` koleksiyonu + panel + ana sayfa alanı; ilk sayfa Mantolama (içerik beyin
+  takımından). Beklemede: F4.1 (sihirbaz kuralları), F4.4 (WhatsApp, kullanıcı atladı). F3.x paketler araya girer.
 
 ## Kullanıcıdan beklenenler
 - [~] Logo: `kaynaklar/logo/selamfis.png` geldi (2026-11-15 tekrar aynı dosya geldi; daha büyüğü yok) (474×129 PNG, şeffaf zemin, turuncu+gri). Vektör (SVG/AI/PDF) ya da
@@ -202,3 +203,4 @@
 | 2026-11-16 | F3.2 kapandı | 24/35 ürün görselli; kalan 11 görsel kullanıcıya bırakıldı | F3.2 |
 | 2026-11-16 | F4.2 QR etiketleri | /qr, kategori bazlı A4 etiket sayfaları; QR okuma + PDF baskı testi ✓ | F4.2 |
 | 2026-11-16 | F4.3 PDF katalog | /katalog-yazdir + katalog:pdf + Actions'ta otomatik PDF; indir linkleri | F4.3 |
+| 2026-11-16 | F4.4 atlandı | Kullanıcı kararı: WhatsApp şimdilik yok | — |

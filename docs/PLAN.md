@@ -165,6 +165,7 @@ Bitince: PLAN'da `[x]` → DURUM.md güncelle → commit + push → kullanıcıy
 - [x] **F4.3 PDF katalog** — yazdırmaya uygun, görselli katalog sayfası (kapak, içindekiler, kategoriler, ürünler) +
   GitHub Actions'ta otomatik PDF üretimi; sitede "Kataloğu indir" linki.
 - [ ] **F4.4 WhatsApp butonu** — numara gelince.
+  ⏸ ATLANDI (2026-11-16, kullanıcı kararı: "şimdilik atlayalım"). Numara gelince yapılır (ayarlar → firma.whatsapp alanı hazır).
 - [ ] **F4.5 Çözüm sayfaları** (K13) — `cozumler` koleksiyonu (başlık, kapak görseli, kısa açıklama,
   adımlar[]: {başlık, açıklama, ilgili_urunler[] ref}), panelden yönetilir. Ana sayfadaki alanı aç.
   İlk sayfa: Mantolama (içeriği beyin takımından gelir).
