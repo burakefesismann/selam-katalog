@@ -35,6 +35,13 @@ kaynak_sayfalar:
   - https://www.firat.com/sicak-soguk-su-boru-sistemleri/pex-mobil-sistem-ve-zeminden-isitma-borulari/pe-rt-boru-sistemleri/urunler-borular
   - https://www.firat.com/en-us/indoor-piping-system/cold-hot-water-pipe-systems/pex-product-range-1/under-floor-heating/assembly
 sira: 10
+gorseller:
+  - gorsel: /src/assets/urunler/firat-pe-rt-yerden-isitma-borulari-1.webp
+    alt_metin: Fırat PE-RT yerden ısıtma borusu kangalı ve izoleli borular
+    kaynak_url: https://www.firat.com/sicak-soguk-su-boru-sistemleri/pex-mobil-sistem-ve-zeminden-isitma-borulari/pe-rt-boru-sistemleri
+  - gorsel: /src/assets/urunler/firat-pe-rt-yerden-isitma-borulari-2.webp
+    alt_metin: Yerden ısıtma borularının şap altına döşenişini gösteren kesit
+    kaynak_url: https://www.firat.com/sicak-soguk-su-boru-sistemleri/pex-mobil-sistem-ve-zeminden-isitma-borulari/pe-rt-boru-sistemleri
 ---
 ## Nerede kullanılır
 Yerden ısıtma sistemlerinde, kollektörden radyatörlere giden mobil sistemlerde ve 10–95 °C arasında çalışan kalorifer tesisatlarında. Spiral kılıflı borular duvar ve döşeme içinde kılıf içinde ilerler; kılıf boruyu aşınma ve darbelere karşı korur. Mobil sistemde sıcak gidiş hattı kırmızı, dönüş hattı mavi kılıftan geçirilir.

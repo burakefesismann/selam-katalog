@@ -24,6 +24,10 @@ kaynak_sayfalar:
   - https://www.firat.com/en-us/rain-gutters/cornered-rain-gutter-and-fittings
   - https://www.firat.com/en-us/rain-gutters
 sira: 10
+gorseller:
+  - gorsel: /src/assets/urunler/firat-pvc-yagmur-olugu-sistemi-1.webp
+    alt_metin: Bina saçağına takılmış Fırat köşeli PVC yağmur oluğu
+    kaynak_url: https://www.firat.com/en-us/rain-gutters/cornered-rain-gutter-and-fittings
 ---
 ## Sistem parçaları (mağazamızda)
 - **Oluk:** 150'lik çatı oluğu, oluk manşonu, iç-dış köşe dirseği, köşeli manşet, körtapa

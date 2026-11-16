@@ -38,6 +38,13 @@ kaynak_sayfalar:
   - https://www.firat.com/cmsfiles/certificates/firatboru-genel-urun-katalogu.pdf
   - https://www.firat.com/en-us/indoor-piping-system/cold-hot-water-pipe-systems/pprc-product-range/pprc-pipe
 sira: 30
+gorseller:
+  - gorsel: /src/assets/urunler/firat-pprc-ek-parcalari-1.webp
+    alt_metin: Fırat yazılı beyaz PPRC dirsek ek parçası
+    kaynak_url: https://www.firat.com/en-us/indoor-piping-system/cold-hot-water-pipe-systems/pprc-product-range/pprc-pipe
+  - gorsel: /src/assets/urunler/firat-pprc-ek-parcalari-2.webp
+    alt_metin: Fırat PPRC ek parçaları ve vanalarından oluşan teşhir panosu
+    kaynak_url: https://www.firat.com/en-us/indoor-piping-system/cold-hot-water-pipe-systems/pprc-product-range/pprc-pipe
 ---
 ## Mağazamızdaki parçalar
 - Düz ve inegal (redüksiyonlu) T; 45° ve 90° dirsek; dişi ve erkek kavisli dirsekler

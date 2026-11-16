@@ -35,6 +35,13 @@ kaynak_sayfalar:
   - https://www.firat.com/binaici-tesisat-boru-sistemleri/pvc-boru-atik-su-sistemleri/yeni-residence-sessiz-boru-ve-ek-parcalari/kalite-belgeleri
 sira: 20
 one_cikan: true
+gorseller:
+  - gorsel: /src/assets/urunler/firat-residence-sessiz-atik-su-sistemi-1.webp
+    alt_metin: Fırat Residence sessiz atık su borusunun katmanlı kesiti
+    kaynak_url: https://www.firat.com/binaici-tesisat-boru-sistemleri/pvc-boru-atik-su-sistemleri/yeni-residence-sessiz-boru-ve-ek-parcalari
+  - gorsel: /src/assets/urunler/firat-residence-sessiz-atik-su-sistemi-2.webp
+    alt_metin: Fırat Residence sessiz atık su borusu ve contalı ağzı
+    kaynak_url: https://www.firat.com/binaici-tesisat-boru-sistemleri/pvc-boru-atik-su-sistemleri/yeni-residence-sessiz-boru-ve-ek-parcalari
 ---
 ## Nerede kullanılır
 Gider sesinin rahatsız ettiği her yerde: yatak odası ve salon duvarından geçen kolonlar, villalar, çok katlı konutlar, oteller, hastaneler ve okullar.

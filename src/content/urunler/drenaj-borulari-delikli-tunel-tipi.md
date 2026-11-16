@@ -27,6 +27,13 @@ kaynak_sayfalar:
   - https://www.firat.com/en-us/drainage-pipe-systems/pvc-drainage-systems/technical-information
   - https://www.firat.com/cmsfiles/certificates/9897/tunel-tipi-drenaj-brosuru.pdf
 sira: 20
+gorseller:
+  - gorsel: /src/assets/urunler/drenaj-borulari-delikli-tunel-tipi-1.webp
+    alt_metin: Fırat delikli sarı PVC drenaj borusu
+    kaynak_url: https://www.firat.com/en-us/drainage-pipe-systems/pvc-drainage-systems
+  - gorsel: /src/assets/urunler/drenaj-borulari-delikli-tunel-tipi-2.webp
+    alt_metin: Fırat PVC drenaj borusu kangalı
+    kaynak_url: https://www.firat.com/en-us/drainage-pipe-systems/pvc-drainage-systems
 ---
 ## Nerede kullanılır
 - Temelinde su bulunan binaların ve bodrumların korunmasında

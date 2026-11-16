@@ -39,6 +39,10 @@ kaynak_sayfalar:
   - https://www.firat.com/en-us/sanitary-piping-system/sewage-piping-systems/pvc-dublex-pipe-and-fittings/technical-specifications
   - https://www.firat.com/cmsfiles/certificates/firatboru-genel-urun-katalogu.pdf
 sira: 10
+gorseller:
+  - gorsel: /src/assets/urunler/firat-dublex-pvc-atik-su-borulari-1.webp
+    alt_metin: Turuncu çizgili Fırat Dublex PVC atık su boruları
+    kaynak_url: https://www.firat.com/pvc-boru-atik-su-sistemleri/pvc-dublex-boru-ve-ek-parcalari
 ---
 ## Nerede kullanılır
 Villa ve apartmanlardan hastane, okul ve otellere kadar her yapıda; binanın içindeki ve temelindeki atık suların tahliyesinde. BD uygulama sınıfı, bina içinin yanında binanın altını ve binaya 1 m mesafeye kadar toprağa gömülü bölümü de kapsar.

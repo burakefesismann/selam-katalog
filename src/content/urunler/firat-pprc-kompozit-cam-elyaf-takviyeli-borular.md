@@ -42,6 +42,13 @@ kaynak_sayfalar:
   - https://www.firat.com/en-us/indoor-piping-system/cold-hot-water-pipe-systems/pprc-product-range/composite-pipe-and-fittings/pipes
   - https://www.firat.com/cmsfiles/certificates/firatboru-genel-urun-katalogu.pdf
 sira: 20
+gorseller:
+  - gorsel: /src/assets/urunler/firat-pprc-kompozit-cam-elyaf-takviyeli-borular-1.webp
+    alt_metin: Fırat kompozit (cam elyaf takviyeli) PPRC boru
+    kaynak_url: https://www.firat.com/en-us/indoor-piping-system/cold-hot-water-pipe-systems/pprc-product-range/composite-pipe-and-fittings
+  - gorsel: /src/assets/urunler/firat-pprc-kompozit-cam-elyaf-takviyeli-borular-2.webp
+    alt_metin: Fırat kompozit borular ve dirseklerle yapılmış tesisat
+    kaynak_url: https://www.firat.com/en-us/indoor-piping-system/cold-hot-water-pipe-systems/pprc-product-range/composite-pipe-and-fittings
 ---
 ## Nerede kullanılır
 Sıcak su ve kalorifer hatlarında, sıcak ve soğuk suyun birlikte çalıştığı sistemlerde; özellikle açıkta (sıva üstü) giden tesisatlarda. Isınınca düz PPRC boruya göre çok daha az uzadığı için hat sarkmaz, dalgalanmaz.

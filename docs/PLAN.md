@@ -145,7 +145,7 @@ Bitince: PLAN'da `[x]` → DURUM.md güncelle → commit + push → kullanıcıy
 
 ## Faz 3 — Gerçek içerik ve görseller
 
-- [ ] **F3.1 İçerik paketi içe aktarıcı**
+- [x] **F3.1 İçerik paketi içe aktarıcı**
   Beyin takımı içerikleri `icerik-paketleri/NNN-ad/` klasörlerinde, ICERIK-SEMASI.md formatında gönderir
   (Markdown/JSON; her ürün için `kaynak_sayfalar`). `npm run icerik:aktar -- 001-firat-baumit` komutu paketi
   doğrular (şema, referanslar), varsa paketteki görselleri hazırlar, `src/content`'e kopyalar, özet rapor verir.

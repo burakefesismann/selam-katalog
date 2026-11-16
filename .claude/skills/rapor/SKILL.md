@@ -19,5 +19,8 @@ Beyin takımına sorular / karar gerekenler: <varsa, maddeler halinde>
 Teknik notlar: <beyin takımının bilmesi gereken kısıtlar, ör. içerik şemasındaki değişiklikler>
 ```
 
+Raporun "Teknik notlar"ına `TASLAK` geçen kartları ekle (`grep -rl TASLAK src/content` — sayfada görünmeyen
+`<!-- TASLAK … -->` yorumları dahil) ve görseli eksik ürün sayısını yaz (`npm run gorsel:rapor`).
+
 Eğer `docs/ICERIK-SEMASI.md` son rapordan beri değiştiyse, raporun altına "Şema değişti, ICERIK-SEMASI.md'yi de
 beyin takımına gönder" notu ekle.

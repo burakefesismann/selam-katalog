@@ -23,6 +23,13 @@ kaynak_sayfalar:
   - https://www.firat.com/en-us/pvc-curtain-rails/curtain-rails
   - https://www.firat.com/en-us/products/pvc-curtain-rails/curtain-rails-and-fittings
 sira: 100
+gorseller:
+  - gorsel: /src/assets/urunler/firat-perde-raylari-1.webp
+    alt_metin: Fırat PVC perde rayı profili
+    kaynak_url: https://www.firat.com/en-us/pvc-curtain-rails/curtain-rails
+  - gorsel: /src/assets/urunler/firat-perde-raylari-2.webp
+    alt_metin: Fırat kavisli PVC perde rayı
+    kaynak_url: https://www.firat.com/en-us/pvc-curtain-rails/curtain-rails
 ---
 ## Nerede kullanılır
 Ev ve iş yerlerinde tül ve perdeleri tavana ya da duvara monte edilen tek bir rayda taşımak için. Üç kanallı yapı, tül ve fon perdeyi ayrı kanallarda kullanmaya imkân verir. Köşeli pencerelerde dönüş parçasıyla ray kesintisiz devam eder.
