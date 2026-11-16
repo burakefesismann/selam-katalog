@@ -166,6 +166,9 @@
 
 ## Öneriler
 - (Plana eklenmesi önerilen fikirler. Kullanıcı onaylarsa PLAN.md'ye taşınır.)
+- PDF katalogda bazı sayfaların altı boş (kart satırı sığmayınca yeni sayfaya geçiyor; 35 ürün = 16 sayfa).
+  inline-block denemesi daha kötü oldu (18 sayfa) → grid kaldı. İleride: kart görselini küçült (16:9 → 2:1), teknik tabloyu
+  4 satıra indir ya da kategori başına 3 sütun dene.
 - Ana sayfadaki 11 ana kategori kartı (F2.2) için kategori görselleri gerekecek; planda ayrı görev yok.
   Öneri: F2.2 öncesi her ana kategoriye o kategorideki en iyi ürün görselini ya da kullanıcının mağaza fotoğrafını ata
   (`gorsel:rapor` bunları zaten listeliyor).
