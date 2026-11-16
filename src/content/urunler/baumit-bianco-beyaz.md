@@ -33,6 +33,10 @@ kaynak_sayfalar:
   - https://baumit.com.tr/products/karo-uygulama-urunleri/karo-yapistirma-harclari/baumit-baumacol-bianco
   - https://baumit.com.tr/products/islak-hacim-bilesenleri/yapistiricilar/baumit-bianco
 sira: 20
+gorseller:
+  - gorsel: /src/assets/urunler/baumit-bianco-beyaz-1.webp
+    alt_metin: Baumit Baumacol Bianco 25 kg beyaz seramik yapıştırıcı torbası
+    kaynak_url: https://baumit.com.tr/products/karo-uygulama-urunleri/karo-yapistirma-harclari/baumit-baumacol-bianco
 ---
 ## Nerede kullanılır
 Tüm yapılarda, iç mekânda zemine ve duvara fayans ve seramik yapıştırmak için. Beyaz rengi sayesinde açık renkli ve dekoratif uygulamalarda tercih edilir.

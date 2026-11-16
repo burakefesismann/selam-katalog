@@ -40,6 +40,10 @@ kaynak_sayfalar:
   - https://baumit.com.tr/products/son-kat-kaplamalar/mineral-kaplamalar/baumit-classico-special
   - https://baumit.com.tr/products/son-kat-kaplamalar/mineral-kaplamalar/baumit-classico-fine
 sira: 20
+gorseller:
+  - gorsel: /src/assets/urunler/baumit-classico-dekoratif-kaplamalar-1.webp
+    alt_metin: Baumit Classico Special 25 kg dekoratif kaplama torbası
+    kaynak_url: https://baumit.com.tr/products/son-kat-kaplamalar/mineral-kaplamalar/baumit-classico-special
 ---
 ## Nerede kullanılır
 Dış cephe ısı yalıtım sistemlerinin (mantolama) ve hazır sıvaların üzerinde son kat dekoratif kaplama olarak. Baumit dış cephe boyalarıyla uyumludur; istenirse boyayla renklendirilebilir.

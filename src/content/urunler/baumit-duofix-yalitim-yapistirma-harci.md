@@ -30,6 +30,10 @@ kaynak_sayfalar:
   - https://baumit.com.tr/products/isi-yalitim-sistem-bilesenleri/yapistirma-harclari/baumit-duofix
   - https://baumit.com.tr/products/dis-cephe-isi-yalitim-bilesenleri/yapistiricilar-ve-sivalar/baumit-duofix
 sira: 20
+gorseller:
+  - gorsel: /src/assets/urunler/baumit-duofix-yalitim-yapistirma-harci-1.webp
+    alt_metin: Baumit DuoFix 25 kg ısı yalıtım levhası yapıştırma harcı torbası
+    kaynak_url: https://baumit.com.tr/products/isi-yalitim-sistem-bilesenleri/yapistirma-harclari/baumit-duofix
 ---
 ## Nerede kullanılır
 Mantolama uygulamalarında StarTherm (karbonlu EPS), ProTherm (beyaz EPS) ve MineralTherm (taş yünü) ısı yalıtım levhalarının duvara yapıştırılmasında. Levhanın üzerindeki fileli sıva katı için DuoContact veya ProContact gibi bir sıva harcı kullanılır.

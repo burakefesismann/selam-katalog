@@ -35,6 +35,10 @@ kaynak_sayfalar:
   - https://baumit.com.tr/products/zemin-saplari/kendiliginden-seviye-alan-saplar/baumit-nivello-uno
   - https://baumit.com.tr/zemin-saplari
 sira: 30
+gorseller:
+  - gorsel: /src/assets/urunler/baumit-nivello-uno-yayilan-sap-1.webp
+    alt_metin: Baumit Nivello Uno 25 kg kendiliğinden yayılan şap torbası
+    kaynak_url: https://baumit.com.tr/products/zemin-saplari/kendiliginden-seviye-alan-saplar/baumit-nivello-uno
 ---
 ## Nerede kullanılır
 İç mekânda seramik, parke ve diğer zemin kaplamalarından önce bozuk zeminleri düzeltip pürüzsüz, düz bir alt zemin elde etmek için.

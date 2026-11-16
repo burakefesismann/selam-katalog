@@ -32,6 +32,10 @@ kaynak_sayfalar:
   - https://baumit.com.tr/products/son-kat-kaplamalar/dekoratif-kaplamalar/baumit-creativtop
   - https://baumit.com.tr/products/son-kat-kaplamalar/dis-cephe-kaplamalari/baumit-creativtop
 sira: 30
+gorseller:
+  - gorsel: /src/assets/urunler/baumit-creativtop-1.webp
+    alt_metin: Baumit CreativTop dekoratif kaplama kovası
+    kaynak_url: https://baumit.com.tr/products/son-kat-kaplamalar/dekoratif-kaplamalar/baumit-creativtop
 ---
 ## Nerede kullanılır
 Yaratıcı iç ve dış cephe tasarımlarında; mantolama sistemleri ve sıvalar üzerinde son kat olarak. Farklı uygulama teknikleriyle çeşitli dokular verilebilir; tüketim miktarı uygulama tekniğine göre değişir.

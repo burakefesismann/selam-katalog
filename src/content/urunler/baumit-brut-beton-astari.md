@@ -28,6 +28,10 @@ kaynak_sayfalar:
   - https://baumit.com.tr/products/ic-cephe-sivalari/alt-yuzey-hazirligi/baumit-betonkontakt
   - https://baumit.com.tr/products/astarlar/yuzey-hazirligi-2/baumit-betonkontakt
 sira: 10
+gorseller:
+  - gorsel: /src/assets/urunler/baumit-brut-beton-astari-1.webp
+    alt_metin: Baumit BetonKontakt brüt beton astarı kovası
+    kaynak_url: https://baumit.com.tr/products/ic-cephe-sivalari/alt-yuzey-hazirligi/baumit-betonkontakt
 ---
 ## Nerede kullanılır
 Beton ve brüt beton gibi parlak, su emmeyen yüzeylerde; alçı ya da çimento esaslı (makine veya el) sıva yapılmadan önce. Sıvanın yüzeye tutunmasını artırır ve yüzeyin emiciliğini dengeler. Baumit'teki ürün adı **BetonKontakt**'tır.

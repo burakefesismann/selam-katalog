@@ -30,6 +30,10 @@ kaynak_sayfalar:
   - https://baumit.com.tr/products/son-kat-kaplamalar/astarlar-1/baumit-uniprimer
   - https://baumit.com.tr/baumit-isi-yalitim-sistemleri
 sira: 10
+gorseller:
+  - gorsel: /src/assets/urunler/baumit-uni-primer-dis-cephe-astari-1.webp
+    alt_metin: Baumit UniPrimer dış cephe astarı kovası
+    kaynak_url: https://baumit.com.tr/products/son-kat-kaplamalar/astarlar-1/baumit-uniprimer
 ---
 ## Nerede kullanılır
 Her türlü sentetik ve mineral dekoratif son kat kaplamadan (ör. Classico, CreativTop) önce; sert ya da emici olmayan mineral esaslı yüzeylerin ve boyalı yüzeylerin hazırlanmasında. Baumit Pro mantolama sisteminde fileli sıvadan sonra, son kattan önceki adımdır.

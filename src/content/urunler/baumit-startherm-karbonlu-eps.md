@@ -33,6 +33,10 @@ kaynak_sayfalar:
   - https://baumit.com.tr/guide/dis-cephe-isi-yalitim-sistemleri/baumit-star-sistem
 sira: 10
 one_cikan: true
+gorseller:
+  - gorsel: /src/assets/urunler/baumit-startherm-karbonlu-eps-1.webp
+    alt_metin: Baumit StarTherm gri karbonlu EPS ısı yalıtım levhası
+    kaynak_url: https://baumit.com.tr/products/isi-yalitim-sistem-bilesenleri/isi-yalirim-plakalari/baumit-startherm
 ---
 ## Nerede kullanılır
 Dış cephe ısı yalıtım (mantolama) sistemlerinde; Baumit Star ve Power sistemlerinin yalıtım levhasıdır. Duvara DuoFix, DuoContact veya ProContact ile yapıştırılır, dübelle sabitlenir, üzeri fileli sıva ile kaplanır.

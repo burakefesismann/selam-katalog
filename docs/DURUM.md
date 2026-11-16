@@ -8,24 +8,18 @@
 - Faz: 3 — Gerçek içerik ve görseller
 
 ## Yarım kalan
-- **F3.2 Paket 001 — görseller** (içe aktarma BİTTİ, build hatasız; commit 108510e, 9ba3250 + bu WIP).
-  - Tamamlanan: içe aktarıcı (F3.1), 35 kart içeride; KATALOG-YAPISI güncellendi; ts-en-12004 açıklaması; alt kategori
-    slug kararı ICERIK-SEMASI'na yazıldı; 8 Fırat ürününe 14 görsel (--buyut); 4 ana kategori kartı görseli
-    (tesisat-borulari, isitma, yapi-kimyasallari, hirdavat-ve-nalburiye → `gorsel` alanı).
-  - Görseli EKSİK 21 ürün (`npm run gorsel:rapor`):
-    · Baumit (15): all-in-beton, bianco-beyaz, brut-beton-astari, classico-dekoratif-kaplamalar, creativtop,
-      duocontact, duofix, ionit-finish, mantolama-aksesuarlari, nivello-uno, premium-fuga, procontact, protect-2k,
-      startherm, uni-primer. Kaynak: baumit.com.tr/products/... sayfaları; görsel `/files/tr/product_images/imXXXX.png`
-      (og:image), 333×400 → `--buyut`. Eski adresler 404 olabilir; ürün adını baumit.com.tr'de bul (ör. karo-uygulama-
-      urunleri/... gibi güncel yol). Mantolama aksesuarlarında UniDübel için resmi sayfa yok (NOTLAR).
-    · Fırat (6): **kontrol gerekli** → firat-pe100-icme-suyu-borulari-kangal (sitede sadece büyük çaplı düz boru
-      fotoğrafı var, kangal yok), firat-pprc-vanalar (vana görseli yok/kesik) → mağaza fotoğrafı önerildi;
-      firat-gediz-pvc-atik-su-borulari (NOTLAR: resmi görsel yoksa mağaza fotoğrafı); pe100-kaynakli-ve-elektrofuzyon-ek-parcalar
-      (kaynak: pe-100-teknik-katalogu.pdf / en-us pe-pipe-and-fittings), pex-baglantilar-ve-vanalar (pex-metal-brosuru.pdf,
-      en-us pex-product-range-1/mobile-systems), yerden-isitma-kollektorleri (en-us sanitary-piping-systems/metal-systems/collectors).
-  - Fırat görsel bulma: `scratchpad/firat-gorsel.sh <url>` benzeri — sayfadaki `/cmsfiles/products/**/large/*.jpg` (710 px).
-  - Kalan adımlar: yukarıdaki ürünler → hazırla (--buyut) → `gorseller` bağla → build → kalan kategori görselleri (gerekirse)
-    → F3.2 [x] → DURUM → commit/push.
+- **F3.2 Paket 001 — görseller** (içe aktarma BİTTİ). Görselli: 24/35 ürün. 2026-11-16 oturum 2: 10 Baumit ürünü eklendi.
+  - Görseli EKSİK 11 ürün (`npm run gorsel:rapor`):
+    · Henüz denenmedi (Fırat, 3): pe100-kaynakli-ve-elektrofuzyon-ek-parcalar (kaynak: en-us infrastructure-pipe/
+      potable-water-pipe-systems/pe-pipe-and-fittings, pe-100-teknik-katalogu.pdf), pex-baglantilar-ve-vanalar
+      (en-us pex-product-range-1/mobile-systems, pex-metal-brosuru.pdf), yerden-isitma-kollektorleri
+      (en-us sanitary-piping-systems/metal-systems/collectors). Fırat sayfalarında `/cmsfiles/products/**/large/*.jpg`.
+    · **Kontrol gerekli → mağaza fotoğrafı** (8): Fırat PE100 kangal (sitede kangal yok), Fırat PPRC vanalar (vana görseli
+      yok/kesik), Fırat Gediz (resmi görsel yok); Baumit All in Beton (resmi torba 30 kg, mağazadaki 20 kg → kullanılmadı),
+      Baumit Ionit Finish (sayfada sadece bilgi grafiği), Baumit Protect 2K ve PremiumFuge (ürün sayfaları artık 404),
+      Baumit mantolama aksesuarları (resmi sayfa yok). Baumit Flexo görseli var (F1.5b) ama kart TASLAK (bilgi torbadan).
+  - Kalan adımlar: 3 Fırat ürünü → hazırla (--buyut) → bağla → build → F3.2 [x] (mağaza fotoğrafı bekleyenler
+    "Kullanıcıdan beklenenler"de kalır, F3.2'yi bekletmez) → DURUM → commit/push.
 ## Sıradaki
 - F3.2 devam (`/gorsel eksikler`) → sonra F3.x diğer paketler
 
@@ -33,7 +27,8 @@
 - [~] Logo: `kaynaklar/logo/selamfis.png` geldi (2026-11-15 tekrar aynı dosya geldi; daha büyüğü yok) (474×129 PNG, şeffaf zemin, turuncu+gri). Vektör (SVG/AI/PDF) ya da
   daha büyük PNG varsa istenir; beyaz/açık renkli sürümü (koyu zemin için) de lazım olacak.
 - [ ] Mağaza fotoğrafı gereken kartlar (resmi görsel yok/uygun değil): Fırat PE100 İçme Suyu Boruları (Kangal),
-  Fırat PPRC Vanalar, Fırat Gediz (resmi bulunmazsa), Baumit Flexo (kart bilgileri de torbadan), Baumit UniDübel (aksesuar).
+  Fırat PPRC Vanalar, Fırat Gediz, Baumit All in Beton (resmi görsel 30 kg torba, mağazadaki 20 kg), Baumit Ionit Finish,
+  Baumit Protect 2K, Baumit PremiumFuge, Baumit mantolama aksesuarları (file/dübel/profil), Baumit Flexo (bilgiler de torbadan).
 - [ ] Daha büyük ürün görselleri. Şu an yapay zekâ ile büyütülmüş (K14), gerçeği gelince değiştirilecek:
   Fırat PPRC (2), PVC atık su ek parçaları, Triplex (2) — asıl 710 px · Baumit Basic, Flexo, Flex Uni — asıl 400 px.
   Fırat logosu 360 px (logo, büyütülmedi).
@@ -161,6 +156,9 @@
   edecek). NOTLAR'daki Baumit `/islak-hacim-bilesenleri/...` adreslerinin bir kısmı 404 dönüyor.
 - Git CRLF uyarıları çok uzun → commit'te `2>/dev/null`.
 
+- `gorsel:hazirla --buyut` artık büyütmeden önce saydamlığı beyaza düzleştiriyor (Real-ESRGAN -t 128 alfa kanalını
+  parça parça bozdu: ProContact torbasının alt yarısı görünmezdi — düzeltildi, diğer görseller tarandı, sağlam).
+
 ## Öneriler
 - (Plana eklenmesi önerilen fikirler. Kullanıcı onaylarsa PLAN.md'ye taşınır.)
 - Ana sayfadaki 11 ana kategori kartı (F2.2) için kategori görselleri gerekecek; planda ayrı görev yok.
@@ -192,3 +190,4 @@
 | 2026-11-15 | F2.8 İletişim | /iletisim, şube kartları, yol tarifi, tel linkleri, JSON-LD; 360 px taşma yok | F2.8 |
 | 2026-11-15 | F2.9 Kalite turu | Lighthouse 98–100/100/100/100, favicon, OG, sitemap, 404, kontrast; taşma yok | F2.9 |
 | 2026-11-16 | F3.1 + F3.2 (yarım) | İçe aktarıcı; Paket 001 içeride (35 kart); 8 ürün + 4 kategori görseli; 21 ürün görselsiz | WIP F3.2 |
+| 2026-11-16 | F3.2 (yarım) | 10 Baumit görseli; 8 kart mağaza fotoğrafı bekliyor; --buyut alfa hatası düzeltildi | WIP F3.2 |

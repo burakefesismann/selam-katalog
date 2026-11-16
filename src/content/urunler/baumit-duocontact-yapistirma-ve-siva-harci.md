@@ -29,6 +29,10 @@ ilgili_urunler:
 kaynak_sayfalar:
   - https://baumit.com.tr/products/isi-yalitim-sistem-bilesenleri/yapistirma-ve-siva-harclari/baumit-duocontact
 sira: 30
+gorseller:
+  - gorsel: /src/assets/urunler/baumit-duocontact-yapistirma-ve-siva-harci-1.webp
+    alt_metin: Baumit DuoContact 25 kg yapıştırma ve sıva harcı torbası
+    kaynak_url: https://baumit.com.tr/products/isi-yalitim-sistem-bilesenleri/yapistirma-ve-siva-harclari/baumit-duocontact
 ---
 ## Nerede kullanılır
 Dış cephe ısı yalıtım sistemlerinde StarTherm (karbonlu EPS), ProTherm (beyaz EPS) ve MineralTherm (taş yünü) levhaların duvara yapıştırılmasında ve levha yüzeyinin donatı filesiyle sıvanmasında.

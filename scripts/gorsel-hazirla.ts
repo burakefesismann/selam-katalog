@@ -146,10 +146,10 @@ for (const dosya of dosyalar) {
     let kaynak = dosya;
     const buyutulecek = buyut && hedef === 'urunler' && Math.max(enO, boyO) < STANDART.uzunKenarMin;
     if (buyutulecek) {
-      if (donuk || (meta.orientation ?? 1) > 1) {
-        kaynak = join(geciciKlasor!, `${basename(dosya, extname(dosya))}-yon.png`);
-        await sharp(dosya).rotate().png().toFile(kaynak);
-      }
+      // Büyütmeden önce: yönü uygula + saydamlığı beyaz zemine düzleştir. Real-ESRGAN (-t 128) alfa kanalını parça
+      // parça bozabiliyor (ProContact torbasının alt yarısı görünmez oldu). Ürün görselleri zaten beyaz kutuda.
+      kaynak = join(geciciKlasor!, `${basename(dosya, extname(dosya))}-hazir.png`);
+      await sharp(dosya).rotate().flatten({ background: '#ffffff' }).png().toFile(kaynak);
       kaynak = yapayZekaIleBuyut(kaynak);
     }
 
