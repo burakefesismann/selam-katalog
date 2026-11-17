@@ -27,7 +27,12 @@ ilgili_urunler:
   - btm-bitumer-btr-200-likit-membran
 kaynak_sayfalar:
   - https://tr.onduline.com/en/homeowner/urunler/toiture/bituline
+  - https://ph.onduline.com/en/homeowner/products/waterproofing/bituline-primer
 sira: 50
+gorseller:
+  - gorsel: /src/assets/urunler/onduline-bituline-astar-1.webp
+    alt_metin: Onduline Bituline astar 17 kg teneke (bitüm emülsiyonu, TS 113)
+    kaynak_url: https://ph.onduline.com/en/homeowner/products/waterproofing/bituline-primer
 ---
 ## Ne işe yarar?
 Bitümlü membran (ör. BITULINE) şalümoyla yapıştırılmadan önce beton yüzeye sürülen astardır. Yüzeydeki tozu bağlar, gözenekleri doldurur ve membranın yüzeye tam olarak yapışmasını sağlar.

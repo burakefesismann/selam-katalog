@@ -26,7 +26,15 @@ ilgili_urunler:
 kaynak_sayfalar:
   - https://tr.onduline.com/tr/son-kullanici/urunler/toiture/onduline-zigana
   - https://tr.onduline.com/en/homeowner/products-no/cati-kaplama/onduline-hr
+  - https://in.onduline.com/en/products/onduline-ridge
 sira: 30
+gorseller:
+  - gorsel: /src/assets/urunler/onduline-mahya-ve-montaj-aksesuarlari-1.webp
+    alt_metin: Onduline kırmızı mahya parçası
+    kaynak_url: https://in.onduline.com/en/products/onduline-ridge
+  - gorsel: /src/assets/urunler/onduline-mahya-ve-montaj-aksesuarlari-2.webp
+    alt_metin: Onduline yeşil mahya parçası
+    kaynak_url: https://in.onduline.com/en/products/onduline-ridge
 ---
 ## Mağazamızdakiler
 - Onduline mahya — kırmızı ve yeşil

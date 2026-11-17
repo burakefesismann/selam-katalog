@@ -19,6 +19,12 @@ ilgili_urunler:
   - kelepce-zincir-kilidi-ve-karabina
   - civata-somun-pul-ve-klemens
 sira: 20
+gorseller:
+  - gorsel: /src/assets/urunler/halat-makara-ve-iskele-kelepcesi-1.webp
+    alt_metin: Master iskele kelepçeleri ve sıkma çubuğu
+    kaynak_url: https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=48&marid=68&urun=1&tur_id=7416
+kaynak_sayfalar:
+  - https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=48&marid=68&urun=1&tur_id=7416
 ---
 ## Mağazamızdakiler
 - İskota halat: 3, 10, 12 mm

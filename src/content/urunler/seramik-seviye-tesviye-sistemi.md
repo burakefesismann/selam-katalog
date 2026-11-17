@@ -25,6 +25,16 @@ ilgili_urunler:
   - yer-suzgecleri-ve-dus-kanallari
   - yurtbay-seramik-mermer-gorunumlu
 sira: 20
+gorseller:
+  - gorsel: /src/assets/urunler/seramik-seviye-tesviye-sistemi-1.webp
+    alt_metin: Seramik seviye sistemi pensesi, tesviye klipsiyle birlikte
+    kaynak_url: https://www.kalekim.com/tr-tr/6003-level-master-pense
+  - gorsel: /src/assets/urunler/seramik-seviye-tesviye-sistemi-2.webp
+    alt_metin: Seramik seviye sistemi plastik kaması (takoz)
+    kaynak_url: https://www.kalekim.com/tr-tr/6001-level-master-takoz
+kaynak_sayfalar:
+  - https://www.kalekim.com/tr-tr/6003-level-master-pense
+  - https://www.kalekim.com/tr-tr/6001-level-master-takoz
 ---
 ## Mağazamızdakiler
 - **Tesviye klipsleri:** 1 mm (100 ve 200'lü), 1,5 mm (200'lü), 2 mm tespit klipsi (200'lü)

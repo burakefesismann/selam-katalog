@@ -3,12 +3,12 @@
 > Her oturumun başında oku, sonunda güncelle. Kısa tut.
 
 ## Şu an
-- Aktif görev: — (sıradaki: /gorsel eksikler oturum 19)
+- Aktif görev: — (sıradaki: /gorsel eksikler oturum 20)
 - Site: https://burakefesismann.github.io/selam-katalog/
 - Faz: 3 — Gerçek içerik ve görseller
 
 ## Yarım kalan
-- **`/gorsel eksikler` — paketler 002–007 görselleri** (2026-11-17 başladı). Görselli: 156/214. Paket 001'in 11 kartı kullanıcıda (dokunma).
+- **`/gorsel eksikler` — paketler 002–007 görselleri** (2026-11-17 başladı). Görselli: 162/214. Paket 001'in 11 kartı kullanıcıda (dokunma).
   - Yapılan (oturum 1): 10 ECA/Serel kartı (lavabo/eviye bataryası, havlupan, panel radyatör, termostatik vana, küresel vana,
     ara musluk, Serel klozet/pisuvar/lavabo).
   - Yapılan (oturum 2): banyo aksesuarı, Y filtre, pürjör, rakor, tepe duşu, ara kesme (krom), Tiera ankastre, Life banyo
@@ -57,6 +57,13 @@
     uzatma (ECA), banyo aksesuarı diğer (ECA Rita), musluk diğer (KAS Derya), duş seti diğer (KAS Raflesya), batarya diğer
     (KAS Lilyum), boru anahtarı (İzeltaş). Alt metinlerde marka adı yazılmadı (kart başka marka). KAS TR ?s= araması çalışmıyor →
     kategori sayfalarından ürün linki al.
+  - Yapılan (oturum 19): seviye sistemi (kalekim.com Level Master pense + takoz, 2000 px; markalı torba görseli
+    kullanılmadı), köşe/bitiş profili (Profilpas = Mapei, mapei.com/profilpas Cerfix Protrim, 1080 px), iskele kelepçesi
+    (Akyüzler "Master İskele Kelepçesi", K14), Onduline mahya (in.onduline.com ridge, kırmızı + yeşil), Onduband bant
+    (ph.onduline.com), Bituline astar (ph.onduline.com — Türkçe etiketli 17 kg teneke). **Onduline yöntemi:** başka ülke
+    siteleri (ph., in., uk.) → /sites/onduline_xx/files/styles/1199x840/public/... (TR sitesinde olmayan ürünler orada).
+    Commons bu oturumda "Too many requests" verdi (CC0 panç: One_and_one_quarter_inch_hole_saw_bit.jpg — sonra indir).
+    Marshall Akrikor: sitede 160 px packshot, broşür PDF'inde ambalaj görseli yok. Sika TR sayfalarında yine packshot yok.
   - Sıradaki adaylar (gevşek kural): Sika (başka ülke sika.com sayfaları), Onduline (başka ülke siteleri), Bosch, Weber (başka
     ülke weber siteleri), rögar, dübel, fırça/rulo (Rulomas/Akyüzler), halat, yer süzgeci/duş kanalı (mesateknik.com), seviye
     sistemi, köşe profilleri, trapez saç, yangın tüpü, Mesa/Dömark/Samir duşakabin, Güral (tarayıcıdan kaydetme gerekli).
@@ -348,3 +355,4 @@
 | 2026-11-17 | /gorsel eksikler (16) | Sika Boom + SikaSwell + rögar (kırpılarak); 144/214; Sika siteleri ambalaj fotoğrafı vermiyor | gorsel |
 | 2026-11-17 | /gorsel eksikler (17) | Akyüzler 4 kart + dübel (Commons) + kalıp yağı görseli Master ile değişti; 149/214 | gorsel |
 | 2026-11-17 | /gorsel eksikler (18) | 7 kart (sifon, batarya yedek, diğer marka aksesuar/musluk/duş/batarya, boru anahtarı); 156/214 | gorsel |
+| 2026-11-17 | /gorsel eksikler (19) | 6 kart (seviye sistemi, köşe profili, iskele kelepçesi, Onduline mahya/bant/astar); 162/214 | gorsel |

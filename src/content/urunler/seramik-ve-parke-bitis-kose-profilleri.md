@@ -29,6 +29,15 @@ ilgili_urunler:
   - yurtbay-seramik-duvar-fayansi-ve-dekorlar
   - sika-mastik-ve-silikonlar-sikaflex-sikacryl-sikasil
 sira: 10
+gorseller:
+  - gorsel: /src/assets/urunler/seramik-ve-parke-bitis-kose-profilleri-1.webp
+    alt_metin: Seramik kaplamanın dış köşesinde parlak metal köşe profili
+    kaynak_url: https://mapei.com/profilpas/en/products/detail/cerfix-protrim
+  - gorsel: /src/assets/urunler/seramik-ve-parke-bitis-kose-profilleri-2.webp
+    alt_metin: Seramik kenarına uygulanmış metal bitiş profili
+    kaynak_url: https://mapei.com/profilpas/en/products/detail/cerfix-protrim
+kaynak_sayfalar:
+  - https://mapei.com/profilpas/en/products/detail/cerfix-protrim
 ---
 ## Mağazamızdakiler
 - **Alüminyum dış ve iç köşe:** 10 ve 12 mm, mat ve parlak; kare model dış köşe 10 mm (parlak)

@@ -31,6 +31,13 @@ kaynak_sayfalar:
   - https://tr.onduline.com/tr/son-kullanici/urunler/toiture/onduline-zigana
   - https://ph.onduline.com/en/homeowner/products/accessories/onduband
 sira: 40
+gorseller:
+  - gorsel: /src/assets/urunler/onduline-ondubant-ve-isobant-yalitim-bantlari-1.webp
+    alt_metin: Onduline alüminyum yüzeyli, kendinden yapışkanlı bitümlü bant rulosu
+    kaynak_url: https://ph.onduline.com/en/homeowner/products/accessories/onduband
+  - gorsel: /src/assets/urunler/onduline-ondubant-ve-isobant-yalitim-bantlari-2.webp
+    alt_metin: Farklı renklerde Onduline bitümlü bant ruloları
+    kaynak_url: https://ph.onduline.com/en/homeowner/products/accessories/onduband
 ---
 ## Mağazamızdakiler
 - **Ondubant 30 cm** — antrasit, doğal alüminyum, kırmızı
