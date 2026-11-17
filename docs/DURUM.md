@@ -3,12 +3,12 @@
 > Her oturumun başında oku, sonunda güncelle. Kısa tut.
 
 ## Şu an
-- Aktif görev: — (sıradaki: /gorsel eksikler oturum 16)
+- Aktif görev: — (sıradaki: /gorsel eksikler oturum 17)
 - Site: https://burakefesismann.github.io/selam-katalog/
 - Faz: 3 — Gerçek içerik ve görseller
 
 ## Yarım kalan
-- **`/gorsel eksikler` — paketler 002–007 görselleri** (2026-11-17 başladı). Görselli: 141/214. Paket 001'in 11 kartı kullanıcıda (dokunma).
+- **`/gorsel eksikler` — paketler 002–007 görselleri** (2026-11-17 başladı). Görselli: 144/214. Paket 001'in 11 kartı kullanıcıda (dokunma).
   - Yapılan (oturum 1): 10 ECA/Serel kartı (lavabo/eviye bataryası, havlupan, panel radyatör, termostatik vana, küresel vana,
     ara musluk, Serel klozet/pisuvar/lavabo).
   - Yapılan (oturum 2): banyo aksesuarı, Y filtre, pürjör, rakor, tepe duşu, ara kesme (krom), Tiera ankastre, Life banyo
@@ -46,6 +46,10 @@
     İzocam XPS (Foamboard görseli, Maxibord kartı) ve Terrawool (İzocam manto taşyünü görseli), KAS eviye (Reyhan kuğu),
     rezervuar iç takım (Serel Kibele), Serel klozet kapağı (Leona Slim). Bunlar "Kullanıcıdan beklenenler"deki eski
     eksik listesinden düşüldü (ayrıca Beybi eldiven, Fırat dışındakiler).
+  - Yapılan (oturum 16): Sika Boom (global Boom broşür PDF'inden kutu görseli 119×528 + alfa maskesi, K14), SikaSwell
+    (tur.sika.com pim2 görseli 210 px, K14), rögar (mesateknik.com MTR 40 katalog kartı: ürün kırpıldı, köşelerdeki yazı/logo
+    beyazla kapatıldı; panel.mesateknik.com sadece http ile iniyor). Sika ülke sitelerinde ürün sayfalarında genelde
+    ambalaj fotoğrafı YOK (AnchorFix'te yine çizim). Mesa süzgeç görselleri pembe zemin + yazılı banner → kullanılmadı.
   - Sıradaki adaylar (gevşek kural): Sika (başka ülke sika.com sayfaları), Onduline (başka ülke siteleri), Bosch, Weber (başka
     ülke weber siteleri), rögar, dübel, fırça/rulo (Rulomas/Akyüzler), halat, yer süzgeci/duş kanalı (mesateknik.com), seviye
     sistemi, köşe profilleri, trapez saç, yangın tüpü, Mesa/Dömark/Samir duşakabin, Güral (tarayıcıdan kaydetme gerekli).
@@ -334,3 +338,4 @@
 | 2026-11-17 | /gorsel eksikler (13) | Pakkens manometre + pirinç ek parça; 123/214; internet kaynakları büyük ölçüde tükendi | gorsel |
 | 2026-11-17 | /gorsel eksikler (14) | Kurallar gevşetildi; Trakya Döküm + Akyüzler + satıcı siteleri: 9 kart; 132/214 | gorsel |
 | 2026-11-17 | /gorsel eksikler (15) | Gevşek kuralla 9 kart (kesici disk, matkap, flatör, XPS, Terrawool, KAS eviye, iç takım, klozet kapağı, karıştırıcı); 141/214 | gorsel |
+| 2026-11-17 | /gorsel eksikler (16) | Sika Boom + SikaSwell + rögar (kırpılarak); 144/214; Sika siteleri ambalaj fotoğrafı vermiyor | gorsel |

@@ -30,7 +30,12 @@ ilgili_urunler:
 kaynak_sayfalar:
   - https://tur.sika.com/dam/dms/tr01/g/sikaswell_a.pdf
   - https://tur.sika.com/tr/yapi/su-yalitimi/derzlerde-su-yalitim-cozumleri/sikaswell-s-2.html
+  - https://tur.sika.com/tr/yapi/su-yalitimi/derzlerde-su-yalitim-cozumleri/sikaswell-a.html
 sira: 60
+gorseller:
+  - gorsel: /src/assets/urunler/sikaswell-a-su-tutucu-bant-1.webp
+    alt_metin: SikaSwell su ile şişen su tutucu bant (şişmeden önce ve sonra)
+    kaynak_url: https://tur.sika.com/tr/yapi/su-yalitimi/derzlerde-su-yalitim-cozumleri/sikaswell-a.html
 ---
 ## Ne işe yarar?
 Beton yapılar parça parça dökülür; iki döküm arasında kalan derzler ve duvardan geçen borular, suyun en kolay sızdığı yerlerdir. SikaSwell A bu derzlere, beton dökülmeden önce yerleştirilir. Su geldiğinde şişerek boşluğu doldurur ve suyun geçişini engeller.

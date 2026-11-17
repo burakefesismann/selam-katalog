@@ -36,8 +36,13 @@ kaynak_sayfalar:
   - https://tur.sika.com/tr/yapi/sizdirmazlik-ve-yapistirma-cozumleri/genlesen-kopukler/sika-boom-541-ffgun.html
   - https://tur.sika.com/tr/yapi/sizdirmazlik-ve-yapistirma-cozumleri/genlesen-kopukler/sika-boom-108-foamcleaner.html
   - https://tur.sika.com/tr/yapi/sizdirmazlik-ve-yapistirma-cozumleri/genlesen-kopukler.html
+  - https://www.sika.com/dam/dms/corporate/q/glo-sika-boom-construction-foams.pdf
 sira: 10
 one_cikan: true
+gorseller:
+  - gorsel: /src/assets/urunler/sika-boom-poliuretan-kopukler-1.webp
+    alt_metin: Sika Boom poliüretan köpük kutusu (el tipi, Fix & Fill)
+    kaynak_url: https://www.sika.com/dam/dms/corporate/q/glo-sika-boom-construction-foams.pdf
 ---
 ## Mağazamızdakiler
 - **Sika Boom-141 FF**, 750 ml — pipetli, çok amaçlı dolgu ve montaj köpüğü

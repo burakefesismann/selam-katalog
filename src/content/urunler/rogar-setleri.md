@@ -20,6 +20,12 @@ ilgili_urunler:
   - firat-triplex-koruge-altyapi-borulari-ve-ek-parcalari
 sira: 40
 markalar: []
+gorseller:
+  - gorsel: /src/assets/urunler/rogar-setleri-1.webp
+    alt_metin: Kapaklı plastik rögar kutusu 40x40
+    kaynak_url: https://www.mesateknik.com/tr/urunler/rogar-kutusu-ve-kapaklar
+kaynak_sayfalar:
+  - https://www.mesateknik.com/tr/urunler/rogar-kutusu-ve-kapaklar
 ---
 ## Mağazamızdaki ölçüler
 Kutu ve kapaktan oluşan rögar setleri: **30x30**, **40x40** ve **50x50 cm**.
