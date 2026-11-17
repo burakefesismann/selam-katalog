@@ -47,7 +47,16 @@ kaynak_sayfalar:
   - https://www.yurtbayseramik.com/en/products/wood-textured-ceramics
   - https://www.yurtbayseramik.com/en/products/20X120-dimension-ceramics
   - https://www.yurtbayseramik.com/en/products/15X90-dimension-ceramics
+  - https://www.yurtbayseramik.com/en/products/pine
+  - https://www.yurtbayseramik.com/en/products/alder
 sira: 30
+gorseller:
+  - gorsel: /src/assets/urunler/yurtbay-seramik-ahsap-gorunumlu-1.webp
+    alt_metin: Yurtbay Pine ahşap görünümlü seramik zemin, mutfak uygulaması
+    kaynak_url: https://www.yurtbayseramik.com/en/products/pine
+  - gorsel: /src/assets/urunler/yurtbay-seramik-ahsap-gorunumlu-2.webp
+    alt_metin: Yurtbay Alder ahşap görünümlü seramik uygulaması
+    kaynak_url: https://www.yurtbayseramik.com/en/products/alder
 ---
 ## Mağazamızdakiler
 - **20x120:** Alder Ice, Barkwood Bej ve Barkwood Ceviz, Massive Wood Meşe, Pine Grey ve Pine Meşe

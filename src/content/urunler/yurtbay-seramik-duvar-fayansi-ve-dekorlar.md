@@ -53,7 +53,12 @@ kaynak_sayfalar:
   - https://www.yurtbayseramik.com/en/products/bath-ceramics
   - https://www.yurtbayseramik.com/en/products/kitchen-between-bench-ceramics
   - https://www.yurtbayseramik.com/tr/sikca-sorulan-sorular
+  - https://www.yurtbayseramik.com/en/products/canyon
 sira: 40
+gorseller:
+  - gorsel: /src/assets/urunler/yurtbay-seramik-duvar-fayansi-ve-dekorlar-1.webp
+    alt_metin: Yurtbay Canyon taş desenli duvar seramiği, salon uygulaması
+    kaynak_url: https://www.yurtbayseramik.com/en/products/canyon
 ---
 ## Mağazamızdakiler
 - **Fon ve dekor takımları:** Afyon Beyaz (30x60, fon dekor, 60x60 high glossy), Cordia Fildişi ve Gri, Helena Antrasit ve Bej, Hera Beyaz, Lunetta Beyaz ve Siyah, Lupus Antrasit, Gri ve Dekor, Mioni Gri, Sterlina Fildişi ve Mat Gri (60x120)

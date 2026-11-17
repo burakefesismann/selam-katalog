@@ -26,7 +26,12 @@ ilgili_urunler:
 kaynak_sayfalar:
   - https://izeltas.com.tr/en/urunler/kategori/keski-ve-cekicler/keserler/
   - https://izeltas.com.tr/en/urunler/kategori/keski-ve-cekicler/cekicler/
+  - https://izeltas.com.tr/en/urunler/keski-ve-cekicler/keserler/6400-keser/
 sira: 40
+gorseller:
+  - gorsel: /src/assets/urunler/cekic-keser-balyoz-ve-kazma-1.webp
+    alt_metin: İzeltaş ahşap saplı keser
+    kaynak_url: https://izeltas.com.tr/en/urunler/keski-ve-cekicler/keserler/6400-keser/
 ---
 ## Mağazamızdakiler
 - **Master saplı çekiçler:** 100, 200, 300, 500, 1000, 1500, 2000 g

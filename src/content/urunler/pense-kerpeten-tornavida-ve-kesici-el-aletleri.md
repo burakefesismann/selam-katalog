@@ -33,7 +33,12 @@ kaynak_sayfalar:
   - https://izeltas.com.tr/en/urunler/kategori/boru-anahtarlari-ve-penseler/kargaburunlar/
   - https://izeltas.com.tr/en/urunler/kategori/tornavidalar/kontrol-kalemleri/
   - https://knipex-tools.com/products/pincers-and-nippers/concreters%27-nippers/concreters-nippers/9900280
+  - https://izeltas.com.tr/en/urunler/boru-anahtarlari-ve-penseler/penseler/3020-kombine-pense-opak-seri/
 sira: 30
+gorseller:
+  - gorsel: /src/assets/urunler/pense-kerpeten-tornavida-ve-kesici-el-aletleri-1.webp
+    alt_metin: İzeltaş opak seri kombine pense
+    kaynak_url: https://izeltas.com.tr/en/urunler/boru-anahtarlari-ve-penseler/penseler/3020-kombine-pense-opak-seri/
 ---
 ## Mağazamızdakiler
 - **İzeltaş:** opak pense, opak yan keski, kargaburun, kontrol kalemi, 160 mm pense + 190 mm kontrol kalemi seti, 6" izoleli kurbağacık

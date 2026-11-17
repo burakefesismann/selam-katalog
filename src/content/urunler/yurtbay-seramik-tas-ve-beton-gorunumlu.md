@@ -58,7 +58,16 @@ kaynak_sayfalar:
   - https://www.yurtbayseramik.com/en/products/stone-textured-ceramics
   - https://www.yurtbayseramik.com/en/products/concrete-textured-ceramics
   - https://www.yurtbayseramik.com/tr/sikca-sorulan-sorular
+  - https://www.yurtbayseramik.com/en/products/amazon
+  - https://www.yurtbayseramik.com/en/products/core
 sira: 20
+gorseller:
+  - gorsel: /src/assets/urunler/yurtbay-seramik-tas-ve-beton-gorunumlu-1.webp
+    alt_metin: Yurtbay Amazon taş görünümlü seramik, banyo uygulaması
+    kaynak_url: https://www.yurtbayseramik.com/en/products/amazon
+  - gorsel: /src/assets/urunler/yurtbay-seramik-tas-ve-beton-gorunumlu-2.webp
+    alt_metin: Yurtbay Core beton görünümlü zemin seramiği
+    kaynak_url: https://www.yurtbayseramik.com/en/products/core
 ---
 ## Mağazamızdakiler
 - **60x120:** Amazon Bone ve Amazon Gri (lappato), Aztec Mat Gri, Beyond Mat Sand, Core Mat Gri, Everest Mat Gri ve Mat Taupe, Java Kahve ve Java Siyah, Lunar Mat Pure Beyaz ve Lunar Urban Mat Gri, Mardin Stone Mat Krem, Omnia Gri ve Omnia Sage, Quasar Mat Siyah, Quest Gri ve Quest Ivory, Travertino Roma Mat Bianco ve Mat Sand, Tierra Mat Gri

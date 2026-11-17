@@ -54,8 +54,13 @@ kaynak_sayfalar:
   - https://www.yurtbayseramik.com/en/products/marble-textured-ceramics
   - https://www.yurtbayseramik.com/en/products/60X120-dimension-ceramics
   - https://www.yurtbayseramik.com/tr/sikca-sorulan-sorular
+  - https://www.yurtbayseramik.com/en/products/anderson
 sira: 10
 one_cikan: true
+gorseller:
+  - gorsel: /src/assets/urunler/yurtbay-seramik-mermer-gorunumlu-1.webp
+    alt_metin: Yurtbay Anderson mermer görünümlü parlak zemin seramiği, salon uygulaması
+    kaynak_url: https://www.yurtbayseramik.com/en/products/anderson
 ---
 ## Mağazamızdakiler
 - **60x120:** Anderson Beyaz (parlak), Atlantic Koyu Mavi, Aurello Gold, Invisible Book-A, Invisible Gri (satinato), Karen Beyaz (lappato), Layra Bianco, Maison Gri ve Maison Kemik (lappato), Meis Bej, Nuvolato Onyx Beyaz (satinato), Osso Bej, Panda Marble Beyaz (parlak), Pasific Beyaz, Statuario Nuovo (parlak)

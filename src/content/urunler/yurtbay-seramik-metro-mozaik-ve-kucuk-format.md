@@ -41,7 +41,16 @@ kaynak_sayfalar:
   - https://www.yurtbayseramik.com/en/products/7_5X15-dimension-ceramics
   - https://www.yurtbayseramik.com/en/products/20X20-dimension-ceramics
   - https://www.yurtbayseramik.com/en/products/21_5X25-dimension-ceramics
+  - https://www.yurtbayseramik.com/en/products/king-metro
+  - https://www.yurtbayseramik.com/en/products/avenue
 sira: 50
+gorseller:
+  - gorsel: /src/assets/urunler/yurtbay-seramik-metro-mozaik-ve-kucuk-format-1.webp
+    alt_metin: Yurtbay King Metro beyaz metro seramik, mutfak tezgah arası
+    kaynak_url: https://www.yurtbayseramik.com/en/products/king-metro
+  - gorsel: /src/assets/urunler/yurtbay-seramik-metro-mozaik-ve-kucuk-format-2.webp
+    alt_metin: Yurtbay Avenue desenli küçük format zemin seramiği
+    kaynak_url: https://www.yurtbayseramik.com/en/products/avenue
 ---
 ## Mağazamızdakiler
 - **7,5x15 metro:** King Metro Siyah

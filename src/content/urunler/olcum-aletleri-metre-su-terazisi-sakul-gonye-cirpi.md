@@ -28,6 +28,10 @@ ilgili_urunler:
 kaynak_sayfalar:
   - https://izeltas.com.tr/en/urunler/kategori/genel-el-aletleri/olcu-aletleri/
 sira: 60
+gorseller:
+  - gorsel: /src/assets/urunler/olcum-aletleri-metre-su-terazisi-sakul-gonye-cirpi-1.webp
+    alt_metin: İzeltaş 5 m şerit metre
+    kaynak_url: https://izeltas.com.tr/en/urunler/kategori/genel-el-aletleri/olcu-aletleri/
 ---
 ## Mağazamızdakiler
 - **Şerit metreler:** Master 3, 5 ve 10 m; İzeltaş 3 ve 5 m; Dekor 5 ve 10 m
