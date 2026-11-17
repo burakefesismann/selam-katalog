@@ -21,6 +21,12 @@ ilgili_urunler:
   - eca-lavabo-bataryalari
 sira: 18
 markalar: []
+gorseller:
+  - gorsel: /src/assets/urunler/batarya-yedek-parca-ve-baglantilari-1.webp
+    alt_metin: Krom batarya uzatma parçası
+    kaynak_url: https://eca.com.tr/urun/uzatma-3-cm
+kaynak_sayfalar:
+  - https://eca.com.tr/urun/uzatma-3-cm
 ---
 ## Mağazamızdaki parçalar
 - Batarya dirsek takımı

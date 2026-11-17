@@ -20,6 +20,12 @@ ilgili_urunler:
   - mesa-dus-setleri
 sira: 13
 markalar: []
+gorseller:
+  - gorsel: /src/assets/urunler/dus-setleri-diger-markalar-1.webp
+    alt_metin: Mafsallı el duşu seti
+    kaynak_url: https://kas.com.tr/product/raflesya-selale-mafsalli-dus-seti/
+kaynak_sayfalar:
+  - https://kas.com.tr/product/raflesya-selale-mafsalli-dus-seti/
 ---
 ## Mağazamızdaki modeller
 - **Piyano Lumena** duş seti (siyah, gri)

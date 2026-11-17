@@ -19,6 +19,12 @@ ilgili_urunler:
   - firat-pprc-ek-parcalari
   - pense-kerpeten-tornavida-ve-kesici-el-aletleri
 sira: 10
+gorseller:
+  - gorsel: /src/assets/urunler/tesisatci-aletleri-boru-anahtari-boru-makasi-boru-cikarici-1.webp
+    alt_metin: İzeltaş Stillson tipi boru anahtarı
+    kaynak_url: https://izeltas.com.tr/en/urunler/kategori/boru-anahtarlari-ve-penseler/boru-anahtarlari/
+kaynak_sayfalar:
+  - https://izeltas.com.tr/en/urunler/kategori/boru-anahtarlari-ve-penseler/boru-anahtarlari/
 ---
 ## Mağazamızdakiler
 - **Maşalı boru anahtarları:** 1" (Elta), 1,5" ve 2"

@@ -21,6 +21,12 @@ ilgili_urunler:
   - eca-musluklar-ve-taharet-musluklari
   - kas-musluklar-ve-taharet-musluklari
 sira: 12
+gorseller:
+  - gorsel: /src/assets/urunler/musluklar-diger-markalar-1.webp
+    alt_metin: Siyah taharet musluğu
+    kaynak_url: https://kas.com.tr/product/taharet-muslugu-derya/
+kaynak_sayfalar:
+  - https://kas.com.tr/product/taharet-muslugu-derya/
 ---
 ## Mağazamızdaki modeller
 - **Hazal:** uzun aç-kapa, ekonomik, mix aç-kapa, çiftli taharet musluğu; kapak takımı

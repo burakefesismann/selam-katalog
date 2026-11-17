@@ -27,7 +27,12 @@ ilgili_urunler:
   - eca-eviye-mutfak-bataryalari
 kaynak_sayfalar:
   - https://www.firat.com/cmsfiles/certificates/firatboru-genel-urun-katalogu.pdf
+  - https://eca.com.tr/urun/lavabo-eviye-sifonu-plastik-tasli
 sira: 20
+gorseller:
+  - gorsel: /src/assets/urunler/sifonlar-ve-kadalar-1.webp
+    alt_metin: Taslı lavabo-eviye sifonu
+    kaynak_url: https://eca.com.tr/urun/lavabo-eviye-sifonu-plastik-tasli
 ---
 ## Mağazamızdaki parçalar
 - **Lavabo ve eviye sifonları:** körüklü, uzun körüklü, çamaşır makinesi çıkışlı, taslı, çöp makinesi bağlantılı; Visam lavabo sifonu

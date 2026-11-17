@@ -22,6 +22,12 @@ ilgili_urunler:
   - eca-lavabo-bataryalari
   - kas-lavabo-bataryalari
 sira: 17
+gorseller:
+  - gorsel: /src/assets/urunler/diger-marka-bataryalar-1.webp
+    alt_metin: Krom banyo bataryası
+    kaynak_url: https://kas.com.tr/product/lilyum-banyo-bataryasi/
+kaynak_sayfalar:
+  - https://kas.com.tr/product/lilyum-banyo-bataryasi/
 ---
 ## Mağazamızdaki modeller
 - **Foma Voyage** mat beyaz banyo bataryası

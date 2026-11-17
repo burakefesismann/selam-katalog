@@ -20,6 +20,12 @@ ilgili_urunler:
   - serel-bedensel-engelli-ve-cocuk-serisi
 sira: 20
 markalar: []
+gorseller:
+  - gorsel: /src/assets/urunler/banyo-aksesuarlari-diger-markalar-1.webp
+    alt_metin: Mat siyah tekli havlu askılığı
+    kaynak_url: https://eca.com.tr/urun/rita-askilik-tekli-mat-siyah
+kaynak_sayfalar:
+  - https://eca.com.tr/urun/rita-askilik-tekli-mat-siyah
 ---
 ## Mağazamızdaki ürünler
 - **Tutunma barları:** mafsallı; yere ve duvara monte edilen model
