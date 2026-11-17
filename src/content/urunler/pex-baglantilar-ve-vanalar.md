@@ -4,6 +4,8 @@ kart_tipi: grup
 kategori: pex
 markalar:
   - firat
+  - kas
+  - eca
 kisa_aciklama: 16 mm PEX ve PE-RT borular için rakor, dirsek, manşon ve klips; PEX çıkışlı radyatör vanaları.
 one_cikanlar:
   - 16 mm boru bağlantıları
@@ -22,6 +24,8 @@ ilgili_urunler:
 kaynak_sayfalar:
   - https://www.firat.com/cmsfiles/certificates/9896/pex-metal-brosuru.pdf
   - https://www.firat.com/en-us/indoor-piping-system/cold-hot-water-pipe-systems/pex-product-range-1/mobile-systems/assembly
+  - https://www.eca.com.tr/rv3-pex
+  - https://kas.com.tr/product/kose-rakorlu-radyator-vana/
 sira: 10
 ---
 ## Mağazamızdaki parçalar
@@ -32,5 +36,8 @@ sira: 10
 
 ## Nerede kullanılır
 Mobil ısıtma sistemlerinde (radyatörlerin kollektörden tek tek beslendiği sistem) ve yerden ısıtmada boruların kollektöre, radyatöre ve dişli tesisata bağlanmasında. Mobil sistemde her radyatörün ayrı gidiş ve dönüşü olduğu için radyatörler arasında ısı dengesizliği oluşmaz.
+
+## Üreticilerin belirttikleri
+- **ECA RV3 PEX:** köşe ve düz tip, Ø16x2 mm boru bağlantılı; çalışma basıncı 10 bar, en yüksek çalışma sıcaklığı 120 °C.
 
 Bu grupta boru bulunmaz; yerden ısıtma ve mobil sistem borusu için Fırat PE-RT borulara bakın.

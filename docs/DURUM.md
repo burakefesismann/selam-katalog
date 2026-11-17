@@ -3,7 +3,7 @@
 > Her oturumun başında oku, sonunda güncelle. Kısa tut.
 
 ## Şu an
-- Aktif görev: — (F4.3 bitti)
+- Aktif görev: — (Paketler 002–006 içeride)
 - Site: https://burakefesismann.github.io/selam-katalog/
 - Faz: 3 — Gerçek içerik ve görseller
 
@@ -29,7 +29,7 @@
   Mağazada çekilebilir ya da üreticiden yüksek çözünürlüklü görsel istenebilir. Güncel liste: `npm run gorsel:rapor`.
 - [ ] docs/FIRMA.md'deki ⚠ işaretli bilgilerin teyidi (özellikle Güneysu Depo telefonu, e-posta)
 - [x] Şubelerin kesin Google Haritalar linkleri (2026-11-15 kullanıcı verdi, ayarlar/genel.yaml)
-- [ ] Marka ve ürün listesi (beyin takımı içerik paketine çevirecek)
+- [~] Marka ve ürün listesi: paketler 001–006 geldi (189/213 kart). Kalan: Paket 007 (Hırdavat & Nalburiye, 003 NOTLAR'ında)
 - [ ] Beyin takımından: seramik yapıştırıcı sihirbazı kuralları (format: docs/ICERIK-SEMASI.md §9) → F4.1
 
 ## Netleşenler (2026-11-14)
@@ -165,6 +165,12 @@
   (CHROME_PATH=/usr/bin/google-chrome) → upload-pages-artifact → deploy. "Kataloğu indir" linki: footer + /urunler.
   Kart sayısı arttıkça PDF büyür (görseller 420 px); 213 kartta ~15–20 MB olabilir → gerekirse görsel boyutu düşür.
 
+- Paketler 002–006 (2026-11-17): kullanıcı v2/v3 klasörleri verdi → `icerik-paketleri/00X-…/`e kopyalandı, dış klasörler
+  silindi. Sıra 002→006, her biri önizleme + --uygula, hepsi 0 hata/0 uyarı. Sadece 002'de 2 kart birleşti (PEX, kollektör →
+  ECA/KAS markaları). Build 0 hata, 294 sayfa dizinde. Görseller: 24/189 ürün, 43 marka logosuz → büyük iş (`/gorsel`).
+- YAPILMADI (kullanıcıya soruldu): her paketin NOTLAR.md > "Beyin takımı kararları (KATALOG-YAPISI'na işlenmeli)" maddeleri
+  docs/KATALOG-YAPISI.md'ye henüz işlenmedi.
+
 ## Öneriler
 - (Plana eklenmesi önerilen fikirler. Kullanıcı onaylarsa PLAN.md'ye taşınır.)
 - PDF katalogda bazı sayfaların altı boş (kart satırı sığmayınca yeni sayfaya geçiyor; 35 ürün = 16 sayfa).
@@ -204,3 +210,4 @@
 | 2026-11-16 | F4.2 QR etiketleri | /qr, kategori bazlı A4 etiket sayfaları; QR okuma + PDF baskı testi ✓ | F4.2 |
 | 2026-11-16 | F4.3 PDF katalog | /katalog-yazdir + katalog:pdf + Actions'ta otomatik PDF; indir linkleri | F4.3 |
 | 2026-11-16 | F4.4 atlandı | Kullanıcı kararı: WhatsApp şimdilik yok | — |
+| 2026-11-17 | Paketler 002–006 | 5 paket içe aktarıldı (154 yeni kart), build 0 hata; görseller bekliyor | F3.3–F3.7 |

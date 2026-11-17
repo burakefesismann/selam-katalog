@@ -152,6 +152,8 @@ Bitince: PLAN'da `[x]` → DURUM.md güncelle → commit + push → kullanıcıy
   Aynı slug varsa üzerine yazmadan önce raporlar.
 - [x] **F3.2 Paket 001: Fırat + Baumit** — içe aktar, TASLAK örnekleri gerçek içerikle değiştir,
   ardından `/gorsel eksikler` ile görselleri tamamla.
+- [x] **F3.3–F3.7 Paketler 002–006** (2026-11-17): 002 Banyo & Mutfak (v3), 003 Tesisat tamamlama (v2), 004 Yapı Kimyasalları +
+  Yalıtım & Çatı (v2), 005 Boya (v2), 006 Seramik + El Aletleri (v2) içe aktarıldı → 189 kart, 45 marka, 60 kategori. Görseller: ayrı iş.
 - [ ] **F3.x Diğer paketler** — geldikçe buraya eklenir (her paket: içe aktar → `/gorsel eksikler` → rapor).
 
 ---
