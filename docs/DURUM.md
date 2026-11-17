@@ -29,7 +29,9 @@
   Mağazada çekilebilir ya da üreticiden yüksek çözünürlüklü görsel istenebilir. Güncel liste: `npm run gorsel:rapor`.
 - [ ] docs/FIRMA.md'deki ⚠ işaretli bilgilerin teyidi (özellikle Güneysu Depo telefonu, e-posta)
 - [x] Şubelerin kesin Google Haritalar linkleri (2026-11-15 kullanıcı verdi, ayarlar/genel.yaml)
-- [~] Marka ve ürün listesi: paketler 001–006 geldi (189/213 kart). Kalan: Paket 007 (Hırdavat & Nalburiye, 003 NOTLAR'ında)
+- [~] Marka ve ürün listesi: paketler 001–006 geldi → KATALOG'un 213 kartından 188'i sitede (1 kart ikiye bölündü:
+  Tesisatçı Aletleri + KBS Çiroz → sitede 189 ürün). Kalan 25 kartın HEPSİ Hırdavat & Nalburiye → Paket 007 (beyin takımında).
+  KATALOG-YAPISI'nda 14 kart eski adıyla duruyor (paket NOTLAR'ındaki ad/yer kararları henüz işlenmedi).
 - [ ] Beyin takımından: seramik yapıştırıcı sihirbazı kuralları (format: docs/ICERIK-SEMASI.md §9) → F4.1
 
 ## Netleşenler (2026-11-14)
