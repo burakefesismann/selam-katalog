@@ -32,6 +32,10 @@ kaynak_sayfalar:
   - https://www.filliboya.com/urun/yol-cizgi-boyasi
   - https://www.filliboya.com/uploads/FILLIBOYAYOLCIZGIKATALOG.pdf
 sira: 10
+gorseller:
+  - gorsel: /src/assets/urunler/filli-yol-cizgi-boyalari-1.webp
+    alt_metin: Filli Boya Yol Çizgi Boyası teneke kutusu
+    kaynak_url: https://www.filliboya.com/urun/yol-cizgi-boyasi
 ---
 ## Mağazamızdakiler
 - **Su bazlı yol çizgi boyası** — beyaz ve sarı, 20 kg

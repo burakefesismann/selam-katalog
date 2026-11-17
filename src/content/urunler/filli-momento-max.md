@@ -34,8 +34,13 @@ kaynak_sayfalar:
   - https://www.filliboya.com/uploads/TDS_MOMENTOMAX.pdf
   - https://www.filliboya.com/uploads/5_MOMENTO_MAX_TEKNIK_BULTEN.pdf
   - https://www.filliboya.com/urunler/boya/ic-cephe-boyalari
+  - https://www.filliboya.com/urun/momento-max
 sira: 10
 one_cikan: true
+gorseller:
+  - gorsel: /src/assets/urunler/filli-momento-max-1.webp
+    alt_metin: Filli Boya Momento Max iç cephe boyası kovası
+    kaynak_url: https://www.filliboya.com/urun/momento-max
 ---
 ## Mağazamızdakiler
 - Momento Max: 2,5 lt, 7,5 lt ve 15 lt; istediğiniz renkte hazırlanır

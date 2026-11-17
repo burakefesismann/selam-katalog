@@ -36,6 +36,10 @@ kaynak_sayfalar:
   - https://www.filliboya.com/urun/betakril-tavan
   - https://www.filliboya.com/uploads/17_BETAKRIL_TAVAN_TEKNIK_BULTEN_MART2025.pdf
 sira: 10
+gorseller:
+  - gorsel: /src/assets/urunler/filli-betakril-tavan-boyasi-1.webp
+    alt_metin: Filli Boya Betakril Tavan boyası kovası
+    kaynak_url: https://www.filliboya.com/urun/betakril-tavan
 ---
 ## Üreticinin belirttikleri
 - Akrilik emülsiyon esaslı, beyaz, örtücü, özel olarak formüle edilmiş iç cephe tavan boyasıdır.

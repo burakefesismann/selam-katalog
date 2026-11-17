@@ -36,6 +36,10 @@ kaynak_sayfalar:
   - https://www.filliboya.com/urunler/boya/dis-cephe-boyalari
 sira: 10
 one_cikan: true
+gorseller:
+  - gorsel: /src/assets/urunler/filli-aqusto-silan-1.webp
+    alt_metin: Filli Boya Aqusto Silan dış cephe boyası kovası
+    kaynak_url: https://www.filliboya.com/urun/aqusto-silan
 ---
 ## Mağazamızdakiler
 - Aqusto Silan: 2,5 lt, 7,5 lt ve 15 lt; istediğiniz renkte hazırlanır

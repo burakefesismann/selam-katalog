@@ -36,6 +36,10 @@ kaynak_sayfalar:
   - https://www.filliboya.com/uploads/3_1-FilliBoyaSutut-TDS-TR.pdf
   - https://www.filliboya.com/uploads/YAPI-KIMYASALLARI-BROSUR%202023.pdf
 sira: 40
+gorseller:
+  - gorsel: /src/assets/urunler/filli-sutut-1.webp
+    alt_metin: Filli Boya Sutut kovası
+    kaynak_url: https://www.filliboya.com/urun/filli-boya-sutut
 ---
 ## Ne işe yarar?
 Fırça ya da rulo ile sürülerek derzsiz, esnek ve su geçirmez bir kaplama oluşturan likit su yalıtımıdır. Teras, balkon ve çatıdaki küçük-orta ölçekli sızıntı sorunlarında ve oluk, baca dibi gibi detaylarda pratik bir çözümdür.

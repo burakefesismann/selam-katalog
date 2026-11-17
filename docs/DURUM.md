@@ -3,25 +3,31 @@
 > Her oturumun başında oku, sonunda güncelle. Kısa tut.
 
 ## Şu an
-- Aktif görev: — (sıradaki: /gorsel eksikler oturum 4)
+- Aktif görev: — (sıradaki: /gorsel eksikler oturum 5)
 - Site: https://burakefesismann.github.io/selam-katalog/
 - Faz: 3 — Gerçek içerik ve görseller
 
 ## Yarım kalan
-- **`/gorsel eksikler` — paketler 002–007 görselleri** (2026-11-17 başladı). Görselli: 53/214. Paket 001'in 11 kartı kullanıcıda (dokunma).
+- **`/gorsel eksikler` — paketler 002–007 görselleri** (2026-11-17 başladı). Görselli: 64/214. Paket 001'in 11 kartı kullanıcıda (dokunma).
   - Yapılan (oturum 1): 10 ECA/Serel kartı (lavabo/eviye bataryası, havlupan, panel radyatör, termostatik vana, küresel vana,
     ara musluk, Serel klozet/pisuvar/lavabo).
   - Yapılan (oturum 2): banyo aksesuarı, Y filtre, pürjör, rakor, tepe duşu, ara kesme (krom), Tiera ankastre, Life banyo
     bataryası, çekvalf (2 görsel, küçük → K14 büyütüldü), basınç düşürücü (ECA'da büyük görsel yok → KAS resmi görseli).
   - Yapılan (oturum 3): emniyet ventili, gaz vanası, şiber vana, su flexi, KAS banyo/lavabo bataryası, KAS duş seti (440 px →
     K14), Serel engelli seti, Serel gömme rezervuar (2: rezervuar K14 + krom panel).
+  - Yapılan (oturum 4): doğalgaz flex seti, KAS taharet musluğu, Filli 9 kart (Aqusto Silan, Bepermo, Betakril Tavan, Kapatan,
+    Momento Max, Nucleus, Panzer Astar, Sutut, Yol Çizgi).
+  - Filli yöntemi: filliboya.com/urun/<ad> → og:image (cloudinary) içindeki asıl adres www.filliboya.com/uploads/<DOSYA>.png (1000–1920 px).
+  - **Sika sorunu:** tur.sika.com ürün sayfalarının çoğunda ürün görseli YOK (Sika Boom 141/180/541, SikaSwell; AnchorFix'te
+    sadece 280 px kullanım çizimi). Sika-1, Plastocrete N, Separol W3 için TR ürün sayfası bulunamadı (sadece PDF). Sika
+    kartları büyük olasılıkla mağaza fotoğrafı ister; ya da başka ülke sika.com sitesi (ambalaj TR ile aynıysa) denenebilir.
   - KAS yöntemi: ürün sayfasının og:image'ı = tam boy görsel (genelde 1024 px). Kategori sayfalarında ürün linkleri tam adres.
   - ECA ipucu: altın/siyah varyant yerine krom sürümü seç (`urun/...-1` çoğu zaman kromdur). Bazı ECA sayfaları (ör.
     basınç düşürücü) sadece liste sayfası, büyük görsel yok; ilk `urun/` linki ALAKASIZ ürün olabilir → görselle mutlaka kontrol et.
   - **ECA yöntemi:** eca.com.tr ürün sayfası (`/urun/...`) HTML'inde `data-src="https://eca.com.tr/image/webp?file=/uploads/images/big/…"`
     → bu adres 1200×1200 WebP verir (doğrudan /uploads/... yolu görsel değil). og:image sadece logo. Kategori sayfalarında
     ürün linkleri göreli (`href="urun/…"`). Tip 22/Tip 10 radyatör sayfalarında ürün-tek görsel yok (oda sahnesi kullanıldı).
-  - Sıradaki (kaynaklı, ~95): KAS kalan 3 (musluk/taharet, doğalgaz flex, su sayacı), yerden ısıtma aksesuarları, tur.sika.com 10, filliboya 9, marshallboya 7, onduline 6, fawori 6, izocam 6,
+  - Sıradaki (kaynaklı, ~85): marshallboya 7, yerden ısıtma aksesuarları, Filli Dalmaçyalı dübel (PDF), Sika 10 (bkz. sorun), onduline 6, fawori 6, izocam 6,
     yurtbayseramik 5, btm 3, izeltas 3, guralvit 3, firat 3, bosch 2, weber 2, diğer tekil.
   - Kaynaksız 70 kart (çoğu "çeşitli" hırdavat/tesisat kalemi) → büyük olasılıkla mağaza fotoğrafı; sona bırak, kullanıcıya listele.
 ## Sıradaki
@@ -44,7 +50,8 @@
   Mağazada çekilebilir ya da üreticiden yüksek çözünürlüklü görsel istenebilir. Güncel liste: `npm run gorsel:rapor`.
 - [ ] Şu ürünlerin fotoğrafı gerekli — mağazada çekilebilir ya da üreticiden istenebilir (resmi sitede görsel yok):
   Flatörler (ECA sayfası liste, görsel yok), Basınç düşürücü ECA modeli (KAS görseli kullanıldı), Serel Klozet Kapakları
-  (Blaze Slim sayfası yok), Rezervuar İç Takımları & Klozet Kapakları (Visam/Aryak), KAS Eviye Bataryaları (Berilyum sayfası yok).
+  (Blaze Slim sayfası yok), Rezervuar İç Takımları & Klozet Kapakları (Visam/Aryak), KAS Eviye Bataryaları (Berilyum sayfası yok),
+  Su Sayaçları & Kalorimetre (KAS sitesinde sayaç sayfası yok).
 - [ ] docs/FIRMA.md'deki ⚠ işaretli bilgilerin teyidi (özellikle Güneysu Depo telefonu, e-posta)
 - [x] Şubelerin kesin Google Haritalar linkleri (2026-11-15 kullanıcı verdi, ayarlar/genel.yaml)
 - [x] Marka ve ürün listesi: paketler 001–007 sitede (214 kart, 52 marka, 68 kategori). KATALOG-YAPISI siteden üretildi.
@@ -234,3 +241,4 @@
 | 2026-11-17 | /gorsel eksikler (1) | 10 ECA/Serel ürün görseli; 34/214 görselli | gorsel |
 | 2026-11-17 | /gorsel eksikler (2) | 10 ürün görseli (ECA 9 + KAS basınç düşürücü); 44/214 görselli | gorsel |
 | 2026-11-17 | /gorsel eksikler (3) | 9 ürün (KAS 7 + Serel 2); 53/214 görselli; 4 kart resmi görselsiz | gorsel |
+| 2026-11-17 | /gorsel eksikler (4) | 11 ürün (Filli 9 + KAS 2); 64/214 görselli; Sika sitesinde ürün görseli yok | gorsel |

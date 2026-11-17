@@ -30,6 +30,10 @@ kaynak_sayfalar:
   - https://www.filliboya.com/urun/nucleus
   - https://www.filliboya.com/uploads/TDS_Nucleus.pdf
 sira: 20
+gorseller:
+  - gorsel: /src/assets/urunler/filli-nucleus-dis-cephe-boyasi-1.webp
+    alt_metin: Filli Boya Nucleus dış cephe boyası kovası
+    kaynak_url: https://www.filliboya.com/urun/nucleus
 ---
 ## Mağazamızdakiler
 - Nucleus dış cephe boyası: 7,5 lt ve 15 lt; istediğiniz renkte hazırlanır

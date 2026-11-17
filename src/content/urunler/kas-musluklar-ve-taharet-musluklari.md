@@ -32,7 +32,12 @@ ilgili_urunler:
   - musluklar-diger-markalar
 kaynak_sayfalar:
   - https://kas.com.tr/en/prod-category/faucets/
+  - https://kas.com.tr/product/taharet-muslugu-sude-abs-volan/
 sira: 11
+gorseller:
+  - gorsel: /src/assets/urunler/kas-musluklar-ve-taharet-musluklari-1.webp
+    alt_metin: KAS Sude taharet musluğu (ABS volanlı)
+    kaynak_url: https://kas.com.tr/product/taharet-muslugu-sude-abs-volan/
 ---
 ## Mağazamızdaki modeller
 - **Taharet muslukları:** Sude, Derya, Papatya, Yağmur, Eko 3/8" (gri volanlı dahil), filtreli taharet musluğu

@@ -32,6 +32,10 @@ kaynak_sayfalar:
   - https://www.filliboya.com/urun/filli-boya-bepermo
   - https://www.filliboya.com/profesyonel-urunler/yapi-kimyasallari/harc-katkilari
 sira: 30
+gorseller:
+  - gorsel: /src/assets/urunler/filli-bepermo-1.webp
+    alt_metin: Filli Boya Bepermo su geçirimsizlik toz katkı malzemesi torbası
+    kaynak_url: https://www.filliboya.com/urun/filli-boya-bepermo
 ---
 ## Ne işe yarar?
 Sıva, şap ve beton harcına karıştırılan toz katkıdır. Harcın içinde su itici bir yapı oluşturarak suyun ve rutubetin harçtan geçmesini zorlaştırır.

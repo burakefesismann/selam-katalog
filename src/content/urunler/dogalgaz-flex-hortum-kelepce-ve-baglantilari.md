@@ -31,6 +31,10 @@ kaynak_sayfalar:
   - https://kas.com.tr/product/dogalgaz-macunu/
   - https://kas.com.tr/blog/flex-esnek-paslanmaz-metal-hortum-ve-hortum-takimlari-nedir-nerelerde-kullanilir/
 sira: 20
+gorseller:
+  - gorsel: /src/assets/urunler/dogalgaz-flex-hortum-kelepce-ve-baglantilari-1.webp
+    alt_metin: KAS makaronlu paslanmaz doğalgaz sayaç bağlantı flex seti
+    kaynak_url: https://kas.com.tr/product/sayac-baglanti-flex-seti-makaronlu-paslanmaz/
 ---
 ## Mağazamızdakiler
 - **KAS gaz flexleri:** kombi gaz flexi 3/4-1/2 (30 cm, makaronlu); 3/4-3/4 (30 cm; 50 cm paslanmaz makaronlu; 60 cm makaronlu); örgülü gaz flexi 1/2 (100, 125, 150 cm)

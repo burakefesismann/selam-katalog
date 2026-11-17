@@ -33,6 +33,10 @@ kaynak_sayfalar:
   - https://www.filliboya.com/urun/kapatan
   - https://www.filliboya.com/ilham-veren-fikirler/tavan-nasil-boyanir
 sira: 20
+gorseller:
+  - gorsel: /src/assets/urunler/filli-kapatan-1.webp
+    alt_metin: Filli Boya Kapatan leke örtücü boya kutusu
+    kaynak_url: https://www.filliboya.com/urun/kapatan
 ---
 ## Ne işe yarar?
 Duvar ve tavandaki bazı lekeler normal boyanın içinden zamanla yeniden görünür: sigara (nikotin) sarısı, soba ve mutfak isi, rutubet lekesi, keçeli kalem ve ruj izleri gibi. Kapatan bu lekelerin üzerine sürülerek onları kapatır ve tekrar yüzeye çıkmalarını önler; ardından istenen boya uygulanır.

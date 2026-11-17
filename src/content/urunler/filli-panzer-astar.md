@@ -28,7 +28,12 @@ ilgili_urunler:
 kaynak_sayfalar:
   - https://filliboya.com/uploads/TDS_PanzerAstar.pdf
   - https://www.filliboya.com/uploads/TDS_PANZER_ASTAR.pdf
+  - https://www.filliboya.com/urun/panzer-astar
 sira: 10
+gorseller:
+  - gorsel: /src/assets/urunler/filli-panzer-astar-1.webp
+    alt_metin: Filli Boya Panzer Astar kovası
+    kaynak_url: https://www.filliboya.com/urun/panzer-astar
 ---
 ## Ne işe yarar?
 Dış cephe boyasından önce sürülen astardır: son kat boyanın yüzeye tutunmasını güçlendirir, yüzeyin emiciliğini dengeler. Panzer Astar'ın öne çıkan yanı, sıvadan gelen alkali tuzların boya yüzeyine çıkıp beyaz lekeler oluşturmasını (tuz kusması) engellemeye yönelik olmasıdır.
