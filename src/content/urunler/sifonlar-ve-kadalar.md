@@ -19,6 +19,7 @@ olculer:
   - Klozet kadası Ø110
   - Duş teknesi sifonu Ø50 çıkış
   - Şohben borusu 2 m ve 10 m
+  - Sifon adaptör contası Ø50
 ilgili_urunler:
   - firat-pvc-atik-su-ek-parcalari
   - yer-suzgecleri-ve-dus-kanallari
@@ -35,9 +36,11 @@ sira: 20
 - Pisuvar sifonu
 - Krom lavabo tapası, lavabo pompası
 - Şohben borusu (2 m ve 10 m)
+- **Sifon adaptör contası:** Ø50 PVC çatala takılır, lavabo sifonunun borusu içine geçer
 
 ## Ne işe yarar?
 - **Sifon:** içinde su tutan kıvrım sayesinde gider borusundaki kokunun içeri çıkmasını engeller. Çamaşır makinesi çıkışlı sifonla makinenin pis suyu lavabo giderine bağlanır.
 - **Duş teknesi sifonu (duş trobleni):** duş teknesinin gider deliğine takılır, suyu Ø50 gider borusuna verir ve koku kesici görevi görür.
 - **Kada:** klozetin çıkışını gider borusuna bağlar. Eksantrik kada, klozet çıkışı ile gider borusu tam karşı karşıya gelmediğinde eksen kaçıklığını; körüklü kada, mesafe ve açı farkını karşılar.
 - **Lavabo pompası:** tıkanan lavabo ve giderlerin açılmasında kullanılır.
+- **Adaptör conta:** lavabo sifonunun borusunu Ø50 PVC çatala (gider) sızdırmaz biçimde bağlar.

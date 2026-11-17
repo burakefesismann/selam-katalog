@@ -20,7 +20,7 @@ olculer:
   - Arazi metresi 30 / 50 m
   - Su terazisi 40 / 60 / 80 / 100 cm
   - Şakul 500 / 700 g
-  - Gönye 40 cm
+  - Gönye 40 cm (alüminyum) / 600 mm (Master)
 ilgili_urunler:
   - mala-ispatula-ve-siva-aletleri
   - seramik-seviye-tesviye-sistemi
@@ -35,7 +35,7 @@ sira: 60
 - **Su terazileri:** Dekor 40, 60, 80, 100 cm; BMI 40, 60, 80 cm
 - **Şakul (ipli):** 500 ve 700 g
 - **Çırpı ipleri:** battal, büyük, orta, renkli; Master boyalı (kırmızı)
-- **Gönye:** alüminyum, 40 cm
+- **Gönye:** alüminyum 40 cm; Master 600 mm
 
 ## Kullanım ipuçları
 - Su terazisini düzenli olarak kontrol edin: bir yüzeye koyup okuyun, 180° çevirip aynı yere tekrar koyun; kabarcık iki seferde aynı yerde olmalı.

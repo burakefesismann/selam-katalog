@@ -3,7 +3,7 @@
 > Her oturumun başında oku, sonunda güncelle. Kısa tut.
 
 ## Şu an
-- Aktif görev: — (Paketler 002–006 içeride)
+- Aktif görev: F3.8 — Paket 007 (Hırdavat) + elle düzeltmeler + KATALOG-YAPISI
 - Site: https://burakefesismann.github.io/selam-katalog/
 - Faz: 3 — Gerçek içerik ve görseller
 

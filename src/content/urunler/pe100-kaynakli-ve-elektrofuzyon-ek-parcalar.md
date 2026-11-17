@@ -34,7 +34,7 @@ sira: 20
 - Elektrofüzyon (EF) manşon Ø50; EF dirsek 45° Ø75
 - 45° ve 90° dirsekler (Ø75, Ø125, Ø225, Ø450)
 - Eşit TE (Ø125, Ø200) ve inegal TE (200-125, 225-110, 450-225)
-- Redüksiyon 125-110
+- Redüksiyonlar 125-110 ve 200-125 (PN 16)
 - Flanş adaptörü (Ø225, Ø450)
 
 ## Kaynak yöntemleri
