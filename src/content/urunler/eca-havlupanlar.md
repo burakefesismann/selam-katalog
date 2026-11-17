@@ -30,6 +30,10 @@ kaynak_sayfalar:
   - https://eca.com.tr/urun/beyaz-boyali-havlupan
   - https://eca.com.tr/isitma-sogutma/radyatorler/havlupan/krom-kapli-havlupan
 sira: 20
+gorseller:
+  - gorsel: /src/assets/urunler/eca-havlupanlar-1.webp
+    alt_metin: ECA beyaz boyalı havlupan
+    kaynak_url: https://eca.com.tr/urun/beyaz-boyali-havlupan
 ---
 ## Mağazamızdaki ölçüler
 **Beyaz** ve **krom** havlupanlar; genişlik x yükseklik **500x800**, **500x1100**, **600x800** ve **600x1100 mm**.

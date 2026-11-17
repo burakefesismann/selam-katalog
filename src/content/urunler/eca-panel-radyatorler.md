@@ -35,6 +35,10 @@ kaynak_sayfalar:
   - https://eca.com.tr/uploads/documents//eca/fde/57ffa367-bcea-4570-a547-49032b9af0f8.pdf
 sira: 10
 one_cikan: true
+gorseller:
+  - gorsel: /src/assets/urunler/eca-panel-radyatorler-1.webp
+    alt_metin: Oda duvarına takılmış ECA beyaz panel radyatör (Tip 22)
+    kaynak_url: https://eca.com.tr/urun/tip-22
 ---
 ## Mağazamızdaki ölçüler
 Beyaz, standart E.C.A. panel radyatörler. Yükseklik **600 mm**; boy **400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500, 1600, 1800 ve 2000 mm**.

@@ -42,6 +42,10 @@ kaynak_sayfalar:
   - https://eca.com.tr/urun/asma-klozet-8
 sira: 10
 one_cikan: true
+gorseller:
+  - gorsel: /src/assets/urunler/serel-klozetler-1.webp
+    alt_metin: Serel beyaz asma klozet
+    kaynak_url: https://eca.com.tr/urun/asma-klozet-8
 ---
 ## Mağazamızdaki modeller
 - **Nita:** asma (Irmak ya da Zeta kapaklı), kanalsız (Blaze ya da Irmak kapaklı), duvara sıfır BTW (Beta kapak + Spil), kare kanallı, köşeli BTW

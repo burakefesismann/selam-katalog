@@ -51,6 +51,10 @@ kaynak_sayfalar:
   - https://eca.com.tr/yapi/armaturler/banyo-mutfak/batarya-musluk
 sira: 10
 one_cikan: true
+gorseller:
+  - gorsel: /src/assets/urunler/eca-lavabo-bataryalari-1.webp
+    alt_metin: ECA Luna krom lavabo bataryası
+    kaynak_url: https://eca.com.tr/urun/luna-lavabo-bataryasi-1
 ---
 ## Mağazamızdaki seriler
 - **Tiera:** krom-beyaz

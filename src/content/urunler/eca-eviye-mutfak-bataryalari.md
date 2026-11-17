@@ -46,6 +46,10 @@ kaynak_sayfalar:
   - https://eca.com.tr/urun/nita-spiralli-eviye-bataryasi
   - https://eca.com.tr/yapi/armaturler/banyo-ve-mutfak-armaturleri/eviye-bataryalari/spylos
 sira: 12
+gorseller:
+  - gorsel: /src/assets/urunler/eca-eviye-mutfak-bataryalari-1.webp
+    alt_metin: ECA Nita spiralli krom eviye bataryası
+    kaynak_url: https://eca.com.tr/urun/nita-spiralli-eviye-bataryasi
 ---
 ## Mağazamızdaki modeller
 - **Nita:** esnek uçlu (kırmızı, beyaz, siyah), spiralli, spiralli mat siyah ve yaylı

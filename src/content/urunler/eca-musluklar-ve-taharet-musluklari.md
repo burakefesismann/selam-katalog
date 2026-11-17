@@ -31,6 +31,10 @@ kaynak_sayfalar:
   - https://eca.com.tr/urun/filtreli-ara-musluk-2
   - https://www.eca.com.tr/yapi-ara-taharet-muslugu
 sira: 10
+gorseller:
+  - gorsel: /src/assets/urunler/eca-musluklar-ve-taharet-musluklari-1.webp
+    alt_metin: ECA filtreli krom ara musluk
+    kaynak_url: https://eca.com.tr/urun/filtreli-ara-musluk-2
 ---
 ## Mağazamızdaki modeller
 - **Filtreli ara musluklar:** lüks, 1/2", kısa tip ve poşetli

@@ -44,6 +44,10 @@ kaynak_sayfalar:
   - https://eca.com.tr/yapi/sihhi-tesisat/cekvalfler
 sira: 30
 one_cikan: true
+gorseller:
+  - gorsel: /src/assets/urunler/su-kuresel-vanalari-1.webp
+    alt_metin: ECA kırmızı kelebek kollu rakorlu küresel vana
+    kaynak_url: https://eca.com.tr/urun/rakorlu-kuresel-valf-kirmizikelebek-volan-1-nikel
 ---
 ## Mağazamızdakiler
 - **KAS su küresel vana:** 1/2", 3/4", 1", 1-1/4", 1-1/2", 2" ve 4"

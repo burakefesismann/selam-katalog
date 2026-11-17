@@ -39,6 +39,10 @@ kaynak_sayfalar:
   - https://kas.com.tr/en/product/thermostatic-insert/
 sira: 20
 one_cikan: true
+gorseller:
+  - gorsel: /src/assets/urunler/radyator-ve-termostatik-vanalar-1.webp
+    alt_metin: ECA termostatik başlıklı köşe radyatör vanası
+    kaynak_url: https://eca.com.tr/urun/termostatik-radyator-valfi-kose-12-trv-4
 ---
 ## Mağazamızdakiler
 - **E.C.A.:** RV2 köşe 1/2", RV3 köşe 1/2", krom radyatör valfi (silindir volanlı, köşe) 1/2", TRV4 termostatik köşe 1/2", 1" termokupl çıkışlı küresel valf

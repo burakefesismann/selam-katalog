@@ -53,7 +53,12 @@ kaynak_sayfalar:
   - https://eca.com.tr/yapi/seramik-saglik-gerecleri/lavabolar/tezgah-ustu-set
   - https://eca.com.tr/urun/tezgah-ustu-lavabo
   - https://eca.com.tr/urun/tezgah-ustu-lavabo-9
+  - https://eca.com.tr/urun/nita-koseli-tezgah-ustu-lavabo
 sira: 11
+gorseller:
+  - gorsel: /src/assets/urunler/serel-lavabolar-1.webp
+    alt_metin: Serel Nita köşeli tezgah üstü lavabo
+    kaynak_url: https://eca.com.tr/urun/nita-koseli-tezgah-ustu-lavabo
 ---
 ## Mağazamızdaki modeller
 - **Standart duvar lavaboları:** 28x35, 35x45, 38,5x45,5 ve 40x51 cm; yarım ayaklar

@@ -36,6 +36,10 @@ kaynak_sayfalar:
   - https://eca.com.tr/urun/pisuvar-3
   - https://www.eca.com.tr/yapi-pisuarlar
 sira: 15
+gorseller:
+  - gorsel: /src/assets/urunler/serel-pisuvar-ve-hela-taslari-1.webp
+    alt_metin: Serel beyaz seramik pisuvar
+    kaynak_url: https://eca.com.tr/urun/pisuvar-3
 ---
 ## Mağazamızdakiler
 - **Amphora** fotoselli pisuvar
