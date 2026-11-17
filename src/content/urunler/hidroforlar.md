@@ -35,6 +35,10 @@ kaynak_sayfalar:
   - https://www.baymak.com.tr/terimler-sozlugu
 sira: 20
 one_cikan: true
+gorseller:
+  - gorsel: /src/assets/urunler/hidroforlar-1.webp
+    alt_metin: Baymak JET serisi tanklı paket hidrofor
+    kaynak_url: https://www.baymak.com.tr/en/products/water-technology/boosters
 ---
 ## Mağazamızdaki modeller
 - **Baymak JET 82M** paket hidrofor, 20 lt ve 50 lt tanklı

@@ -39,8 +39,16 @@ kaynak_sayfalar:
   - https://www.orkabanyo.com/tr/urunler/moonlight-120-cm-cift-cekmeceli-banyo-dolabi
   - https://www.orkabanyo.com/en/collections/rate
   - https://www.orkabanyo.com/tr/medya
+  - https://www.orkabanyo.com/en/orka-collections/moonlight
 sira: 10
 one_cikan: true
+gorseller:
+  - gorsel: /src/assets/urunler/orka-banyo-dolaplari-1.webp
+    alt_metin: Orka Moonlight 120 cm antrasit banyo dolabı ve boy dolabı, banyo uygulaması
+    kaynak_url: https://www.orkabanyo.com/en/orka-collections/moonlight
+  - gorsel: /src/assets/urunler/orka-banyo-dolaplari-2.webp
+    alt_metin: Orka Moonlight 120 cm beyaz banyo dolabı ve boy dolabı
+    kaynak_url: https://www.orkabanyo.com/en/orka-collections/moonlight
 ---
 ## Mağazamızdaki modeller
 - **Moonlight:** 120 cm takım ve 40 cm boy dolabı

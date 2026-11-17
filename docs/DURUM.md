@@ -3,12 +3,12 @@
 > Her oturumun başında oku, sonunda güncelle. Kısa tut.
 
 ## Şu an
-- Aktif görev: — (sıradaki: /gorsel eksikler oturum 8)
+- Aktif görev: — (sıradaki: /gorsel eksikler oturum 9 — kaynaksız kartlar ya da marka logoları)
 - Site: https://burakefesismann.github.io/selam-katalog/
 - Faz: 3 — Gerçek içerik ve görseller
 
 ## Yarım kalan
-- **`/gorsel eksikler` — paketler 002–007 görselleri** (2026-11-17 başladı). Görselli: 88/214. Paket 001'in 11 kartı kullanıcıda (dokunma).
+- **`/gorsel eksikler` — paketler 002–007 görselleri** (2026-11-17 başladı). Görselli: 91/214. Paket 001'in 11 kartı kullanıcıda (dokunma).
   - Yapılan (oturum 1): 10 ECA/Serel kartı (lavabo/eviye bataryası, havlupan, panel radyatör, termostatik vana, küresel vana,
     ara musluk, Serel klozet/pisuvar/lavabo).
   - Yapılan (oturum 2): banyo aksesuarı, Y filtre, pürjör, rakor, tepe duşu, ara kesme (krom), Tiera ankastre, Life banyo
@@ -22,6 +22,14 @@
   - Yapılan (oturum 6): İzocam 4 (boru kılıfı, çatı şiltesi, manto taşyünü, ara bölme; her biri ürün + uygulama, 690 px → K14),
     Onduline bitümlü membran (Bituline Prima, 620 px → K14), Fawori Optimix (karbonlu EPS, 800 px).
   - Yapılan (oturum 7): Yurtbay 5 (resmi mekân fotoğrafları, 1920 px), İzeltaş 3 (keser, opak pense, 5 m metre).
+  - Yapılan (oturum 8): Baymak JET hidrofor, Kale pirinç asma kilit, Orka Moonlight (2). Fırat yerden ısıtma montaj
+    fotoğrafları 223 px + numara bindirmeli → kullanılmadı. Beybi: sitede Zebra yalnız kırmızı-siyah (mağazadaki mavi-siyah) → kullanılmadı.
+    Fırat kombi seti / sifon: sitede ürün sayfası yok (sadece katalog PDF).
+  - **DURUM (2026-11-17):** Kaynaklı kartlar büyük ölçüde bitti. Kalan 53 kaynaklı kartın hepsi zor: Paket 001'in 11 kartı (kullanıcıda),
+    Sika 10, Onduline 5, Güral 3, BTM 3, Weber 2, Bosch 2, Fırat 3, ECA/KAS birkaç (flatör, Blaze, Berilyum, su sayacı), Marshall
+    Akrikor/tiner, Filli dübel, İzocam XPS/Terrawool. 70 kaynaksız kart: çoğu Master (17) ve markasız hırdavat/İSG kalemleri
+    (çivi, halat, eldiven, yelek...) → mağaza fotoğrafı. Sıradaki seçenekler: küçük markalar (Samir, Mesa, KL Pro, Domark, Dekor,
+    Yapar...) resmi sitelerde aranabilir; ya da ~50 logosuz marka için logo toplanabilir (`npm run gorsel:rapor`).
   - Yurtbay yöntemi: seri sayfası yurtbayseramik.com/en/products/<seri> (bulmak için /en/search-results?q=<seri>) →
     image.yurtbayseramik.com/mekan/mekan_1140/<SERİ>_n.jpg; mekan_1920 klasörü 1920×1080 verir. Tek karo görseli yok.
     İzeltaş: kategori sayfasındaki wp-content/uploads PNG'ler (1000–1500 px); dosya adında ş varsa ayrışık yaz (s%CC%A7).
@@ -73,7 +81,8 @@
   Su Sayaçları & Kalorimetre (KAS sitesinde sayaç sayfası yok), Marshall Akrikor dış cephe (resmi görsel 160 px),
   Onduline astar/bant/Ondulikit/mahya ve Çukurova-Fondaline (resmi sayfa yok), İzocam Maxibord XPS ve Terrawool (doğru ambalaj
   belirsiz), Güral klozet/lavabo/aksesuar (site görselleri indirilemiyor — tarayıcıdan kaydedip verebilirsiniz),
-  Weber Dress ince sıva ve yüzey sertleştirici (site bot koruması), BTM 3 kart (site açılmıyor).
+  Weber Dress ince sıva ve yüzey sertleştirici (site bot koruması), BTM 3 kart (site açılmıyor), Beybi/AKY iş eldivenleri (resmi
+  görsel renk uyuşmuyor), Fırat yerden ısıtma aksesuarları / kombi seti / sifon-kada (resmi sayfa yok).
 - [ ] docs/FIRMA.md'deki ⚠ işaretli bilgilerin teyidi (özellikle Güneysu Depo telefonu, e-posta)
 - [x] Şubelerin kesin Google Haritalar linkleri (2026-11-15 kullanıcı verdi, ayarlar/genel.yaml)
 - [x] Marka ve ürün listesi: paketler 001–007 sitede (214 kart, 52 marka, 68 kategori). KATALOG-YAPISI siteden üretildi.
@@ -267,3 +276,4 @@
 | 2026-11-17 | /gorsel eksikler (5) | 10 ürün (Fawori 5 + Marshall 5); 74/214 görselli; Akrikor görseli çok küçük | gorsel |
 | 2026-11-17 | /gorsel eksikler (6) | 6 ürün (İzocam 4 + Onduline membran + Fawori Optimix), çoğu K14 büyütme; 80/214; Güral indirilemedi | gorsel |
 | 2026-11-17 | /gorsel eksikler (7) | 8 ürün (Yurtbay 5 mekân + İzeltaş 3); 88/214; Weber/BTM erişilemedi | gorsel |
+| 2026-11-17 | /gorsel eksikler (8) | 3 ürün (Baymak hidrofor, Kale asma kilit, Orka dolap); 91/214; kaynaklı kartlar bitti, kalanlar zor/kaynaksız | gorsel |

@@ -26,7 +26,12 @@ kaynak_sayfalar:
   - https://kalekilit.com.tr/en/kale-kilit-locks
   - https://kalekilit.com.tr/en/comporate/about-the-company
   - https://kalekilit.com.tr/en/faq
+  - https://kalekilit.com.tr/en/kale-locks/hardware-group/padlocks/kale-padlock-brass-40-mm
 sira: 10
+gorseller:
+  - gorsel: /src/assets/urunler/asma-kilitler-1.webp
+    alt_metin: Kale pirinç asma kilit
+    kaynak_url: https://kalekilit.com.tr/en/kale-locks/hardware-group/padlocks/kale-padlock-brass-40-mm
 ---
 ## Mağazamızdakiler
 - **Kale Kilit:** 32, 38, 63 mm
