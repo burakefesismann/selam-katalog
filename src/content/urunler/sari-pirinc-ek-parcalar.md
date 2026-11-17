@@ -26,6 +26,12 @@ ilgili_urunler:
   - rakor-ve-uzatmalar
 sira: 30
 markalar: []
+gorseller:
+  - gorsel: /src/assets/urunler/sari-pirinc-ek-parcalar-1.webp
+    alt_metin: Sarı pirinç redüksiyon (iç-dış dişli) ek parçası
+    kaynak_url: https://kas.com.tr/en/product/brass-reduction-nipple-m-f/
+kaynak_sayfalar:
+  - https://kas.com.tr/en/product/brass-reduction-nipple-m-f/
 ---
 ## Mağazamızdaki parçalar
 - **Nipel:** 3/8"'den 2"'ye; **orantılı nipel** (iki ucu farklı çaplı): 3/8-1/2, 1/2-3/4, 3/4-1, 1-1/2

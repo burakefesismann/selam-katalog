@@ -20,6 +20,12 @@ ilgili_urunler:
   - emniyet-ventilleri
 sira: 60
 markalar: []
+gorseller:
+  - gorsel: /src/assets/urunler/manometre-ve-termometre-1.webp
+    alt_metin: Pakkens MG 063 alttan bağlantılı manometre
+    kaynak_url: https://www.pakkens.com/en/product/mg-063-4
+kaynak_sayfalar:
+  - https://www.pakkens.com/en/product/mg-063-4
 ---
 ## Mağazamızdakiler
 - **Pakkens manometre:** 63 mm (0–16 bar) ve 100 mm (0–16 bar)

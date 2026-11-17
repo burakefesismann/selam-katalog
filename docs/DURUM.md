@@ -3,12 +3,12 @@
 > Her oturumun başında oku, sonunda güncelle. Kısa tut.
 
 ## Şu an
-- Aktif görev: — (sıradaki: /gorsel eksikler oturum 13)
+- Aktif görev: — (/gorsel internetten toplama büyük ölçüde bitti; sıradaki: logolar ya da F4.5)
 - Site: https://burakefesismann.github.io/selam-katalog/
 - Faz: 3 — Gerçek içerik ve görseller
 
 ## Yarım kalan
-- **`/gorsel eksikler` — paketler 002–007 görselleri** (2026-11-17 başladı). Görselli: 121/214. Paket 001'in 11 kartı kullanıcıda (dokunma).
+- **`/gorsel eksikler` — paketler 002–007 görselleri** (2026-11-17 başladı). Görselli: 123/214. Paket 001'in 11 kartı kullanıcıda (dokunma).
   - Yapılan (oturum 1): 10 ECA/Serel kartı (lavabo/eviye bataryası, havlupan, panel radyatör, termostatik vana, küresel vana,
     ara musluk, Serel klozet/pisuvar/lavabo).
   - Yapılan (oturum 2): banyo aksesuarı, Y filtre, pürjör, rakor, tepe duşu, ara kesme (krom), Tiera ankastre, Life banyo
@@ -36,6 +36,14 @@
   - Yapılan (oturum 12, Akyüzler — Master ürünleri): KBS çiroz (Master kollu çiroz anahtarı; soluk yazı kalıntısı açık
     pikseller beyaza çekilerek temizlendi), sprey/yapıştırıcı/silikon (3), vidalar, trapez vidası, seramik kesme (Class+Titan),
     sapan/spanzet, etriye kolu + elektrod, klemens. Master'ın resmi sitesi yok (master.com.tr = Master Kauçuk, başka firma).
+  - Yapılan (oturum 13): Pakkens MG 063 manometre (görsel ürün PDF'inden çıkarıldı: pakkens.com/en/product-export/<kod>
+    → PDF; 430×594 görsel + ayrı alfa maskesi birleştirildi, K14), KAS pirinç redüksiyon (sarı pirinç ek parçalar).
+  - **DURUM (oturum 13 sonu):** İnternetten bulunabilecekler büyük ölçüde tükendi. Kalan 91 kart: Paket 001'in 11'i (kullanıcıda),
+    siteleri engelli/görselsiz markalar (Sika 10, Onduline 5, Güral 3+1, BTM 3, Weber 2, Bosch 2, Fırat 3, ECA/KAS birkaç,
+    Mesa 2, Dömark 2, Samir duşakabin, UKS, Genç tiner, Hazal, Foma...) ve markasız tesisat/nalbur kalemleri (galvaniz, siyah boru,
+    patent dirsek/flanş, rögar, PE depo, drenaj kanalı, yer süzgeci, conta/teflon, batarya yedek, dübel, hortum, fırça/rulo,
+    sprey boya, halat, menteşe, kalıp yağı, keski, seviye sistemi, profil, trapez saç, yangın tüpü...). Commons'ta bunlara
+    uygun temiz CC0/PD ürün fotoğrafı yok. Öneri: kalanlar mağazada toplu çekilsin (liste: `npm run gorsel:rapor`).
   - Dikkat: akyuzler.tsv'de ürün ADLARI çift kodlanmış (Ã‡ gibi) → Türkçe büyük harfli kelimeler (ÇİROZ) regex'le bulunmaz;
     ASCII parçayla ara (ör. "IROZ") ya da dosya adıyla çalış.
     Akyüzler'de kalan uygun adaylar az: KBS çiroz kartı için Master kollu çiroz anahtarı (07_04_2017_10_08_1491548918.jpg),
@@ -311,3 +319,4 @@
 | 2026-11-17 | /gorsel eksikler (10) | Akyüzler Nalburiye dizini (961 ürün) çıkarıldı; 8 hırdavat kartı; 105/214 | gorsel |
 | 2026-11-17 | /gorsel eksikler (11) | Akyüzler dizininden 8 hırdavat kartı daha; 113/214 | gorsel |
 | 2026-11-17 | /gorsel eksikler (12) | Akyüzler dizininden 8 kart (Master ürünleri ağırlıklı); 121/214 | gorsel |
+| 2026-11-17 | /gorsel eksikler (13) | Pakkens manometre + pirinç ek parça; 123/214; internet kaynakları büyük ölçüde tükendi | gorsel |
