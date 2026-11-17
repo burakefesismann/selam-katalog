@@ -154,6 +154,8 @@ Bitince: PLAN'da `[x]` → DURUM.md güncelle → commit + push → kullanıcıy
   ardından `/gorsel eksikler` ile görselleri tamamla.
 - [x] **F3.3–F3.7 Paketler 002–006** (2026-11-17): 002 Banyo & Mutfak (v3), 003 Tesisat tamamlama (v2), 004 Yapı Kimyasalları +
   Yalıtım & Çatı (v2), 005 Boya (v2), 006 Seramik + El Aletleri (v2) içe aktarıldı → 189 kart, 45 marka, 60 kategori. Görseller: ayrı iş.
+- [x] **F3.8 Paket 007 Hırdavat & Nalburiye** (2026-11-17): 25 kart + 3 karta elle ek; KATALOG-YAPISI siteden yeniden üretildi
+  (`node scripts/katalog-yapisi.ts`). KATALOG'un tamamı sitede: 214 kart, 52 marka, 68 kategori.
 - [ ] **F3.x Diğer paketler** — geldikçe buraya eklenir (her paket: içe aktar → `/gorsel eksikler` → rapor).
 
 ---

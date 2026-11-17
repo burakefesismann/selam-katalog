@@ -3,7 +3,7 @@
 > Her oturumun başında oku, sonunda güncelle. Kısa tut.
 
 ## Şu an
-- Aktif görev: F3.8 — Paket 007 (Hırdavat) + elle düzeltmeler + KATALOG-YAPISI
+- Aktif görev: — (KATALOG'un tamamı sitede: 214 kart)
 - Site: https://burakefesismann.github.io/selam-katalog/
 - Faz: 3 — Gerçek içerik ve görseller
 
@@ -29,9 +29,7 @@
   Mağazada çekilebilir ya da üreticiden yüksek çözünürlüklü görsel istenebilir. Güncel liste: `npm run gorsel:rapor`.
 - [ ] docs/FIRMA.md'deki ⚠ işaretli bilgilerin teyidi (özellikle Güneysu Depo telefonu, e-posta)
 - [x] Şubelerin kesin Google Haritalar linkleri (2026-11-15 kullanıcı verdi, ayarlar/genel.yaml)
-- [~] Marka ve ürün listesi: paketler 001–006 geldi → KATALOG'un 213 kartından 188'i sitede (1 kart ikiye bölündü:
-  Tesisatçı Aletleri + KBS Çiroz → sitede 189 ürün). Kalan 25 kartın HEPSİ Hırdavat & Nalburiye → Paket 007 (beyin takımında).
-  KATALOG-YAPISI'nda 14 kart eski adıyla duruyor (paket NOTLAR'ındaki ad/yer kararları henüz işlenmedi).
+- [x] Marka ve ürün listesi: paketler 001–007 sitede (214 kart, 52 marka, 68 kategori). KATALOG-YAPISI siteden üretildi.
 - [ ] Beyin takımından: seramik yapıştırıcı sihirbazı kuralları (format: docs/ICERIK-SEMASI.md §9) → F4.1
 
 ## Netleşenler (2026-11-14)
@@ -170,8 +168,9 @@
 - Paketler 002–006 (2026-11-17): kullanıcı v2/v3 klasörleri verdi → `icerik-paketleri/00X-…/`e kopyalandı, dış klasörler
   silindi. Sıra 002→006, her biri önizleme + --uygula, hepsi 0 hata/0 uyarı. Sadece 002'de 2 kart birleşti (PEX, kollektör →
   ECA/KAS markaları). Build 0 hata, 294 sayfa dizinde. Görseller: 24/189 ürün, 43 marka logosuz → büyük iş (`/gorsel`).
-- YAPILMADI (kullanıcıya soruldu): her paketin NOTLAR.md > "Beyin takımı kararları (KATALOG-YAPISI'na işlenmeli)" maddeleri
-  docs/KATALOG-YAPISI.md'ye henüz işlenmedi.
+- Paket 007 (2026-11-17): 25 kart, 7 marka, 8 alt kategori; NOTLAR "elle eklenecek" 3 düzeltme yapıldı (ölçüm aletleri gönye,
+  PE100 200-125 redüksiyon, sifon adaptör contası). KATALOG-YAPISI.md `scripts/katalog-yapisi.ts` ile siteden yeniden üretildi
+  (eski el notları "· çeşitli", "(doğalgaz kelepçeleri)" düştü — sitede tutulmuyor). Görseller: ~24/214 ürün görselli.
 
 ## Öneriler
 - (Plana eklenmesi önerilen fikirler. Kullanıcı onaylarsa PLAN.md'ye taşınır.)
@@ -213,3 +212,4 @@
 | 2026-11-16 | F4.3 PDF katalog | /katalog-yazdir + katalog:pdf + Actions'ta otomatik PDF; indir linkleri | F4.3 |
 | 2026-11-16 | F4.4 atlandı | Kullanıcı kararı: WhatsApp şimdilik yok | — |
 | 2026-11-17 | Paketler 002–006 | 5 paket içe aktarıldı (154 yeni kart), build 0 hata; görseller bekliyor | F3.3–F3.7 |
+| 2026-11-17 | F3.8 Paket 007 | Hırdavat 25 kart + 3 elle düzeltme; KATALOG-YAPISI siteden üretildi; 214 kart | F3.8 |

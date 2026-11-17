@@ -104,6 +104,7 @@ Kullanıcı `/devam` yazarsa bu adımlar + sıradaki görev yapılır. Diğer ko
   `%LOCALAPPDATA%\selam-araclar\realesrgan\` (models alt klasörüyle) içine koy. Intel ekran kartında `-t 128` şart (komut veriyor).
 - `npm run katalog:pdf` — (build sonrası) `/katalog-yazdir/` sayfasını A4 PDF'e basar → `dist/selam-insaat-urun-katalogu.pdf`.
   Yerel sunucu + başsız Chrome/Edge (`CHROME_PATH`). Actions her yayında çalıştırır. Tarayıcıyı EŞZAMANSIZ çağır (sync → kilitlenir).
+- `node scripts/katalog-yapisi.ts` — docs/KATALOG-YAPISI.md kart listesini siteden yeniden üretir (paket kararları işlendikten sonra).
 - `npm run gorsel:rapor` — görselsiz / küçük / kaynaksız / kayıp görselli ürünler, logosuz markalar, görselsiz ana kategoriler.
 
 ## Proje yapısı ve teknik notlar
