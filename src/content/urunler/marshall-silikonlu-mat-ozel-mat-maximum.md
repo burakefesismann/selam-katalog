@@ -37,6 +37,10 @@ kaynak_sayfalar:
   - https://www.marshallboya.com/tr/products-listing/maximum-mat
   - https://www.marshallboya.com/tr/products-listing/maximum
 sira: 30
+gorseller:
+  - gorsel: /src/assets/urunler/marshall-silikonlu-mat-ozel-mat-maximum-1.webp
+    alt_metin: Marshall Silikonlu Mat iç cephe boyası kovası
+    kaynak_url: https://www.marshallboya.com/tr/products-listing/silikonlu-mat
 ---
 ## Mağazamızdakiler
 - **Silikonlu Mat** — beyaz ve renkli

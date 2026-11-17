@@ -29,6 +29,10 @@ kaynak_sayfalar:
   - https://www.marshallboya.com/tr/products-listing/enamel-antipas
   - https://www.marshallboya.com/tr/products-listing/enamel-sentetik-astar
 sira: 30
+gorseller:
+  - gorsel: /src/assets/urunler/marshall-enamel-yagli-boya-ve-antipas-1.webp
+    alt_metin: Marshall Enamel Antipas gri kutusu
+    kaynak_url: https://www.marshallboya.com/tr/products-listing/enamel-antipas
 ---
 ## Mağazamızdakiler
 - **Enamel Antipas** — 0,75 lt ve 2,5 lt

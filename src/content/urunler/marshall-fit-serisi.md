@@ -35,6 +35,10 @@ kaynak_sayfalar:
   - https://www.marshallboya.com/tr/products-listing/fit-silikonlu-i%CC%87pek-mat
   - https://www.marshallboya.com/tr/products-listing/fit-parlak
 sira: 90
+gorseller:
+  - gorsel: /src/assets/urunler/marshall-fit-serisi-1.webp
+    alt_metin: Marshall Fit Silikonlu iç cephe boyası kovası
+    kaynak_url: https://www.marshallboya.com/tr/products-listing/fit-silikonlu
 ---
 ## Mağazamızdakiler
 - **Fit tavan boyası** — 10 kg, 17,5 kg

@@ -3,12 +3,12 @@
 > Her oturumun başında oku, sonunda güncelle. Kısa tut.
 
 ## Şu an
-- Aktif görev: — (sıradaki: /gorsel eksikler oturum 5)
+- Aktif görev: — (sıradaki: /gorsel eksikler oturum 6)
 - Site: https://burakefesismann.github.io/selam-katalog/
 - Faz: 3 — Gerçek içerik ve görseller
 
 ## Yarım kalan
-- **`/gorsel eksikler` — paketler 002–007 görselleri** (2026-11-17 başladı). Görselli: 64/214. Paket 001'in 11 kartı kullanıcıda (dokunma).
+- **`/gorsel eksikler` — paketler 002–007 görselleri** (2026-11-17 başladı). Görselli: 74/214. Paket 001'in 11 kartı kullanıcıda (dokunma).
   - Yapılan (oturum 1): 10 ECA/Serel kartı (lavabo/eviye bataryası, havlupan, panel radyatör, termostatik vana, küresel vana,
     ara musluk, Serel klozet/pisuvar/lavabo).
   - Yapılan (oturum 2): banyo aksesuarı, Y filtre, pürjör, rakor, tepe duşu, ara kesme (krom), Tiera ankastre, Life banyo
@@ -17,6 +17,11 @@
     K14), Serel engelli seti, Serel gömme rezervuar (2: rezervuar K14 + krom panel).
   - Yapılan (oturum 4): doğalgaz flex seti, KAS taharet musluğu, Filli 9 kart (Aqusto Silan, Bepermo, Betakril Tavan, Kapatan,
     Momento Max, Nucleus, Panzer Astar, Sutut, Yol Çizgi).
+  - Yapılan (oturum 5): Fawori 5 (Dönüşüm Astarı, Tavan Extra, Panel Kapı, Sentetik Antipas, Silikonlu Mat), Marshall 5
+    (Geçiş Astarı, Enamel Antipas, Fit Silikonlu, Silikonlu Mat, Tavan Boyası).
+  - Marshall yöntemi: ürün sayfasında msp.images.akzonobel.com/.../packshots/.../packshot_medium.(png|jpg) (3500 px). Akrikor
+    sayfalarında sadece 160 px var. Fawori yöntemi: sayfadaki ilk res.cloudinary.com/.../FAWORI/<ad>.jpg (1024 px);
+    `*_4x.webp` olanlar simge şeridi, ürün değil.
   - Filli yöntemi: filliboya.com/urun/<ad> → og:image (cloudinary) içindeki asıl adres www.filliboya.com/uploads/<DOSYA>.png (1000–1920 px).
   - **Sika sorunu:** tur.sika.com ürün sayfalarının çoğunda ürün görseli YOK (Sika Boom 141/180/541, SikaSwell; AnchorFix'te
     sadece 280 px kullanım çizimi). Sika-1, Plastocrete N, Separol W3 için TR ürün sayfası bulunamadı (sadece PDF). Sika
@@ -27,7 +32,8 @@
   - **ECA yöntemi:** eca.com.tr ürün sayfası (`/urun/...`) HTML'inde `data-src="https://eca.com.tr/image/webp?file=/uploads/images/big/…"`
     → bu adres 1200×1200 WebP verir (doğrudan /uploads/... yolu görsel değil). og:image sadece logo. Kategori sayfalarında
     ürün linkleri göreli (`href="urun/…"`). Tip 22/Tip 10 radyatör sayfalarında ürün-tek görsel yok (oda sahnesi kullanıldı).
-  - Sıradaki (kaynaklı, ~85): marshallboya 7, yerden ısıtma aksesuarları, Filli Dalmaçyalı dübel (PDF), Sika 10 (bkz. sorun), onduline 6, fawori 6, izocam 6,
+  - Sıradaki (kaynaklı, ~75): onduline 6, izocam 6, Fawori Optimix mantolama, Marshall sentetik tiner (sayfa yok),
+    yerden ısıtma aksesuarları, Filli Dalmaçyalı dübel (PDF), Sika 10 (bkz. sorun),
     yurtbayseramik 5, btm 3, izeltas 3, guralvit 3, firat 3, bosch 2, weber 2, diğer tekil.
   - Kaynaksız 70 kart (çoğu "çeşitli" hırdavat/tesisat kalemi) → büyük olasılıkla mağaza fotoğrafı; sona bırak, kullanıcıya listele.
 ## Sıradaki
@@ -51,7 +57,7 @@
 - [ ] Şu ürünlerin fotoğrafı gerekli — mağazada çekilebilir ya da üreticiden istenebilir (resmi sitede görsel yok):
   Flatörler (ECA sayfası liste, görsel yok), Basınç düşürücü ECA modeli (KAS görseli kullanıldı), Serel Klozet Kapakları
   (Blaze Slim sayfası yok), Rezervuar İç Takımları & Klozet Kapakları (Visam/Aryak), KAS Eviye Bataryaları (Berilyum sayfası yok),
-  Su Sayaçları & Kalorimetre (KAS sitesinde sayaç sayfası yok).
+  Su Sayaçları & Kalorimetre (KAS sitesinde sayaç sayfası yok), Marshall Akrikor dış cephe (resmi görsel 160 px).
 - [ ] docs/FIRMA.md'deki ⚠ işaretli bilgilerin teyidi (özellikle Güneysu Depo telefonu, e-posta)
 - [x] Şubelerin kesin Google Haritalar linkleri (2026-11-15 kullanıcı verdi, ayarlar/genel.yaml)
 - [x] Marka ve ürün listesi: paketler 001–007 sitede (214 kart, 52 marka, 68 kategori). KATALOG-YAPISI siteden üretildi.
@@ -242,3 +248,4 @@
 | 2026-11-17 | /gorsel eksikler (2) | 10 ürün görseli (ECA 9 + KAS basınç düşürücü); 44/214 görselli | gorsel |
 | 2026-11-17 | /gorsel eksikler (3) | 9 ürün (KAS 7 + Serel 2); 53/214 görselli; 4 kart resmi görselsiz | gorsel |
 | 2026-11-17 | /gorsel eksikler (4) | 11 ürün (Filli 9 + KAS 2); 64/214 görselli; Sika sitesinde ürün görseli yok | gorsel |
+| 2026-11-17 | /gorsel eksikler (5) | 10 ürün (Fawori 5 + Marshall 5); 74/214 görselli; Akrikor görseli çok küçük | gorsel |

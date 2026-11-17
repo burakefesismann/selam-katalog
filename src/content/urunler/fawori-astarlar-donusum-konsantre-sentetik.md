@@ -31,6 +31,10 @@ kaynak_sayfalar:
   - https://www.fawori.com/urunler/sentetik-urun-grubu/fawori-sentetik-astar
   - https://res.cloudinary.com/filli-boya-kurumsal-web-sitesi/image/upload/v1774424640/FAWORI/10_FAWORI_KONSANTRE_ASTAR_TEKNIK_BULTEN_MART_2025_6406064a38.pdf
 sira: 50
+gorseller:
+  - gorsel: /src/assets/urunler/fawori-astarlar-donusum-konsantre-sentetik-1.webp
+    alt_metin: Fawori Dönüşüm Astarı kovası
+    kaynak_url: https://www.fawori.com/urunler/ic-cephe-urun-grubu/fawori-donusum-astari
 ---
 ## Mağazamızdakiler
 - **Fawori Dönüşüm Astarı**, 20 kg

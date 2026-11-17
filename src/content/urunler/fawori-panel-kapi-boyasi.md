@@ -30,6 +30,10 @@ ilgili_urunler:
 kaynak_sayfalar:
   - https://www.fawori.com/urunler/ic-cephe-urun-grubu/fawori-panel-kapi-boyasi
 sira: 10
+gorseller:
+  - gorsel: /src/assets/urunler/fawori-panel-kapi-boyasi-1.webp
+    alt_metin: Fawori Panel Kapı Boyası kutusu
+    kaynak_url: https://www.fawori.com/urunler/ic-cephe-urun-grubu/fawori-panel-kapi-boyasi
 ---
 ## Üreticinin belirttikleri
 - Akrilik reçine esaslı, su bazlı, örtücü ve koruyucu son kat boyadır.

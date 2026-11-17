@@ -33,6 +33,10 @@ kaynak_sayfalar:
   - https://www.marshallboya.com/tr/products-listing/ge%C3%A7i%C5%9F-astar%C4%B1
   - https://www.marshallboya.com/tr/products-listing/i%CC%87zolasyon-astar%C4%B1
 sira: 60
+gorseller:
+  - gorsel: /src/assets/urunler/marshall-astarlar-akrikor-ortucu-gecis-izolasyon-1.webp
+    alt_metin: Marshall Geçiş Astarı duvar astarı kovası
+    kaynak_url: https://www.marshallboya.com/tr/products-listing/ge%C3%A7i%C5%9F-astar%C4%B1
 ---
 ## Mağazamızdakiler
 - **Akrikor Silikonlu+Örtücü Astar** — 2,5 lt, 10 kg, 20 kg

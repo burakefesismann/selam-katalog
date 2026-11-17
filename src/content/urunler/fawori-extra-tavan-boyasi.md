@@ -33,6 +33,10 @@ ilgili_urunler:
 kaynak_sayfalar:
   - https://www.fawori.com/urunler/ic-cephe-urun-grubu/fawori-tavan-extra
 sira: 20
+gorseller:
+  - gorsel: /src/assets/urunler/fawori-extra-tavan-boyasi-1.webp
+    alt_metin: Fawori Tavan Extra tavan boyası kovası
+    kaynak_url: https://www.fawori.com/urunler/ic-cephe-urun-grubu/fawori-tavan-extra
 ---
 ## Üreticinin belirttikleri
 - Akrilik kopolimer emülsiyon esaslı, beyaz, dekoratif iç cephe tavan boyasıdır.

@@ -32,6 +32,10 @@ ilgili_urunler:
 kaynak_sayfalar:
   - https://www.fawori.com/urunler/ic-cephe-urun-grubu/fawori-silikonlu-mat
 sira: 20
+gorseller:
+  - gorsel: /src/assets/urunler/fawori-silikonlu-mat-1.webp
+    alt_metin: Fawori Silikonlu Mat iç cephe boyası kovası
+    kaynak_url: https://www.fawori.com/urunler/ic-cephe-urun-grubu/fawori-silikonlu-mat
 ---
 ## Mağazamızdakiler
 - Fawori Silikonlu Mat — Mix 1 (10 ve 20 kg), Mix 2 (20 kg), Mix 3 (20 kg)

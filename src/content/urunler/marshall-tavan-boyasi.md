@@ -28,6 +28,10 @@ ilgili_urunler:
 kaynak_sayfalar:
   - https://www.marshallboya.com/tr/products-listing/tavan-boyas%C4%B1
 sira: 30
+gorseller:
+  - gorsel: /src/assets/urunler/marshall-tavan-boyasi-1.webp
+    alt_metin: Marshall Tavan Boyası kovası
+    kaynak_url: https://www.marshallboya.com/tr/products-listing/tavan-boyas%C4%B1
 ---
 ## Üreticinin belirttikleri
 - Su bazlı; iyi kapama ve mükemmel beyazlığa sahip, nefes alabilen, kolay uygulanan, tavan boyaması için özel olarak geliştirilmiş boyadır.

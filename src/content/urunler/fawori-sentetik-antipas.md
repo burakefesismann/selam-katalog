@@ -34,6 +34,10 @@ ilgili_urunler:
 kaynak_sayfalar:
   - https://www.fawori.com/urunler/sentetik-urun-grubu/fawori-sentetik-antipas
 sira: 20
+gorseller:
+  - gorsel: /src/assets/urunler/fawori-sentetik-antipas-1.webp
+    alt_metin: Fawori Sentetik Antipas kutusu
+    kaynak_url: https://www.fawori.com/urunler/sentetik-urun-grubu/fawori-sentetik-antipas
 ---
 ## Ne işe yarar?
 Antipas, metal yüzeye son kat boyadan önce sürülen pas önleyici astardır. Demir kapı, korkuluk, parmaklık ve çelik konstrüksiyon gibi yüzeylerde paslanmayı geciktirir ve son kat boyanın tutunmasını sağlar.
