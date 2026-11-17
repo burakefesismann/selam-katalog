@@ -26,6 +26,16 @@ ilgili_urunler:
   - firat-pvc-yagmur-olugu-sistemi
   - cati-ve-yalitim-yardimci-malzemeleri
 sira: 50
+gorseller:
+  - gorsel: /src/assets/urunler/trapez-sac-1.webp
+    alt_metin: Trapez profilli çatı saçı
+    kaynak_url: https://www.kjg.sk/en/products/roof-covering/trapezoidal-profiles-tr/aluzinc/natur/trapezoidal-profile-tr35-roof/trapezoidal-sheet-roof-tr-35a-5044
+  - gorsel: /src/assets/urunler/trapez-sac-2.webp
+    alt_metin: İstiflenmiş kiremit kırmızısı boyalı trapez saçlar
+    kaynak_url: https://genclertel.com.tr/trapez-sac
+kaynak_sayfalar:
+  - https://www.kjg.sk/en/products/roof-covering/trapezoidal-profiles-tr/aluzinc/natur/trapezoidal-profile-tr35-roof/trapezoidal-sheet-roof-tr-35a-5044
+  - https://genclertel.com.tr/trapez-sac
 ---
 ## Mağazamızdakiler
 - Trapez saç, 0,50 mm — 2, 3, 4, 5 ve 6 m boylarda

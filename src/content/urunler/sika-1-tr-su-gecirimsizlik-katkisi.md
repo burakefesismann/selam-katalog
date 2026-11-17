@@ -33,8 +33,13 @@ kaynak_sayfalar:
   - https://tur.sika.com/dms/getdocument.get/8d576193-811f-464f-8d26-692e93f40cba/sika_-1.pdf
   - https://tur.sika.com/tr/yapi/beton-ve-cimento-teknolojileri/beton-katkilari.html
   - https://tur.sika.com/tr/hakkimizda/biz-kimiz/tarihce.html
+  - https://irl.sika.com/en/products/6224.html
 sira: 10
 one_cikan: true
+gorseller:
+  - gorsel: /src/assets/urunler/sika-1-tr-su-gecirimsizlik-katkisi-1.webp
+    alt_metin: Sika-1 su geçirimsizlik katkısı bidonu
+    kaynak_url: https://irl.sika.com/en/products/6224.html
 ---
 ## Mağazamızdakiler
 - Sika-1 TR, 30 kg ve 6 kg

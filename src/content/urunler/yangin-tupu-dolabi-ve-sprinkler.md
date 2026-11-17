@@ -20,6 +20,16 @@ ilgili_urunler:
   - galvaniz-boru-ve-ek-parcalari
   - baret-gozluk-ve-kaynak-maskesi
 sira: 10
+gorseller:
+  - gorsel: /src/assets/urunler/yangin-tupu-dolabi-ve-sprinkler-1.webp
+    alt_metin: 6 kg kuru kimyevi tozlu yangın söndürme tüpü
+    kaynak_url: https://dalgicyangin.com.tr/yangin-sonduruculer/tozlu-yangin-sonduruculer/6kg-tozlu-yangin-sondurucu/
+  - gorsel: /src/assets/urunler/yangin-tupu-dolabi-ve-sprinkler-2.webp
+    alt_metin: Tüp gözlü, hortum makaralı yangın dolabı (kapakları açık)
+    kaynak_url: https://dalgicyangin.com.tr/yangin-sondurme-dolaplari/tup-bolmeli-yangin-dolabi-yatay/
+kaynak_sayfalar:
+  - https://dalgicyangin.com.tr/yangin-sonduruculer/tozlu-yangin-sonduruculer/6kg-tozlu-yangin-sondurucu/
+  - https://dalgicyangin.com.tr/yangin-sondurme-dolaplari/tup-bolmeli-yangin-dolabi-yatay/
 ---
 ## Mağazamızdakiler
 - Yangın söndürme tüpü 6 kg; 6 kg tüp dolumu

@@ -3,12 +3,12 @@
 > Her oturumun başında oku, sonunda güncelle. Kısa tut.
 
 ## Şu an
-- Aktif görev: — (sıradaki: /gorsel eksikler oturum 21)
+- Aktif görev: — (sıradaki: /gorsel eksikler oturum 22)
 - Site: https://burakefesismann.github.io/selam-katalog/
 - Faz: 3 — Gerçek içerik ve görseller
 
 ## Yarım kalan
-- **`/gorsel eksikler` — paketler 002–007 görselleri** (2026-11-17 başladı). Görselli: 165/214. Paket 001'in 11 kartı kullanıcıda (dokunma).
+- **`/gorsel eksikler` — paketler 002–007 görselleri** (2026-11-17 başladı). Görselli: 174/214. Paket 001'in 11 kartı kullanıcıda (dokunma).
   - Yapılan (oturum 1): 10 ECA/Serel kartı (lavabo/eviye bataryası, havlupan, panel radyatör, termostatik vana, küresel vana,
     ara musluk, Serel klozet/pisuvar/lavabo).
   - Yapılan (oturum 2): banyo aksesuarı, Y filtre, pürjör, rakor, tepe duşu, ara kesme (krom), Tiera ankastre, Life banyo
@@ -69,6 +69,14 @@
     Bardoline: kırmızı + yeşil şerit + gri çatı uygulaması; markasız). Commons hâlâ "Too many requests" (upload.wikimedia dahil).
     Sonuçsuz: Fondaline'ın web sayfalarında ürün fotoğrafı yok; Onduline TR temel sayfasındaki ruloların hepsi Bituline markalı;
     Ondulikit başka ülkede yok; ECA'da yerden ısıtma aksesuarı ve yer süzgeci yok; Dömark'ın sitesi bulunamadı; MBCC (mbcc.sika.com) boş sayfa.
+  - Yapılan (oturum 21, kullanıcı "internette bulunur, gayret"): Sika 6 kart — **Sika yöntemi:** irl.sika.com / gbr.sika.com
+    KATEGORİ sayfalarında dynamicmedia.sika.com ambalaj fotoğrafları var (ürün sayfasının kendisinde çoğu zaman yok). Tarama:
+    scratchpad sikadm.sh + kategori listesi (695 görsel adı). Sika-1 (5 L bidon), AnchorFix-1 (kart S1), Antisol-3E (kart E 200),
+    Sikaflex-11FC (mastik/silikon kartı), Sikafloor-2 SynTop (kart Sikafloor-3 — geçici), Separol (global broşür PDF'inden
+    püskürtme fotoğrafı; bidon görselinin etiketi büyütmede bozuldu → kullanılmadı). Yangın tüpü + dolap: dalgicyangin.com.tr
+    (resmi, 2080 px; .com değil .com.tr). Trapez saç: kjg.sk (Slovak üretici) + genclertel.com.tr. Tinerler (Genç): DYO resmi
+    sentetik tiner (K14). Sonuçsuz: BTM (btm.co hâlâ kapalı), Güral (satıcılar Trendyol/Koçtaş — engelli), Marshall tiner (sadece
+    Özbekistan şişe ambalajı), idefix yangın tüpleri (çoğu yazı bindirmeli). Sika'da kalan: Plastocrete, MonoPlug/596, SikaBond-181.
   - Sıradaki adaylar (gevşek kural): Sika (başka ülke sika.com sayfaları), Onduline (başka ülke siteleri), Bosch, Weber (başka
     ülke weber siteleri), rögar, dübel, fırça/rulo (Rulomas/Akyüzler), halat, yer süzgeci/duş kanalı (mesateknik.com), seviye
     sistemi, köşe profilleri, trapez saç, yangın tüpü, Mesa/Dömark/Samir duşakabin, Güral (tarayıcıdan kaydetme gerekli).
@@ -84,7 +92,7 @@
     anahtarlar/kaynak kartı için Master kaynak pensesi. Uygun karşılığı YOK: bahçe hortumu, Master sprey boya, Dekor fırça/rulo,
     iskota halat/iskele kelepçesi, Master kalıp yağı, kümes teli (Fermo), menteşe/kapı hidroliği.
   - **K15 (2026-11-17): kaynaklar genişletildi** — dağıtıcı/resmi sosyal medya, ücretsiz lisanslı (Commons/Pexels/Unsplash),
-    son çare pazaryerleri. Pazaryerinden / başka satıcıdan alınan "geçici görseller": polietilen-su-depolari (idefix), drenaj-kanallari-ve-izgaralar (bosta.com), master-panc-delik-testereleri (Bosch seti — Master görseli bulununca değiştir).
+    son çare pazaryerleri. Pazaryerinden / başka satıcıdan alınan "geçici görseller": polietilen-su-depolari (idefix), drenaj-kanallari-ve-izgaralar (bosta.com), master-panc-delik-testereleri (Bosch seti — Master görseli bulununca değiştir); başka model/marka (tür aynı): sika-floor-3 (Sikafloor-2 SynTop), tinerler (DYO), sika-antisol (Antisol-3E), sika-anchorfix-s1 (AnchorFix-1).
   - **Kullanıcı (2026-11-17, oturum 14): "resmi sitelerde takılı kalma"** — marka/renk birebir tutmasa da ürün türü doğruysa kullan (KARARLAR K15 eki).
   - Yapılan (oturum 9): Poelsan kaplin (poelsan.com), Sumak dalgıç (2, sumakpompa.com), Selsil yapıştırıcılar (2, selsil.com),
     KL Eco KE75115 + Hitachi G12SR4 (kalemakina.com), Samir Zümrüt 45 dolap ve oval duş teknesi (samirbanyo.com.tr).
@@ -362,3 +370,4 @@
 | 2026-11-17 | /gorsel eksikler (18) | 7 kart (sifon, batarya yedek, diğer marka aksesuar/musluk/duş/batarya, boru anahtarı); 156/214 | gorsel |
 | 2026-11-17 | /gorsel eksikler (19) | 6 kart (seviye sistemi, köşe profili, iskele kelepçesi, Onduline mahya/bant/astar); 162/214 | gorsel |
 | 2026-11-17 | /gorsel eksikler (20) | 3 kart (panç, Çukurova/Fondaline, UKS şıngıl); 165/214 | gorsel |
+| 2026-11-17 | /gorsel eksikler (21) | 9 kart (Sika 6, yangın tüpü/dolap, trapez saç, tiner); 174/214 | gorsel |

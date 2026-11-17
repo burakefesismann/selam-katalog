@@ -28,7 +28,12 @@ ilgili_urunler:
 kaynak_sayfalar:
   - https://tur.sika.com/dms/getdocument.get/14cad29e-3767-48b0-811b-5a00eebb7821/sika-separol-w-3.pdf
   - https://tur.sika.com/tr/yapi/beton-ve-cimento-teknolojileri/beton-katkilari.html
+  - https://zaf.sika.com/content/dam/dms/corporate/l/glo-mold-release-agent-sika-separol.pdf
 sira: 30
+gorseller:
+  - gorsel: /src/assets/urunler/sika-separol-w3-kalip-ayirici-1.webp
+    alt_metin: Kalıp yüzeyine kalıp ayırıcı püskürtülmesi
+    kaynak_url: https://zaf.sika.com/content/dam/dms/corporate/l/glo-mold-release-agent-sika-separol.pdf
 ---
 ## Ne işe yarar?
 Beton dökülmeden önce kalıp yüzeyine sürülür ya da püskürtülür. Kalıp söküldüğünde betonun kalıba yapışmasını önler: beton yüzeyi düzgün çıkar, kalıp da temiz kalarak yeniden kullanılabilir.

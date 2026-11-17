@@ -31,7 +31,12 @@ ilgili_urunler:
 kaynak_sayfalar:
   - https://tur.sika.com/dam/dms/tr01/q/Sikafloor%203%20Quartztop%20TR%20ile%20Kuvars%20Agregali%20Yuzey%20Sertlestirici%20Uygulamasi.pdf
   - https://tur.sika.com/tr/bilgikutuphanesi/Beton-Zeminler-icin-Kuru-Karisimli-Sertlestiriciler.html
+  - https://gbr.sika.com/en/construction/flooring/curing-agents-dryshakes.html
 sira: 10
+gorseller:
+  - gorsel: /src/assets/urunler/sika-floor-3-quartz-yuzey-sertlestirici-1.webp
+    alt_metin: Sikafloor serpme tip beton yüzey sertleştirici torbası
+    kaynak_url: https://gbr.sika.com/en/construction/flooring/curing-agents-dryshakes.html
 ---
 ## Mağazamızdakiler
 - Sikafloor-3 QuartzTop TR (eski adıyla Sika Chapdur), kırmızı, 25 kg

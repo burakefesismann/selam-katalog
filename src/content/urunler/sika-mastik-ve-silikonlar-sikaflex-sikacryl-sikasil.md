@@ -35,8 +35,13 @@ kaynak_sayfalar:
   - https://tur.sika.com/tr/yapi/sizdirmazlik-ve-yapistirma-cozumleri/sizdirmazlik-cozumleri/cephe-cozumleri/sikaflex-175-fcpu.html
   - https://tur.sika.com/tr/yapi/sizdirmazlik-ve-yapistirma-cozumleri/yapistiricilar/sikaflex-118-extremegrab.html
   - https://tur.sika.com/tr/bilgikutuphanesi/banyo-derzlerinde-sizdirmazlik.html
+  - https://irl.sika.com/en/construction/joint-sealing/elastic-adhesive-bonding.html
 sira: 10
 one_cikan: true
+gorseller:
+  - gorsel: /src/assets/urunler/sika-mastik-ve-silikonlar-sikaflex-sikacryl-sikasil-1.webp
+    alt_metin: Sikaflex mastik ve yapıştırıcı kartuşu
+    kaynak_url: https://irl.sika.com/en/construction/joint-sealing/elastic-adhesive-bonding.html
 ---
 ## Mağazamızdakiler
 - **Sikasil-115 GP** genel amaçlı silikon — beyaz ve şeffaf, 230 g

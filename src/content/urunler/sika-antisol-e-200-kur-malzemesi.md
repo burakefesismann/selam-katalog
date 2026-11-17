@@ -32,7 +32,12 @@ kaynak_sayfalar:
   - https://kaz.sika.com/content/dam/dms/kz01/c/PDS-Antisol-E200-KZ-2020.pdf
   - https://tur.sika.com/tr/yapi/beton-ve-cimento-teknolojileri/beton-katkilari.html
   - https://tur.sika.com/tr/bilgikutuphanesi/Su-Gecirimsiz-Beton-Sistemi.html
+  - https://irl.sika.com/en/construction/concrete-admixtures/high-early-strengthconcrete.html
 sira: 40
+gorseller:
+  - gorsel: /src/assets/urunler/sika-antisol-e-200-kur-malzemesi-1.webp
+    alt_metin: Sika Antisol beton kür malzemesi bidonu
+    kaynak_url: https://irl.sika.com/en/construction/concrete-admixtures/high-early-strengthconcrete.html
 ---
 ## Mağazamızdakiler
 - Sika Antisol E-200, 25 kg

@@ -31,7 +31,12 @@ ilgili_urunler:
 kaynak_sayfalar:
   - https://tur.sika.com/tr/yapi/grout-ve-ankraj-uygulamalari/kimyasal-ankraj-urunleri/sika-anchorfix-s1.html
   - https://tur.sika.com/tr/home/abc-sealants-artk-sika-markasyla-sizlerle.html
+  - https://irl.sika.com/en/construction/concrete-repair/chemical-anchoring.html
 sira: 30
+gorseller:
+  - gorsel: /src/assets/urunler/sika-anchorfix-s1-kimyasal-dubel-1.webp
+    alt_metin: Sika AnchorFix kimyasal dübel kartuşu
+    kaynak_url: https://irl.sika.com/en/construction/concrete-repair/chemical-anchoring.html
 ---
 ## Kimyasal dübel nedir?
 Açılan deliğe enjekte edilen iki bileşenli bir yapıştırıcıdır; içine saplama, filiz ya da bulon yerleştirilir. Reçine sertleşince ankraj elemanını deliğe yapıştırarak sabitler. Plastik dübelin iyi tutmadığı boşluklu tuğlada ya da kenara yakın deliklerde sıkça tercih edilir.

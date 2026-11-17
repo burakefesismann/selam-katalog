@@ -20,6 +20,12 @@ ilgili_urunler:
   - fawori-sentetik-antipas
   - marshall-enamel-yagli-boya-ve-antipas
 sira: 20
+gorseller:
+  - gorsel: /src/assets/urunler/tinerler-1.webp
+    alt_metin: 1 litrelik sentetik tiner tenekesi
+    kaynak_url: https://dekoratif.dyo.com.tr/en/products/primers-putties-and-thinners/synthetic-thinner
+kaynak_sayfalar:
+  - https://dekoratif.dyo.com.tr/en/products/primers-putties-and-thinners/synthetic-thinner
 ---
 ## Mağazamızdakiler
 - **Genç sentetik tiner:** 0,25 lt, 0,5 lt, 1,5 lt, 2,5 lt, 10 lt
