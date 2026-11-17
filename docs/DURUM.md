@@ -3,12 +3,12 @@
 > Her oturumun başında oku, sonunda güncelle. Kısa tut.
 
 ## Şu an
-- Aktif görev: — (sıradaki: /gorsel eksikler oturum 20)
+- Aktif görev: — (sıradaki: /gorsel eksikler oturum 21)
 - Site: https://burakefesismann.github.io/selam-katalog/
 - Faz: 3 — Gerçek içerik ve görseller
 
 ## Yarım kalan
-- **`/gorsel eksikler` — paketler 002–007 görselleri** (2026-11-17 başladı). Görselli: 162/214. Paket 001'in 11 kartı kullanıcıda (dokunma).
+- **`/gorsel eksikler` — paketler 002–007 görselleri** (2026-11-17 başladı). Görselli: 165/214. Paket 001'in 11 kartı kullanıcıda (dokunma).
   - Yapılan (oturum 1): 10 ECA/Serel kartı (lavabo/eviye bataryası, havlupan, panel radyatör, termostatik vana, küresel vana,
     ara musluk, Serel klozet/pisuvar/lavabo).
   - Yapılan (oturum 2): banyo aksesuarı, Y filtre, pürjör, rakor, tepe duşu, ara kesme (krom), Tiera ankastre, Life banyo
@@ -64,6 +64,11 @@
     siteleri (ph., in., uk.) → /sites/onduline_xx/files/styles/1199x840/public/... (TR sitesinde olmayan ürünler orada).
     Commons bu oturumda "Too many requests" verdi (CC0 panç: One_and_one_quarter_inch_hole_saw_bit.jpg — sonra indir).
     Marshall Akrikor: sitede 160 px packshot, broşür PDF'inde ambalaj görseli yok. Sika TR sayfalarında yine packshot yok.
+  - Yapılan (oturum 20): Master panç (bosch-professional.com bi-metal set — testerelerde BOSCH yazıyor, geçici),
+    Çukurova membran/Fondaline (uk.onduline.com Fondaline broşür PDF'inden rulo fotoğrafı 1404 px), UKS şıngıl (ph.onduline.com
+    Bardoline: kırmızı + yeşil şerit + gri çatı uygulaması; markasız). Commons hâlâ "Too many requests" (upload.wikimedia dahil).
+    Sonuçsuz: Fondaline'ın web sayfalarında ürün fotoğrafı yok; Onduline TR temel sayfasındaki ruloların hepsi Bituline markalı;
+    Ondulikit başka ülkede yok; ECA'da yerden ısıtma aksesuarı ve yer süzgeci yok; Dömark'ın sitesi bulunamadı; MBCC (mbcc.sika.com) boş sayfa.
   - Sıradaki adaylar (gevşek kural): Sika (başka ülke sika.com sayfaları), Onduline (başka ülke siteleri), Bosch, Weber (başka
     ülke weber siteleri), rögar, dübel, fırça/rulo (Rulomas/Akyüzler), halat, yer süzgeci/duş kanalı (mesateknik.com), seviye
     sistemi, köşe profilleri, trapez saç, yangın tüpü, Mesa/Dömark/Samir duşakabin, Güral (tarayıcıdan kaydetme gerekli).
@@ -79,7 +84,7 @@
     anahtarlar/kaynak kartı için Master kaynak pensesi. Uygun karşılığı YOK: bahçe hortumu, Master sprey boya, Dekor fırça/rulo,
     iskota halat/iskele kelepçesi, Master kalıp yağı, kümes teli (Fermo), menteşe/kapı hidroliği.
   - **K15 (2026-11-17): kaynaklar genişletildi** — dağıtıcı/resmi sosyal medya, ücretsiz lisanslı (Commons/Pexels/Unsplash),
-    son çare pazaryerleri. Pazaryerinden / başka satıcıdan alınan "geçici görseller": polietilen-su-depolari (idefix), drenaj-kanallari-ve-izgaralar (bosta.com).
+    son çare pazaryerleri. Pazaryerinden / başka satıcıdan alınan "geçici görseller": polietilen-su-depolari (idefix), drenaj-kanallari-ve-izgaralar (bosta.com), master-panc-delik-testereleri (Bosch seti — Master görseli bulununca değiştir).
   - **Kullanıcı (2026-11-17, oturum 14): "resmi sitelerde takılı kalma"** — marka/renk birebir tutmasa da ürün türü doğruysa kullan (KARARLAR K15 eki).
   - Yapılan (oturum 9): Poelsan kaplin (poelsan.com), Sumak dalgıç (2, sumakpompa.com), Selsil yapıştırıcılar (2, selsil.com),
     KL Eco KE75115 + Hitachi G12SR4 (kalemakina.com), Samir Zümrüt 45 dolap ve oval duş teknesi (samirbanyo.com.tr).
@@ -356,3 +361,4 @@
 | 2026-11-17 | /gorsel eksikler (17) | Akyüzler 4 kart + dübel (Commons) + kalıp yağı görseli Master ile değişti; 149/214 | gorsel |
 | 2026-11-17 | /gorsel eksikler (18) | 7 kart (sifon, batarya yedek, diğer marka aksesuar/musluk/duş/batarya, boru anahtarı); 156/214 | gorsel |
 | 2026-11-17 | /gorsel eksikler (19) | 6 kart (seviye sistemi, köşe profili, iskele kelepçesi, Onduline mahya/bant/astar); 162/214 | gorsel |
+| 2026-11-17 | /gorsel eksikler (20) | 3 kart (panç, Çukurova/Fondaline, UKS şıngıl); 165/214 | gorsel |

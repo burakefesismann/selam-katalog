@@ -23,6 +23,12 @@ ilgili_urunler:
   - seramik-ve-mermer-kesme-makineleri
   - elektrikli-ve-akulu-el-aletleri
 sira: 30
+gorseller:
+  - gorsel: /src/assets/urunler/master-panc-delik-testereleri-1.webp
+    alt_metin: Bi-metal panç (delik açma testeresi) seti, adaptör ve matkap uçlarıyla çantada
+    kaynak_url: https://www.bosch-professional.com/tr/tr/standart-adaptorler-icin-bim-delik-acma-testeresi-setleri-ecoline-2868000-ocs-ac/
+kaynak_sayfalar:
+  - https://www.bosch-professional.com/tr/tr/standart-adaptorler-icin-bim-delik-acma-testeresi-setleri-ecoline-2868000-ocs-ac/
 ---
 ## Mağazamızdakiler
 - **Beton delme:** 35, 50, 55, 75, 100 mm; beton delme adaptörü 110 ve 250 mm

@@ -25,6 +25,18 @@ ilgili_urunler:
   - onduline-ondubant-ve-isobant-yalitim-bantlari
   - izocam-camyunu-cati-siltesi-tip-400
 sira: 20
+gorseller:
+  - gorsel: /src/assets/urunler/uks-singil-shingle-1.webp
+    alt_metin: Kırmızı tonlu bitümlü şıngıl (shingle) çatı kaplama levhası
+    kaynak_url: https://ph.onduline.com/en/homeowner/products/roof/bardoline
+  - gorsel: /src/assets/urunler/uks-singil-shingle-2.webp
+    alt_metin: Yeşil bitümlü şıngıl (shingle) çatı kaplama levhası
+    kaynak_url: https://ph.onduline.com/en/homeowner/products/roof/bardoline
+  - gorsel: /src/assets/urunler/uks-singil-shingle-3.webp
+    alt_metin: Gri şıngıl kaplanmış konut çatısı
+    kaynak_url: https://ph.onduline.com/en/homeowner/products/roof/bardoline
+kaynak_sayfalar:
+  - https://ph.onduline.com/en/homeowner/products/roof/bardoline
 ---
 ## Mağazamızdakiler
 - UKS şıngıl — gri, kırmızı, yeşil

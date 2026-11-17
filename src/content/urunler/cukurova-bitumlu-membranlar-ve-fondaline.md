@@ -27,7 +27,12 @@ ilgili_urunler:
   - drenaj-borulari-delikli-tunel-tipi
 kaynak_sayfalar:
   - https://tr.onduline.com/en/homeowner/products/foundation-structural-protection
+  - https://uk.onduline.com/sites/onduline_uk/files/2019-02/fondaline-brochure.pdf
 sira: 70
+gorseller:
+  - gorsel: /src/assets/urunler/cukurova-bitumlu-membranlar-ve-fondaline-1.webp
+    alt_metin: Fondaline kabarcıklı temel koruma ve drenaj levhası rulosu
+    kaynak_url: https://uk.onduline.com/sites/onduline_uk/files/2019-02/fondaline-brochure.pdf
 ---
 ## Mağazamızdakiler
 - Çukurova Bitükal P 3000 membran
