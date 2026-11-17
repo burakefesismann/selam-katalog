@@ -22,6 +22,12 @@ ilgili_urunler:
   - su-sayaclari-ve-kalorimetre
 sira: 10
 markalar: []
+gorseller:
+  - gorsel: /src/assets/urunler/conta-teflon-ve-sizdirmazlik-1.webp
+    alt_metin: Teflon bant ruloları
+    kaynak_url: https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=68&marid=41&urun=1&tur_id=7457
+kaynak_sayfalar:
+  - https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=68&marid=41&urun=1&tur_id=7457
 ---
 ## Mağazamızdakiler
 - **Teflon bant:** büyük ve küçük boy

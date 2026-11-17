@@ -25,6 +25,16 @@ ilgili_urunler:
   - fawori-silikonlu-mat
   - marshall-silikonlu-mat-ozel-mat-maximum
 sira: 10
+gorseller:
+  - gorsel: /src/assets/urunler/firca-ve-rulolar-1.webp
+    alt_metin: İç cephe boya rulosu
+    kaynak_url: https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=244&marid=68&urun=1&tur_id=8901
+  - gorsel: /src/assets/urunler/firca-ve-rulolar-2.webp
+    alt_metin: Parmak rulo ve yedek ağızları
+    kaynak_url: https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=244&marid=68&urun=1&tur_id=8900
+kaynak_sayfalar:
+  - https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=244&marid=68&urun=1&tur_id=8901
+  - https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=244&marid=68&urun=1&tur_id=8900
 ---
 ## Mağazamızdakiler
 - **Boya ruloları (Dekor):** 20 ve 25 cm (sarı, mavi, kırmızı saplı), 10 cm parmak rulo ve yedek ağzı; plastik rulo eleği

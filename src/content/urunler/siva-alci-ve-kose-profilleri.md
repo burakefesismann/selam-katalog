@@ -26,6 +26,16 @@ ilgili_urunler:
   - mala-ispatula-ve-siva-aletleri
   - seramik-ve-parke-bitis-kose-profilleri
 sira: 30
+gorseller:
+  - gorsel: /src/assets/urunler/siva-alci-ve-kose-profilleri-1.webp
+    alt_metin: Master fileli köşe profili
+    kaynak_url: https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=40&marid=68&urun=1&tur_id=9879
+  - gorsel: /src/assets/urunler/siva-alci-ve-kose-profilleri-2.webp
+    alt_metin: Master fiberglass sıva filesi ruloları
+    kaynak_url: https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=40&marid=68&urun=1&tur_id=7405
+kaynak_sayfalar:
+  - https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=40&marid=68&urun=1&tur_id=9879
+  - https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=40&marid=68&urun=1&tur_id=7405
 ---
 ## Mağazamızdakiler
 - **Köşe profilleri:** alüminyum alçı köşe profili (2,70 m), alüminyum kaba sıva köşe profili, galvaniz alçı köşe çıtası, Master fileli köşe çıtası, damlalıklı köşe profili

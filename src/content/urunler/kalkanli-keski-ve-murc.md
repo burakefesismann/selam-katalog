@@ -18,6 +18,12 @@ ilgili_urunler:
   - cekic-keser-balyoz-ve-kazma
   - matkap-uclari-sds-hss-agac-cam-seramik
 sira: 50
+gorseller:
+  - gorsel: /src/assets/urunler/kalkanli-keski-ve-murc-1.webp
+    alt_metin: Kalkanlı murç ve keskiler
+    kaynak_url: https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=107&marid=19&urun=1&tur_id=7668
+kaynak_sayfalar:
+  - https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=107&marid=19&urun=1&tur_id=7668
 ---
 ## Mağazamızdakiler
 - Kalkanlı profesyonel keski, 30 cm

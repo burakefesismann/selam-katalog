@@ -3,12 +3,12 @@
 > Her oturumun başında oku, sonunda güncelle. Kısa tut.
 
 ## Şu an
-- Aktif görev: — (sıradaki: /gorsel eksikler oturum 17)
+- Aktif görev: — (sıradaki: /gorsel eksikler oturum 18)
 - Site: https://burakefesismann.github.io/selam-katalog/
 - Faz: 3 — Gerçek içerik ve görseller
 
 ## Yarım kalan
-- **`/gorsel eksikler` — paketler 002–007 görselleri** (2026-11-17 başladı). Görselli: 144/214. Paket 001'in 11 kartı kullanıcıda (dokunma).
+- **`/gorsel eksikler` — paketler 002–007 görselleri** (2026-11-17 başladı). Görselli: 149/214. Paket 001'in 11 kartı kullanıcıda (dokunma).
   - Yapılan (oturum 1): 10 ECA/Serel kartı (lavabo/eviye bataryası, havlupan, panel radyatör, termostatik vana, küresel vana,
     ara musluk, Serel klozet/pisuvar/lavabo).
   - Yapılan (oturum 2): banyo aksesuarı, Y filtre, pürjör, rakor, tepe duşu, ara kesme (krom), Tiera ankastre, Life banyo
@@ -50,6 +50,9 @@
     (tur.sika.com pim2 görseli 210 px, K14), rögar (mesateknik.com MTR 40 katalog kartı: ürün kırpıldı, köşelerdeki yazı/logo
     beyazla kapatıldı; panel.mesateknik.com sadece http ile iniyor). Sika ülke sitelerinde ürün sayfalarında genelde
     ambalaj fotoğrafı YOK (AnchorFix'te yine çizim). Mesa süzgeç görselleri pembe zemin + yazılı banner → kullanılmadı.
+  - Yapılan (oturum 17): Akyüzler'den boya rulosu (2), kalkanlı murç/keski, teflon bant, fileli köşe profili + sıva filesi;
+    kalıp yağı görseli "Mould" yerine Master plywood kalıp ayırıcı ile değiştirildi (--uzerine-yaz). Dübel: Commons
+    "S-Plug 8mm" (kamu malı, atıf gerekmez). Commons'ta halat (iskele sahnesi) ve panç (paslı, kullanılmış) beğenilmedi.
   - Sıradaki adaylar (gevşek kural): Sika (başka ülke sika.com sayfaları), Onduline (başka ülke siteleri), Bosch, Weber (başka
     ülke weber siteleri), rögar, dübel, fırça/rulo (Rulomas/Akyüzler), halat, yer süzgeci/duş kanalı (mesateknik.com), seviye
     sistemi, köşe profilleri, trapez saç, yangın tüpü, Mesa/Dömark/Samir duşakabin, Güral (tarayıcıdan kaydetme gerekli).
@@ -339,3 +342,4 @@
 | 2026-11-17 | /gorsel eksikler (14) | Kurallar gevşetildi; Trakya Döküm + Akyüzler + satıcı siteleri: 9 kart; 132/214 | gorsel |
 | 2026-11-17 | /gorsel eksikler (15) | Gevşek kuralla 9 kart (kesici disk, matkap, flatör, XPS, Terrawool, KAS eviye, iç takım, klozet kapağı, karıştırıcı); 141/214 | gorsel |
 | 2026-11-17 | /gorsel eksikler (16) | Sika Boom + SikaSwell + rögar (kırpılarak); 144/214; Sika siteleri ambalaj fotoğrafı vermiyor | gorsel |
+| 2026-11-17 | /gorsel eksikler (17) | Akyüzler 4 kart + dübel (Commons) + kalıp yağı görseli Master ile değişti; 149/214 | gorsel |

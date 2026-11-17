@@ -24,6 +24,12 @@ ilgili_urunler:
   - filli-dalmacyali-mantolama-dubeli
   - tie-rot-rot-mili-ve-aksesuarlari
 sira: 20
+gorseller:
+  - gorsel: /src/assets/urunler/dubeller-1.webp
+    alt_metin: 8 mm plastik dübel
+    kaynak_url: https://commons.wikimedia.org/wiki/File:S-Plug_8mm.jpg
+kaynak_sayfalar:
+  - https://commons.wikimedia.org/wiki/File:S-Plug_8mm.jpg
 ---
 ## Mağazamızdakiler
 - **Plastik dübeller:** 6, 7, 8 mm (1000'li), 10 ve 12 mm (500'lü); sarı roket dübel 10 mm (500'lü); boşluk dübeli 10 mm (500'lü); korniş del-çak dübeli
