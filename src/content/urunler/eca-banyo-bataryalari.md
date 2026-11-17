@@ -45,7 +45,12 @@ ilgili_urunler:
   - batarya-yedek-parca-ve-baglantilari
 kaynak_sayfalar:
   - https://eca.com.tr/yapi/armaturler/banyo-mutfak/batarya-musluk
+  - https://eca.com.tr/urun/life-banyo-bataryasi-1
 sira: 11
+gorseller:
+  - gorsel: /src/assets/urunler/eca-banyo-bataryalari-1.webp
+    alt_metin: E.C.A. Life krom banyo bataryası
+    kaynak_url: https://eca.com.tr/urun/life-banyo-bataryasi-1
 ---
 ## Mağazamızdaki seriler
 - **Tiera:** krom, mat siyah ve Bi-Color beyaz

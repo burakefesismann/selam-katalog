@@ -26,7 +26,12 @@ ilgili_urunler:
 kaynak_sayfalar:
   - https://kas.com.tr/en/product/lengthening-fittings-3/
   - https://eca.com.tr/isitma-sogutma/valfler/rakorlar
+  - https://eca.com.tr/urun/rakor-eurocone-34-16x2-pex
 sira: 30
+gorseller:
+  - gorsel: /src/assets/urunler/rakor-ve-uzatmalar-1.webp
+    alt_metin: E.C.A. Eurocone 3/4" PEX boru rakoru parçaları
+    kaynak_url: https://eca.com.tr/urun/rakor-eurocone-34-16x2-pex
 ---
 ## Mağazamızdakiler
 - **Uzatmalar:** E.C.A. krom uzatmalar (1; 1,5; 2; 2,5; 3; 4 cm), 1/2" uzatmalar (1–5 cm), 1/2-3/4 bas uzatması, 1/2" delikli krom te uzatma

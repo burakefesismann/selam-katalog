@@ -23,7 +23,12 @@ ilgili_urunler:
   - emniyet-ventilleri
 kaynak_sayfalar:
   - https://eca.com.tr/isitma-sogutma/valfler/otomatik-havalandirici-ve-purjorler
+  - https://eca.com.tr/urun/otomatik-hava-atici-cekvalfsiz-12
 sira: 70
+gorseller:
+  - gorsel: /src/assets/urunler/prujorler-otomatik-hava-atici-1.webp
+    alt_metin: E.C.A. pirinç otomatik hava atıcı (prüjör)
+    kaynak_url: https://eca.com.tr/urun/otomatik-hava-atici-cekvalfsiz-12
 ---
 ## Mağazamızdakiler
 - **E.C.A. otomatik hava atıcı** 1/2" (çekvalfsiz)

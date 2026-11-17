@@ -32,7 +32,12 @@ kaynak_sayfalar:
   - https://eca.com.tr/yapi/armaturler/banyo-mutfak/ankastre-lavabo-bataryalari/tiera
   - https://eca.com.tr/yapi/armaturler/dus-sistemleri/ankastre-dus-setleri
   - https://eca.com.tr/tiera-ankastre-dus-seti-3-yollu
+  - https://eca.com.tr/urun/tiera-ankastre-lavabo-bataryasi-siva-ustu-grubu-tek-rozet
 sira: 13
+gorseller:
+  - gorsel: /src/assets/urunler/eca-ankastre-batarya-ve-dus-sistemleri-1.webp
+    alt_metin: E.C.A. Tiera krom ankastre lavabo bataryası
+    kaynak_url: https://eca.com.tr/urun/tiera-ankastre-lavabo-bataryasi-siva-ustu-grubu-tek-rozet
 ---
 ## Ankastre nedir?
 Ankastre bataryada gövde ve tesisat duvarın içinde kalır; dışarıda yalnızca kumanda kolu ve su çıkışları görünür. Sıva altı grup tadilat ya da inşaat sırasında duvara yerleştirilir, sıva üstü grup (kol ve rozet) fayans bittikten sonra takılır.

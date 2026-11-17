@@ -33,7 +33,12 @@ kaynak_sayfalar:
   - https://eca.com.tr/1/2-ankastre-ara-kesme-valfi-41
   - https://www.eca.com.tr/yapi-caro-ankastre-ara-kesme-valfi-g-1/2-mat-siyah
   - https://eca.com.tr/interval-stop-taps-2
+  - https://eca.com.tr/urun/life-ankastre-ara-kesme-valfi-1
 sira: 10
+gorseller:
+  - gorsel: /src/assets/urunler/ara-kesme-valfleri-1.webp
+    alt_metin: E.C.A. Life krom ankastre ara kesme valfi
+    kaynak_url: https://eca.com.tr/urun/life-ankastre-ara-kesme-valfi-1
 ---
 ## Mağazamızdaki modeller
 - **E.C.A.:** tek kollu ankastre 1/2"; ankastre lüks 1/2"; artı salmastralı 1/2"; Caro kare 1/2"; Quadrille 1/2" (krom ve altın); Trio üç kollu 1/2"; ankastre mat siyah

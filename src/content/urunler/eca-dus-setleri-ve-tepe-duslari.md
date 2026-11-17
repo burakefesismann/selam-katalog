@@ -34,7 +34,12 @@ ilgili_urunler:
 kaynak_sayfalar:
   - https://eca.com.tr/yapi/armaturler/dus-sistemleri
   - https://eca.com.tr/yapi/armaturler/profesyonel-armaturler/termostatik-urunler
+  - https://eca.com.tr/urun/life-dus-basligi-300x300
 sira: 10
+gorseller:
+  - gorsel: /src/assets/urunler/eca-dus-setleri-ve-tepe-duslari-1.webp
+    alt_metin: E.C.A. Life 300×300 mm siyah kare tepe duş başlığı
+    kaynak_url: https://eca.com.tr/urun/life-dus-basligi-300x300
 ---
 ## Mağazamızdaki modeller
 - **Tiera:** kolonlu tepe duşu (krom, altın, mat siyah), teleskopik tepe duşu, hareketli üst takım (krom, mat siyah), mafsallı mat siyah set, duvardan mat siyah duş başlığı

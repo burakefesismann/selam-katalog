@@ -40,7 +40,16 @@ kaynak_sayfalar:
   - https://eca.com.tr/calpara-cekvalf-2
   - https://kas.com.tr/en/product/vertical-check-valve/
   - https://kas.com.tr/en/product/swing-check-valve/
+  - https://eca.com.tr/urun/yayli-dik-cekvalf-12
+  - https://eca.com.tr/urun/yatay-cekvalf-34
 sira: 90
+gorseller:
+  - gorsel: /src/assets/urunler/cekvalfler-1.webp
+    alt_metin: E.C.A. pirinç yaylı dik çekvalf
+    kaynak_url: https://eca.com.tr/urun/yayli-dik-cekvalf-12
+  - gorsel: /src/assets/urunler/cekvalfler-2.webp
+    alt_metin: E.C.A. pirinç yatay çekvalf
+    kaynak_url: https://eca.com.tr/urun/yatay-cekvalf-34
 ---
 ## Mağazamızdakiler
 - **KAS yaylı dik çekvalf:** 1/2"'den 3"'e

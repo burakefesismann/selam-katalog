@@ -34,7 +34,12 @@ kaynak_sayfalar:
   - https://eca.com.tr/basinc-dusurucu-valf-5
   - https://eca.com.tr/su-basinc-dusuruculer-2
   - https://kas.com.tr/en/prod-category/safety-valve/
+  - https://kas.com.tr/en/product/pressure-reducing-valve/
 sira: 20
+gorseller:
+  - gorsel: /src/assets/urunler/basinc-dusuruculer-1.webp
+    alt_metin: KAS krom kaplı basınç düşürücü valf
+    kaynak_url: https://kas.com.tr/en/product/pressure-reducing-valve/
 ---
 ## Mağazamızdakiler
 - **E.C.A. basınç düşürücü valf:** 1/2", 1" ve 1-1/4"

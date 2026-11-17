@@ -27,7 +27,12 @@ kaynak_sayfalar:
   - https://kas.com.tr/en/product/filter-y-valve-strainer/
   - https://eca.com.tr/yapi/sihhi-tesisat/filtreler
   - https://kas.com.tr/en/product/ppr-filter/
+  - https://eca.com.tr/urun/filtre-1
 sira: 40
+gorseller:
+  - gorsel: /src/assets/urunler/filtreler-pislik-tutucu-y-filtre-1.webp
+    alt_metin: E.C.A. pirinç Y tipi filtre (pislik tutucu)
+    kaynak_url: https://eca.com.tr/urun/filtre-1
 ---
 ## Mağazamızdakiler
 - **KAS pislik tutucu (Y filtre):** 1/2"'den 4"'e

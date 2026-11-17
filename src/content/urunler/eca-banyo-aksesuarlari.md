@@ -31,7 +31,12 @@ kaynak_sayfalar:
   - https://eca.com.tr/yapi/banyo-aksesuarlari/askilik/lale
   - https://eca.com.tr/yapi/banyo-aksesuarlari/askilik/rita
   - https://eca.com.tr/yapi/banyo-aksesuarlari/etajer
+  - https://eca.com.tr/urun/lale-ikili-askilik
 sira: 10
+gorseller:
+  - gorsel: /src/assets/urunler/eca-banyo-aksesuarlari-1.webp
+    alt_metin: E.C.A. Lale krom ikili askılık
+    kaynak_url: https://eca.com.tr/urun/lale-ikili-askilik
 ---
 ## Mağazamızdaki seriler
 - **Lale:** 42x65 ayna, etajer, halka ve 45 cm uzun havluluk, kapaklı kağıtlık, ikili askılık
