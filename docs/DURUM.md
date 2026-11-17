@@ -3,12 +3,12 @@
 > Her oturumun başında oku, sonunda güncelle. Kısa tut.
 
 ## Şu an
-- Aktif görev: — (sıradaki: /gorsel eksikler oturum 12)
+- Aktif görev: — (sıradaki: /gorsel eksikler oturum 13)
 - Site: https://burakefesismann.github.io/selam-katalog/
 - Faz: 3 — Gerçek içerik ve görseller
 
 ## Yarım kalan
-- **`/gorsel eksikler` — paketler 002–007 görselleri** (2026-11-17 başladı). Görselli: 113/214. Paket 001'in 11 kartı kullanıcıda (dokunma).
+- **`/gorsel eksikler` — paketler 002–007 görselleri** (2026-11-17 başladı). Görselli: 121/214. Paket 001'in 11 kartı kullanıcıda (dokunma).
   - Yapılan (oturum 1): 10 ECA/Serel kartı (lavabo/eviye bataryası, havlupan, panel radyatör, termostatik vana, küresel vana,
     ara musluk, Serel klozet/pisuvar/lavabo).
   - Yapılan (oturum 2): banyo aksesuarı, Y filtre, pürjör, rakor, tepe duşu, ara kesme (krom), Tiera ankastre, Life banyo
@@ -33,6 +33,11 @@
     Bağlama: `node .gorsel-orijinal/bagla.mjs <liste.json>`. kaynak_url'den `&marka=` kısmı çıkarılır (Türkçe harf bozuluyor).
   - Yapılan (oturum 11, Akyüzler): paspayları, tie-rot, silikon tabancaları, bantlar, teller (rabız + elek), su zımparası,
     branda/streç, zincir kilidi/karabina. Kalıp yağı görseli "Mould" marka (kart Master) → kullanılmadı.
+  - Yapılan (oturum 12, Akyüzler — Master ürünleri): KBS çiroz (Master kollu çiroz anahtarı; soluk yazı kalıntısı açık
+    pikseller beyaza çekilerek temizlendi), sprey/yapıştırıcı/silikon (3), vidalar, trapez vidası, seramik kesme (Class+Titan),
+    sapan/spanzet, etriye kolu + elektrod, klemens. Master'ın resmi sitesi yok (master.com.tr = Master Kauçuk, başka firma).
+  - Dikkat: akyuzler.tsv'de ürün ADLARI çift kodlanmış (Ã‡ gibi) → Türkçe büyük harfli kelimeler (ÇİROZ) regex'le bulunmaz;
+    ASCII parçayla ara (ör. "IROZ") ya da dosya adıyla çalış.
     Akyüzler'de kalan uygun adaylar az: KBS çiroz kartı için Master kollu çiroz anahtarı (07_04_2017_10_08_1491548918.jpg),
     anahtarlar/kaynak kartı için Master kaynak pensesi. Uygun karşılığı YOK: bahçe hortumu, Master sprey boya, Dekor fırça/rulo,
     iskota halat/iskele kelepçesi, Master kalıp yağı, kümes teli (Fermo), menteşe/kapı hidroliği.
@@ -305,3 +310,4 @@
 | 2026-11-17 | /gorsel eksikler (9) | K15 kaynak genişletme kararı; 6 ürün küçük marka sitelerinden (Poelsan, Sumak, Selsil, KL, Samir 2); 97/214 | gorsel |
 | 2026-11-17 | /gorsel eksikler (10) | Akyüzler Nalburiye dizini (961 ürün) çıkarıldı; 8 hırdavat kartı; 105/214 | gorsel |
 | 2026-11-17 | /gorsel eksikler (11) | Akyüzler dizininden 8 hırdavat kartı daha; 113/214 | gorsel |
+| 2026-11-17 | /gorsel eksikler (12) | Akyüzler dizininden 8 kart (Master ürünleri ağırlıklı); 121/214 | gorsel |

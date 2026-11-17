@@ -22,6 +22,12 @@ ilgili_urunler:
   - kelepce-zincir-kilidi-ve-karabina
   - dubeller
 sira: 10
+gorseller:
+  - gorsel: /src/assets/urunler/civata-somun-pul-ve-klemens-1.webp
+    alt_metin: Galvaniz çelik halat klemensi
+    kaynak_url: https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=361&marid=68&urun=1&tur_id=10549
+kaynak_sayfalar:
+  - https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=361&marid=68&urun=1&tur_id=10549
 ---
 ## Mağazamızdakiler
 - **Çelik somunlar:** M8, M10, M12, M18

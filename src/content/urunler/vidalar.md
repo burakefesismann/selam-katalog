@@ -24,6 +24,16 @@ ilgili_urunler:
   - elektrikli-ve-akulu-el-aletleri
   - matkap-uclari-sds-hss-agac-cam-seramik
 sira: 30
+gorseller:
+  - gorsel: /src/assets/urunler/vidalar-1.webp
+    alt_metin: Master sunta vidaları
+    kaynak_url: https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=290&marid=68&urun=1&tur_id=10053
+  - gorsel: /src/assets/urunler/vidalar-2.webp
+    alt_metin: Siyah alçıpan vidaları
+    kaynak_url: https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=290&marid=68&urun=1&tur_id=10054
+kaynak_sayfalar:
+  - https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=290&marid=68&urun=1&tur_id=10053
+  - https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=290&marid=68&urun=1&tur_id=10054
 ---
 ## Mağazamızdakiler
 - **Sunta vidaları:** 4x50 (500'lü), 4x60; 5x50, 5x60, 5x70, 5x80, 5x100; 6x50, 6x60, 6x70, 6x80, 6x100

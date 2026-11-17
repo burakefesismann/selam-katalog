@@ -25,6 +25,16 @@ ilgili_urunler:
   - elektrikli-ve-akulu-el-aletleri
   - merdivenler
 sira: 10
+gorseller:
+  - gorsel: /src/assets/urunler/elektrikli-vincler-ve-kaldirma-sapanlari-1.webp
+    alt_metin: Polyester kaldırma sapanları
+    kaynak_url: https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=127&marid=68&urun=1&tur_id=8933
+  - gorsel: /src/assets/urunler/elektrikli-vincler-ve-kaldirma-sapanlari-2.webp
+    alt_metin: Cırcırlı yük sabitleme kayışı (spanzet)
+    kaynak_url: https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=245&marid=68&urun=1&tur_id=8934
+kaynak_sayfalar:
+  - https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=127&marid=68&urun=1&tur_id=8933
+  - https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=245&marid=68&urun=1&tur_id=8934
 ---
 ## Mağazamızdakiler
 - **Elektrikli vinçler:** KL Pro KLV125 (125–250 kg), KL Pro KLV400 (400–800 kg), Master PA 800

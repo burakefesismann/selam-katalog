@@ -24,6 +24,16 @@ ilgili_urunler:
   - cekic-keser-balyoz-ve-kazma
   - elektrikli-ve-akulu-el-aletleri
 sira: 10
+gorseller:
+  - gorsel: /src/assets/urunler/anahtarlar-kaynak-ve-diger-el-aletleri-1.webp
+    alt_metin: Makaralı etriye (demir bükme) kolu
+    kaynak_url: https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=90&marid=44&urun=1&tur_id=7561
+  - gorsel: /src/assets/urunler/anahtarlar-kaynak-ve-diger-el-aletleri-2.webp
+    alt_metin: Magmaweld rutil kaynak elektrodu paketleri
+    kaynak_url: https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=203&marid=58&urun=1&tur_id=8548
+kaynak_sayfalar:
+  - https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=90&marid=44&urun=1&tur_id=7561
+  - https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=203&marid=58&urun=1&tur_id=8548
 ---
 ## Mağazamızdakiler
 - **Demir bükme anahtarları:** 10, 12, 14, 24 mm

@@ -23,6 +23,12 @@ ilgili_urunler:
   - cekic-keser-balyoz-ve-kazma
   - anahtarlar-kaynak-ve-diger-el-aletleri
 sira: 55
+gorseller:
+  - gorsel: /src/assets/urunler/kbs-ciroz-ve-ciroz-anahtarlari-1.webp
+    alt_metin: Master kollu çiroz anahtarı
+    kaynak_url: https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=47&marid=68&urun=1&tur_id=7415
+kaynak_sayfalar:
+  - https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=47&marid=68&urun=1&tur_id=7415
 ---
 ## Mağazamızdakiler
 - KBS çiroz

@@ -24,6 +24,12 @@ ilgili_urunler:
   - sika-mastik-ve-silikonlar-sikaflex-sikacryl-sikasil
   - firat-pvc-yagmur-olugu-sistemi
 sira: 60
+gorseller:
+  - gorsel: /src/assets/urunler/trapez-aksesuarlari-mahya-karlik-vida-semer-1.webp
+    alt_metin: Master matkap uçlu, pullu trapez panel vidaları
+    kaynak_url: https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=290&marid=68&urun=1&tur_id=10055
+kaynak_sayfalar:
+  - https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=290&marid=68&urun=1&tur_id=10055
 ---
 ## Mağazamızdakiler
 - **Panel vidaları 5,5 mm:** 10,5 / 25 / 32 / 38 / 60 / 76 / 90 / 120 mm boylar

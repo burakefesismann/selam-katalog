@@ -25,6 +25,20 @@ ilgili_urunler:
   - sika-mastik-ve-silikonlar-sikaflex-sikacryl-sikasil
   - silikon-ve-kopuk-tabancalari
 sira: 20
+gorseller:
+  - gorsel: /src/assets/urunler/silikon-yapistirici-sprey-yaglayici-ve-pas-sokucu-1.webp
+    alt_metin: Master SG-400 sıvı gres yağlama spreyi
+    kaynak_url: https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=347&marid=68&urun=1&tur_id=10430
+  - gorsel: /src/assets/urunler/silikon-yapistirici-sprey-yaglayici-ve-pas-sokucu-2.webp
+    alt_metin: Master MDF Kit hızlı yapıştırıcı seti
+    kaynak_url: https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=21&marid=68&urun=1&tur_id=7316
+  - gorsel: /src/assets/urunler/silikon-yapistirici-sprey-yaglayici-ve-pas-sokucu-3.webp
+    alt_metin: Master MTS50 üniversal tüp silikon
+    kaynak_url: https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=19&marid=68&urun=1&tur_id=7319
+kaynak_sayfalar:
+  - https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=347&marid=68&urun=1&tur_id=10430
+  - https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=21&marid=68&urun=1&tur_id=7316
+  - https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=19&marid=68&urun=1&tur_id=7319
 ---
 ## Mağazamızdakiler
 - **Spreyler:** Master pas sökücü 200 ve 400 ml, Master sıvı gres SG 400 ml, zincir yağlayıcı 400 ml, fren balata temizleyici

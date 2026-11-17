@@ -25,6 +25,16 @@ ilgili_urunler:
   - kesici-diskler-elmas-testereler-ve-el-testereleri
   - master-panc-delik-testereleri
 sira: 30
+gorseller:
+  - gorsel: /src/assets/urunler/seramik-ve-mermer-kesme-makineleri-1.webp
+    alt_metin: Master Class granit ve seramik kesme makinesi
+    kaynak_url: https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=157&marid=68&urun=1&tur_id=9681
+  - gorsel: /src/assets/urunler/seramik-ve-mermer-kesme-makineleri-2.webp
+    alt_metin: Master Titan granit ve seramik kesme makinesi
+    kaynak_url: https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=157&marid=68&urun=1&tur_id=9682
+kaynak_sayfalar:
+  - https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=157&marid=68&urun=1&tur_id=9681
+  - https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=157&marid=68&urun=1&tur_id=9682
 ---
 ## Mağazamızdakiler
 - **Seramik kesme makineleri:** Master Class 60 cm, Titan 64 cm, Titan Master 94 cm, Herkül açılı 1200 mm
