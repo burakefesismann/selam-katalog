@@ -24,7 +24,12 @@ ilgili_urunler:
 kaynak_sayfalar:
   - https://eca.com.tr/blog/kombi-neden-su-akitir-kombi-su-akitmasi-nasil-onlenir
   - https://kas.com.tr/en/prod-category/safety-valve/
+  - https://kas.com.tr/en/product/safety-valve/
 sira: 30
+gorseller:
+  - gorsel: /src/assets/urunler/emniyet-ventilleri-1.webp
+    alt_metin: KAS termosifon emniyet ventilleri
+    kaynak_url: https://kas.com.tr/en/product/safety-valve/
 ---
 ## Mağazamızdakiler
 - **E.C.A. kombi emniyet valfi**

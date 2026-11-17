@@ -28,7 +28,12 @@ ilgili_urunler:
 kaynak_sayfalar:
   - https://kas.com.tr/prod-category/antoryum-armatur-serisi/
   - https://kas.com.tr/en/prod-category/faucets/
+  - https://kas.com.tr/product/antoryum-banyo-bataryasi/
 sira: 14
+gorseller:
+  - gorsel: /src/assets/urunler/kas-banyo-bataryalari-1.webp
+    alt_metin: KAS Antoryum krom banyo bataryası
+    kaynak_url: https://kas.com.tr/product/antoryum-banyo-bataryasi/
 ---
 ## Mağazamızdaki modeller
 - **Antoryum** banyo bataryası

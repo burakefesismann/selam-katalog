@@ -28,6 +28,10 @@ kaynak_sayfalar:
   - https://kas.com.tr/product/gaz-kuresel-vana-mob-5-tam-gecisli-kilitli/
   - https://kas.com.tr/en/product/full-bore-brass-ball-valve-for-n-gas-mob-5-20/
 sira: 10
+gorseller:
+  - gorsel: /src/assets/urunler/gaz-vanalari-1.webp
+    alt_metin: KAS sarı kollu tam geçişli kilitli gaz küresel vanası (MOP 5)
+    kaynak_url: https://kas.com.tr/product/gaz-kuresel-vana-mob-5-tam-gecisli-kilitli/
 ---
 ## Mağazamızdakiler
 - **KAS gaz küresel vana, tam geçişli, kilitli (MOP 5):** 1/2", 3/4" ve 1"

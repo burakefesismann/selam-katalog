@@ -32,6 +32,10 @@ kaynak_sayfalar:
   - https://kas.com.tr/en/product/water-connection-hose-m-f-1-2-1-2/
   - https://kas.com.tr/en/product/water-connection-hose-nut-nipple-m-f-1-2-3-4-inch/
 sira: 40
+gorseller:
+  - gorsel: /src/assets/urunler/su-flex-hortumlari-1.webp
+    alt_metin: KAS paslanmaz örgülü 1/2" su bağlantı flex hortumları
+    kaynak_url: https://kas.com.tr/en/product/water-connection-hose-m-f-1-2-1-2/
 ---
 ## Mağazamızdakiler
 - **Su flexleri:** 1/2-1/2, 1/2-3/8, 3/8-3/8 (makaronlu 50 ve 70 cm dahil) ve 3/4-3/4

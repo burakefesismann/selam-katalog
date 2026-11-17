@@ -24,7 +24,15 @@ ilgili_urunler:
 kaynak_sayfalar:
   - https://eca.com.tr/yapi/gomme-rezervuar
   - https://eca.com.tr/urun/smooth-gomme-rezervuar-asma-klozet-alcipan
+  - https://eca.com.tr/urun/dikdortgen-parlak-krom-panel-metal-kaplama-1
 sira: 12
+gorseller:
+  - gorsel: /src/assets/urunler/serel-gomme-rezervuar-ic-takim-ve-kumanda-panelleri-1.webp
+    alt_metin: Serel Smooth alçıpan tipi gömme rezervuar (çelik iskeletli)
+    kaynak_url: https://eca.com.tr/urun/smooth-gomme-rezervuar-asma-klozet-alcipan
+  - gorsel: /src/assets/urunler/serel-gomme-rezervuar-ic-takim-ve-kumanda-panelleri-2.webp
+    alt_metin: Serel parlak krom dikdörtgen kumanda paneli
+    kaynak_url: https://eca.com.tr/urun/dikdortgen-parlak-krom-panel-metal-kaplama-1
 ---
 ## Mağazamızdakiler
 - **Gömme rezervuarlar:** asma klozet için, tuvalet (hela) taşı için, alçıpan için; sırt sırta ikili; arakesme dahil 3'lü set

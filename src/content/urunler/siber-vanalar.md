@@ -27,7 +27,12 @@ ilgili_urunler:
 kaynak_sayfalar:
   - https://eca.com.tr/yapi/sihhi-tesisat
   - https://kas.com.tr/blog/yapi-tesisat-sistemleri-teknolojisi-ve-iklimlendirme/
+  - https://kas.com.tr/en/product/gate-valve/
 sira: 40
+gorseller:
+  - gorsel: /src/assets/urunler/siber-vanalar-1.webp
+    alt_metin: KAS kırmızı volanlı pirinç şiber vana
+    kaynak_url: https://kas.com.tr/en/product/gate-valve/
 ---
 ## Mağazamızdakiler
 - **KAS şiber vana:** 1/2", 3/4" ve 1"

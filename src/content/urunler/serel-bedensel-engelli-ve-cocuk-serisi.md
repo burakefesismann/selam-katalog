@@ -30,7 +30,12 @@ kaynak_sayfalar:
   - https://eca.com.tr/8702-cocuklar-icin-alttan-cikisli-klozet-3
   - https://eca.com.tr/8701-cocuklar-icin-lavabo-50x40cm-3
   - https://eca.com.tr/yapi/seramik-saglik-gerecleri/cocuk
+  - https://eca.com.tr/urun/bedensel-engelliler-icin-ozel-duvara-yarim-dayali-klozet-seti
 sira: 14
+gorseller:
+  - gorsel: /src/assets/urunler/serel-bedensel-engelli-ve-cocuk-serisi-1.webp
+    alt_metin: Serel bedensel engelliler için duvara yarım dayalı klozet seti
+    kaynak_url: https://eca.com.tr/urun/bedensel-engelliler-icin-ozel-duvara-yarim-dayali-klozet-seti
 ---
 ## Mağazamızdakiler
 - **Bedensel engelli:** asma klozet + Anemon kapak (3045); lavabo 55,5x67,5 cm (3044); Friendly engelli klozet + rezervuar + Blaze slim kapak

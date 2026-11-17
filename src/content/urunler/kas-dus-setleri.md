@@ -30,6 +30,10 @@ kaynak_sayfalar:
   - https://kas.com.tr/prod-category/surgulu-dus-setleri/
   - https://kas.com.tr/product/safir-tepe-dus-seti/
 sira: 11
+gorseller:
+  - gorsel: /src/assets/urunler/kas-dus-setleri-1.webp
+    alt_metin: KAS Safir krom tepe duş seti
+    kaynak_url: https://kas.com.tr/product/safir-tepe-dus-seti/
 ---
 ## Mağazamızdaki modeller
 - **Kuartz** mafsallı duş seti

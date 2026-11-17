@@ -29,6 +29,10 @@ kaynak_sayfalar:
   - https://kas.com.tr/product/antoryum-lavabo-bataryasi/
   - https://kas.com.tr/en/prod-category/faucets/
 sira: 16
+gorseller:
+  - gorsel: /src/assets/urunler/kas-lavabo-bataryalari-1.webp
+    alt_metin: KAS Antoryum krom lavabo bataryası
+    kaynak_url: https://kas.com.tr/product/antoryum-lavabo-bataryasi/
 ---
 ## Mağazamızdaki modeller
 - **Antoryum** lavabo bataryası ve Antoryum kuğu lavabo bataryası
