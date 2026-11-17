@@ -3,12 +3,12 @@
 > Her oturumun başında oku, sonunda güncelle. Kısa tut.
 
 ## Şu an
-- Aktif görev: — (/gorsel internetten toplama büyük ölçüde bitti; sıradaki: logolar ya da F4.5)
+- Aktif görev: — (sıradaki: /gorsel eksikler oturum 15)
 - Site: https://burakefesismann.github.io/selam-katalog/
 - Faz: 3 — Gerçek içerik ve görseller
 
 ## Yarım kalan
-- **`/gorsel eksikler` — paketler 002–007 görselleri** (2026-11-17 başladı). Görselli: 123/214. Paket 001'in 11 kartı kullanıcıda (dokunma).
+- **`/gorsel eksikler` — paketler 002–007 görselleri** (2026-11-17 başladı). Görselli: 132/214. Paket 001'in 11 kartı kullanıcıda (dokunma).
   - Yapılan (oturum 1): 10 ECA/Serel kartı (lavabo/eviye bataryası, havlupan, panel radyatör, termostatik vana, küresel vana,
     ara musluk, Serel klozet/pisuvar/lavabo).
   - Yapılan (oturum 2): banyo aksesuarı, Y filtre, pürjör, rakor, tepe duşu, ara kesme (krom), Tiera ankastre, Life banyo
@@ -38,6 +38,10 @@
     sapan/spanzet, etriye kolu + elektrod, klemens. Master'ın resmi sitesi yok (master.com.tr = Master Kauçuk, başka firma).
   - Yapılan (oturum 13): Pakkens MG 063 manometre (görsel ürün PDF'inden çıkarıldı: pakkens.com/en/product-export/<kod>
     → PDF; 430×594 görsel + ayrı alfa maskesi birleştirildi, K14), KAS pirinç redüksiyon (sarı pirinç ek parçalar).
+  - Yapılan (oturum 14): Trakya Döküm (trakyadokum.com.tr/endustriler/boru-ek-parcalari.php, 960 px, galvaniz + siyah dirsek/te/nipel
+    — galvaniz ve siyah boru kartları 3'er görsel), gevşetilmiş kuralla Akyüzler'den eldiven (Beybi), sprey boya (Napron),
+    kalıp yağı (Mould), hortum seti + hortum eki, kapı tel yayı; drenaj kanalı (bosta.com), PE su deposu (idefix).
+    Engelli: Koçtaş/Trendyol/n11/Hepsiburada (403/000), knauf.com (403). nalburtek.com görselleri filigranlı (Watermark=true) → alınmaz.
   - **DURUM (oturum 13 sonu):** İnternetten bulunabilecekler büyük ölçüde tükendi. Kalan 91 kart: Paket 001'in 11'i (kullanıcıda),
     siteleri engelli/görselsiz markalar (Sika 10, Onduline 5, Güral 3+1, BTM 3, Weber 2, Bosch 2, Fırat 3, ECA/KAS birkaç,
     Mesa 2, Dömark 2, Samir duşakabin, UKS, Genç tiner, Hazal, Foma...) ve markasız tesisat/nalbur kalemleri (galvaniz, siyah boru,
@@ -50,7 +54,8 @@
     anahtarlar/kaynak kartı için Master kaynak pensesi. Uygun karşılığı YOK: bahçe hortumu, Master sprey boya, Dekor fırça/rulo,
     iskota halat/iskele kelepçesi, Master kalıp yağı, kümes teli (Fermo), menteşe/kapı hidroliği.
   - **K15 (2026-11-17): kaynaklar genişletildi** — dağıtıcı/resmi sosyal medya, ücretsiz lisanslı (Commons/Pexels/Unsplash),
-    son çare pazaryerleri. Pazaryerinden alınan "geçici görseller" listesi: (henüz yok).
+    son çare pazaryerleri. Pazaryerinden / başka satıcıdan alınan "geçici görseller": polietilen-su-depolari (idefix), drenaj-kanallari-ve-izgaralar (bosta.com).
+  - **Kullanıcı (2026-11-17, oturum 14): "resmi sitelerde takılı kalma"** — marka/renk birebir tutmasa da ürün türü doğruysa kullan (KARARLAR K15 eki).
   - Yapılan (oturum 9): Poelsan kaplin (poelsan.com), Sumak dalgıç (2, sumakpompa.com), Selsil yapıştırıcılar (2, selsil.com),
     KL Eco KE75115 + Hitachi G12SR4 (kalemakina.com), Samir Zümrüt 45 dolap ve oval duş teknesi (samirbanyo.com.tr).
   - Oturum 9 bulguları: küçük markaların resmi siteleri: poelsan.com, sumakpompa.com, selsil.com (/<ürün>/ → og:image),
@@ -320,3 +325,4 @@
 | 2026-11-17 | /gorsel eksikler (11) | Akyüzler dizininden 8 hırdavat kartı daha; 113/214 | gorsel |
 | 2026-11-17 | /gorsel eksikler (12) | Akyüzler dizininden 8 kart (Master ürünleri ağırlıklı); 121/214 | gorsel |
 | 2026-11-17 | /gorsel eksikler (13) | Pakkens manometre + pirinç ek parça; 123/214; internet kaynakları büyük ölçüde tükendi | gorsel |
+| 2026-11-17 | /gorsel eksikler (14) | Kurallar gevşetildi; Trakya Döküm + Akyüzler + satıcı siteleri: 9 kart; 132/214 | gorsel |

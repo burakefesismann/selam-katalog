@@ -23,6 +23,12 @@ ilgili_urunler:
   - firat-pvc-yagmur-olugu-sistemi
 sira: 30
 markalar: []
+gorseller:
+  - gorsel: /src/assets/urunler/drenaj-kanallari-ve-izgaralar-1.webp
+    alt_metin: Galvaniz ızgaralı plastik (PP) drenaj kanalı
+    kaynak_url: https://www.bosta.com/en-gb/floor-channel-drain-with-galvanised-steel-grating-pp-0361115m
+kaynak_sayfalar:
+  - https://www.bosta.com/en-gb/floor-channel-drain-with-galvanised-steel-grating-pp-0361115m
 ---
 ## Mağazamızdaki parçalar
 - **Plastik kanallar:** 100x500, 130x500, 130x1000 (beyaz) ve 200x500 mm

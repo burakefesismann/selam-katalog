@@ -23,6 +23,18 @@ ilgili_urunler:
   - conta-teflon-ve-sizdirmazlik
 sira: 40
 markalar: []
+gorseller:
+  - gorsel: /src/assets/urunler/siyah-boru-ve-ek-parcalari-1.webp
+    alt_metin: Trakya Döküm siyah dövme döküm dirsek
+    kaynak_url: https://www.trakyadokum.com.tr/endustriler/boru-ek-parcalari.php
+  - gorsel: /src/assets/urunler/siyah-boru-ve-ek-parcalari-2.webp
+    alt_metin: Trakya Döküm siyah te
+    kaynak_url: https://www.trakyadokum.com.tr/endustriler/boru-ek-parcalari.php
+  - gorsel: /src/assets/urunler/siyah-boru-ve-ek-parcalari-3.webp
+    alt_metin: Trakya Döküm siyah nipel
+    kaynak_url: https://www.trakyadokum.com.tr/endustriler/boru-ek-parcalari.php
+kaynak_sayfalar:
+  - https://www.trakyadokum.com.tr/endustriler/boru-ek-parcalari.php
 ---
 ## Mağazamızdaki parçalar
 - **Siyah boru:** 1" ve 1-1/2"

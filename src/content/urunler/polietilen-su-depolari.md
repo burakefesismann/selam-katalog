@@ -35,6 +35,12 @@ ilgili_urunler:
   - su-kuresel-vanalari
 sira: 10
 markalar: []
+gorseller:
+  - gorsel: /src/assets/urunler/polietilen-su-depolari-1.webp
+    alt_metin: 100 litre yatay polietilen su deposu
+    kaynak_url: https://www.idefix.com/erm-plastik-100-litre-kare-su-deposu-p-12787585
+kaynak_sayfalar:
+  - https://www.idefix.com/erm-plastik-100-litre-kare-su-deposu-p-12787585
 ---
 ## Mağazamızdaki hacimler
 - **100 lt** (dik ve yatay), **200 lt** ve **300 lt** (mavi-beyaz; beyaz yatay)

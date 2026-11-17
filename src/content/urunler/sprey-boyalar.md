@@ -22,6 +22,12 @@ ilgili_urunler:
   - boya-yardimcilari-karistirici-ortu-sokucu-toz-oksit
   - filli-yol-cizgi-boyalari
 sira: 10
+gorseller:
+  - gorsel: /src/assets/urunler/sprey-boyalar-1.webp
+    alt_metin: 400 ml sprey boya kutuları
+    kaynak_url: https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=154&marid=130&urun=1&tur_id=10555
+kaynak_sayfalar:
+  - https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=154&marid=130&urun=1&tur_id=10555
 ---
 ## Mağazamızdakiler
 - **Master sprey boya, 400 ml:** gümüş gri, kırmızı, mavi, siyah, trafik beyazı, trafik sarısı, çimen yeşili

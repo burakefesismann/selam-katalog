@@ -24,6 +24,18 @@ ilgili_urunler:
   - su-kuresel-vanalari
 sira: 10
 markalar: []
+gorseller:
+  - gorsel: /src/assets/urunler/galvaniz-boru-ve-ek-parcalari-1.webp
+    alt_metin: Trakya Döküm galvanizli dövme döküm dirsek
+    kaynak_url: https://www.trakyadokum.com.tr/endustriler/boru-ek-parcalari.php
+  - gorsel: /src/assets/urunler/galvaniz-boru-ve-ek-parcalari-2.webp
+    alt_metin: Trakya Döküm galvanizli te
+    kaynak_url: https://www.trakyadokum.com.tr/endustriler/boru-ek-parcalari.php
+  - gorsel: /src/assets/urunler/galvaniz-boru-ve-ek-parcalari-3.webp
+    alt_metin: Trakya Döküm galvanizli nipel
+    kaynak_url: https://www.trakyadokum.com.tr/endustriler/boru-ek-parcalari.php
+kaynak_sayfalar:
+  - https://www.trakyadokum.com.tr/endustriler/boru-ek-parcalari.php
 ---
 ## Mağazamızdaki parçalar
 - **Galvaniz boru:** 1/2"'den 2-1/2"'ye

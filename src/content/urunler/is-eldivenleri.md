@@ -23,7 +23,16 @@ ilgili_urunler:
   - diger-nalburiye-branda-naylon-cuval-vantuz-temizlik
 kaynak_sayfalar:
   - https://beybi.com.tr/en/products
+  - https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=15&marid=30&urun=1&tur_id=10035
+  - https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=15&marid=30&urun=1&tur_id=10015
 sira: 40
+gorseller:
+  - gorsel: /src/assets/urunler/is-eldivenleri-1.webp
+    alt_metin: Beybi Zebra polyester örme nitril kaplı iş eldiveni
+    kaynak_url: https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=15&marid=30&urun=1&tur_id=10035
+  - gorsel: /src/assets/urunler/is-eldivenleri-2.webp
+    alt_metin: Sarı nitril kaplı pamuklu iş eldiveni
+    kaynak_url: https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=15&marid=30&urun=1&tur_id=10015
 ---
 ## Mağazamızdakiler
 - **AKY:** nitril klasik sarı (universal), nitril turuncu (10 no), double polyester sarı-siyah, kırmızı-siyah (10 no), mikro köpük siyah (10 no)

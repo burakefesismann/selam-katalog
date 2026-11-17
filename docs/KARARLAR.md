@@ -99,3 +99,6 @@ medyası, ticari kullanıma serbest görseller (Wikimedia Commons, Pexels, Unspl
 (son çare) kullanılabilir. K10'daki öncelik sırası korunur (resmi varsa o). Hâlâ alınmaz: filigranlı, üstüne
 yazı/fiyat/logo bindirilmiş, başka satıcının adı görünen ya da yanlış marka/model/renkte görseller. Pazaryerinden
 alınan görseller DURUM'da listelenir; telif şikâyeti gelirse ya da resmi görsel bulunursa değiştirilir.
+Ek (2026-11-17, kullanıcı): "resmi sitelerde takılı kalma" — kalan kartlarda marka/model/renk birebir tutmasa da ürün TÜRÜ
+doğruysa görsel kullanılabilir (ör. farklı renkte aynı tip eldiven); pazaryerleri ve diğer satıcı siteleri serbest.
+Filigran / yazı-fiyat bindirmesi yasağı sürer. Paket 001'in 11 kartı yine kullanıcıda.

@@ -22,6 +22,12 @@ ilgili_urunler:
   - kbs-ciroz-ve-ciroz-anahtarlari
   - onduline-bituline-astar
 sira: 10
+gorseller:
+  - gorsel: /src/assets/urunler/kalip-yagi-derz-dolgu-ve-diger-1.webp
+    alt_metin: Plywood kalıp ayırıcı (kalıp yağı) bidonu
+    kaynak_url: https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=114&marid=55&urun=1&tur_id=7698
+kaynak_sayfalar:
+  - https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=114&marid=55&urun=1&tur_id=7698
 ---
 ## Mağazamızdakiler
 - Master ahşap kalıp yağı, mineral, 30 lt

@@ -23,6 +23,12 @@ ilgili_urunler:
   - asma-kilitler
   - vidalar
 sira: 30
+gorseller:
+  - gorsel: /src/assets/urunler/mentese-kapi-yayi-ve-panjur-1.webp
+    alt_metin: Tel kapı yayları
+    kaynak_url: https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=162&marid=31&urun=1&tur_id=7909
+kaynak_sayfalar:
+  - https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=162&marid=31&urun=1&tur_id=7909
 ---
 ## Mağazamızdakiler
 - **Menteşeler:** yaprak menteşe; mil menteşe 10, 12, 16 mm

@@ -22,6 +22,16 @@ ilgili_urunler:
   - hidroforlar
   - bahce-aletleri-makas-tirmik-kurek
 sira: 40
+gorseller:
+  - gorsel: /src/assets/urunler/hortumlar-ve-hortum-baglantilari-1.webp
+    alt_metin: Spiral bahçe hortumu ve fıskiye tabancası seti
+    kaynak_url: https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=77&marid=51&urun=1&tur_id=7505
+  - gorsel: /src/assets/urunler/hortumlar-ve-hortum-baglantilari-2.webp
+    alt_metin: 1/2 inç hortum eki
+    kaynak_url: https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=79&marid=51&urun=1&tur_id=7503
+kaynak_sayfalar:
+  - https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=77&marid=51&urun=1&tur_id=7505
+  - https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=79&marid=51&urun=1&tur_id=7503
 ---
 ## Mağazamızdakiler
 - **Bahçe hortumları:** Eko Soft, Soft ve New Garden 1/2"; termo bezli 1/2", 3/4", 1", 1-1/4" (yeşil seçenekli); örgülü 1/2", 3/4", 1", 1-1/4"; çift örgülü kırmızı ve sarı 1/2"; örgülü şeffaf 1/2" (25 m)
