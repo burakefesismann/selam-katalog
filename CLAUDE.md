@@ -63,9 +63,13 @@ Kullanıcı `/devam` yazarsa bu adımlar + sıradaki görev yapılır. Diğer ko
 ## Görseller — ÇOK ÖNEMLİ
 - Her ürünün en az 1 görseli olmalı. Görseli olmayan ürün "eksik" sayılır ve raporlanır; sitede kırık görsel
   değil, şık bir yer tutucu (marka logosu + kategori) görünür.
-- Kaynak önceliği: 1) kullanıcının verdiği/çektiği fotoğraf, 2) üreticinin resmi sitesi, kataloğu, bayi materyali.
-- **ALINMAZ:** pazaryerleri ve başka satıcılar (Koçtaş, Hepsiburada, Trendyol, Amazon, n11, rakip bayiler…),
-  stok fotoğraf siteleri, filigranlı ya da üstüne yazı/fiyat bindirilmiş görseller.
+- Kaynak önceliği (K15, 2026-11-17 genişletildi): 1) kullanıcının verdiği/çektiği fotoğraf, 2) üreticinin resmi sitesi,
+  kataloğu, bayi materyali, 3) üreticinin dağıtıcısı / resmi sosyal medyası, 4) ticari kullanıma serbest görseller
+  (Wikimedia Commons, Pexels, Unsplash — özellikle markasız hırdavat), 5) pazaryerleri ve diğer satıcılar (son çare).
+  Üst sıradaki bulunabiliyorsa alttakine inilmez.
+- **ALINMAZ:** filigranlı, üstüne yazı/fiyat/logo bindirilmiş, başka satıcının adı görünen görseller; yanlış
+  marka/model/renk. Pazaryerinden alınan görsel `npm run gorsel:rapor` ile değil, DURUM'daki listeyle izlenir
+  (resmi görsel bulununca değiştirilir).
 - Her görselin alındığı sayfa `kaynak_url` alanına yazılır.
 - İndirilen her görseli **aç ve bak**: doğru ürün mü (marka/model/ambalaj), filigran var mı, kalite yeterli mi
   (uzun kenar ≥ 800 px). Emin değilsen kullanma, raporla.

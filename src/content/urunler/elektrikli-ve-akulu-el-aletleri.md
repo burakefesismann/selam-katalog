@@ -28,6 +28,16 @@ ilgili_urunler:
   - zimparalar-ve-flap-diskler
   - elektrikli-vincler-ve-kaldirma-sapanlari
 sira: 20
+gorseller:
+  - gorsel: /src/assets/urunler/elektrikli-ve-akulu-el-aletleri-1.webp
+    alt_metin: KL Eco KE75115 750 W 115 mm avuç taşlama
+    kaynak_url: https://www.kalemakina.com/kleco
+  - gorsel: /src/assets/urunler/elektrikli-ve-akulu-el-aletleri-2.webp
+    alt_metin: Hitachi (HiKOKI) G12SR4 730 W 115 mm avuç taşlama
+    kaynak_url: https://www.kalemakina.com/avuc-taslama
+kaynak_sayfalar:
+  - https://www.kalemakina.com/kleco
+  - https://www.kalemakina.com/avuc-taslama
 ---
 ## Mağazamızdakiler
 - **Hitachi (bugün HiKOKI) makineler:** avuç taşlama 730 W 115 mm (G12SR4) ve 1500 W 125 mm elektronik (G13VA); darbeli matkap 550 W 13 mm (FDV16VB2); darbesiz matkap 600 W (D10VC3); köşe matkap 500 W 10 mm (D10YB)

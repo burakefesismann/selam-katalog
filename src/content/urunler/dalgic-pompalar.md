@@ -23,6 +23,15 @@ ilgili_urunler:
   - cekvalfler
   - su-flex-hortumlari
 sira: 10
+gorseller:
+  - gorsel: /src/assets/urunler/dalgic-pompalar-1.webp
+    alt_metin: Sumak şamandıralı drenaj dalgıç pompası
+    kaynak_url: https://sumakpompa.com/tr-dalgic-pompa-pompasi-pompalar/
+  - gorsel: /src/assets/urunler/dalgic-pompalar-2.webp
+    alt_metin: Sumak paslanmaz gövdeli kirli su (foseptik) dalgıç pompası
+    kaynak_url: https://sumakpompa.com/tr-dalgic-pompa-pompasi-pompalar/
+kaynak_sayfalar:
+  - https://sumakpompa.com/tr-dalgic-pompa-pompasi-pompalar/
 ---
 ## Mağazamızdaki modeller
 - **Sumak SDF 5/2** temiz su dalgıç pompası

@@ -22,6 +22,12 @@ ilgili_urunler:
   - samir-dusakabinler
   - dus-tekneleri
 sira: 11
+gorseller:
+  - gorsel: /src/assets/urunler/samir-banyo-dolaplari-1.webp
+    alt_metin: Samir Zümrüt 45 cm banyo dolabı takımı, aynalı dolap ile
+    kaynak_url: https://samirbanyo.com.tr/
+kaynak_sayfalar:
+  - https://samirbanyo.com.tr/
 ---
 ## Mağazamızdaki modeller
 - **Zümrüt** 45 cm banyo dolabı takımı

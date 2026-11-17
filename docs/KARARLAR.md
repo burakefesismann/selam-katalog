@@ -60,7 +60,7 @@ Kesin organizasyon adı, depo adresi ve site adresi F0.2'de buraya yazılacak.
 
 ## K10 — Görseller zorunlu, kaynak kuralları (2026-11-14, kullanıcı teyitli)
 Ürün görselleri en önemli unsur. Görseller internetten toplanacak; işi VS Code'daki Claude `/gorsel` komutuyla yapar.
-Sadece üreticinin resmi kaynakları (site, katalog, bayi materyali) veya kullanıcının kendi fotoğrafları kullanılır;
+Sadece üreticinin resmi kaynakları (site, katalog, bayi materyali) veya kullanıcının kendi fotoğrafları kullanılır (K15 ile genişletildi);
 pazaryeri/başka satıcı/stok görselleri kullanılmaz. Her görselin kaynağı kaydedilir. Ayrıntı: CLAUDE.md > Görseller.
 Beyin takımı içerik paketlerinde her ürün için resmi ürün sayfası adresini (`kaynak_sayfalar`) verir.
 
@@ -92,3 +92,10 @@ Real-ESRGAN (realesrgan-x4plus) görselleri belirgin şekilde keskinleştirdi; a
 `gorsel:hazirla --buyut` ile büyütülür. Gerçek büyük görsel (mağaza fotoğrafı / üreticiden) gelince o kullanılır.
 Araç depoya girmez; kullanıcının bilgisayarında `%LOCALAPPDATA%\selam-araclar\realesrgan\` altında durur.
 Arka plan temizleme (rembg) denendi: PVC ek parçalarında ürünü sildi, fabrika görselinde artık bıraktı → kullanılmaz.
+
+## K15 — Görsel kaynakları genişletildi (2026-11-17, kullanıcı teyitli)
+Resmi kaynaklar tükenince (91/214 görselli) kullanıcı kaynakları genişletti: üreticinin dağıtıcısı ve resmi sosyal
+medyası, ticari kullanıma serbest görseller (Wikimedia Commons, Pexels, Unsplash) ve pazaryerleri/diğer satıcılar
+(son çare) kullanılabilir. K10'daki öncelik sırası korunur (resmi varsa o). Hâlâ alınmaz: filigranlı, üstüne
+yazı/fiyat/logo bindirilmiş, başka satıcının adı görünen ya da yanlış marka/model/renkte görseller. Pazaryerinden
+alınan görseller DURUM'da listelenir; telif şikâyeti gelirse ya da resmi görsel bulunursa değiştirilir.

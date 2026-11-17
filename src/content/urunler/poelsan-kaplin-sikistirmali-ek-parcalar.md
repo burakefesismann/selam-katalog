@@ -24,6 +24,12 @@ ilgili_urunler:
   - pe100-kaynakli-ve-elektrofuzyon-ek-parcalar
   - su-kuresel-vanalari
 sira: 30
+gorseller:
+  - gorsel: /src/assets/urunler/poelsan-kaplin-sikistirmali-ek-parcalar-1.webp
+    alt_metin: Poelsan mavi seri kaplin (sıkıştırmalı) ek parçaları
+    kaynak_url: https://www.poelsan.com/urunler/mekanik-ekleme-parcalari/
+kaynak_sayfalar:
+  - https://www.poelsan.com/urunler/mekanik-ekleme-parcalari/
 ---
 ## Mağazamızdaki parçalar
 - **Düz bağlantı:** manşon, redüksiyon (ör. 110x63), dirsek, redüksiyonlu dirsek, te, inegal te (ör. 110x63x110), körtapa

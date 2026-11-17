@@ -3,12 +3,12 @@
 > Her oturumun başında oku, sonunda güncelle. Kısa tut.
 
 ## Şu an
-- Aktif görev: — (sıradaki: /gorsel eksikler oturum 9 — kaynaksız kartlar ya da marka logoları)
+- Aktif görev: — (sıradaki: /gorsel eksikler oturum 10)
 - Site: https://burakefesismann.github.io/selam-katalog/
 - Faz: 3 — Gerçek içerik ve görseller
 
 ## Yarım kalan
-- **`/gorsel eksikler` — paketler 002–007 görselleri** (2026-11-17 başladı). Görselli: 91/214. Paket 001'in 11 kartı kullanıcıda (dokunma).
+- **`/gorsel eksikler` — paketler 002–007 görselleri** (2026-11-17 başladı). Görselli: 97/214. Paket 001'in 11 kartı kullanıcıda (dokunma).
   - Yapılan (oturum 1): 10 ECA/Serel kartı (lavabo/eviye bataryası, havlupan, panel radyatör, termostatik vana, küresel vana,
     ara musluk, Serel klozet/pisuvar/lavabo).
   - Yapılan (oturum 2): banyo aksesuarı, Y filtre, pürjör, rakor, tepe duşu, ara kesme (krom), Tiera ankastre, Life banyo
@@ -22,6 +22,17 @@
   - Yapılan (oturum 6): İzocam 4 (boru kılıfı, çatı şiltesi, manto taşyünü, ara bölme; her biri ürün + uygulama, 690 px → K14),
     Onduline bitümlü membran (Bituline Prima, 620 px → K14), Fawori Optimix (karbonlu EPS, 800 px).
   - Yapılan (oturum 7): Yurtbay 5 (resmi mekân fotoğrafları, 1920 px), İzeltaş 3 (keser, opak pense, 5 m metre).
+  - **K15 (2026-11-17): kaynaklar genişletildi** — dağıtıcı/resmi sosyal medya, ücretsiz lisanslı (Commons/Pexels/Unsplash),
+    son çare pazaryerleri. Pazaryerinden alınan "geçici görseller" listesi: (henüz yok).
+  - Yapılan (oturum 9): Poelsan kaplin (poelsan.com), Sumak dalgıç (2, sumakpompa.com), Selsil yapıştırıcılar (2, selsil.com),
+    KL Eco KE75115 + Hitachi G12SR4 (kalemakina.com), Samir Zümrüt 45 dolap ve oval duş teknesi (samirbanyo.com.tr).
+  - Oturum 9 bulguları: küçük markaların resmi siteleri: poelsan.com, sumakpompa.com, selsil.com (/<ürün>/ → og:image),
+    kalemakina.com (KL Pro/KL Eco/Hitachi; static.ticimax.cloud/…/UrunResimleri/buyuk/…), samirbanyo.com.tr (React; görseller
+    /assets/index-*.js içinde: `main-medium-<seri>`, teknik-<seri> ardından gelen product1..n), stina.com.tr (duşakabin; Avino/Luna yok),
+    mesateknik.com (Mesa: süzgeç/duş kanalı; Dicle/Point aksesuar sayfası yok). YANLIŞ alan adları: kbs.com.tr (mobilya),
+    hazal.com.tr (restoran), sarayli.com.tr (holding), gezer.com.tr (endüstri), dekor.com.tr (yapım aşamasında).
+    Koçtaş 403 (bot koruması) → pazaryeri olarak kullanılamıyor; n11/Trendyol denenmedi. Commons görselleri çoğu CC BY-SA
+    (atıf ister) ve sahne fotoğrafı → katalogda zayıf; kullanılmadı.
   - Yapılan (oturum 8): Baymak JET hidrofor, Kale pirinç asma kilit, Orka Moonlight (2). Fırat yerden ısıtma montaj
     fotoğrafları 223 px + numara bindirmeli → kullanılmadı. Beybi: sitede Zebra yalnız kırmızı-siyah (mağazadaki mavi-siyah) → kullanılmadı.
     Fırat kombi seti / sifon: sitede ürün sayfası yok (sadece katalog PDF).
@@ -277,3 +288,4 @@
 | 2026-11-17 | /gorsel eksikler (6) | 6 ürün (İzocam 4 + Onduline membran + Fawori Optimix), çoğu K14 büyütme; 80/214; Güral indirilemedi | gorsel |
 | 2026-11-17 | /gorsel eksikler (7) | 8 ürün (Yurtbay 5 mekân + İzeltaş 3); 88/214; Weber/BTM erişilemedi | gorsel |
 | 2026-11-17 | /gorsel eksikler (8) | 3 ürün (Baymak hidrofor, Kale asma kilit, Orka dolap); 91/214; kaynaklı kartlar bitti, kalanlar zor/kaynaksız | gorsel |
+| 2026-11-17 | /gorsel eksikler (9) | K15 kaynak genişletme kararı; 6 ürün küçük marka sitelerinden (Poelsan, Sumak, Selsil, KL, Samir 2); 97/214 | gorsel |

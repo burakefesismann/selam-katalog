@@ -26,6 +26,12 @@ ilgili_urunler:
   - eca-dus-setleri-ve-tepe-duslari
   - sifonlar-ve-kadalar
 sira: 13
+gorseller:
+  - gorsel: /src/assets/urunler/dus-tekneleri-1.webp
+    alt_metin: Samir oval duş teknesi, banyo uygulaması
+    kaynak_url: https://samirbanyo.com.tr/urunler/tekne-kuvetler/dus-tekneleri
+kaynak_sayfalar:
+  - https://samirbanyo.com.tr/urunler/tekne-kuvetler/dus-tekneleri
 ---
 ## Mağazamızdaki modeller
 - **Samir:** 80x140 cm dikdörtgen, 90x90 cm oval

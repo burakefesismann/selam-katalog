@@ -18,6 +18,16 @@ ilgili_urunler:
   - sikabond-181-hizli-mdf-yapistirici
   - sika-mastik-ve-silikonlar-sikaflex-sikacryl-sikasil
 sira: 40
+gorseller:
+  - gorsel: /src/assets/urunler/yapistiricilar-mermer-epoksi-supurgelik-1.webp
+    alt_metin: Selsil akrilik strafor ve süpürgelik yapıştırıcısı kartuşu
+    kaynak_url: https://selsil.com/strafor-supurgelik-yapistirici/
+  - gorsel: /src/assets/urunler/yapistiricilar-mermer-epoksi-supurgelik-2.webp
+    alt_metin: Selsil iki bileşenli mermer ve taş yapıştırıcısı kutusu
+    kaynak_url: https://selsil.com/mermer-ve-tas-yapistiricisi/
+kaynak_sayfalar:
+  - https://selsil.com/strafor-supurgelik-yapistirici/
+  - https://selsil.com/mermer-ve-tas-yapistiricisi/
 ---
 ## Mağazamızdakiler
 - **Selsil akrilik süpürgelik yapıştırıcısı**, beyaz, 500 g

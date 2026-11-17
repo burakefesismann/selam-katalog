@@ -18,8 +18,10 @@ Bir oturumda **en fazla ~10 ürün** işle; kalanları `DURUM.md > Yarım kalan`
    - Önce ürünün `kaynak_sayfalar` alanı.
    - Boşsa üreticinin resmi sitesinde ürünü ara (web araması: marka + ürün adı; sonucun üreticinin kendi alan adında
      olduğundan emin ol). Bulduğun resmi sayfayı `kaynak_sayfalar`'a ekle.
-   - **YASAK kaynaklar:** pazaryerleri ve başka satıcılar (Koçtaş, Hepsiburada, Trendyol, Amazon, n11, rakip bayi
-     siteleri vb.), stok fotoğraf siteleri, filigranlı görseller.
+   - Resmi kaynakta yoksa (K15) sırayla: üreticinin dağıtıcısı / resmi sosyal medyası → ticari kullanıma serbest
+     görseller (Wikimedia Commons, Pexels, Unsplash; markasız hırdavat için ideal) → pazaryerleri ve diğer satıcılar
+     (son çare). Pazaryerinden alınanları DURUM'daki "geçici görseller" listesine yaz.
+   - **YASAK:** filigranlı, üstüne yazı/fiyat/logo bindirilmiş, başka satıcının adı görünen görseller.
 
 2. **Görsel adresini çıkar**
    Sayfanın HTML'ini `curl -sL "<url>"` ile al (web okuma aracı görsel adreslerini kaçırabilir, HTML'e bak).
