@@ -41,6 +41,13 @@ kaynak_sayfalar:
   - https://tr.onduline.com/en/homeowner/faq/installation/bituline
 sira: 10
 one_cikan: true
+gorseller:
+  - gorsel: /src/assets/urunler/onduline-bitumlu-membranlar-1.webp
+    alt_metin: Onduline Bituline Prima bitümlü membran rulosu
+    kaynak_url: https://tr.onduline.com/tr/son-kullanici/urunler/duz-cati/bituline-prima
+  - gorsel: /src/assets/urunler/onduline-bitumlu-membranlar-2.webp
+    alt_metin: Onduline Bituline Prima yeşil arduvazlı membran rulosu
+    kaynak_url: https://tr.onduline.com/tr/son-kullanici/urunler/duz-cati/bituline-prima
 ---
 ## Mağazamızdakiler
 - **BITULINE PRIMA:** PP 300, PP 400, PP 40M kırmızı ve yeşil (mineral kaplı)

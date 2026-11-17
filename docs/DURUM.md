@@ -3,12 +3,12 @@
 > Her oturumun başında oku, sonunda güncelle. Kısa tut.
 
 ## Şu an
-- Aktif görev: — (sıradaki: /gorsel eksikler oturum 6)
+- Aktif görev: — (sıradaki: /gorsel eksikler oturum 7)
 - Site: https://burakefesismann.github.io/selam-katalog/
 - Faz: 3 — Gerçek içerik ve görseller
 
 ## Yarım kalan
-- **`/gorsel eksikler` — paketler 002–007 görselleri** (2026-11-17 başladı). Görselli: 74/214. Paket 001'in 11 kartı kullanıcıda (dokunma).
+- **`/gorsel eksikler` — paketler 002–007 görselleri** (2026-11-17 başladı). Görselli: 80/214. Paket 001'in 11 kartı kullanıcıda (dokunma).
   - Yapılan (oturum 1): 10 ECA/Serel kartı (lavabo/eviye bataryası, havlupan, panel radyatör, termostatik vana, küresel vana,
     ara musluk, Serel klozet/pisuvar/lavabo).
   - Yapılan (oturum 2): banyo aksesuarı, Y filtre, pürjör, rakor, tepe duşu, ara kesme (krom), Tiera ankastre, Life banyo
@@ -19,6 +19,14 @@
     Momento Max, Nucleus, Panzer Astar, Sutut, Yol Çizgi).
   - Yapılan (oturum 5): Fawori 5 (Dönüşüm Astarı, Tavan Extra, Panel Kapı, Sentetik Antipas, Silikonlu Mat), Marshall 5
     (Geçiş Astarı, Enamel Antipas, Fit Silikonlu, Silikonlu Mat, Tavan Boyası).
+  - Yapılan (oturum 6): İzocam 4 (boru kılıfı, çatı şiltesi, manto taşyünü, ara bölme; her biri ürün + uygulama, 690 px → K14),
+    Onduline bitümlü membran (Bituline Prima, 620 px → K14), Fawori Optimix (karbonlu EPS, 800 px).
+  - İzocam yöntemi: izocam.com.tr/en/products/<grup>/<ürün> → src="/images/product/product-slider/…" (en büyük 690×405).
+    Onduline yöntemi: sayfadaki /styles/620x620/public/externals/<hash>.jpg → /sites/onduline_tr/files/externals/<hash>.jpg (620 px).
+    Onduline TR sitesinde sadece membran sayfaları var (astar, bant, Ondulikit, mahya, Fondaline sayfası YOK).
+  - **Güral (guralvit.com.tr):** /Uploads/Images/*.jpg dışarıdan 404 veriyor (tarayıcı oturumu istiyor) → indirilemedi.
+    Kullanıcı tarayıcıdan sağ tık → kaydet ile verebilir. İzocam Maxibord XPS: sitedeki pembe "Foamboard" ile aynı ürün
+    mü belirsiz → kullanılmadı. Terrawool (His Yalıtım) ayrı marka → İzocam görseli kullanılmadı.
   - Marshall yöntemi: ürün sayfasında msp.images.akzonobel.com/.../packshots/.../packshot_medium.(png|jpg) (3500 px). Akrikor
     sayfalarında sadece 160 px var. Fawori yöntemi: sayfadaki ilk res.cloudinary.com/.../FAWORI/<ad>.jpg (1024 px);
     `*_4x.webp` olanlar simge şeridi, ürün değil.
@@ -32,9 +40,8 @@
   - **ECA yöntemi:** eca.com.tr ürün sayfası (`/urun/...`) HTML'inde `data-src="https://eca.com.tr/image/webp?file=/uploads/images/big/…"`
     → bu adres 1200×1200 WebP verir (doğrudan /uploads/... yolu görsel değil). og:image sadece logo. Kategori sayfalarında
     ürün linkleri göreli (`href="urun/…"`). Tip 22/Tip 10 radyatör sayfalarında ürün-tek görsel yok (oda sahnesi kullanıldı).
-  - Sıradaki (kaynaklı, ~75): onduline 6, izocam 6, Fawori Optimix mantolama, Marshall sentetik tiner (sayfa yok),
-    yerden ısıtma aksesuarları, Filli Dalmaçyalı dübel (PDF), Sika 10 (bkz. sorun),
-    yurtbayseramik 5, btm 3, izeltas 3, guralvit 3, firat 3, bosch 2, weber 2, diğer tekil.
+  - Sıradaki (kaynaklı, ~65): yurtbayseramik 5, btm 3, izeltas 3, firat 3, bosch 2, weber 2, diğer tekil; zor olanlar:
+    Marshall sentetik tiner (sayfa yok), yerden ısıtma aksesuarları, Filli Dalmaçyalı dübel (PDF), Sika 10, Güral 3, Onduline 5.
   - Kaynaksız 70 kart (çoğu "çeşitli" hırdavat/tesisat kalemi) → büyük olasılıkla mağaza fotoğrafı; sona bırak, kullanıcıya listele.
 ## Sıradaki
 - F4.5 — Çözüm sayfaları (K13): `cozumler` koleksiyonu + panel + ana sayfa alanı; ilk sayfa Mantolama (içerik beyin
@@ -57,7 +64,9 @@
 - [ ] Şu ürünlerin fotoğrafı gerekli — mağazada çekilebilir ya da üreticiden istenebilir (resmi sitede görsel yok):
   Flatörler (ECA sayfası liste, görsel yok), Basınç düşürücü ECA modeli (KAS görseli kullanıldı), Serel Klozet Kapakları
   (Blaze Slim sayfası yok), Rezervuar İç Takımları & Klozet Kapakları (Visam/Aryak), KAS Eviye Bataryaları (Berilyum sayfası yok),
-  Su Sayaçları & Kalorimetre (KAS sitesinde sayaç sayfası yok), Marshall Akrikor dış cephe (resmi görsel 160 px).
+  Su Sayaçları & Kalorimetre (KAS sitesinde sayaç sayfası yok), Marshall Akrikor dış cephe (resmi görsel 160 px),
+  Onduline astar/bant/Ondulikit/mahya ve Çukurova-Fondaline (resmi sayfa yok), İzocam Maxibord XPS ve Terrawool (doğru ambalaj
+  belirsiz), Güral klozet/lavabo/aksesuar (site görselleri indirilemiyor — tarayıcıdan kaydedip verebilirsiniz).
 - [ ] docs/FIRMA.md'deki ⚠ işaretli bilgilerin teyidi (özellikle Güneysu Depo telefonu, e-posta)
 - [x] Şubelerin kesin Google Haritalar linkleri (2026-11-15 kullanıcı verdi, ayarlar/genel.yaml)
 - [x] Marka ve ürün listesi: paketler 001–007 sitede (214 kart, 52 marka, 68 kategori). KATALOG-YAPISI siteden üretildi.
@@ -249,3 +258,4 @@
 | 2026-11-17 | /gorsel eksikler (3) | 9 ürün (KAS 7 + Serel 2); 53/214 görselli; 4 kart resmi görselsiz | gorsel |
 | 2026-11-17 | /gorsel eksikler (4) | 11 ürün (Filli 9 + KAS 2); 64/214 görselli; Sika sitesinde ürün görseli yok | gorsel |
 | 2026-11-17 | /gorsel eksikler (5) | 10 ürün (Fawori 5 + Marshall 5); 74/214 görselli; Akrikor görseli çok küçük | gorsel |
+| 2026-11-17 | /gorsel eksikler (6) | 6 ürün (İzocam 4 + Onduline membran + Fawori Optimix), çoğu K14 büyütme; 80/214; Güral indirilemedi | gorsel |

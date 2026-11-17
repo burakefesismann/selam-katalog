@@ -40,8 +40,16 @@ kaynak_sayfalar:
   - https://www.izocam.com.tr/images/product/technical-image/manto-tasyunu-r-154.pdf
   - https://izocam.com.tr/pdffiles/certificatepdf/TS%20EN%2013162%20-%20TY%20TSE%20CertificateTS%20EN%2013162%20-%20TY%20TSE%20Certificate233.pdf
   - https://www.izocam.com.tr/tr/blog/genel/tasyunu-nedir-ne-ise-yarar
+  - https://www.izocam.com.tr/en/products/wall-insulation/manto-stone-wool
 sira: 20
 one_cikan: true
+gorseller:
+  - gorsel: /src/assets/urunler/izocam-manto-tasyunu-levha-1.webp
+    alt_metin: İzocam Manto taşyünü levhalar
+    kaynak_url: https://www.izocam.com.tr/en/products/wall-insulation/manto-stone-wool
+  - gorsel: /src/assets/urunler/izocam-manto-tasyunu-levha-2.webp
+    alt_metin: Dış cephede taşyünü levha ile mantolama uygulaması
+    kaynak_url: https://www.izocam.com.tr/en/products/wall-insulation/manto-stone-wool
 ---
 ## Mağazamızdakiler
 - **Manto Taşyünü:** 4 cm, 150 kg/m³ yoğunluk (paket 2,88 m²)

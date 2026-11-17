@@ -33,6 +33,13 @@ kaynak_sayfalar:
   - https://www.izocam.com.tr/en/products/roof-insulation/building-blanket
   - https://www.izocam.com.tr/en/product-group/glass-wool
 sira: 20
+gorseller:
+  - gorsel: /src/assets/urunler/izocam-camyunu-cati-siltesi-tip-400-1.webp
+    alt_metin: İzocam camyünü çatı şilte rulosu
+    kaynak_url: https://www.izocam.com.tr/en/products/roof-insulation/building-blanket
+  - gorsel: /src/assets/urunler/izocam-camyunu-cati-siltesi-tip-400-2.webp
+    alt_metin: Çatı arasına İzocam camyünü şilte serilmesi
+    kaynak_url: https://www.izocam.com.tr/en/products/roof-insulation/building-blanket
 ---
 ## Mağazamızdakiler
 - Camyünü düz şilte Tip 400 — 10 cm (9,6 m²) ve 16 cm

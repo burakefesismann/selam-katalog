@@ -33,6 +33,13 @@ kaynak_sayfalar:
   - https://www.izocam.com.tr/images/product/technical-image/ara-bolme-levhasi208.pdf
   - https://www.izocam.com.tr/tr/blog/genel/tasyunu-nedir-ne-ise-yarar
 sira: 40
+gorseller:
+  - gorsel: /src/assets/urunler/izocam-tasyunu-ara-bolme-levhasi-1.webp
+    alt_metin: İzocam taşyünü ara bölme levhaları
+    kaynak_url: https://www.izocam.com.tr/en/products/wall-insulation/stone-wool-partition-wall-board
+  - gorsel: /src/assets/urunler/izocam-tasyunu-ara-bolme-levhasi-2.webp
+    alt_metin: Alçıpan ara bölme duvarında taşyünü levha uygulaması
+    kaynak_url: https://www.izocam.com.tr/en/products/wall-insulation/stone-wool-partition-wall-board
 ---
 ## Mağazamızdakiler
 - Taşyünü ara bölme levhası, 5 cm — 40 kg/m³ ve 50 kg/m³ yoğunluk (paket 5,76 m²)

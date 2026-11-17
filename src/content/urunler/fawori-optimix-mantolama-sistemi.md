@@ -45,6 +45,10 @@ kaynak_sayfalar:
   - https://res.cloudinary.com/filli-boya-kurumsal-web-sitesi/image/upload/v1773726229/FAWORI/Fawori_Optimix_isi_Yalitim_Dubelleri_TDS_8f2eeea4e7.pdf
   - https://res.cloudinary.com/filli-boya-kurumsal-web-sitesi/image/upload/v1773729239/FAWORI/Fawori_Optimix_Donati_Filesi_F160_TDS_c0854a87aa.pdf
 sira: 40
+gorseller:
+  - gorsel: /src/assets/urunler/fawori-optimix-mantolama-sistemi-1.webp
+    alt_metin: Fawori Optimix karbonlu EPS ısı yalıtım levhası ve paketi
+    kaynak_url: https://www.fawori.com/urunler/isi-yalitim-levhalari/fawori-optimix-eps-isi-yalitim-levhasi-karbonlu
 ---
 ## Mağazamızdakiler
 - **Optimix karbonlu EPS levha:** 4 cm ve 5 cm

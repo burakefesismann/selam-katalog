@@ -36,6 +36,13 @@ kaynak_sayfalar:
   - https://www.izocam.com.tr/images/product/technical-image/camyunu-prefabrik-boru43.pdf
   - https://www.izocam.com.tr/tr/basinda-Izocam/yalitim,-su-sayaclari-ve-su-borularinin--donmasini-onluyor
 sira: 10
+gorseller:
+  - gorsel: /src/assets/urunler/izocam-camyunu-boru-kiliflari-1.webp
+    alt_metin: İzocam camyünü prefabrik boru kılıfları, kaplamasız ve alüminyum folyolu
+    kaynak_url: https://www.izocam.com.tr/en/products/hvac-insulation/glass-wool-prefabricated-pipe
+  - gorsel: /src/assets/urunler/izocam-camyunu-boru-kiliflari-2.webp
+    alt_metin: İzocam camyünü boru kılıfının boruya takılması
+    kaynak_url: https://www.izocam.com.tr/en/products/hvac-insulation/glass-wool-prefabricated-pipe
 ---
 ## Mağazamızdakiler
 - **Camyünlü boru kılıfı:** 1/2"'den 14"'e kadar
