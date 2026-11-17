@@ -3,12 +3,12 @@
 > Her oturumun başında oku, sonunda güncelle. Kısa tut.
 
 ## Şu an
-- Aktif görev: /gorsel eksikler oturum 7 (Yurtbay, BTM, İzeltaş, Bosch, Weber)
+- Aktif görev: — (sıradaki: /gorsel eksikler oturum 8)
 - Site: https://burakefesismann.github.io/selam-katalog/
 - Faz: 3 — Gerçek içerik ve görseller
 
 ## Yarım kalan
-- **`/gorsel eksikler` — paketler 002–007 görselleri** (2026-11-17 başladı). Görselli: 80/214. Paket 001'in 11 kartı kullanıcıda (dokunma).
+- **`/gorsel eksikler` — paketler 002–007 görselleri** (2026-11-17 başladı). Görselli: 88/214. Paket 001'in 11 kartı kullanıcıda (dokunma).
   - Yapılan (oturum 1): 10 ECA/Serel kartı (lavabo/eviye bataryası, havlupan, panel radyatör, termostatik vana, küresel vana,
     ara musluk, Serel klozet/pisuvar/lavabo).
   - Yapılan (oturum 2): banyo aksesuarı, Y filtre, pürjör, rakor, tepe duşu, ara kesme (krom), Tiera ankastre, Life banyo
@@ -21,6 +21,12 @@
     (Geçiş Astarı, Enamel Antipas, Fit Silikonlu, Silikonlu Mat, Tavan Boyası).
   - Yapılan (oturum 6): İzocam 4 (boru kılıfı, çatı şiltesi, manto taşyünü, ara bölme; her biri ürün + uygulama, 690 px → K14),
     Onduline bitümlü membran (Bituline Prima, 620 px → K14), Fawori Optimix (karbonlu EPS, 800 px).
+  - Yapılan (oturum 7): Yurtbay 5 (resmi mekân fotoğrafları, 1920 px), İzeltaş 3 (keser, opak pense, 5 m metre).
+  - Yurtbay yöntemi: seri sayfası yurtbayseramik.com/en/products/<seri> (bulmak için /en/search-results?q=<seri>) →
+    image.yurtbayseramik.com/mekan/mekan_1140/<SERİ>_n.jpg; mekan_1920 klasörü 1920×1080 verir. Tek karo görseli yok.
+    İzeltaş: kategori sayfasındaki wp-content/uploads PNG'ler (1000–1500 px); dosya adında ş varsa ayrışık yaz (s%CC%A7).
+  - **Erişilemeyenler:** tr.weber "Verifying your browser" (bot koruması) → indirilemedi. btm.co yanıt vermiyor.
+    Bosch: matkap ucu görseli 60×900 (ince çubuk), dekupaj bıçağı kartın ana ürünü değil (kart çoğunlukla Master disk) → kullanılmadı.
   - İzocam yöntemi: izocam.com.tr/en/products/<grup>/<ürün> → src="/images/product/product-slider/…" (en büyük 690×405).
     Onduline yöntemi: sayfadaki /styles/620x620/public/externals/<hash>.jpg → /sites/onduline_tr/files/externals/<hash>.jpg (620 px).
     Onduline TR sitesinde sadece membran sayfaları var (astar, bant, Ondulikit, mahya, Fondaline sayfası YOK).
@@ -40,7 +46,7 @@
   - **ECA yöntemi:** eca.com.tr ürün sayfası (`/urun/...`) HTML'inde `data-src="https://eca.com.tr/image/webp?file=/uploads/images/big/…"`
     → bu adres 1200×1200 WebP verir (doğrudan /uploads/... yolu görsel değil). og:image sadece logo. Kategori sayfalarında
     ürün linkleri göreli (`href="urun/…"`). Tip 22/Tip 10 radyatör sayfalarında ürün-tek görsel yok (oda sahnesi kullanıldı).
-  - Sıradaki (kaynaklı, ~65): yurtbayseramik 5, btm 3, izeltas 3, firat 3, bosch 2, weber 2, diğer tekil; zor olanlar:
+  - Sıradaki (kaynaklı, ~55): firat 3, diğer tekil markalar (rapordan bak); zor olanlar: btm 3, weber 2, bosch 2,
     Marshall sentetik tiner (sayfa yok), yerden ısıtma aksesuarları, Filli Dalmaçyalı dübel (PDF), Sika 10, Güral 3, Onduline 5.
   - Kaynaksız 70 kart (çoğu "çeşitli" hırdavat/tesisat kalemi) → büyük olasılıkla mağaza fotoğrafı; sona bırak, kullanıcıya listele.
 ## Sıradaki
@@ -66,7 +72,8 @@
   (Blaze Slim sayfası yok), Rezervuar İç Takımları & Klozet Kapakları (Visam/Aryak), KAS Eviye Bataryaları (Berilyum sayfası yok),
   Su Sayaçları & Kalorimetre (KAS sitesinde sayaç sayfası yok), Marshall Akrikor dış cephe (resmi görsel 160 px),
   Onduline astar/bant/Ondulikit/mahya ve Çukurova-Fondaline (resmi sayfa yok), İzocam Maxibord XPS ve Terrawool (doğru ambalaj
-  belirsiz), Güral klozet/lavabo/aksesuar (site görselleri indirilemiyor — tarayıcıdan kaydedip verebilirsiniz).
+  belirsiz), Güral klozet/lavabo/aksesuar (site görselleri indirilemiyor — tarayıcıdan kaydedip verebilirsiniz),
+  Weber Dress ince sıva ve yüzey sertleştirici (site bot koruması), BTM 3 kart (site açılmıyor).
 - [ ] docs/FIRMA.md'deki ⚠ işaretli bilgilerin teyidi (özellikle Güneysu Depo telefonu, e-posta)
 - [x] Şubelerin kesin Google Haritalar linkleri (2026-11-15 kullanıcı verdi, ayarlar/genel.yaml)
 - [x] Marka ve ürün listesi: paketler 001–007 sitede (214 kart, 52 marka, 68 kategori). KATALOG-YAPISI siteden üretildi.
