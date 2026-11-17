@@ -24,6 +24,16 @@ ilgili_urunler:
   - silikon-yapistirici-sprey-yaglayici-ve-pas-sokucu
   - izocam-camyunu-boru-kiliflari
 sira: 10
+gorseller:
+  - gorsel: /src/assets/urunler/bantlar-maskeleme-ikaz-cift-tarafli-aluminyum-1.webp
+    alt_metin: Akbant maskeleme bandı ruloları
+    kaynak_url: https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=65&marid=41&urun=1&tur_id=7454
+  - gorsel: /src/assets/urunler/bantlar-maskeleme-ikaz-cift-tarafli-aluminyum-2.webp
+    alt_metin: Siyah kaydırmaz bant
+    kaynak_url: https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=248&marid=41&urun=1&tur_id=8947
+kaynak_sayfalar:
+  - https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=65&marid=41&urun=1&tur_id=7454
+  - https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=248&marid=41&urun=1&tur_id=8947
 ---
 ## Mağazamızdakiler
 - Maskeleme bandı 36 ve 48 mm

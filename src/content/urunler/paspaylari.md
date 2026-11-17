@@ -23,6 +23,16 @@ ilgili_urunler:
   - kbs-ciroz-ve-ciroz-anahtarlari
   - kalip-yagi-derz-dolgu-ve-diger
 sira: 20
+gorseller:
+  - gorsel: /src/assets/urunler/paspaylari-1.webp
+    alt_metin: Norm tipi plastik paspayı
+    kaynak_url: https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=113&marid=55&urun=1&tur_id=7692
+  - gorsel: /src/assets/urunler/paspaylari-2.webp
+    alt_metin: Perde-kolon tipi tekerlek paspayı
+    kaynak_url: https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=113&marid=55&urun=1&tur_id=7688
+kaynak_sayfalar:
+  - https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=113&marid=55&urun=1&tur_id=7692
+  - https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=113&marid=55&urun=1&tur_id=7688
 ---
 ## Mağazamızdakiler
 - **Norm paspayı:** 25, 30, 50 mm

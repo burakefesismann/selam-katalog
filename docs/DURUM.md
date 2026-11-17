@@ -3,12 +3,12 @@
 > Her oturumun başında oku, sonunda güncelle. Kısa tut.
 
 ## Şu an
-- Aktif görev: — (sıradaki: /gorsel eksikler oturum 11 — Akyüzler dizininden devam)
+- Aktif görev: — (sıradaki: /gorsel eksikler oturum 12)
 - Site: https://burakefesismann.github.io/selam-katalog/
 - Faz: 3 — Gerçek içerik ve görseller
 
 ## Yarım kalan
-- **`/gorsel eksikler` — paketler 002–007 görselleri** (2026-11-17 başladı). Görselli: 105/214. Paket 001'in 11 kartı kullanıcıda (dokunma).
+- **`/gorsel eksikler` — paketler 002–007 görselleri** (2026-11-17 başladı). Görselli: 113/214. Paket 001'in 11 kartı kullanıcıda (dokunma).
   - Yapılan (oturum 1): 10 ECA/Serel kartı (lavabo/eviye bataryası, havlupan, panel radyatör, termostatik vana, küresel vana,
     ara musluk, Serel klozet/pisuvar/lavabo).
   - Yapılan (oturum 2): banyo aksesuarı, Y filtre, pürjör, rakor, tepe duşu, ara kesme (krom), Tiera ankastre, Life banyo
@@ -31,9 +31,11 @@
     `.gorsel-orijinal/akyuzler.tsv` içinde (gitignore'da; yeniden üretmek için `.gorsel-orijinal/akyuzler-tara.mjs <çıktı.tsv>`).
     Eşleştirme: `node .gorsel-orijinal/eslestir.mjs <tsv> <hedef.json>` (hedef: {slug: "regex"}, Türkçe harfler sadeleştirilmiş).
     Bağlama: `node .gorsel-orijinal/bagla.mjs <liste.json>`. kaynak_url'den `&marka=` kısmı çıkarılır (Türkçe harf bozuluyor).
-    Sıradaki Akyüzler adayları: zımpara (Atlas su zımparası; flap diskler Karbosan — kart Master), teller (Aktel), bantlar,
-    hortum (Spring Garden), paspay/tie-rot (Paspay), kelepçe/zincir, sprey boya (Napron/Akçalı — kart Master), menteşe/makara,
-    branda/naylon (Naksan), kaynak/çiroz anahtarı (Master), fırça/rulo (Rulomas).
+  - Yapılan (oturum 11, Akyüzler): paspayları, tie-rot, silikon tabancaları, bantlar, teller (rabız + elek), su zımparası,
+    branda/streç, zincir kilidi/karabina. Kalıp yağı görseli "Mould" marka (kart Master) → kullanılmadı.
+    Akyüzler'de kalan uygun adaylar az: KBS çiroz kartı için Master kollu çiroz anahtarı (07_04_2017_10_08_1491548918.jpg),
+    anahtarlar/kaynak kartı için Master kaynak pensesi. Uygun karşılığı YOK: bahçe hortumu, Master sprey boya, Dekor fırça/rulo,
+    iskota halat/iskele kelepçesi, Master kalıp yağı, kümes teli (Fermo), menteşe/kapı hidroliği.
   - **K15 (2026-11-17): kaynaklar genişletildi** — dağıtıcı/resmi sosyal medya, ücretsiz lisanslı (Commons/Pexels/Unsplash),
     son çare pazaryerleri. Pazaryerinden alınan "geçici görseller" listesi: (henüz yok).
   - Yapılan (oturum 9): Poelsan kaplin (poelsan.com), Sumak dalgıç (2, sumakpompa.com), Selsil yapıştırıcılar (2, selsil.com),
@@ -302,3 +304,4 @@
 | 2026-11-17 | /gorsel eksikler (8) | 3 ürün (Baymak hidrofor, Kale asma kilit, Orka dolap); 91/214; kaynaklı kartlar bitti, kalanlar zor/kaynaksız | gorsel |
 | 2026-11-17 | /gorsel eksikler (9) | K15 kaynak genişletme kararı; 6 ürün küçük marka sitelerinden (Poelsan, Sumak, Selsil, KL, Samir 2); 97/214 | gorsel |
 | 2026-11-17 | /gorsel eksikler (10) | Akyüzler Nalburiye dizini (961 ürün) çıkarıldı; 8 hırdavat kartı; 105/214 | gorsel |
+| 2026-11-17 | /gorsel eksikler (11) | Akyüzler dizininden 8 hırdavat kartı daha; 113/214 | gorsel |

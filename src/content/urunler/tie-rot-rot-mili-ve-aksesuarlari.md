@@ -23,6 +23,16 @@ ilgili_urunler:
   - paspaylari
   - dubeller
 sira: 40
+gorseller:
+  - gorsel: /src/assets/urunler/tie-rot-rot-mili-ve-aksesuarlari-1.webp
+    alt_metin: Tie-rot milleri
+    kaynak_url: https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=112&marid=55&urun=1&tur_id=7695
+  - gorsel: /src/assets/urunler/tie-rot-rot-mili-ve-aksesuarlari-2.webp
+    alt_metin: Kelebek tie-rot somunu
+    kaynak_url: https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=112&marid=55&urun=1&tur_id=7696
+kaynak_sayfalar:
+  - https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=112&marid=55&urun=1&tur_id=7695
+  - https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=112&marid=55&urun=1&tur_id=7696
 ---
 ## Mağazamızdakiler
 - **Tie-rot milleri:** 100, 120, 150, 200 cm

@@ -22,6 +22,16 @@ ilgili_urunler:
   - pense-kerpeten-tornavida-ve-kesici-el-aletleri
   - siva-alci-ve-kose-profilleri
 sira: 30
+gorseller:
+  - gorsel: /src/assets/urunler/teller-kumes-rabiz-baglama-elek-1.webp
+    alt_metin: Galvanizli rabız teli rulosu
+    kaynak_url: https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=251&marid=38&urun=1&tur_id=8949
+  - gorsel: /src/assets/urunler/teller-kumes-rabiz-baglama-elek-2.webp
+    alt_metin: Yuvarlak ahşap kasnaklı elek
+    kaynak_url: https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=69&marid=50&urun=1&tur_id=7735
+kaynak_sayfalar:
+  - https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=251&marid=38&urun=1&tur_id=8949
+  - https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=69&marid=50&urun=1&tur_id=7735
 ---
 ## Mağazamızdakiler
 - **Kümes teli (Fermo):** 100 cm (20 m²), 120 cm (24 m²), 150 cm (30 m²)

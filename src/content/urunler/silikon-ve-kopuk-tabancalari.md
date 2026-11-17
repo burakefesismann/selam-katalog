@@ -23,6 +23,16 @@ ilgili_urunler:
   - sika-mastik-ve-silikonlar-sikaflex-sikacryl-sikasil
   - seramik-ve-parke-bitis-kose-profilleri
 sira: 30
+gorseller:
+  - gorsel: /src/assets/urunler/silikon-ve-kopuk-tabancalari-1.webp
+    alt_metin: Master siyah metal silikon tabancası
+    kaynak_url: https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=22&marid=68&urun=1&tur_id=7334
+  - gorsel: /src/assets/urunler/silikon-ve-kopuk-tabancalari-2.webp
+    alt_metin: Master kısa sosis silikon tabancası
+    kaynak_url: https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=22&marid=68&urun=1&tur_id=7335
+kaynak_sayfalar:
+  - https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=22&marid=68&urun=1&tur_id=7334
+  - https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=22&marid=68&urun=1&tur_id=7335
 ---
 ## Mağazamızdakiler
 - Master köpük tabancası SKT015

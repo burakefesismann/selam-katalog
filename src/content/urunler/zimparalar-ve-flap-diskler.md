@@ -23,6 +23,12 @@ ilgili_urunler:
   - kesici-diskler-elmas-testereler-ve-el-testereleri
   - firca-ve-rulolar
 sira: 40
+gorseller:
+  - gorsel: /src/assets/urunler/zimparalar-ve-flap-diskler-1.webp
+    alt_metin: Su zımparası tabakaları
+    kaynak_url: https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=147&marid=35&urun=1&tur_id=7959
+kaynak_sayfalar:
+  - https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=147&marid=35&urun=1&tur_id=7959
 ---
 ## Mağazamızdakiler
 - **Master flap diskler:** 115 mm (40 ve 80 kum), 180 mm (40, 60 ve 80 kum)

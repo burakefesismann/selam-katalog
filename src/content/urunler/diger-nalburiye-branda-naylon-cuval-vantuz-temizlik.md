@@ -23,6 +23,16 @@ ilgili_urunler:
   - bantlar-maskeleme-ikaz-cift-tarafli-aluminyum
   - is-eldivenleri
 sira: 10
+gorseller:
+  - gorsel: /src/assets/urunler/diger-nalburiye-branda-naylon-cuval-vantuz-temizlik-1.webp
+    alt_metin: Mavi dokuma çadır branda
+    kaynak_url: https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=160&marid=64&urun=1&tur_id=7760
+  - gorsel: /src/assets/urunler/diger-nalburiye-branda-naylon-cuval-vantuz-temizlik-2.webp
+    alt_metin: Streç film ruloları
+    kaynak_url: https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=121&marid=64&urun=1&tur_id=7758
+kaynak_sayfalar:
+  - https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=160&marid=64&urun=1&tur_id=7760
+  - https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=121&marid=64&urun=1&tur_id=7758
 ---
 ## Mağazamızdakiler
 - **Örtü ve ambalaj:** naylon branda, mavi çadır branda 3x3 m, streç film 50 cm (23 mikron), naylon poşet, çuval 70x100

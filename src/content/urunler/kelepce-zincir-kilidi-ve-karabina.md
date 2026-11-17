@@ -23,6 +23,16 @@ ilgili_urunler:
   - civata-somun-pul-ve-klemens
   - elektrikli-vincler-ve-kaldirma-sapanlari
 sira: 10
+gorseller:
+  - gorsel: /src/assets/urunler/kelepce-zincir-kilidi-ve-karabina-1.webp
+    alt_metin: Master galvaniz zincir kilidi
+    kaynak_url: https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=361&marid=68&urun=1&tur_id=10550
+  - gorsel: /src/assets/urunler/kelepce-zincir-kilidi-ve-karabina-2.webp
+    alt_metin: Master galvaniz yaylı karabina
+    kaynak_url: https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=361&marid=68&urun=1&tur_id=10546
+kaynak_sayfalar:
+  - https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=361&marid=68&urun=1&tur_id=10550
+  - https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=361&marid=68&urun=1&tur_id=10546
 ---
 ## Mağazamızdakiler
 - **Cırt kelepçe (beyaz):** 3,6x250, 3,6x370, 4,8x400, 4,8x450, 4,8x500, 8,0x450 mm
