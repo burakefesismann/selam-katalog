@@ -27,6 +27,16 @@ ilgili_urunler:
   - baumit-flexo
   - olcum-aletleri-metre-su-terazisi-sakul-gonye-cirpi
 sira: 20
+gorseller:
+  - gorsel: /src/assets/urunler/mala-ispatula-ve-siva-aletleri-1.webp
+    alt_metin: Ahşap saplı sıva malaları
+    kaynak_url: https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=152&marid=68&urun=1&tur_id=8915
+  - gorsel: /src/assets/urunler/mala-ispatula-ve-siva-aletleri-2.webp
+    alt_metin: Açık plastik saplı dişli seramik malası
+    kaynak_url: https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=152&marid=68&urun=1&tur_id=8922
+kaynak_sayfalar:
+  - https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=152&marid=68&urun=1&tur_id=8915
+  - https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=152&marid=68&urun=1&tur_id=8922
 ---
 ## Mağazamızdakiler
 - **Sıvacı malaları (Dekor):** 18, 20, 22, 24, 26 cm; sıvacı küreği 36 cm, serpme küreği 21,5 cm

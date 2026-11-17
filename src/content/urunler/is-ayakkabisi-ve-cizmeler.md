@@ -22,6 +22,16 @@ ilgili_urunler:
   - emniyet-kemeri-ikaz-yelegi-yagmurluk-ve-guvenlik-filesi
   - baret-gozluk-ve-kaynak-maskesi
 sira: 30
+gorseller:
+  - gorsel: /src/assets/urunler/is-ayakkabisi-ve-cizmeler-1.webp
+    alt_metin: Master çelik burunlu iş ayakkabısı
+    kaynak_url: https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=226&marid=68&urun=1&tur_id=8607
+  - gorsel: /src/assets/urunler/is-ayakkabisi-ve-cizmeler-2.webp
+    alt_metin: Gezer çelik burunlu yeşil çizme
+    kaynak_url: https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=129&marid=90&urun=1&tur_id=7794
+kaynak_sayfalar:
+  - https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=226&marid=68&urun=1&tur_id=8607
+  - https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=129&marid=90&urun=1&tur_id=7794
 ---
 ## Mağazamızdakiler
 - **Çelik burunlu iş ayakkabıları:** Master bot (43–45), Master (45–46), Master süet (41–43), BMES (43–44)

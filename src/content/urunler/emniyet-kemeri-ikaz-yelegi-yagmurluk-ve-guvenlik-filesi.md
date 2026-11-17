@@ -20,6 +20,16 @@ ilgili_urunler:
   - merdivenler
   - is-ayakkabisi-ve-cizmeler
 sira: 20
+gorseller:
+  - gorsel: /src/assets/urunler/emniyet-kemeri-ikaz-yelegi-yagmurluk-ve-guvenlik-filesi-1.webp
+    alt_metin: Master tam vücut bel destekli paraşüt tipi emniyet kemeri ve kutusu
+    kaynak_url: https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=210&marid=68&urun=1&tur_id=8935
+  - gorsel: /src/assets/urunler/emniyet-kemeri-ikaz-yelegi-yagmurluk-ve-guvenlik-filesi-2.webp
+    alt_metin: Turuncu ve sarı reflektörlü ikaz yelekleri
+    kaynak_url: https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=209&marid=85&urun=1&tur_id=8601
+kaynak_sayfalar:
+  - https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=210&marid=68&urun=1&tur_id=8935
+  - https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=209&marid=85&urun=1&tur_id=8601
 ---
 ## Mağazamızdakiler
 - **Emniyet kemerleri:** paraşüt tipi bel destekli, bel tipi bel destekli

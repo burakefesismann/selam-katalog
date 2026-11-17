@@ -24,6 +24,12 @@ ilgili_urunler:
   - firca-ve-rulolar
   - olcum-aletleri-metre-su-terazisi-sakul-gonye-cirpi
 sira: 20
+gorseller:
+  - gorsel: /src/assets/urunler/merdivenler-1.webp
+    alt_metin: Alüminyum A tipi merdiven
+    kaynak_url: https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=61&marid=39&urun=1&tur_id=7743
+kaynak_sayfalar:
+  - https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=61&marid=39&urun=1&tur_id=7743
 ---
 ## Mağazamızdakiler
 - **Master:** 3, 4, 5 ve 6 basamaklı merdivenler; Superstep çift çıkışlı 3 ve 5 basamak; teleskopik merdiven 380 cm

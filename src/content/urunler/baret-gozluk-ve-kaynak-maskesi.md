@@ -19,6 +19,16 @@ ilgili_urunler:
   - is-eldivenleri
   - is-ayakkabisi-ve-cizmeler
 sira: 10
+gorseller:
+  - gorsel: /src/assets/urunler/baret-gozluk-ve-kaynak-maskesi-1.webp
+    alt_metin: Sarı ve beyaz standart baretler
+    kaynak_url: https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=209&marid=85&urun=1&tur_id=8598
+  - gorsel: /src/assets/urunler/baret-gozluk-ve-kaynak-maskesi-2.webp
+    alt_metin: Enseden mekanizmalı sarı baret
+    kaynak_url: https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=209&marid=85&urun=1&tur_id=8599
+kaynak_sayfalar:
+  - https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=209&marid=85&urun=1&tur_id=8598
+  - https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=209&marid=85&urun=1&tur_id=8599
 ---
 ## Mağazamızdakiler
 - **Baretler (CE belgeli):** Star baret beyaz, sarı, kırmızı, mavi; enseden mekanizmalı baret beyaz ve sarı

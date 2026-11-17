@@ -21,6 +21,16 @@ ilgili_urunler:
   - hortumlar-ve-hortum-baglantilari
   - bahce-telleri
 sira: 10
+gorseller:
+  - gorsel: /src/assets/urunler/bahce-aletleri-makas-tirmik-kurek-1.webp
+    alt_metin: Yaparlar Füze takviyeli tırmık
+    kaynak_url: https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=221&marid=46&urun=1&tur_id=8783
+  - gorsel: /src/assets/urunler/bahce-aletleri-makas-tirmik-kurek-2.webp
+    alt_metin: Master bağ makası
+    kaynak_url: https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=82&marid=68&urun=1&tur_id=7527
+kaynak_sayfalar:
+  - https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=221&marid=46&urun=1&tur_id=8783
+  - https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=82&marid=68&urun=1&tur_id=7527
 ---
 ## Mağazamızdakiler
 - **Kürekler:** Feza sivri bel küreği, Yapar 4160 inşaat küreği, plastik kar küreği, geniş soba küreği

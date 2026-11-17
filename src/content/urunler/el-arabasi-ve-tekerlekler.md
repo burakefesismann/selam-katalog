@@ -20,6 +20,16 @@ ilgili_urunler:
   - bahce-aletleri-makas-tirmik-kurek
   - mala-ispatula-ve-siva-aletleri
 sira: 30
+gorseller:
+  - gorsel: /src/assets/urunler/el-arabasi-ve-tekerlekler-1.webp
+    alt_metin: Yaparlar YPR 1.20 el arabası
+    kaynak_url: https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=98&marid=46&urun=1&tur_id=7604
+  - gorsel: /src/assets/urunler/el-arabasi-ve-tekerlekler-2.webp
+    alt_metin: Master şişme bilyalı el arabası tekerleği
+    kaynak_url: https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=57&marid=68&urun=1&tur_id=9240
+kaynak_sayfalar:
+  - https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=98&marid=46&urun=1&tur_id=7604
+  - https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=57&marid=68&urun=1&tur_id=9240
 ---
 ## Mağazamızdakiler
 - Yapar YPR 1.20 el arabası
