@@ -21,7 +21,12 @@ ilgili_urunler:
   - eca-musluklar-ve-taharet-musluklari
 kaynak_sayfalar:
   - https://eca.com.tr/yapi/seramik-saglik-gerecleri/ic-takimlar
+  - https://eca.com.tr/urun/ic-takim-3
 sira: 30
+gorseller:
+  - gorsel: /src/assets/urunler/rezervuar-ic-takimlari-ve-klozet-kapaklari-1.webp
+    alt_metin: Alttan dolumlu çift basmalı rezervuar iç takımı
+    kaynak_url: https://eca.com.tr/urun/ic-takim-3
 ---
 ## Mağazamızdakiler
 - **Klozet kapakları:** Visam Leylak yavaş kapanan, Visam Melisa termoplast

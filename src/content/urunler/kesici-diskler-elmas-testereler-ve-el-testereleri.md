@@ -25,7 +25,16 @@ ilgili_urunler:
 kaynak_sayfalar:
   - https://www.bosch-professional.com/tr/tr/dekupaj-testere-bicaklari-2865229-ocs-ac/
   - https://www.bosch-professional.com/ae/en/t-144-d-speed-for-wood-jigsaw-blades-2867297-ocs-ac/
+  - https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=38&marid=68&urun=1&tur_id=10010
+  - https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=38&marid=68&urun=1&tur_id=7394
 sira: 10
+gorseller:
+  - gorsel: /src/assets/urunler/kesici-diskler-elmas-testereler-ve-el-testereleri-1.webp
+    alt_metin: Master 115 mm metal kesme diski
+    kaynak_url: https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=38&marid=68&urun=1&tur_id=10010
+  - gorsel: /src/assets/urunler/kesici-diskler-elmas-testereler-ve-el-testereleri-2.webp
+    alt_metin: Master delikli turbo elmas kesici
+    kaynak_url: https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=38&marid=68&urun=1&tur_id=7394
 ---
 ## Mağazamızdakiler
 - **Metal diskleri:** metal kesici 115, 180, 230 mm; ince inox kesici 115 ve 180 mm; metal taşlama 115 ve 180 mm

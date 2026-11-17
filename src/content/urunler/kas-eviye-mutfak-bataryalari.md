@@ -26,7 +26,12 @@ ilgili_urunler:
   - eca-eviye-mutfak-bataryalari
 kaynak_sayfalar:
   - https://kas.com.tr/prod-category/evye-armaturleri/
+  - https://kas.com.tr/product/kugu-evye-bataryasi-2/
 sira: 15
+gorseller:
+  - gorsel: /src/assets/urunler/kas-eviye-mutfak-bataryalari-1.webp
+    alt_metin: KAS kuğu eviye bataryası
+    kaynak_url: https://kas.com.tr/product/kugu-evye-bataryasi-2/
 ---
 ## Mağazamızdaki modeller
 - **Berilyum** kuğu eviye bataryası

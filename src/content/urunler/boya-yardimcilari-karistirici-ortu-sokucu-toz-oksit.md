@@ -21,6 +21,12 @@ ilgili_urunler:
   - sprey-boyalar
   - tinerler
 sira: 30
+gorseller:
+  - gorsel: /src/assets/urunler/boya-yardimcilari-karistirici-ortu-sokucu-toz-oksit-1.webp
+    alt_metin: Boya ve alçı karıştırıcı (mikser) ucu
+    kaynak_url: https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=29&marid=68&urun=1&tur_id=9221
+kaynak_sayfalar:
+  - https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=29&marid=68&urun=1&tur_id=9221
 ---
 ## Mağazamızdakiler
 - **Boya karıştırıcılar:** Mega 120 mm (M14), segmanlı ve standart karıştırıcı uçlar

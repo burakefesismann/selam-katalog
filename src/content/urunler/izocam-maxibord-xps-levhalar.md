@@ -31,7 +31,16 @@ kaynak_sayfalar:
   - https://izocam.com.tr/en/products/wall-insulation/foamboard-1500-p
   - https://izocam.com.tr/images/product/technical-image/foamboard-under-flooring84.pdf
   - https://izocam.com.tr/en/product-group/extruded-polystyrene-(xps)
+  - https://www.izocam.com.tr/en/products/wall-insulation/foamboard-2000p---2500p---3000p---3500p
+  - https://www.izocam.com.tr/en/products/floor-insulation/foamboard-under-flooring
 sira: 30
+gorseller:
+  - gorsel: /src/assets/urunler/izocam-maxibord-xps-levhalar-1.webp
+    alt_metin: İzocam XPS ısı yalıtım levhaları
+    kaynak_url: https://www.izocam.com.tr/en/products/wall-insulation/foamboard-2000p---2500p---3000p---3500p
+  - gorsel: /src/assets/urunler/izocam-maxibord-xps-levhalar-2.webp
+    alt_metin: İzocam parke altı XPS levhaları
+    kaynak_url: https://www.izocam.com.tr/en/products/floor-insulation/foamboard-under-flooring
 ---
 ## Mağazamızdakiler
 - **Maxibord 1500:** 3 cm (paket 10,08 m²), 4 cm (7,2 m²), 5 cm (5,76 m²)

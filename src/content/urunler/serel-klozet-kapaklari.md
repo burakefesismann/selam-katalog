@@ -31,7 +31,12 @@ ilgili_urunler:
   - serel-gomme-rezervuar-ic-takim-ve-kumanda-panelleri
 kaynak_sayfalar:
   - https://eca.com.tr/yapi/seramik-saglik-gerecleri/klozet-kapaklari
+  - https://eca.com.tr/urun/leona-slim-klozet-kapagi
 sira: 13
+gorseller:
+  - gorsel: /src/assets/urunler/serel-klozet-kapaklari-1.webp
+    alt_metin: Serel yavaş kapanan ince (slim) klozet kapağı
+    kaynak_url: https://eca.com.tr/urun/leona-slim-klozet-kapagi
 ---
 ## Mağazamızdakiler
 - **Blaze Slim:** beyaz ve mat siyah

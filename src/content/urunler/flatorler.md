@@ -23,7 +23,12 @@ ilgili_urunler:
 kaynak_sayfalar:
   - https://www.eca.com.tr/teknik-urunler
   - https://eca.com.tr/belgeler/eca-teknik-urunler/tsek-belgeleri
+  - https://kas.com.tr/en/product/float-valve/
 sira: 50
+gorseller:
+  - gorsel: /src/assets/urunler/flatorler-1.webp
+    alt_metin: Pirinç gövdeli şamandıralı flatör
+    kaynak_url: https://kas.com.tr/en/product/float-valve/
 ---
 ## Mağazamızdakiler
 - **E.C.A. flatör:** 1/2", 3/4", 1", 1-1/4", 1-1/2" ve 2"

@@ -33,7 +33,12 @@ ilgili_urunler:
   - baumit-mantolama-aksesuarlari-file-dubel-kose-profili
 kaynak_sayfalar:
   - https://izocam.com.tr/en/newsletter/we-have-acquired-his-yalitim
+  - https://www.izocam.com.tr/en/products/wall-insulation/manto-stone-wool
 sira: 30
+gorseller:
+  - gorsel: /src/assets/urunler/izocam-terrawool-manto-tasyunu-1.webp
+    alt_metin: Mantolama için taşyünü levhalar
+    kaynak_url: https://www.izocam.com.tr/en/products/wall-insulation/manto-stone-wool
 ---
 ## Mağazamızdakiler
 - Terrawool manto taşyünü — 3 cm (120 kg/m³), 4 cm (120 ve 150 kg/m³), 5 cm (120 ve 150 kg/m³)

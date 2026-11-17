@@ -28,7 +28,16 @@ ilgili_urunler:
 kaynak_sayfalar:
   - https://www.bosch-professional.com/tr/tr/hss-tin-metal-delme-uclari-2868007-ocs-ac/
   - https://www.bosch-professional.com/ma/en/hss-g-din-338-metal-drill-bits-2868320-ocs-ac/
+  - https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=298&marid=68&urun=1&tur_id=10488
+  - https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=298&marid=68&urun=1&tur_id=10496
 sira: 20
+gorseller:
+  - gorsel: /src/assets/urunler/matkap-uclari-sds-hss-agac-cam-seramik-1.webp
+    alt_metin: SDS Plus beton matkap uçları
+    kaynak_url: https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=298&marid=68&urun=1&tur_id=10488
+  - gorsel: /src/assets/urunler/matkap-uclari-sds-hss-agac-cam-seramik-2.webp
+    alt_metin: Cam ve seramik delme matkap uçları
+    kaynak_url: https://www.akyuzlernalburiye.com.tr/index.php?id=products&katid=298&marid=68&urun=1&tur_id=10496
 ---
 ## Mağazamızdakiler
 - **SDS beton uçları:** 5–14 mm arası, 160 ve 210 mm boy; 9x110, 15x210, 14x260, 18x350, 20x350, 22x350 mm

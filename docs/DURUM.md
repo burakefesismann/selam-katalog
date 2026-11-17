@@ -3,12 +3,12 @@
 > Her oturumun başında oku, sonunda güncelle. Kısa tut.
 
 ## Şu an
-- Aktif görev: — (sıradaki: /gorsel eksikler oturum 15)
+- Aktif görev: — (sıradaki: /gorsel eksikler oturum 16)
 - Site: https://burakefesismann.github.io/selam-katalog/
 - Faz: 3 — Gerçek içerik ve görseller
 
 ## Yarım kalan
-- **`/gorsel eksikler` — paketler 002–007 görselleri** (2026-11-17 başladı). Görselli: 132/214. Paket 001'in 11 kartı kullanıcıda (dokunma).
+- **`/gorsel eksikler` — paketler 002–007 görselleri** (2026-11-17 başladı). Görselli: 141/214. Paket 001'in 11 kartı kullanıcıda (dokunma).
   - Yapılan (oturum 1): 10 ECA/Serel kartı (lavabo/eviye bataryası, havlupan, panel radyatör, termostatik vana, küresel vana,
     ara musluk, Serel klozet/pisuvar/lavabo).
   - Yapılan (oturum 2): banyo aksesuarı, Y filtre, pürjör, rakor, tepe duşu, ara kesme (krom), Tiera ankastre, Life banyo
@@ -42,6 +42,13 @@
     — galvaniz ve siyah boru kartları 3'er görsel), gevşetilmiş kuralla Akyüzler'den eldiven (Beybi), sprey boya (Napron),
     kalıp yağı (Mould), hortum seti + hortum eki, kapı tel yayı; drenaj kanalı (bosta.com), PE su deposu (idefix).
     Engelli: Koçtaş/Trendyol/n11/Hepsiburada (403/000), knauf.com (403). nalburtek.com görselleri filigranlı (Watermark=true) → alınmaz.
+  - Yapılan (oturum 15, gevşek kural): kesici diskler + matkap uçları + boya karıştırıcı (Akyüzler/Master), flatör (KAS),
+    İzocam XPS (Foamboard görseli, Maxibord kartı) ve Terrawool (İzocam manto taşyünü görseli), KAS eviye (Reyhan kuğu),
+    rezervuar iç takım (Serel Kibele), Serel klozet kapağı (Leona Slim). Bunlar "Kullanıcıdan beklenenler"deki eski
+    eksik listesinden düşüldü (ayrıca Beybi eldiven, Fırat dışındakiler).
+  - Sıradaki adaylar (gevşek kural): Sika (başka ülke sika.com sayfaları), Onduline (başka ülke siteleri), Bosch, Weber (başka
+    ülke weber siteleri), rögar, dübel, fırça/rulo (Rulomas/Akyüzler), halat, yer süzgeci/duş kanalı (mesateknik.com), seviye
+    sistemi, köşe profilleri, trapez saç, yangın tüpü, Mesa/Dömark/Samir duşakabin, Güral (tarayıcıdan kaydetme gerekli).
   - **DURUM (oturum 13 sonu):** İnternetten bulunabilecekler büyük ölçüde tükendi. Kalan 91 kart: Paket 001'in 11'i (kullanıcıda),
     siteleri engelli/görselsiz markalar (Sika 10, Onduline 5, Güral 3+1, BTM 3, Weber 2, Bosch 2, Fırat 3, ECA/KAS birkaç,
     Mesa 2, Dömark 2, Samir duşakabin, UKS, Genç tiner, Hazal, Foma...) ve markasız tesisat/nalbur kalemleri (galvaniz, siyah boru,
@@ -326,3 +333,4 @@
 | 2026-11-17 | /gorsel eksikler (12) | Akyüzler dizininden 8 kart (Master ürünleri ağırlıklı); 121/214 | gorsel |
 | 2026-11-17 | /gorsel eksikler (13) | Pakkens manometre + pirinç ek parça; 123/214; internet kaynakları büyük ölçüde tükendi | gorsel |
 | 2026-11-17 | /gorsel eksikler (14) | Kurallar gevşetildi; Trakya Döküm + Akyüzler + satıcı siteleri: 9 kart; 132/214 | gorsel |
+| 2026-11-17 | /gorsel eksikler (15) | Gevşek kuralla 9 kart (kesici disk, matkap, flatör, XPS, Terrawool, KAS eviye, iç takım, klozet kapağı, karıştırıcı); 141/214 | gorsel |
