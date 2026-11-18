@@ -3,7 +3,7 @@
 > Her oturumun başında oku, sonunda güncelle. Kısa tut.
 
 ## Şu an
-- Aktif görev: — (sıradaki: F3.10c marka logoları — 24 zor marka; sonra F3.11 PDF düzeni)
+- Aktif görev: — (sıradaki: F3.11 PDF katalog sayfa düzeni)
 - Site: https://burakefesismann.github.io/selam-katalog/
 - Faz: 3 — Gerçek içerik ve görseller
 
@@ -194,6 +194,8 @@
   belirsiz),
   Weber Dress ince sıva (bayi görseli 768 px, küçük), BTM Elasto DryRoof (görsel eski "Dry Roof" ambalajı), Beybi/AKY iş eldivenleri (resmi
   görsel renk uyuşmuyor), Fırat sifon-kada (resmi sayfa yok).
+- [ ] (İsteğe bağlı) 18 markanın logosu internetten uygun boyutta bulunamadı: AKY, Baykara, BTM, Çukurova, Dekor, Foma, Genç,
+  Gezer, Hazal, KAS, KBS, Knipex, Master, MBT, Samtel, Saraylı, Weber, Yakar. Tedarikçiden/katalogdan logo dosyası gelirse eklenir.
 - [ ] docs/FIRMA.md'deki ⚠ işaretli bilgilerin teyidi (özellikle Güneysu Depo telefonu, e-posta)
 - [x] Şubelerin kesin Google Haritalar linkleri (2026-11-15 kullanıcı verdi, ayarlar/genel.yaml)
 - [x] Marka ve ürün listesi: paketler 001–007 sitede (214 kart, 52 marka, 68 kategori). KATALOG-YAPISI siteden üretildi.
@@ -355,6 +357,12 @@
   File:Knipex-Logo.svg — upload.wikimedia "Too many requests"), BTM/MBT (ceytes.com.tr bayi logoları 120 px — çok küçük),
   Gezer ve Çukurova (resmi site bulunamadı), KAS (Cloudflare), Weber (bot doğrulaması), Master (resmi site yok).
 
+- F3.10c: Visam (/images/Logo.png), Teknopomp (cropped-tekno-logo2-1.png; "pomp" beyazdı → lacivert 40,49,109 boyandı),
+  Yuma (yumakilit.com, 125 px), Yapar → Yaparlar'ın YPR ürün logosu (ypr_logo.svg), Wonder (wondertools.com.tr), Türkoğlu
+  (turkogluvana.com). Akyüzler ana sayfasında AKY, Yuma, YKR, Yaparlar, Knipex, Gezer, Master logoları var ama 25–43 px → kullanılmadı.
+  Logosuz kalan 18 (sitede ad yazısı): AKY, Baykara, BTM, Çukurova, Dekor, Foma, Genç, Gezer, Hazal, KAS, KBS, Knipex, Master, MBT,
+  Samtel, Saraylı, Weber, Yakar.
+
 ## Öneriler
 - (Plana eklenmesi önerilen fikirler. Kullanıcı onaylarsa PLAN.md'ye taşınır.)
 - PDF katalogda bazı sayfaların altı boş (kart satırı sığmayınca yeni sayfaya geçiyor; 35 ürün = 16 sayfa).
@@ -423,3 +431,4 @@
 | 2026-11-18 | F3.9 | 7 ana kategoriye ürün görseli (Orka, Yurtbay, Filli Nucleus, İzeltaş pense, Baymak hidrofor, Fırat vanalar, İzocam); DURUM fotoğraf listesi temizlendi | F3.9 |
 | 2026-11-18 | F3.10a | 15 marka logosu (ECA, Serel, Güral, Orka, Baymak, Filli, Kale Kilit, Sika, Yurtbay, Güral Seramik, Marshall, Bosch, Fawori, İzocam, Onduline); logosuz 35 | F3.10a |
 | 2026-11-18 | F3.10b | 11 marka logosu (İzeltaş, Mesa, Dömark, Samir, Stina, UKS, Selsil, KL Pro, Beybi, Sumak, Poelsan); logosuz 24 | F3.10b |
+| 2026-11-18 | F3.10c | 6 marka logosu (Visam, Teknopomp, Yuma, Yapar, Wonder, Türkoğlu); F3.10 kapandı, logosuz 18 | F3.10c |
