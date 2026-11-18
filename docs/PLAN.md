@@ -162,9 +162,9 @@ Bitince: PLAN'da `[x]` → DURUM.md güncelle → commit + push → kullanıcıy
   SVG tercih). Birkaç oturum sürebilir (F3.10a, b…).
   - [x] F3.10a Büyük markalar (15/17; KAS ve Weber siteleri bot korumalı → F3.10b'ye taşındı): ECA, Serel, KAS, Güral, Orka, Baymak, Filli Boya, Kale Kilit, Sika, Yurtbay, Weber,
     Güral Seramik, Marshall, Bosch, Fawori, İzocam, Onduline.
-  - [ ] F3.10b (19): KAS, Weber, İzeltaş, Knipex, MBT, Mesa, Dömark, Samir, Stina, BTM, UKS, Çukurova, Poelsan, Sumak, Selsil, KL Pro, Beybi,
+  - [x] F3.10b (11/19; KAS, Weber, Knipex, MBT, BTM, Çukurova, Gezer, Master → F3.10c): İzeltaş, Knipex, MBT, Mesa, Dömark, Samir, Stina, BTM, UKS, Çukurova, Poelsan, Sumak, Selsil, KL Pro, Beybi,
     Gezer, Master.
-  - [ ] F3.10c (16): AKY, Baykara, Dekor, Foma, Genç, Hazal, KBS, Samtel, Saraylı, Teknopomp, Türkoğlu, Visam, Wonder, Yakar,
+  - [ ] F3.10c (24): KAS, Weber, Knipex, MBT, BTM, Çukurova, Gezer, Master, AKY, Baykara, Dekor, Foma, Genç, Hazal, KBS, Samtel, Saraylı, Teknopomp, Türkoğlu, Visam, Wonder, Yakar,
     Yapar, Yuma.
 - [ ] **F3.11 PDF katalog sayfa düzeni** (2026-11-18 kullanıcı onayı) — sayfa altlarındaki boşlukları azalt (DURUM > Öneriler).
 - [ ] **F3.x Diğer paketler** — geldikçe buraya eklenir (her paket: içe aktar → `/gorsel eksikler` → rapor).

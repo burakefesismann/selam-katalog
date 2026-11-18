@@ -3,7 +3,7 @@
 > Her oturumun başında oku, sonunda güncelle. Kısa tut.
 
 ## Şu an
-- Aktif görev: — (sıradaki: F3.10b marka logoları, sonra F3.10c, F3.11 PDF düzeni)
+- Aktif görev: — (sıradaki: F3.10c marka logoları — 24 zor marka; sonra F3.11 PDF düzeni)
 - Site: https://burakefesismann.github.io/selam-katalog/
 - Faz: 3 — Gerçek içerik ve görseller
 
@@ -348,6 +348,13 @@
   Sika: sika.scene7.com/is/image/sika/Sika_NoClaim_pos_rgb_mobile?wid=800&fmt=png-alpha. Marshall resmi logosu kare (küçük görünür).
   KAS: kas.com.tr artık Cloudflare doğrulaması ("Just a moment") → atlanmadı. Weber: tüm siteler bot doğrulamalı.
 
+- F3.10b: İzeltaş (svg), Mesa (panel.mesateknik.com — sadece http), Dömark (edomark.com/image/catalog/logo-colored.png), Samir
+  (/logo.png), Stina, UKS (uksyapi.com /storage/app/media/uks_153-52%20black.png — küçük), Selsil, KL Pro (kalemakina.com
+  ticimax /Uploads/Marka/kl-pro-2.png), Beybi (logo-black.svg), Sumak (SUMAK-LOGO.pdf → pymupdf 300 dpi → alt yarı "Suyun kalbi"),
+  Poelsan (sadece beyaz logo → beyaz pikseller antrasite, turuncu artı korundu). Bulunamayan: Knipex (Commons'ta PD SVG var:
+  File:Knipex-Logo.svg — upload.wikimedia "Too many requests"), BTM/MBT (ceytes.com.tr bayi logoları 120 px — çok küçük),
+  Gezer ve Çukurova (resmi site bulunamadı), KAS (Cloudflare), Weber (bot doğrulaması), Master (resmi site yok).
+
 ## Öneriler
 - (Plana eklenmesi önerilen fikirler. Kullanıcı onaylarsa PLAN.md'ye taşınır.)
 - PDF katalogda bazı sayfaların altı boş (kart satırı sığmayınca yeni sayfaya geçiyor; 35 ürün = 16 sayfa).
@@ -415,3 +422,4 @@
 | 2026-11-18 | Ondulikit (kullanıcı fotoğrafı) + Güral aksesuar gizlendi | yayındaki tüm ürünler görselli | gorsel |
 | 2026-11-18 | F3.9 | 7 ana kategoriye ürün görseli (Orka, Yurtbay, Filli Nucleus, İzeltaş pense, Baymak hidrofor, Fırat vanalar, İzocam); DURUM fotoğraf listesi temizlendi | F3.9 |
 | 2026-11-18 | F3.10a | 15 marka logosu (ECA, Serel, Güral, Orka, Baymak, Filli, Kale Kilit, Sika, Yurtbay, Güral Seramik, Marshall, Bosch, Fawori, İzocam, Onduline); logosuz 35 | F3.10a |
+| 2026-11-18 | F3.10b | 11 marka logosu (İzeltaş, Mesa, Dömark, Samir, Stina, UKS, Selsil, KL Pro, Beybi, Sumak, Poelsan); logosuz 24 | F3.10b |
