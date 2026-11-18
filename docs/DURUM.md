@@ -3,7 +3,7 @@
 > Her oturumun başında oku, sonunda güncelle. Kısa tut.
 
 ## Şu an
-- Aktif görev: F3.10a marka logoları — büyük markalar (17)
+- Aktif görev: — (sıradaki: F3.10b marka logoları, sonra F3.10c, F3.11 PDF düzeni)
 - Site: https://burakefesismann.github.io/selam-katalog/
 - Faz: 3 — Gerçek içerik ve görseller
 
@@ -339,6 +339,15 @@
   PE100 200-125 redüksiyon, sifon adaptör contası). KATALOG-YAPISI.md `scripts/katalog-yapisi.ts` ile siteden yeniden üretildi
   (eski el notları "· çeşitli", "(doğalgaz kelepçeleri)" düştü — sitede tutulmuyor). Görseller: ~24/214 ürün görselli.
 
+## Logo notları (F3.10)
+- Logolar `src/assets/markalar/<slug>.svg|webp`, marka yaml'ında `logo` + `logo_kaynak_url`. SVG olduğu gibi kopyalanır →
+  indirmeden önce `<script|onload|javascript:|foreignObject` kontrolü yap. Kontrol aracı (kontakt.cjs) SVG'yi atlıyor → sharp ile
+  density:200 render edip bak.
+- F3.10a: ECA+Serel ortak SVG'si (eca.com.tr/storage/logo/eca-kurumsal-logo-2026.svg) ikiye bölünüp PNG→WebP yapıldı. Güral Vit
+  logosu sayfaya gömülü SVG (renk CSS'ten: .cls-3 → #c32126 işlendi). Güral Seramik sadece beyaz logo veriyor → negate ile koyu.
+  Sika: sika.scene7.com/is/image/sika/Sika_NoClaim_pos_rgb_mobile?wid=800&fmt=png-alpha. Marshall resmi logosu kare (küçük görünür).
+  KAS: kas.com.tr artık Cloudflare doğrulaması ("Just a moment") → atlanmadı. Weber: tüm siteler bot doğrulamalı.
+
 ## Öneriler
 - (Plana eklenmesi önerilen fikirler. Kullanıcı onaylarsa PLAN.md'ye taşınır.)
 - PDF katalogda bazı sayfaların altı boş (kart satırı sığmayınca yeni sayfaya geçiyor; 35 ürün = 16 sayfa).
@@ -405,3 +414,4 @@
 | 2026-11-18 | /gorsel eksikler (26) | 5 kart (MBT P303, BTM DryRoof, bahçe teli, çatı-yalıtım, Samir duşakabin); 212/214 | gorsel |
 | 2026-11-18 | Ondulikit (kullanıcı fotoğrafı) + Güral aksesuar gizlendi | yayındaki tüm ürünler görselli | gorsel |
 | 2026-11-18 | F3.9 | 7 ana kategoriye ürün görseli (Orka, Yurtbay, Filli Nucleus, İzeltaş pense, Baymak hidrofor, Fırat vanalar, İzocam); DURUM fotoğraf listesi temizlendi | F3.9 |
+| 2026-11-18 | F3.10a | 15 marka logosu (ECA, Serel, Güral, Orka, Baymak, Filli, Kale Kilit, Sika, Yurtbay, Güral Seramik, Marshall, Bosch, Fawori, İzocam, Onduline); logosuz 35 | F3.10a |

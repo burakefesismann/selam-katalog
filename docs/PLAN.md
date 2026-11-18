@@ -160,9 +160,9 @@ Bitince: PLAN'da `[x]` → DURUM.md güncelle → commit + push → kullanıcıy
   ürün görselini ata (`npm run gorsel:rapor` listeler).
 - [ ] **F3.10 Marka logoları** (2026-11-18 kullanıcı onayı) — logosu olmayan ~50 markaya resmi sitelerden logo (`/gorsel` adımları,
   SVG tercih). Birkaç oturum sürebilir (F3.10a, b…).
-  - [ ] F3.10a Büyük markalar (17): ECA, Serel, KAS, Güral, Orka, Baymak, Filli Boya, Kale Kilit, Sika, Yurtbay, Weber,
+  - [x] F3.10a Büyük markalar (15/17; KAS ve Weber siteleri bot korumalı → F3.10b'ye taşındı): ECA, Serel, KAS, Güral, Orka, Baymak, Filli Boya, Kale Kilit, Sika, Yurtbay, Weber,
     Güral Seramik, Marshall, Bosch, Fawori, İzocam, Onduline.
-  - [ ] F3.10b (17): İzeltaş, Knipex, MBT, Mesa, Dömark, Samir, Stina, BTM, UKS, Çukurova, Poelsan, Sumak, Selsil, KL Pro, Beybi,
+  - [ ] F3.10b (19): KAS, Weber, İzeltaş, Knipex, MBT, Mesa, Dömark, Samir, Stina, BTM, UKS, Çukurova, Poelsan, Sumak, Selsil, KL Pro, Beybi,
     Gezer, Master.
   - [ ] F3.10c (16): AKY, Baykara, Dekor, Foma, Genç, Hazal, KBS, Samtel, Saraylı, Teknopomp, Türkoğlu, Visam, Wonder, Yakar,
     Yapar, Yuma.
