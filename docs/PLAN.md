@@ -156,6 +156,11 @@ Bitince: PLAN'da `[x]` → DURUM.md güncelle → commit + push → kullanıcıy
   Yalıtım & Çatı (v2), 005 Boya (v2), 006 Seramik + El Aletleri (v2) içe aktarıldı → 189 kart, 45 marka, 60 kategori. Görseller: ayrı iş.
 - [x] **F3.8 Paket 007 Hırdavat & Nalburiye** (2026-11-17): 25 kart + 3 karta elle ek; KATALOG-YAPISI siteden yeniden üretildi
   (`node scripts/katalog-yapisi.ts`). KATALOG'un tamamı sitede: 214 kart, 52 marka, 68 kategori.
+- [x] **F3.9 Ana kategori görselleri** (2026-11-18 kullanıcı onayı) — görseli olmayan ana kategorilere o kategorideki en iyi
+  ürün görselini ata (`npm run gorsel:rapor` listeler).
+- [ ] **F3.10 Marka logoları** (2026-11-18 kullanıcı onayı) — logosu olmayan ~50 markaya resmi sitelerden logo (`/gorsel` adımları,
+  SVG tercih). Birkaç oturum sürebilir (F3.10a, b…).
+- [ ] **F3.11 PDF katalog sayfa düzeni** (2026-11-18 kullanıcı onayı) — sayfa altlarındaki boşlukları azalt (DURUM > Öneriler).
 - [ ] **F3.x Diğer paketler** — geldikçe buraya eklenir (her paket: içe aktar → `/gorsel eksikler` → rapor).
 
 ---

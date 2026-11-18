@@ -3,7 +3,7 @@
 > Her oturumun başında oku, sonunda güncelle. Kısa tut.
 
 ## Şu an
-- Aktif görev: — (/gorsel eksikler TAMAM: yayındaki 213 ürünün hepsi görselli)
+- Aktif görev: — (sıradaki: F3.10 marka logoları, sonra F3.11 PDF düzeni — kullanıcı onayı 2026-11-18)
 - Site: https://burakefesismann.github.io/selam-katalog/
 - Faz: 3 — Gerçek içerik ve görseller
 
@@ -190,8 +190,8 @@
 - [ ] Şu ürünlerin fotoğrafı gerekli — mağazada çekilebilir ya da üreticiden istenebilir (resmi sitede görsel yok):
   Flatörler (ECA sayfası liste, görsel yok), Basınç düşürücü ECA modeli (KAS görseli kullanıldı), Serel Klozet Kapakları
   (Blaze Slim sayfası yok), Rezervuar İç Takımları & Klozet Kapakları (Visam/Aryak), KAS Eviye Bataryaları (Berilyum sayfası yok),
-  Onduline Ondulikit (resmi sayfa yok), İzocam Maxibord XPS ve Terrawool (doğru ambalaj
-  belirsiz), Güral Quare banyo aksesuarları (site görselleri indirilemiyor),
+  İzocam Maxibord XPS ve Terrawool (doğru ambalaj
+  belirsiz),
   Weber Dress ince sıva (bayi görseli 768 px, küçük), BTM Elasto DryRoof (görsel eski "Dry Roof" ambalajı), Beybi/AKY iş eldivenleri (resmi
   görsel renk uyuşmuyor), Fırat sifon-kada (resmi sayfa yok).
 - [ ] docs/FIRMA.md'deki ⚠ işaretli bilgilerin teyidi (özellikle Güneysu Depo telefonu, e-posta)
@@ -344,9 +344,6 @@
 - PDF katalogda bazı sayfaların altı boş (kart satırı sığmayınca yeni sayfaya geçiyor; 35 ürün = 16 sayfa).
   inline-block denemesi daha kötü oldu (18 sayfa) → grid kaldı. İleride: kart görselini küçült (16:9 → 2:1), teknik tabloyu
   4 satıra indir ya da kategori başına 3 sütun dene.
-- Ana sayfadaki 11 ana kategori kartı (F2.2) için kategori görselleri gerekecek; planda ayrı görev yok.
-  Öneri: F2.2 öncesi her ana kategoriye o kategorideki en iyi ürün görselini ya da kullanıcının mağaza fotoğrafını ata
-  (`gorsel:rapor` bunları zaten listeliyor).
 
 ## Oturum günlüğü
 | Tarih | Görev | Sonuç | Commit |
@@ -407,3 +404,4 @@
 | 2026-11-18 | /gorsel eksikler (25) | 7 kart (yerden ısıtma aks., Marshall 2, BTM 2, patent dirsek, kombi seti); 207/214 | gorsel |
 | 2026-11-18 | /gorsel eksikler (26) | 5 kart (MBT P303, BTM DryRoof, bahçe teli, çatı-yalıtım, Samir duşakabin); 212/214 | gorsel |
 | 2026-11-18 | Ondulikit (kullanıcı fotoğrafı) + Güral aksesuar gizlendi | yayındaki tüm ürünler görselli | gorsel |
+| 2026-11-18 | F3.9 | 7 ana kategoriye ürün görseli (Orka, Yurtbay, Filli Nucleus, İzeltaş pense, Baymak hidrofor, Fırat vanalar, İzocam); DURUM fotoğraf listesi temizlendi | F3.9 |
