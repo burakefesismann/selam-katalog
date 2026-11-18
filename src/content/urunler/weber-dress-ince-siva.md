@@ -40,7 +40,12 @@ kaynak_sayfalar:
   - https://www.tr.weber/dis-cephe-boya-kaplama-ve-sivalari/dis-cephe-sivalari/weberdress-ince-siva
   - https://www.tr.weber/files/tr/2022-06/weberdress_ince_sva_-_Teknik_Bilgi_Fy.pdf
   - https://www.tr.weber/files/tr/2022-11/weberdress_grubu_-_TSE_Belgesi.pdf
+  - https://umityapimarket.com/weber-dress-siva-gri-35-kg-ince-plt-54-trb
 sira: 60
+gorseller:
+  - gorsel: /src/assets/urunler/weber-dress-ince-siva-1.webp
+    alt_metin: weber.dress ince sıva 35 kg torba
+    kaynak_url: https://umityapimarket.com/weber-dress-siva-gri-35-kg-ince-plt-54-trb
 ---
 ## Ne işe yarar?
 Kaba sıvanın üzerine çekilen ince son kat sıvadır; duvarı boya ya da kaplama öncesinde düzgün ve pürüzsüz hale getirir. Hazır harç olduğu için yalnızca su eklenerek karıştırılır; kum-çimento oranıyla uğraşmadan her torbada aynı sonucu verir.

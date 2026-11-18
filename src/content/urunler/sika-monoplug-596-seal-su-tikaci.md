@@ -33,7 +33,12 @@ ilgili_urunler:
   - sika-1-tr-su-gecirimsizlik-katkisi
 kaynak_sayfalar:
   - https://tur.sika.com/dms/getdocument.get/e6c4e0f9-7caf-455c-a029-fdaba783c088/sikatop-596-seal.pdf
+  - https://irl.sika.com/en/diy-markets/building-products/technical-mortars/sika-monotop-108waterplug.html
 sira: 50
+gorseller:
+  - gorsel: /src/assets/urunler/sika-monoplug-596-seal-su-tikaci-1.webp
+    alt_metin: Sika MonoTop su tıkacı harcı 5 kg torba
+    kaynak_url: https://irl.sika.com/en/diy-markets/building-products/technical-mortars/sika-monotop-108waterplug.html
 ---
 ## Ne işe yarar?
 Bodrum, depo ya da perde duvarda basınçla su gelen çatlak ve delikleri kapatmak için kullanılır. Suyla karıştırılan harç çok kısa sürede priz alır; sızıntı noktasına bastırılarak tutulur ve suyu keser. Ardından yüzeye kalıcı bir su yalıtımı (ör. Baumit Protect 2K) uygulanır.

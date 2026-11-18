@@ -35,7 +35,16 @@ kaynak_sayfalar:
   - https://www.tr.weber/zemin-sistemleri/yuzey-sertlestiriciler/weberfloor-ys-4
   - https://www.tr.weber/zemin-sistemleri/yuzey-sertlestiriciler/weberfloor-ys-1
   - https://www.tr.weber/files/tr/2020-03/weber_kr_A_-_Teknik_Bilgi_Fy.pdf
+  - https://www.birlikcati.com.tr/weber-floor-ys-4-gri-yuzey-sertlestirici
+  - https://itcyapi.com/urun/weber-floor-ys-6-kirmizi-yuzey-sertlestirici-25-kg/
 sira: 20
+gorseller:
+  - gorsel: /src/assets/urunler/weber-yuzey-sertlestirici-1.webp
+    alt_metin: weber.floor YS 4 korunt agregalı yüzey sertleştirici 25 kg torba
+    kaynak_url: https://www.birlikcati.com.tr/weber-floor-ys-4-gri-yuzey-sertlestirici
+  - gorsel: /src/assets/urunler/weber-yuzey-sertlestirici-2.webp
+    alt_metin: weber.floor YS 6 kuvars agregalı yüzey sertleştirici 25 kg torba
+    kaynak_url: https://itcyapi.com/urun/weber-floor-ys-6-kirmizi-yuzey-sertlestirici-25-kg/
 ---
 ## Mağazamızdakiler
 - Weber yüzey sertleştirici, gri, 25 kg

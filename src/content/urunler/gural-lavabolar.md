@@ -30,7 +30,12 @@ kaynak_sayfalar:
   - https://guralvit.com.tr/vitrifiye/lavabolar
   - https://guralvit.com.tr/banyo-takimlari/arya/arya-ar10mnl01
   - https://guralvit.com.tr/banyo-takimlari/carmina
+  - https://www.sozerisi.com/kategori/20/gural-vit.html
 sira: 21
+gorseller:
+  - gorsel: /src/assets/urunler/gural-lavabolar-1.webp
+    alt_metin: Güral siyah-altın desenli oval tezgah üstü lavabo
+    kaynak_url: https://www.sozerisi.com/kategori/20/gural-vit.html
 ---
 ## Mağazamızdaki modeller
 - **Arya** monoblok lavabo

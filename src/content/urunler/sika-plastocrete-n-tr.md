@@ -28,7 +28,12 @@ ilgili_urunler:
   - sika-antisol-e-200-kur-malzemesi
 kaynak_sayfalar:
   - https://tur.sika.com/dms/getdocument.get/c392cf9f-f5d5-4729-b7f3-8bbcf3cf4883/sika-plastocreten.pdf
+  - https://tha.sika.com/en/construction/concrete-admixtures/admixtures-for-ready-mix-concrete/sika-plastocretenth.html
 sira: 20
+gorseller:
+  - gorsel: /src/assets/urunler/sika-plastocrete-n-tr-1.webp
+    alt_metin: Sika Plastocrete N beton katkısı varil ve IBC tank ambalajları
+    kaynak_url: https://tha.sika.com/en/construction/concrete-admixtures/admixtures-for-ready-mix-concrete/sika-plastocretenth.html
 ---
 ## Ne işe yarar?
 Plastocrete N, betona karışım suyuyla birlikte eklenen sıvı bir katkıdır. Betonu daha işlenebilir hale getirip daha kolay sıkıştırılmasını sağlar; böylece daha yoğun, boşluksuz ve su geçirimsizliği artırılmış bir beton elde edilir.

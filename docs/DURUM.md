@@ -3,12 +3,12 @@
 > Her oturumun başında oku, sonunda güncelle. Kısa tut.
 
 ## Şu an
-- Aktif görev: — (sıradaki: /gorsel eksikler oturum 22)
+- Aktif görev: — (sıradaki: /gorsel eksikler oturum 23)
 - Site: https://burakefesismann.github.io/selam-katalog/
 - Faz: 3 — Gerçek içerik ve görseller
 
 ## Yarım kalan
-- **`/gorsel eksikler` — paketler 002–007 görselleri** (2026-11-17 başladı). Görselli: 174/214. Paket 001'in 11 kartı kullanıcıda (dokunma).
+- **`/gorsel eksikler` — paketler 002–007 görselleri** (2026-11-17 başladı). Görselli: 182/214. Paket 001'in 11 kartı kullanıcıda (dokunma).
   - Yapılan (oturum 1): 10 ECA/Serel kartı (lavabo/eviye bataryası, havlupan, panel radyatör, termostatik vana, küresel vana,
     ara musluk, Serel klozet/pisuvar/lavabo).
   - Yapılan (oturum 2): banyo aksesuarı, Y filtre, pürjör, rakor, tepe duşu, ara kesme (krom), Tiera ankastre, Life banyo
@@ -77,6 +77,14 @@
     (resmi, 2080 px; .com değil .com.tr). Trapez saç: kjg.sk (Slovak üretici) + genclertel.com.tr. Tinerler (Genç): DYO resmi
     sentetik tiner (K14). Sonuçsuz: BTM (btm.co hâlâ kapalı), Güral (satıcılar Trendyol/Koçtaş — engelli), Marshall tiner (sadece
     Özbekistan şişe ambalajı), idefix yangın tüpleri (çoğu yazı bindirmeli). Sika'da kalan: Plastocrete, MonoPlug/596, SikaBond-181.
+  - Yapılan (oturum 22): Sika son 3 — Plastocrete N (tha.sika.com resmi), MonoPlug kartı ← Sika MonoTop-108 Water Plug
+    (irl.sika.com, 5 kg tıkaç harcı), SikaBond-181 kartı ← Everbuild (Sika markası) Mitre Fast siyanoakrilat+aktivatör seti
+    (irl.sika.com, 2 görsel). Weber: tüm weber siteleri + PDF'ler bot doğrulamalı (403) → satıcı siteleri: weber.dress ince sıva
+    (umityapimarket.com, 768 px; büyütmede küçük yazılar bozuldu → büyütülmedi, "küçük"), weber.floor YS 4 (birlikcati.com.tr)
+    + YS 6 (itcyapi.com). Güral: sozerisi.com (Eskişehir bayi; /upload/urunler/urun-<ad>.jpg) Uno siyah + Jade altın şerit +
+    Jade kırmızı klozet, siyah-altın oval lavabo; Güral Seramik Misha (itcyapi.com karo + dushome.com.tr uygulama).
+    Seycan görselinde satıcı adı var → alınmadı. Yardımcı: scratchpad ogal.sh (sayfalardan og:image toplu indirir).
+    Kalan Güral: banyo aksesuarları (Quare) — satıcıda bulunamadı.
   - Sıradaki adaylar (gevşek kural): Sika (başka ülke sika.com sayfaları), Onduline (başka ülke siteleri), Bosch, Weber (başka
     ülke weber siteleri), rögar, dübel, fırça/rulo (Rulomas/Akyüzler), halat, yer süzgeci/duş kanalı (mesateknik.com), seviye
     sistemi, köşe profilleri, trapez saç, yangın tüpü, Mesa/Dömark/Samir duşakabin, Güral (tarayıcıdan kaydetme gerekli).
@@ -92,7 +100,7 @@
     anahtarlar/kaynak kartı için Master kaynak pensesi. Uygun karşılığı YOK: bahçe hortumu, Master sprey boya, Dekor fırça/rulo,
     iskota halat/iskele kelepçesi, Master kalıp yağı, kümes teli (Fermo), menteşe/kapı hidroliği.
   - **K15 (2026-11-17): kaynaklar genişletildi** — dağıtıcı/resmi sosyal medya, ücretsiz lisanslı (Commons/Pexels/Unsplash),
-    son çare pazaryerleri. Pazaryerinden / başka satıcıdan alınan "geçici görseller": polietilen-su-depolari (idefix), drenaj-kanallari-ve-izgaralar (bosta.com), master-panc-delik-testereleri (Bosch seti — Master görseli bulununca değiştir); başka model/marka (tür aynı): sika-floor-3 (Sikafloor-2 SynTop), tinerler (DYO), sika-antisol (Antisol-3E), sika-anchorfix-s1 (AnchorFix-1).
+    son çare pazaryerleri. Pazaryerinden / başka satıcıdan alınan "geçici görseller": polietilen-su-depolari (idefix), drenaj-kanallari-ve-izgaralar (bosta.com), master-panc-delik-testereleri (Bosch seti — Master görseli bulununca değiştir); başka model/marka (tür aynı): sika-floor-3 (Sikafloor-2 SynTop), tinerler (DYO), sika-antisol (Antisol-3E), sika-anchorfix-s1 (AnchorFix-1), sika-monoplug (MonoTop-108), sikabond-181 (Everbuild Mitre Fast), sika-plastocrete (Tayland ambalajı). Satıcı sitelerinden: weber-dress-ince-siva (umityapimarket), weber-yuzey-sertlestirici (birlikcati, itcyapi), gural-klozetler + gural-lavabolar (sozerisi), gural-seramik-karolar (itcyapi, dushome).
   - **Kullanıcı (2026-11-17, oturum 14): "resmi sitelerde takılı kalma"** — marka/renk birebir tutmasa da ürün türü doğruysa kullan (KARARLAR K15 eki).
   - Yapılan (oturum 9): Poelsan kaplin (poelsan.com), Sumak dalgıç (2, sumakpompa.com), Selsil yapıştırıcılar (2, selsil.com),
     KL Eco KE75115 + Hitachi G12SR4 (kalemakina.com), Samir Zümrüt 45 dolap ve oval duş teknesi (samirbanyo.com.tr).
@@ -160,9 +168,9 @@
   Flatörler (ECA sayfası liste, görsel yok), Basınç düşürücü ECA modeli (KAS görseli kullanıldı), Serel Klozet Kapakları
   (Blaze Slim sayfası yok), Rezervuar İç Takımları & Klozet Kapakları (Visam/Aryak), KAS Eviye Bataryaları (Berilyum sayfası yok),
   Su Sayaçları & Kalorimetre (KAS sitesinde sayaç sayfası yok), Marshall Akrikor dış cephe (resmi görsel 160 px),
-  Onduline astar/bant/Ondulikit/mahya ve Çukurova-Fondaline (resmi sayfa yok), İzocam Maxibord XPS ve Terrawool (doğru ambalaj
-  belirsiz), Güral klozet/lavabo/aksesuar (site görselleri indirilemiyor — tarayıcıdan kaydedip verebilirsiniz),
-  Weber Dress ince sıva ve yüzey sertleştirici (site bot koruması), BTM 3 kart (site açılmıyor), Beybi/AKY iş eldivenleri (resmi
+  Onduline Ondulikit (resmi sayfa yok), İzocam Maxibord XPS ve Terrawool (doğru ambalaj
+  belirsiz), Güral Quare banyo aksesuarları (site görselleri indirilemiyor),
+  Weber Dress ince sıva (bayi görseli 768 px, küçük), BTM 3 kart (site açılmıyor), Beybi/AKY iş eldivenleri (resmi
   görsel renk uyuşmuyor), Fırat yerden ısıtma aksesuarları / kombi seti / sifon-kada (resmi sayfa yok).
 - [ ] docs/FIRMA.md'deki ⚠ işaretli bilgilerin teyidi (özellikle Güneysu Depo telefonu, e-posta)
 - [x] Şubelerin kesin Google Haritalar linkleri (2026-11-15 kullanıcı verdi, ayarlar/genel.yaml)
@@ -371,3 +379,4 @@
 | 2026-11-17 | /gorsel eksikler (19) | 6 kart (seviye sistemi, köşe profili, iskele kelepçesi, Onduline mahya/bant/astar); 162/214 | gorsel |
 | 2026-11-17 | /gorsel eksikler (20) | 3 kart (panç, Çukurova/Fondaline, UKS şıngıl); 165/214 | gorsel |
 | 2026-11-17 | /gorsel eksikler (21) | 9 kart (Sika 6, yangın tüpü/dolap, trapez saç, tiner); 174/214 | gorsel |
+| 2026-11-18 | /gorsel eksikler (22) | 8 kart (Sika 3, Weber 2, Güral klozet/lavabo/seramik); 182/214 | gorsel |

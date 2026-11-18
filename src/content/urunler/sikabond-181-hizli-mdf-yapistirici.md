@@ -30,7 +30,15 @@ ilgili_urunler:
 kaynak_sayfalar:
   - https://tur.sika.com/dam/dms/tr01/t/sikabond-181-h-zlyaptrc.pdf
   - https://tur.sika.com/tr/home/abc-sealants-artk-sika-markasyla-sizlerle.html
+  - https://irl.sika.com/en/diy-markets/adhesives/superglue-activators/everbuild-mitre-fast.html
 sira: 20
+gorseller:
+  - gorsel: /src/assets/urunler/sikabond-181-hizli-mdf-yapistirici-1.webp
+    alt_metin: "Hızlı MDF yapıştırıcı seti: siyanoakrilat yapıştırıcı ve aktivatör sprey"
+    kaynak_url: https://irl.sika.com/en/diy-markets/adhesives/superglue-activators/everbuild-mitre-fast.html
+  - gorsel: /src/assets/urunler/sikabond-181-hizli-mdf-yapistirici-2.webp
+    alt_metin: MDF pervaz köşesinin hızlı yapıştırıcı setiyle birleştirilmesi
+    kaynak_url: https://irl.sika.com/en/diy-markets/adhesives/superglue-activators/everbuild-mitre-fast.html
 ---
 ## Nasıl çalışır?
 Set, jel kıvamında siyanoakrilat yapıştırıcı ile sprey aktivatörden oluşur. Genellikle yapıştırıcı bir yüzeye sürülür, aktivatör karşı yüzeye püskürtülür; parçalar birleştirildiğinde yapıştırıcı çok hızlı sertleşir. Mobilya montajında MDF parçaların hızlıca birleştirilmesinde yaygın olarak kullanılır.

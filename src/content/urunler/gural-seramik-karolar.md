@@ -30,6 +30,16 @@ ilgili_urunler:
   - yurtbay-seramik-tas-ve-beton-gorunumlu
   - baumit-flexo
 sira: 60
+gorseller:
+  - gorsel: /src/assets/urunler/gural-seramik-karolar-1.webp
+    alt_metin: Güral Seramik Misha 60x120 mat gri porselen karo
+    kaynak_url: https://itcyapi.com/urun/gural-seramik-misha-60x120-mat-grey/
+  - gorsel: /src/assets/urunler/gural-seramik-karolar-2.webp
+    alt_metin: Güral Seramik Misha koyu gri duvar karosu ve terrazzo zemin uygulaması
+    kaynak_url: https://www.dushome.com.tr/gural-seramik-misha-60120-mat-dark-gri-533
+kaynak_sayfalar:
+  - https://itcyapi.com/urun/gural-seramik-misha-60x120-mat-grey/
+  - https://www.dushome.com.tr/gural-seramik-misha-60120-mat-dark-gri-533
 ---
 ## Mağazamızdakiler
 - Aleats Antrasit, 60x120, mat

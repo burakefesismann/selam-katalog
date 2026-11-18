@@ -30,7 +30,19 @@ kaynak_sayfalar:
   - https://guralvit.com.tr/vitrifiye/klozetler
   - https://guralvit.com.tr/banyo-takimlari/carmina
   - https://guralvit.com.tr/banyo-takimlari/engelli-serisi
+  - https://www.sozerisi.com/urun/219/gural-uno-siyah-asma-klozet.html
+  - https://www.sozerisi.com/kategori/20/gural-vit.html
 sira: 20
+gorseller:
+  - gorsel: /src/assets/urunler/gural-klozetler-1.webp
+    alt_metin: Güral Uno siyah asma klozet
+    kaynak_url: https://www.sozerisi.com/urun/219/gural-uno-siyah-asma-klozet.html
+  - gorsel: /src/assets/urunler/gural-klozetler-2.webp
+    alt_metin: Güral Jade altın şeritli asma klozet
+    kaynak_url: https://www.sozerisi.com/kategori/20/gural-vit.html
+  - gorsel: /src/assets/urunler/gural-klozetler-3.webp
+    alt_metin: Güral Jade kırmızı asma klozet
+    kaynak_url: https://www.sozerisi.com/kategori/20/gural-vit.html
 ---
 ## Mağazamızdaki modeller
 - **Carmina:** asma klozet; bedensel engelli klozet + rezervuar
