@@ -31,7 +31,12 @@ ilgili_urunler:
 kaynak_sayfalar:
   - https://btm.co/en/btmseal-elasto-dryroof
   - https://www.btm.co/uploads/documents-en/tds/yap%C4%B1%20kimyasallar%C4%B1%20tds%20ing/elastodry_roof_ing.pdf
+  - https://suyalitimcozumleri.com/su_yalitim_cozumleri/btmseal-dryroof-2/
 sira: 30
+gorseller:
+  - gorsel: /src/assets/urunler/btm-elasto-dry-roof-1.webp
+    alt_metin: BTM Seal Dry Roof çatı ve teras su yalıtım malzemesi 20 kg kova
+    kaynak_url: https://suyalitimcozumleri.com/su_yalitim_cozumleri/btmseal-dryroof-2/
 ---
 ## Ne işe yarar?
 Teras, eğimli betonarme çatı, dere ve oluk gibi yüzeylere sürülerek derzsiz ve esnek bir su yalıtım katmanı oluşturur. Beyaz rengi güneş ışınlarını yansıtır ve UV'ye karşı dayanıklıdır.

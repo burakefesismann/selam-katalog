@@ -32,7 +32,12 @@ ilgili_urunler:
   - baumit-nivello-uno-yayilan-sap
 kaynak_sayfalar:
   - https://mbcc.sika.com/en-tr/products/mastertile/mastertile-p-303
+  - https://www.islekyapi.com/urun-basf-p-303-mastertile-5-kg-astar-303
 sira: 30
+gorseller:
+  - gorsel: /src/assets/urunler/mbt-seramik-astari-303-1.webp
+    alt_metin: MasterTile P 303 (eski adı Astar 303) seramik astarı 5 kg teneke
+    kaynak_url: https://www.islekyapi.com/urun-basf-p-303-mastertile-5-kg-astar-303
 ---
 ## Ne işe yarar?
 Eski seramiği kırmadan üzerine yeni seramik döşemek ya da parlak, su emmeyen bir yüzeye yapıştırıcı veya tesviye harcı uygulamak istediğinizde harcın tutunması zorlaşır. Seramik astarı bu yüzeylere sürülerek harcın tutunacağı bir ara katman oluşturur.

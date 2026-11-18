@@ -3,12 +3,12 @@
 > Her oturumun başında oku, sonunda güncelle. Kısa tut.
 
 ## Şu an
-- Aktif görev: — (sıradaki: /gorsel eksikler oturum 26)
+- Aktif görev: — (/gorsel eksikler neredeyse bitti: 212/214; kalan 2 kart mağaza fotoğrafı bekliyor)
 - Site: https://burakefesismann.github.io/selam-katalog/
 - Faz: 3 — Gerçek içerik ve görseller
 
 ## Yarım kalan
-- **`/gorsel eksikler` — paketler 002–007 görselleri** (2026-11-17 başladı). Görselli: 207/214. Paket 001 kartları da artık Claude'da (kullanıcı 2026-11-18).
+- **`/gorsel eksikler` — paketler 002–007 görselleri** (2026-11-17 başladı). Görselli: 212/214. Paket 001 kartları da artık Claude'da (kullanıcı 2026-11-18).
   - Yapılan (oturum 1): 10 ECA/Serel kartı (lavabo/eviye bataryası, havlupan, panel radyatör, termostatik vana, küresel vana,
     ara musluk, Serel klozet/pisuvar/lavabo).
   - Yapılan (oturum 2): banyo aksesuarı, Y filtre, pürjör, rakor, tepe duşu, ara kesme (krom), Tiera ankastre, Life banyo
@@ -104,6 +104,11 @@
     kombi/radyatör aksesuarları (KAS PPRC kombi bağlantı seti, kas.com.tr resmi). btm.co hâlâ kapalı. Sonuçsuz: Samir duşakabin
     (samirbanyo.com.tr bundle'ında duşakabin yok), bahçe teli (Tellioğlu görseli Watermark=true → alınmadı), Güral Quare.
     Kalan 7: bahçe teli, BTM Elasto DryRoof, çatı-yalıtım yardımcıları, Güral aksesuar, MBT P 303, Ondulikit, Samir duşakabin.
+  - Yapılan (oturum 26): MBT MasterTile P 303 (islekyapi.com, 450 px K14), BTM Elasto DryRoof ← BTM Seal Dry Roof (eski adı;
+    suyalitimcozumleri.com, K14 — ilk büyütme yarım kaldı, tek başına yeniden yapıldı), bahçe teli (omurtelorgu.com.tr üretici, K14;
+    Pometal görselleri yazı bindirmeli), çatı-yalıtım (kozas.com.tr geotekstil keçe + Onduline Bituline rulo), Samir duşakabin ←
+    stina.com.tr (duşakabin üreticisi) kare sürgülü + oval köşe (aynı tür). **Kalan 2: Güral Quare aksesuar, Onduline Ondulikit** —
+    internette uygun görsel yok → mağaza fotoğrafı.
   - Sıradaki adaylar (gevşek kural): Sika (başka ülke sika.com sayfaları), Onduline (başka ülke siteleri), Bosch, Weber (başka
     ülke weber siteleri), rögar, dübel, fırça/rulo (Rulomas/Akyüzler), halat, yer süzgeci/duş kanalı (mesateknik.com), seviye
     sistemi, köşe profilleri, trapez saç, yangın tüpü, Mesa/Dömark/Samir duşakabin, Güral (tarayıcıdan kaydetme gerekli).
@@ -119,7 +124,7 @@
     anahtarlar/kaynak kartı için Master kaynak pensesi. Uygun karşılığı YOK: bahçe hortumu, Master sprey boya, Dekor fırça/rulo,
     iskota halat/iskele kelepçesi, Master kalıp yağı, kümes teli (Fermo), menteşe/kapı hidroliği.
   - **K15 (2026-11-17): kaynaklar genişletildi** — dağıtıcı/resmi sosyal medya, ücretsiz lisanslı (Commons/Pexels/Unsplash),
-    son çare pazaryerleri. Pazaryerinden / başka satıcıdan alınan "geçici görseller": polietilen-su-depolari (idefix), drenaj-kanallari-ve-izgaralar (bosta.com), master-panc-delik-testereleri (Bosch seti — Master görseli bulununca değiştir); başka model/marka (tür aynı): sika-floor-3 (Sikafloor-2 SynTop), tinerler (DYO), sika-antisol (Antisol-3E), sika-anchorfix-s1 (AnchorFix-1), sika-monoplug (MonoTop-108), sikabond-181 (Everbuild Mitre Fast), sika-plastocrete (Tayland ambalajı). Satıcı sitelerinden: weber-dress-ince-siva (umityapimarket), weber-yuzey-sertlestirici (birlikcati, itcyapi), gural-klozetler + gural-lavabolar (sozerisi), gural-seramik-karolar (itcyapi, dushome), mesa-banyo-aksesuarlari (banyomega), mesa-dus-setleri (tesisatmarketi), marshall-akrikor (boyabayi), marshall-sentetik-tiner (fiyatdeposu), btm-bitumer (globalyapimarket), btm-ekobit (argesanas), patent-dirsek (orfa); kombi-ve-radyator-aksesuarlari (KAS seti, kart Fırat); domark-banyo-aksesuarlari (Deniz yerine başka Dömark serisi).
+    son çare pazaryerleri. Pazaryerinden / başka satıcıdan alınan "geçici görseller": polietilen-su-depolari (idefix), drenaj-kanallari-ve-izgaralar (bosta.com), master-panc-delik-testereleri (Bosch seti — Master görseli bulununca değiştir); başka model/marka (tür aynı): sika-floor-3 (Sikafloor-2 SynTop), tinerler (DYO), sika-antisol (Antisol-3E), sika-anchorfix-s1 (AnchorFix-1), sika-monoplug (MonoTop-108), sikabond-181 (Everbuild Mitre Fast), sika-plastocrete (Tayland ambalajı). Satıcı sitelerinden: weber-dress-ince-siva (umityapimarket), weber-yuzey-sertlestirici (birlikcati, itcyapi), gural-klozetler + gural-lavabolar (sozerisi), gural-seramik-karolar (itcyapi, dushome), mesa-banyo-aksesuarlari (banyomega), mesa-dus-setleri (tesisatmarketi), marshall-akrikor (boyabayi), marshall-sentetik-tiner (fiyatdeposu), btm-bitumer (globalyapimarket), btm-ekobit (argesanas), patent-dirsek (orfa); kombi-ve-radyator-aksesuarlari (KAS seti, kart Fırat); mbt-seramik-astari (islekyapi), btm-elasto-dry-roof (suyalitimcozumleri, eski Dry Roof ambalajı), samir-dusakabinler (Stina duşakabin), cati-ve-yalitim (kozas); domark-banyo-aksesuarlari (Deniz yerine başka Dömark serisi).
   - **Kullanıcı (2026-11-17, oturum 14): "resmi sitelerde takılı kalma"** — marka/renk birebir tutmasa da ürün türü doğruysa kullan (KARARLAR K15 eki).
   - Yapılan (oturum 9): Poelsan kaplin (poelsan.com), Sumak dalgıç (2, sumakpompa.com), Selsil yapıştırıcılar (2, selsil.com),
     KL Eco KE75115 + Hitachi G12SR4 (kalemakina.com), Samir Zümrüt 45 dolap ve oval duş teknesi (samirbanyo.com.tr).
@@ -185,8 +190,8 @@
   (Blaze Slim sayfası yok), Rezervuar İç Takımları & Klozet Kapakları (Visam/Aryak), KAS Eviye Bataryaları (Berilyum sayfası yok),
   Onduline Ondulikit (resmi sayfa yok), İzocam Maxibord XPS ve Terrawool (doğru ambalaj
   belirsiz), Güral Quare banyo aksesuarları (site görselleri indirilemiyor),
-  Weber Dress ince sıva (bayi görseli 768 px, küçük), BTM Elasto DryRoof (site açılmıyor), Beybi/AKY iş eldivenleri (resmi
-  görsel renk uyuşmuyor), Fırat sifon-kada (resmi sayfa yok), bahçe teli (Samtel), çatı-yalıtım yardımcıları, Samir duşakabin, Güral Quare aksesuar, MBT P 303, Ondulikit.
+  Weber Dress ince sıva (bayi görseli 768 px, küçük), BTM Elasto DryRoof (görsel eski "Dry Roof" ambalajı), Beybi/AKY iş eldivenleri (resmi
+  görsel renk uyuşmuyor), Fırat sifon-kada (resmi sayfa yok), Güral Quare aksesuar, Onduline Ondulikit (internette görsel yok — öncelikli).
 - [ ] docs/FIRMA.md'deki ⚠ işaretli bilgilerin teyidi (özellikle Güneysu Depo telefonu, e-posta)
 - [x] Şubelerin kesin Google Haritalar linkleri (2026-11-15 kullanıcı verdi, ayarlar/genel.yaml)
 - [x] Marka ve ürün listesi: paketler 001–007 sitede (214 kart, 52 marka, 68 kategori). KATALOG-YAPISI siteden üretildi.
@@ -398,3 +403,4 @@
 | 2026-11-18 | /gorsel eksikler (23) | 7 kart (Dömark 2, yer süzgeci, Mesa 2, Dalmaçyalı dübel, su sayacı); 189/214 | gorsel |
 | 2026-11-18 | /gorsel eksikler (24) | Paket 001'in 11 kartı (Fırat 6, Baumit 5); 200/214 | gorsel |
 | 2026-11-18 | /gorsel eksikler (25) | 7 kart (yerden ısıtma aks., Marshall 2, BTM 2, patent dirsek, kombi seti); 207/214 | gorsel |
+| 2026-11-18 | /gorsel eksikler (26) | 5 kart (MBT P303, BTM DryRoof, bahçe teli, çatı-yalıtım, Samir duşakabin); 212/214 | gorsel |

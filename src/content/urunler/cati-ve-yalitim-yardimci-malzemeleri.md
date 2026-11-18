@@ -25,7 +25,16 @@ ilgili_urunler:
   - eca-panel-radyatorler
 kaynak_sayfalar:
   - https://ph.onduline.com/sites/onduline_ph/files/2025-06/2025-tds-bituline-prima-pp300_0.pdf
+  - https://www.kozas.com.tr/89+pys-250+urun-detay.html
+  - https://tr.onduline.com/en/homeowner/products/foundation-structural-protection
 sira: 70
+gorseller:
+  - gorsel: /src/assets/urunler/cati-ve-yalitim-yardimci-malzemeleri-1.webp
+    alt_metin: Beyaz geotekstil keçe rulosu
+    kaynak_url: https://www.kozas.com.tr/89+pys-250+urun-detay.html
+  - gorsel: /src/assets/urunler/cati-ve-yalitim-yardimci-malzemeleri-2.webp
+    alt_metin: Onduline Bituline bitümlü membran rulosu
+    kaynak_url: https://tr.onduline.com/en/homeowner/products/foundation-structural-protection
 ---
 ## Mağazamızdakiler
 - **Asmolen:** 70 × 70 × 25 cm, 8–10 kg/m³ yoğunluk

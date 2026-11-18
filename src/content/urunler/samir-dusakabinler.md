@@ -30,6 +30,15 @@ ilgili_urunler:
   - eca-dus-setleri-ve-tepe-duslari
   - yer-suzgecleri-ve-dus-kanallari
 sira: 12
+gorseller:
+  - gorsel: /src/assets/urunler/samir-dusakabinler-1.webp
+    alt_metin: Kare tip sürgülü kapılı temperli cam duşakabin
+    kaynak_url: https://www.stina.com.tr/tr/urunler
+  - gorsel: /src/assets/urunler/samir-dusakabinler-2.webp
+    alt_metin: Oval köşe tip temperli cam duşakabin
+    kaynak_url: https://www.stina.com.tr/tr/urunler
+kaynak_sayfalar:
+  - https://www.stina.com.tr/tr/urunler
 ---
 ## Mağazamızdaki modeller
 - **Relax:** 90x90 cm

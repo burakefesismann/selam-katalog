@@ -20,6 +20,15 @@ ilgili_urunler:
   - kelepce-zincir-kilidi-ve-karabina
   - bahce-aletleri-makas-tirmik-kurek
 sira: 20
+gorseller:
+  - gorsel: /src/assets/urunler/bahce-telleri-1.webp
+    alt_metin: Galvaniz altıgen göz bahçe teli ruloları
+    kaynak_url: https://www.omurtelorgu.com.tr/altigen_cittel/
+  - gorsel: /src/assets/urunler/bahce-telleri-2.webp
+    alt_metin: Altıgen göz bahçe teli yakın görünüm
+    kaynak_url: https://www.omurtelorgu.com.tr/altigen_cittel/
+kaynak_sayfalar:
+  - https://www.omurtelorgu.com.tr/altigen_cittel/
 ---
 ## Mağazamızdakiler
 - **Samtel altıgen göz (75 göz) bahçe teli:** 100 cm (20 m²) ve 150 cm (30 m²)
