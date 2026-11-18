@@ -29,7 +29,12 @@ ilgili_urunler:
 kaynak_sayfalar:
   - https://www.btm.co/tr/btm-ekobit-serisi
   - https://www.btm.co/tr/urunler/kiremitalti-su-yalitim-membranlari/
+  - https://argesanas.com.tr/su-yalitim-membranlari/btm-ekobit-serisi
 sira: 20
+gorseller:
+  - gorsel: /src/assets/urunler/btm-ekobit-membran-1.webp
+    alt_metin: BTM Ekobit bitümlü su yalıtım membranı ruloları
+    kaynak_url: https://argesanas.com.tr/su-yalitim-membranlari/btm-ekobit-serisi
 ---
 ## Mağazamızdakiler
 - BTM Ekobit EC 2000 membran, 15 m rulo

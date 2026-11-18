@@ -20,6 +20,12 @@ ilgili_urunler:
   - conta-teflon-ve-sizdirmazlik
 sira: 20
 markalar: []
+gorseller:
+  - gorsel: /src/assets/urunler/patent-dirsek-flans-ve-pik-kolye-1.webp
+    alt_metin: Kaynaklı siyah çelik 90° patent dirsek
+    kaynak_url: https://www.orfa.com.tr/urun/patent-dirsek-90c-139-7-mm
+kaynak_sayfalar:
+  - https://www.orfa.com.tr/urun/patent-dirsek-90c-139-7-mm
 ---
 ## Mağazamızdaki parçalar
 - **Patent dirsekler:** 1/2" (21,3 mm), 3/4" (26,9), 1" (33,7), 1-1/4" (42,4), 1-1/2" (48,3), 2" (60,3), 2-1/2" (76,1), 3" (88,9), 4" (114,3), 5" (139,7) ve 6" (168,3)

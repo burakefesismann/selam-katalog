@@ -33,7 +33,12 @@ ilgili_urunler:
 kaynak_sayfalar:
   - https://www.marshallboya.com/tr/products-listing/akrikor-silikonlu-akrilik
   - https://www.marshallboya.com/tr/renk-ilham/marshall-akrikor-silikonlu-akrilik-ile-m%C3%BCkemmel-kapat%C4%B1c%C4%B1l%C4%B1%C4%9F%C4%B1-ke%C5%9Ffedin
+  - https://www.boyabayi.com/marshall-akrikor-silikonlu-akrilik-15-lt-5134350
 sira: 30
+gorseller:
+  - gorsel: /src/assets/urunler/marshall-akrikor-silikonlu-akrilik-dis-cephe-1.webp
+    alt_metin: Marshall Akrikor silikonlu + akrilik dış cephe boyası kovası
+    kaynak_url: https://www.boyabayi.com/marshall-akrikor-silikonlu-akrilik-15-lt-5134350
 ---
 ## Mağazamızdakiler
 - Akrikor Silikonlu + Akrilik beyaz — 2,5 / 7,5 / 15 lt

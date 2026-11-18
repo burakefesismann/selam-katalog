@@ -30,7 +30,16 @@ kaynak_sayfalar:
   - https://www.firat.com/en-us/indoor-piping-system/cold-hot-water-pipe-systems/pex-product-range-1/under-floor-heating/assembly
   - https://www.firat.com/en-us/indoor-piping-system/cold-hot-water-pipe-systems/pex-product-range/mobile-systems
   - https://eca.com.tr/dosemeden-isitma-sistemleri
+  - https://www.firat.com/sicak-soguk-su-boru-sistemleri/pex-mobil-sistem-ve-zeminden-isitma-borulari/pe-rt-boru-sistemleri/urunler
+  - https://www.firat.com/binaici-tesisat-boru-sistemleri/pex-zeminden-isitma-sistemleri
 sira: 30
+gorseller:
+  - gorsel: /src/assets/urunler/yerden-isitma-aksesuarlari-1.webp
+    alt_metin: Fırat yerden ısıtma klipsli boru tespit laması
+    kaynak_url: https://www.firat.com/sicak-soguk-su-boru-sistemleri/pex-mobil-sistem-ve-zeminden-isitma-borulari/pe-rt-boru-sistemleri/urunler
+  - gorsel: /src/assets/urunler/yerden-isitma-aksesuarlari-2.webp
+    alt_metin: "Yerden ısıtma katmanları: yalıtım levhası, borular ve şap"
+    kaynak_url: https://www.firat.com/binaici-tesisat-boru-sistemleri/pex-zeminden-isitma-sistemleri
 ---
 ## Mağazamızdakiler
 - **Strafor yerden ısıtma levhası:** 28-30 ve 30-32 dansite

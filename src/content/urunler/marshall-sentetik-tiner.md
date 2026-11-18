@@ -26,7 +26,12 @@ ilgili_urunler:
   - tinerler
 kaynak_sayfalar:
   - https://www.marshallboya.com/tr/products-listing/filters/p_%C4%B0%C3%A7-Cephe
+  - https://fiyatdeposu.com/marshall-boya-sentetik-tiner
 sira: 70
+gorseller:
+  - gorsel: /src/assets/urunler/marshall-sentetik-tiner-1.webp
+    alt_metin: Marshall sentetik tiner tenekesi
+    kaynak_url: https://fiyatdeposu.com/marshall-boya-sentetik-tiner
 ---
 ## Ne işe yarar?
 Yağlı (sentetik) boyalar, antipaslar ve sentetik astarlar suyla değil tinerle inceltilir. Sentetik tiner, boyayı fırça, rulo veya tabancaya uygun kıvama getirmek ve iş bitiminde aletleri temizlemek için kullanılır.

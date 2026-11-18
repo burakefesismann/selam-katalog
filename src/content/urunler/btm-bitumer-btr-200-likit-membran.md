@@ -37,7 +37,12 @@ ilgili_urunler:
 kaynak_sayfalar:
   - https://www.btm.co/tr/bitumer-btr-200
   - https://www.btm.co/tr/referanslar
+  - https://www.globalyapimarket.com/btm-btr-200-su-izolasyon-likit-membran-17-kg-5828
 sira: 40
+gorseller:
+  - gorsel: /src/assets/urunler/btm-bitumer-btr-200-likit-membran-1.webp
+    alt_metin: BTM Bitümer BTR 200 likit membran 17 kg kova
+    kaynak_url: https://www.globalyapimarket.com/btm-btr-200-su-izolasyon-likit-membran-17-kg-5828
 ---
 ## Ne işe yarar?
 Fırçayla ya da püskürtülerek uygulanan, kuruyunca kesintisiz, su ve nem geçirmez bir tabaka oluşturan bitümlü likit yalıtım malzemesidir. Bitümlü membranlardan önce astar olarak da kullanılır.

@@ -22,7 +22,12 @@ ilgili_urunler:
   - radyator-ve-termostatik-vanalar
 kaynak_sayfalar:
   - https://www.firat.com/cmsfiles/certificates/firatboru-genel-urun-katalogu.pdf
+  - https://kas.com.tr/en/product/ppr-combi-connection-parts/
 sira: 30
+gorseller:
+  - gorsel: /src/assets/urunler/kombi-ve-radyator-aksesuarlari-1.webp
+    alt_metin: "PPRC kombi bağlantı seti: vanalar ve rakorlar"
+    kaynak_url: https://kas.com.tr/en/product/ppr-combi-connection-parts/
 ---
 ## Mağazamızdakiler
 - **Fırat kombi bağlantı seti:** 8'li, dönüş başlı rakorlu
