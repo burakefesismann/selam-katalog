@@ -3,7 +3,7 @@
 > Her oturumun başında oku, sonunda güncelle. Kısa tut.
 
 ## Şu an
-- Aktif görev: — (sıradaki: F3.10 marka logoları, sonra F3.11 PDF düzeni — kullanıcı onayı 2026-11-18)
+- Aktif görev: F3.10a marka logoları — büyük markalar (17)
 - Site: https://burakefesismann.github.io/selam-katalog/
 - Faz: 3 — Gerçek içerik ve görseller
 
