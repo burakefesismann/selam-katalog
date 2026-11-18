@@ -3,7 +3,8 @@
 > Her oturumun başında oku, sonunda güncelle. Kısa tut.
 
 ## Şu an
-- Aktif görev: — (sıradaki: F3.11 PDF katalog sayfa düzeni)
+- Aktif görev: — BEKLE: kullanıcı 2026-11-18 ~12:50'de yeni görev tanımı getirecek (sayfa yapısı ve ürün seçimlerinde değişiklik).
+  Önce o tanımı al; F3.11 PDF düzeni ondan sonra (yapı değişirse PDF de etkilenir).
 - Site: https://burakefesismann.github.io/selam-katalog/
 - Faz: 3 — Gerçek içerik ve görseller
 
