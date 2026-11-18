@@ -27,6 +27,10 @@ ilgili_urunler:
 kaynak_sayfalar:
   - https://res.cloudinary.com/filli-boya-kurumsal-web-sitesi/dalmacyali-web/dalmacyali_d_ue_beller_495fb304e7.pdf
 sira: 50
+gorseller:
+  - gorsel: /src/assets/urunler/filli-dalmacyali-mantolama-dubeli-1.webp
+    alt_metin: Dalmaçyalı standart plastik çivili mantolama dübeli
+    kaynak_url: https://res.cloudinary.com/filli-boya-kurumsal-web-sitesi/dalmacyali-web/dalmacyali_d_ue_beller_495fb304e7.pdf
 ---
 ## Ne işe yarar?
 Mantolamada yapıştırılan ısı yalıtım levhalarını duvara mekanik olarak sabitler ve sistemi rüzgârın emme etkisine karşı korur. Dalmaçyalı, Filli Boya'nın ısı yalıtım sistemleri markasıdır.

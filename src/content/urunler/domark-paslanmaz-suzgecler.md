@@ -24,6 +24,15 @@ ilgili_urunler:
   - yer-suzgecleri-ve-dus-kanallari
   - domark-banyo-aksesuarlari
 sira: 10
+gorseller:
+  - gorsel: /src/assets/urunler/domark-paslanmaz-suzgecler-1.webp
+    alt_metin: Dömark paslanmaz ızgaralı 15x15 yer süzgeçleri, yandan ve alttan çıkışlı
+    kaynak_url: https://www.edomark.com/yer-sifonlari
+  - gorsel: /src/assets/urunler/domark-paslanmaz-suzgecler-2.webp
+    alt_metin: Dömark seramik montajlı paslanmaz çerçeveli yer süzgeçleri
+    kaynak_url: https://www.edomark.com/yer-sifonlari
+kaynak_sayfalar:
+  - https://www.edomark.com/yer-sifonlari
 ---
 ## Mağazamızdaki modeller
 - 11x11 cm ve 15x15 cm paslanmaz yer süzgeçleri

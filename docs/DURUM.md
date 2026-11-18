@@ -3,12 +3,12 @@
 > Her oturumun başında oku, sonunda güncelle. Kısa tut.
 
 ## Şu an
-- Aktif görev: — (sıradaki: /gorsel eksikler oturum 23)
+- Aktif görev: — (sıradaki: /gorsel eksikler oturum 24)
 - Site: https://burakefesismann.github.io/selam-katalog/
 - Faz: 3 — Gerçek içerik ve görseller
 
 ## Yarım kalan
-- **`/gorsel eksikler` — paketler 002–007 görselleri** (2026-11-17 başladı). Görselli: 182/214. Paket 001'in 11 kartı kullanıcıda (dokunma).
+- **`/gorsel eksikler` — paketler 002–007 görselleri** (2026-11-17 başladı). Görselli: 189/214. Paket 001'in 11 kartı kullanıcıda (dokunma).
   - Yapılan (oturum 1): 10 ECA/Serel kartı (lavabo/eviye bataryası, havlupan, panel radyatör, termostatik vana, küresel vana,
     ara musluk, Serel klozet/pisuvar/lavabo).
   - Yapılan (oturum 2): banyo aksesuarı, Y filtre, pürjör, rakor, tepe duşu, ara kesme (krom), Tiera ankastre, Life banyo
@@ -85,6 +85,12 @@
     Jade kırmızı klozet, siyah-altın oval lavabo; Güral Seramik Misha (itcyapi.com karo + dushome.com.tr uygulama).
     Seycan görselinde satıcı adı var → alınmadı. Yardımcı: scratchpad ogal.sh (sayfalardan og:image toplu indirir).
     Kalan Güral: banyo aksesuarları (Quare) — satıcıda bulunamadı.
+  - Yapılan (oturum 23): Dömark resmi sitesi **edomark.com** (OpenCart; görsel /image/cache/catalog/products_2023/<kod>-750x750.webp,
+    K14): paslanmaz süzgeç (DMT 610 + 209 SUÇ), genel "yer süzgeçleri" kartı (DMT 167M membranlı + DMT 600), banyo aksesuarı
+    (Deniz serisi sitede yok → aynı türden kare seri onn_209/215/212). Mesa: Dicle altın set (banyomega.com), Karlim Point krom
+    duş seti (tesisatmarketi.net). Filli Dalmaçyalı dübel (kartın dübel PDF'inden, plastik çivili model, K14). Su sayacı +
+    ultrasonik kalorimetre: ista.com/turkey-2026 (resmi sayaç üreticisi). Sonuçsuz: Samir duşakabin (Relax başka marka),
+    patent dirsek (tesisatmarketi görselleri yapay zekâ üretimi "chatgpt-image" → alınmadı), MasterTile P 303 (satıcı og:image'ları logo).
   - Sıradaki adaylar (gevşek kural): Sika (başka ülke sika.com sayfaları), Onduline (başka ülke siteleri), Bosch, Weber (başka
     ülke weber siteleri), rögar, dübel, fırça/rulo (Rulomas/Akyüzler), halat, yer süzgeci/duş kanalı (mesateknik.com), seviye
     sistemi, köşe profilleri, trapez saç, yangın tüpü, Mesa/Dömark/Samir duşakabin, Güral (tarayıcıdan kaydetme gerekli).
@@ -100,7 +106,7 @@
     anahtarlar/kaynak kartı için Master kaynak pensesi. Uygun karşılığı YOK: bahçe hortumu, Master sprey boya, Dekor fırça/rulo,
     iskota halat/iskele kelepçesi, Master kalıp yağı, kümes teli (Fermo), menteşe/kapı hidroliği.
   - **K15 (2026-11-17): kaynaklar genişletildi** — dağıtıcı/resmi sosyal medya, ücretsiz lisanslı (Commons/Pexels/Unsplash),
-    son çare pazaryerleri. Pazaryerinden / başka satıcıdan alınan "geçici görseller": polietilen-su-depolari (idefix), drenaj-kanallari-ve-izgaralar (bosta.com), master-panc-delik-testereleri (Bosch seti — Master görseli bulununca değiştir); başka model/marka (tür aynı): sika-floor-3 (Sikafloor-2 SynTop), tinerler (DYO), sika-antisol (Antisol-3E), sika-anchorfix-s1 (AnchorFix-1), sika-monoplug (MonoTop-108), sikabond-181 (Everbuild Mitre Fast), sika-plastocrete (Tayland ambalajı). Satıcı sitelerinden: weber-dress-ince-siva (umityapimarket), weber-yuzey-sertlestirici (birlikcati, itcyapi), gural-klozetler + gural-lavabolar (sozerisi), gural-seramik-karolar (itcyapi, dushome).
+    son çare pazaryerleri. Pazaryerinden / başka satıcıdan alınan "geçici görseller": polietilen-su-depolari (idefix), drenaj-kanallari-ve-izgaralar (bosta.com), master-panc-delik-testereleri (Bosch seti — Master görseli bulununca değiştir); başka model/marka (tür aynı): sika-floor-3 (Sikafloor-2 SynTop), tinerler (DYO), sika-antisol (Antisol-3E), sika-anchorfix-s1 (AnchorFix-1), sika-monoplug (MonoTop-108), sikabond-181 (Everbuild Mitre Fast), sika-plastocrete (Tayland ambalajı). Satıcı sitelerinden: weber-dress-ince-siva (umityapimarket), weber-yuzey-sertlestirici (birlikcati, itcyapi), gural-klozetler + gural-lavabolar (sozerisi), gural-seramik-karolar (itcyapi, dushome), mesa-banyo-aksesuarlari (banyomega), mesa-dus-setleri (tesisatmarketi); domark-banyo-aksesuarlari (Deniz yerine başka Dömark serisi).
   - **Kullanıcı (2026-11-17, oturum 14): "resmi sitelerde takılı kalma"** — marka/renk birebir tutmasa da ürün türü doğruysa kullan (KARARLAR K15 eki).
   - Yapılan (oturum 9): Poelsan kaplin (poelsan.com), Sumak dalgıç (2, sumakpompa.com), Selsil yapıştırıcılar (2, selsil.com),
     KL Eco KE75115 + Hitachi G12SR4 (kalemakina.com), Samir Zümrüt 45 dolap ve oval duş teknesi (samirbanyo.com.tr).
@@ -167,7 +173,7 @@
 - [ ] Şu ürünlerin fotoğrafı gerekli — mağazada çekilebilir ya da üreticiden istenebilir (resmi sitede görsel yok):
   Flatörler (ECA sayfası liste, görsel yok), Basınç düşürücü ECA modeli (KAS görseli kullanıldı), Serel Klozet Kapakları
   (Blaze Slim sayfası yok), Rezervuar İç Takımları & Klozet Kapakları (Visam/Aryak), KAS Eviye Bataryaları (Berilyum sayfası yok),
-  Su Sayaçları & Kalorimetre (KAS sitesinde sayaç sayfası yok), Marshall Akrikor dış cephe (resmi görsel 160 px),
+  Marshall Akrikor dış cephe (resmi görsel 160 px),
   Onduline Ondulikit (resmi sayfa yok), İzocam Maxibord XPS ve Terrawool (doğru ambalaj
   belirsiz), Güral Quare banyo aksesuarları (site görselleri indirilemiyor),
   Weber Dress ince sıva (bayi görseli 768 px, küçük), BTM 3 kart (site açılmıyor), Beybi/AKY iş eldivenleri (resmi
@@ -380,3 +386,4 @@
 | 2026-11-17 | /gorsel eksikler (20) | 3 kart (panç, Çukurova/Fondaline, UKS şıngıl); 165/214 | gorsel |
 | 2026-11-17 | /gorsel eksikler (21) | 9 kart (Sika 6, yangın tüpü/dolap, trapez saç, tiner); 174/214 | gorsel |
 | 2026-11-18 | /gorsel eksikler (22) | 8 kart (Sika 3, Weber 2, Güral klozet/lavabo/seramik); 182/214 | gorsel |
+| 2026-11-18 | /gorsel eksikler (23) | 7 kart (Dömark 2, yer süzgeci, Mesa 2, Dalmaçyalı dübel, su sayacı); 189/214 | gorsel |

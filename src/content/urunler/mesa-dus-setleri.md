@@ -24,6 +24,12 @@ ilgili_urunler:
   - mesa-banyo-aksesuarlari
   - samir-dusakabinler
 sira: 12
+gorseller:
+  - gorsel: /src/assets/urunler/mesa-dus-setleri-1.webp
+    alt_metin: Mesa Karlim Point krom mafsallı duş seti
+    kaynak_url: https://www.tesisatmarketi.net/urun/karlim-kontra-point-mafsalli-takim-kdm-10-11
+kaynak_sayfalar:
+  - https://www.tesisatmarketi.net/urun/karlim-kontra-point-mafsalli-takim-kdm-10-11
 ---
 ## Mağazamızdaki modeller
 - **Point** (krom-inci): mafsallı, sürgülü ve tepe duş setleri

@@ -26,6 +26,15 @@ ilgili_urunler:
   - firat-pvc-atik-su-ek-parcalari
 sira: 30
 markalar: []
+gorseller:
+  - gorsel: /src/assets/urunler/yer-suzgecleri-ve-dus-kanallari-1.webp
+    alt_metin: Membran bağlantılı paslanmaz ızgaralı yer süzgeçleri
+    kaynak_url: https://www.edomark.com/yer-sifonlari
+  - gorsel: /src/assets/urunler/yer-suzgecleri-ve-dus-kanallari-2.webp
+    alt_metin: Yandan ve alttan çıkışlı yer süzgeçleri
+    kaynak_url: https://www.edomark.com/yer-sifonlari
+kaynak_sayfalar:
+  - https://www.edomark.com/yer-sifonlari
 ---
 ## Mağazamızdaki modeller
 - **10x10 cm:** Ø32 ve Ø50 çıkışlı; krom, üstü krom gri ve yan çıkışlı modeller

@@ -28,6 +28,12 @@ ilgili_urunler:
   - eca-banyo-aksesuarlari
   - banyo-aksesuarlari-diger-markalar
 sira: 11
+gorseller:
+  - gorsel: /src/assets/urunler/mesa-banyo-aksesuarlari-1.webp
+    alt_metin: "Mesa Dicle altın banyo seti: kapaklı kağıtlık, havluluk ve askılık"
+    kaynak_url: https://www.banyomega.com/urun/mesa-dicle-altin-3-lu-banyo-seti
+kaynak_sayfalar:
+  - https://www.banyomega.com/urun/mesa-dicle-altin-3-lu-banyo-seti
 ---
 ## Mağazamızdaki seriler
 - **Dicle:** gold, krom ve mat siyah; titan 3'lü set

@@ -24,7 +24,16 @@ ilgili_urunler:
   - conta-teflon-ve-sizdirmazlik
 kaynak_sayfalar:
   - https://kas.com.tr/product/rakorlu-su-kuresel-vana-tam-gecisli-sensor-kovanli/
+  - https://www.ista.com/turkey-2026/ueruenler-ve-hizmetler/su-sayaci/
+  - https://www.ista.com/turkey-2026/ueruenler-ve-hizmetler/isi-sayaci-kalorimetre/
 sira: 80
+gorseller:
+  - gorsel: /src/assets/urunler/su-sayaclari-ve-kalorimetre-1.webp
+    alt_metin: Pirinç gövdeli dişli bağlantılı su sayacı
+    kaynak_url: https://www.ista.com/turkey-2026/ueruenler-ve-hizmetler/su-sayaci/
+  - gorsel: /src/assets/urunler/su-sayaclari-ve-kalorimetre-2.webp
+    alt_metin: Ultrasonik kalorimetre (ısı sayacı)
+    kaynak_url: https://www.ista.com/turkey-2026/ueruenler-ve-hizmetler/isi-sayaci-kalorimetre/
 ---
 ## Mağazamızdakiler
 - **Su saatleri:** 3/4" rakorsuz, kısa ve uzun gövde; 1-1/2"
