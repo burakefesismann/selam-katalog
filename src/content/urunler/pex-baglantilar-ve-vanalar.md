@@ -26,7 +26,15 @@ kaynak_sayfalar:
   - https://www.firat.com/en-us/indoor-piping-system/cold-hot-water-pipe-systems/pex-product-range-1/mobile-systems/assembly
   - https://www.eca.com.tr/rv3-pex
   - https://kas.com.tr/product/kose-rakorlu-radyator-vana/
+  - https://www.firat.com/sicak-soguk-su-boru-sistemleri/pex-mobil-sistem-ve-zeminden-isitma-borulari/pe-rt-boru-sistemleri/urunler
 sira: 10
+gorseller:
+  - gorsel: /src/assets/urunler/pex-baglantilar-ve-vanalar-1.webp
+    alt_metin: Fırat PEX boru sabitleme klipsi
+    kaynak_url: https://www.firat.com/sicak-soguk-su-boru-sistemleri/pex-mobil-sistem-ve-zeminden-isitma-borulari/pe-rt-boru-sistemleri/urunler
+  - gorsel: /src/assets/urunler/pex-baglantilar-ve-vanalar-2.webp
+    alt_metin: Fırat PEX boru 90° dirsek yönlendirici
+    kaynak_url: https://www.firat.com/sicak-soguk-su-boru-sistemleri/pex-mobil-sistem-ve-zeminden-isitma-borulari/pe-rt-boru-sistemleri/urunler
 ---
 ## Mağazamızdaki parçalar
 - **Fırat:** 16 mm PEX bağlantı manşonu, 1/2"x16 mm dış dişli rakor ve dış dişli dirsek

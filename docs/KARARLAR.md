@@ -101,4 +101,4 @@ yazı/fiyat/logo bindirilmiş, başka satıcının adı görünen ya da yanlış
 alınan görseller DURUM'da listelenir; telif şikâyeti gelirse ya da resmi görsel bulunursa değiştirilir.
 Ek (2026-11-17, kullanıcı): "resmi sitelerde takılı kalma" — kalan kartlarda marka/model/renk birebir tutmasa da ürün TÜRÜ
 doğruysa görsel kullanılabilir (ör. farklı renkte aynı tip eldiven); pazaryerleri ve diğer satıcı siteleri serbest.
-Filigran / yazı-fiyat bindirmesi yasağı sürer. Paket 001'in 11 kartı yine kullanıcıda.
+Filigran / yazı-fiyat bindirmesi yasağı sürer. Paket 001'in 11 kartı yine kullanıcıda. **2026-11-18 (kullanıcı): "sizin çekeceğiniz diye ayırdıklarına da sen bak"** → Paket 001 kartları da aynı kuralla Claude'da.

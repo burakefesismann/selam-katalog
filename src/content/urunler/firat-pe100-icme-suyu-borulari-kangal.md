@@ -39,7 +39,16 @@ kaynak_sayfalar:
   - https://www.firat.com/en-us/infrastructure-pipe/potable-water-pipe-systems/pe-pipe-and-fittings
   - https://www.firat.com/cmsfiles/certificates/pe-100-teknik-katalogu.pdf
   - https://www.firat.com/cmsfiles/certificates/ts-en-12201-2-a1-pe-borular.pdf
+  - https://www.firat.com/binaici-tesisat-boru-sistemleri/pe-32-kangal-borular/polietilen-borular-pe-kangal-borular/borular
+  - https://www.firat.com/icme-suyu-boru-sistemleri/pe-boru-ve-ek-parcalari
 sira: 10
+gorseller:
+  - gorsel: /src/assets/urunler/firat-pe100-icme-suyu-borulari-kangal-1.webp
+    alt_metin: Fırat PE polietilen basınçlı su borusu
+    kaynak_url: https://www.firat.com/binaici-tesisat-boru-sistemleri/pe-32-kangal-borular/polietilen-borular-pe-kangal-borular/borular
+  - gorsel: /src/assets/urunler/firat-pe100-icme-suyu-borulari-kangal-2.webp
+    alt_metin: PE içme suyu borularının şantiyede kaynakla birleştirilmesi
+    kaynak_url: https://www.firat.com/icme-suyu-boru-sistemleri/pe-boru-ve-ek-parcalari
 ---
 ## Nerede kullanılır
 Şebekeden binaya su bağlantısında, site içi içme suyu hatlarında, bahçe ve tarım arazisi su hatlarında; toprak altında.

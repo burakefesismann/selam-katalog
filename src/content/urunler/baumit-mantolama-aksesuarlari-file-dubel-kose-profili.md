@@ -29,7 +29,16 @@ kaynak_sayfalar:
   - https://baumit.com.tr/products/son-kat-kaplamalar/aksesuarlar/pvc-kose-profili-fileli
   - http://akademi.baumit.com.tr/doc/pdf/MANTOLAMA_www.pdf
   - https://baumit.com.tr/guide/dis-cephe-isi-yalitim-sistemleri/baumit-pro-sistem
+  - https://baumit.pl/produkt/3542/baumit-startex
+  - https://baumit.at/produkte/fassadendaemmung/fassadenzubehoer/baumit-kantenschutz-mit-gewebe-kunststoff
 sira: 50
+gorseller:
+  - gorsel: /src/assets/urunler/baumit-mantolama-aksesuarlari-file-dubel-kose-profili-1.webp
+    alt_metin: Baumit StarTex donatı filesi rulosu
+    kaynak_url: https://baumit.pl/produkt/3542/baumit-startex
+  - gorsel: /src/assets/urunler/baumit-mantolama-aksesuarlari-file-dubel-kose-profili-2.webp
+    alt_metin: Baumit fileli PVC köşe profili
+    kaynak_url: https://baumit.at/produkte/fassadendaemmung/fassadenzubehoer/baumit-kantenschutz-mit-gewebe-kunststoff
 ---
 ## StarTex donatı filesi
 Sıva içine gömülen, alkali ortama dayanıklı cam tekstil dokuma filedir. Baumit dış cephe ısı yalıtım sistemlerinin test edilmiş bir parçasıdır, ETAG normlarına uygundur ve sıvada çatlak oluşumunu önler.

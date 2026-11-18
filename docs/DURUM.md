@@ -3,12 +3,12 @@
 > Her oturumun başında oku, sonunda güncelle. Kısa tut.
 
 ## Şu an
-- Aktif görev: — (sıradaki: /gorsel eksikler oturum 24)
+- Aktif görev: — (sıradaki: /gorsel eksikler oturum 25)
 - Site: https://burakefesismann.github.io/selam-katalog/
 - Faz: 3 — Gerçek içerik ve görseller
 
 ## Yarım kalan
-- **`/gorsel eksikler` — paketler 002–007 görselleri** (2026-11-17 başladı). Görselli: 189/214. Paket 001'in 11 kartı kullanıcıda (dokunma).
+- **`/gorsel eksikler` — paketler 002–007 görselleri** (2026-11-17 başladı). Görselli: 200/214. Paket 001 kartları da artık Claude'da (kullanıcı 2026-11-18).
   - Yapılan (oturum 1): 10 ECA/Serel kartı (lavabo/eviye bataryası, havlupan, panel radyatör, termostatik vana, küresel vana,
     ara musluk, Serel klozet/pisuvar/lavabo).
   - Yapılan (oturum 2): banyo aksesuarı, Y filtre, pürjör, rakor, tepe duşu, ara kesme (krom), Tiera ankastre, Life banyo
@@ -91,6 +91,13 @@
     duş seti (tesisatmarketi.net). Filli Dalmaçyalı dübel (kartın dübel PDF'inden, plastik çivili model, K14). Su sayacı +
     ultrasonik kalorimetre: ista.com/turkey-2026 (resmi sayaç üreticisi). Sonuçsuz: Samir duşakabin (Relax başka marka),
     patent dirsek (tesisatmarketi görselleri yapay zekâ üretimi "chatgpt-image" → alınmadı), MasterTile P 303 (satıcı og:image'ları logo).
+  - Yapılan (oturum 24, Paket 001'in 11 kartı — kullanıcı "onlara da sen bak"): Fırat 6 (firat.com Türkçe sayfaları,
+    710×320 → K14): PE kangal (PE boru + şantiye kaynağı), PE EF ek parçalar, PPRC vanalar kartı ← pirinç küresel vana + radyatör vanası,
+    Gediz ← Fırat PVC dublex atık su borusu (Gediz ayrı sayfa yok), PEX ← klips + dirsek yönlendirici, kollektörler (beyaz zemin + montaj).
+    Baumit 5: **baumit.com.tr ürün sayfaları artık 404** (/products/... kapandı); diğer ülke siteleri çalışıyor →
+    og:image = /files/<ülke>/product_images/imNNNN.png (400 px, K14): IonitFinish (baumit.cz), Protect 2K Elastic + Protect 2K
+    (baumit.hr, baumit.it — Baumacol adıyla), PremiumFuge (baumit.hu), StarTex (baumit.pl) + KantenSchutz fileli köşe profili
+    (baumit.at). All in Beton: baumit.com.tr/files/tr/image-web/all-in-beton.png (1080, 30 kg torba).
   - Sıradaki adaylar (gevşek kural): Sika (başka ülke sika.com sayfaları), Onduline (başka ülke siteleri), Bosch, Weber (başka
     ülke weber siteleri), rögar, dübel, fırça/rulo (Rulomas/Akyüzler), halat, yer süzgeci/duş kanalı (mesateknik.com), seviye
     sistemi, köşe profilleri, trapez saç, yangın tüpü, Mesa/Dömark/Samir duşakabin, Güral (tarayıcıdan kaydetme gerekli).
@@ -159,12 +166,9 @@
 ## Kullanıcıdan beklenenler
 - [~] Logo: `kaynaklar/logo/selamfis.png` geldi (2026-11-15 tekrar aynı dosya geldi; daha büyüğü yok) (474×129 PNG, şeffaf zemin, turuncu+gri). Vektör (SVG/AI/PDF) ya da
   daha büyük PNG varsa istenir; beyaz/açık renkli sürümü (koyu zemin için) de lazım olacak.
-- [ ] **Eksik ürün görselleri — kullanıcı EN SON kendisi halledecek (2026-11-16 kararı; Claude dokunmasın).** 11 kart:
-  Fırat PE100 Kaynaklı & Elektrofüzyon Ek Parçalar, Fırat PEX Bağlantılar & Vanalar, Yerden Isıtma Kollektörleri (bu üçünün
-  resmi Fırat sayfalarında görsel olabilir: kaynak_sayfalar) ve aşağıdaki mağaza fotoğrafı gerekenler. Liste: `npm run gorsel:rapor`.
-- [ ] Mağaza fotoğrafı gereken kartlar (resmi görsel yok/uygun değil): Fırat PE100 İçme Suyu Boruları (Kangal),
-  Fırat PPRC Vanalar, Fırat Gediz, Baumit All in Beton (resmi görsel 30 kg torba, mağazadaki 20 kg), Baumit Ionit Finish,
-  Baumit Protect 2K, Baumit PremiumFuge, Baumit mantolama aksesuarları (file/dübel/profil), Baumit Flexo (bilgiler de torbadan).
+- [x] Paket 001'in 11 kartı (2026-11-18 kullanıcı Claude'a bıraktı) internetten görsellendi (oturum 24). Mağazada çekilirse
+  daha iyi olacaklar: Fırat Gediz (görsel Fırat dublex), Fırat PE kangal (kangal hâli yok), Baumit All in Beton (30 kg torba,
+  mağazadaki 20 kg), Baumit mantolama dübeli (görselde yok), Baumit Flexo (bilgiler de torbadan).
 - [ ] Daha büyük ürün görselleri. Şu an yapay zekâ ile büyütülmüş (K14), gerçeği gelince değiştirilecek:
   Fırat PPRC (2), PVC atık su ek parçaları, Triplex (2) — asıl 710 px · Baumit Basic, Flexo, Flex Uni — asıl 400 px.
   ECA çekvalfler (2) — asıl ~400 px · KAS Safir duş seti — 440 px · Serel gömme rezervuar — 683 px (kırpılmış).
@@ -387,3 +391,4 @@
 | 2026-11-17 | /gorsel eksikler (21) | 9 kart (Sika 6, yangın tüpü/dolap, trapez saç, tiner); 174/214 | gorsel |
 | 2026-11-18 | /gorsel eksikler (22) | 8 kart (Sika 3, Weber 2, Güral klozet/lavabo/seramik); 182/214 | gorsel |
 | 2026-11-18 | /gorsel eksikler (23) | 7 kart (Dömark 2, yer süzgeci, Mesa 2, Dalmaçyalı dübel, su sayacı); 189/214 | gorsel |
+| 2026-11-18 | /gorsel eksikler (24) | Paket 001'in 11 kartı (Fırat 6, Baumit 5); 200/214 | gorsel |

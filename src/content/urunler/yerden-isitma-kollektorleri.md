@@ -39,6 +39,13 @@ kaynak_sayfalar:
   - https://kas.com.tr/wp-content/uploads/2018/07/mini-vanali-kollekt%C3%B6r-teknik-brosur.pdf
   - https://kas.com.tr/product/kare-tip-debili-kollektor-termostat-set/
 sira: 20
+gorseller:
+  - gorsel: /src/assets/urunler/yerden-isitma-kollektorleri-1.webp
+    alt_metin: Fırat vanalı yerden ısıtma kollektörleri
+    kaynak_url: https://www.firat.com/en-us/sanitary-piping-systems/metal-systems/collectors
+  - gorsel: /src/assets/urunler/yerden-isitma-kollektorleri-2.webp
+    alt_metin: Duvara monte edilmiş kollektör ve PEX boru bağlantıları
+    kaynak_url: https://www.firat.com/en-us/sanitary-piping-systems/metal-systems/collectors
 ---
 ## Nerede kullanılır
 Yerden ısıtma, mobil radyatör sistemi ve PEX su dağıtım sistemlerinde; kombiden ya da kazandan gelen suyu her odanın devresine dağıtır ve dönüş suyunu toplar. Çıkış sayısı, bağlanacak devre ya da radyatör sayısına göre seçilir.

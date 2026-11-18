@@ -41,7 +41,16 @@ kaynak_sayfalar:
   - https://baumit.com.tr/guide/islak-hacim-bilesenleri/banyoda-nasil-karo-yapistirilir
   - https://baumit.com.tr/news/baumitden-projelere-icten-disa-destek
   - https://baumit.com.tr/guide/dis-cephe-isi-yalitim-sistemleri/duvar-eteklikleri-icin-isi-yalitimi
+  - https://baumit.hr/proizvodi/program-za-keramiku/hidroizolacije/baumit-baumacol-protect-2k-elastic
+  - https://baumit.it/prodotti/posa-piastrelle-e-pietre-naturali/preparazione-sottofondo-1/baumit-baumacol-protect-2k
 sira: 10
+gorseller:
+  - gorsel: /src/assets/urunler/baumit-protect-2k-tam-yari-elastik-1.webp
+    alt_metin: Baumit Baumacol Protect 2K Elastic torba ve sıvı bileşen bidonu
+    kaynak_url: https://baumit.hr/proizvodi/program-za-keramiku/hidroizolacije/baumit-baumacol-protect-2k-elastic
+  - gorsel: /src/assets/urunler/baumit-protect-2k-tam-yari-elastik-2.webp
+    alt_metin: Baumit Baumacol Protect 2K 20 kg torba
+    kaynak_url: https://baumit.it/prodotti/posa-piastrelle-e-pietre-naturali/preparazione-sottofondo-1/baumit-baumacol-protect-2k
 ---
 ## Nerede kullanılır
 Banyo, duş ve tuvalet gibi ıslak hacimlerde, balkon ve teraslarda, temel ve perde duvarlarında, dış cephelerde ve su altında kalan alanlarda (havuz, içme suyu deposu); beton, sıva ve şap üzerine, doğrudan seramiğin altına uygulanır. Tüm yapılarda iç ve dış mekânda, zeminde ve duvarda kullanılabilir.

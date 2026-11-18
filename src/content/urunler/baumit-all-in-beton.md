@@ -30,6 +30,10 @@ kaynak_sayfalar:
   - https://baumit.com.tr/baumit-all-in-beton
   - https://baumit.com.tr/news/baumit-baumeet-bayi-festivali-ile-konyada-sektorun-nabzini-tuttu
 sira: 40
+gorseller:
+  - gorsel: /src/assets/urunler/baumit-all-in-beton-1.webp
+    alt_metin: Baumit ALL IN Beton torbası
+    kaynak_url: https://baumit.com.tr/baumit-all-in-beton
 ---
 ## Nerede kullanılır
 Bahçe ve peyzaj işlerinde ve taşıyıcı olmayan küçük beton uygulamalarında; iç ve dış mekânda. Çimento, kum ve çakılı ayrı ayrı taşımaya ve ölçmeye gerek kalmaz.

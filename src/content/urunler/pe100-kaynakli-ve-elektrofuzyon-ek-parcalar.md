@@ -28,7 +28,12 @@ ilgili_urunler:
 kaynak_sayfalar:
   - https://www.firat.com/cmsfiles/certificates/pe-100-teknik-katalogu.pdf
   - https://www.firat.com/en-us/infrastructure-pipe/potable-water-pipe-systems/pe-pipe-and-fittings
+  - https://www.firat.com/icme-suyu-boru-sistemleri/pe-boru-ve-ek-parcalari
 sira: 20
+gorseller:
+  - gorsel: /src/assets/urunler/pe100-kaynakli-ve-elektrofuzyon-ek-parcalar-1.webp
+    alt_metin: Fırat PE elektrofüzyon manşon, TE ve dirsek
+    kaynak_url: https://www.firat.com/icme-suyu-boru-sistemleri/pe-boru-ve-ek-parcalari
 ---
 ## Mağazamızdaki parçalar
 - Elektrofüzyon (EF) manşon Ø50; EF dirsek 45° Ø75

@@ -31,7 +31,15 @@ ilgili_urunler:
   - firat-dublex-pvc-atik-su-borulari
 kaynak_sayfalar:
   - https://www.firat.com/cmsfiles/certificates/firatboru-genel-urun-katalogu.pdf
+  - https://www.firat.com/pvc-boru-atik-su-sistemleri/pvc-dublex-boru-ve-ek-parcalari
 sira: 30
+gorseller:
+  - gorsel: /src/assets/urunler/firat-gediz-pvc-atik-su-borulari-1.webp
+    alt_metin: Fırat contalı PVC atık su boruları
+    kaynak_url: https://www.firat.com/pvc-boru-atik-su-sistemleri/pvc-dublex-boru-ve-ek-parcalari
+  - gorsel: /src/assets/urunler/firat-gediz-pvc-atik-su-borulari-2.webp
+    alt_metin: Fırat contalı PVC atık su borusu
+    kaynak_url: https://www.firat.com/pvc-boru-atik-su-sistemleri/pvc-dublex-boru-ve-ek-parcalari
 ---
 ## Nerede kullanılır
 Bina içi atık su hatlarında; lavabo, duş, eviye ve çamaşır makinesi giderlerinden kolon hatlarına kadar.

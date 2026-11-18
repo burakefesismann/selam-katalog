@@ -41,8 +41,13 @@ kaynak_sayfalar:
   - https://baumit.com.tr/products/islak-hacim-bilesenleri/derz-dolgusu/baumit-premiumfuge
   - https://baumit.com.tr/guvenli-hizli-estetik-baumit-karo-doseme-urunleri
   - https://baumit.com.tr/guide/islak-hacim-bilesenleri/banyoda-nasil-karo-yapistirilir
+  - https://baumit.hu/termekek/baumacol-hidegburkolati-ragasztasi-rendszer/fugazok/baumit-baumacol-premiumfuge
 sira: 10
 one_cikan: true
+gorseller:
+  - gorsel: /src/assets/urunler/baumit-premium-fuga-standart-ve-silikonlu-1.webp
+    alt_metin: Baumit Baumacol PremiumFuge 5 kg kova
+    kaynak_url: https://baumit.hu/termekek/baumacol-hidegburkolati-ragasztasi-rendszer/fugazok/baumit-baumacol-premiumfuge
 ---
 ## Nerede kullanılır
 Mutfak, banyo, teras ve yerden ısıtmalı mekânlarda; iç ve dış mekânda zemin ve duvar derzlerinde. Seramik, fayans, mermer, granit, cam mozaik ve doğal taş dahil her tip karoyla, esnek yapıştırıcı gerektiren durumlarda da kullanılabilir. Baumit'e göre gıda ürünlerinin depolandığı alanlar için de uygundur.

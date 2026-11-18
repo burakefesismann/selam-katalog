@@ -28,7 +28,12 @@ kaynak_sayfalar:
   - https://baumit.com.tr/baumit-ionit
   - https://int.baumit.com/products/healthy-living-1/ionit/baumit-ionitfinish
   - https://ch.baumit.com/guide/klima-produkte/ionit
+  - https://baumit.cz/produkty/zdrave-bydleni/ionit/baumit-ionitfinish
 sira: 20
+gorseller:
+  - gorsel: /src/assets/urunler/baumit-ionit-finish-saten-alci-1.webp
+    alt_metin: Baumit IonitFinish 20 kg kova
+    kaynak_url: https://baumit.cz/produkty/zdrave-bydleni/ionit/baumit-ionitfinish
 ---
 ## Nerede kullanılır
 Yeni yapılarda ve tadilatlarda iç mekân duvar ve tavanlarında; boya öncesi pürüzsüz saten yüzey elde etmek, yüzeyi düzeltmek ve alçı levha derzlerini doldurmak için.

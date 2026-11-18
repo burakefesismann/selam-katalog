@@ -28,7 +28,16 @@ ilgili_urunler:
 kaynak_sayfalar:
   - https://www.firat.com/cmsfiles/certificates/firatboru-genel-urun-katalogu.pdf
   - https://www.firat.com/en-us
+  - https://www.firat.com/urunler/yeni-urunlerimiz/kuresel-vanalar-dogalgaz-su-ve-endustriyel-vanalar
+  - https://www.firat.com/urunler/yeni-urunlerimiz/yeni-tip-radyator-vanalari
 sira: 40
+gorseller:
+  - gorsel: /src/assets/urunler/firat-pprc-vanalar-1.webp
+    alt_metin: Fırat dişli pirinç küresel vanalar
+    kaynak_url: https://www.firat.com/urunler/yeni-urunlerimiz/kuresel-vanalar-dogalgaz-su-ve-endustriyel-vanalar
+  - gorsel: /src/assets/urunler/firat-pprc-vanalar-2.webp
+    alt_metin: Fırat radyatör köşe vanaları
+    kaynak_url: https://www.firat.com/urunler/yeni-urunlerimiz/yeni-tip-radyator-vanalari
 ---
 ## Mağazamızdaki çeşitler
 - **PPRC küresel vana:** Ø20, 25, 32, 40, 50, 63 ve 75 mm; Ø20 ve Ø25'te uzun tip
