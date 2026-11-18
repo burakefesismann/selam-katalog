@@ -29,6 +29,9 @@ kaynak_sayfalar:
   - https://tr.onduline.com/tr/son-kullanici/urunler/hafta-sonu-evleri
   - https://tr.onduline.com/tr/son-kullanici/urunler/endustriyel-binalar
 sira: 60
+gorseller:
+  - gorsel: /src/assets/urunler/onduline-ondulikit-likit-izolasyon-1.webp
+    alt_metin: Onduline Ondulikit OLB2K bitüm kauçuk esaslı çift bileşenli likit su yalıtımı 30 kg kova
 ---
 ## Mağazamızdakiler
 - Onduline Ondulikit OLB 2K, 30 kg ve 32 kg

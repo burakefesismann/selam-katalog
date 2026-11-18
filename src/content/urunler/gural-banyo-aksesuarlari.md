@@ -23,6 +23,7 @@ ilgili_urunler:
 kaynak_sayfalar:
   - https://guralvit.com.tr/banyo-aksesuarlari/quare
 sira: 22
+yayinda: false
 ---
 ## Mağazamızdaki ürünler
 - **Quare** kapaklı tuvalet kağıtlığı (krom)

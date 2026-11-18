@@ -3,12 +3,12 @@
 > Her oturumun başında oku, sonunda güncelle. Kısa tut.
 
 ## Şu an
-- Aktif görev: — (/gorsel eksikler neredeyse bitti: 212/214; kalan 2 kart mağaza fotoğrafı bekliyor)
+- Aktif görev: — (/gorsel eksikler TAMAM: yayındaki 213 ürünün hepsi görselli)
 - Site: https://burakefesismann.github.io/selam-katalog/
 - Faz: 3 — Gerçek içerik ve görseller
 
 ## Yarım kalan
-- **`/gorsel eksikler` — paketler 002–007 görselleri** (2026-11-17 başladı). Görselli: 212/214. Paket 001 kartları da artık Claude'da (kullanıcı 2026-11-18).
+- **`/gorsel eksikler` — paketler 002–007 görselleri** (2026-11-17 başladı). Görselli: 213/213 yayında (Güral banyo aksesuarları kullanıcı kararıyla gizli). Paket 001 kartları da artık Claude'da (kullanıcı 2026-11-18).
   - Yapılan (oturum 1): 10 ECA/Serel kartı (lavabo/eviye bataryası, havlupan, panel radyatör, termostatik vana, küresel vana,
     ara musluk, Serel klozet/pisuvar/lavabo).
   - Yapılan (oturum 2): banyo aksesuarı, Y filtre, pürjör, rakor, tepe duşu, ara kesme (krom), Tiera ankastre, Life banyo
@@ -109,6 +109,8 @@
     Pometal görselleri yazı bindirmeli), çatı-yalıtım (kozas.com.tr geotekstil keçe + Onduline Bituline rulo), Samir duşakabin ←
     stina.com.tr (duşakabin üreticisi) kare sürgülü + oval köşe (aynı tür). **Kalan 2: Güral Quare aksesuar, Onduline Ondulikit** —
     internette uygun görsel yok → mağaza fotoğrafı.
+  - 2026-11-18 (kullanıcı): "güralı iptal et" → gural-banyo-aksesuarlari `yayinda: false` (silinmedi, gizlendi). Ondulikit OLB2K
+    fotoğrafını kullanıcı verdi (ana klasöre ondulikit-olb2k.jpg → .gorsel-orijinal/'e taşındı; kaynak_url yok, kullanıcı fotoğrafı).
   - Sıradaki adaylar (gevşek kural): Sika (başka ülke sika.com sayfaları), Onduline (başka ülke siteleri), Bosch, Weber (başka
     ülke weber siteleri), rögar, dübel, fırça/rulo (Rulomas/Akyüzler), halat, yer süzgeci/duş kanalı (mesateknik.com), seviye
     sistemi, köşe profilleri, trapez saç, yangın tüpü, Mesa/Dömark/Samir duşakabin, Güral (tarayıcıdan kaydetme gerekli).
@@ -191,7 +193,7 @@
   Onduline Ondulikit (resmi sayfa yok), İzocam Maxibord XPS ve Terrawool (doğru ambalaj
   belirsiz), Güral Quare banyo aksesuarları (site görselleri indirilemiyor),
   Weber Dress ince sıva (bayi görseli 768 px, küçük), BTM Elasto DryRoof (görsel eski "Dry Roof" ambalajı), Beybi/AKY iş eldivenleri (resmi
-  görsel renk uyuşmuyor), Fırat sifon-kada (resmi sayfa yok), Güral Quare aksesuar, Onduline Ondulikit (internette görsel yok — öncelikli).
+  görsel renk uyuşmuyor), Fırat sifon-kada (resmi sayfa yok).
 - [ ] docs/FIRMA.md'deki ⚠ işaretli bilgilerin teyidi (özellikle Güneysu Depo telefonu, e-posta)
 - [x] Şubelerin kesin Google Haritalar linkleri (2026-11-15 kullanıcı verdi, ayarlar/genel.yaml)
 - [x] Marka ve ürün listesi: paketler 001–007 sitede (214 kart, 52 marka, 68 kategori). KATALOG-YAPISI siteden üretildi.
@@ -404,3 +406,4 @@
 | 2026-11-18 | /gorsel eksikler (24) | Paket 001'in 11 kartı (Fırat 6, Baumit 5); 200/214 | gorsel |
 | 2026-11-18 | /gorsel eksikler (25) | 7 kart (yerden ısıtma aks., Marshall 2, BTM 2, patent dirsek, kombi seti); 207/214 | gorsel |
 | 2026-11-18 | /gorsel eksikler (26) | 5 kart (MBT P303, BTM DryRoof, bahçe teli, çatı-yalıtım, Samir duşakabin); 212/214 | gorsel |
+| 2026-11-18 | Ondulikit (kullanıcı fotoğrafı) + Güral aksesuar gizlendi | yayındaki tüm ürünler görselli | gorsel |
