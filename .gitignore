@@ -20,3 +20,6 @@ desktop.ini
 
 # Claude Code yerel ayarları (kişisel)
 .claude/settings.local.json
+
+# Tedarikçi katalog ve fiyat listeleri (fiyat içerir — depoya GİRMEZ)
+kataloglar/
