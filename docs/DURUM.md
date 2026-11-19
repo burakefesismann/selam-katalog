@@ -3,8 +3,9 @@
 > Her oturumun başında oku, sonunda güncelle. Kısa tut.
 
 ## Şu an
-- Aktif görev: — BEKLE: kullanıcı 2026-11-18 ~12:50'de yeni görev tanımı getirecek (sayfa yapısı ve ürün seçimlerinde değişiklik).
-  Önce o tanımı al; F3.11 PDF düzeni ondan sonra (yapı değişirse PDF de etkilenir).
+- Aktif görev: — Yeni yapı tartışması. 2026-11-19: kullanıcı 21 markanın kataloğunu kataloglar/ klasörüne koydu (gitignore, FİYAT
+  İÇERİR — asla depoya/siteye fiyat girmez). İnceleme: docs/KATALOG-INCELEME.md. Hedef: marka ağırlıklı, benzer ürünler bir arada
+  kategori yapısı + PDF'te sağlı-sollu sayfa düzeni + ürün sayısını artırma. Kararlar kullanıcıyla konuşulacak; F3.11 beklemede.
 - Site: https://burakefesismann.github.io/selam-katalog/
 - Faz: 3 — Gerçek içerik ve görseller
 
