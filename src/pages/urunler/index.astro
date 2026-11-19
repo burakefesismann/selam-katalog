@@ -1,5 +1,8 @@
 ---
-/** Tüm ürünler: ana kategorilere göre bölümler, her bölüm kategori sayfasına bağlanır. */
+/**
+ * Ürün Grupları (K17: ikinci menü; adres /urunler korunur — QR ve eski linkler bozulmasın).
+ * Üstte gruplara hızlı geçiş, altında ana ürün grupları bölüm bölüm; her bölüm ürün grubu sayfasına bağlanır.
+ */
 import BolumBasligi from '../../components/BolumBasligi.astro';
 import UrunKarti from '../../components/UrunKarti.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
@@ -26,13 +29,39 @@ const toplam = bolumler.reduce((t, b) => t + b.kartlar.length, 0);
 let sira = 0;
 ---
 
-<BaseLayout title={`Ürünler — ${firma.kisa_ad}`} description={`${firma.kisa_ad} ürün kataloğu: ${toplam} ürün.`}>
+<BaseLayout
+  title={`Ürün Grupları — ${firma.kisa_ad}`}
+  description={`${firma.kisa_ad} ürün kataloğu: ${bolumler.length} ürün grubu, ${toplam} ürün.`}
+>
   <main class="mx-auto max-w-6xl space-y-12 px-4 py-8">
-    <div class="flex flex-wrap items-end justify-between gap-3">
-      <BolumBasligi seviye="h1" baslik="Ürünler" aciklama={`${toplam} ürün`} />
-      <Buton href={katalogPdfUrl()} tur="cerceve" boyut="kucuk" class="mb-5">
-        <FileDown size={16} aria-hidden="true" /> Kataloğu indir (PDF)
-      </Buton>
+    <div>
+      <div class="flex flex-wrap items-end justify-between gap-3">
+        <BolumBasligi
+          seviye="h1"
+          baslik="Ürün Grupları"
+          aciklama={`Aynı tür ürünler bir arada: ${bolumler.length} grup, ${toplam} ürün.`}
+        />
+        <Buton href={katalogPdfUrl()} tur="cerceve" boyut="kucuk" class="mb-5">
+          <FileDown size={16} aria-hidden="true" /> Kataloğu indir (PDF)
+        </Buton>
+      </div>
+      <nav aria-label="Ürün gruplarına git">
+        <ul class="flex flex-wrap gap-2">
+          {
+            bolumler.map(({ kategori, kartlar }) => (
+              <li>
+                <a
+                  href={`#${kategori.id}`}
+                  class="inline-flex min-h-10 items-center gap-1.5 rounded-full border border-stone-300 bg-white px-3 text-sm font-semibold text-antrasit hover:border-turuncu hover:text-turuncu-koyu"
+                >
+                  {kategori.data.ad}
+                  <span class="text-xs font-normal text-stone-500">{kartlar.length}</span>
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </nav>
     </div>
     {
       bolumler.map(({ kategori, kartlar }) => (

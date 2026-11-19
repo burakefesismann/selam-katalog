@@ -1,7 +1,10 @@
 ---
-/** Marka detay (F2.5): logo, tanıtım, web sitesi; ürünler ANA kategoriye göre gruplu. */
+/**
+ * Marka detay (F2.5, K17 marka ağırlıklı): büyük tanıtım görseli (varsa) + logo, tanıtım, web sitesi;
+ * markanın ürün gruplarına hızlı geçiş; ürünler ANA ürün grubuna göre bölüm bölüm.
+ */
 import type { GetStaticPaths } from 'astro';
-import { getImage } from 'astro:assets';
+import { getImage, Image } from 'astro:assets';
 import { ExternalLink, Phone } from '@lucide/astro';
 import BolumBasligi from '../../components/BolumBasligi.astro';
 import Buton from '../../components/Buton.astro';
@@ -59,6 +62,21 @@ const logoKucuk = !data.logo || typeof data.logo === 'string'
   <main class="mx-auto max-w-6xl px-4 py-8">
     <KonumYolu ogeler={[{ ad: 'Markalar', adres: url('markalar') }, { ad: data.ad }]} />
 
+    {
+      data.one_cikan_gorsel && typeof data.one_cikan_gorsel !== 'string' && (
+        <div class="mb-6 overflow-hidden rounded-lg bg-zemin">
+          <Image
+            src={data.one_cikan_gorsel}
+            alt={`${data.ad} ürünleri`}
+            widths={[640, 960, 1280]}
+            sizes="(min-width: 1152px) 1152px, 100vw"
+            loading="eager"
+            class="aspect-[21/9] w-full object-cover"
+          />
+        </div>
+      )
+    }
+
     <header data-pagefind-body class="mb-10 grid items-center gap-6 rounded-lg border border-stone-200 p-5 sm:grid-cols-[auto_1fr] sm:p-8">
       <div class="flex h-24 items-center justify-center sm:h-28 sm:w-56">
         <MarkaLogosu marka={marka} yukseklik={96} class="max-h-20 max-w-full sm:max-h-24" />
@@ -107,8 +125,25 @@ const logoKucuk = !data.logo || typeof data.logo === 'string'
         </div>
       ) : (
         <div class="space-y-12">
+          {gruplar.length > 1 && (
+            <nav aria-label={`${data.ad} ürün grupları`} class="-mt-4">
+              <ul class="flex flex-wrap gap-2">
+                {gruplar.map(({ kategori, kartlar }) => (
+                  <li>
+                    <a
+                      href={`#${kategori.id}`}
+                      class="inline-flex min-h-10 items-center gap-1.5 rounded-full border border-stone-300 bg-white px-3 text-sm font-semibold text-antrasit hover:border-turuncu hover:text-turuncu-koyu"
+                    >
+                      {kategori.data.ad}
+                      <span class="text-xs font-normal text-stone-500">{kartlar.length}</span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          )}
           {gruplar.map(({ kategori, kartlar }) => (
-            <section>
+            <section id={kategori.id} class="scroll-mt-24">
               <BolumBasligi
                 baslik={kategori.data.ad}
                 linkMetni="Kategoriye git"

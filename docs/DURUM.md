@@ -3,7 +3,7 @@
 > Her oturumun başında oku, sonunda güncelle. Kısa tut.
 
 ## Şu an
-- Aktif görev: — (sıradaki: F6.2c sayfalar — menü, marka sayfası, ürün grubu sayfası, model tablosu)
+- Aktif görev: — (sıradaki: F6.3 katalog çıkarma aracı — PDF metni fiyatsız + gömülü görseller, marka bazında)
 - Site: https://burakefesismann.github.io/selam-katalog/
 - Faz: 3 — Gerçek içerik ve görseller
 
@@ -430,6 +430,7 @@
 | 2026-11-19 | F6.1 | Katalog incelemesi (KATALOG-INCELEME.md), K16/K17, yeni yapı tasarımı onaylandı (YENI-YAPI.md); Faz 6 planı | F6.1 |
 | 2026-11-19 | F6.2a | 17 ana ürün grubu (Banyo dağıtıldı, Vanalar/Bağlantı ayrıldı, Fırça-Rulo yeni); 46 kart taşındı; 9 eski kategori adresi yönlendirildi | F6.2a |
 | 2026-11-19 | F6.2b | Şema: `modeller` (kod/ad/ölçü/açıklama/görsel), kart_tipi `seri`, marka `one_cikan_gorsel`; panel (Sveltia şemasına göre geçerli); 52 markaya K17 sırası | F6.2b |
+| 2026-11-19 | F6.2c | Menü: Markalar → Ürün Grupları (/urunler); ana sayfada marka vitrini üstte; Ürün Grupları ve marka sayfasında grup kısayolları; marka büyük görseli; seri sayfasında model tablosu (mobilde ölçü ad altında) | F6.2c |
 | 2026-11-18 | Ondulikit (kullanıcı fotoğrafı) + Güral aksesuar gizlendi | yayındaki tüm ürünler görselli | gorsel |
 | 2026-11-18 | F3.9 | 7 ana kategoriye ürün görseli (Orka, Yurtbay, Filli Nucleus, İzeltaş pense, Baymak hidrofor, Fırat vanalar, İzocam); DURUM fotoğraf listesi temizlendi | F3.9 |
 | 2026-11-18 | F3.10a | 15 marka logosu (ECA, Serel, Güral, Orka, Baymak, Filli, Kale Kilit, Sika, Yurtbay, Güral Seramik, Marshall, Bosch, Fawori, İzocam, Onduline); logosuz 35 | F3.10a |

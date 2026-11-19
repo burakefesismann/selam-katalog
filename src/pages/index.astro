@@ -1,7 +1,7 @@
 ---
 /**
  * Ana sayfa (F2.2, K12): dengeli genel görünüm, tek bir kategori büyütülmez.
- * Sıra: arama + güven mesajı → 11 ana kategori (eşit kartlar) → marka şeridi (Fırat ilk ve vurgulu)
+ * Sıra (K17, marka ağırlıklı): arama + güven mesajı → marka vitrini (Fırat ilk ve vurgulu) → ürün grupları (eşit kartlar)
  * → farklı kategorilerden öne çıkan ürünler → [çözüm sayfaları: F4.5'e kadar gizli] → şubeler/iletişim.
  */
 import { Image } from 'astro:assets';
@@ -96,25 +96,11 @@ const aramaAdresi = url('ara');
       </div>
     </section>
 
-    <!-- 2. Ana kategoriler (eşit kartlar) -->
-    <section class="mx-auto max-w-6xl px-4 pt-12">
-      <BolumBasligi baslik="Kategoriler" aciklama="Tesisattan boyaya, ihtiyacınız olan ürün grubunu seçin." />
-      <ul class="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-5 lg:grid-cols-4">
-        {
-          kategoriler.map((k, i) => (
-            <li class="flex">
-              <KategoriKarti {...k} oncelikli={i < 4} />
-            </li>
-          ))
-        }
-      </ul>
-    </section>
-
-    <!-- 3. Marka şeridi (Fırat ilk ve vurgulu) -->
+    <!-- 2. Marka vitrini (K17: marka ağırlıklı; sira'ya göre, Fırat ilk ve vurgulu) -->
     {
       markalar.length > 0 && (
-        <section class="mx-auto max-w-6xl px-4 pt-14">
-          <BolumBasligi baslik="Markalarımız" linkMetni="Tüm markalar" linkAdresi={url('markalar')} />
+        <section class="mx-auto max-w-6xl px-4 pt-12">
+          <BolumBasligi baslik="Markalarımız" aciklama="Çalıştığımız markaların ürünlerini marka marka inceleyin." linkMetni="Tüm markalar" linkAdresi={url('markalar')} />
           <ul class="flex flex-wrap items-stretch gap-3">
             {markalar.map((m) => {
               const vurgulu = m.id === VURGULU_MARKA;
@@ -148,6 +134,20 @@ const aramaAdresi = url('ara');
         </section>
       )
     }
+
+    <!-- 3. Ürün grupları (eşit kartlar) -->
+    <section class="mx-auto max-w-6xl px-4 pt-14">
+      <BolumBasligi baslik="Ürün Grupları" aciklama="Aynı tür ürünler bir arada: tesisattan boyaya ihtiyacınız olan grubu seçin." linkMetni="Tüm ürün grupları" linkAdresi={url('urunler')} />
+      <ul class="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-5 lg:grid-cols-4">
+        {
+          kategoriler.map((k, i) => (
+            <li class="flex">
+              <KategoriKarti {...k} oncelikli={i < 4} />
+            </li>
+          ))
+        }
+      </ul>
+    </section>
 
     <!-- 4. Öne çıkan ürünler (farklı kategorilerden) -->
     {

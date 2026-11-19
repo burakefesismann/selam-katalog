@@ -179,13 +179,13 @@ Kaynak: `kataloglar/` (fiyat içerir, gitignore) + `docs/KATALOG-INCELEME.md`. F
   ürün kodları), iki menü (Markalar varsayılan, Ürün Grupları), marka sayfası düzeni, ürün grupları
   ağacı (Banyo'nun bölünmesi vb.), mevcut 213 kartın yeni yere eşlemesi, PDF düzeni (her marka sağ sayfada başlar, çift sayfa,
   marka açılış açılımı). → kullanıcı onayı.
-- [ ] **F6.2 Şema + panel + sayfalar** — content.config, ICERIK-SEMASI, Sveltia panel, marka sayfası, Ürün Grupları menüsü,
+- [x] **F6.2 Şema + panel + sayfalar** — content.config, ICERIK-SEMASI, Sveltia panel, marka sayfası, Ürün Grupları menüsü,
   seri kartı/detay (model tablosu, kod). Mevcut içerik yeni modele taşınır.
   - [x] F6.2a Ürün grupları ağacı (17 ana grup, YENI-YAPI §3); 46 kart taşındı; kaldırılan 9 kategori adresi yönlendirildi
     (astro.config redirects); ikonlar; KATALOG-YAPISI yeniden üretildi.
   - [x] F6.2b Şema + panel: `modeller` (kod, ad, ölçü, açıklama, görsel), `kart_tipi` seri, marka `sira` (K17 sırası) ve
     `one_cikan_gorsel`; ICERIK-SEMASI + config.yml.
-  - [ ] F6.2c Sayfalar: üst menü (Markalar varsayılan + Ürün Grupları), ana sayfa marka vitrini, marka sayfası (ürün grubuna göre
+  - [x] F6.2c Sayfalar: üst menü (Markalar varsayılan + Ürün Grupları), ana sayfa marka vitrini, marka sayfası (ürün grubuna göre
     bölümler), ürün grubu sayfası (marka marka), seri sayfasında model tablosu.
 - [ ] **F6.3 Katalog çıkarma aracı** — PDF'ten sayfa metni (fiyat sütunları atılarak) + gömülü görseller, marka bazında çalışma
   klasörüne (gitignore). Taslak kart listesi üretimi.

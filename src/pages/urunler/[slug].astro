@@ -6,7 +6,7 @@
  * Diğer dolu bölümler altta. Karşılaştırma tablosu F2.6'da kategori sayfasına gelecek.
  */
 import type { GetStaticPaths } from 'astro';
-import { getImage } from 'astro:assets';
+import { getImage, Image } from 'astro:assets';
 import { render } from 'astro:content';
 import { Check, FileText, Phone, Table2 } from '@lucide/astro';
 import BolumBasligi from '../../components/BolumBasligi.astro';
@@ -54,6 +54,9 @@ const paylasimGorseli =
   ilk && typeof ilk.gorsel !== 'string'
     ? (await getImage({ src: ilk.gorsel, width: Math.min(ilk.gorsel.width, 1200), format: 'jpg', background: '#ffffff' })).src
     : undefined;
+
+const modelGorseliVar = data.modeller.some((m) => m.gorsel);
+const modelAciklamaVar = data.modeller.some((m) => m.aciklama);
 
 const KART_TIPI = { seri: 'Seri', grup: 'Ürün ailesi', marka_tur: 'Marka serisi', urun: 'Ürün' } as const;
 const tip = data.kart_tipi;
@@ -232,6 +235,51 @@ const ilgiliKartlar = await Promise.all(
 
     <!-- Alt bölümler: vurgulanmayan dolu bilgiler -->
     <div class="mt-12 space-y-12">
+      {
+        data.modeller.length > 0 && (
+          <section id="modeller" class="scroll-mt-24">
+            <BolumBasligi baslik="Modeller" aciklama={`${data.modeller.length} model`} />
+            <div class="overflow-x-auto rounded-lg border border-stone-200">
+              <table class="w-full text-left text-sm">
+                <thead class="bg-zemin text-stone-600">
+                  <tr>
+                    {modelGorseliVar && <th scope="col" class="w-20 px-3 py-2"><span class="sr-only">Görsel</span></th>}
+                    <th scope="col" class="px-3 py-2 font-semibold">Ürün kodu</th>
+                    <th scope="col" class="px-3 py-2 font-semibold">Model</th>
+                    <th scope="col" class="hidden px-3 py-2 font-semibold sm:table-cell">Ölçü / ambalaj</th>
+                    {modelAciklamaVar && <th scope="col" class="hidden px-3 py-2 font-semibold sm:table-cell">Açıklama</th>}
+                  </tr>
+                </thead>
+                <tbody>
+                  {data.modeller.map((m) => (
+                    <tr class="border-t border-stone-200">
+                      {modelGorseliVar && (
+                        <td class="px-3 py-2">
+                          {m.gorsel && typeof m.gorsel !== 'string' ? (
+                            <Image src={m.gorsel} alt={m.ad} width={64} height={64} class="h-14 w-14 rounded bg-zemin object-contain" />
+                          ) : null}
+                        </td>
+                      )}
+                      <td class="px-3 py-2 font-mono text-xs whitespace-nowrap text-stone-700">{m.kod ?? '—'}</td>
+                      <th scope="row" class="px-3 py-2 font-semibold text-antrasit">
+                        {m.ad}
+                        {(m.olcu || m.aciklama) && (
+                          <span class="mt-0.5 block text-xs font-normal text-stone-600 sm:hidden">
+                            {[m.olcu, m.aciklama].filter(Boolean).join(' · ')}
+                          </span>
+                        )}
+                      </th>
+                      <td class="hidden px-3 py-2 whitespace-nowrap sm:table-cell">{m.olcu ?? '—'}</td>
+                      {modelAciklamaVar && <td class="hidden px-3 py-2 text-stone-600 sm:table-cell">{m.aciklama ?? ''}</td>}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </section>
+        )
+      }
+
       {
         aciklamaVar && (
           <section>

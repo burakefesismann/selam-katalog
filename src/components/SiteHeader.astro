@@ -11,8 +11,9 @@ import { url } from '../lib/url';
 
 const { firma } = await getAyarlar();
 const MENU = [
-  { ad: 'Ürünler', adres: url('urunler') },
+  // K17: marka ağırlıklı — Markalar önce, ikinci menü Ürün Grupları (/urunler)
   { ad: 'Markalar', adres: url('markalar') },
+  { ad: 'Ürün Grupları', adres: url('urunler') },
   { ad: 'İletişim', adres: url('iletisim') },
 ];
 
