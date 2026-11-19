@@ -3,7 +3,7 @@
 > Her oturumun başında oku, sonunda güncelle. Kısa tut.
 
 ## Şu an
-- Aktif görev: — (sıradaki: F6.4 marka marka içerik — ilk marka Elginkan grubu: ECA)
+- Aktif görev: F6.4a ECA — seri taslağı (docs/taslaklar/eca.md) → kullanıcı onayı → içe aktar → görseller
 - Site: https://burakefesismann.github.io/selam-katalog/
 - Faz: 3 — Gerçek içerik ve görseller
 

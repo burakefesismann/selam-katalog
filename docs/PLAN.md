@@ -192,6 +192,26 @@ Kaynak: `kataloglar/` (fiyat içerir, gitignore) + `docs/KATALOG-INCELEME.md`. F
 - [ ] **F6.4 Marka marka içerik** (her marka bir alt görev; taslak → kullanıcı onayı → içe aktar → görseller): Elginkan (ECA,
   Serel, Aryak, Borel) · KAS · Fırat · Poelsan · Sumak · Orka · Samir · Sika · Filli + Dalmaçyalı · Fawori · İzocam · İzeltaş ·
   Dekor · İstanbul Fırça · Tesay Bu · Işık · katalogsuz mevcut markaların gözden geçirilmesi · Mesa (katalog gelince).
+  Her alt görev: mevcut kartları markanın serilerine böl/dönüştür (`kart_tipi: seri`, `modeller` kod tablosu), az sayıda yakın
+  seri ekle, çok markalı kartlardan o markanın payını ayır, katalog görselleri. Taslak `docs/taslaklar/<marka>.md` → onay → içe aktar.
+  - [ ] F6.4a ECA (armatür + teknik ürünler)
+  - [ ] F6.4b Serel (seramik sağlık, gömme rezervuar, banyo aksesuarları)
+  - [ ] F6.4c Aryak + Borel (yeni markalar)
+  - [ ] F6.4d KAS
+  - [ ] F6.4e Fırat
+  - [ ] F6.4f Poelsan
+  - [ ] F6.4g Sumak
+  - [ ] F6.4h Orka
+  - [ ] F6.4i Samir
+  - [ ] F6.4j Sika
+  - [ ] F6.4k Filli Boya + Dalmaçyalı
+  - [ ] F6.4l Fawori
+  - [ ] F6.4m İzocam
+  - [ ] F6.4n İzeltaş
+  - [ ] F6.4o Dekor + İstanbul Fırça
+  - [ ] F6.4p Tesay Bu + Işık (profiller)
+  - [ ] F6.4q Katalogsuz mevcut markaların gözden geçirilmesi
+  - [ ] F6.4r Mesa (katalog gelince)
 - [ ] **F6.5 Görsel yenileme** — geçici/zayıf/başka model görsellerini katalog görselleriyle değiştir (liste DURUM'da).
 - [ ] **F6.6 PDF katalog yeni düzen** — marka bölümleri, sağ sayfada başlama, sağlı-sollu açılım (F3.11 buna katıldı).
 
