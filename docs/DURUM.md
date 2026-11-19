@@ -346,6 +346,8 @@
 ## Katalog çıkarma notları (F6.3)
 - `npm run katalog:cikar` 23 kataloğu işledi (eski sürümler atlandı: Ar Yak 2026-1, ECA Armatür 2026-1, Teknik Ürünler 2026-1,
   Sumak 2025-1). Fiyat kontrolü: metinlerde fiyat/TL/KDV kelimesi 0; kalan ondalıklı sayılar teknik değer (L, kW, kg, bar, mm).
+  Düzeltme (F6.4a): binlik ayracı olmayan küçük fiyatlar ("545") metinde kalıyordu → artık fiyat sütun başlığının
+  (LİSTE, FİYATI, B. FİYATI, TL/Ad. …) altındaki sütun konumdan atılıyor.
 - Araç: PyMuPDF yerelde `%LOCALAPPDATA%\selam-araclar\pymupdf` (K14 Real-ESRGAN gibi depoda yok). npm `mupdf` paketi
   AGPL olduğu ve çok yeni sürüm olduğu için eklenmedi.
 - **Tesay Bu** kataloğu dilimlenmiş/taranmış: metin yok, görseller parça parça → F6.4'te liste sayfa görüntüsünden elle,

@@ -84,13 +84,39 @@ def temiz_satir(satir: str) -> str | None:
     return s or None
 
 
+# Fiyat sütunu başlığı: altındaki sütun KOMPLE atılır (binlik ayracı olmayan "545" gibi fiyatlar da gitsin)
+# Sadece KISA sütun başlıkları ("Fiyatlarımıza KDV dahildir" gibi notlar sayılmaz)
+FIYAT_BASLIK = re.compile(r'(liste( fiyat[ıi]?)?|((birim|b\.|br\.|satış|liste) ?)?fiyat[ıi]?( ?\(.*)?|tl( ?/.*)?|₺|€|euro?( ?/.*)?|usd|kdv (dahil|hariç)( tl)?)', re.I)
+
+
+def fiyat_sutunlari(bloklar) -> list[tuple[float, float, float]]:
+    """(x0, x1, y) — fiyat başlığı olan sütunların yatay aralığı ve başlık yüksekliği"""
+    sutunlar = []
+    for blok in bloklar:
+        for satir in blok.get('lines', []):
+            for s in satir['spans']:
+                if FIYAT_BASLIK.fullmatch(s['text'].strip()):
+                    x0, y0, x1, _ = s['bbox']
+                    sutunlar.append((x0 - 12, x1 + 12, y0 - 2))
+    return sutunlar
+
+
+def sutunda(s, sutunlar) -> bool:
+    x0, y0, x1, _ = s['bbox']
+    orta = (x0 + x1) / 2
+    return any(a <= orta <= b and y0 >= y for a, b, y in sutunlar)
+
+
 def sayfa_metni(sayfa) -> tuple[list[str], str | None]:
     """Satırlar (fiyatsız) + sayfanın en büyük puntolu başlığı"""
     satirlar, baslik = [], None
-    for blok in sayfa.get_text('dict')['blocks']:
+    bloklar = sayfa.get_text('dict')['blocks']
+    sutunlar = fiyat_sutunlari(bloklar)
+    for blok in bloklar:
         for satir in blok.get('lines', []):
-            metin = ' '.join(s['text'] for s in satir['spans']).strip()
-            boyut = max((s['size'] for s in satir['spans']), default=0)
+            spanlar = [s for s in satir['spans'] if not sutunda(s, sutunlar)]
+            metin = ' '.join(s['text'] for s in spanlar).strip()
+            boyut = max((s['size'] for s in spanlar), default=0)
             t = temiz_satir(metin) if metin else None
             if not t:
                 continue
