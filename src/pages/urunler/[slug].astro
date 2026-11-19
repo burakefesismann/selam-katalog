@@ -55,11 +55,11 @@ const paylasimGorseli =
     ? (await getImage({ src: ilk.gorsel, width: Math.min(ilk.gorsel.width, 1200), format: 'jpg', background: '#ffffff' })).src
     : undefined;
 
-const KART_TIPI = { grup: 'Ürün ailesi', marka_tur: 'Marka serisi', urun: 'Ürün' } as const;
+const KART_TIPI = { seri: 'Seri', grup: 'Ürün ailesi', marka_tur: 'Marka serisi', urun: 'Ürün' } as const;
 const tip = data.kart_tipi;
 
 // Sağ sütunda vurgulanan blok (kart tipine göre); dolu değilse gösterilmez ve alta da düşmez
-const vurgu = tip === 'grup' ? 'olculer' : tip === 'marka_tur' ? 'seriler' : 'teknik';
+const vurgu = tip === 'grup' ? 'olculer' : tip === 'marka_tur' || tip === 'seri' ? 'seriler' : 'teknik';
 const dolu = {
   olculer: data.olculer.length > 0,
   seriler: data.seriler.length > 0,

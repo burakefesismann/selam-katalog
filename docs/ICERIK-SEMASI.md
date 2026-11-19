@@ -55,11 +55,12 @@ Paketlerde `gorseller` alanı genelde **boş** bırakılır; görselleri VS Code
 |---|---|---|---|
 | `ad` | ✔ | metin | Kartta ve sayfada görünen ad. `KATALOG-YAPISI.md`'deki adla aynı. |
 | `slug` | – | slug | Adres: `/urunler/<slug>`. Dosya adıyla aynı (opsiyonel; dosya adı yeterli). |
-| `kart_tipi` | ✔ | `grup` / `marka_tur` / `urun` | K11. Sayfada neyin öne çıkacağını belirler. |
+| `kart_tipi` | ✔ | `seri` / `grup` / `marka_tur` / `urun` | K11, K17. `seri` = markalı seri/aile kartı (yeni yapı; tek marka, `modeller` tablosuyla). `marka_tur` eski tip, F6.4'te `seri`ye dönüşür. |
 | `kategori` | ✔ | kategori slug'ı | Ürünün durduğu **en alt** kategori (ör. `pprc-temiz-su`, `tesisat-borulari` değil). |
 | `markalar` | – | marka slug listesi | İlk sıradaki = ana marka. "çeşitli" kartlarda boş bırak. Çok markalıda hepsini yaz: `[eca, kas]`. |
 | `kisa_aciklama` | ✔ | metin | Ürün kartında görünür. 1–2 cümle (~160 karakter). |
 | `seriler` | – | metin listesi | Seri/model adları, özellikle `marka_tur` kartlarında: `[Tiera, Nita]`. |
+| `modeller` | – | liste | Serideki modeller satır satır (K16): `{kod?, ad, olcu?, aciklama?, gorsel?}`. `kod` = üreticinin ürün kodu, `olcu` = ölçü/ambalaj. **Fiyat yazılmaz.** Ör: `{kod: "102101100", ad: "Life Lavabo Bataryası", olcu: "1/2\""}` |
 | `gorseller` | – | liste | `{gorsel, alt_metin, kaynak_url}`. İlk sıradaki = ana görsel. Paketlerde genelde boş. |
 | `one_cikanlar` | – | metin listesi | Kısa maddeler: `[Esnek, Dona dayanıklı]`. 2–5 madde, her biri birkaç kelime. |
 | `kullanim_alanlari` | – | kullanım alanı slug listesi | Bkz. bölüm 4: `[ic-mekan, islak-hacim]`. |
@@ -152,8 +153,9 @@ gorseller:
 | `aciklama` | – | Marka sayfasındaki uzun tanıtım (birkaç paragraf, Markdown olabilir). |
 | `logo` | – | `/src/assets/markalar/<slug>.webp` (VS Code tarafı doldurur). Yoksa adı yazılır. |
 | `logo_kaynak_url` | – | Logonun alındığı resmi sayfa. |
+| `one_cikan_gorsel` | – | Marka sayfası açılışı ve PDF marka açılımı için büyük ambiyans/ürün görseli (K17). |
 | `web_sitesi` | – | Resmi site. |
-| `sira` | – | Marka şeridinde sıra. **Fırat en başta** (K12) → `sira: 1`. |
+| `sira` | – | Markalar sayfası, marka şeridi ve PDF sırası (K17): Fırat 10, ECA 20, Serel 25, KAS 50, Filli 60, Baumit 70, Sika 80, diğerleri ürün alanına göre. |
 | `yayinda` | – | Varsayılan `true`. |
 
 ```yaml

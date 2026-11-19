@@ -46,6 +46,8 @@ const markalar = defineCollection({
       slug,
       logo: ops(image()),
       logo_kaynak_url: ops(adres),
+      /** Marka sayfası açılışı ve PDF marka açılımı için büyük ambiyans görseli (K17) */
+      one_cikan_gorsel: ops(image()),
       kisa_aciklama: metin,
       aciklama: ops(z.string()),
       web_sitesi: ops(adres),
@@ -99,11 +101,24 @@ const urunler = defineCollection({
       /** 0 = "çeşitli" (markasız), 1+ = ilk sıradaki ana marka */
       markalar: z.array(reference('markalar')).default([]),
       kategori: reference('kategoriler'),
-      kart_tipi: z.enum(['grup', 'marka_tur', 'urun'], {
-        message: 'kart_tipi "grup", "marka_tur" ya da "urun" olmalı',
+      /** seri = markalı seri/aile kartı (K16/K17); marka_tur eski tip — F6.4'te seriye dönüşür */
+      kart_tipi: z.enum(['seri', 'grup', 'marka_tur', 'urun'], {
+        message: 'kart_tipi "seri", "grup", "marka_tur" ya da "urun" olmalı',
       }),
       kisa_aciklama: metin,
       seriler: z.array(metin).default([]),
+      /** Serideki modeller, satır satır (K16). Kod üreticinin ürün kodu. FİYAT YAZILMAZ. */
+      modeller: z
+        .array(
+          z.object({
+            kod: ops(z.string().trim()),
+            ad: metin,
+            olcu: ops(z.string().trim()),
+            aciklama: ops(z.string().trim()),
+            gorsel: ops(image()),
+          }),
+        )
+        .default([]),
       /** İlk görsel = ana görsel */
       gorseller: z
         .array(

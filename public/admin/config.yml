@@ -81,6 +81,7 @@ collections:
         name: kart_tipi
         widget: select
         options:
+          - { label: 'Seri (seri) — ör. ECA Life Serisi; modeller ve kodlarıyla', value: seri }
           - { label: 'Ürün ailesi (grup) — ör. Fırat PPRC Borular', value: grup }
           - { label: 'Marka serisi (marka_tur) — ör. ECA Lavabo Bataryaları', value: marka_tur }
           - { label: 'Tek ürün, teknik detaylı (urun) — ör. Baumit Flexo', value: urun }
@@ -122,6 +123,19 @@ collections:
             hint: Görsel internetten alındıysa üreticinin sayfa adresi. Kendi fotoğrafınsa boş bırak. Sitede görünmez.
             pattern: ['^https?://.+', 'https:// ile başlayan bir adres olmalı']
       - { label: Seriler / modeller, name: seriler, widget: list, required: false, hint: 'Özellikle marka serisi kartlarında. Ör: Tiera, Nita' }
+      - label: Modeller (kod tablosu)
+        name: modeller
+        widget: list
+        required: false
+        label_singular: Model
+        summary: '{{fields.kod}} {{fields.ad}}'
+        hint: Serideki modeller satır satır (ör. Life Lavabo Bataryası). Kod üreticinin ürün kodu. FİYAT YAZILMAZ.
+        fields:
+          - { label: Ürün kodu, name: kod, widget: string, required: false, hint: 'Ör: 102101100' }
+          - { label: Model adı, name: ad, widget: string, hint: 'Ör: Life Lavabo Bataryası' }
+          - { label: Ölçü / ambalaj, name: olcu, widget: string, required: false, hint: 'Ör: 1/2", Ø20 mm, 25 kg' }
+          - { label: Açıklama, name: aciklama, widget: string, required: false, hint: 'Kısa not. Ör: Krom, kısa gövde' }
+          - { label: Görsel, name: gorsel, widget: image, choose_url: false, required: false }
       - { label: Öne çıkanlar, name: one_cikanlar, widget: list, required: false, hint: 'Kısa maddeler, 2–5 tane. Ör: Esnek, Dona dayanıklı' }
       - label: Kullanım alanları
         name: kullanim_alanlari
@@ -209,8 +223,15 @@ collections:
       - { label: Uzun tanıtım, name: aciklama, widget: markdown, required: false, hint: 'Marka sayfasında görünür.' }
       - { label: Logo, name: logo, widget: image, choose_url: false, required: false, hint: 'Tercihen SVG ya da şeffaf zeminli PNG.' }
       - { label: Logonun kaynak adresi, name: logo_kaynak_url, widget: string, required: false, pattern: ['^https?://.+', 'https:// ile başlamalı'] }
+      - { label: Büyük tanıtım görseli, name: one_cikan_gorsel, widget: image, choose_url: false, required: false, hint: 'Marka sayfasının ve PDF marka açılışının büyük görseli (ambiyans/ürün fotoğrafı).' }
       - { label: Web sitesi, name: web_sitesi, widget: string, required: false, pattern: ['^https?://.+', 'https:// ile başlamalı'] }
-      - *sira
+      - label: Sıra
+        name: sira
+        widget: number
+        value_type: int
+        default: 100
+        required: false
+        hint: Markalar sayfası ve PDF sırası. Küçük sayı önce (Fırat 10, ECA 20, KAS 30…). Boşsa 100.
       - *yayinda
 
   # ───────────────────────────── KATEGORİLER ─────────────────────────────
