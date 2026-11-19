@@ -102,3 +102,18 @@ alınan görseller DURUM'da listelenir; telif şikâyeti gelirse ya da resmi gö
 Ek (2026-11-17, kullanıcı): "resmi sitelerde takılı kalma" — kalan kartlarda marka/model/renk birebir tutmasa da ürün TÜRÜ
 doğruysa görsel kullanılabilir (ör. farklı renkte aynı tip eldiven); pazaryerleri ve diğer satıcı siteleri serbest.
 Filigran / yazı-fiyat bindirmesi yasağı sürer. Paket 001'in 11 kartı yine kullanıcıda. **2026-11-18 (kullanıcı): "sizin çekeceğiniz diye ayırdıklarına da sen bak"** → Paket 001 kartları da aynı kuralla Claude'da.
+
+## K16 — Marka ağırlıklı yeni yapı, seri kartları, üretici katalogları (2026-11-19, kullanıcı teyitli)
+Kullanıcı 21 markanın üretici kataloğunu `kataloglar/` klasörüne koydu (gitignore — **fiyat içerir; fiyat asla depoya/siteye
+girmez**). İnceleme: `docs/KATALOG-INCELEME.md`. Kararlar:
+1. **İki menü, varsayılan marka ağırlıklı:** Marka → ürün grubu → seri. İkinci menü "Ürün Grupları" (benzer ürünler bir arada;
+   ör. Banyo tek başlık değil: armatür, seramik sağlık gereci, banyo aksesuarı, gömme rezervuar, banyo mobilyası ayrı).
+2. **Seri/aile kartı** (her ürün ayrı kart değil). Seri kartında modeller alt satır olarak; **ürün kodları gösterilebilir.**
+   Öncelik mağazada olan ürünler.
+3. **Kapsam (öneri — onay bekliyor):** mağazada olanlar "Stokta" seri kartı (görselli, detaylı); katalogdaki diğer seriler
+   "Sipariş üzerine temin edilir" olarak marka sayfasında kısa liste/küçük kartla. Alan: `temin: stok | siparis`.
+4. **Kart listesini Claude kataloglardan çıkarır**, marka marka taslak → kullanıcı onayı.
+5. **Yeni markalar eklenir:** Aryak, Borel, İstanbul Fırça, Tesay Bu, Işık. Mevcut markalar da kataloglara göre yeniden
+   gözden geçirilir. Mesa ve bir katalog daha sonra gelecek.
+6. **Görseller:** zayıf / geçici / başka model görselleri üretici kataloğundan (gömülü görsel olarak, sayfa görüntüsü değil —
+   fiyat tablosu girmesin) değiştirilir; Claude değiştirmek istediklerini listeler.

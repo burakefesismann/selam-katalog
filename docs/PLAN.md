@@ -166,8 +166,28 @@ Bitince: PLAN'da `[x]` → DURUM.md güncelle → commit + push → kullanıcıy
     Gezer, Master.
   - [x] F3.10c (6/24 bulundu: Visam, Teknopomp, Yuma, Yapar/YPR, Wonder, Türkoğlu; kalan 18 logosuz → yazı gösteriliyor): KAS, Weber, Knipex, MBT, BTM, Çukurova, Gezer, Master, AKY, Baykara, Dekor, Foma, Genç, Hazal, KBS, Samtel, Saraylı, Teknopomp, Türkoğlu, Visam, Wonder, Yakar,
     Yapar, Yuma.
-- [ ] **F3.11 PDF katalog sayfa düzeni** (2026-11-18 kullanıcı onayı) — sayfa altlarındaki boşlukları azalt (DURUM > Öneriler).
+- [~] **F3.11 PDF katalog sayfa düzeni** (→ F6.6'ya katıldı) (2026-11-18 kullanıcı onayı) — sayfa altlarındaki boşlukları azalt (DURUM > Öneriler).
 - [ ] **F3.x Diğer paketler** — geldikçe buraya eklenir (her paket: içe aktar → `/gorsel eksikler` → rapor).
+
+---
+
+## Faz 6 — Marka ağırlıklı yeni yapı (K16, 2026-11-19)
+
+Kaynak: `kataloglar/` (fiyat içerir, gitignore) + `docs/KATALOG-INCELEME.md`. Fiyat hiçbir yerde yok. Her adım marka marka, onaylı ilerler.
+
+- [ ] **F6.1 Yeni yapı tasarımı** — `docs/YENI-YAPI.md`: içerik modeli (marka → ürün grubu → seri; seri içinde model satırları +
+  ürün kodları; `temin: stok | siparis`), iki menü (Markalar varsayılan, Ürün Grupları), marka sayfası düzeni, ürün grupları
+  ağacı (Banyo'nun bölünmesi vb.), mevcut 213 kartın yeni yere eşlemesi, PDF düzeni (her marka sağ sayfada başlar, çift sayfa,
+  marka açılış açılımı). → kullanıcı onayı.
+- [ ] **F6.2 Şema + panel + sayfalar** — content.config, ICERIK-SEMASI, Sveltia panel, marka sayfası, Ürün Grupları menüsü,
+  seri kartı/detay (model tablosu, kod), "Sipariş üzerine" rozeti. Mevcut içerik yeni modele taşınır.
+- [ ] **F6.3 Katalog çıkarma aracı** — PDF'ten sayfa metni (fiyat sütunları atılarak) + gömülü görseller, marka bazında çalışma
+  klasörüne (gitignore). Taslak kart listesi üretimi.
+- [ ] **F6.4 Marka marka içerik** (her marka bir alt görev; taslak → kullanıcı onayı → içe aktar → görseller): Elginkan (ECA,
+  Serel, Aryak, Borel) · KAS · Fırat · Poelsan · Sumak · Orka · Samir · Sika · Filli + Dalmaçyalı · Fawori · İzocam · İzeltaş ·
+  Dekor · İstanbul Fırça · Tesay Bu · Işık · katalogsuz mevcut markaların gözden geçirilmesi · Mesa (katalog gelince).
+- [ ] **F6.5 Görsel yenileme** — geçici/zayıf/başka model görsellerini katalog görselleriyle değiştir (liste DURUM'da).
+- [ ] **F6.6 PDF katalog yeni düzen** — marka bölümleri, sağ sayfada başlama, sağlı-sollu açılım (F3.11 buna katıldı).
 
 ---
 

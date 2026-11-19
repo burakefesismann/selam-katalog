@@ -3,9 +3,7 @@
 > Her oturumun başında oku, sonunda güncelle. Kısa tut.
 
 ## Şu an
-- Aktif görev: — Yeni yapı tartışması. 2026-11-19: kullanıcı 21 markanın kataloğunu kataloglar/ klasörüne koydu (gitignore, FİYAT
-  İÇERİR — asla depoya/siteye fiyat girmez). İnceleme: docs/KATALOG-INCELEME.md. Hedef: marka ağırlıklı, benzer ürünler bir arada
-  kategori yapısı + PDF'te sağlı-sollu sayfa düzeni + ürün sayısını artırma. Kararlar kullanıcıyla konuşulacak; F3.11 beklemede.
+- Aktif görev: — (sıradaki: F6.1 yeni yapı tasarımı; K16 kararları alındı, 3. madde (stok/sipariş) onay bekliyor)
 - Site: https://burakefesismann.github.io/selam-katalog/
 - Faz: 3 — Gerçek içerik ve görseller
 
