@@ -22,7 +22,7 @@ kullanim_alanlari:
 olculer:
   - G 1/2" ara musluk
 ilgili_urunler:
-  - eca-lavabo-bataryalari
+  - eca-tiera-serisi
   - serel-klozetler
   - kas-musluklar-ve-taharet-musluklari
   - rezervuar-ic-takimlari-ve-klozet-kapaklari

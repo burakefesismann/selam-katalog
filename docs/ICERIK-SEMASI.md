@@ -118,7 +118,7 @@ kaynak_sayfalar:
 ---
 ```
 
-**Örnek — `marka_tur` tipi** (`urunler/eca-lavabo-bataryalari.md`):
+**Örnek — `marka_tur` tipi** (eski tip; bu dosya F6.4a1'de ECA seri kartlarına bölündü — yeni örnek: `urunler/eca-tiera-serisi.md`, `kart_tipi: seri` + `modeller`):
 ```markdown
 ---
 ad: ECA Lavabo Bataryaları

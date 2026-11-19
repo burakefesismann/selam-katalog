@@ -38,7 +38,7 @@ teknik_ozellikler:
   - ozellik: renk
     deger: Krom; Nita'da kırmızı, beyaz ve siyah, Liona ve Fia'da mat siyah, Myra'da siyah, Caro'da altın
 ilgili_urunler:
-  - eca-lavabo-bataryalari
+  - eca-tiera-serisi
   - sifonlar-ve-kadalar
   - eca-musluklar-ve-taharet-musluklari
 kaynak_sayfalar:

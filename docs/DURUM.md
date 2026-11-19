@@ -3,7 +3,7 @@
 > Her oturumun başında oku, sonunda güncelle. Kısa tut.
 
 ## Şu an
-- Aktif görev: F6.4a ECA — seri taslağı (docs/taslaklar/eca.md) → kullanıcı onayı → içe aktar → görseller
+- Aktif görev: — (sıradaki: F6.4a2 ECA diğer armatür kartları — taslak onaylı, docs/taslaklar/eca.md §B)
 - Site: https://burakefesismann.github.io/selam-katalog/
 - Faz: 3 — Gerçek içerik ve görseller
 
@@ -173,6 +173,7 @@
     Marshall sentetik tiner (sayfa yok), yerden ısıtma aksesuarları, Filli Dalmaçyalı dübel (PDF), Sika 10, Güral 3, Onduline 5.
   - Kaynaksız 70 kart (çoğu "çeşitli" hırdavat/tesisat kalemi) → büyük olasılıkla mağaza fotoğrafı; sona bırak, kullanıcıya listele.
 ## Sıradaki
+- **F6.4a2 — ECA diğer armatür** (taslak §B), sonra F6.4a3 teknik (§C). Ardından F6.4b Serel…
 - **F6.4 — Marka marka içerik** (K16/K17): ilk ECA. `.katalog-calisma/eca/` (OZET.md + metin) → yakın serilerin taslak listesi
   (kod tablosuyla) → kullanıcı onayı → içe aktar → katalog görselleri. Sonra Serel, Aryak, Borel, KAS, Fırat…
 - Sonra F4.5 — Çözüm sayfaları (K13): `cozumler` koleksiyonu + panel + ana sayfa alanı; ilk sayfa Mantolama (içerik beyin
@@ -354,6 +355,15 @@
   görseller resmi siteden ya da kullanıcıdan. **Serel banyo aksesuarları** kataloğunda gömülü görsel 1 (çizim vektör).
 - Bozuk font eşlemesi (Sumak: "f ඈyat") görülebilir → filtre `f.yat` desenini de atıyor.
 
+## ECA notları (F6.4a)
+- Ayrıştırıcılar (scratchpad, depoda değil — F6.4a2/a3'te yeniden yazılabilir): ECA Armatür = ürün adı kalın, kodlar solda,
+  renk kodun altında (C1 mat siyah, C5 mat antrasit, A1 altın görünümlü, 1025… paslanmaz); fiyat sütunu x>470 OKUNMAZ.
+  ECA Teknik = "Kod" başlıklı tablolar; "Liste/Fiyatı" sütunu ve sağı OKUNMAZ. Çıktı `.katalog-calisma/eca/*/modeller.json`.
+- Life sayfalarında font "İ" harfini düşürüyor (EV YE, T P, DEL KL, Ç FT) → düzeltildi. Yabancı seri adları İngilizce küçültülür (Life, Tiera; "Lıfe" değil).
+- Katalog görselleri küçük (300–500 px) → `--buyut` ile 4×; Nita-1'de siyah blok çıktı, tek başına yeniden büyütülünce düzeldi. Görsel kaynak_url = https://www.eca.com.tr (katalog: ECA Armatür 2026-2).
+- Eski `eca-lavabo-bataryalari`, `eca-banyo-bataryalari` silindi → /kategoriler/batarya-serileri'ne yönlenir; ilgili ürün bağlantıları eca-tiera-serisi oldu.
+- `rezervuar-ic-takimlari-ve-klozet-kapaklari`: ECA çıktı (kullanıcı: iç takım Serel/Elginkan markası olabilir). Kartın görseli eca.com.tr'den (Serel iç takım) → F6.4b'de Serel kartına taşınacak, Visam kartına Visam görseli.
+
 ## Logo notları (F3.10)
 - Logolar `src/assets/markalar/<slug>.svg|webp`, marka yaml'ında `logo` + `logo_kaynak_url`. SVG olduğu gibi kopyalanır →
   indirmeden önce `<script|onload|javascript:|foreignObject` kontrolü yap. Kontrol aracı (kontakt.cjs) SVG'yi atlıyor → sharp ile
@@ -445,6 +455,7 @@
 | 2026-11-19 | F6.2b | Şema: `modeller` (kod/ad/ölçü/açıklama/görsel), kart_tipi `seri`, marka `one_cikan_gorsel`; panel (Sveltia şemasına göre geçerli); 52 markaya K17 sırası | F6.2b |
 | 2026-11-19 | F6.2c | Menü: Markalar → Ürün Grupları (/urunler); ana sayfada marka vitrini üstte; Ürün Grupları ve marka sayfasında grup kısayolları; marka büyük görseli; seri sayfasında model tablosu (mobilde ölçü ad altında) | F6.2c |
 | 2026-11-19 | F6.3 | Katalog çıkarma aracı `npm run katalog:cikar` (PyMuPDF yerel): 23 katalog → `.katalog-calisma/` fiyatsız metin + gömülü görseller + OZET; fiyat kontrolü temiz | F6.3 |
+| 2026-11-19 | F6.4a1 | ECA: Armatür › Batarya Serileri grubu + 9 seri kartı (Life, Tiera, Luna, Nita, Dalia, Dream, Lia, Niobe, Spylos; 238 model satırı, kodlu, renk kodları), katalog görselleri (24, 4× büyütülmüş); eski lavabo/banyo kartları yönlendirildi; katalog:cikar fiyat sütunu konumdan atılıyor | F6.4a1 |
 | 2026-11-18 | Ondulikit (kullanıcı fotoğrafı) + Güral aksesuar gizlendi | yayındaki tüm ürünler görselli | gorsel |
 | 2026-11-18 | F3.9 | 7 ana kategoriye ürün görseli (Orka, Yurtbay, Filli Nucleus, İzeltaş pense, Baymak hidrofor, Fırat vanalar, İzocam); DURUM fotoğraf listesi temizlendi | F3.9 |
 | 2026-11-18 | F3.10a | 15 marka logosu (ECA, Serel, Güral, Orka, Baymak, Filli, Kale Kilit, Sika, Yurtbay, Güral Seramik, Marshall, Bosch, Fawori, İzocam, Onduline); logosuz 35 | F3.10a |

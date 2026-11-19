@@ -20,6 +20,9 @@ export default defineConfig({
     '/kategoriler/derz-dolgu': '/selam-katalog/kategoriler/seramik-yapistirici',
     '/kategoriler/kopuk-ve-yapistirici': '/selam-katalog/kategoriler/mastik-ve-silikon',
     '/kategoriler/boya-ve-siva-aletleri': '/selam-katalog/kategoriler/firca-rulo-ve-siva-aletleri',
+    // F6.4a1: ECA tür kartları seri kartlarına bölündü
+    '/urunler/eca-lavabo-bataryalari': '/selam-katalog/kategoriler/batarya-serileri',
+    '/urunler/eca-banyo-bataryalari': '/selam-katalog/kategoriler/batarya-serileri',
   },
   integrations: [
     sitemap({

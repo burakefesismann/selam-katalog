@@ -19,7 +19,7 @@ teknik_ozellikler:
   - ozellik: renk
     deger: Mat beyaz
 ilgili_urunler:
-  - eca-lavabo-bataryalari
+  - eca-tiera-serisi
   - kas-lavabo-bataryalari
 sira: 17
 gorseller:

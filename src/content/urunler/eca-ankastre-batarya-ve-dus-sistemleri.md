@@ -25,9 +25,8 @@ teknik_ozellikler:
   - ozellik: renk
     deger: Krom; Tiera ve Dalia'da mat siyah
 ilgili_urunler:
-  - eca-banyo-bataryalari
+  - eca-tiera-serisi
   - eca-dus-setleri-ve-tepe-duslari
-  - eca-lavabo-bataryalari
 kaynak_sayfalar:
   - https://eca.com.tr/yapi/armaturler/banyo-mutfak/ankastre-lavabo-bataryalari/tiera
   - https://eca.com.tr/yapi/armaturler/dus-sistemleri/ankastre-dus-setleri

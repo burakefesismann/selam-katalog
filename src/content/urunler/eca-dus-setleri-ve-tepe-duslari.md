@@ -27,7 +27,7 @@ teknik_ozellikler:
   - ozellik: renk
     deger: Krom; Tiera'da altın ve mat siyah, Troya'da siyah
 ilgili_urunler:
-  - eca-banyo-bataryalari
+  - eca-tiera-serisi
   - eca-ankastre-batarya-ve-dus-sistemleri
   - samir-dusakabinler
   - dus-tekneleri

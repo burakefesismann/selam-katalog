@@ -23,7 +23,7 @@ olculer:
   - "3/4-3/4: 20, 30 cm"
   - Emici hortum 1" – 4"; şeffaf hortum 3/4" – 1-1/2"
 ilgili_urunler:
-  - eca-lavabo-bataryalari
+  - eca-tiera-serisi
   - eca-musluklar-ve-taharet-musluklari
   - rakor-ve-uzatmalar
   - hidroforlar

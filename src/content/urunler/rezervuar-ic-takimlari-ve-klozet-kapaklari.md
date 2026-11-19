@@ -4,7 +4,6 @@ kart_tipi: grup
 kategori: rezervuar-ic-takimlari
 markalar:
   - visam
-  - eca
 kisa_aciklama: Rezervuar iç takımları, yavaş kapanan klozet kapakları, klozet ve hela taşı rezervuarları; klozet ve lavabo montaj vidaları.
 one_cikanlar:
   - Basmalı ve çift basmalı iç takımlar

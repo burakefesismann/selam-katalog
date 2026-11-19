@@ -44,7 +44,7 @@ olculer:
   - 28x45, 43x60, 44x60, 49x58 cm tezgah üstü
   - 35x45 cm (Şahin)
 ilgili_urunler:
-  - eca-lavabo-bataryalari
+  - eca-tiera-serisi
   - orka-banyo-dolaplari
   - sifonlar-ve-kadalar
   - serel-klozetler

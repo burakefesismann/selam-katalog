@@ -1,6 +1,9 @@
 # ECA — kart taslağı (F6.4a)
 
-> Durum: **ONAY BEKLİYOR.** Kaynak: ECA Armatür 2026-2 (161 sayfa) + ECA Teknik Ürünler 2026-2 (44 sayfa), `npm run katalog:cikar`.
+> Durum: **ONAYLANDI (2026-11-19)** — 9 seri (Tiera, Life, Luna, Nita, Dalia, Dream, Lia, Niobe, Spylos; Novita, Icon,
+> Royal, Osmanlı, Medical şimdilik yok), yeni Batarya Serileri grubu, teknik 13 kart. İç takım kartı: ECA değil Serel
+> (Serel kataloğunda "Serel İç Takımlar") → ECA çıkar, Serel payı F6.4b'de.
+> Kaynak: ECA Armatür 2026-2 (161 sayfa) + ECA Teknik Ürünler 2026-2 (44 sayfa), `npm run katalog:cikar`.
 > Fiyat alınmaz. Kodlar ve teknik bilgiler katalogdan; uydurma yok. Model sayıları otomatik ayrıştırmadan (±birkaç).
 
 ## Bugün

@@ -16,9 +16,8 @@ olculer:
   - 3/4" düz uzatma
   - 3/4" delikli uzatma
 ilgili_urunler:
-  - eca-banyo-bataryalari
+  - eca-tiera-serisi
   - kas-banyo-bataryalari
-  - eca-lavabo-bataryalari
 sira: 18
 markalar: []
 gorseller:

@@ -32,7 +32,7 @@ olculer:
   - 120 cm (Moonlight)
   - 40 cm boy dolabı (Moonlight, Ricato)
 ilgili_urunler:
-  - eca-lavabo-bataryalari
+  - eca-tiera-serisi
   - sifonlar-ve-kadalar
   - samir-banyo-dolaplari
 kaynak_sayfalar:

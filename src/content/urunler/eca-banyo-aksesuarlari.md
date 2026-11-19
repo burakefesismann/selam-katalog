@@ -23,7 +23,7 @@ teknik_ozellikler:
   - ozellik: renk
     deger: Parlak krom; Rita'da mat siyah
 ilgili_urunler:
-  - eca-lavabo-bataryalari
+  - eca-tiera-serisi
   - mesa-banyo-aksesuarlari
   - banyo-aksesuarlari-diger-markalar
 kaynak_sayfalar:

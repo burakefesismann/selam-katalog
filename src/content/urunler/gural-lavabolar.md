@@ -24,7 +24,7 @@ olculer:
   - 28x35, 37x45, 40x50 cm oval
 ilgili_urunler:
   - gural-klozetler
-  - eca-lavabo-bataryalari
+  - eca-tiera-serisi
   - sifonlar-ve-kadalar
 kaynak_sayfalar:
   - https://guralvit.com.tr/vitrifiye/lavabolar

@@ -21,7 +21,7 @@ olculer:
   - Çocuk lavabosu 40x50 cm
 ilgili_urunler:
   - banyo-aksesuarlari-diger-markalar
-  - eca-lavabo-bataryalari
+  - eca-tiera-serisi
   - serel-klozetler
   - serel-gomme-rezervuar-ic-takim-ve-kumanda-panelleri
 kaynak_sayfalar:
