@@ -1,7 +1,7 @@
 ---
 ad: Yer Süzgeçleri & Duş Kanalları
 kart_tipi: grup
-kategori: suzgec-ve-sifon
+kategori: yer-suzgecleri
 kisa_aciklama: 10x10'dan 25x25 cm'ye yer süzgeçleri, alttan ve yandan çıkışlı modeller, membran bağlantılı süzgeçler ve plastik duş kanalları.
 one_cikanlar:
   - Alttan ve yandan çıkış

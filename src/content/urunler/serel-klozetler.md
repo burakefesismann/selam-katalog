@@ -1,7 +1,7 @@
 ---
 ad: Serel Klozetler
 kart_tipi: marka_tur
-kategori: vitrifiye
+kategori: klozetler
 markalar:
   - serel
 seriler:

@@ -1,7 +1,7 @@
 ---
 ad: Batarya Yedek Parça & Bağlantıları
 kart_tipi: grup
-kategori: bataryalar
+kategori: yedek-parca-ve-uzatma
 kisa_aciklama: Batarya montajı ve onarımı için dirsek takımı, montaj vidası ve 3/4" düz ve delikli uzatmalar.
 one_cikanlar:
   - Batarya dirsek takımı

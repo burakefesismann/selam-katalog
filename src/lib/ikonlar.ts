@@ -4,7 +4,10 @@
  */
 import {
   Bath,
+  Cable,
   Cylinder,
+  Gauge,
+  Paintbrush,
   Drill,
   Droplets,
   Hammer,
@@ -69,14 +72,20 @@ const SLUG_IKON: Record<string, IkonAdi> = {
 /** Ana kategori ikonları (kategori görseli de ürün görseli de yoksa kartta gösterilir) */
 const KATEGORI_IKON: Record<string, typeof Layers> = {
   'tesisat-borulari': Cylinder,
-  'vana-ve-tesisat-armaturleri': Wrench,
+  vanalar: Wrench,
+  'flex-ve-baglanti': Cable,
   isitma: Heater,
+  armatur: ShowerHead,
+  'seramik-saglik-gerecleri': Toilet,
+  'gomme-rezervuar-ve-ic-takimlar': Gauge,
+  'banyo-mobilyasi-ve-dusakabin': Sofa,
+  'banyo-aksesuarlari-ve-suzgecler': Bath,
   'pompa-ve-su-deposu': Droplets,
-  'banyo-ve-mutfak': Bath,
   'seramik-ve-yer-kaplama': LayoutGrid,
   'yapi-kimyasallari': PaintBucket,
   'yalitim-ve-cati': House,
   boya: PaintRoller,
+  'firca-rulo-ve-siva-aletleri': Paintbrush,
   'el-aletleri-ve-makineler': Drill,
   'hirdavat-ve-nalburiye': Hammer,
 };

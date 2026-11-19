@@ -1,7 +1,7 @@
 ---
 ad: KAS Banyo Bataryaları
 kart_tipi: marka_tur
-kategori: bataryalar
+kategori: banyo-bataryalari
 markalar:
   - kas
 seriler:

@@ -1,7 +1,7 @@
 ---
 ad: Baumit Premium Fuga (standart & silikonlu)
 kart_tipi: urun
-kategori: derz-dolgu
+kategori: seramik-yapistirici
 markalar:
   - baumit
 kisa_aciklama: 1–7 mm derzler için esnek, su itici, aşınmaya dayanıklı CG2WA sınıfı derz dolgusu; iç ve dış mekân, ıslak hacim ve yerden ısıtma.

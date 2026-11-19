@@ -1,7 +1,7 @@
 ---
 ad: Mala, Ispatula & Sıva Aletleri
 kart_tipi: grup
-kategori: boya-ve-siva-aletleri
+kategori: mala-ve-ispatula
 markalar:
   - dekor
   - master

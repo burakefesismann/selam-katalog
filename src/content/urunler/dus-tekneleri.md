@@ -1,7 +1,7 @@
 ---
 ad: Duş Tekneleri
 kart_tipi: marka_tur
-kategori: banyo-mobilyasi
+kategori: dus-tekneleri
 markalar:
   - samir
   - stina

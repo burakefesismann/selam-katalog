@@ -1,7 +1,7 @@
 ---
 ad: Doğalgaz Flex Hortum, Kelepçe & Bağlantıları
 kart_tipi: grup
-kategori: flex-ve-baglanti
+kategori: flex-hortumlar
 markalar:
   - kas
   - baykara

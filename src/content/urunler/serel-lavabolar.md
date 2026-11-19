@@ -1,7 +1,7 @@
 ---
 ad: Serel Lavabolar
 kart_tipi: marka_tur
-kategori: vitrifiye
+kategori: lavabolar
 markalar:
   - serel
 seriler:

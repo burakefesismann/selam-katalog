@@ -1,7 +1,7 @@
 ---
 ad: Güral Klozetler
 kart_tipi: marka_tur
-kategori: vitrifiye
+kategori: klozetler
 markalar:
   - gural
 seriler:

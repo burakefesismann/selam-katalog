@@ -1,7 +1,7 @@
 ---
 ad: Rezervuar İç Takımları & Klozet Kapakları
 kart_tipi: grup
-kategori: vitrifiye
+kategori: rezervuar-ic-takimlari
 markalar:
   - visam
   - eca

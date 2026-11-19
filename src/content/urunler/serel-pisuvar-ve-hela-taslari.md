@@ -1,7 +1,7 @@
 ---
 ad: Serel Pisuvar & Hela Taşları
 kart_tipi: marka_tur
-kategori: vitrifiye
+kategori: pisuvar-ve-hela-tasi
 markalar:
   - serel
 seriler:

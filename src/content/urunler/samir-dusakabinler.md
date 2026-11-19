@@ -1,7 +1,7 @@
 ---
 ad: Samir Duşakabinler
 kart_tipi: marka_tur
-kategori: banyo-mobilyasi
+kategori: dusakabinler
 markalar:
   - samir
 seriler:

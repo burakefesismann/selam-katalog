@@ -1,7 +1,7 @@
 ---
 ad: Serel Bedensel Engelli & Çocuk Serisi
 kart_tipi: marka_tur
-kategori: vitrifiye
+kategori: engelli-ve-cocuk-serisi
 markalar:
   - serel
 kisa_aciklama: Bedensel engelli asma klozet ve lavabolar ile çocuklar için küçük ölçülü klozet, lavabo ve rezervuar; okul ve kamu binaları için.

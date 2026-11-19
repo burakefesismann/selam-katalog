@@ -1,7 +1,7 @@
 ---
 ad: Yapıştırıcılar (mermer, epoksi, süpürgelik)
 kart_tipi: grup
-kategori: kopuk-ve-yapistirici
+kategori: mastik-ve-silikon
 markalar:
   - selsil
 kisa_aciklama: Selsil akrilik süpürgelik yapıştırıcısı (500 g), mermer yapıştırıcısı (250 g) ve iki bileşenli epoksi yapıştırıcı.

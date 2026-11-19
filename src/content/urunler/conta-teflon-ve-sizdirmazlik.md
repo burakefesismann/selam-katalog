@@ -1,7 +1,7 @@
 ---
 ad: Conta, Teflon & Sızdırmazlık
 kart_tipi: grup
-kategori: flex-ve-baglanti
+kategori: rakor-ve-sizdirmazlik
 kisa_aciklama: Dişli ve flanşlı bağlantılar için teflon bant, kendir, fiber, klingrit ve lastik contalar, sayaç contası ve üstübü.
 one_cikanlar:
   - Teflon bant ve kendir

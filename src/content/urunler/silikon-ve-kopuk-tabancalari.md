@@ -1,7 +1,7 @@
 ---
 ad: Silikon & Köpük Tabancaları
 kart_tipi: grup
-kategori: boya-ve-siva-aletleri
+kategori: mala-ve-ispatula
 markalar:
   - master
 kisa_aciklama: Master köpük tabancası, metal ve plastik silikon tabancaları, folyo (sosis) ambalajlı mastikler için sosis tabancası.

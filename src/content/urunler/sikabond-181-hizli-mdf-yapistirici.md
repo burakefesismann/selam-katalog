@@ -1,7 +1,7 @@
 ---
 ad: Sikabond 181 Hızlı MDF Yapıştırıcı
 kart_tipi: urun
-kategori: kopuk-ve-yapistirici
+kategori: mastik-ve-silikon
 markalar:
   - sika
 kisa_aciklama: Siyanoakrilat yapıştırıcı + aktivatör sprey seti; MDF, ahşap, kauçuk, çoğu plastik ve deride süper hızlı, güçlü yapışma.

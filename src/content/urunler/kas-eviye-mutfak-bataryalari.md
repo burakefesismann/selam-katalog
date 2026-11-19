@@ -1,7 +1,7 @@
 ---
 ad: KAS Eviye (Mutfak) Bataryaları
 kart_tipi: marka_tur
-kategori: bataryalar
+kategori: eviye-bataryalari
 markalar:
   - kas
 seriler:

@@ -1,7 +1,7 @@
 ---
 ad: Şiber Vanalar
 kart_tipi: grup
-kategori: vanalar
+kategori: siber-ve-gaz-vanalari
 markalar:
   - kas
   - eca

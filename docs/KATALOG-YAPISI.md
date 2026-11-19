@@ -4,7 +4,7 @@ Beyin takımının hazırladığı, kullanıcının onayladığı kart listesi (
 Bu dosya kategori ağacının ve kart adlarının kaynağıdır. Değişiklik yalnızca kullanıcı/beyin takımı onayıyla yapılır.
 
 Kart tipleri (K11): `grup` = ürün ailesi tek kart · `marka_tur` = marka + tür, örneklemli · `urun` = tek ürün, teknik detaylı.
-Toplam: 214 kart.
+Toplam: 213 kart.
 
 **Güncelleme 2026-11-16 (Paket 001 ile, beyin takımı kararı):** PE100 ek parçaları → Fırat; PEX kartı adı ve markaları;
 ProContact Sıva & Şap → Mantolama; resmi yazımlar DuoContact, DuoFix, StarTherm, CreativTop. Toplam kart sayısı değişmedi (213).
@@ -18,9 +18,10 @@ boya mantolama kartları → Yapı Kimyasalları › Mantolama (Boya altında Ma
 KBS Çiroz → El Aletleri (Tesisatçı Aletleri ikiye ayrıldı → 214 kart), "Kale" el aletleri → KL Pro, Onduline Şıngıl → UKS Şıngıl.
 
 
-## 1. Tesisat Boruları (21 kart)
 
-### Altyapı
+## 1. Tesisat Boruları & Ek Parçalar (21 kart)
+
+### Altyapı & Drenaj
 - Drenaj Boruları (Delikli / Tünel Tipi) — `grup` — Fırat
 - Drenaj Kanalları & Izgaralar — `grup` — çeşitli
 - Fırat Triplex Koruge Altyapı Boruları & Ek Parçaları — `grup` — Fırat
@@ -32,12 +33,12 @@ KBS Çiroz → El Aletleri (Tesisatçı Aletleri ikiye ayrıldı → 214 kart), 
 - Sarı (Pirinç) Ek Parçalar — `grup` — çeşitli
 - Siyah Boru & Ek Parçaları — `grup` — çeşitli
 
-### PE100 İçme Suyu
+### PE İçme Suyu
 - Fırat PE100 İçme Suyu Boruları (Kangal) — `grup` — Fırat
 - PE100 Kaynaklı & Elektrofüzyon Ek Parçalar — `grup` — Fırat
 - Poelsan Kaplin (Sıkıştırmalı) Ek Parçalar — `grup` — Poelsan
 
-### PEX
+### PEX & PE-RT
 - PEX Bağlantılar & Vanalar — `grup` — Fırat · KAS · ECA
 
 ### PPRC Temiz Su
@@ -55,44 +56,142 @@ KBS Çiroz → El Aletleri (Tesisatçı Aletleri ikiye ayrıldı → 214 kart), 
 ### Yağmur Oluğu
 - Fırat PVC Yağmur Oluğu Sistemi — `grup` — Fırat
 
-## 2. Vana & Tesisat Armatürleri (17 kart)
+## 2. Vanalar (13 kart)
 
-### Flex & Bağlantı
-- Conta, Teflon & Sızdırmazlık — `grup` — çeşitli
-- Doğalgaz Flex Hortum, Kelepçe & Bağlantıları — `grup` — KAS · Baykara
-- Rakor & Uzatmalar — `grup` — ECA · KAS
-- Su Flex Hortumları — `grup` — KAS
+### Küresel Vanalar
+- Su Küresel Vanaları — `grup` — KAS · ECA · Türkoğlu
 
-### Tesisat Armatürleri
+### Radyatör & Termostatik Vanalar
+- Radyatör & Termostatik Vanalar — `grup` — ECA · KAS
+
+### Sayaç & Ölçü
+- Manometre & Termometre — `grup` — çeşitli
+- Su Sayaçları & Kalorimetre — `grup` — KAS
+
+### Şiber & Gaz Vanaları
+- Gaz Vanaları — `grup` — KAS
+- Şiber Vanalar — `grup` — KAS · ECA
+
+### Tesisat Valfleri
 - Ara Kesme Valfleri — `grup` — ECA · KAS · Visam
 - Basınç Düşürücüler — `grup` — ECA · KAS
 - Çekvalfler — `grup` — KAS · ECA
 - Emniyet Ventilleri — `grup` — KAS · ECA
 - Filtreler (pislik tutucu, Y filtre) — `grup` — KAS · ECA
 - Flatörler — `grup` — ECA
-- Manometre & Termometre — `grup` — çeşitli
 - Prüjörler (otomatik hava atıcı) — `grup` — ECA · KAS
-- Su Sayaçları & Kalorimetre — `grup` — KAS
 
-### Vanalar
-- Gaz Vanaları — `grup` — KAS
-- Radyatör & Termostatik Vanalar — `grup` — ECA · KAS
-- Su Küresel Vanaları — `grup` — KAS · ECA · Türkoğlu
-- Şiber Vanalar — `grup` — KAS · ECA
+## 3. Bağlantı & Flex (4 kart)
 
-## 3. Isıtma (6 kart)
+### Flex Hortumlar
+- Doğalgaz Flex Hortum, Kelepçe & Bağlantıları — `grup` — KAS · Baykara
+- Su Flex Hortumları — `grup` — KAS
+
+### Rakor, Conta & Sızdırmazlık
+- Conta, Teflon & Sızdırmazlık — `grup` — çeşitli
+- Rakor & Uzatmalar — `grup` — ECA · KAS
+
+## 4. Isıtma (6 kart)
+
+### Kombi Aksesuarları
+- Kombi & Radyatör Aksesuarları — `grup` — Fırat
 
 ### Radyatör & Havlupan
 - ECA Havlupanlar — `grup` — ECA
 - ECA Panel Radyatörler — `grup` — ECA
-- Kombi & Radyatör Aksesuarları — `grup` — Fırat
 
 ### Yerden Isıtma
 - Fırat PE-RT Yerden Isıtma Boruları — `grup` — Fırat
 - Yerden Isıtma Aksesuarları — `grup` — Fırat · ECA · KAS
 - Yerden Isıtma Kollektörleri — `grup` — Fırat · ECA · KAS
 
-## 4. Pompa & Su Deposu (3 kart)
+## 5. Armatür (Batarya & Duş) (16 kart)
+
+### Ankastre Sistemler
+- ECA Ankastre Batarya & Duş Sistemleri — `marka_tur` — ECA
+
+### Banyo Bataryaları
+- Diğer Marka Bataryalar — `marka_tur` — Foma
+- ECA Banyo Bataryaları — `marka_tur` — ECA
+- KAS Banyo Bataryaları — `marka_tur` — KAS
+
+### Duş Setleri & Tepe Duşları
+- Duş Setleri (diğer markalar) — `marka_tur` — çeşitli
+- ECA Duş Setleri & Tepe Duşları — `marka_tur` — ECA
+- KAS Duş Setleri — `marka_tur` — KAS
+- Mesa Duş Setleri — `marka_tur` — Mesa
+
+### Eviye (Mutfak) Bataryaları
+- ECA Eviye (Mutfak) Bataryaları — `marka_tur` — ECA
+- KAS Eviye (Mutfak) Bataryaları — `marka_tur` — KAS
+
+### Lavabo Bataryaları
+- ECA Lavabo Bataryaları — `marka_tur` — ECA
+- KAS Lavabo Bataryaları — `marka_tur` — KAS
+
+### Musluklar & Taharet
+- ECA Musluklar & Taharet Muslukları — `marka_tur` — ECA
+- KAS Musluklar & Taharet Muslukları — `marka_tur` — KAS
+- Musluklar (diğer markalar) — `marka_tur` — Hazal
+
+### Yedek Parça & Uzatma
+- Batarya Yedek Parça & Bağlantıları — `grup` — çeşitli
+
+## 6. Seramik Sağlık Gereçleri (7 kart)
+
+### Engelli & Çocuk Serisi
+- Serel Bedensel Engelli & Çocuk Serisi — `marka_tur` — Serel
+
+### Klozet Kapakları
+- Serel Klozet Kapakları — `marka_tur` — Serel
+
+### Klozetler
+- Güral Klozetler — `marka_tur` — Güral
+- Serel Klozetler — `marka_tur` — Serel
+
+### Lavabolar
+- Güral Lavabolar — `marka_tur` — Güral
+- Serel Lavabolar — `marka_tur` — Serel
+
+### Pisuvar & Hela Taşı
+- Serel Pisuvar & Hela Taşları — `marka_tur` — Serel
+
+## 7. Gömme Rezervuar & İç Takımlar (2 kart)
+
+### Gömme Rezervuar & Kumanda Panelleri
+- Serel Gömme Rezervuar, İç Takım & Kumanda Panelleri — `marka_tur` — Serel
+
+### Rezervuar İç Takımları
+- Rezervuar İç Takımları & Klozet Kapakları — `grup` — Visam · ECA
+
+## 8. Banyo Mobilyası & Duşakabin (4 kart)
+
+### Banyo Dolapları
+- Orka Banyo Dolapları — `marka_tur` — Orka
+- Samir Banyo Dolapları — `marka_tur` — Samir
+
+### Duş Tekneleri
+- Duş Tekneleri — `marka_tur` — Samir · Stina
+
+### Duşakabinler
+- Samir Duşakabinler — `marka_tur` — Samir
+
+## 9. Banyo Aksesuarları & Süzgeçler (7 kart)
+
+### Banyo Aksesuarları
+- Banyo Aksesuarları (diğer markalar) — `marka_tur` — çeşitli
+- Dömark Banyo Aksesuarları — `marka_tur` — Dömark
+- ECA Banyo Aksesuarları — `marka_tur` — ECA
+- Mesa Banyo Aksesuarları — `marka_tur` — Mesa
+
+### Sifon & Kada
+- Sifonlar & Kadalar — `grup` — Fırat · Visam
+
+### Yer Süzgeçleri & Duş Kanalları
+- Dömark Paslanmaz Süzgeçler — `marka_tur` — Dömark
+- Yer Süzgeçleri & Duş Kanalları — `grup` — çeşitli
+
+## 10. Pompa & Su Deposu (3 kart)
 
 ### Pompalar
 - Dalgıç Pompalar — `grup` — Sumak
@@ -101,62 +200,9 @@ KBS Çiroz → El Aletleri (Tesisatçı Aletleri ikiye ayrıldı → 214 kart), 
 ### Su Depoları
 - Polietilen Su Depoları — `grup` — çeşitli
 
-## 5. Banyo & Mutfak (37 kart)
+## 11. Seramik, Karo & Profil (8 kart)
 
-### Banyo Aksesuarları
-- Banyo Aksesuarları (diğer markalar) — `marka_tur` — çeşitli
-- Dömark Banyo Aksesuarları — `marka_tur` — Dömark
-- ECA Banyo Aksesuarları — `marka_tur` — ECA
-- Mesa Banyo Aksesuarları — `marka_tur` — Mesa
-
-### Banyo Mobilyası
-- Duş Tekneleri — `marka_tur` — Samir · Stina
-- Orka Banyo Dolapları — `marka_tur` — Orka
-- Samir Banyo Dolapları — `marka_tur` — Samir
-- Samir Duşakabinler — `marka_tur` — Samir
-
-### Bataryalar
-- Batarya Yedek Parça & Bağlantıları — `grup` — çeşitli
-- Diğer Marka Bataryalar — `marka_tur` — Foma
-- ECA Ankastre Batarya & Duş Sistemleri — `marka_tur` — ECA
-- ECA Banyo Bataryaları — `marka_tur` — ECA
-- ECA Eviye (Mutfak) Bataryaları — `marka_tur` — ECA
-- ECA Lavabo Bataryaları — `marka_tur` — ECA
-- KAS Banyo Bataryaları — `marka_tur` — KAS
-- KAS Eviye (Mutfak) Bataryaları — `marka_tur` — KAS
-- KAS Lavabo Bataryaları — `marka_tur` — KAS
-
-### Duş Sistemleri
-- Duş Setleri (diğer markalar) — `marka_tur` — çeşitli
-- ECA Duş Setleri & Tepe Duşları — `marka_tur` — ECA
-- KAS Duş Setleri — `marka_tur` — KAS
-- Mesa Duş Setleri — `marka_tur` — Mesa
-
-### Musluklar
-- ECA Musluklar & Taharet Muslukları — `marka_tur` — ECA
-- KAS Musluklar & Taharet Muslukları — `marka_tur` — KAS
-- Musluklar (diğer markalar) — `marka_tur` — Hazal
-
-### Süzgeç & Sifon
-- Dömark Paslanmaz Süzgeçler — `marka_tur` — Dömark
-- Sifonlar & Kadalar — `grup` — Fırat · Visam
-- Yer Süzgeçleri & Duş Kanalları — `grup` — çeşitli
-
-### Vitrifiye
-- Güral Banyo Aksesuarları — `marka_tur` — Güral
-- Güral Klozetler — `marka_tur` — Güral
-- Güral Lavabolar — `marka_tur` — Güral
-- Rezervuar İç Takımları & Klozet Kapakları — `grup` — Visam · ECA
-- Serel Bedensel Engelli & Çocuk Serisi — `marka_tur` — Serel
-- Serel Gömme Rezervuar, İç Takım & Kumanda Panelleri — `marka_tur` — Serel
-- Serel Klozet Kapakları — `marka_tur` — Serel
-- Serel Klozetler — `marka_tur` — Serel
-- Serel Lavabolar — `marka_tur` — Serel
-- Serel Pisuvar & Hela Taşları — `marka_tur` — Serel
-
-## 6. Seramik & Yer Kaplama (8 kart)
-
-### Seramik
+### Karolar
 - Güral Seramik Karolar — `marka_tur` — Güral Seramik
 - Yurtbay Seramik — Ahşap Görünümlü — `marka_tur` — Yurtbay Seramik
 - Yurtbay Seramik — Duvar Fayansı & Dekorlar — `marka_tur` — Yurtbay Seramik
@@ -164,11 +210,13 @@ KBS Çiroz → El Aletleri (Tesisatçı Aletleri ikiye ayrıldı → 214 kart), 
 - Yurtbay Seramik — Metro, Mozaik & Küçük Format — `marka_tur` — Yurtbay Seramik
 - Yurtbay Seramik — Taş & Beton Görünümlü — `marka_tur` — Yurtbay Seramik
 
-### Uygulama Malzemeleri
+### Seramik & Parke Profilleri
 - Seramik & Parke Bitiş / Köşe Profilleri — `grup` — çeşitli
+
+### Uygulama Malzemeleri
 - Seramik Seviye (Tesviye) Sistemi — `grup` — çeşitli
 
-## 7. Yapı Kimyasalları (37 kart)
+## 12. Yapı Kimyasalları (37 kart)
 
 ### Beton Katkısı
 - Sika Antisol E-200 (kür malzemesi) — `urun` — Sika
@@ -181,15 +229,6 @@ KBS Çiroz → El Aletleri (Tesisatçı Aletleri ikiye ayrıldı → 214 kart), 
 - Baumit CreativTop — `urun` — Baumit
 - Baumit Uni Primer Dış Cephe Astarı — `urun` — Baumit
 
-### Derz Dolgu
-- Baumit Premium Fuga (standart & silikonlu) — `urun` — Baumit
-
-### Köpük & Yapıştırıcı
-- Sika AnchorFix S1 Kimyasal Dübel — `urun` — Sika
-- Sika Boom Poliüretan Köpükler — `urun` — Sika
-- Sikabond 181 Hızlı MDF Yapıştırıcı — `urun` — Sika
-- Yapıştırıcılar (mermer, epoksi, süpürgelik) — `grup` — Selsil
-
 ### Mantolama
 - Baumit DuoContact Yapıştırma & Sıva Harcı — `urun` — Baumit
 - Baumit DuoFix Yalıtım Yapıştırma Harcı — `urun` — Baumit
@@ -201,14 +240,19 @@ KBS Çiroz → El Aletleri (Tesisatçı Aletleri ikiye ayrıldı → 214 kart), 
 - İzocam Manto Taşyünü Levha — `urun` — İzocam
 - İzocam Terrawool Manto Taşyünü — `urun` — İzocam
 
-### Mastik & Silikon
+### Mastik, Silikon, Köpük & Yapıştırıcı
+- Sika AnchorFix S1 Kimyasal Dübel — `urun` — Sika
+- Sika Boom Poliüretan Köpükler — `urun` — Sika
 - Sika Mastik & Silikonlar (Sikaflex, Sikacryl, Sikasil) — `urun` — Sika
+- Sikabond 181 Hızlı MDF Yapıştırıcı — `urun` — Sika
+- Yapıştırıcılar (mermer, epoksi, süpürgelik) — `grup` — Selsil
 
-### Seramik Yapıştırıcı
+### Seramik Yapıştırıcı & Derz
 - Baumit Basic — `urun` — Baumit
 - Baumit Bianco (beyaz) — `urun` — Baumit
 - Baumit Flex Uni — `urun` — Baumit
 - Baumit Flexo — `urun` — Baumit
+- Baumit Premium Fuga (standart & silikonlu) — `urun` — Baumit
 
 ### Sıva & Şap
 - Baumit All in Beton — `urun` — Baumit
@@ -227,9 +271,9 @@ KBS Çiroz → El Aletleri (Tesisatçı Aletleri ikiye ayrıldı → 214 kart), 
 - Sika Floor-3 Quartz Yüzey Sertleştirici — `urun` — Sika
 - Weber Yüzey Sertleştirici — `urun` — Weber
 
-## 8. Yalıtım & Çatı (17 kart)
+## 13. Yalıtım & Çatı (17 kart)
 
-### Çatı
+### Çatı Kaplama & Aksesuar
 - Çatı & Yalıtım Yardımcı Malzemeleri — `grup` — çeşitli
 - Onduline Mahya & Montaj Aksesuarları — `urun` — Onduline
 - Onduline Ondubant & İsobant Yalıtım Bantları — `urun` — Onduline
@@ -243,7 +287,7 @@ KBS Çiroz → El Aletleri (Tesisatçı Aletleri ikiye ayrıldı → 214 kart), 
 - İzocam Maxibord XPS Levhalar — `urun` — İzocam
 - İzocam Taşyünü Ara Bölme Levhası — `urun` — İzocam
 
-### Su Yalıtımı (Membran)
+### Membranlar
 - BTM Bitümer BTR 200 Likit Membran — `urun` — BTM
 - BTM Ekobit Membran — `urun` — BTM
 - BTM Elasto Dry Roof — `urun` — BTM
@@ -252,7 +296,7 @@ KBS Çiroz → El Aletleri (Tesisatçı Aletleri ikiye ayrıldı → 214 kart), 
 - Onduline Bitümlü Membranlar — `urun` — Onduline
 - Onduline Ondulikit Likit İzolasyon — `urun` — Onduline
 
-## 9. Boya (24 kart)
+## 14. Boya (24 kart)
 
 ### Ahşap & Metal
 - Fawori Panel Kapı Boyası — `urun` — Fawori
@@ -267,11 +311,6 @@ KBS Çiroz → El Aletleri (Tesisatçı Aletleri ikiye ayrıldı → 214 kart), 
 - Filli Sutut — `urun` — Filli Boya
 - Marshall Astarlar (Akrikor örtücü, geçiş, izolasyon) — `urun` — Marshall
 - Marshall Sentetik Tiner — `urun` — Marshall
-
-### Boya Yardımcıları
-- Boya Yardımcıları (karıştırıcı, örtü, sökücü, toz oksit) — `grup` — çeşitli
-- Sprey Boyalar — `grup` — Master
-- Tinerler — `grup` — Genç
 
 ### Dış Cephe
 - Filli Aqusto Silan — `urun` — Filli Boya
@@ -292,12 +331,21 @@ KBS Çiroz → El Aletleri (Tesisatçı Aletleri ikiye ayrıldı → 214 kart), 
 - Filli Betakril Tavan Boyası — `urun` — Filli Boya
 - Marshall Tavan Boyası — `urun` — Marshall
 
-## 10. El Aletleri & Makineler (18 kart)
+### Tiner & Boya Yardımcıları
+- Boya Yardımcıları (karıştırıcı, örtü, sökücü, toz oksit) — `grup` — çeşitli
+- Sprey Boyalar — `grup` — Master
+- Tinerler — `grup` — Genç
 
-### Boya & Sıva Aletleri
+## 15. Fırça, Rulo & Boya-Sıva Aletleri (3 kart)
+
+### Fırça & Rulo
 - Fırça & Rulolar — `grup` — Dekor · Master
+
+### Mala, Ispatula & Uygulama Aletleri
 - Mala, Ispatula & Sıva Aletleri — `grup` — Dekor · Master
 - Silikon & Köpük Tabancaları — `grup` — Master
+
+## 16. El Aletleri & Makineler (15 kart)
 
 ### El Aletleri
 - Anahtarlar, Kaynak & Diğer El Aletleri — `grup` — çeşitli
@@ -322,7 +370,7 @@ KBS Çiroz → El Aletleri (Tesisatçı Aletleri ikiye ayrıldı → 214 kart), 
 - Matkap Uçları (SDS, HSS, ağaç, cam-seramik) — `grup` — Master · Bosch
 - Zımparalar & Flap Diskler — `grup` — Master
 
-## 11. Hırdavat & Nalburiye (26 kart)
+## 17. Hırdavat & Nalburiye (26 kart)
 
 ### Bağlantı Elemanları
 - Civata, Somun, Pul & Klemens — `grup` — çeşitli

@@ -1,7 +1,7 @@
 ---
 ad: Sifonlar & Kadalar
 kart_tipi: grup
-kategori: suzgec-ve-sifon
+kategori: sifon-ve-kada
 markalar:
   - firat
   - visam

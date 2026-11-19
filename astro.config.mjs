@@ -8,6 +8,19 @@ import tailwindcss from '@tailwindcss/vite';
 export default defineConfig({
   site: 'https://burakefesismann.github.io',
   base: '/selam-katalog',
+  // F6.2a (K17): kaldırılan/birleştirilen ürün grubu adresleri yeni yerlerine yönlendirilir (basılı QR etiketleri bozulmasın).
+  // Hedefe base elle yazılır (Astro eklemiyor); F5.1'de base kalkınca '/selam-katalog' önekini de kaldır.
+  redirects: {
+    '/kategoriler/banyo-ve-mutfak': '/selam-katalog/kategoriler/armatur',
+    '/kategoriler/vana-ve-tesisat-armaturleri': '/selam-katalog/kategoriler/vanalar',
+    '/kategoriler/bataryalar': '/selam-katalog/kategoriler/armatur',
+    '/kategoriler/vitrifiye': '/selam-katalog/kategoriler/seramik-saglik-gerecleri',
+    '/kategoriler/banyo-mobilyasi': '/selam-katalog/kategoriler/banyo-mobilyasi-ve-dusakabin',
+    '/kategoriler/suzgec-ve-sifon': '/selam-katalog/kategoriler/banyo-aksesuarlari-ve-suzgecler',
+    '/kategoriler/derz-dolgu': '/selam-katalog/kategoriler/seramik-yapistirici',
+    '/kategoriler/kopuk-ve-yapistirici': '/selam-katalog/kategoriler/mastik-ve-silikon',
+    '/kategoriler/boya-ve-siva-aletleri': '/selam-katalog/kategoriler/firca-rulo-ve-siva-aletleri',
+  },
   integrations: [
     sitemap({
       // Arama motorlarına gösterilmeyecek sayfalar (stil rehberi noindex, arama sonuç sayfası, panel)

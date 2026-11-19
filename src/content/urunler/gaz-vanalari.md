@@ -1,7 +1,7 @@
 ---
 ad: Gaz Vanaları
 kart_tipi: grup
-kategori: vanalar
+kategori: siber-ve-gaz-vanalari
 markalar:
   - kas
 kisa_aciklama: 'Doğalgaz tesisatı için KAS tam geçişli gaz küresel vanaları: kilitli 1/2"–1" ve 1-1/4", 1-1/2" modeller; TS EN 331.'

@@ -1,7 +1,7 @@
 ---
 ad: Samir Banyo Dolapları
 kart_tipi: marka_tur
-kategori: banyo-mobilyasi
+kategori: banyo-dolaplari
 markalar:
   - samir
 seriler:

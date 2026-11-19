@@ -1,7 +1,7 @@
 ---
 ad: Rakor & Uzatmalar
 kart_tipi: grup
-kategori: flex-ve-baglanti
+kategori: rakor-ve-sizdirmazlik
 markalar:
   - eca
   - kas

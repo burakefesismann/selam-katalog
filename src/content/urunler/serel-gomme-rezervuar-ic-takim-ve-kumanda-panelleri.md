@@ -1,7 +1,7 @@
 ---
 ad: Serel Gömme Rezervuar, İç Takım & Kumanda Panelleri
 kart_tipi: marka_tur
-kategori: vitrifiye
+kategori: gomme-rezervuarlar
 markalar:
   - serel
 kisa_aciklama: Tuğla duvar ve alçıpan için Serel gömme rezervuarlar, alttan ve yandan dolumlu iç takımlar, krom ve renkli kumanda panelleri.

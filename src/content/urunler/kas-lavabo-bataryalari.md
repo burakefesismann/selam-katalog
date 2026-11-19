@@ -1,7 +1,7 @@
 ---
 ad: KAS Lavabo Bataryaları
 kart_tipi: marka_tur
-kategori: bataryalar
+kategori: lavabo-bataryalari
 markalar:
   - kas
 seriler:

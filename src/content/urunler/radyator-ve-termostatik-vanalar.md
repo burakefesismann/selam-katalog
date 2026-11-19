@@ -1,7 +1,7 @@
 ---
 ad: Radyatör & Termostatik Vanalar
 kart_tipi: grup
-kategori: vanalar
+kategori: radyator-ve-termostatik-vanalar
 markalar:
   - eca
   - kas

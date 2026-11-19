@@ -1,7 +1,7 @@
 ---
 ad: Su Küresel Vanaları
 kart_tipi: grup
-kategori: vanalar
+kategori: kuresel-vanalar
 markalar:
   - kas
   - eca

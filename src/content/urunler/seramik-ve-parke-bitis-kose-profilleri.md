@@ -1,7 +1,7 @@
 ---
 ad: Seramik & Parke Bitiş / Köşe Profilleri
 kart_tipi: grup
-kategori: uygulama-malzemeleri
+kategori: seramik-profilleri
 markalar: []
 kisa_aciklama: Seramik kenar ve köşeleri için alüminyum, paslanmaz (inox) ve plastik profiller; merdiven burunluğu, zemin bitiş, LED, küvet ve parke profilleri.
 one_cikanlar:

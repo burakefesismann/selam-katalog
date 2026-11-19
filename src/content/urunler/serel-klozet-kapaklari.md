@@ -1,7 +1,7 @@
 ---
 ad: Serel Klozet Kapakları
 kart_tipi: marka_tur
-kategori: vitrifiye
+kategori: klozet-kapaklari
 markalar:
   - serel
 seriler:

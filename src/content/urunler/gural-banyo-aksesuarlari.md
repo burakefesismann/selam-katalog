@@ -1,7 +1,7 @@
 ---
 ad: Güral Banyo Aksesuarları
 kart_tipi: marka_tur
-kategori: vitrifiye
+kategori: banyo-aksesuarlari
 markalar:
   - gural
 seriler:

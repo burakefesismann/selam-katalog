@@ -1,7 +1,7 @@
 ---
 ad: Kombi & Radyatör Aksesuarları
 kart_tipi: grup
-kategori: radyator-ve-havlupan
+kategori: kombi-aksesuarlari
 markalar:
   - firat
 kisa_aciklama: Fırat kombi bağlantı seti, kapalı genleşme deposu, kombi hermetik baca kiti 60/100, panel radyatör körtapası ve prüjörü.

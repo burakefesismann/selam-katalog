@@ -1,7 +1,7 @@
 ---
 ad: Su Flex Hortumları
 kart_tipi: grup
-kategori: flex-ve-baglanti
+kategori: flex-hortumlar
 markalar:
   - kas
 kisa_aciklama: KAS paslanmaz örgülü su flexleri ve batarya flexleri (20–100 cm); kırmızı emici ve şeffaf spiralli hortumlar.

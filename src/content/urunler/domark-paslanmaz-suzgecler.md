@@ -1,7 +1,7 @@
 ---
 ad: Dömark Paslanmaz Süzgeçler
 kart_tipi: marka_tur
-kategori: suzgec-ve-sifon
+kategori: yer-suzgecleri
 markalar:
   - domark
 kisa_aciklama: "Dömark paslanmaz yer süzgeçleri: 11x11 ve 15x15 cm, paslanmaz, antrasit ve mat siyah yüzey."

@@ -1,7 +1,7 @@
 ---
 ad: Fırça & Rulolar
 kart_tipi: grup
-kategori: boya-ve-siva-aletleri
+kategori: firca-ve-rulo
 markalar:
   - dekor
   - master

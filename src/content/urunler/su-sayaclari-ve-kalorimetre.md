@@ -1,7 +1,7 @@
 ---
 ad: Su Sayaçları & Kalorimetre
 kart_tipi: grup
-kategori: tesisat-armaturleri
+kategori: sayac-ve-olcu
 markalar:
   - kas
 kisa_aciklama: Su saatleri (3/4" kısa ve uzun, 1-1/2"), sayaç rakoru, ultrasonik kalorimetre ve sensör kovanlı rakorlu küresel vana.

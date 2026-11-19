@@ -1,7 +1,7 @@
 ---
 ad: Sika AnchorFix S1 Kimyasal Dübel
 kart_tipi: urun
-kategori: kopuk-ve-yapistirici
+kategori: mastik-ve-silikon
 markalar:
   - sika
 kisa_aciklama: Poliester esaslı, iki bileşenli kimyasal dübel; beton, dolu ve boşluklu duvar ve sert taşta ankraj. Nemli delikte de uygulanır. 300 ml kartuş.

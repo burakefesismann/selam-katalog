@@ -1,7 +1,7 @@
 ---
 ad: Manometre & Termometre
 kart_tipi: grup
-kategori: tesisat-armaturleri
+kategori: sayac-ve-olcu
 kisa_aciklama: Tesisat basıncını ve suyun sıcaklığını gösteren manometreler (63 ve 100 mm, 6–16 bar) ile düz termometre.
 one_cikanlar:
   - 63 mm ve 100 mm kadran

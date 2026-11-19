@@ -1,7 +1,7 @@
 ---
 ad: ECA Ankastre Batarya & Duş Sistemleri
 kart_tipi: marka_tur
-kategori: bataryalar
+kategori: ankastre-sistemler
 markalar:
   - eca
 seriler:

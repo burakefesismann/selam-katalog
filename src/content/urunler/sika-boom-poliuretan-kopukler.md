@@ -1,7 +1,7 @@
 ---
 ad: Sika Boom Poliüretan Köpükler
 kart_tipi: urun
-kategori: kopuk-ve-yapistirici
+kategori: mastik-ve-silikon
 markalar:
   - sika
 kisa_aciklama: Pipetli ve tabancalı poliüretan dolgu-montaj köpükleri; kapı-pencere kasası, boru geçişi ve boşluk doldurmada. Tabanca temizleyicisi.
