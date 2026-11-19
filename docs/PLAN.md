@@ -194,13 +194,15 @@ Kaynak: `kataloglar/` (fiyat içerir, gitignore) + `docs/KATALOG-INCELEME.md`. F
   Dekor · İstanbul Fırça · Tesay Bu · Işık · katalogsuz mevcut markaların gözden geçirilmesi · Mesa (katalog gelince).
   Her alt görev: mevcut kartları markanın serilerine böl/dönüştür (`kart_tipi: seri`, `modeller` kod tablosu), az sayıda yakın
   seri ekle, çok markalı kartlardan o markanın payını ayır, katalog görselleri. Taslak `docs/taslaklar/<marka>.md` → onay → içe aktar.
-  - [ ] F6.4a ECA (armatür + teknik ürünler) — taslak onaylı (docs/taslaklar/eca.md)
+  - [x] F6.4a ECA (armatür + teknik ürünler) — taslak onaylı (docs/taslaklar/eca.md)
     - [x] F6.4a1 Batarya Serileri grubu + 11 seri kartı (Tiera, Life, Luna, Nita, Dalia, Dream, Lia, Niobe, Spylos + Icon, Royal — kullanıcı 2026-11-19)
     - [x] F6.4a2 Diğer armatür kartları (mutfak, termostatik, fotoselli, küvet, el duşu, duş, ara musluk, musluk, sifon)
-    - [ ] F6.4a3 Teknik: ortak kartlardan 13 ECA kartı
+    - [x] F6.4a3 Teknik: 13 ECA kartı (flatorler kartı ECA'ya dönüştü). Ortak kartlardan eca çıkarma + ECA görsellerinin
+      değişmesi F6.4d'ye kaldı (KAS katalog görselleriyle birlikte; yanlış marka görseli kalmasın)
   - [ ] F6.4b Serel (seramik sağlık, gömme rezervuar, banyo aksesuarları)
   - [ ] F6.4c Aryak + Borel (yeni markalar)
-  - [ ] F6.4d KAS
+  - [ ] F6.4d KAS — ayrıca ECA+KAS ortak kartlarından eca çıkar, gövdedeki ECA satırları ve eca.com.tr görselleri temizlenir
+    (radyatör/termostatik, pex, rakor, prüjör, emniyet, yerden ısıtma ×2, su küresel, şiber, çekvalf, filtre, basınç düşürücü, ara kesme)
   - [ ] F6.4e Fırat
   - [ ] F6.4f Poelsan
   - [ ] F6.4g Sumak

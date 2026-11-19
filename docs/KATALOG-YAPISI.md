@@ -4,7 +4,7 @@ Beyin takımının hazırladığı, kullanıcının onayladığı kart listesi (
 Bu dosya kategori ağacının ve kart adlarının kaynağıdır. Değişiklik yalnızca kullanıcı/beyin takımı onayıyla yapılır.
 
 Kart tipleri (K11): `grup` = ürün ailesi tek kart · `marka_tur` = marka + tür, örneklemli · `urun` = tek ürün, teknik detaylı.
-Toplam: 227 kart.
+Toplam: 239 kart.
 
 **Güncelleme 2026-11-16 (Paket 001 ile, beyin takımı kararı):** PE100 ek parçaları → Fırat; PEX kartı adı ve markaları;
 ProContact Sıva & Şap → Mantolama; resmi yazımlar DuoContact, DuoFix, StarTherm, CreativTop. Toplam kart sayısı değişmedi (213).
@@ -16,6 +16,7 @@ Alt kategori slug'ları: `su-yalitimi-kimyasal`, `su-yalitimi-membran`, `mantola
 Öne çıkanlar: ad sadeleştirmeleri (parantez içi açıklamalar), Momento Max ve Marshall Fit → İç Cephe, mantolama taşyünleri ve
 boya mantolama kartları → Yapı Kimyasalları › Mantolama (Boya altında Mantolama ve Ekonomik Seri açılmadı), Keski & Murç ve
 KBS Çiroz → El Aletleri (Tesisatçı Aletleri ikiye ayrıldı → 214 kart), "Kale" el aletleri → KL Pro, Onduline Şıngıl → UKS Şıngıl.
+
 
 
 
@@ -59,12 +60,15 @@ KBS Çiroz → El Aletleri (Tesisatçı Aletleri ikiye ayrıldı → 214 kart), 
 ### Yağmur Oluğu
 - Fırat PVC Yağmur Oluğu Sistemi — `grup` — Fırat
 
-## 2. Vanalar (13 kart)
+## 2. Vanalar (23 kart)
 
 ### Küresel Vanalar
+- ECA Su Küresel Vanaları — `seri` — ECA
 - Su Küresel Vanaları — `grup` — KAS · ECA · Türkoğlu
 
 ### Radyatör & Termostatik Vanalar
+- ECA Radyatör Vanaları & Rakorları — `seri` — ECA
+- ECA Termostatik Radyatör Vanaları — `seri` — ECA
 - Radyatör & Termostatik Vanalar — `grup` — ECA · KAS
 
 ### Sayaç & Ölçü
@@ -72,6 +76,8 @@ KBS Çiroz → El Aletleri (Tesisatçı Aletleri ikiye ayrıldı → 214 kart), 
 - Su Sayaçları & Kalorimetre — `grup` — KAS
 
 ### Şiber & Gaz Vanaları
+- ECA Doğalgaz Küresel Vanaları — `seri` — ECA
+- ECA Şiber, Stop & Kosva Vanaları — `seri` — ECA
 - Gaz Vanaları — `grup` — KAS
 - Şiber Vanalar — `grup` — KAS · ECA
 
@@ -79,9 +85,14 @@ KBS Çiroz → El Aletleri (Tesisatçı Aletleri ikiye ayrıldı → 214 kart), 
 - Ara Kesme Valfleri — `grup` — ECA · KAS · Visam
 - Basınç Düşürücüler — `grup` — ECA · KAS
 - Çekvalfler — `grup` — KAS · ECA
+- ECA Çekvalfler — `seri` — ECA
+- ECA Emniyet Valfleri — `seri` — ECA
+- ECA Filtreler — `seri` — ECA
+- ECA Flatörler — `seri` — ECA
+- ECA Otomatik Hava Atıcılar — `seri` — ECA
+- ECA Su Basınç Düşürücüleri — `seri` — ECA
 - Emniyet Ventilleri — `grup` — KAS · ECA
 - Filtreler (pislik tutucu, Y filtre) — `grup` — KAS · ECA
-- Flatörler — `grup` — ECA
 - Prüjörler (otomatik hava atıcı) — `grup` — ECA · KAS
 
 ## 3. Bağlantı & Flex (4 kart)
@@ -94,7 +105,7 @@ KBS Çiroz → El Aletleri (Tesisatçı Aletleri ikiye ayrıldı → 214 kart), 
 - Conta, Teflon & Sızdırmazlık — `grup` — çeşitli
 - Rakor & Uzatmalar — `grup` — ECA · KAS
 
-## 4. Isıtma (6 kart)
+## 4. Isıtma (8 kart)
 
 ### Kombi Aksesuarları
 - Kombi & Radyatör Aksesuarları — `grup` — Fırat
@@ -104,6 +115,8 @@ KBS Çiroz → El Aletleri (Tesisatçı Aletleri ikiye ayrıldı → 214 kart), 
 - ECA Panel Radyatörler — `grup` — ECA
 
 ### Yerden Isıtma
+- ECA Yerden Isıtma Kollektörleri — `seri` — ECA
+- ECA Yerden Isıtma Kontrol & Aksesuarları — `seri` — ECA
 - Fırat PE-RT Yerden Isıtma Boruları — `grup` — Fırat
 - Yerden Isıtma Aksesuarları — `grup` — Fırat · ECA · KAS
 - Yerden Isıtma Kollektörleri — `grup` — Fırat · ECA · KAS

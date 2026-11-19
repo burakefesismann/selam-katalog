@@ -3,7 +3,7 @@
 > Her oturumun başında oku, sonunda güncelle. Kısa tut.
 
 ## Şu an
-- Aktif görev: — (sıradaki: F6.4a3 ECA teknik — ortak kartlardan 13 ECA kartı, taslak §C)
+- Aktif görev: — (sıradaki: F6.4b Serel — seramik sağlık, gömme rezervuar, banyo aksesuarları, iç takım)
 - Site: https://burakefesismann.github.io/selam-katalog/
 - Faz: 3 — Gerçek içerik ve görseller
 
@@ -173,7 +173,7 @@
     Marshall sentetik tiner (sayfa yok), yerden ısıtma aksesuarları, Filli Dalmaçyalı dübel (PDF), Sika 10, Güral 3, Onduline 5.
   - Kaynaksız 70 kart (çoğu "çeşitli" hırdavat/tesisat kalemi) → büyük olasılıkla mağaza fotoğrafı; sona bırak, kullanıcıya listele.
 ## Sıradaki
-- **F6.4a3 — ECA teknik** (taslak §C): 13 kart, ortak kartlardan eca çıkar. Ardından F6.4b Serel…
+- **F6.4b — Serel** (3 katalog; iç takım kartı Visam/Serel ayrımı, bkz. ECA notları). Ardından F6.4b Serel…
 - **F6.4 — Marka marka içerik** (K16/K17): ilk ECA. `.katalog-calisma/eca/` (OZET.md + metin) → yakın serilerin taslak listesi
   (kod tablosuyla) → kullanıcı onayı → içe aktar → katalog görselleri. Sonra Serel, Aryak, Borel, KAS, Fırat…
 - Sonra F4.5 — Çözüm sayfaları (K13): `cozumler` koleksiyonu + panel + ana sayfa alanı; ilk sayfa Mantolama (içerik beyin
@@ -366,6 +366,9 @@
 
 - F6.4a2: 4 eski kart (eviye, ankastre→Termostatik, duş, ara musluk) adresleri korunarak seri tipine çevrildi; "Mağazamızdaki modeller" listeleri docs/taslaklar/eca-eski-magaza-listeleri.md'de (Aryak satırları F6.4c; Icon ve Royal kullanıcı isteğiyle eklendi).
 
+- F6.4a3: teknik tablolar "Kod" başlıklı; birleşik hücreler (dikey ortalı T, çıkış sayısı) komşu satırlara dağıtıldı. Ortak kartlar
+  (ECA+KAS) henüz eca'lı: ECA marka sayfasında hem yeni ECA kartı hem ortak kart görünür — F6.4d'de temizlenecek.
+
 ## Logo notları (F3.10)
 - Logolar `src/assets/markalar/<slug>.svg|webp`, marka yaml'ında `logo` + `logo_kaynak_url`. SVG olduğu gibi kopyalanır →
   indirmeden önce `<script|onload|javascript:|foreignObject` kontrolü yap. Kontrol aracı (kontakt.cjs) SVG'yi atlıyor → sharp ile
@@ -460,6 +463,7 @@
 | 2026-11-19 | F6.4a1 | ECA: Armatür › Batarya Serileri grubu + 9 seri kartı (Life, Tiera, Luna, Nita, Dalia, Dream, Lia, Niobe, Spylos; 238 model satırı, kodlu, renk kodları), katalog görselleri (24, 4× büyütülmüş); eski lavabo/banyo kartları yönlendirildi; katalog:cikar fiyat sütunu konumdan atılıyor | F6.4a1 |
 | 2026-11-19 | F6.4a2 | ECA diğer armatür: 9 kart (özel mutfak, termostatik, fotoselli+zaman ayarlı, küvet, el duşu, duş kolonu/tepe duşu, ara musluk, musluk+klozet bataryası, sifon+uzatma; 180 model satırı), 19 katalog görseli | F6.4a2 |
 | 2026-11-19 | F6.4a1 ek | Icon ve Royal seri kartları eklendi (kullanıcı: mağazada var); 40 model satırı, 6 katalog görseli | F6.4a1 |
+| 2026-11-19 | F6.4a3 | ECA teknik: 13 kart (termostatik/radyatör vanaları, hava atıcı, emniyet, yerden ısıtma kollektör + kontrol, doğalgaz/su küresel, şiber-stop-kosva, çekvalf, flatör, filtre, basınç düşürücü; 337 model satırı), 27 katalog görseli | F6.4a3 |
 | 2026-11-18 | Ondulikit (kullanıcı fotoğrafı) + Güral aksesuar gizlendi | yayındaki tüm ürünler görselli | gorsel |
 | 2026-11-18 | F3.9 | 7 ana kategoriye ürün görseli (Orka, Yurtbay, Filli Nucleus, İzeltaş pense, Baymak hidrofor, Fırat vanalar, İzocam); DURUM fotoğraf listesi temizlendi | F3.9 |
 | 2026-11-18 | F3.10a | 15 marka logosu (ECA, Serel, Güral, Orka, Baymak, Filli, Kale Kilit, Sika, Yurtbay, Güral Seramik, Marshall, Bosch, Fawori, İzocam, Onduline); logosuz 35 | F3.10a |
