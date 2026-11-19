@@ -23,3 +23,5 @@ desktop.ini
 
 # Tedarikçi katalog ve fiyat listeleri (fiyat içerir — depoya GİRMEZ)
 kataloglar/
+# Kataloglardan çıkarılan çalışma malzemesi (F6.3) — depoya GİRMEZ
+.katalog-calisma/

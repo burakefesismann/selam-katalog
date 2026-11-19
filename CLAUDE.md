@@ -108,6 +108,11 @@ Kullanıcı `/devam` yazarsa bu adımlar + sıradaki görev yapılır. Diğer ko
   `%LOCALAPPDATA%\selam-araclar\realesrgan\` (models alt klasörüyle) içine koy. Intel ekran kartında `-t 128` şart (komut veriyor).
 - `npm run katalog:pdf` — (build sonrası) `/katalog-yazdir/` sayfasını A4 PDF'e basar → `dist/selam-insaat-urun-katalogu.pdf`.
   Yerel sunucu + başsız Chrome/Edge (`CHROME_PATH`). Actions her yayında çalıştırır. Tarayıcıyı EŞZAMANSIZ çağır (sync → kilitlenir).
+- `npm run katalog:cikar [-- marka ...]` — (F6.3) `kataloglar/*.pdf` → `.katalog-calisma/<marka>/<katalog>/` (ikisi de gitignore):
+  `metin/s-NNN.txt` (fiyat/TL/KDV/iskonto satırları ve fiyat biçimli sayılar atılmış), `gorseller/` (sadece PDF'e GÖMÜLÜ
+  görseller, ≥300 px; sayfa görüntüsü değil), `OZET.md` (sayfa başlıkları + görsel listesi). Yeni katalog gelince
+  `scripts/katalog-cikar.py > KATALOGLAR`'a desen ekle. Araç depoda yok: PyMuPDF →
+  `pip install --target "%LOCALAPPDATA%\selam-araclar\pymupdf" pymupdf` (Python 3.10+).
 - `node scripts/katalog-yapisi.ts` — docs/KATALOG-YAPISI.md kart listesini siteden yeniden üretir (paket kararları işlendikten sonra).
 - `npm run gorsel:rapor` — görselsiz / küçük / kaynaksız / kayıp görselli ürünler, logosuz markalar, görselsiz ana kategoriler.
 

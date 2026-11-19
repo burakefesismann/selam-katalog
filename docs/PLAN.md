@@ -187,8 +187,8 @@ Kaynak: `kataloglar/` (fiyat içerir, gitignore) + `docs/KATALOG-INCELEME.md`. F
     `one_cikan_gorsel`; ICERIK-SEMASI + config.yml.
   - [x] F6.2c Sayfalar: üst menü (Markalar varsayılan + Ürün Grupları), ana sayfa marka vitrini, marka sayfası (ürün grubuna göre
     bölümler), ürün grubu sayfası (marka marka), seri sayfasında model tablosu.
-- [ ] **F6.3 Katalog çıkarma aracı** — PDF'ten sayfa metni (fiyat sütunları atılarak) + gömülü görseller, marka bazında çalışma
-  klasörüne (gitignore). Taslak kart listesi üretimi.
+- [x] **F6.3 Katalog çıkarma aracı** — PDF'ten sayfa metni (fiyat sütunları atılarak) + gömülü görseller, marka bazında çalışma
+  klasörüne (gitignore). Taslak kart listesi üretimi. → `npm run katalog:cikar`; taslak listeler F6.4'te marka marka bu çıktıdan.
 - [ ] **F6.4 Marka marka içerik** (her marka bir alt görev; taslak → kullanıcı onayı → içe aktar → görseller): Elginkan (ECA,
   Serel, Aryak, Borel) · KAS · Fırat · Poelsan · Sumak · Orka · Samir · Sika · Filli + Dalmaçyalı · Fawori · İzocam · İzeltaş ·
   Dekor · İstanbul Fırça · Tesay Bu · Işık · katalogsuz mevcut markaların gözden geçirilmesi · Mesa (katalog gelince).

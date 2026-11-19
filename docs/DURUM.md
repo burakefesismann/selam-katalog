@@ -3,7 +3,7 @@
 > Her oturumun başında oku, sonunda güncelle. Kısa tut.
 
 ## Şu an
-- Aktif görev: — (sıradaki: F6.3 katalog çıkarma aracı — PDF metni fiyatsız + gömülü görseller, marka bazında)
+- Aktif görev: — (sıradaki: F6.4 marka marka içerik — ilk marka Elginkan grubu: ECA)
 - Site: https://burakefesismann.github.io/selam-katalog/
 - Faz: 3 — Gerçek içerik ve görseller
 
@@ -173,7 +173,9 @@
     Marshall sentetik tiner (sayfa yok), yerden ısıtma aksesuarları, Filli Dalmaçyalı dübel (PDF), Sika 10, Güral 3, Onduline 5.
   - Kaynaksız 70 kart (çoğu "çeşitli" hırdavat/tesisat kalemi) → büyük olasılıkla mağaza fotoğrafı; sona bırak, kullanıcıya listele.
 ## Sıradaki
-- F4.5 — Çözüm sayfaları (K13): `cozumler` koleksiyonu + panel + ana sayfa alanı; ilk sayfa Mantolama (içerik beyin
+- **F6.4 — Marka marka içerik** (K16/K17): ilk ECA. `.katalog-calisma/eca/` (OZET.md + metin) → yakın serilerin taslak listesi
+  (kod tablosuyla) → kullanıcı onayı → içe aktar → katalog görselleri. Sonra Serel, Aryak, Borel, KAS, Fırat…
+- Sonra F4.5 — Çözüm sayfaları (K13): `cozumler` koleksiyonu + panel + ana sayfa alanı; ilk sayfa Mantolama (içerik beyin
   takımından). Beklemede: F4.1 (sihirbaz kuralları), F4.4 (WhatsApp, kullanıcı atladı). F3.x paketler araya girer.
 
 ## Kullanıcıdan beklenenler
@@ -341,6 +343,15 @@
   PE100 200-125 redüksiyon, sifon adaptör contası). KATALOG-YAPISI.md `scripts/katalog-yapisi.ts` ile siteden yeniden üretildi
   (eski el notları "· çeşitli", "(doğalgaz kelepçeleri)" düştü — sitede tutulmuyor). Görseller: ~24/214 ürün görselli.
 
+## Katalog çıkarma notları (F6.3)
+- `npm run katalog:cikar` 23 kataloğu işledi (eski sürümler atlandı: Ar Yak 2026-1, ECA Armatür 2026-1, Teknik Ürünler 2026-1,
+  Sumak 2025-1). Fiyat kontrolü: metinlerde fiyat/TL/KDV kelimesi 0; kalan ondalıklı sayılar teknik değer (L, kW, kg, bar, mm).
+- Araç: PyMuPDF yerelde `%LOCALAPPDATA%\selam-araclar\pymupdf` (K14 Real-ESRGAN gibi depoda yok). npm `mupdf` paketi
+  AGPL olduğu ve çok yeni sürüm olduğu için eklenmedi.
+- **Tesay Bu** kataloğu dilimlenmiş/taranmış: metin yok, görseller parça parça → F6.4'te liste sayfa görüntüsünden elle,
+  görseller resmi siteden ya da kullanıcıdan. **Serel banyo aksesuarları** kataloğunda gömülü görsel 1 (çizim vektör).
+- Bozuk font eşlemesi (Sumak: "f ඈyat") görülebilir → filtre `f.yat` desenini de atıyor.
+
 ## Logo notları (F3.10)
 - Logolar `src/assets/markalar/<slug>.svg|webp`, marka yaml'ında `logo` + `logo_kaynak_url`. SVG olduğu gibi kopyalanır →
   indirmeden önce `<script|onload|javascript:|foreignObject` kontrolü yap. Kontrol aracı (kontakt.cjs) SVG'yi atlıyor → sharp ile
@@ -431,6 +442,7 @@
 | 2026-11-19 | F6.2a | 17 ana ürün grubu (Banyo dağıtıldı, Vanalar/Bağlantı ayrıldı, Fırça-Rulo yeni); 46 kart taşındı; 9 eski kategori adresi yönlendirildi | F6.2a |
 | 2026-11-19 | F6.2b | Şema: `modeller` (kod/ad/ölçü/açıklama/görsel), kart_tipi `seri`, marka `one_cikan_gorsel`; panel (Sveltia şemasına göre geçerli); 52 markaya K17 sırası | F6.2b |
 | 2026-11-19 | F6.2c | Menü: Markalar → Ürün Grupları (/urunler); ana sayfada marka vitrini üstte; Ürün Grupları ve marka sayfasında grup kısayolları; marka büyük görseli; seri sayfasında model tablosu (mobilde ölçü ad altında) | F6.2c |
+| 2026-11-19 | F6.3 | Katalog çıkarma aracı `npm run katalog:cikar` (PyMuPDF yerel): 23 katalog → `.katalog-calisma/` fiyatsız metin + gömülü görseller + OZET; fiyat kontrolü temiz | F6.3 |
 | 2026-11-18 | Ondulikit (kullanıcı fotoğrafı) + Güral aksesuar gizlendi | yayındaki tüm ürünler görselli | gorsel |
 | 2026-11-18 | F3.9 | 7 ana kategoriye ürün görseli (Orka, Yurtbay, Filli Nucleus, İzeltaş pense, Baymak hidrofor, Fırat vanalar, İzocam); DURUM fotoğraf listesi temizlendi | F3.9 |
 | 2026-11-18 | F3.10a | 15 marka logosu (ECA, Serel, Güral, Orka, Baymak, Filli, Kale Kilit, Sika, Yurtbay, Güral Seramik, Marshall, Bosch, Fawori, İzocam, Onduline); logosuz 35 | F3.10a |

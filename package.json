@@ -11,7 +11,8 @@
     "gorsel:hazirla": "node scripts/gorsel-hazirla.ts",
     "gorsel:rapor": "node scripts/gorsel-rapor.ts",
     "icerik:aktar": "node scripts/icerik-aktar.ts",
-    "katalog:pdf": "node scripts/katalog-pdf.ts"
+    "katalog:pdf": "node scripts/katalog-pdf.ts",
+    "katalog:cikar": "python -I scripts/katalog-cikar.py"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.5",
