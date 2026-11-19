@@ -117,3 +117,9 @@ girmez**). İnceleme: `docs/KATALOG-INCELEME.md`. Kararlar:
    gözden geçirilir. Mesa ve bir katalog daha sonra gelecek.
 6. **Görseller:** zayıf / geçici / başka model görselleri üretici kataloğundan (gömülü görsel olarak, sayfa görüntüsü değil —
    fiyat tablosu girmesin) değiştirilir; Claude değiştirmek istediklerini listeler.
+
+## K17 — Yeni yapı tasarımı onaylandı (2026-11-19, kullanıcı teyitli)
+docs/YENI-YAPI.md: 17 ana ürün grubu (Banyo dağıtıldı: Armatür, Seramik Sağlık Gereçleri, Gömme Rezervuar & İç Takımlar,
+Banyo Mobilyası & Duşakabin, Banyo Aksesuarları & Süzgeçler; yeni "Fırça, Rulo & Boya-Sıva Aletleri"), seri kartı + `modeller`
+(kod satırları), bir kart = bir marka, iki menü (Markalar varsayılan). PDF: her marka **sol sayfada açılımla** başlar, bölüm çift
+sayfaya tamamlanır. **Marka sırası: Fırat, ECA, KAS, Filli Boya, Baumit, Sika**, gerisi ürün alanına göre (YENI-YAPI §6).

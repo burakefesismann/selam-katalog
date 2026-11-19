@@ -1,6 +1,6 @@
-# Yeni Yapı Tasarımı — Marka Ağırlıklı Katalog (F6.1, taslak)
+# Yeni Yapı Tasarımı — Marka Ağırlıklı Katalog (F6.1)
 
-> Durum: **TASLAK — kullanıcı onayı bekliyor.** Kararlar: K16 (docs/KARARLAR.md). Kaynak: docs/KATALOG-INCELEME.md.
+> Durum: **ONAYLANDI (2026-11-19, kullanıcı).** Kararlar: K16 (docs/KARARLAR.md). Kaynak: docs/KATALOG-INCELEME.md.
 > Sitede ve PDF'te **fiyat yok**, "sipariş üzerine" ayrımı yok.
 
 ## 1. İlkeler
@@ -84,7 +84,10 @@ Kalın = değişen yerler. Parantezde bugünkü yer.
 - Marka bölümü **çift sayıda sayfaya** tamamlanır (gerekirse son sayfaya ambiyans görseli/not alanı) → bir sonraki marka yine
   açılımla başlar, karşılıklı sayfalar hep aynı markaya ait olur.
 - Her sayfada üst şerit: marka logosu + grup adı; kenarda marka renginde sekme (profesyonel kataloglardaki gibi).
-- Marka sırası: Fırat, Elginkan grubu (ECA, Serel, Aryak, Borel), KAS, Baumit, Sika… (sıra panelden `sira` ile değişir).
+- **Marka sırası (kullanıcı onaylı)**: Fırat · ECA (ardından Elginkan kardeşleri Serel, Aryak, Borel) · KAS · Filli Boya (+Dalmaçyalı) ·
+  Baumit · Sika · sonra ürün alanına göre: Fawori, Marshall · İzocam, Onduline, Weber, MBT, BTM, UKS, Çukurova · Poelsan ·
+  Sumak, Baymak, Teknopomp · Orka, Samir, Stina · Güral, Güral Seramik, Yurtbay · Visam, Mesa, Dömark · Tesay Bu, Işık ·
+  İzeltaş, Dekor, İstanbul Fırça, Bosch, Knipex, KL Pro, Wonder · Kale Kilit, Yuma · diğerleri. (Panelde `sira` ile değişir.)
 - Markasız ürünler sonda "Genel Ürünler" bölümünde (ürün grubuna göre).
 
 ## 7. Uygulama sırası
@@ -95,8 +98,7 @@ Kalın = değişen yerler. Parantezde bugünkü yer.
 3. F6.4 Marka marka: katalogdan taslak seri listesi → **kullanıcı onayı** → içe aktar → görseller (zayıfları değiştir).
 4. F6.6 PDF yeni düzen.
 
-## 8. Onay bekleyen sorular
+## 8. Onay (2026-11-19)
 
-1. Ürün Grupları ağacı (§3) uygun mu? Eklemek / birleştirmek istediğiniz grup var mı?
-2. PDF'te her marka **sol sayfada açılımla** başlasın (§6) mı, yoksa sağ sayfada tek sayfalık kapakla mı?
-3. Marka sırası (PDF ve Markalar sayfası) için tercihiniz? (Öneri: Fırat, Elginkan grubu, KAS, Baumit, Sika, Filli, …)
+Kullanıcı: ürün grupları ağacı (§3) ve PDF düzeni (§6, her marka sol sayfada açılımla, çift sayfaya tamamlanır) onaylandı.
+Marka sırası: "başta Fırat, ECA, KAS, Filli, Baumit, Sika; gerisi sende" → §6'daki sıra.

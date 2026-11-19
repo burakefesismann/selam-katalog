@@ -175,7 +175,7 @@ Bitince: PLAN'da `[x]` → DURUM.md güncelle → commit + push → kullanıcıy
 
 Kaynak: `kataloglar/` (fiyat içerir, gitignore) + `docs/KATALOG-INCELEME.md`. Fiyat hiçbir yerde yok. Her adım marka marka, onaylı ilerler.
 
-- [ ] **F6.1 Yeni yapı tasarımı** — `docs/YENI-YAPI.md`: içerik modeli (marka → ürün grubu → seri; seri içinde model satırları +
+- [x] **F6.1 Yeni yapı tasarımı** — `docs/YENI-YAPI.md`: içerik modeli (marka → ürün grubu → seri; seri içinde model satırları +
   ürün kodları), iki menü (Markalar varsayılan, Ürün Grupları), marka sayfası düzeni, ürün grupları
   ağacı (Banyo'nun bölünmesi vb.), mevcut 213 kartın yeni yere eşlemesi, PDF düzeni (her marka sağ sayfada başlar, çift sayfa,
   marka açılış açılımı). → kullanıcı onayı.
