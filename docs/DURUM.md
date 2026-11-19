@@ -3,7 +3,7 @@
 > Her oturumun başında oku, sonunda güncelle. Kısa tut.
 
 ## Şu an
-- Aktif görev: — (sıradaki: F6.1 yeni yapı tasarımı; K16 kararları alındı, 3. madde (stok/sipariş) onay bekliyor)
+- Aktif görev: F6.1 Yeni yapı tasarımı — taslak yazıldı (docs/YENI-YAPI.md), §8 soruları kullanıcı onayı bekliyor
 - Site: https://burakefesismann.github.io/selam-katalog/
 - Faz: 3 — Gerçek içerik ve görseller
 

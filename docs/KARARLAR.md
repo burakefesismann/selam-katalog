@@ -110,8 +110,8 @@ girmez**). İnceleme: `docs/KATALOG-INCELEME.md`. Kararlar:
    ör. Banyo tek başlık değil: armatür, seramik sağlık gereci, banyo aksesuarı, gömme rezervuar, banyo mobilyası ayrı).
 2. **Seri/aile kartı** (her ürün ayrı kart değil). Seri kartında modeller alt satır olarak; **ürün kodları gösterilebilir.**
    Öncelik mağazada olan ürünler.
-3. **Kapsam (öneri — onay bekliyor):** mağazada olanlar "Stokta" seri kartı (görselli, detaylı); katalogdaki diğer seriler
-   "Sipariş üzerine temin edilir" olarak marka sayfasında kısa liste/küçük kartla. Alan: `temin: stok | siparis`.
+3. **Kapsam (2026-11-19 kullanıcı):** "Sipariş üzerine" ayrımı/yazısı YOK, `temin` alanı yok. Kataloglardan **sadece bizim ürün
+   gruplarımıza yakın, az sayıda** seri normal ürün olarak eklenir (tüm katalog değil). Öncelik mağazada olanlar.
 4. **Kart listesini Claude kataloglardan çıkarır**, marka marka taslak → kullanıcı onayı.
 5. **Yeni markalar eklenir:** Aryak, Borel, İstanbul Fırça, Tesay Bu, Işık. Mevcut markalar da kataloglara göre yeniden
    gözden geçirilir. Mesa ve bir katalog daha sonra gelecek.
