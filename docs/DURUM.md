@@ -364,7 +364,7 @@
 - Eski `eca-lavabo-bataryalari`, `eca-banyo-bataryalari` silindi → /kategoriler/batarya-serileri'ne yönlenir; ilgili ürün bağlantıları eca-tiera-serisi oldu.
 - `rezervuar-ic-takimlari-ve-klozet-kapaklari`: ECA çıktı (kullanıcı: iç takım Serel/Elginkan markası olabilir). Kartın görseli eca.com.tr'den (Serel iç takım) → F6.4b'de Serel kartına taşınacak, Visam kartına Visam görseli.
 
-- F6.4a2: 4 eski kart (eviye, ankastre→Termostatik, duş, ara musluk) adresleri korunarak seri tipine çevrildi; "Mağazamızdaki modeller" listeleri docs/taslaklar/eca-eski-magaza-listeleri.md'de (Aryak satırları F6.4c, Icon/Royal vb. mağazada var — kullanıcıya soruldu).
+- F6.4a2: 4 eski kart (eviye, ankastre→Termostatik, duş, ara musluk) adresleri korunarak seri tipine çevrildi; "Mağazamızdaki modeller" listeleri docs/taslaklar/eca-eski-magaza-listeleri.md'de (Aryak satırları F6.4c; Icon ve Royal kullanıcı isteğiyle eklendi).
 
 ## Logo notları (F3.10)
 - Logolar `src/assets/markalar/<slug>.svg|webp`, marka yaml'ında `logo` + `logo_kaynak_url`. SVG olduğu gibi kopyalanır →
@@ -459,6 +459,7 @@
 | 2026-11-19 | F6.3 | Katalog çıkarma aracı `npm run katalog:cikar` (PyMuPDF yerel): 23 katalog → `.katalog-calisma/` fiyatsız metin + gömülü görseller + OZET; fiyat kontrolü temiz | F6.3 |
 | 2026-11-19 | F6.4a1 | ECA: Armatür › Batarya Serileri grubu + 9 seri kartı (Life, Tiera, Luna, Nita, Dalia, Dream, Lia, Niobe, Spylos; 238 model satırı, kodlu, renk kodları), katalog görselleri (24, 4× büyütülmüş); eski lavabo/banyo kartları yönlendirildi; katalog:cikar fiyat sütunu konumdan atılıyor | F6.4a1 |
 | 2026-11-19 | F6.4a2 | ECA diğer armatür: 9 kart (özel mutfak, termostatik, fotoselli+zaman ayarlı, küvet, el duşu, duş kolonu/tepe duşu, ara musluk, musluk+klozet bataryası, sifon+uzatma; 180 model satırı), 19 katalog görseli | F6.4a2 |
+| 2026-11-19 | F6.4a1 ek | Icon ve Royal seri kartları eklendi (kullanıcı: mağazada var); 40 model satırı, 6 katalog görseli | F6.4a1 |
 | 2026-11-18 | Ondulikit (kullanıcı fotoğrafı) + Güral aksesuar gizlendi | yayındaki tüm ürünler görselli | gorsel |
 | 2026-11-18 | F3.9 | 7 ana kategoriye ürün görseli (Orka, Yurtbay, Filli Nucleus, İzeltaş pense, Baymak hidrofor, Fırat vanalar, İzocam); DURUM fotoğraf listesi temizlendi | F3.9 |
 | 2026-11-18 | F3.10a | 15 marka logosu (ECA, Serel, Güral, Orka, Baymak, Filli, Kale Kilit, Sika, Yurtbay, Güral Seramik, Marshall, Bosch, Fawori, İzocam, Onduline); logosuz 35 | F3.10a |

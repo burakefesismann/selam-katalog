@@ -4,7 +4,7 @@ Beyin takımının hazırladığı, kullanıcının onayladığı kart listesi (
 Bu dosya kategori ağacının ve kart adlarının kaynağıdır. Değişiklik yalnızca kullanıcı/beyin takımı onayıyla yapılır.
 
 Kart tipleri (K11): `grup` = ürün ailesi tek kart · `marka_tur` = marka + tür, örneklemli · `urun` = tek ürün, teknik detaylı.
-Toplam: 225 kart.
+Toplam: 227 kart.
 
 **Güncelleme 2026-11-16 (Paket 001 ile, beyin takımı kararı):** PE100 ek parçaları → Fırat; PEX kartı adı ve markaları;
 ProContact Sıva & Şap → Mantolama; resmi yazımlar DuoContact, DuoFix, StarTherm, CreativTop. Toplam kart sayısı değişmedi (213).
@@ -16,6 +16,7 @@ Alt kategori slug'ları: `su-yalitimi-kimyasal`, `su-yalitimi-membran`, `mantola
 Öne çıkanlar: ad sadeleştirmeleri (parantez içi açıklamalar), Momento Max ve Marshall Fit → İç Cephe, mantolama taşyünleri ve
 boya mantolama kartları → Yapı Kimyasalları › Mantolama (Boya altında Mantolama ve Ekonomik Seri açılmadı), Keski & Murç ve
 KBS Çiroz → El Aletleri (Tesisatçı Aletleri ikiye ayrıldı → 214 kart), "Kale" el aletleri → KL Pro, Onduline Şıngıl → UKS Şıngıl.
+
 
 
 
@@ -107,7 +108,7 @@ KBS Çiroz → El Aletleri (Tesisatçı Aletleri ikiye ayrıldı → 214 kart), 
 - Yerden Isıtma Aksesuarları — `grup` — Fırat · ECA · KAS
 - Yerden Isıtma Kollektörleri — `grup` — Fırat · ECA · KAS
 
-## 5. Armatür (Batarya & Duş) (28 kart)
+## 5. Armatür (Batarya & Duş) (30 kart)
 
 ### Ankastre Sistemler
 - ECA Termostatik Bataryalar — `seri` — ECA
@@ -120,11 +121,13 @@ KBS Çiroz → El Aletleri (Tesisatçı Aletleri ikiye ayrıldı → 214 kart), 
 ### Batarya Serileri
 - ECA Dalia Serisi — `seri` — ECA
 - ECA Dream Serisi — `seri` — ECA
+- ECA Icon Serisi — `seri` — ECA
 - ECA Lia Serisi — `seri` — ECA
 - ECA Life Serisi — `seri` — ECA
 - ECA Luna Serisi — `seri` — ECA
 - ECA Niobe Serisi — `seri` — ECA
 - ECA Nita Serisi — `seri` — ECA
+- ECA Royal Serisi — `seri` — ECA
 - ECA Spylos Serisi — `seri` — ECA
 - ECA Tiera Serisi — `seri` — ECA
 
