@@ -4,7 +4,7 @@ Beyin takımının hazırladığı, kullanıcının onayladığı kart listesi (
 Bu dosya kategori ağacının ve kart adlarının kaynağıdır. Değişiklik yalnızca kullanıcı/beyin takımı onayıyla yapılır.
 
 Kart tipleri (K11): `grup` = ürün ailesi tek kart · `marka_tur` = marka + tür, örneklemli · `urun` = tek ürün, teknik detaylı.
-Toplam: 220 kart.
+Toplam: 225 kart.
 
 **Güncelleme 2026-11-16 (Paket 001 ile, beyin takımı kararı):** PE100 ek parçaları → Fırat; PEX kartı adı ve markaları;
 ProContact Sıva & Şap → Mantolama; resmi yazımlar DuoContact, DuoFix, StarTherm, CreativTop. Toplam kart sayısı değişmedi (213).
@@ -16,6 +16,7 @@ Alt kategori slug'ları: `su-yalitimi-kimyasal`, `su-yalitimi-membran`, `mantola
 Öne çıkanlar: ad sadeleştirmeleri (parantez içi açıklamalar), Momento Max ve Marshall Fit → İç Cephe, mantolama taşyünleri ve
 boya mantolama kartları → Yapı Kimyasalları › Mantolama (Boya altında Mantolama ve Ekonomik Seri açılmadı), Keski & Murç ve
 KBS Çiroz → El Aletleri (Tesisatçı Aletleri ikiye ayrıldı → 214 kart), "Kale" el aletleri → KL Pro, Onduline Şıngıl → UKS Şıngıl.
+
 
 
 
@@ -106,13 +107,14 @@ KBS Çiroz → El Aletleri (Tesisatçı Aletleri ikiye ayrıldı → 214 kart), 
 - Yerden Isıtma Aksesuarları — `grup` — Fırat · ECA · KAS
 - Yerden Isıtma Kollektörleri — `grup` — Fırat · ECA · KAS
 
-## 5. Armatür (Batarya & Duş) (23 kart)
+## 5. Armatür (Batarya & Duş) (28 kart)
 
 ### Ankastre Sistemler
-- ECA Ankastre Batarya & Duş Sistemleri — `marka_tur` — ECA
+- ECA Termostatik Bataryalar — `seri` — ECA
 
 ### Banyo Bataryaları
 - Diğer Marka Bataryalar — `marka_tur` — Foma
+- ECA Küvet Bataryaları — `seri` — ECA
 - KAS Banyo Bataryaları — `marka_tur` — KAS
 
 ### Batarya Serileri
@@ -128,24 +130,28 @@ KBS Çiroz → El Aletleri (Tesisatçı Aletleri ikiye ayrıldı → 214 kart), 
 
 ### Duş Setleri & Tepe Duşları
 - Duş Setleri (diğer markalar) — `marka_tur` — çeşitli
-- ECA Duş Setleri & Tepe Duşları — `marka_tur` — ECA
+- ECA Duş Kolonları, Tepe Duşları & Ankastre Duş Setleri — `seri` — ECA
+- ECA El Duşu Takımları — `seri` — ECA
 - KAS Duş Setleri — `marka_tur` — KAS
 - Mesa Duş Setleri — `marka_tur` — Mesa
 
 ### Eviye (Mutfak) Bataryaları
-- ECA Eviye (Mutfak) Bataryaları — `marka_tur` — ECA
+- ECA Özel Mutfak Bataryaları — `seri` — ECA
 - KAS Eviye (Mutfak) Bataryaları — `marka_tur` — KAS
 
 ### Lavabo Bataryaları
+- ECA Fotoselli Bataryalar & Zaman Ayarlı Musluklar — `seri` — ECA
 - KAS Lavabo Bataryaları — `marka_tur` — KAS
 
 ### Musluklar & Taharet
-- ECA Musluklar & Taharet Muslukları — `marka_tur` — ECA
+- ECA Ara Musluklar & Taharet Muslukları — `seri` — ECA
+- ECA Musluklar & Klozet Bataryası — `seri` — ECA
 - KAS Musluklar & Taharet Muslukları — `marka_tur` — KAS
 - Musluklar (diğer markalar) — `marka_tur` — Hazal
 
 ### Yedek Parça & Uzatma
 - Batarya Yedek Parça & Bağlantıları — `grup` — çeşitli
+- ECA Sifonlar & Uzatmalar — `seri` — ECA
 
 ## 6. Seramik Sağlık Gereçleri (7 kart)
 

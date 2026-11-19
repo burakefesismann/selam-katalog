@@ -1,19 +1,15 @@
 ---
-ad: ECA Ankastre Batarya & Duş Sistemleri
-kart_tipi: marka_tur
+ad: ECA Termostatik Bataryalar
+kart_tipi: seri
 kategori: ankastre-sistemler
 markalar:
   - eca
-seriler:
-  - Tiera
-  - Dalia
-  - Star
-  - Elegant
-kisa_aciklama: "Tesisatı duvara gömülü ankastre bataryalar ve tepe duşlu duş sistemleri: Tiera ve Dalia 2 ve 3 yollu setler, sıva altı ve sıva üstü gruplar."
+kisa_aciklama: Termostatik banyo bataryası, termostatik karışım vanası, 2 ve 3 yollu termostatik ankastre banyo/duş bataryaları ve termostatik teleskobik kolonlu duş sistemleri.
 one_cikanlar:
-  - Duvarda yalnızca kol ve çıkış görünür
-  - 2 ve 3 yollu setler
-  - Krom ve mat siyah
+  - 11 model, ürün kodlarıyla
+  - Suyu ayarlanan sıcaklıkta sabit tutar
+  - Ankastre ve duvardan modeller
+  - On-off butonlu ankastre seçenekler
 kullanim_alanlari:
   - ic-mekan
   - islak-hacim
@@ -35,23 +31,54 @@ kaynak_sayfalar:
 sira: 13
 gorseller:
   - gorsel: /src/assets/urunler/eca-ankastre-batarya-ve-dus-sistemleri-1.webp
-    alt_metin: E.C.A. Tiera krom ankastre lavabo bataryası
-    kaynak_url: https://eca.com.tr/urun/tiera-ankastre-lavabo-bataryasi-siva-ustu-grubu-tek-rozet
+    alt_metin: E.C.A. termostatik ankastre duş bataryası, yuvarlak rozet
+    kaynak_url: https://www.eca.com.tr
+  - gorsel: /src/assets/urunler/eca-ankastre-batarya-ve-dus-sistemleri-2.webp
+    alt_metin: E.C.A. termostatik ankastre banyo bataryası, kare rozet
+    kaynak_url: https://www.eca.com.tr
+  - gorsel: /src/assets/urunler/eca-ankastre-batarya-ve-dus-sistemleri-3.webp
+    alt_metin: E.C.A. termostatik karışım vanası
+    kaynak_url: https://www.eca.com.tr
+modeller:
+  - kod: "102102340"
+    ad: Termostatik Banyo Bataryası
+  - kod: "402163002"
+    ad: Termostatik Karışım Vanası
+  - kod: 102167215-YDE
+    ad: Termostatik Ankastre Banyo/Duş Bataryası Sıva Üstü Grubu - 2 Yollu
+  - kod: 102167215-KDE
+    ad: Termostatik Ankastre Banyo/Duş Bataryası Sıva Üstü Grubu - 2 Yollu
+    aciklama: Krom kaplamalı ürünler için 102166204 kodlu, mat siyah kaplamalı ürünler için 102166204C1 kodlu sıva altı grubu ayrıca alınmalıdır — Krom · Mat siyah 102167215C1-KDE
+  - kod: 102167216-KDE
+    ad: Termostatik Ankastre Banyo/Duş Bataryası Sıva Üstü Grubu - 2 Yollu
+  - kod: "102166204"
+    ad: Termostatik Ankastre Banyo/Duş Bataryası Sıva Altı Grubu - 2 Yollu
+    aciklama: Krom · Mat siyah 102166204C1
+  - kod: "102101401"
+    ad: Life On-Off Butonlu Termostatik Ankastre Duş Bataryası
+    aciklama: Krom · Mat siyah 102101401C1 · Mat antrasit 102101401C5
+  - kod: "102101402"
+    ad: Life On-Off Butonlu Termostatik Ankastre Banyo Bataryası - 2 Yollu
+    aciklama: Krom · Mat siyah 102101402C1 · Mat antrasit 102101402C5
+  - kod: "102101403"
+    ad: Life On-Off Butonlu Termostatik Ankastre Banyo Bataryası - 3 Yollu
+    aciklama: Krom · Mat siyah 102101403C1 · Mat antrasit 102101403C5
+  - kod: "102102490"
+    ad: Termostatik Teleskobik Kolonlu Duş Sistemi
+  - kod: "102102526"
+    ad: Termostatik Teleskobik Kolonlu Duş Sistemi
 ---
+## Termostatik nedir?
+Termostatik batarya suyu ayarlanan sıcaklıkta sabit tutar; evde başka bir musluk açıldığında ani sıcak ya da soğuk su gelmesini önler.
+
 ## Ankastre nedir?
 Ankastre bataryada gövde ve tesisat duvarın içinde kalır; dışarıda yalnızca kumanda kolu ve su çıkışları görünür. Sıva altı grup tadilat ya da inşaat sırasında duvara yerleştirilir, sıva üstü grup (kol ve rozet) fayans bittikten sonra takılır.
 
 Yol sayısı, bataryanın suyu kaç çıkışa yönlendirebildiğini gösterir. Örneğin 3 yollu bir sette tepe duşu, el duşu ve çıkış ucu birlikte kullanılır.
 
-## Mağazamızdakiler
-- **Tiera:** 2 ve 3 yollu duş sistemleri (krom, siyah), 3 yollu duş seti, sıva altı ve sıva üstü 3 yollu gruplar, mafsallı duş seti, duvardan duş başlığı ve 250x250 tepe başlığı, mat siyah lavabo sıva üstü rozeti; siyah üst grup, alt grup ve çıkış ucu
-- **Dalia:** 2 ve 3 yollu duş sistemi (krom, mat siyah), sıva altı 3 yollu grup, sıva üstü grup, çıkış ucu
-- **Star** çıkış ucu, **Elegant** duş dirseği, duvardan kare duş başlığı
-- Mat siyah ankastre lavabo bataryası sıva altı grubu
-
-## Tiera 3 yollu ankastre duş setinin içeriği (E.C.A.)
-Duş başlığı, duvardan duş başlığı borusu, sıva üstü 3 yollu grup, sıva altı 3 yollu grup, mafsallı el duşu, duş çıkış dirseği ve çıkış ucu.
-
 ## Dikkat
 - Sıva altı grup duvar kapanmadan, doğru derinlikte ve terazisinde monte edilmelidir.
 - Tesisatın basınç testi yapılmadan duvar kapatılmamalıdır.
+
+## Katalog bilgisi
+- Model tablosundaki kodlar E.C.A. Armatür 2026-2 kataloğundan alınmıştır; krom dışındaki renklerin kodları aynı satırda yazılıdır.

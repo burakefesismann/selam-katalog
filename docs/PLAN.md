@@ -196,7 +196,7 @@ Kaynak: `kataloglar/` (fiyat içerir, gitignore) + `docs/KATALOG-INCELEME.md`. F
   seri ekle, çok markalı kartlardan o markanın payını ayır, katalog görselleri. Taslak `docs/taslaklar/<marka>.md` → onay → içe aktar.
   - [ ] F6.4a ECA (armatür + teknik ürünler) — taslak onaylı (docs/taslaklar/eca.md)
     - [x] F6.4a1 Batarya Serileri grubu + 9 seri kartı (Tiera, Life, Luna, Nita, Dalia, Dream, Lia, Niobe, Spylos)
-    - [ ] F6.4a2 Diğer armatür kartları (mutfak, termostatik, fotoselli, küvet, el duşu, duş, ara musluk, musluk, sifon)
+    - [x] F6.4a2 Diğer armatür kartları (mutfak, termostatik, fotoselli, küvet, el duşu, duş, ara musluk, musluk, sifon)
     - [ ] F6.4a3 Teknik: ortak kartlardan 13 ECA kartı
   - [ ] F6.4b Serel (seramik sağlık, gömme rezervuar, banyo aksesuarları)
   - [ ] F6.4c Aryak + Borel (yeni markalar)
