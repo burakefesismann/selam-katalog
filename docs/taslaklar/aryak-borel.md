@@ -1,6 +1,7 @@
 # Aryak + Borel — taslak (F6.4c)
 
-> Durum: **ONAY BEKLİYOR.** Kaynak: Aryak 2026-2 (40 sayfa, www.armusluk.com.tr), Borel 2026 (6 sayfa). Fiyat alınmaz.
+> Durum: **ONAYLANDI (2026-11-20)** — seri başına kart, mağazadaki 7 seri (Lunetta, Allegra yok).
+> Kaynak: Aryak 2026-2 (40 sayfa, www.armusluk.com.tr), Borel 2026 (6 sayfa). Fiyat alınmaz.
 
 ## Aryak (AR) — yeni marka
 E.C.A.'nın alt markası (eski içerik paketinde böyle geçiyor). Marka sırası: ECA ve Serel'in ardından (K17).

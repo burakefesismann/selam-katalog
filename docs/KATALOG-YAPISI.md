@@ -4,7 +4,7 @@ Beyin takımının hazırladığı, kullanıcının onayladığı kart listesi (
 Bu dosya kategori ağacının ve kart adlarının kaynağıdır. Değişiklik yalnızca kullanıcı/beyin takımı onayıyla yapılır.
 
 Kart tipleri (K11): `grup` = ürün ailesi tek kart · `marka_tur` = marka + tür, örneklemli · `urun` = tek ürün, teknik detaylı.
-Toplam: 243 kart.
+Toplam: 255 kart.
 
 **Güncelleme 2026-11-16 (Paket 001 ile, beyin takımı kararı):** PE100 ek parçaları → Fırat; PEX kartı adı ve markaları;
 ProContact Sıva & Şap → Mantolama; resmi yazımlar DuoContact, DuoFix, StarTherm, CreativTop. Toplam kart sayısı değişmedi (213).
@@ -16,6 +16,7 @@ Alt kategori slug'ları: `su-yalitimi-kimyasal`, `su-yalitimi-membran`, `mantola
 Öne çıkanlar: ad sadeleştirmeleri (parantez içi açıklamalar), Momento Max ve Marshall Fit → İç Cephe, mantolama taşyünleri ve
 boya mantolama kartları → Yapı Kimyasalları › Mantolama (Boya altında Mantolama ve Ekonomik Seri açılmadı), Keski & Murç ve
 KBS Çiroz → El Aletleri (Tesisatçı Aletleri ikiye ayrıldı → 214 kart), "Kale" el aletleri → KL Pro, Onduline Şıngıl → UKS Şıngıl.
+
 
 
 
@@ -106,7 +107,7 @@ KBS Çiroz → El Aletleri (Tesisatçı Aletleri ikiye ayrıldı → 214 kart), 
 - Conta, Teflon & Sızdırmazlık — `grup` — çeşitli
 - Rakor & Uzatmalar — `grup` — ECA · KAS
 
-## 4. Isıtma (8 kart)
+## 4. Isıtma (9 kart)
 
 ### Kombi Aksesuarları
 - Kombi & Radyatör Aksesuarları — `grup` — Fırat
@@ -116,13 +117,14 @@ KBS Çiroz → El Aletleri (Tesisatçı Aletleri ikiye ayrıldı → 214 kart), 
 - ECA Panel Radyatörler — `grup` — ECA
 
 ### Yerden Isıtma
+- Borel Yerden Isıtma Boruları — `seri` — Borel
 - ECA Yerden Isıtma Kollektörleri — `seri` — ECA
 - ECA Yerden Isıtma Kontrol & Aksesuarları — `seri` — ECA
 - Fırat PE-RT Yerden Isıtma Boruları — `grup` — Fırat
 - Yerden Isıtma Aksesuarları — `grup` — Fırat · ECA · KAS
 - Yerden Isıtma Kollektörleri — `grup` — Fırat · ECA · KAS
 
-## 5. Armatür (Batarya & Duş) (30 kart)
+## 5. Armatür (Batarya & Duş) (41 kart)
 
 ### Ankastre Sistemler
 - ECA Termostatik Bataryalar — `seri` — ECA
@@ -133,6 +135,13 @@ KBS Çiroz → El Aletleri (Tesisatçı Aletleri ikiye ayrıldı → 214 kart), 
 - KAS Banyo Bataryaları — `marka_tur` — KAS
 
 ### Batarya Serileri
+- Aryak Fast Serisi — `seri` — Aryak
+- Aryak Fia Serisi — `seri` — Aryak
+- Aryak Fine Serisi — `seri` — Aryak
+- Aryak Liona Serisi — `seri` — Aryak
+- Aryak Lite Serisi — `seri` — Aryak
+- Aryak Lucia Serisi — `seri` — Aryak
+- Aryak Melia Serisi — `seri` — Aryak
 - ECA Dalia Serisi — `seri` — ECA
 - ECA Dream Serisi — `seri` — ECA
 - ECA Icon Serisi — `seri` — ECA
@@ -146,6 +155,8 @@ KBS Çiroz → El Aletleri (Tesisatçı Aletleri ikiye ayrıldı → 214 kart), 
 - ECA Tiera Serisi — `seri` — ECA
 
 ### Duş Setleri & Tepe Duşları
+- Aryak Duş Kolonları & Duş Başlıkları — `seri` — Aryak
+- Aryak El Duşu Takımları — `seri` — Aryak
 - Duş Setleri (diğer markalar) — `marka_tur` — çeşitli
 - ECA Duş Kolonları, Tepe Duşları & Ankastre Duş Setleri — `seri` — ECA
 - ECA El Duşu Takımları — `seri` — ECA
@@ -161,12 +172,14 @@ KBS Çiroz → El Aletleri (Tesisatçı Aletleri ikiye ayrıldı → 214 kart), 
 - KAS Lavabo Bataryaları — `marka_tur` — KAS
 
 ### Musluklar & Taharet
+- Aryak Musluklar & Ara Kesme Valfleri — `seri` — Aryak
 - ECA Ara Musluklar & Taharet Muslukları — `seri` — ECA
 - ECA Musluklar & Klozet Bataryası — `seri` — ECA
 - KAS Musluklar & Taharet Muslukları — `marka_tur` — KAS
 - Musluklar (diğer markalar) — `marka_tur` — Hazal
 
 ### Yedek Parça & Uzatma
+- Aryak Sifonlar — `seri` — Aryak
 - Batarya Yedek Parça & Bağlantıları — `grup` — çeşitli
 - ECA Sifonlar & Uzatmalar — `seri` — ECA
 

@@ -200,7 +200,7 @@ Kaynak: `kataloglar/` (fiyat içerir, gitignore) + `docs/KATALOG-INCELEME.md`. F
     - [x] F6.4a3 Teknik: 13 ECA kartı (flatorler kartı ECA'ya dönüştü). Ortak kartlardan eca çıkarma + ECA görsellerinin
       değişmesi F6.4d'ye kaldı (KAS katalog görselleriyle birlikte; yanlış marka görseli kalmasın)
   - [x] F6.4b Serel (seramik sağlık, gömme rezervuar, banyo aksesuarları) — tür bazında 11 kart
-  - [ ] F6.4c Aryak + Borel (yeni markalar)
+  - [x] F6.4c Aryak + Borel (yeni markalar) — Aryak 7 seri + 4 kart, Borel 1 kart
   - [ ] F6.4d KAS — ayrıca ECA+KAS ortak kartlarından eca çıkar, gövdedeki ECA satırları ve eca.com.tr görselleri temizlenir
     (radyatör/termostatik, pex, rakor, prüjör, emniyet, yerden ısıtma ×2, su küresel, şiber, çekvalf, filtre, basınç düşürücü, ara kesme)
   - [ ] F6.4e Fırat

@@ -3,7 +3,7 @@
 > Her oturumun başında oku, sonunda güncelle. Kısa tut.
 
 ## Şu an
-- Aktif görev: F6.4c Aryak + Borel — taslak → onay → marka + kartlar
+- Aktif görev: — (sıradaki: F6.4d KAS + ECA/KAS ortak kartlarının temizliği)
 - Site: https://burakefesismann.github.io/selam-katalog/
 - Faz: 3 — Gerçek içerik ve görseller
 
@@ -173,7 +173,7 @@
     Marshall sentetik tiner (sayfa yok), yerden ısıtma aksesuarları, Filli Dalmaçyalı dübel (PDF), Sika 10, Güral 3, Onduline 5.
   - Kaynaksız 70 kart (çoğu "çeşitli" hırdavat/tesisat kalemi) → büyük olasılıkla mağaza fotoğrafı; sona bırak, kullanıcıya listele.
 ## Sıradaki
-- **F6.4c — Aryak + Borel** (yeni markalar; Aryak mağaza listeleri docs/taslaklar/eca-eski-magaza-listeleri.md). Ardından F6.4b Serel…
+- **F6.4d — KAS** (2 katalog: tesisat + armatür) + ECA/KAS ortak kartlarının temizliği (PLAN F6.4d satırı). Ardından F6.4b Serel…
 - **F6.4 — Marka marka içerik** (K16/K17): ilk ECA. `.katalog-calisma/eca/` (OZET.md + metin) → yakın serilerin taslak listesi
   (kod tablosuyla) → kullanıcı onayı → içe aktar → katalog görselleri. Sonra Serel, Aryak, Borel, KAS, Fırat…
 - Sonra F4.5 — Çözüm sayfaları (K13): `cozumler` koleksiyonu + panel + ana sayfa alanı; ilk sayfa Mantolama (içerik beyin
@@ -378,6 +378,13 @@
   Lale 140101009 ve 140101010 ikisi de "Lale Tuvalet Kağıtlığı" (fark sadece çizimde); Diagonal uzun havluluk iki kod, ölçü eşlemesi belirsiz → ölçü yazılmadı.
 - Visam iç takım kartındaki eca.com.tr (Serel) görseli Serel Rezervuar İç Takımları kartına taşındı → Visam kartı görselsiz (F6.4q).
 
+## Aryak / Borel notları (F6.4c)
+- Aryak kataloğunda İ/Ş/Ğ ayrı span → aryak-parse.py (scratchpad) aynı satırdaki parçaları x sırasıyla birleştiriyor; kalan bozuklar elle (AD haritası).
+- Aryak kod kuralları: 1035… = mat siyah; -BM = blister ambalaj (rozetli); el duşu çiftlerinde 1. kod 150 cm spiral, 2. kod 175 cm PVC
+  spiral (sayfa konumundan doğrulandı); duş kolonu çiftlerinin farkı katalogda yazmıyor → iki kod tek satırda.
+- Aryak uzatma/rozet sayfası (s.38) kod-ad eşlemesi belirsiz → alınmadı. Armoni, Alnus, Ark, Sole 2026-2 listesinde yok.
+- Aryak logosu yok (yazıyla görünür); kapak fotoğrafı dikey → marka büyük görseli konmadı. Borel logo + büyük görsel katalog kapağından.
+
 ## Logo notları (F3.10)
 - Logolar `src/assets/markalar/<slug>.svg|webp`, marka yaml'ında `logo` + `logo_kaynak_url`. SVG olduğu gibi kopyalanır →
   indirmeden önce `<script|onload|javascript:|foreignObject` kontrolü yap. Kontrol aracı (kontakt.cjs) SVG'yi atlıyor → sharp ile
@@ -474,6 +481,7 @@
 | 2026-11-19 | F6.4a1 ek | Icon ve Royal seri kartları eklendi (kullanıcı: mağazada var); 40 model satırı, 6 katalog görseli | F6.4a1 |
 | 2026-11-19 | F6.4a3 | ECA teknik: 13 kart (termostatik/radyatör vanaları, hava atıcı, emniyet, yerden ısıtma kollektör + kontrol, doğalgaz/su küresel, şiber-stop-kosva, çekvalf, flatör, filtre, basınç düşürücü; 337 model satırı), 27 katalog görseli | F6.4a3 |
 | 2026-11-20 | F6.4b | Serel tür bazında 11 kart: asma / BTW klozet, tezgah üstü / duvar-tezgah altı lavabo, kapak, pisuvar, engelli-çocuk, gömme rezervuar, kumanda paneli, iç takım, banyo aksesuarı (ECA→Serel, 4 seri); 188 model satırı, 24 katalog görseli | F6.4b |
+| 2026-11-20 | F6.4c | Yeni markalar: Aryak (7 seri kartı + el duşu, duş kolonu/başlık, musluk/ara kesme, sifon; 114 model) ve Borel (yerden ısıtma boruları, 8 kod, logo + büyük görsel); 34 katalog görseli | F6.4c |
 | 2026-11-18 | Ondulikit (kullanıcı fotoğrafı) + Güral aksesuar gizlendi | yayındaki tüm ürünler görselli | gorsel |
 | 2026-11-18 | F3.9 | 7 ana kategoriye ürün görseli (Orka, Yurtbay, Filli Nucleus, İzeltaş pense, Baymak hidrofor, Fırat vanalar, İzocam); DURUM fotoğraf listesi temizlendi | F3.9 |
 | 2026-11-18 | F3.10a | 15 marka logosu (ECA, Serel, Güral, Orka, Baymak, Filli, Kale Kilit, Sika, Yurtbay, Güral Seramik, Marshall, Bosch, Fawori, İzocam, Onduline); logosuz 35 | F3.10a |
