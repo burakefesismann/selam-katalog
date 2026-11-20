@@ -1,49 +1,34 @@
 ---
-ad: Doğalgaz Flex Hortum, Kelepçe & Bağlantıları
+ad: Doğalgaz Boru Kelepçeleri & Tüpgaz Hortumu
 kart_tipi: grup
 kategori: flex-hortumlar
 markalar:
-  - kas
   - baykara
-kisa_aciklama: KAS paslanmaz doğalgaz flexleri, sayaç bağlantı seti, doğalgaz macunu ve teflonu; somunlu ve trifonlu doğalgaz boru kelepçeleri.
+kisa_aciklama: Somunlu ve trifonlu doğalgaz boru kelepçeleri (1/2"–10"), doğalgaz menfezi ve tüpgaz hortumu.
 one_cikanlar:
-  - Makaronlu paslanmaz flexler
-  - Sayaç bağlantı seti 1"
-  - Doğalgaz macunu ve teflon bandı
   - 1/2" – 10" boru kelepçeleri
+  - Somunlu ve trifonlu
+  - Tüpgaz hortumu 8 ve 10 mm
 kullanim_alanlari:
   - ic-mekan
   - dis-mekan
 olculer:
-  - Kombi gaz flexi 3/4-1/2, 30 cm
-  - "Gaz flexi 3/4-3/4: 30, 50, 60 cm"
-  - "Örgülü gaz flexi 1/2: 100, 125, 150 cm"
-  - Tüpgaz hortumu 8 ve 10 mm
   - Somunlu kelepçe 1/2" – 10"
   - Trifonlu kelepçe 1/2" – 5"
+  - Tüpgaz hortumu 8 ve 10 mm
 ilgili_urunler:
+  - kas-dogalgaz-flexleri
   - gaz-vanalari
   - conta-teflon-ve-sizdirmazlik
-  - su-flex-hortumlari
-kaynak_sayfalar:
-  - https://kas.com.tr/product/sayac-baglanti-flex-seti-makaronlu-paslanmaz/
-  - https://kas.com.tr/product/sayac-baglanti-flexi-makaronlu-paslanmaz/
-  - https://kas.com.tr/product/dogalgaz-macunu/
-  - https://kas.com.tr/blog/flex-esnek-paslanmaz-metal-hortum-ve-hortum-takimlari-nedir-nerelerde-kullanilir/
+kaynak_sayfalar: []
 sira: 20
-gorseller:
-  - gorsel: /src/assets/urunler/dogalgaz-flex-hortum-kelepce-ve-baglantilari-1.webp
-    alt_metin: KAS makaronlu paslanmaz doğalgaz sayaç bağlantı flex seti
-    kaynak_url: https://kas.com.tr/product/sayac-baglanti-flex-seti-makaronlu-paslanmaz/
+gorseller: []
 ---
 ## Mağazamızdakiler
-- **KAS gaz flexleri:** kombi gaz flexi 3/4-1/2 (30 cm, makaronlu); 3/4-3/4 (30 cm; 50 cm paslanmaz makaronlu; 60 cm makaronlu); örgülü gaz flexi 1/2 (100, 125, 150 cm)
-- **KAS sayaç bağlantı seti** 1", makaronlu
-- **KAS doğalgaz macunu** ve doğalgaz teflon bandı
+- KAS doğalgaz flexleri ve macunu kendi kartında: **KAS Doğalgaz Flexleri**.
 - Doğalgaz menfezi, tüpgaz hortumu (8 ve 10 mm)
 - **Doğalgaz boru kelepçeleri:** somunlu (1/2" – 10"), trifonlu (1/2" – 5") ve uzun trifonlu (1/2" – 5")
 
-## KAS'ın belirttikleri
 - Flex hortumlar paslanmaz çelikten üretilir; üzerine kullanım koşuluna göre bir kaplama yapılabilir, piyasada bu kaplamaya **makaron** denir.
 - Sayaç bağlantı flexinde hortum paslanmaz çelik, makaron polyolefin esaslı termoplastik, bağlantı parçaları karbon çelik ve paslanmaz çeliktir.
 

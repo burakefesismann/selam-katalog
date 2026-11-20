@@ -23,7 +23,7 @@ olculer:
   - 600x1100 mm
 ilgili_urunler:
   - eca-panel-radyatorler
-  - radyator-ve-termostatik-vanalar
+  - kas-radyator-ve-termostatik-vanalar
   - kombi-ve-radyator-aksesuarlari
 kaynak_sayfalar:
   - https://eca.com.tr/isitma-sogutma/radyatorler/havlupan

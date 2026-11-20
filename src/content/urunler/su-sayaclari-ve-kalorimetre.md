@@ -19,7 +19,7 @@ olculer:
   - Kalorimetre Q20 (UKM-20)
   - Sensör kovanlı vana 1"
 ilgili_urunler:
-  - filtreler-pislik-tutucu-y-filtre
+  - kas-siber-stop-vana-ve-filtreler
   - su-kuresel-vanalari
   - conta-teflon-ve-sizdirmazlik
 kaynak_sayfalar:

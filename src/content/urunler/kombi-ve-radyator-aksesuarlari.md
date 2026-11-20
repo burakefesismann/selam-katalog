@@ -17,9 +17,9 @@ olculer:
   - Baca kiti Ø60/100 (yatay, beyaz)
 ilgili_urunler:
   - eca-panel-radyatorler
-  - emniyet-ventilleri
-  - prujorler-otomatik-hava-atici
-  - radyator-ve-termostatik-vanalar
+  - eca-emniyet-valfleri
+  - eca-otomatik-hava-aticilar
+  - kas-radyator-ve-termostatik-vanalar
 kaynak_sayfalar:
   - https://www.firat.com/cmsfiles/certificates/firatboru-genel-urun-katalogu.pdf
   - https://kas.com.tr/en/product/ppr-combi-connection-parts/

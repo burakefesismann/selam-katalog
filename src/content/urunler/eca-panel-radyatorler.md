@@ -24,10 +24,10 @@ olculer:
   - Yükseklik 600 mm
   - "Boy: 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500, 1600, 1800, 2000 mm"
 ilgili_urunler:
-  - radyator-ve-termostatik-vanalar
+  - kas-radyator-ve-termostatik-vanalar
   - eca-havlupanlar
   - kombi-ve-radyator-aksesuarlari
-  - prujorler-otomatik-hava-atici
+  - eca-otomatik-hava-aticilar
 kaynak_sayfalar:
   - https://eca.com.tr/urun/tip-22
   - https://eca.com.tr/tip-10-6

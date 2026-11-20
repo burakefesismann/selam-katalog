@@ -15,9 +15,9 @@ olculer:
   - "Manometre 63 mm: 0–6, 0–10, 0–16 bar"
   - "Manometre 100 mm: 0–16 bar"
 ilgili_urunler:
-  - basinc-dusuruculer
+  - eca-basinc-dusuruculer
   - hidroforlar
-  - emniyet-ventilleri
+  - eca-emniyet-valfleri
 sira: 60
 markalar: []
 gorseller:

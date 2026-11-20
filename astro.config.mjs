@@ -25,6 +25,14 @@ export default defineConfig({
     '/urunler/eca-banyo-bataryalari': '/selam-katalog/kategoriler/batarya-serileri',
     // F6.4b: banyo aksesuarları Serel markasına geçti
     '/urunler/eca-banyo-aksesuarlari': '/selam-katalog/urunler/serel-banyo-aksesuarlari',
+    // F6.4d1: ECA/KAS ortak kartları kaldırıldı (markalar kendi kartlarında)
+    '/urunler/radyator-ve-termostatik-vanalar': '/selam-katalog/kategoriler/radyator-ve-termostatik-vanalar',
+    '/urunler/basinc-dusuruculer': '/selam-katalog/kategoriler/tesisat-armaturleri',
+    '/urunler/emniyet-ventilleri': '/selam-katalog/kategoriler/tesisat-armaturleri',
+    '/urunler/cekvalfler': '/selam-katalog/kategoriler/tesisat-armaturleri',
+    '/urunler/filtreler-pislik-tutucu-y-filtre': '/selam-katalog/kategoriler/tesisat-armaturleri',
+    '/urunler/prujorler-otomatik-hava-atici': '/selam-katalog/kategoriler/tesisat-armaturleri',
+    '/urunler/siber-vanalar': '/selam-katalog/kategoriler/siber-ve-gaz-vanalari',
   },
   integrations: [
     sitemap({

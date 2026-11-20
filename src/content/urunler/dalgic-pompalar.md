@@ -20,7 +20,7 @@ teknik_ozellikler:
 ilgili_urunler:
   - hidroforlar
   - flatorler
-  - cekvalfler
+  - kas-cekvalf-flator-ve-basinc-dusuruculer
   - su-flex-hortumlari
 sira: 10
 gorseller:

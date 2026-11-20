@@ -1,6 +1,7 @@
 # KAS — taslak (F6.4d)
 
-> Durum: **ONAY BEKLİYOR (F6.4d1 tesisat).** Armatür (F6.4d2) ayrı taslak. Kaynak: KAS 2026-01 tesisat (52 sayfa), KAS Armatür
+> Durum: **F6.4d1 ONAYLANDI ve UYGULANDI (2026-11-20)** — tesisatın tamamı (Kastak hariç), ortak kartlar kaldırıldı/yönlendirildi.
+> Not: musluklar ayrı kart (Filtreli & Bahçe), çekvalf kartına kartuşlu basınç düşürücü eklendi, doğalgaz macunu flex kartında. Armatür (F6.4d2) ayrı taslak. Kaynak: KAS 2026-01 tesisat (52 sayfa), KAS Armatür
 > 2026-01 (152 sayfa). Fiyat ("B. FİYATI") alınmaz; kodlar ve ölçüler katalogdan.
 
 ## F6.4d1 — Tesisat kartları (hepsi `seri`, KAS markalı, kodlu tablo)

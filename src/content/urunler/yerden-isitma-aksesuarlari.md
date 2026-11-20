@@ -4,8 +4,6 @@ kart_tipi: grup
 kategori: yerden-isitma
 markalar:
   - firat
-  - eca
-  - kas
 kisa_aciklama: Yerden ısıtma levhaları, kenar izolasyon bandı, klipsli lama, köşe düzeltici, tespit kroşesi, kollektör dolabı, kelepçe ve hava-su boşaltma setleri.
 one_cikanlar:
   - Strafor yerden ısıtma levhası
@@ -25,11 +23,10 @@ ilgili_urunler:
   - yerden-isitma-kollektorleri
   - firat-pe-rt-yerden-isitma-borulari
   - pex-baglantilar-ve-vanalar
-  - prujorler-otomatik-hava-atici
+  - eca-otomatik-hava-aticilar
 kaynak_sayfalar:
   - https://www.firat.com/en-us/indoor-piping-system/cold-hot-water-pipe-systems/pex-product-range-1/under-floor-heating/assembly
   - https://www.firat.com/en-us/indoor-piping-system/cold-hot-water-pipe-systems/pex-product-range/mobile-systems
-  - https://eca.com.tr/dosemeden-isitma-sistemleri
   - https://www.firat.com/sicak-soguk-su-boru-sistemleri/pex-mobil-sistem-ve-zeminden-isitma-borulari/pe-rt-boru-sistemleri/urunler
   - https://www.firat.com/binaici-tesisat-boru-sistemleri/pex-zeminden-isitma-sistemleri
 sira: 30
@@ -46,8 +43,6 @@ gorseller:
 - **Kenar izolasyon bandı:** 10x25 m
 - **PE-RT klipsli lama, köşe düzeltici** ve **yere tespit kroşesi**
 - **Kollektör dolabı:** 40'lık, 60'lık ve 80'lik
-- **Kollektör kelepçesi:** Fırat 1" ve KAS 1"
-- **E.C.A. hava-su boşaltma seti:** kırmızı ve mavi
 
 ## Uygulama sırası (Fırat'ın anlatımıyla)
 1. Temiz ve düzgün taban betonunun üzerine ısı ve ses yalıtımı sağlayan levhalar döşenir, üzeri polietilen folyo ile kaplanır.

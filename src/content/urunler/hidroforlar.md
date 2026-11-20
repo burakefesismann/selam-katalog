@@ -25,8 +25,8 @@ olculer:
 ilgili_urunler:
   - polietilen-su-depolari
   - dalgic-pompalar
-  - cekvalfler
-  - basinc-dusuruculer
+  - kas-cekvalf-flator-ve-basinc-dusuruculer
+  - eca-basinc-dusuruculer
   - manometre-ve-termometre
 kaynak_sayfalar:
   - https://www.baymak.com.tr/media/4261/jet-serisi-paket-hidrofor-brosur.pdf
