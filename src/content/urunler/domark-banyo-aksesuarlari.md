@@ -18,7 +18,7 @@ teknik_ozellikler:
     deger: Krom, siyah
 ilgili_urunler:
   - domark-paslanmaz-suzgecler
-  - eca-banyo-aksesuarlari
+  - serel-banyo-aksesuarlari
 sira: 12
 gorseller:
   - gorsel: /src/assets/urunler/domark-banyo-aksesuarlari-1.webp

@@ -23,6 +23,8 @@ export default defineConfig({
     // F6.4a1: ECA tür kartları seri kartlarına bölündü
     '/urunler/eca-lavabo-bataryalari': '/selam-katalog/kategoriler/batarya-serileri',
     '/urunler/eca-banyo-bataryalari': '/selam-katalog/kategoriler/batarya-serileri',
+    // F6.4b: banyo aksesuarları Serel markasına geçti
+    '/urunler/eca-banyo-aksesuarlari': '/selam-katalog/urunler/serel-banyo-aksesuarlari',
   },
   integrations: [
     sitemap({

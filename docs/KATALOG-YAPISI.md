@@ -4,7 +4,7 @@ Beyin takımının hazırladığı, kullanıcının onayladığı kart listesi (
 Bu dosya kategori ağacının ve kart adlarının kaynağıdır. Değişiklik yalnızca kullanıcı/beyin takımı onayıyla yapılır.
 
 Kart tipleri (K11): `grup` = ürün ailesi tek kart · `marka_tur` = marka + tür, örneklemli · `urun` = tek ürün, teknik detaylı.
-Toplam: 239 kart.
+Toplam: 243 kart.
 
 **Güncelleme 2026-11-16 (Paket 001 ile, beyin takımı kararı):** PE100 ek parçaları → Fırat; PEX kartı adı ve markaları;
 ProContact Sıva & Şap → Mantolama; resmi yazımlar DuoContact, DuoFix, StarTherm, CreativTop. Toplam kart sayısı değişmedi (213).
@@ -16,6 +16,7 @@ Alt kategori slug'ları: `su-yalitimi-kimyasal`, `su-yalitimi-membran`, `mantola
 Öne çıkanlar: ad sadeleştirmeleri (parantez içi açıklamalar), Momento Max ve Marshall Fit → İç Cephe, mantolama taşyünleri ve
 boya mantolama kartları → Yapı Kimyasalları › Mantolama (Boya altında Mantolama ve Ekonomik Seri açılmadı), Keski & Murç ve
 KBS Çiroz → El Aletleri (Tesisatçı Aletleri ikiye ayrıldı → 214 kart), "Kale" el aletleri → KL Pro, Onduline Şıngıl → UKS Şıngıl.
+
 
 
 
@@ -169,32 +170,36 @@ KBS Çiroz → El Aletleri (Tesisatçı Aletleri ikiye ayrıldı → 214 kart), 
 - Batarya Yedek Parça & Bağlantıları — `grup` — çeşitli
 - ECA Sifonlar & Uzatmalar — `seri` — ECA
 
-## 6. Seramik Sağlık Gereçleri (7 kart)
+## 6. Seramik Sağlık Gereçleri (9 kart)
 
 ### Engelli & Çocuk Serisi
-- Serel Bedensel Engelli & Çocuk Serisi — `marka_tur` — Serel
+- Serel Bedensel Engelli & Çocuk Serisi — `seri` — Serel
 
 ### Klozet Kapakları
-- Serel Klozet Kapakları — `marka_tur` — Serel
+- Serel Klozet Kapakları — `seri` — Serel
 
 ### Klozetler
 - Güral Klozetler — `marka_tur` — Güral
-- Serel Klozetler — `marka_tur` — Serel
+- Serel Asma Klozetler — `seri` — Serel
+- Serel Duvara Sıfır (BTW) Klozetler & Rezervuarlar — `seri` — Serel
 
 ### Lavabolar
 - Güral Lavabolar — `marka_tur` — Güral
-- Serel Lavabolar — `marka_tur` — Serel
+- Serel Duvar Lavaboları, Ayaklar & Tezgah Altı Lavabolar — `seri` — Serel
+- Serel Tezgah Üstü & Etajerli Lavabolar — `seri` — Serel
 
 ### Pisuvar & Hela Taşı
-- Serel Pisuvar & Hela Taşları — `marka_tur` — Serel
+- Serel Pisuvar & Hela Taşları — `seri` — Serel
 
-## 7. Gömme Rezervuar & İç Takımlar (2 kart)
+## 7. Gömme Rezervuar & İç Takımlar (4 kart)
 
 ### Gömme Rezervuar & Kumanda Panelleri
-- Serel Gömme Rezervuar, İç Takım & Kumanda Panelleri — `marka_tur` — Serel
+- Serel Gömme Rezervuarlar — `seri` — Serel
+- Serel Kumanda Panelleri — `seri` — Serel
 
 ### Rezervuar İç Takımları
 - Rezervuar İç Takımları & Klozet Kapakları — `grup` — Visam
+- Serel Rezervuar İç Takımları — `seri` — Serel
 
 ## 8. Banyo Mobilyası & Duşakabin (4 kart)
 
@@ -213,8 +218,8 @@ KBS Çiroz → El Aletleri (Tesisatçı Aletleri ikiye ayrıldı → 214 kart), 
 ### Banyo Aksesuarları
 - Banyo Aksesuarları (diğer markalar) — `marka_tur` — çeşitli
 - Dömark Banyo Aksesuarları — `marka_tur` — Dömark
-- ECA Banyo Aksesuarları — `marka_tur` — ECA
 - Mesa Banyo Aksesuarları — `marka_tur` — Mesa
+- Serel Banyo Aksesuarları — `seri` — Serel
 
 ### Sifon & Kada
 - Sifonlar & Kadalar — `grup` — Fırat · Visam

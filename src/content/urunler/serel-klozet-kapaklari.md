@@ -1,22 +1,15 @@
 ---
 ad: Serel Klozet Kapakları
-kart_tipi: marka_tur
+kart_tipi: seri
 kategori: klozet-kapaklari
 markalar:
   - serel
-seriler:
-  - Blaze Slim
-  - Beta
-  - Anemon
-  - Irmak
-  - Pelin
-  - Zeta
-kisa_aciklama: "Yavaş kapanan Serel klozet kapakları: Blaze Slim (beyaz, mat siyah), Beta, soft siyah; klozetle birlikte setler."
+kisa_aciklama: "Yavaş kapanan Serel klozet kapakları: Leona, Luna, Blaze, Beta, Irmak, Pelin, Anemon; Fulya Akdeniz ve çocuk kapakları."
 one_cikanlar:
+  - 11 model, ürün kodlarıyla
   - Yavaş kapanan (soft close)
   - İnce (slim) modeller
   - Tak-çıkar kapak
-  - Mat siyah seçenek
 kullanim_alanlari:
   - ic-mekan
   - islak-hacim
@@ -37,6 +30,41 @@ gorseller:
   - gorsel: /src/assets/urunler/serel-klozet-kapaklari-1.webp
     alt_metin: Serel yavaş kapanan ince (slim) klozet kapağı
     kaynak_url: https://eca.com.tr/urun/leona-slim-klozet-kapagi
+  - gorsel: /src/assets/urunler/serel-klozet-kapaklari-2.webp
+    alt_metin: Serel slim yavaş kapanan klozet kapağı
+    kaynak_url: https://www.eca.com.tr
+  - gorsel: /src/assets/urunler/serel-klozet-kapaklari-3.webp
+    alt_metin: Serel yavaş kapanan klozet kapağı
+    kaynak_url: https://www.eca.com.tr
+modeller:
+  - kod: "150400120038"
+    ad: Leona Slim Yavaş Kapanan Klozet Kapağı
+    aciklama: Çıkarılabilir
+  - kod: "150400120040"
+    ad: Luna Slim Yavaş Kapanan Klozet Kapağı
+    aciklama: Çıkarılabilir
+  - kod: "150400120039"
+    ad: Leona Yavaş Kapanan Klozet Kapağı
+    aciklama: Çıkarılabilir
+  - kod: 223BLS0002
+    ad: Blaze Slim Yavaş Kapanan Klozet Kapağı
+  - kod: 223BT00002
+    ad: Beta Yavaş Kapanan Klozet Kapağı
+  - kod: 150400120009E
+    ad: Anemon Yavaş Kapanan PP Klozet Kapağı
+    aciklama: Çıkarılabilir
+  - kod: 150400120006E
+    ad: Fulya Akdeniz PP Klozet Kapağı
+  - kod: "150400120031"
+    ad: Paleimon Çocuk Klozet Kapağı
+  - kod: 150400120012E
+    ad: Irmak Slim Yavaş Kapanan PP Klozet Kapağı
+    aciklama: Çıkarılabilir
+  - kod: 150400120018E
+    ad: Pelin Slim Yavaş Kapanan PP Klozet Kapağı
+    aciklama: Çıkarılabilir
+  - kod: 150400120021E
+    ad: Çocuk PP YK Klozet Kapağı
 ---
 ## Mağazamızdakiler
 - **Blaze Slim:** beyaz ve mat siyah
@@ -54,3 +82,6 @@ gorseller:
 
 ## Kapak seçerken
 Kapak, klozetin ağız formuna ve menteşe aralığına uymalıdır. En kolay yol, klozetin modeline uygun kapağı seçmektir; klozet modelini bilmiyorsanız fotoğrafını getirmeniz yeterlidir.
+
+## Katalog bilgisi
+- Model tablosundaki kodlar ve ölçüler Serel 2026-1 seramik sağlık gereçleri kataloğundan alınmıştır.

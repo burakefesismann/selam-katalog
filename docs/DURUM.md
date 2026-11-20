@@ -3,7 +3,7 @@
 > Her oturumun başında oku, sonunda güncelle. Kısa tut.
 
 ## Şu an
-- Aktif görev: F6.4b Serel — taslak (docs/taslaklar/serel.md) → onay → kartlar
+- Aktif görev: — (sıradaki: F6.4c Aryak + Borel — yeni markalar)
 - Site: https://burakefesismann.github.io/selam-katalog/
 - Faz: 3 — Gerçek içerik ve görseller
 
@@ -173,7 +173,7 @@
     Marshall sentetik tiner (sayfa yok), yerden ısıtma aksesuarları, Filli Dalmaçyalı dübel (PDF), Sika 10, Güral 3, Onduline 5.
   - Kaynaksız 70 kart (çoğu "çeşitli" hırdavat/tesisat kalemi) → büyük olasılıkla mağaza fotoğrafı; sona bırak, kullanıcıya listele.
 ## Sıradaki
-- **F6.4b — Serel** (3 katalog; iç takım kartı Visam/Serel ayrımı, bkz. ECA notları). Ardından F6.4b Serel…
+- **F6.4c — Aryak + Borel** (yeni markalar; Aryak mağaza listeleri docs/taslaklar/eca-eski-magaza-listeleri.md). Ardından F6.4b Serel…
 - **F6.4 — Marka marka içerik** (K16/K17): ilk ECA. `.katalog-calisma/eca/` (OZET.md + metin) → yakın serilerin taslak listesi
   (kod tablosuyla) → kullanıcı onayı → içe aktar → katalog görselleri. Sonra Serel, Aryak, Borel, KAS, Fırat…
 - Sonra F4.5 — Çözüm sayfaları (K13): `cozumler` koleksiyonu + panel + ana sayfa alanı; ilk sayfa Mantolama (içerik beyin
@@ -369,6 +369,15 @@
 - F6.4a3: teknik tablolar "Kod" başlıklı; birleşik hücreler (dikey ortalı T, çıkış sayısı) komşu satırlara dağıtıldı. Ortak kartlar
   (ECA+KAS) henüz eca'lı: ECA marka sayfasında hem yeni ECA kartı hem ortak kart görünür — F6.4d'de temizlenecek.
 
+## Serel notları (F6.4b)
+- Katalog sayfaları açılım (1190 px): iki sütun →  (scratchpad) "kx0,kx1,ax0,ax1;…" sütun aralıklarıyla.
+  Seramik: "120,205,200,420;715,800,795,1010". Aynı ürün birkaç sayfada tekrar ediyor → koda göre tekilleştirildi (107 kod).
+- Gömme rezervuar kataloğunda "İ" harfleri ayrı span → set/panel adları elle (katalog metninden). "Minimum 25 adet sipariş" gibi
+  sipariş koşulları ve "…fiyattır", "montaj fiyata dahildir", "N adet paletli/kolili" ifadeleri ATILDI.
+- Banyo aksesuarları ECA → Serel (kullanıcı); slug serel-banyo-aksesuarlari, eski adres yönlenir. Katalogda gömülü görsel yok → mevcut görsel.
+  Lale 140101009 ve 140101010 ikisi de "Lale Tuvalet Kağıtlığı" (fark sadece çizimde); Diagonal uzun havluluk iki kod, ölçü eşlemesi belirsiz → ölçü yazılmadı.
+- Visam iç takım kartındaki eca.com.tr (Serel) görseli Serel Rezervuar İç Takımları kartına taşındı → Visam kartı görselsiz (F6.4q).
+
 ## Logo notları (F3.10)
 - Logolar `src/assets/markalar/<slug>.svg|webp`, marka yaml'ında `logo` + `logo_kaynak_url`. SVG olduğu gibi kopyalanır →
   indirmeden önce `<script|onload|javascript:|foreignObject` kontrolü yap. Kontrol aracı (kontakt.cjs) SVG'yi atlıyor → sharp ile
@@ -464,6 +473,7 @@
 | 2026-11-19 | F6.4a2 | ECA diğer armatür: 9 kart (özel mutfak, termostatik, fotoselli+zaman ayarlı, küvet, el duşu, duş kolonu/tepe duşu, ara musluk, musluk+klozet bataryası, sifon+uzatma; 180 model satırı), 19 katalog görseli | F6.4a2 |
 | 2026-11-19 | F6.4a1 ek | Icon ve Royal seri kartları eklendi (kullanıcı: mağazada var); 40 model satırı, 6 katalog görseli | F6.4a1 |
 | 2026-11-19 | F6.4a3 | ECA teknik: 13 kart (termostatik/radyatör vanaları, hava atıcı, emniyet, yerden ısıtma kollektör + kontrol, doğalgaz/su küresel, şiber-stop-kosva, çekvalf, flatör, filtre, basınç düşürücü; 337 model satırı), 27 katalog görseli | F6.4a3 |
+| 2026-11-20 | F6.4b | Serel tür bazında 11 kart: asma / BTW klozet, tezgah üstü / duvar-tezgah altı lavabo, kapak, pisuvar, engelli-çocuk, gömme rezervuar, kumanda paneli, iç takım, banyo aksesuarı (ECA→Serel, 4 seri); 188 model satırı, 24 katalog görseli | F6.4b |
 | 2026-11-18 | Ondulikit (kullanıcı fotoğrafı) + Güral aksesuar gizlendi | yayındaki tüm ürünler görselli | gorsel |
 | 2026-11-18 | F3.9 | 7 ana kategoriye ürün görseli (Orka, Yurtbay, Filli Nucleus, İzeltaş pense, Baymak hidrofor, Fırat vanalar, İzocam); DURUM fotoğraf listesi temizlendi | F3.9 |
 | 2026-11-18 | F3.10a | 15 marka logosu (ECA, Serel, Güral, Orka, Baymak, Filli, Kale Kilit, Sika, Yurtbay, Güral Seramik, Marshall, Bosch, Fawori, İzocam, Onduline); logosuz 35 | F3.10a |

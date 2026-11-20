@@ -199,7 +199,7 @@ Kaynak: `kataloglar/` (fiyat içerir, gitignore) + `docs/KATALOG-INCELEME.md`. F
     - [x] F6.4a2 Diğer armatür kartları (mutfak, termostatik, fotoselli, küvet, el duşu, duş, ara musluk, musluk, sifon)
     - [x] F6.4a3 Teknik: 13 ECA kartı (flatorler kartı ECA'ya dönüştü). Ortak kartlardan eca çıkarma + ECA görsellerinin
       değişmesi F6.4d'ye kaldı (KAS katalog görselleriyle birlikte; yanlış marka görseli kalmasın)
-  - [ ] F6.4b Serel (seramik sağlık, gömme rezervuar, banyo aksesuarları)
+  - [x] F6.4b Serel (seramik sağlık, gömme rezervuar, banyo aksesuarları) — tür bazında 11 kart
   - [ ] F6.4c Aryak + Borel (yeni markalar)
   - [ ] F6.4d KAS — ayrıca ECA+KAS ortak kartlarından eca çıkar, gövdedeki ECA satırları ve eca.com.tr görselleri temizlenir
     (radyatör/termostatik, pex, rakor, prüjör, emniyet, yerden ısıtma ×2, su küresel, şiber, çekvalf, filtre, basınç düşürücü, ara kesme)
@@ -215,7 +215,7 @@ Kaynak: `kataloglar/` (fiyat içerir, gitignore) + `docs/KATALOG-INCELEME.md`. F
   - [ ] F6.4n İzeltaş
   - [ ] F6.4o Dekor + İstanbul Fırça
   - [ ] F6.4p Tesay Bu + Işık (profiller)
-  - [ ] F6.4q Katalogsuz mevcut markaların gözden geçirilmesi
+  - [ ] F6.4q Katalogsuz mevcut markaların gözden geçirilmesi (Visam iç takım kartına Visam görseli — F6.4b'de Serel görseli kaldırıldı)
   - [ ] F6.4r Mesa (katalog gelince)
 - [ ] **F6.5 Görsel yenileme** — geçici/zayıf/başka model görsellerini katalog görselleriyle değiştir (liste DURUM'da).
 - [ ] **F6.6 PDF katalog yeni düzen** — marka bölümleri, sağ sayfada başlama, sağlı-sollu açılım (F3.11 buna katıldı).

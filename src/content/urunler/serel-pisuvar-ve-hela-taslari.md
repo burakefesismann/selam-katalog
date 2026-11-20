@@ -1,19 +1,15 @@
 ---
 ad: Serel Pisuvar & Hela Taşları
-kart_tipi: marka_tur
+kart_tipi: seri
 kategori: pisuvar-ve-hela-tasi
 markalar:
   - serel
-seriler:
-  - Orkide
-  - Amphora
-  - Diagonal
-kisa_aciklama: Arkadan ve üstten temiz su girişli Serel pisuvarlar, Amphora fotoselli model, pisuvar ara bölmesi ve 50x60 Güneş tipi hela taşı.
+kisa_aciklama: Üstten ve arkadan temiz su girişli tek parça pisuvarlar, Luvi fotoselli pisuvar, pisuvar ara bölmeleri ve hela taşı.
 one_cikanlar:
+  - 8 model, ürün kodlarıyla
   - Arkadan / üstten su girişi
   - Fotoselli pisuvar (Amphora)
   - Pisuvar ara bölmesi
-  - Hela taşı 50x60
 kullanim_alanlari:
   - ic-mekan
   - islak-hacim
@@ -40,6 +36,38 @@ gorseller:
   - gorsel: /src/assets/urunler/serel-pisuvar-ve-hela-taslari-1.webp
     alt_metin: Serel beyaz seramik pisuvar
     kaynak_url: https://eca.com.tr/urun/pisuvar-3
+  - gorsel: /src/assets/urunler/serel-pisuvar-ve-hela-taslari-2.webp
+    alt_metin: Serel tek parça pisuvar
+    kaynak_url: https://www.eca.com.tr
+  - gorsel: /src/assets/urunler/serel-pisuvar-ve-hela-taslari-3.webp
+    alt_metin: Serel Luvi pisuvar
+    kaynak_url: https://www.eca.com.tr
+modeller:
+  - kod: 0437ARS000S
+    ad: Hela Taşı
+    olcu: 60,5x50 cm
+    aciklama: İçten Yıkamalı
+  - kod: 0169FAS110H
+    ad: Luvi Fotoselli Pisuvar
+    olcu: 33x34 cm
+    aciklama: Fotosel Sistemi Dahil, Elektrikli
+  - kod: 0129UZS110H
+    ad: Tek Parça Pisuvar Üstten Temiz Su Girişli
+  - kod: 0129AZS110H
+    ad: Tek Parça Pisuvar Arkadan Temiz Su Girişli
+    aciklama: Üstten ve Arkadan Temiz Su Girişli
+  - kod: 0139UZS110H
+    ad: Tek Parça Pisuvar Üstten Temiz Su Girişli
+  - kod: 0139AZS110H
+    ad: Tek Parça Pisuvar Arkadan Temiz Su Girişli
+  - kod: 0160STS110H
+    ad: Luvi Pisuvar Ara Bölme
+    olcu: 75x40.5 cm
+    aciklama: Yükseklik 60 cm
+  - kod: 0120STS110H
+    ad: Pisuvar Ara Bölme
+    olcu: 60x37 cm
+    aciklama: Yükseklik 60 cm
 ---
 ## Mağazamızdakiler
 - **Amphora** fotoselli pisuvar
@@ -57,3 +85,6 @@ gorseller:
 Tek parça pisuvarlar Vitreous China, TS EN 13407 standardında ve Serel Hygiene+ yüzeylidir; incelediğimiz üstten girişli modelde yıkama başına 1 lt su kullanılır, garanti 10 yıldır.
 
 Hela taşı için gömme rezervuar "Serel Gömme Rezervuar, İç Takım & Kumanda Panelleri" kartında; Visam ve Japar hela taşı rezervuarları ile hela taşı giderine takılan, kokuyu önleyen kapaklı aparat (WC matik) "Rezervuar İç Takımları & Klozet Kapakları" kartındadır.
+
+## Katalog bilgisi
+- Model tablosundaki kodlar ve ölçüler Serel 2026-1 seramik sağlık gereçleri kataloğundan alınmıştır.

@@ -15,7 +15,7 @@ olculer:
   - Ayna 40x50 cm
   - Pedallı çöp kovası 5 lt
 ilgili_urunler:
-  - eca-banyo-aksesuarlari
+  - serel-banyo-aksesuarlari
   - mesa-banyo-aksesuarlari
   - serel-bedensel-engelli-ve-cocuk-serisi
 sira: 20

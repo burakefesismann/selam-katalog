@@ -25,7 +25,7 @@ teknik_ozellikler:
     deger: Krom, gold, mat siyah, titan (seriye göre)
 ilgili_urunler:
   - mesa-dus-setleri
-  - eca-banyo-aksesuarlari
+  - serel-banyo-aksesuarlari
   - banyo-aksesuarlari-diger-markalar
 sira: 11
 gorseller:

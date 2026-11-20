@@ -19,7 +19,7 @@ teknik_ozellikler:
 ilgili_urunler:
   - gural-klozetler
   - gural-lavabolar
-  - eca-banyo-aksesuarlari
+  - serel-banyo-aksesuarlari
 kaynak_sayfalar:
   - https://guralvit.com.tr/banyo-aksesuarlari/quare
 sira: 22

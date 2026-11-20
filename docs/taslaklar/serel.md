@@ -1,6 +1,8 @@
 # Serel — kart taslağı (F6.4b)
 
-> Durum: **ONAY BEKLİYOR.** Kaynak: Serel 2026-1 seramik sağlık (30 sayfa), Serel Gömme Rezervuar 2026-1 (13),
+> Durum: **ONAYLANDI (2026-11-20)** — tür bazında kartlar; banyo aksesuarları **Serel** markasına geçti
+> (eski adres yönlenir); aksesuarda sadece mağazadaki 4 seri (Lale, Rita, Star, Diagonal).
+> Kaynak: Serel 2026-1 seramik sağlık (30 sayfa), Serel Gömme Rezervuar 2026-1 (13),
 > Serel Banyo Aksesuarları 2025-1 (24). Fiyat alınmaz; kodlar ve ölçüler katalogdan.
 
 ## Bugün
