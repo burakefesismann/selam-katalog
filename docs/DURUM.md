@@ -370,7 +370,7 @@
   (ECA+KAS) henüz eca'lı: ECA marka sayfasında hem yeni ECA kartı hem ortak kart görünür — F6.4d'de temizlenecek.
 
 ## Serel notları (F6.4b)
-- Katalog sayfaları açılım (1190 px): iki sütun →  (scratchpad) "kx0,kx1,ax0,ax1;…" sütun aralıklarıyla.
+- Katalog sayfaları açılım (1190 px): iki sütun → sutun-parse.py (scratchpad, depoda değil) "kx0,kx1,ax0,ax1;…" sütun aralıklarıyla.
   Seramik: "120,205,200,420;715,800,795,1010". Aynı ürün birkaç sayfada tekrar ediyor → koda göre tekilleştirildi (107 kod).
 - Gömme rezervuar kataloğunda "İ" harfleri ayrı span → set/panel adları elle (katalog metninden). "Minimum 25 adet sipariş" gibi
   sipariş koşulları ve "…fiyattır", "montaj fiyata dahildir", "N adet paletli/kolili" ifadeleri ATILDI.
