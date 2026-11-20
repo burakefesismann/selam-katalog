@@ -66,8 +66,9 @@ ATLA = [r'^ar yak 2026-1', r'^eca armatur 2026-1', r'^teknik urunler 2026-1', r'
 # Fiyat koruması: bu kelimeleri içeren satır tamamen atılır
 # (f.yat: bozuk font eşlemesinde "fiyat" → "f ඈyat" gibi çıkabiliyor)
 FIYAT_SATIR = re.compile(r'f\s?\S\s?yat|\bTL\b|₺|€|\$|\bEUR\b|\bUSD\b|\bKDV\b|iskonto|indirim|brüt|liste fiy', re.I)
-# Fiyat biçimli sayılar atılır: 1.234,56 · 41.300 · 12,50 (ölçülerde de geçebilir — güvenlik öncelikli)
-FIYAT_SAYI = re.compile(r'^\d{1,3}(\.\d{3})+(,\d{1,2})?$|^\d+,\d{2}$')
+# Fiyat biçimli sayılar atılır: 1.234,56 · 41.300 · 12,50 · 44,581 · 1.094,276 (Poelsan 3 ondalıklı EUR)
+# (ölçülerde de geçebilir — güvenlik öncelikli)
+FIYAT_SAYI = re.compile(r'^\d{1,3}(\.\d{3})+(,\d{1,3})?$|^\d+,\d{2,3}$')
 
 
 def sade(ad: str) -> str:
