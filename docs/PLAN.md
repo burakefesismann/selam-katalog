@@ -207,7 +207,7 @@ Kaynak: `kataloglar/` (fiyat içerir, gitignore) + `docs/KATALOG-INCELEME.md`. F
     - [x] F6.4d2 KAS armatür (batarya serileri, duş, musluk, yedek parça)
   - [x] F6.4e Fırat
   - [x] F6.4f Poelsan
-  - [ ] F6.4g Sumak
+  - [x] F6.4g Sumak
   - [ ] F6.4h Orka
   - [ ] F6.4i Samir
   - [ ] F6.4j Sika

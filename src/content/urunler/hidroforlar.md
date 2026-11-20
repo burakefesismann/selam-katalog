@@ -4,9 +4,8 @@ kart_tipi: grup
 kategori: pompalar
 markalar:
   - baymak
-  - sumak
   - teknopomp
-kisa_aciklama: Baymak JET 82M ve Sumak jet paket hidroforlar; düşey milli kademeli, frekans kontrollü ve çift pompalı (Teknopomp) modeller.
+kisa_aciklama: Baymak JET 82M paket hidroforlar ve çift pompalı Teknopomp bina hidroforu.
 one_cikanlar:
   - Paket hidrofor, kullanıma hazır
   - 8 m emiş (Baymak JET)
@@ -21,13 +20,13 @@ teknik_ozellikler:
     deger: 0,9 – 2x2,2 (modele göre)
 olculer:
   - "Baymak JET 82M: 20 lt ve 50 lt tank"
-  - "Sumak jet: 24 lt ve 50 lt tank"
 ilgili_urunler:
   - polietilen-su-depolari
   - dalgic-pompalar
   - kas-cekvalf-flator-ve-basinc-dusuruculer
   - eca-basinc-dusuruculer
   - manometre-ve-termometre
+  - sumak-hidroforlar
 kaynak_sayfalar:
   - https://www.baymak.com.tr/media/4261/jet-serisi-paket-hidrofor-brosur.pdf
   - https://www.baymak.com.tr/en/products/water-technology/boosters
@@ -41,10 +40,8 @@ gorseller:
     kaynak_url: https://www.baymak.com.tr/en/products/water-technology/boosters
 ---
 ## Mağazamızdaki modeller
+- Sumak hidroforları kendi kartında: **Sumak Hidroforlar**.
 - **Baymak JET 82M** paket hidrofor, 20 lt ve 50 lt tanklı
-- **Sumak jet pompalı** paket hidrofor, 24 lt ve 50 lt tanklı
-- **Sumak düşey milli kademeli** hidrofor, 1x2,2 kW
-- **Sumak frekans kontrollü** hidrofor, 0,9 kW
 - **Teknopomp 2XMNV 32-606**, iki pompalı, 2x2,2 kW
 
 ## Hidrofor ne işe yarar?

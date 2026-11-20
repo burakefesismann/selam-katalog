@@ -1,6 +1,7 @@
 # Sumak — taslak (F6.4g)
 
-> Durum: **ONAY BEKLİYOR.** Kaynak: Sumak Pompa 2026-1 (104 sayfa). Fiyat (₺ sütunu) alınmaz. Kod yerine model adı (ör. SDTV30/2 ZY);
+> Durum: **ONAYLANDI ve UYGULANDI (2026-11-20)** — ev ve bina tipi 6 kart; motopomp, sıcak su, EN 733, yangın, inverter yok.
+> Kaynak: Sumak Pompa 2026-1 (104 sayfa). Fiyat (₺ sütunu) alınmaz. Kod yerine model adı (ör. SDTV30/2 ZY);
 > satırda kW/HP, V/Hz, devir, çıkış çapı, en yüksek basma yüksekliği (Hm).
 
 ## Bugün
