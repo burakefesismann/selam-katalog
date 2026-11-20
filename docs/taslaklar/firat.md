@@ -1,6 +1,7 @@
 # Fırat — taslak (F6.4e)
 
-> Durum: **ONAY BEKLİYOR.** Kaynak: Fırat 01 Nisan 2026 fiyat listesi (64 sayfa). Fiyat alınmaz ("FİYAT TL/METRE" sütunu ve
+> Durum: **ONAYLANDI ve UYGULANDI (2026-11-20)** — 18 kart kodlu tabloya döndü, yeni: Fırat Hortumlar, Fırat Metal Küresel Vanalar.
+> Kaynak: Fırat 01 Nisan 2026 fiyat listesi (64 sayfa). Fiyat alınmaz ("FİYAT TL/METRE" sütunu ve
 > "ÜRÜN" sütunundaki "…/Metre", "…/Adet" fiyatları atılır). 219 tablo, ≈1190 kod.
 
 ## Mevcut 20 kart → kodlu tabloya dönüşür (adresler korunur)

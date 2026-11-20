@@ -1,15 +1,15 @@
 ---
 ad: Fırat PPRC Kompozit (Cam Elyaf Takviyeli) Borular
-kart_tipi: grup
+kart_tipi: seri
 kategori: pprc-temiz-su
 markalar:
   - firat
 kisa_aciklama: Orta katmanı cam elyaf takviyeli üç katmanlı PPRC borular. Sıcakta daha az uzar, traşlama gerektirmeden kaynak yapılır.
 one_cikanlar:
+  - 21 model, ürün kodlarıyla
   - Düşük ısıl genleşme
   - Traşlama gerektirmez
   - Sıva üstü uygulamaya uygun
-  - PN20 ve PN25
 kullanim_alanlari:
   - ic-mekan
   - sicak-su
@@ -49,6 +49,91 @@ gorseller:
   - gorsel: /src/assets/urunler/firat-pprc-kompozit-cam-elyaf-takviyeli-borular-2.webp
     alt_metin: Fırat kompozit borular ve dirseklerle yapılmış tesisat
     kaynak_url: https://www.firat.com/en-us/indoor-piping-system/cold-hot-water-pipe-systems/pprc-product-range/composite-pipe-and-fittings
+modeller:
+  - kod: 7B00024020
+    ad: Fırat PN20 Kompozit Borular
+    olcu: 20 mm, et 2,8 mm
+    aciklama: ambalaj 100 Metre / Bağ
+  - kod: 7B00024025
+    ad: Fırat PN20 Kompozit Borular
+    olcu: 25 mm, et 3,5 mm
+    aciklama: ambalaj 80 Metre / Bağ
+  - kod: 7B00024032
+    ad: Fırat PN20 Kompozit Borular
+    olcu: 32 mm, et 4,4 mm
+    aciklama: ambalaj 40 Metre / Bağ
+  - kod: 7B00024040
+    ad: Fırat PN20 Kompozit Borular
+    olcu: 40 mm, et 5,5 mm
+    aciklama: ambalaj 40 Metre / Bağ
+  - kod: 7B00024050
+    ad: Fırat PN20 Kompozit Borular
+    olcu: 50 mm, et 6,9 mm
+    aciklama: ambalaj 20 Metre / Bağ
+  - kod: 7B00024063
+    ad: Fırat PN20 Kompozit Borular
+    olcu: 63 mm, et 8,6 mm
+    aciklama: ambalaj 20 Metre / Bağ
+  - kod: 7B00024075
+    ad: Fırat PN20 Kompozit Borular
+    olcu: 75 mm, et 10,3 mm
+    aciklama: ambalaj 12 Metre / Bağ
+  - kod: 7B00024090
+    ad: Fırat PN20 Kompozit Borular
+    olcu: 90 mm, et 12,3 mm
+    aciklama: ambalaj 8 Metre / Bağ
+  - kod: 7B00024110
+    ad: Fırat PN20 Kompozit Borular
+    olcu: 110 mm, et 15,1 mm
+    aciklama: ambalaj 4 Metre / Bağ
+  - kod: 7B00024126
+    ad: Fırat PN20 Kompozit Borular
+    olcu: 125 mm, et 17,1 mm
+    aciklama: ambalaj 4 Metre / Bağ
+  - kod: 7B00024160
+    ad: Fırat PN20 Kompozit Borular
+    olcu: 160 mm, et 21,9 mm
+    aciklama: ambalaj 4 Metre / Bağ
+  - kod: 7B00023020
+    ad: Fırat PN25 Kompozit PPRC Borular
+    olcu: 20 mm, et 3,4 mm
+    aciklama: ambalaj 100 Metre / Bağ
+  - kod: 7B00023025
+    ad: Fırat PN25 Kompozit PPRC Borular
+    olcu: 25 mm, et 4,2 mm
+    aciklama: ambalaj 80 Metre / Bağ
+  - kod: 7B00023032
+    ad: Fırat PN25 Kompozit PPRC Borular
+    olcu: 32 mm, et 5,4 mm
+    aciklama: ambalaj 40 Metre / Bağ
+  - kod: 7B00023040
+    ad: Fırat PN25 Kompozit PPRC Borular
+    olcu: 40 mm, et 6,7 mm
+    aciklama: ambalaj 40 Metre / Bağ
+  - kod: 7B00023050
+    ad: Fırat PN25 Kompozit PPRC Borular
+    olcu: 50 mm, et 8,4 mm
+    aciklama: ambalaj 20 Metre / Bağ
+  - kod: 7B00023063
+    ad: Fırat PN25 Kompozit PPRC Borular
+    olcu: 63 mm, et 10,5 mm
+    aciklama: ambalaj 20 Metre / Bağ
+  - kod: 7B00023075
+    ad: Fırat PN25 Kompozit PPRC Borular
+    olcu: 75 mm, et 12,5 mm
+    aciklama: ambalaj 12 Metre / Bağ
+  - kod: 7B00023090
+    ad: Fırat PN25 Kompozit PPRC Borular
+    olcu: 90 mm, et 15,0 mm
+    aciklama: ambalaj 8 Metre / Bağ
+  - kod: 7B00023110
+    ad: Fırat PN25 Kompozit PPRC Borular
+    olcu: 110 mm, et 18,3 mm
+    aciklama: ambalaj 4 Metre / Bağ
+  - kod: 7B00023126
+    ad: Fırat PN25 Kompozit PPRC Borular
+    olcu: 125 mm, et 20,8 mm
+    aciklama: ambalaj 4 Metre / Bağ
 ---
 ## Nerede kullanılır
 Sıcak su ve kalorifer hatlarında, sıcak ve soğuk suyun birlikte çalıştığı sistemlerde; özellikle açıkta (sıva üstü) giden tesisatlarda. Isınınca düz PPRC boruya göre çok daha az uzadığı için hat sarkmaz, dalgalanmaz.
@@ -60,3 +145,6 @@ Sıcak su ve kalorifer hatlarında, sıcak ve soğuk suyun birlikte çalıştı�
 
 ## Nasıl uygulanır
 Düz PPRC boru ile aynı kaynak makinesi ve aynı Fırat PPRC ek parçalarıyla birleştirilir.
+
+## Katalog bilgisi
+- Model tablosundaki kodlar, ölçüler ve ambalaj bilgisi Fırat 01 Nisan 2026 listesinden alınmıştır.

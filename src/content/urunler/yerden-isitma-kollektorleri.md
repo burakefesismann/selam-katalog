@@ -1,11 +1,12 @@
 ---
 ad: Yerden Isıtma Kollektörleri
-kart_tipi: grup
+kart_tipi: seri
 kategori: yerden-isitma
 markalar:
   - firat
 kisa_aciklama: Yerden ısıtma ve mobil sistemlerde suyu devrelere dağıtan Fırat vanalı kollektörler; 2'liden 13'lüye.
 one_cikanlar:
+  - 22 model, ürün kodlarıyla
   - 2–13 çıkış seçeneği
   - Vanalı ve debi ayarlı tipler
   - MS58 pirinç gövde (Fırat)
@@ -36,6 +37,95 @@ gorseller:
   - gorsel: /src/assets/urunler/yerden-isitma-kollektorleri-2.webp
     alt_metin: Duvara monte edilmiş kollektör ve PEX boru bağlantıları
     kaynak_url: https://www.firat.com/en-us/sanitary-piping-systems/metal-systems/collectors
+modeller:
+  - kod: "7800220200"
+    ad: 1" Kendinden Vanalı Kollektör
+    olcu: 2 A ğızlı çıkış
+    aciklama: 2’li Kollektör — ambalaj 18 Adet / Kutu
+  - kod: "7800220300"
+    ad: 1" Kendinden Vanalı Kollektör
+    olcu: 3 A ğızlı çıkış
+    aciklama: 3’lü Kollektör — ambalaj 12 Adet / Kutu
+  - kod: "7800220400"
+    ad: 1" Kendinden Vanalı Kollektör
+    olcu: 4 A ğızlı çıkış
+    aciklama: 4’lü Kollektör — ambalaj 12 Adet / Kutu
+  - kod: "7800220500"
+    ad: 1" Kendinden Vanalı Kollektör
+    olcu: 5 A ğızlı çıkış
+    aciklama: 5’li Kollektör — ambalaj 6 Adet / Kutu
+  - kod: "7800220600"
+    ad: 1" Kendinden Vanalı Kollektör
+    olcu: 6 A ğızlı çıkış
+    aciklama: 6’lı Kollektör — ambalaj 6 Adet / Kutu
+  - kod: "7800220700"
+    ad: 1" Kendinden Vanalı Kollektör
+    olcu: 7 A ğızlı çıkış
+    aciklama: 7’li Kollektör — ambalaj 6 Adet / Kutu
+  - kod: "7800220800"
+    ad: 1" Kendinden Vanalı Kollektör
+    olcu: 8 A ğızlı çıkış
+    aciklama: 8’li Kollektör — ambalaj 6 Adet / Kutu
+  - kod: "7800220900"
+    ad: 1" Kendinden Vanalı Kollektör
+    olcu: 9 A ğızlı çıkış
+    aciklama: 9’lu Kollektör — ambalaj 6 Adet / Kutu
+  - kod: "7800221000"
+    ad: 1" Kendinden Vanalı Kollektör
+    olcu: 10 A ğızlı çıkış
+    aciklama: 10’lu Kollektör — ambalaj 6 Adet / Kutu
+  - kod: "7800221100"
+    ad: 1" Kendinden Vanalı Kollektör
+    olcu: 11 A ğızlı çıkış
+    aciklama: 11’li Kollektör — ambalaj 6 Adet / Kutu
+  - kod: "7800221200"
+    ad: 1" Kendinden Vanalı Kollektör
+    olcu: 12 A ğızlı çıkış
+    aciklama: 12’li Kollektör — ambalaj 6 Adet / Kutu
+  - kod: "7800210200"
+    ad: 1" Mini Küresel Vanalı Kollektör
+    olcu: 2 A ğızlı çıkış
+    aciklama: 2’li Kollektör — ambalaj 18 Adet / Kutu
+  - kod: "7800210300"
+    ad: 1" Mini Küresel Vanalı Kollektör
+    olcu: 3 A ğızlı çıkış
+    aciklama: 3’lü Kollektör — ambalaj 12 Adet / Kutu
+  - kod: "7800210400"
+    ad: 1" Mini Küresel Vanalı Kollektör
+    olcu: 4 A ğızlı çıkış
+    aciklama: 4’lü Kollektör — ambalaj 12 Adet / Kutu
+  - kod: "7800210500"
+    ad: 1" Mini Küresel Vanalı Kollektör
+    olcu: 5 A ğızlı çıkış
+    aciklama: 5’li Kollektör — ambalaj 6 Adet / Kutu
+  - kod: "7800210600"
+    ad: 1" Mini Küresel Vanalı Kollektör
+    olcu: 6 A ğızlı çıkış
+    aciklama: 6’lı Kollektör — ambalaj 6 Adet / Kutu
+  - kod: "7800210700"
+    ad: 1" Mini Küresel Vanalı Kollektör
+    olcu: 7 A ğızlı çıkış
+    aciklama: 7’li Kollektör — ambalaj 6 Adet / Kutu
+  - kod: "7800210800"
+    ad: 1" Mini Küresel Vanalı Kollektör
+    olcu: 8 A ğızlı çıkış
+    aciklama: 8’li Kollektör — ambalaj 6 Adet / Kutu
+  - kod: "7800210900"
+    ad: 1" Mini Küresel Vanalı Kollektör
+    olcu: 9 A ğızlı çıkış
+    aciklama: 9’lu Kollektör — ambalaj 6 Adet / Kutu
+  - kod: "7800211000"
+    ad: 1" Mini Küresel Vanalı Kollektör
+    olcu: 10 A ğızlı çıkış
+    aciklama: 10’lu Kollektör — ambalaj 6 Adet / Kutu
+  - kod: "7800211100"
+    ad: 1" Mini Küresel Vanalı Kollektör
+    olcu: 11 A ğızlı çıkış
+    aciklama: 11’li Kollektör — ambalaj 6 Adet / Kutu
+  - kod: "7800211200"
+    ad: 1" Mini Küresel Vanalı Kollektör
+    olcu: 12 A ğızlı çıkış
+    aciklama: 12’li Kollektör — ambalaj 6 Adet / Kutu
 ---
 ## Nerede kullanılır
 Yerden ısıtma, mobil radyatör sistemi ve PEX su dağıtım sistemlerinde; kombiden ya da kazandan gelen suyu her odanın devresine dağıtır ve dönüş suyunu toplar. Çıkış sayısı, bağlanacak devre ya da radyatör sayısına göre seçilir.
@@ -52,3 +142,6 @@ Yerden ısıtma, mobil radyatör sistemi ve PEX su dağıtım sistemlerinde; kom
 - Montajdan önce sistemdeki pislik ve kum temizlenmeli, sistem dona karşı korunmalıdır.
 
 Kollektör dolabı, kelepçe ve hava-su boşaltma seti gibi tamamlayıcılar "Yerden Isıtma Aksesuarları" grubundadır.
+
+## Katalog bilgisi
+- Model tablosundaki kodlar, ölçüler ve ambalaj bilgisi Fırat 01 Nisan 2026 listesinden alınmıştır.

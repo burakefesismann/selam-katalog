@@ -1,11 +1,12 @@
 ---
 ad: Drenaj Boruları (Delikli / Tünel Tipi)
-kart_tipi: grup
+kart_tipi: seri
 kategori: altyapi
 markalar:
   - firat
 kisa_aciklama: Temel, istinat duvarı, bahçe ve yol kenarında zemin suyunu toplayıp uzaklaştıran Fırat PVC delikli ve tünel tipi drenaj boruları.
 one_cikanlar:
+  - 11 model, ürün kodlarıyla
   - Kangal halinde delikli boru
   - Tünel tipi 6 m boy
   - En az 50 yıl ömür
@@ -34,6 +35,51 @@ gorseller:
   - gorsel: /src/assets/urunler/drenaj-borulari-delikli-tunel-tipi-2.webp
     alt_metin: Fırat PVC drenaj borusu kangalı
     kaynak_url: https://www.firat.com/en-us/drainage-pipe-systems/pvc-drainage-systems
+modeller:
+  - kod: "7120000001"
+    ad: Drenaj
+    olcu: 80 mm
+    aciklama: ambalaj 100 Metre / Kangal
+  - kod: "7120000002"
+    ad: Drenaj
+    olcu: 110 mm
+    aciklama: ambalaj 100 Metre / Kangal
+  - kod: "7120000003"
+    ad: Drenaj
+    olcu: 125 mm
+    aciklama: ambalaj 100 Metre / Kangal
+  - kod: "7120000004"
+    ad: Drenaj
+    olcu: 160 mm
+    aciklama: ambalaj 50 Metre / Kangal
+  - kod: "7120000005"
+    ad: Drenaj
+    olcu: 200 mm
+    aciklama: ambalaj 25 Metre / Kangal
+  - kod: "7120001000"
+    ad: Manşon
+    olcu: 100 mm
+    aciklama: ambalaj 50 Adet / Çuval
+  - kod: "7120000011"
+    ad: Drenaj
+    olcu: 80 mm
+    aciklama: ambalaj 100 Metre / Kangal
+  - kod: "7120000012"
+    ad: Drenaj
+    olcu: 110 mm
+    aciklama: ambalaj 100 Metre / Kangal
+  - kod: "7120000013"
+    ad: Drenaj
+    olcu: 125 mm
+    aciklama: ambalaj 100 Metre / Kangal
+  - kod: "7120000014"
+    ad: Drenaj
+    olcu: 160 mm
+    aciklama: ambalaj 50 Metre / Kangal
+  - kod: "7120000015"
+    ad: Drenaj
+    olcu: 200 mm
+    aciklama: ambalaj 25 Metre / Kangal
 ---
 ## Nerede kullanılır
 - Temelinde su bulunan binaların ve bodrumların korunmasında
@@ -45,3 +91,6 @@ gorseller:
 **Delikli drenaj borusu** kangal halinde gelir; üzerindeki küçük su giriş delikleri (TS 9128'e göre orta grup, yaklaşık 1,2 mm) zemin suyunu içine alır. Ağır kimyasal koşullarda bile en az 50 yıl ömürlüdür.
 
 **Tünel tipi drenaj borusu** 6 m boylarda üretilir, Karayolları Genel Müdürlüğü şartnamesine uygundur ve yapılardaki her türlü zemin suyunun tahliyesinde kullanılır. Kolayca takılır; bükme ve yapıştırma gibi zahmetli işçilik gerektirmez.
+
+## Katalog bilgisi
+- Model tablosundaki kodlar, ölçüler ve ambalaj bilgisi Fırat 01 Nisan 2026 listesinden alınmıştır.

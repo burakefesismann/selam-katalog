@@ -4,7 +4,7 @@ Beyin takımının hazırladığı, kullanıcının onayladığı kart listesi (
 Bu dosya kategori ağacının ve kart adlarının kaynağıdır. Değişiklik yalnızca kullanıcı/beyin takımı onayıyla yapılır.
 
 Kart tipleri (K11): `grup` = ürün ailesi tek kart · `marka_tur` = marka + tür, örneklemli · `urun` = tek ürün, teknik detaylı.
-Toplam: 260 kart.
+Toplam: 262 kart.
 
 **Güncelleme 2026-11-16 (Paket 001 ile, beyin takımı kararı):** PE100 ek parçaları → Fırat; PEX kartı adı ve markaları;
 ProContact Sıva & Şap → Mantolama; resmi yazımlar DuoContact, DuoFix, StarTherm, CreativTop. Toplam kart sayısı değişmedi (213).
@@ -27,12 +27,13 @@ KBS Çiroz → El Aletleri (Tesisatçı Aletleri ikiye ayrıldı → 214 kart), 
 
 
 
+
 ## 1. Tesisat Boruları & Ek Parçalar (21 kart)
 
 ### Altyapı & Drenaj
-- Drenaj Boruları (Delikli / Tünel Tipi) — `grup` — Fırat
+- Drenaj Boruları (Delikli / Tünel Tipi) — `seri` — Fırat
 - Drenaj Kanalları & Izgaralar — `grup` — çeşitli
-- Fırat Triplex Koruge Altyapı Boruları & Ek Parçaları — `grup` — Fırat
+- Fırat Triplex Koruge Altyapı Boruları & Ek Parçaları — `seri` — Fırat
 - Rögar Setleri — `grup` — çeşitli
 
 ### Metal Boru & Ek Parça
@@ -42,32 +43,33 @@ KBS Çiroz → El Aletleri (Tesisatçı Aletleri ikiye ayrıldı → 214 kart), 
 - Siyah Boru & Ek Parçaları — `grup` — çeşitli
 
 ### PE İçme Suyu
-- Fırat PE100 İçme Suyu Boruları (Kangal) — `grup` — Fırat
+- Fırat PE100 İçme Suyu Boruları (Kangal) — `seri` — Fırat
 - PE100 Kaynaklı & Elektrofüzyon Ek Parçalar — `grup` — Fırat
 - Poelsan Kaplin (Sıkıştırmalı) Ek Parçalar — `grup` — Poelsan
 
 ### PEX & PE-RT
-- PEX Bağlantılar & Vanalar — `grup` — Fırat
+- PEX Bağlantılar & Vanalar — `seri` — Fırat
 
 ### PPRC Temiz Su
-- Fırat PPRC Borular (PN20 / PN25) — `grup` — Fırat
-- Fırat PPRC Ek Parçaları — `grup` — Fırat
-- Fırat PPRC Kompozit (Cam Elyaf Takviyeli) Borular — `grup` — Fırat
-- Fırat PPRC Vanalar — `grup` — Fırat
+- Fırat PPRC Borular (PN20 / PN25) — `seri` — Fırat
+- Fırat PPRC Ek Parçaları — `seri` — Fırat
+- Fırat PPRC Kompozit (Cam Elyaf Takviyeli) Borular — `seri` — Fırat
+- Fırat PPRC Vanalar — `seri` — Fırat
 
 ### PVC Atık Su
-- Fırat Dublex PVC Atık Su Boruları — `grup` — Fırat
-- Fırat Gediz PVC Atık Su Boruları — `grup` — Fırat
-- Fırat PVC Atık Su Ek Parçaları — `grup` — Fırat
-- Fırat Residence Sessiz Atık Su Sistemi — `grup` — Fırat
+- Fırat Dublex PVC Atık Su Boruları — `seri` — Fırat
+- Fırat Gediz PVC Atık Su Boruları — `seri` — Fırat
+- Fırat PVC Atık Su Ek Parçaları — `seri` — Fırat
+- Fırat Residence Sessiz Atık Su Sistemi — `seri` — Fırat
 
 ### Yağmur Oluğu
-- Fırat PVC Yağmur Oluğu Sistemi — `grup` — Fırat
+- Fırat PVC Yağmur Oluğu Sistemi — `seri` — Fırat
 
-## 2. Vanalar (21 kart)
+## 2. Vanalar (22 kart)
 
 ### Küresel Vanalar
 - ECA Su Küresel Vanaları — `seri` — ECA
+- Fırat Metal Küresel Vanalar — `seri` — Fırat
 - KAS Su Küresel Vanaları — `seri` — KAS
 - Türkoğlu Büyük Çap Küresel & Yangın Vanaları — `grup` — Türkoğlu
 
@@ -111,7 +113,7 @@ KBS Çiroz → El Aletleri (Tesisatçı Aletleri ikiye ayrıldı → 214 kart), 
 ## 4. Isıtma (11 kart)
 
 ### Kombi Aksesuarları
-- Kombi & Radyatör Aksesuarları — `grup` — Fırat
+- Kombi & Radyatör Aksesuarları — `seri` — Fırat
 
 ### Radyatör & Havlupan
 - ECA Havlupanlar — `grup` — ECA
@@ -121,11 +123,11 @@ KBS Çiroz → El Aletleri (Tesisatçı Aletleri ikiye ayrıldı → 214 kart), 
 - Borel Yerden Isıtma Boruları — `seri` — Borel
 - ECA Yerden Isıtma Kollektörleri — `seri` — ECA
 - ECA Yerden Isıtma Kontrol & Aksesuarları — `seri` — ECA
-- Fırat PE-RT Yerden Isıtma Boruları — `grup` — Fırat
+- Fırat PE-RT Yerden Isıtma Boruları — `seri` — Fırat
 - KAS Yerden Isıtma Kollektörleri — `seri` — KAS
 - KAS Yerden Isıtma Kontrol & Aksesuarları — `seri` — KAS
-- Yerden Isıtma Aksesuarları — `grup` — Fırat
-- Yerden Isıtma Kollektörleri — `grup` — Fırat
+- Yerden Isıtma Aksesuarları — `seri` — Fırat
+- Yerden Isıtma Kollektörleri — `seri` — Fırat
 
 ## 5. Armatür (Batarya & Duş) (45 kart)
 
@@ -427,7 +429,7 @@ KBS Çiroz → El Aletleri (Tesisatçı Aletleri ikiye ayrıldı → 214 kart), 
 - Matkap Uçları (SDS, HSS, ağaç, cam-seramik) — `grup` — Master · Bosch
 - Zımparalar & Flap Diskler — `grup` — Master
 
-## 17. Hırdavat & Nalburiye (26 kart)
+## 17. Hırdavat & Nalburiye (27 kart)
 
 ### Bağlantı Elemanları
 - Civata, Somun, Pul & Klemens — `grup` — çeşitli
@@ -439,6 +441,7 @@ KBS Çiroz → El Aletleri (Tesisatçı Aletleri ikiye ayrıldı → 214 kart), 
 - Bahçe Aletleri (makas, tırmık, kürek) — `grup` — Master · Yapar
 - Bahçe Telleri — `grup` — Samtel
 - El Arabası & Tekerlekler — `grup` — Yapar · Master
+- Fırat Hortumlar — `seri` — Fırat
 - Hortumlar & Hortum Bağlantıları — `grup` — çeşitli
 
 ### Bant & Yapıştırıcı

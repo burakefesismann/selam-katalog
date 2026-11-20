@@ -1,15 +1,15 @@
 ---
 ad: Yerden Isıtma Aksesuarları
-kart_tipi: grup
+kart_tipi: seri
 kategori: yerden-isitma
 markalar:
   - firat
 kisa_aciklama: Yerden ısıtma levhaları, kenar izolasyon bandı, klipsli lama, köşe düzeltici, tespit kroşesi, kollektör dolabı, kelepçe ve hava-su boşaltma setleri.
 one_cikanlar:
+  - 7 model, ürün kodlarıyla
   - Strafor yerden ısıtma levhası
   - Kenar izolasyon bandı
   - Kollektör dolabı 40 / 60 / 80
-  - Hava-su boşaltma seti
 kullanim_alanlari:
   - ic-mekan
   - yerden-isitma
@@ -37,6 +37,34 @@ gorseller:
   - gorsel: /src/assets/urunler/yerden-isitma-aksesuarlari-2.webp
     alt_metin: "Yerden ısıtma katmanları: yalıtım levhası, borular ve şap"
     kaynak_url: https://www.firat.com/binaici-tesisat-boru-sistemleri/pex-zeminden-isitma-sistemleri
+modeller:
+  - kod: "74920000016"
+    ad: Klipsli Lama
+    olcu: 16mm
+    aciklama: ambalaj 220 Adet / Kasa
+  - kod: "74910000016"
+    ad: Köşe Düzeltici
+    olcu: 16mm
+    aciklama: ambalaj 80 Adet / Koli
+  - kod: "7494002525"
+    ad: Tespit Kroşesi
+    olcu: 25mmx25mm
+    aciklama: ambalaj 4000 Adet / Koli
+  - kod: "74930000016"
+    ad: Kılıflı Boru Tapası
+    olcu: 16 mmx 16 mm
+    aciklama: ambalaj 900 A det / K oli
+  - kod: 7321000191K
+    ad: Spiral Kılıflar
+    olcu: iç çap 19.5mm mm
+    aciklama: Spiral Kılıf (Kırmızı) — ambalaj 100 Mt /Kangal
+  - kod: 7321000191M
+    ad: Spiral Kılıflar
+    olcu: iç çap 19.5mm mm
+    aciklama: Spiral Kılıf (Mavi) — ambalaj 100 Mt /Kangal
+  - kod: "7800220000"
+    ad: Kollektör Kelepçe Seti
+    aciklama: ambalaj 60 Adet / Kasa
 ---
 ## Mağazamızdakiler
 - **Strafor yerden ısıtma levhası:** 28-30 ve 30-32 dansite
@@ -54,3 +82,6 @@ gorseller:
 - **Köşe düzeltici:** 90° dönüşlerde boruyu destekler; Fırat, bu parçanın genleşmeyi dengeleyerek çatlak ve sızıntıyı önlediğini belirtir.
 - **Kollektör dolabı:** kollektörü ve vanalarını duvar içinde düzenli ve korunaklı tutar; ölçüsü kollektörün çıkış sayısına göre seçilir.
 - **Hava-su boşaltma seti:** kollektörün uçlarına takılır; sistemin havasının alınmasını ve boşaltılmasını sağlar.
+
+## Katalog bilgisi
+- Model tablosundaki kodlar, ölçüler ve ambalaj bilgisi Fırat 01 Nisan 2026 listesinden alınmıştır.

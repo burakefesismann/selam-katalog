@@ -3,7 +3,7 @@
 > Her oturumun başında oku, sonunda güncelle. Kısa tut.
 
 ## Şu an
-- Aktif görev: F6.4e Fırat — taslak → onay → kartlar
+- Aktif görev: — (sıradaki: F6.4f Poelsan)
 - Site: https://burakefesismann.github.io/selam-katalog/
 - Faz: 3 — Gerçek içerik ve görseller
 
@@ -173,7 +173,7 @@
     Marshall sentetik tiner (sayfa yok), yerden ısıtma aksesuarları, Filli Dalmaçyalı dübel (PDF), Sika 10, Güral 3, Onduline 5.
   - Kaynaksız 70 kart (çoğu "çeşitli" hırdavat/tesisat kalemi) → büyük olasılıkla mağaza fotoğrafı; sona bırak, kullanıcıya listele.
 ## Sıradaki
-- **F6.4e — Fırat** (fiyat listesi 64 sayfa; Fırat ile ortak yerden ısıtma ve PEX kartları da Fırat serilerine dönüşür). Ardından F6.4b Serel…
+- **F6.4f — Poelsan** (68 sayfa). Ardından F6.4b Serel…
 - **F6.4 — Marka marka içerik** (K16/K17): ilk ECA. `.katalog-calisma/eca/` (OZET.md + metin) → yakın serilerin taslak listesi
   (kod tablosuyla) → kullanıcı onayı → içe aktar → katalog görselleri. Sonra Serel, Aryak, Borel, KAS, Fırat…
 - Sonra F4.5 — Çözüm sayfaları (K13): `cozumler` koleksiyonu + panel + ana sayfa alanı; ilk sayfa Mantolama (içerik beyin
@@ -398,6 +398,12 @@
   Musluk/ara musluk/yedek parça sayfalarının görselleri küçük (≈200–290 px) → 4× büyütüldü. Eski kas-lavabo/banyo/eviye kartları kalktı (Batarya Serileri'ne yönlenir).
   ara-kesme-valfleri artık yalnız Visam (görselsiz, F6.4q). Raflesya'da aynı adlı birden çok lavabo/evye kodu var (fark katalog metninde yok).
 
+## Fırat notları (F6.4e)
+- "KODU | ÇAP | Et Kalınlığı | AMBALAJ | F‹YAT TL/METRE" tabloları → firat-tablo.py (scratchpad). Fontta ı=›, İ=‹; "K›l››"=Kılıflı.
+  Çift cidarlı korigatör satırlarında fiyat "ÜRÜN" sütununda ("…/Metre", "…/Adet") → kesildi; fiyat biçimli her değer atılıyor.
+- Katalog küçük resimleri ~90 px → yeni kartların görselleri firat.com'dan (hortumlar, küresel vanalar). Mevcut kartların firat.com görselleri korundu.
+- PE kangal kartının adı "PE100" (paket 002), katalogda "6/10 atü yüksek/alçak yoğunluklu polietilen" — satır adları katalogdaki gibi.
+
 ## Logo notları (F3.10)
 - Logolar `src/assets/markalar/<slug>.svg|webp`, marka yaml'ında `logo` + `logo_kaynak_url`. SVG olduğu gibi kopyalanır →
   indirmeden önce `<script|onload|javascript:|foreignObject` kontrolü yap. Kontrol aracı (kontakt.cjs) SVG'yi atlıyor → sharp ile
@@ -497,6 +503,7 @@
 | 2026-11-20 | F6.4c | Yeni markalar: Aryak (7 seri kartı + el duşu, duş kolonu/başlık, musluk/ara kesme, sifon; 114 model) ve Borel (yerden ısıtma boruları, 8 kod, logo + büyük görsel); 34 katalog görseli | F6.4c |
 | 2026-11-20 | F6.4d1 | KAS tesisat 11 kart (gaz/su küresel, radyatör-termostatik, filtreli-bahçe musluk, çekvalf-flatör-basınç düşürücü, şiber-stop-filtre, rakor-nipel, yerden ısıtma kollektör + kontrol, doğalgaz flex, su-fancoil flex; 497 model), 27 görsel; 7 ortak kart kaldırıldı/yönlendirildi, 6 ortak kart sadeleşti | F6.4d1 |
 | 2026-11-20 | F6.4d2 | KAS armatür 9 kart: Antoryum, Raflesya, Lilyum, Arnika serileri; ankastre duş setleri; duş setleri & tepe duşları; musluklar & taharet; ankastre ara musluklar; armatür yedek parçaları (213 model), 26 görsel; eski 3 tür kartı yönlendirildi | F6.4d2 |
+| 2026-11-20 | F6.4e | Fırat: 18 kart kodlu tabloya döndü (1210+ satır: kod, çap, et kalınlığı, diş, ambalaj) + yeni Fırat Hortumlar ve Fırat Metal Küresel Vanalar (firat.com görselleri) | F6.4e |
 | 2026-11-18 | Ondulikit (kullanıcı fotoğrafı) + Güral aksesuar gizlendi | yayındaki tüm ürünler görselli | gorsel |
 | 2026-11-18 | F3.9 | 7 ana kategoriye ürün görseli (Orka, Yurtbay, Filli Nucleus, İzeltaş pense, Baymak hidrofor, Fırat vanalar, İzocam); DURUM fotoğraf listesi temizlendi | F3.9 |
 | 2026-11-18 | F3.10a | 15 marka logosu (ECA, Serel, Güral, Orka, Baymak, Filli, Kale Kilit, Sika, Yurtbay, Güral Seramik, Marshall, Bosch, Fawori, İzocam, Onduline); logosuz 35 | F3.10a |

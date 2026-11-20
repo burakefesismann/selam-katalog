@@ -205,7 +205,7 @@ Kaynak: `kataloglar/` (fiyat içerir, gitignore) + `docs/KATALOG-INCELEME.md`. F
     (radyatör/termostatik, pex, rakor, prüjör, emniyet, yerden ısıtma ×2, su küresel, şiber, çekvalf, filtre, basınç düşürücü, ara kesme)
     - [x] F6.4d1 KAS tesisat (vana, valf, yerden ısıtma, flex, Kastak) + ECA/KAS ortak kartlarının temizliği
     - [x] F6.4d2 KAS armatür (batarya serileri, duş, musluk, yedek parça)
-  - [ ] F6.4e Fırat
+  - [x] F6.4e Fırat
   - [ ] F6.4f Poelsan
   - [ ] F6.4g Sumak
   - [ ] F6.4h Orka
