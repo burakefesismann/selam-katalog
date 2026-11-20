@@ -4,7 +4,7 @@ Beyin takımının hazırladığı, kullanıcının onayladığı kart listesi (
 Bu dosya kategori ağacının ve kart adlarının kaynağıdır. Değişiklik yalnızca kullanıcı/beyin takımı onayıyla yapılır.
 
 Kart tipleri (K11): `grup` = ürün ailesi tek kart · `marka_tur` = marka + tür, örneklemli · `urun` = tek ürün, teknik detaylı.
-Toplam: 269 kart.
+Toplam: 275 kart.
 
 **Güncelleme 2026-11-16 (Paket 001 ile, beyin takımı kararı):** PE100 ek parçaları → Fırat; PEX kartı adı ve markaları;
 ProContact Sıva & Şap → Mantolama; resmi yazımlar DuoContact, DuoFix, StarTherm, CreativTop. Toplam kart sayısı değişmedi (213).
@@ -16,6 +16,7 @@ Alt kategori slug'ları: `su-yalitimi-kimyasal`, `su-yalitimi-membran`, `mantola
 Öne çıkanlar: ad sadeleştirmeleri (parantez içi açıklamalar), Momento Max ve Marshall Fit → İç Cephe, mantolama taşyünleri ve
 boya mantolama kartları → Yapı Kimyasalları › Mantolama (Boya altında Mantolama ve Ekonomik Seri açılmadı), Keski & Murç ve
 KBS Çiroz → El Aletleri (Tesisatçı Aletleri ikiye ayrıldı → 214 kart), "Kale" el aletleri → KL Pro, Onduline Şıngıl → UKS Şıngıl.
+
 
 
 
@@ -227,10 +228,16 @@ KBS Çiroz → El Aletleri (Tesisatçı Aletleri ikiye ayrıldı → 214 kart), 
 - Rezervuar İç Takımları & Klozet Kapakları — `grup` — Visam
 - Serel Rezervuar İç Takımları — `seri` — Serel
 
-## 8. Banyo Mobilyası & Duşakabin (4 kart)
+## 8. Banyo Mobilyası & Duşakabin (10 kart)
 
 ### Banyo Dolapları
-- Orka Banyo Dolapları — `marka_tur` — Orka
+- Orka Amorf Banyo Dolapları — `seri` — Orka
+- Orka Aynalar — `seri` — Orka
+- Orka Boy & Çamaşır Makinesi Dolapları — `seri` — Orka
+- Orka Karma Banyo Dolapları — `seri` — Orka
+- Orka Only Banyo Dolapları — `seri` — Orka
+- Orka Rate Banyo Dolapları — `seri` — Orka
+- Orka Thermold Banyo Dolapları — `seri` — Orka
 - Samir Banyo Dolapları — `marka_tur` — Samir
 
 ### Duş Tekneleri

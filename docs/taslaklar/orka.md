@@ -1,6 +1,7 @@
 # Orka — taslak (F6.4h)
 
-> Durum: **ONAY BEKLİYOR.** Kaynak: Orka 2026-2 fiyat listesi (76 sayfa). Fiyat (TL) alınmaz.
+> Durum: **ONAYLANDI ve UYGULANDI (2026-11-20)** — 5 koleksiyon kartı + Boy & Çamaşır Dolapları + Aynalar; Orka Plus (armatür, aksesuar, sifon) yok.
+> Kaynak: Orka 2026-2 fiyat listesi (76 sayfa). Fiyat (TL) alınmaz.
 > Dolaplarda ürün kodu yok → satır = takım adı (ör. "Lodi 100 Takım") + içeriği (alt modül, lavabo, üst modül/ayna) + renkler.
 > Armatürlerde kod var (ör. MDR 73106 C — Krom).
 
