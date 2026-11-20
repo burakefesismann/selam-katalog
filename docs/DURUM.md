@@ -3,7 +3,7 @@
 > Her oturumun başında oku, sonunda güncelle. Kısa tut.
 
 ## Şu an
-- Aktif görev: — (sıradaki: F6.4b Serel — seramik sağlık, gömme rezervuar, banyo aksesuarları, iç takım)
+- Aktif görev: F6.4b Serel — taslak (docs/taslaklar/serel.md) → onay → kartlar
 - Site: https://burakefesismann.github.io/selam-katalog/
 - Faz: 3 — Gerçek içerik ve görseller
 
