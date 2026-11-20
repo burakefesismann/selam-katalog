@@ -3,7 +3,7 @@
 > Her oturumun başında oku, sonunda güncelle. Kısa tut.
 
 ## Şu an
-- Aktif görev: — (sıradaki: F6.4c Aryak + Borel — yeni markalar)
+- Aktif görev: F6.4c Aryak + Borel — taslak → onay → marka + kartlar
 - Site: https://burakefesismann.github.io/selam-katalog/
 - Faz: 3 — Gerçek içerik ve görseller
 
