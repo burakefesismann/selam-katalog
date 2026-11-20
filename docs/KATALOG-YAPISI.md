@@ -4,7 +4,7 @@ Beyin takımının hazırladığı, kullanıcının onayladığı kart listesi (
 Bu dosya kategori ağacının ve kart adlarının kaynağıdır. Değişiklik yalnızca kullanıcı/beyin takımı onayıyla yapılır.
 
 Kart tipleri (K11): `grup` = ürün ailesi tek kart · `marka_tur` = marka + tür, örneklemli · `urun` = tek ürün, teknik detaylı.
-Toplam: 262 kart.
+Toplam: 264 kart.
 
 **Güncelleme 2026-11-16 (Paket 001 ile, beyin takımı kararı):** PE100 ek parçaları → Fırat; PEX kartı adı ve markaları;
 ProContact Sıva & Şap → Mantolama; resmi yazımlar DuoContact, DuoFix, StarTherm, CreativTop. Toplam kart sayısı değişmedi (213).
@@ -28,7 +28,8 @@ KBS Çiroz → El Aletleri (Tesisatçı Aletleri ikiye ayrıldı → 214 kart), 
 
 
 
-## 1. Tesisat Boruları & Ek Parçalar (21 kart)
+
+## 1. Tesisat Boruları & Ek Parçalar (23 kart)
 
 ### Altyapı & Drenaj
 - Drenaj Boruları (Delikli / Tünel Tipi) — `seri` — Fırat
@@ -45,7 +46,9 @@ KBS Çiroz → El Aletleri (Tesisatçı Aletleri ikiye ayrıldı → 214 kart), 
 ### PE İçme Suyu
 - Fırat PE100 İçme Suyu Boruları (Kangal) — `seri` — Fırat
 - PE100 Kaynaklı & Elektrofüzyon Ek Parçalar — `grup` — Fırat
-- Poelsan Kaplin (Sıkıştırmalı) Ek Parçalar — `grup` — Poelsan
+- Poelsan Elektrofüzyon & Spigot Ek Parçaları — `seri` — Poelsan
+- Poelsan Kaplin (Sıkıştırmalı) Ek Parçalar — `seri` — Poelsan
+- Poelsan Priz Kolyeler — `seri` — Poelsan
 
 ### PEX & PE-RT
 - PEX Bağlantılar & Vanalar — `seri` — Fırat

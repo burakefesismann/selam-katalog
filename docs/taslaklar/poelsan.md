@@ -1,6 +1,7 @@
 # Poelsan — taslak (F6.4f)
 
-> Durum: **ONAY BEKLİYOR.** Kaynak: 2026 Poelsan fiyat listesi (68 sayfa). Fiyat (3 ondalıklı EUR) alınmaz.
+> Durum: **ONAYLANDI ve UYGULANDI (2026-11-20)** — sadece tesisat: kaplin (mavi + yeşil seri), priz kolye, elektrofüzyon & spigot.
+> Kaynak: 2026 Poelsan fiyat listesi (68 sayfa). Fiyat (3 ondalıklı EUR) alınmaz.
 > Not: ürün adları ve sütun başlıkları katalogda çizim olarak gömülü (metin değil) → adlar sayfa görüntüsünden okunup koda elle
 > eşlenir; kod, ebat ve ambalaj adedi metinden. Görseller gömülü fotoğraflardan.
 

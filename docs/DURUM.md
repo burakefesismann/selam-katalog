@@ -3,7 +3,7 @@
 > Her oturumun başında oku, sonunda güncelle. Kısa tut.
 
 ## Şu an
-- Aktif görev: F6.4f Poelsan — taslak → onay → kartlar
+- Aktif görev: — (sıradaki: F6.4g Sumak)
 - Site: https://burakefesismann.github.io/selam-katalog/
 - Faz: 3 — Gerçek içerik ve görseller
 
@@ -173,7 +173,7 @@
     Marshall sentetik tiner (sayfa yok), yerden ısıtma aksesuarları, Filli Dalmaçyalı dübel (PDF), Sika 10, Güral 3, Onduline 5.
   - Kaynaksız 70 kart (çoğu "çeşitli" hırdavat/tesisat kalemi) → büyük olasılıkla mağaza fotoğrafı; sona bırak, kullanıcıya listele.
 ## Sıradaki
-- **F6.4f — Poelsan** (68 sayfa). Ardından F6.4b Serel…
+- **F6.4g — Sumak** (pompa, 104 sayfa). Ardından F6.4b Serel…
 - **F6.4 — Marka marka içerik** (K16/K17): ilk ECA. `.katalog-calisma/eca/` (OZET.md + metin) → yakın serilerin taslak listesi
   (kod tablosuyla) → kullanıcı onayı → içe aktar → katalog görselleri. Sonra Serel, Aryak, Borel, KAS, Fırat…
 - Sonra F4.5 — Çözüm sayfaları (K13): `cozumler` koleksiyonu + panel + ana sayfa alanı; ilk sayfa Mantolama (içerik beyin
@@ -404,6 +404,14 @@
 - Katalog küçük resimleri ~90 px → yeni kartların görselleri firat.com'dan (hortumlar, küresel vanalar). Mevcut kartların firat.com görselleri korundu.
 - PE kangal kartının adı "PE100" (paket 002), katalogda "6/10 atü yüksek/alçak yoğunluklu polietilen" — satır adları katalogdaki gibi.
 
+## Poelsan notları (F6.4f)
+- Katalogda ürün adları, başlıklar ve tablo satırlarının çoğu ÇİZİM (metin değil) → sayfalar 400 dpi görüntüye çevrilip (yalnız yerel)
+  Windows'un yerleşik OCR'ı (Windows.Media.Ocr, scratchpad ocr.ps1) ile okundu. Başlıklar elle (OCR alt başlıkları düşürüyor).
+  OCR'ın atladığı 5 satır metin katmanından eklendi; metin katmanındaki 253 kodun hepsi çıktıda. Tablonun ölçü biçimine uymayan
+  173 satırda ölçü boş bırakıldı (OCR kesir düşürmüş olabilir). FİYAT sütunu konumdan, fiyat biçimli sayılar desenle atıldı.
+- katalog:cikar fiyat filtresi 3 ondalıklı EUR fiyatları (44,581 · 1.094,276) da atıyor (Poelsan'da sızıyordu; yalnız yerel dosyalarda).
+- Katalog ürün fotoğrafları parça parça ve ~150 px → görseller poelsan.com'dan (mavi/yeşil seri, priz kolye, EF manşon, spigot).
+
 ## Logo notları (F3.10)
 - Logolar `src/assets/markalar/<slug>.svg|webp`, marka yaml'ında `logo` + `logo_kaynak_url`. SVG olduğu gibi kopyalanır →
   indirmeden önce `<script|onload|javascript:|foreignObject` kontrolü yap. Kontrol aracı (kontakt.cjs) SVG'yi atlıyor → sharp ile
@@ -504,6 +512,7 @@
 | 2026-11-20 | F6.4d1 | KAS tesisat 11 kart (gaz/su küresel, radyatör-termostatik, filtreli-bahçe musluk, çekvalf-flatör-basınç düşürücü, şiber-stop-filtre, rakor-nipel, yerden ısıtma kollektör + kontrol, doğalgaz flex, su-fancoil flex; 497 model), 27 görsel; 7 ortak kart kaldırıldı/yönlendirildi, 6 ortak kart sadeleşti | F6.4d1 |
 | 2026-11-20 | F6.4d2 | KAS armatür 9 kart: Antoryum, Raflesya, Lilyum, Arnika serileri; ankastre duş setleri; duş setleri & tepe duşları; musluklar & taharet; ankastre ara musluklar; armatür yedek parçaları (213 model), 26 görsel; eski 3 tür kartı yönlendirildi | F6.4d2 |
 | 2026-11-20 | F6.4e | Fırat: 18 kart kodlu tabloya döndü (1210+ satır: kod, çap, et kalınlığı, diş, ambalaj) + yeni Fırat Hortumlar ve Fırat Metal Küresel Vanalar (firat.com görselleri) | F6.4e |
+| 2026-11-20 | F6.4f | Poelsan tesisat: kaplin kartı (mavi+yeşil seri, 647 satır) kodlu tabloya döndü; yeni Priz Kolyeler (504) ve Elektrofüzyon & Spigot (183); OCR ile okundu, metin katmanıyla doğrulandı; poelsan.com görselleri | F6.4f |
 | 2026-11-18 | Ondulikit (kullanıcı fotoğrafı) + Güral aksesuar gizlendi | yayındaki tüm ürünler görselli | gorsel |
 | 2026-11-18 | F3.9 | 7 ana kategoriye ürün görseli (Orka, Yurtbay, Filli Nucleus, İzeltaş pense, Baymak hidrofor, Fırat vanalar, İzocam); DURUM fotoğraf listesi temizlendi | F3.9 |
 | 2026-11-18 | F3.10a | 15 marka logosu (ECA, Serel, Güral, Orka, Baymak, Filli, Kale Kilit, Sika, Yurtbay, Güral Seramik, Marshall, Bosch, Fawori, İzocam, Onduline); logosuz 35 | F3.10a |
