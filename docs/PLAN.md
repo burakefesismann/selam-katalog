@@ -203,6 +203,8 @@ Kaynak: `kataloglar/` (fiyat içerir, gitignore) + `docs/KATALOG-INCELEME.md`. F
   - [x] F6.4c Aryak + Borel (yeni markalar) — Aryak 7 seri + 4 kart, Borel 1 kart
   - [ ] F6.4d KAS — ayrıca ECA+KAS ortak kartlarından eca çıkar, gövdedeki ECA satırları ve eca.com.tr görselleri temizlenir
     (radyatör/termostatik, pex, rakor, prüjör, emniyet, yerden ısıtma ×2, su küresel, şiber, çekvalf, filtre, basınç düşürücü, ara kesme)
+    - [ ] F6.4d1 KAS tesisat (vana, valf, yerden ısıtma, flex, Kastak) + ECA/KAS ortak kartlarının temizliği
+    - [ ] F6.4d2 KAS armatür (batarya serileri, duş, musluk, yedek parça)
   - [ ] F6.4e Fırat
   - [ ] F6.4f Poelsan
   - [ ] F6.4g Sumak
