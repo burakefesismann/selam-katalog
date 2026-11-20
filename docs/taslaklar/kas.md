@@ -32,3 +32,20 @@
 1. Tesisat kataloğunun tamamı mı (≈550 kod, 12 kart)?
 2. Kastak esnek doğalgaz sistemi eklensin mi?
 3. Ortak kartların kaldırılıp yönlendirilmesi uygun mu?
+
+## F6.4d2 — Armatür kartları (ONAY BEKLİYOR)
+Katalog: 254 ürün / 270 kod (fiyat okunmaz). Eski mağaza listesindeki Yasemin, Topaç, Berilyum, Kardelen, Kuartz, Safir 2026 listesinde yok.
+
+| Kart | Ürün grubu | Not |
+|---|---|---|
+| KAS Antoryum Serisi (lavabo, banyo, evye, duş, aplike, kuğu, çanak, Green, Medikal, renkli) | Batarya Serileri | mağazada var |
+| KAS Raflesya Serisi · KAS Lilyum Serisi · KAS Arnika Serisi | Batarya Serileri | mağazada var |
+| (soru 1) Calista, Fione (+ İpeksi), Lavinya, Anemon, Rubini Botti, Osmanlı (Harem, Saray), Mia Baby | Batarya Serileri | katalogda var |
+| KAS Spiralli & Özel Evye Bataryaları (Adonis, Viola, Jasmin, Antik, Akrobat) | Eviye Bataryaları | soru 2 |
+| KAS Ankastre Duş Setleri (Raflesya Kare/Elite, Antoryum, Kanola, Fione) | Ankastre Sistemler | |
+| KAS Duş Setleri (Elmas, Zümrüt; tepe duş: Raflesya şelale, Antoryum soft, Lilyum fıskiye, Alga, Perla panel) | Duş Sistemleri | `kas-dus-setleri` (adres korunur) |
+| KAS Musluklar & Taharet (Kumru, Antoryum, Çisil, Derya, Damla, filtreli taharet, Mamba) | Musluklar | `kas-musluklar-ve-taharet-musluklari` (adres korunur) |
+| KAS Ankastre Ara Muslukları (Sakura, Arnika, Kanola, Fione, Alga, Antoryum, Anemon, Lilyum, Raflesya) | Tesisat Valfleri | `ara-kesme-valfleri` → yalnız Visam kalır |
+| KAS Armatür Yedek Parçaları (kartuş, salmastra, volan, armatür boruları, spiral hortum, duş başlığı) | Yedek Parça & Uzatma | yeni |
+
+`kas-lavabo-bataryalari`, `kas-banyo-bataryalari`, `kas-eviye-mutfak-bataryalari` → kalkar, Batarya Serileri'ne yönlenir.
