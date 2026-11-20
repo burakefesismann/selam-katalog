@@ -4,7 +4,7 @@ Beyin takımının hazırladığı, kullanıcının onayladığı kart listesi (
 Bu dosya kategori ağacının ve kart adlarının kaynağıdır. Değişiklik yalnızca kullanıcı/beyin takımı onayıyla yapılır.
 
 Kart tipleri (K11): `grup` = ürün ailesi tek kart · `marka_tur` = marka + tür, örneklemli · `urun` = tek ürün, teknik detaylı.
-Toplam: 256 kart.
+Toplam: 260 kart.
 
 **Güncelleme 2026-11-16 (Paket 001 ile, beyin takımı kararı):** PE100 ek parçaları → Fırat; PEX kartı adı ve markaları;
 ProContact Sıva & Şap → Mantolama; resmi yazımlar DuoContact, DuoFix, StarTherm, CreativTop. Toplam kart sayısı değişmedi (213).
@@ -16,6 +16,7 @@ Alt kategori slug'ları: `su-yalitimi-kimyasal`, `su-yalitimi-membran`, `mantola
 Öne çıkanlar: ad sadeleştirmeleri (parantez içi açıklamalar), Momento Max ve Marshall Fit → İç Cephe, mantolama taşyünleri ve
 boya mantolama kartları → Yapı Kimyasalları › Mantolama (Boya altında Mantolama ve Ekonomik Seri açılmadı), Keski & Murç ve
 KBS Çiroz → El Aletleri (Tesisatçı Aletleri ikiye ayrıldı → 214 kart), "Kale" el aletleri → KL Pro, Onduline Şıngıl → UKS Şıngıl.
+
 
 
 
@@ -63,7 +64,7 @@ KBS Çiroz → El Aletleri (Tesisatçı Aletleri ikiye ayrıldı → 214 kart), 
 ### Yağmur Oluğu
 - Fırat PVC Yağmur Oluğu Sistemi — `grup` — Fırat
 
-## 2. Vanalar (20 kart)
+## 2. Vanalar (21 kart)
 
 ### Küresel Vanalar
 - ECA Su Küresel Vanaları — `seri` — ECA
@@ -86,13 +87,14 @@ KBS Çiroz → El Aletleri (Tesisatçı Aletleri ikiye ayrıldı → 214 kart), 
 - KAS Şiber, Stop Vana & Filtreler — `seri` — KAS
 
 ### Tesisat Valfleri
-- Ara Kesme Valfleri — `grup` — KAS · Visam
+- Ara Kesme Valfleri — `grup` — Visam
 - ECA Çekvalfler — `seri` — ECA
 - ECA Emniyet Valfleri — `seri` — ECA
 - ECA Filtreler — `seri` — ECA
 - ECA Flatörler — `seri` — ECA
 - ECA Otomatik Hava Atıcılar — `seri` — ECA
 - ECA Su Basınç Düşürücüleri — `seri` — ECA
+- KAS Ankastre Ara Muslukları — `seri` — KAS
 - KAS Çekvalf, Flatör & Basınç Düşürücü — `seri` — KAS
 
 ## 3. Bağlantı & Flex (5 kart)
@@ -125,15 +127,15 @@ KBS Çiroz → El Aletleri (Tesisatçı Aletleri ikiye ayrıldı → 214 kart), 
 - Yerden Isıtma Aksesuarları — `grup` — Fırat
 - Yerden Isıtma Kollektörleri — `grup` — Fırat
 
-## 5. Armatür (Batarya & Duş) (42 kart)
+## 5. Armatür (Batarya & Duş) (45 kart)
 
 ### Ankastre Sistemler
 - ECA Termostatik Bataryalar — `seri` — ECA
+- KAS Ankastre Duş Setleri — `seri` — KAS
 
 ### Banyo Bataryaları
 - Diğer Marka Bataryalar — `marka_tur` — Foma
 - ECA Küvet Bataryaları — `seri` — ECA
-- KAS Banyo Bataryaları — `marka_tur` — KAS
 
 ### Batarya Serileri
 - Aryak Fast Serisi — `seri` — Aryak
@@ -154,6 +156,10 @@ KBS Çiroz → El Aletleri (Tesisatçı Aletleri ikiye ayrıldı → 214 kart), 
 - ECA Royal Serisi — `seri` — ECA
 - ECA Spylos Serisi — `seri` — ECA
 - ECA Tiera Serisi — `seri` — ECA
+- KAS Antoryum Serisi — `seri` — KAS
+- KAS Arnika Serisi — `seri` — KAS
+- KAS Lilyum Serisi — `seri` — KAS
+- KAS Raflesya Serisi — `seri` — KAS
 
 ### Duş Setleri & Tepe Duşları
 - Aryak Duş Kolonları & Duş Başlıkları — `seri` — Aryak
@@ -161,29 +167,28 @@ KBS Çiroz → El Aletleri (Tesisatçı Aletleri ikiye ayrıldı → 214 kart), 
 - Duş Setleri (diğer markalar) — `marka_tur` — çeşitli
 - ECA Duş Kolonları, Tepe Duşları & Ankastre Duş Setleri — `seri` — ECA
 - ECA El Duşu Takımları — `seri` — ECA
-- KAS Duş Setleri — `marka_tur` — KAS
+- KAS Duş Setleri & Tepe Duşları — `seri` — KAS
 - Mesa Duş Setleri — `marka_tur` — Mesa
 
 ### Eviye (Mutfak) Bataryaları
 - ECA Özel Mutfak Bataryaları — `seri` — ECA
-- KAS Eviye (Mutfak) Bataryaları — `marka_tur` — KAS
 
 ### Lavabo Bataryaları
 - ECA Fotoselli Bataryalar & Zaman Ayarlı Musluklar — `seri` — ECA
-- KAS Lavabo Bataryaları — `marka_tur` — KAS
 
 ### Musluklar & Taharet
 - Aryak Musluklar & Ara Kesme Valfleri — `seri` — Aryak
 - ECA Ara Musluklar & Taharet Muslukları — `seri` — ECA
 - ECA Musluklar & Klozet Bataryası — `seri` — ECA
 - KAS Filtreli & Bahçe Muslukları — `seri` — KAS
-- KAS Musluklar & Taharet Muslukları — `marka_tur` — KAS
+- KAS Musluklar & Taharet Muslukları — `seri` — KAS
 - Musluklar (diğer markalar) — `marka_tur` — Hazal
 
 ### Yedek Parça & Uzatma
 - Aryak Sifonlar — `seri` — Aryak
 - Batarya Yedek Parça & Bağlantıları — `grup` — çeşitli
 - ECA Sifonlar & Uzatmalar — `seri` — ECA
+- KAS Armatür Yedek Parçaları — `seri` — KAS
 
 ## 6. Seramik Sağlık Gereçleri (9 kart)
 

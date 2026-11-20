@@ -17,7 +17,7 @@ olculer:
   - 3/4" delikli uzatma
 ilgili_urunler:
   - eca-tiera-serisi
-  - kas-banyo-bataryalari
+  - kas-antoryum-serisi
 sira: 18
 markalar: []
 gorseller:

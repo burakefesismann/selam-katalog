@@ -20,7 +20,7 @@ teknik_ozellikler:
     deger: Mat beyaz
 ilgili_urunler:
   - eca-tiera-serisi
-  - kas-lavabo-bataryalari
+  - kas-antoryum-serisi
 sira: 17
 gorseller:
   - gorsel: /src/assets/urunler/diger-marka-bataryalar-1.webp

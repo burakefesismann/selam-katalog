@@ -95,3 +95,27 @@
 - **KAS:** 16x2 dış dişli rakor, hortum bağlantı rakoru, yerden ısıtma rakoru
 - 16x2 boru bağlantı dirseği, metal körtapa, U klips boru tutucu
 - **PEX çıkışlı / bağlantılı radyatör vanaları:** ECA RV2 ve RV3, KAS KV3 düz ve köşe tipler
+
+## F6.4d2 — kaldırılan KAS tür kartları
+
+### kas-lavabo-bataryalari
+
+- **Antoryum** lavabo bataryası ve Antoryum kuğu lavabo bataryası
+- **Yasemin** lavabo bataryası
+- **Topaç** klasik lavabo bataryası
+- Tek kollu kuğu lavabo bataryası
+
+### kas-banyo-bataryalari
+
+- **Antoryum** banyo bataryası
+- **Yasemin** banyo bataryası
+- **Yasemin Gold** banyo bataryası
+
+Antoryum ve Yasemin'in lavabo bataryaları, Yasemin'in eviye bataryası da mağazamızda bulunur; lavabo ve küvet bataryasını aynı seriden seçmek banyoda bütün bir görünüm verir.
+
+### kas-eviye-mutfak-bataryalari
+
+- **Berilyum** kuğu eviye bataryası
+- **Yasemin** kuğu eviye bataryası
+- **Yeni Kardelen** kuğu eviye bataryası
+- **Arnika** duvardan (aplike) eviye bataryası

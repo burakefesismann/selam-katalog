@@ -201,10 +201,10 @@ Kaynak: `kataloglar/` (fiyat içerir, gitignore) + `docs/KATALOG-INCELEME.md`. F
       değişmesi F6.4d'ye kaldı (KAS katalog görselleriyle birlikte; yanlış marka görseli kalmasın)
   - [x] F6.4b Serel (seramik sağlık, gömme rezervuar, banyo aksesuarları) — tür bazında 11 kart
   - [x] F6.4c Aryak + Borel (yeni markalar) — Aryak 7 seri + 4 kart, Borel 1 kart
-  - [ ] F6.4d KAS — ayrıca ECA+KAS ortak kartlarından eca çıkar, gövdedeki ECA satırları ve eca.com.tr görselleri temizlenir
+  - [x] F6.4d KAS — ayrıca ECA+KAS ortak kartlarından eca çıkar, gövdedeki ECA satırları ve eca.com.tr görselleri temizlenir
     (radyatör/termostatik, pex, rakor, prüjör, emniyet, yerden ısıtma ×2, su küresel, şiber, çekvalf, filtre, basınç düşürücü, ara kesme)
     - [x] F6.4d1 KAS tesisat (vana, valf, yerden ısıtma, flex, Kastak) + ECA/KAS ortak kartlarının temizliği
-    - [ ] F6.4d2 KAS armatür (batarya serileri, duş, musluk, yedek parça)
+    - [x] F6.4d2 KAS armatür (batarya serileri, duş, musluk, yedek parça)
   - [ ] F6.4e Fırat
   - [ ] F6.4f Poelsan
   - [ ] F6.4g Sumak
@@ -217,7 +217,7 @@ Kaynak: `kataloglar/` (fiyat içerir, gitignore) + `docs/KATALOG-INCELEME.md`. F
   - [ ] F6.4n İzeltaş
   - [ ] F6.4o Dekor + İstanbul Fırça
   - [ ] F6.4p Tesay Bu + Işık (profiller)
-  - [ ] F6.4q Katalogsuz mevcut markaların gözden geçirilmesi (görselsiz kalanlar: Visam iç takım, Türkoğlu büyük çap vanalar, doğalgaz kelepçe/tüpgaz — F6.4b/d1'de yanlış marka görselleri kaldırıldı)
+  - [ ] F6.4q Katalogsuz mevcut markaların gözden geçirilmesi (görselsiz kalanlar: Visam iç takım, Visam ara kesme valfleri, Türkoğlu büyük çap vanalar, doğalgaz kelepçe/tüpgaz — F6.4b/d1'de yanlış marka görselleri kaldırıldı)
   - [ ] F6.4r Mesa (katalog gelince)
 - [ ] **F6.5 Görsel yenileme** — geçici/zayıf/başka model görsellerini katalog görselleriyle değiştir (liste DURUM'da).
 - [ ] **F6.6 PDF katalog yeni düzen** — marka bölümleri, sağ sayfada başlama, sağlı-sollu açılım (F3.11 buna katıldı).

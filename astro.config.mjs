@@ -33,6 +33,10 @@ export default defineConfig({
     '/urunler/filtreler-pislik-tutucu-y-filtre': '/selam-katalog/kategoriler/tesisat-armaturleri',
     '/urunler/prujorler-otomatik-hava-atici': '/selam-katalog/kategoriler/tesisat-armaturleri',
     '/urunler/siber-vanalar': '/selam-katalog/kategoriler/siber-ve-gaz-vanalari',
+    // F6.4d2: KAS tür kartları seri kartlarına dönüştü
+    '/urunler/kas-lavabo-bataryalari': '/selam-katalog/kategoriler/batarya-serileri',
+    '/urunler/kas-banyo-bataryalari': '/selam-katalog/kategoriler/batarya-serileri',
+    '/urunler/kas-eviye-mutfak-bataryalari': '/selam-katalog/kategoriler/batarya-serileri',
   },
   integrations: [
     sitemap({

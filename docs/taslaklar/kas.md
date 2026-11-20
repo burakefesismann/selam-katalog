@@ -33,7 +33,7 @@
 2. Kastak esnek doğalgaz sistemi eklensin mi?
 3. Ortak kartların kaldırılıp yönlendirilmesi uygun mu?
 
-## F6.4d2 — Armatür kartları (ONAY BEKLİYOR)
+## F6.4d2 — Armatür kartları (ONAYLANDI ve UYGULANDI 2026-11-20: mağazadaki 4 seri — Antoryum, Raflesya, Lilyum, Arnika; özel evye yok)
 Katalog: 254 ürün / 270 kod (fiyat okunmaz). Eski mağaza listesindeki Yasemin, Topaç, Berilyum, Kardelen, Kuartz, Safir 2026 listesinde yok.
 
 | Kart | Ürün grubu | Not |
